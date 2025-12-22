@@ -1,107 +1,32 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
+
+// --- IMPORTS (Corrected for your folder structure) ---
+// Ab hum seedha './components/...' use kar rahe hain kyunki 'src' folder nahi hai
+
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Stats from './components/Stats';
-import GrowthProcess from './components/GrowthProcess';
-import GrowthAnimation from './components/GrowthAnimation';
-import IndiaMap from './components/IndiaMap';
-import GuideTabs from './components/GuideTabs';
 import NewsFooter from './components/NewsFooter';
 import Modal from './components/Modal';
-import { PageId } from './types';
-import { PAGES_CONTENT } from './serviceContent';
-import ServiceGuidePage from './components/ServiceGuidePage';
-import ServiceLegalPage from './components/ServiceLegalPage';
-import ServiceContactPage from './components/ServiceContactPage';
+import ServiceContactPage from './components/ServiceContactPage'; 
 
-const App: React.FC = () => {
-  const [currentPage, setCurrentPage] = useState<PageId>('home');
-  const [previousScrollPosition, setPreviousScrollPosition] = useState(0);
-  const servicesRef = useRef<HTMLDivElement | null>(null);
-  const pageTopRef = useRef<HTMLDivElement | null>(null);
+// Note: Agar Home.tsx components folder me hai to './components/Home' likhein.
+// Agar Home.tsx abhi tak nahi banaya, to niche instructions dekhein.
+import Home from './components/Home'; 
+import DynamicPage from './components/DynamicPage';
+
+const ScrollToTop = ({ lenis }: { lenis: Lenis | null }) => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    if (lenis) lenis.scrollTo(0, { immediate: true });
+    else window.scrollTo(0, 0);
+  }, [pathname, lenis]);
+  return null;
+};
+
+const AppContent: React.FC = () => {
   const lenisRef = useRef<Lenis | null>(null);
 
-  const handleNavigate = (pageId: PageId) => {
-    // Save current scroll position if on home page
-    if (currentPage === 'home') {
-      setPreviousScrollPosition(window.scrollY);
-    }
-    
-    setCurrentPage(pageId);
-    
-    // Smooth scroll to top using Lenis
-    requestAnimationFrame(() => {
-      lenisRef.current?.scrollTo(0, { immediate: false });
-    });
-  };
-
-  const handleBackToHome = () => {
-    setCurrentPage('home');
-    // Restore previous scroll position after a short delay
-    setTimeout(() => {
-      lenisRef.current?.scrollTo(previousScrollPosition, { immediate: false });
-    }, 100);
-  };
-
-  const renderPage = () => {
-    if (currentPage === 'home') {
-      return (
-        <>
-          <Hero />
-          <Stats />
-          <GrowthProcess />
-          <GrowthAnimation />
-          <IndiaMap />
-          <div ref={servicesRef} id="services">
-            <GuideTabs onNavigate={handleNavigate} />
-          </div>
-          <NewsFooter onNavigate={handleNavigate} />
-        </>
-      );
-    }
-
-    if (currentPage === 'contact') {
-      return (
-        <>
-          <ServiceContactPage onBack={handleNavigate} />
-          <NewsFooter onNavigate={handleNavigate} />
-        </>
-      );
-    }
-
-    const data = PAGES_CONTENT[currentPage];
-    if (!data) {
-      return (
-        <>
-          <ServiceContactPage />
-          <NewsFooter onNavigate={handleNavigate} />
-        </>
-      );
-    }
-
-    if (data.type === 'guide') {
-      return (
-        <>
-          <ServiceGuidePage data={data} onBack={handleBackToHome} />
-          <NewsFooter onNavigate={handleNavigate} />
-        </>
-      );
-    }
-
-    if (data.type === 'legal') {
-      return (
-        <>
-          <ServiceLegalPage data={data} onBack={handleBackToHome} />
-          <NewsFooter onNavigate={handleNavigate} />
-        </>
-      );
-    }
-
-    return null;
-  };
-
-  // Initialize Lenis smooth scroll
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -109,60 +34,49 @@ const App: React.FC = () => {
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       smoothWheel: true,
-      wheelMultiplier: 1,
       smoothTouch: true,
       touchMultiplier: 1.5,
-      infinite: false,
     });
-
     lenisRef.current = lenis;
-
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
-
-    // Cleanup
-    return () => {
-      lenis.destroy();
-    };
+    return () => lenis.destroy();
   }, []);
-
-  // Smooth scroll to top when page changes
-  useEffect(() => {
-    if (currentPage !== 'home') {
-      requestAnimationFrame(() => {
-        lenisRef.current?.scrollTo(0, { immediate: false });
-      });
-    }
-  }, [currentPage]);
 
   return (
     <div className="min-h-screen bg-white">
-      <div ref={pageTopRef} className="absolute top-0" aria-hidden="true" />
-      <Header
-        onNavigate={handleNavigate}
-        onScrollToServices={() => {
-          if (currentPage !== 'home') {
-            setCurrentPage('home');
-            // slight delay to ensure home is rendered before scroll
-            setTimeout(() => {
-              if (servicesRef.current) {
-                lenisRef.current?.scrollTo(servicesRef.current, { offset: 0, immediate: false });
-              }
-            }, 100);
-          } else {
-            if (servicesRef.current) {
-              lenisRef.current?.scrollTo(servicesRef.current, { offset: 0, immediate: false });
-            }
-          }
-        }}
-      />
-      <main className="pt-28 md:pt-32">{renderPage()}</main>
+      <ScrollToTop lenis={lenisRef.current} />
+      
+      {/* Header */}
+      <Header />
+
+      <main className="pt-28 md:pt-32">
+        <Routes>
+          {/* Home Page Route */}
+          <Route path="/" element={<Home />} />
+
+          {/* Contact Page Route */}
+          <Route path="/contact" element={<ServiceContactPage />} />
+
+          {/* Dynamic Routes (Services) */}
+          <Route path="/:slug" element={<DynamicPage />} />
+        </Routes>
+      </main>
+
+      <NewsFooter />
       <Modal />
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 };
 
