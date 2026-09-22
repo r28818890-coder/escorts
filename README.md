@@ -1,6 +1,6 @@
-## Business Nesta — India Presence Microsite
+## Jaipur Spa — Jaipur Spa Microsite
 
-Interactive Vite + React landing page that visualizes Business Nesta’s pan-India customer footprint with a live-animated map, modern UI, and motion-enhanced storytelling blocks.
+Interactive Vite + React landing page for Jaipur Spa, showcasing luxury Thai massage, wellness services, and a premium spa experience in Jaipur.
 
 ### Tech Stack
 - React 19 + TypeScript

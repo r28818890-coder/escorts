@@ -1,0 +1,5 @@
+# Jaipur Escorts Club - Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://jaipurescortsclub.online/sitemap.xml

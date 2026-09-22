@@ -1,0 +1,78 @@
+# ============================================================
+# JAIPUR ESCORTS CLUB — MILITARY-GRADE DEFENSIVE SECURITY & ANTI-DDOS .HTACCESS
+# ============================================================
+
+# Disable Directory Browsing & Indexing
+Options -Indexes
+
+# Mitigate DoS / Large Payload Floods (Limit Request Body to 10MB)
+LimitRequestBody 10485760
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Force HTTPS Security Redirection
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 2. Block Malicious Vulnerability Scanners, DoS Scripts & Scrapers
+  # (Allow legitimate search engine crawlers: Googlebot, Bingbot, DuckDuckBot, WhatsApp, Twitterbot)
+  RewriteCond %{HTTP_USER_AGENT} !(googlebot|bingbot|duckduckbot|slurp|baiduspider|yandex|whatsapp|facebookexternalhit|twitterbot|pinterest|linkedinbot) [NC]
+  RewriteCond %{HTTP_USER_AGENT} (sqlmap|nikto|wpscan|masscan|havij|acunetix|nessus|zgrab|nmap|morfeus|dirbuster|httrack|clshttp|loader|curl|wget|python-requests|urllib|scrapy|gocolly|java\/|libwww-perl|go-http-client) [NC]
+  RewriteRule .* - [F,L]
+
+  # 3. Block Suspicious Request Methods
+  RewriteCond %{REQUEST_METHOD} ^(TRACE|DELETE|TRACK|DEBUG) [NC]
+  RewriteRule .* - [F,L]
+
+  # 4. Protect Sensitive Files, Dotfiles, and Configuration Backups
+  RewriteRule (^|/)\.(?!well-known) - [F,L]
+  RewriteRule \.(env|git|json|lock|bak|config|sql|tar|gz|zip|sh|log|md)$ - [F,L]
+
+  # 5. SPA Client-Side Routing
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Enterprise Web Application Hardening & Strict Content Security Headers
+<IfModule mod_headers.c>
+  # Anti-Clickjacking
+  Header set X-Frame-Options "SAMEORIGIN"
+  
+  # Cross-Site Scripting (XSS) Protection
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # Prevent MIME-Sniffing
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Referrer Policy
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  
+  # Disable unnecessary browser permissions for maximum privacy
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  
+  # Cross-Origin Policies
+  Header set Cross-Origin-Resource-Policy "cross-origin"
+  
+  # Strict Content Security Policy (CSP)
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://script.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://script.google.com https://api.ipify.org; frame-ancestors 'self';"
+</IfModule>
+
+# Prevent Browser Caching of index.html so updates load instantly after build
+<FilesMatch "\.(html|htm)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </IfModule>
+</FilesMatch>
+
+# Long-term Cache for Hashed Versioned Static Assets
+<FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </IfModule>
+</FilesMatch>
