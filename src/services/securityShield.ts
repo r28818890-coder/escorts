@@ -1,6 +1,6 @@
 /**
  * ============================================================
- * JAIPUR ESCORTS CLUB — MILITARY-GRADE CLIENT SECURITY & ANTI-TAMPER SHIELD
+ * ESCORTS HUB JAIPUR — MILITARY-GRADE CLIENT SECURITY & ANTI-TAMPER SHIELD
  * ============================================================
  */
 
@@ -56,7 +56,7 @@ export const initSecurityShield = () => {
 
   // 4. Console Watermark & Anti-Tamper
   try {
-    const banner = '%c🔒 Protected by Jaipur Escorts Club Enterprise Security Shield';
+    const banner = '%c🔒 Protected by Escorts Hub Jaipur Enterprise Security Shield';
     console.log(banner, 'color: #e11d48; font-size: 13px; font-weight: bold; background: #0f172a; padding: 4px 8px; border-radius: 4px;');
   } catch {}
 };

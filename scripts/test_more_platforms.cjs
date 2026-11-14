@@ -32,12 +32,12 @@ async function run() {
     path: '/',
     method: 'POST',
     headers: { 'Content-Type': 'text/plain', 'User-Agent': 'curl/7.68.0' }
-  }, 'Jaipur Escorts: https://jaipurescortsclub.online');
+  }, 'Jaipur Escorts: https://escortshubjaipur.com');
 
   // tny.im
   await test('tny.im', {
     hostname: 'tny.im',
-    path: '/yourls-api.php?action=shorturl&format=json&url=' + encodeURIComponent('https://jaipurescortsclub.online/call-girls'),
+    path: '/yourls-api.php?action=shorturl&format=json&url=' + encodeURIComponent('https://escortshubjaipur.com/call-girls'),
     method: 'GET',
     headers: { 'User-Agent': 'Mozilla/5.0' }
   });
@@ -45,7 +45,7 @@ async function run() {
   // is.gd
   await test('is.gd', {
     hostname: 'is.gd',
-    path: '/create.php?format=json&url=' + encodeURIComponent('https://jaipurescortsclub.online/call-girls/sindhi-camp'),
+    path: '/create.php?format=json&url=' + encodeURIComponent('https://escortshubjaipur.com/call-girls/sindhi-camp'),
     method: 'GET',
     headers: { 'User-Agent': 'Mozilla/5.0' }
   });
@@ -53,7 +53,7 @@ async function run() {
   // tinyurl
   await test('tinyurl', {
     hostname: 'tinyurl.com',
-    path: '/api-create.php?url=' + encodeURIComponent('https://jaipurescortsclub.online/call-girls/c-scheme'),
+    path: '/api-create.php?url=' + encodeURIComponent('https://escortshubjaipur.com/call-girls/c-scheme'),
     method: 'GET',
     headers: { 'User-Agent': 'Mozilla/5.0' }
   });

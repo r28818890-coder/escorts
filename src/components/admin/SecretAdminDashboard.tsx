@@ -198,7 +198,7 @@ export const SecretAdminDashboard: React.FC<SecretAdminDashboardProps> = ({ isOp
         playNotificationSound();
         new Notification('🔔 Live Lead Alerts Active!', {
           body: 'You will now receive instant push alerts whenever a visitor opens the site or clicks WhatsApp/Call!',
-          icon: '/jaipur_escorts_club_logo.jpg',
+          icon: '/ecj-mark.svg',
         });
       } else {
         alert('Notification permission was denied. Please allow notifications in your browser settings.');
@@ -217,7 +217,7 @@ export const SecretAdminDashboard: React.FC<SecretAdminDashboardProps> = ({ isOp
     if ('Notification' in window && Notification.permission === 'granted') {
       new Notification('💬 WhatsApp Lead Alert (Test)', {
         body: 'Visitor clicked WhatsApp Line 1 on /call-girls just now!',
-        icon: '/jaipur_escorts_club_logo.jpg',
+        icon: '/ecj-mark.svg',
       });
     } else {
       alert('Sound chime played! Please turn on notifications to receive native push alerts.');
@@ -277,17 +277,17 @@ export const SecretAdminDashboard: React.FC<SecretAdminDashboardProps> = ({ isOp
           if (latest.event_type === 'whatsapp') {
             new Notification('💬 NEW WHATSAPP LEAD!', {
               body: `Someone clicked WhatsApp on ${latest.page || 'Home'} (${latest.device || 'Mobile'}).`,
-              icon: '/jaipur_escorts_club_logo.jpg',
+              icon: '/ecj-mark.svg',
             });
           } else if (latest.event_type === 'call') {
             new Notification('📞 NEW DIRECT PHONE CALL!', {
               body: `Someone clicked Phone Call on ${latest.page || 'Home'} (${latest.device || 'Mobile'}).`,
-              icon: '/jaipur_escorts_club_logo.jpg',
+              icon: '/ecj-mark.svg',
             });
           } else if (latest.event_type === 'pageview') {
             new Notification('👁️ New Visitor Online', {
               body: `Someone opened ${latest.page || 'Home'} (${latest.device || 'Mobile'}).`,
-              icon: '/jaipur_escorts_club_logo.jpg',
+              icon: '/ecj-mark.svg',
             });
           }
         }

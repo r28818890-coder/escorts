@@ -1,0 +1,28 @@
+<!-- Section: Sector Facts -->
+<section class="section section-alt" id="sector-facts">
+  <div class="container">
+    <div class="section-header">
+      <h2>{{sector_name}} Key Locality Facts &amp; Transit</h2>
+      <p class="section-subtitle">{{sector_name}} Hyperlocal Transit Logistics, Metro Connectivity &amp; Top Hotel Partners</p>
+    </div>
+    <div class="sector-facts-grid">
+      <div class="fact-card">
+        <div class="fact-icon">&#127970;</div>
+        <h3>Area Character</h3>
+        <p>{{sector_character}}</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">&#128647;</div>
+        <h3>Nearest Metro Station</h3>
+        <p>{{sector_metro}} ({{sector_distance}} away)</p>
+      </div>
+      <div class="fact-card">
+        <div class="fact-icon">&#128716;</div>
+        <h3>Top Verified Hotels</h3>
+        <ul class="fact-hotels-list">
+          {{sector_hotels_html}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

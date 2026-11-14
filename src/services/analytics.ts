@@ -4,7 +4,7 @@
  * Automatically records Pageviews, Calls, and WhatsApp events both to GA4 and to Hostinger internal database.
  */
 
-export const GA_MEASUREMENT_ID = (import.meta.env?.VITE_GA_MEASUREMENT_ID as string) || 'G-HEWRH9K2K5';
+export const GA_MEASUREMENT_ID = (import.meta.env?.VITE_GA_MEASUREMENT_ID as string) || 'G-95BL336T63';
 
 const LOCAL_STORAGE_BACKUP_KEY = 'jaipur_spa_internal_events_backup';
 

@@ -44,8 +44,8 @@ const ServicePage: React.FC = () => {
           },
         }}
         breadcrumbs={[
-          { name: 'Home', url: 'https://jaipurescortsclub.online/' },
-          { name: service.name, url: `https://jaipurescortsclub.online/services/${service.slug}` }
+          { name: 'Home', url: `${BRAND.domain}/` },
+          { name: service.name, url: `${BRAND.domain}/services/${service.slug}` }
         ]}
       />
 
@@ -129,7 +129,7 @@ const ServicePage: React.FC = () => {
             <div className="mt-10 pt-8 border-t border-slate-100 text-center">
               <p className="text-xs text-slate-500 mb-4">24/7 Hotel Outcall • Doorstep Arrival in Jaipur</p>
               <a 
-                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Jaipur Escorts Club, I want to inquire about ${service.name} companion in Jaipur.`)} 
+                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Jaipur, I want to inquire about ${service.name} companion in Jaipur.`)}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 text-white font-black text-xs uppercase tracking-wider rounded-xl hover:brightness-110 transition-transform shadow-md gap-2 cursor-pointer"

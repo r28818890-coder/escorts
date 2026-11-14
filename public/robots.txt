@@ -1,5 +1,61 @@
-# Jaipur Escorts Club - Robots.txt
+# ==============================================================================
+# Escorts Hub Jaipur - AISEO & LLM-Optimized Robots.txt
+# Full crawl permissions for Web Crawlers, LLMs, and Answer Engines (AEO/GEO)
+# ==============================================================================
+
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /api/
 
-Sitemap: https://jaipurescortsclub.online/sitemap.xml
+# OpenAI / ChatGPT Search & Voice Engine
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI Answer Engine
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude Intelligence Engine
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google Gemini, Google SGE & Vertex AI Crawlers
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Apple Intelligence & Siri Answer Engine
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Copilot & Bing AI
+User-agent: Bingbot
+Allow: /
+
+# Cohere & Common Crawl AI Training Ingestion
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# XML Sitemaps
+Sitemap: https://escortshubjaipur.com/sitemap.xml
+Sitemap: https://escortshubjaipur.com/rss.xml
+Sitemap: https://escortshubjaipur.com/atom.xml
+
+# LLM Knowledge Graph & Discovery:
+# https://escortshubjaipur.com/llms.txt
+# https://escortshubjaipur.com/llms-full.txt

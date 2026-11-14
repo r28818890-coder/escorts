@@ -4,7 +4,7 @@ import React from 'react';
 
 // --- 2. Spa Data ---
 import { PAGES_CONTENT } from '@/pages/serviceContent';
-import { JAIPUR_LOCATIONS } from '@/config/site';
+import { NOIDA_LOCATIONS } from '@/config/site';
 import { BLOG_POSTS } from '@/pages/Insights';
 
 import { checkAndRunAutoBlogScheduler } from '@/services/autoBlogScheduler';
@@ -77,12 +77,12 @@ const KnowledgeBase: React.FC = () => {
     >
       {/* PART 1: MAIN PAGES METADATA */}
       <div data-page="Home Page">
-        <h2>Jaipur Spa - Luxury Thai Spa in Jaipur</h2>
-        <p>Open 24 Hours. Certified Therapists. Sindhi Camp, Jaipur.</p>
+        <h2>Escorts Hub Noida - Verified VIP Companions & Escorts</h2>
+        <p>Open 24 Hours. Sector 18, Noida & NCR.</p>
       </div>
       <div data-page="Contact Us">
-        <h2>Contact Jaipur Spa</h2>
-        <p>Phone: +91 7357678356 | WhatsApp: +91 7357678349 | Sindhi Camp, Jaipur</p>
+        <h2>Contact Escorts Hub Noida</h2>
+        <p>Phone: +91 95214 13060 | WhatsApp: +91 95214 13060 | Sector 18, Noida</p>
       </div>
 
       {/* PART 2: SERVICE CONTENT COMPONENT */}
@@ -100,10 +100,10 @@ const KnowledgeBase: React.FC = () => {
 
       <div data-page="Local Pages">
         <h2>Local Pages</h2>
-        {JAIPUR_LOCATIONS.map(location => (
+        {NOIDA_LOCATIONS.map(location => (
           <div key={location.slug} className="mb-6">
             <h3 className="text-lg font-bold text-white mb-2">{location.area}</h3>
-            <p>{location.distance} from Jaipur Spa — {location.landmark}</p>
+            <p>{location.distance} from Sector 18 Noida — {location.landmark}</p>
           </div>
         ))}
       </div>

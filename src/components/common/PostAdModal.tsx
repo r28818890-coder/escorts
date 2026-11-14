@@ -13,7 +13,8 @@ import {
   Layers,
   Camera
 } from 'lucide-react';
-import { PORTAL_CATEGORIES, JAIPUR_LOCALITIES, ClassifiedAd } from '@/config/portalData';
+import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, JAIPUR_LOCALITIES, ClassifiedAd } from '@/config/portalData';
+import { BRAND, CONTACT } from '@/config/site';
 
 interface PostAdModalProps {
   isOpen: boolean;
@@ -21,16 +22,28 @@ interface PostAdModalProps {
   onAdSubmitted?: (newAd: ClassifiedAd) => void;
 }
 
+interface AdFormData {
+  title: string;
+  categoryId: string;
+  localitySlug: string;
+  phone: string;
+  whatsapp: string;
+  services: string;
+  description: string;
+  age: string;
+  photoUrl: string;
+}
+
 export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdSubmitted }) => {
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<AdFormData>({
     title: '',
     categoryId: 'call-girls',
-    localitySlug: 'vaishali-nagar',
-    phone: '7357678356',
-    whatsapp: '917357678356',
+    localitySlug: 'sector-18',
+    phone: CONTACT.phone,
+    whatsapp: CONTACT.whatsapp1,
     services: 'Hotel Outcall, Private In-Call, Thai Massage, Dinner Date',
-    description: 'Verified independent model available for pleasant companionship and relaxing meetings in Jaipur. Real photos and prompt WhatsApp response.',
+    description: 'Verified independent model available for pleasant companionship and relaxing meetings in Noida & NCR. Real photos and prompt WhatsApp response.',
     age: '23',
     photoUrl: '/images/model_1.jpg',
   });
@@ -66,12 +79,12 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
       slug: safeSlug,
       categoryId: formData.categoryId,
       categorySlug: formData.categoryId,
-      locality: matchedLocality?.name || 'Vaishali Nagar',
+      locality: matchedLocality?.name || 'Sector 18 Noida',
       localitySlug: formData.localitySlug,
-      city: 'Jaipur',
+      city: 'Noida',
       age: parseInt(formData.age) || 23,
-      phone: formData.phone.trim() || '7357678356',
-      whatsapp: (formData.whatsapp || formData.phone || '917357678356').replace(/\D/g, ''),
+      phone: formData.phone.trim() || CONTACT.phone,
+      whatsapp: (formData.whatsapp || formData.phone || CONTACT.whatsapp1).replace(/\D/g, ''),
       images: [formData.photoUrl || '/images/model_1.jpg'],
       isVerified: true,
       isVip: true,
@@ -79,16 +92,16 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
       rating: 5.0,
       reviewsCount: 1,
       services: formData.services.split(',').map((s) => s.trim()).filter(Boolean),
-      description: formData.description.trim() || '100% Verified ad posted live on Jaipur Escorts Club Portal.',
+      description: formData.description.trim() || `100% Verified ad posted live on ${BRAND.name} Portal.`,
       postedAt: 'Just now',
       views: 1,
     };
 
     // Save to LocalStorage
     try {
-      const stored = JSON.parse(localStorage.getItem('jaipur_user_ads') || '[]');
+      const stored = JSON.parse(localStorage.getItem('noida_user_ads') || localStorage.getItem('jaipur_user_ads') || '[]');
       stored.unshift(newAd);
-      localStorage.setItem('jaipur_user_ads', JSON.stringify(stored));
+      localStorage.setItem('noida_user_ads', JSON.stringify(stored));
     } catch (err) {
       console.error(err);
     }
@@ -316,7 +329,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
                   </label>
                   <input
                     type="tel"
-                    placeholder="e.g. 7357678356"
+                    placeholder="e.g. 9521413060"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full bg-[#171717] border border-[#2a2a2a] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:border-rose-500 focus:outline-none"
@@ -329,7 +342,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
                   </label>
                   <input
                     type="tel"
-                    placeholder="e.g. 917357678356"
+                    placeholder="e.g. 919521413060"
                     value={formData.whatsapp}
                     onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
                     className="w-full bg-[#171717] border border-[#2a2a2a] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:border-rose-500 focus:outline-none"

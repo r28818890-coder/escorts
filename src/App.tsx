@@ -6,7 +6,6 @@ import Header from '@/components/layout/Header';
 import NewsFooter from '@/components/layout/NewsFooter';
 import WhatsAppButton from '@/components/layout/WhatsAppButton';
 import WatermarkBackground from '@/components/common/WatermarkBackground';
-import SEO from '@/components/common/SEO';
 import ErrorBoundary from '@/components/common/ErrorBoundary';
 import LocationTracker, { LocationData } from '@/components/common/LocationTracker';
 
@@ -27,6 +26,7 @@ import AdminNotificationPanel from '@/pages/AdminNotificationPanel';
 import ServicePage from '@/pages/ServicePage';
 import CityLanding from '@/pages/CityLanding';
 import NotFoundPage from '@/pages/NotFoundPage';
+import { PAGES_CONTENT } from '@/pages/serviceContent';
 
 import { secureAPI } from '@/services/api';
 import { trackVisitorAndNotifyAdmin } from '@/services/VisitorPushNotifier';
@@ -85,7 +85,6 @@ const AppContent: React.FC = () => {
     <ErrorBoundary>
       <div className="min-h-screen bg-[#f8fafc] text-[#0f172a] font-sans antialiased relative">
         <ScrollToTop lenis={lenisRef.current} />
-        <SEO />
         <LocationTracker onLocationFound={handleLocationFound} />
 
         {/* Stable Fixed Background Watermark across all pages */}
@@ -106,6 +105,7 @@ const AppContent: React.FC = () => {
 
               {/* Portal Directory & Guides */}
               <Route path="/safety-guide" element={<SafetyGuidePage />} />
+              <Route path="/noida-areas" element={<JaipurAreasPage />} />
               <Route path="/jaipur-areas" element={<JaipurAreasPage />} />
 
               {/* Category & Locality Classifieds Routes */}
@@ -120,9 +120,9 @@ const AppContent: React.FC = () => {
               <Route path="/faq" element={<FaqPage />} />
               <Route path="/blog" element={<InsightsPage />} />
               <Route path="/blog/:id" element={<PostDetail />} />
-              <Route path="/privacy" element={<ServiceLegalPage />} />
-              <Route path="/terms" element={<ServiceLegalPage />} />
-              <Route path="/refund" element={<ServiceLegalPage />} />
+              <Route path="/privacy" element={<ServiceLegalPage data={PAGES_CONTENT.privacy} />} />
+              <Route path="/terms" element={<ServiceLegalPage data={PAGES_CONTENT.terms} />} />
+              <Route path="/refund" element={<ServiceLegalPage data={PAGES_CONTENT.refund} />} />
 
               {/* Protected Admin */}
               <Route path="/admin" element={<AdminNotificationPanel />} />

@@ -1,10 +1,10 @@
-{
-  "name": "Jaipur Escorts Club - Verified Escorts & VIP Models",
-  "short_name": "JaipurEscorts",
+﻿{
+  "name": "Escorts Hub Jaipur - Verified Escorts & VIP Models",
+  "short_name": "EscortsHub",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#050505",
-  "theme_color": "#0d0d0d",
+  "background_color": "#fffaf0",
+  "theme_color": "#b8872f",
   "description": "Verified VIP escorts, call girls, and luxury companions directory in Jaipur, Rajasthan.",
   "icons": [
     {
@@ -21,3 +21,4 @@
     }
   ]
 }
+

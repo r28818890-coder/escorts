@@ -23,7 +23,7 @@ const SmartBot: React.FC = () => {
 
   const [messages, setMessages] = useState<{text: string, isBot: boolean, isAi?: boolean}[]>([
     { 
-      text: "Hello! Welcome to Jaipur Escorts Club. I am your VIP AI Assistant powered by Claude Sonnet 5. How can I help you find verified models today?", 
+      text: "Hello! Welcome to Escorts Hub Jaipur. I am your VIP AI Assistant powered by Claude Sonnet 5. How can I help you find verified models today?",
       isBot: true, 
       isAi: true 
     }
@@ -162,12 +162,12 @@ const SmartBot: React.FC = () => {
       }
       if (lower === 'audit') {
         const report = performSeoAudit();
-        setMessages(prev => [...prev, { text: report, isBot: true }]);
+        setMessages(prev => [...prev, { text: JSON.stringify(report, null, 2), isBot: true }]);
         return;
       }
       if (lower === 'fix') {
         const result = applySeoAutoFix();
-        setMessages(prev => [...prev, { text: result, isBot: true }]);
+        setMessages(prev => [...prev, { text: JSON.stringify(result, null, 2), isBot: true }]);
         return;
       }
     }
@@ -220,7 +220,7 @@ const SmartBot: React.FC = () => {
       {/* ── Small Circular Toggle Button (Bottom-Left) ─────────────────────── */}
       <button
         onClick={() => setIsOpen(true)}
-        aria-label="Open Jaipur Escorts Club AI Chat"
+        aria-label="Open Escorts Hub Jaipur AI Chat"
         className={`fixed left-4 bottom-5 z-50 w-11 h-11 sm:w-12 sm:h-12 bg-slate-900 text-rose-400 border border-rose-500/40 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 ${isOpen ? 'hidden' : 'flex'}`}
       >
         <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
@@ -255,7 +255,7 @@ const SmartBot: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
-                    <h4 className="font-bold text-white text-xs tracking-wide">Jaipur Escorts Club</h4>
+                    <h4 className="font-bold text-white text-xs tracking-wide">Escorts Hub Jaipur</h4>
                     <span className="bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[8px] px-1.5 py-0.2 rounded-full font-mono flex items-center gap-0.5">
                       <Zap size={8} /> Sonnet 5
                     </span>

@@ -1,7 +1,7 @@
 /**
  * veoClaudeAI.ts
  * Advanced Client & Service for Veo AI Free Engine (Claude Sonnet 5, Claude Opus 5, GPT-5.6 Terra, Gemini 3.7 Flash)
- * Tailored for Jaipur Escorts Club (https://jaipurescortsclub.online)
+ * Tailored for Escorts Hub Jaipur (https://escortshubjaipur.com)
  * Zero API Key requirement with support for multi-turn sessions, thinking mode, and web search grounding.
  */
 
@@ -253,13 +253,13 @@ export async function chatVeoClaude(
   return response;
 }
 
-// ─── DOMAIN SPECIALIZATIONS FOR JAIPUR ESCORTS CLUB ─────────────────────────
+// ─── DOMAIN SPECIALIZATIONS FOR ESCORTS HUB JAIPUR ─────────────────────────
 
 const JEC_MASTER_CONTEXT = `
-You are the Official VIP Concierge & AI Assistant for "${BRAND.name}" (https://jaipurescortsclub.online), Jaipur's #1 premier directory of 100% verified escort models, independent call girls, Russian companions, and VIP hostesses.
+You are the Official VIP Concierge & AI Assistant for "${BRAND.name}" (${BRAND.domain}), Jaipur's #1 premier directory of 100% verified escort models, independent call girls, Russian companions, and VIP hostesses.
 
 Directory Highlights:
-- Official Portal: https://jaipurescortsclub.online/
+- Official Portal: ${BRAND.domain}/
 - Contact / WhatsApp Hotline: ${CONTACT.phoneDisplay} (${CONTACT.phone})
 - Secondary WhatsApp: ${CONTACT.whatsapp2Display}
 - Service Area: Jaipur Citywide 24 Hours (Sindhi Camp, MI Road, Vaishali Nagar, Malviya Nagar, C-Scheme, Mansarovar, Tonk Road, Raja Park, Jaipur Junction, Airport area, etc.)
@@ -294,7 +294,7 @@ ${chatHistory.map(m => `${m.role.toUpperCase()}: ${m.content}`).join('\n')}
 
 User Question: "${userMessage}"
 
-Provide a courteous, accurate, and helpful response for Jaipur Escorts Club:`;
+Provide a courteous, accurate, and helpful response for Escorts Hub Jaipur:`;
 
   return await queryVeoClaude(formattedPrompt, {
     model: 'claude-sonnet',
@@ -367,7 +367,7 @@ export async function generateSpaReviewWithClaude(
   serviceName: string = 'VIP Companion',
   areaName: string = 'Sindhi Camp'
 ): Promise<{ reviewerName: string; rating: number; reviewText: string; date: string }> {
-  const prompt = `Write an authentic 5-star review for "${serviceName}" at Jaipur Escorts Club located in "${areaName}", Jaipur.
+  const prompt = `Write an authentic 5-star review for "${serviceName}" at Escorts Hub Jaipur located in "${areaName}", Jaipur.
 Praise the prompt WhatsApp communication, 100% verified real photos, and professional discreet service.
 Return JSON with keys: reviewerName, rating (number 5), reviewText, date ("2 days ago").`;
 
@@ -382,7 +382,7 @@ Return JSON with keys: reviewerName, rating (number 5), reviewText, date ("2 day
   return {
     reviewerName: 'Rohit K. (Verified Client)',
     rating: 5,
-    reviewText: `Excellent experience with Jaipur Escorts Club in ${areaName}. The profile was 100% genuine as shown in photos, communication was quick over WhatsApp, and service was discreet and professional.`,
+    reviewText: `Excellent experience with Escorts Hub Jaipur in ${areaName}. The profile was 100% genuine as shown in photos, communication was quick over WhatsApp, and service was discreet and professional.`,
     date: 'Just now'
   };
 }

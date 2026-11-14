@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-labelledby="title desc">
+  <title id="title">ECJ — Escorts Hub Jaipur</title>
+  <desc id="desc">A black and gold luxury crest with a crown, laurel and ECJ monogram.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1a8"/>
+      <stop offset="0.3" stop-color="#e8b94f"/>
+      <stop offset="0.65" stop-color="#fff0a0"/>
+      <stop offset="1" stop-color="#b4771f"/>
+    </linearGradient>
+    <linearGradient id="goldSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff0a0"/>
+      <stop offset="1" stop-color="#c58a2b"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(18 18)" filter="url(#shadow)">
+    <circle cx="112" cy="112" r="94" fill="#101010" stroke="url(#gold)" stroke-width="4"/>
+    <circle cx="112" cy="112" r="82" fill="none" stroke="#a87827" stroke-width="1.5" stroke-dasharray="2 7"/>
+
+    <!-- Crown -->
+    <path d="M65 70 L72 38 L91 54 L112 29 L133 54 L152 38 L159 70 Z" fill="url(#goldSoft)" stroke="#7e5318" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M70 69 H154 L148 82 H76 Z" fill="url(#gold)" stroke="#7e5318" stroke-width="2"/>
+    <circle cx="72" cy="38" r="4" fill="#fff0a0"/><circle cx="112" cy="29" r="4" fill="#fff0a0"/><circle cx="152" cy="38" r="4" fill="#fff0a0"/>
+
+    <!-- Monogram -->
+    <text x="112" y="151" text-anchor="middle" fill="url(#gold)" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" letter-spacing="-10">ECJ</text>
+    <path d="M58 171 Q112 192 166 171" fill="none" stroke="url(#gold)" stroke-width="3"/>
+
+    <!-- Laurel -->
+    <path d="M49 178 Q24 148 34 105" fill="none" stroke="url(#goldSoft)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M175 178 Q200 148 190 105" fill="none" stroke="url(#goldSoft)" stroke-width="3" stroke-linecap="round"/>
+    <g fill="#d7a33e">
+      <ellipse cx="38" cy="151" rx="5" ry="12" transform="rotate(-42 38 151)"/><ellipse cx="32" cy="132" rx="5" ry="12" transform="rotate(-22 32 132)"/><ellipse cx="32" cy="112" rx="5" ry="12" transform="rotate(5 32 112)"/><ellipse cx="38" cy="94" rx="5" ry="12" transform="rotate(28 38 94)"/>
+      <ellipse cx="186" cy="151" rx="5" ry="12" transform="rotate(42 186 151)"/><ellipse cx="192" cy="132" rx="5" ry="12" transform="rotate(22 192 132)"/><ellipse cx="192" cy="112" rx="5" ry="12" transform="rotate(-5 192 112)"/><ellipse cx="186" cy="94" rx="5" ry="12" transform="rotate(-28 186 94)"/>
+    </g>
+  </g>
+
+  <g transform="translate(245 61)">
+    <text x="0" y="65" fill="#111827" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" letter-spacing="5">ECJ</text>
+    <rect x="3" y="83" width="370" height="2" fill="url(#gold)"/>
+    <text x="3" y="116" fill="#6b4a16" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="5">ESCORTS HUB JAIPUR</text>
+    <text x="4" y="148" fill="#64748b" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="3">VERIFIED • PRIVATE • PREMIUM</text>
+  </g>
+</svg>

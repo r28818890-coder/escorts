@@ -235,15 +235,15 @@ export const PAGES_CONTENT: Record<string, PageData> = {
     sections: [
       {
         title: 'Information Collection',
-        content: 'At Jaipur Spa, we collect basic information required to book your appointments, such as your name, phone number, and therapy preferences. This information is kept strictly confidential.',
+        content: 'At Escorts Hub Jaipur, we collect basic information required to coordinate your bookings, such as your contact preferences. This information is kept strictly confidential and never stored in permanent tracking databases.',
         icon: ShieldCheck
       },
       {
         title: 'Data Usage',
         content: [
-          'To confirm your appointment via WhatsApp or SMS',
-          'To personalize your therapy experience',
-          'To inform you of exclusive offers (only with your consent)'
+          'To confirm your appointment via direct WhatsApp coordination',
+          'To ensure safety protocols and zero-advance fraud prevention',
+          'To ensure strict 18+ adult age compliance'
         ],
         icon: FileText
       }
@@ -259,15 +259,15 @@ export const PAGES_CONTENT: Record<string, PageData> = {
     sections: [
       {
         title: 'Booking & Cancellation',
-        content: 'We recommend booking in advance to secure your preferred time and therapist. Walk-ins are subject to availability. If you need to cancel, please notify us at least 2 hours in advance.',
+        content: 'We operate under a strict zero-advance policy. You only settle payment directly upon meeting in person. If you need to reschedule or cancel, please notify the coordinator via WhatsApp at least 1 hour in advance.',
         icon: Clock
       },
       {
-        title: 'Spa Etiquette',
+        title: 'Etiquette & Compliance',
         content: [
-          'Please arrive 10 minutes prior to your scheduled time.',
-          'Jaipur Spa is a strictly professional wellness spa. Any inappropriate behavior will result in immediate termination of the session.',
-          'Please maintain silence in the therapy areas.'
+          'All users and advertisers must be strictly 18 years of age or older.',
+          'Escorts Hub Jaipur strictly enforces mutual respect and discretion. Any illegal or abusive behavior results in immediate blacklisting.',
+          'Zero advance payment guarantee: never transfer deposits or advance fees.'
         ],
         icon: Info
       }

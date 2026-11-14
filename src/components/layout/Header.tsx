@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown, Phone, MessageCircle, Sparkles, MapPin, Shield, Heart, UserCheck, Users, Flame } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import { PORTAL_CATEGORIES, JAIPUR_LOCALITIES } from '@/config/portalData';
-import { CONTACT } from '@/config/site';
+import { PORTAL_CATEGORIES, NOIDA_LOCALITIES } from '@/config/portalData';
+import { BRAND, CONTACT } from '@/config/site';
 import SecretAdminDashboard from '@/components/admin/SecretAdminDashboard';
 
 interface HeaderProps {
@@ -11,11 +11,11 @@ interface HeaderProps {
 
 const getCategoryIcon = (iconName: string) => {
   switch (iconName) {
-    case 'Heart': return <Heart size={16} className="text-rose-600" />;
+    case 'Heart': return <Heart size={16} className="text-amber-600" />;
     case 'UserCheck': return <UserCheck size={16} className="text-emerald-600" />;
     case 'Users': return <Users size={16} className="text-indigo-600" />;
     case 'Flame': return <Flame size={16} className="text-rose-600" />;
-    default: return <Sparkles size={16} className="text-indigo-600" />;
+    default: return <Sparkles size={16} className="text-amber-600" />;
   }
 };
 
@@ -67,29 +67,29 @@ export const Header: React.FC<HeaderProps> = () => {
 
   return (
     <>
-      {/* ── Top Compact City Announcement Bar ────────────────────────── */}
-      <div className="fixed top-0 left-0 right-0 z-[60] bg-slate-900 text-slate-200 h-6 sm:h-7 flex items-center border-b border-slate-800 text-[10px] sm:text-xs font-semibold">
+      {/* ── Top Announcement Bar: Noida & NCR ────────────────── */}
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-slate-900 text-slate-200 h-6 sm:h-7 flex items-center border-b border-amber-500/30 text-[10px] sm:text-xs font-semibold">
         <div className="max-w-7xl mx-auto w-full flex items-center justify-between px-3 md:px-6">
           <div className="flex items-center gap-2">
-            <span className="bg-rose-600 text-white text-[9px] font-black uppercase tracking-wider px-1.5 py-0.2 rounded flex items-center gap-1">
-              <MapPin size={10} /> Jaipur
+            <span className="bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 text-[9px] font-black uppercase tracking-wider px-2 py-0.2 rounded-full flex items-center gap-1 shadow-sm">
+              <MapPin size={10} /> Noida & NCR
             </span>
             <span className="text-slate-300 truncate max-w-[200px] sm:max-w-none">
-              100% Real Photo Verified Escorts & 24/7 Hotel Outcall
+              100% Real Photo Verified Escorts • 24/7 Hotel Outcall Visits
             </span>
           </div>
 
           <div className="flex items-center gap-3 text-slate-300">
-            <Link to="/safety-guide" className="hover:text-rose-400 flex items-center gap-1 transition-colors">
+            <Link to="/safety-guide" className="hover:text-amber-400 flex items-center gap-1 transition-colors">
               <Shield size={11} className="text-emerald-400" /> Safety Guide
             </Link>
             <span className="text-slate-600 hidden sm:inline">•</span>
-            <span className="text-emerald-400 font-bold hidden sm:inline">24/7 Outcall Available</span>
+            <span className="text-emerald-400 font-bold hidden sm:inline">24/7 Hotel Outcall</span>
           </div>
         </div>
       </div>
 
-      {/* ── Main Compact Sticky Header (Daylight Optimized) ─────────── */}
+      {/* ── Main Compact Sticky Header ─────────────────────────────── */}
       <header
         className={`fixed top-6 sm:top-7 left-0 right-0 z-50 transition-all duration-200 bg-white/95 backdrop-blur-md border-b ${
           isScrolled
@@ -99,38 +99,40 @@ export const Header: React.FC<HeaderProps> = () => {
       >
         <div className="max-w-7xl mx-auto w-full flex items-center justify-between gap-2 px-3 md:px-6">
           
-          {/* Logo & Brand Name (Compact Mobile & Desktop) */}
+          {/* Logo & Brand Name */}
           <Link
             to="/"
             onClick={handleLogoDoubleTap}
             className="flex items-center gap-2 z-50 group min-w-0 select-none cursor-pointer"
             title="Double-tap for Secret Admin Mode"
           >
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-rose-500/60 overflow-hidden bg-slate-900 p-0.5 group-hover:scale-105 transition-transform shrink-0 shadow-sm">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-amber-500/80 overflow-hidden bg-slate-950 p-0.5 group-hover:scale-105 transition-transform shrink-0 shadow-sm">
               <img
-                src="/jaipur_escorts_club_logo.jpg"
-                alt="Jaipur Escorts Club"
+                src="/ecj-mark.svg"
+                alt="Escorts Hub Noida logo"
+                width="36"
+                height="36"
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
             <div className="flex flex-col min-w-0">
               <div className="flex items-center gap-1">
-                <span className="font-black text-slate-900 tracking-tight text-sm sm:text-base leading-none group-hover:text-rose-600 transition-colors truncate">
-                  JAIPUR ESCORTS CLUB
+                <span className="font-black text-slate-900 tracking-tight text-sm sm:text-base leading-none group-hover:text-amber-600 transition-colors truncate">
+                  Escorts Hub Noida
                 </span>
                 <span className="bg-rose-600 text-white text-[8px] font-black uppercase px-1 py-0.2 rounded shrink-0">
                   18+
                 </span>
               </div>
               <span className="text-[8px] sm:text-[9px] font-bold tracking-widest text-slate-500 uppercase mt-0.5 flex items-center gap-1">
-                <MapPin size={9} className="text-rose-500 shrink-0" /> VIP COMPANIONS • JAIPUR
+                <MapPin size={9} className="text-amber-600 shrink-0" /> NOIDA & NCR VIP COMPANIONS
               </span>
             </div>
           </Link>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-1 text-slate-700 font-semibold text-xs tracking-wide">
-            <Link to="/" className="hover:text-rose-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+            <Link to="/" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Home
             </Link>
 
@@ -140,9 +142,9 @@ export const Header: React.FC<HeaderProps> = () => {
               onMouseEnter={() => setCategoriesOpen(true)}
               onMouseLeave={() => setCategoriesOpen(false)}
             >
-              <button className="hover:text-rose-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 flex items-center gap-1 transition-colors cursor-pointer">
+              <button className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 flex items-center gap-1 transition-colors cursor-pointer">
                 <span>Categories</span>
-                <ChevronDown size={14} className={`transition-transform duration-200 ${categoriesOpen ? 'rotate-180 text-rose-600' : ''}`} />
+                <ChevronDown size={14} className={`transition-transform duration-200 ${categoriesOpen ? 'rotate-180 text-amber-600' : ''}`} />
               </button>
 
               {categoriesOpen && (
@@ -151,7 +153,7 @@ export const Header: React.FC<HeaderProps> = () => {
                     <Link
                       key={c.id}
                       to={`/${c.slug}`}
-                      className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-slate-800 hover:bg-rose-50 hover:text-rose-700 transition-colors"
+                      className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-slate-800 hover:bg-amber-50 hover:text-amber-800 transition-colors"
                       onClick={() => setCategoriesOpen(false)}
                     >
                       <div className="w-6 h-6 rounded-md bg-slate-100 flex items-center justify-center">
@@ -167,32 +169,35 @@ export const Header: React.FC<HeaderProps> = () => {
               )}
             </div>
 
-            {/* Jaipur Areas Dropdown */}
+            {/* Noida & NCR Areas Dropdown */}
             <div
               className="relative"
               onMouseEnter={() => setLocalitiesOpen(true)}
               onMouseLeave={() => setLocalitiesOpen(false)}
             >
-              <button className="hover:text-rose-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 flex items-center gap-1 transition-colors cursor-pointer">
-                <span>Jaipur Areas</span>
-                <ChevronDown size={14} className={`transition-transform duration-200 ${localitiesOpen ? 'rotate-180 text-rose-600' : ''}`} />
+              <button className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 flex items-center gap-1 transition-colors cursor-pointer">
+                <span>Noida & NCR Areas</span>
+                <ChevronDown size={14} className={`transition-transform duration-200 ${localitiesOpen ? 'rotate-180 text-amber-600' : ''}`} />
               </button>
 
               {localitiesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-60 bg-white rounded-xl shadow-xl border border-slate-200 p-2 max-h-80 overflow-y-auto z-50">
-                  <div className="px-3 py-1.5 text-[10px] font-black text-rose-600 uppercase tracking-wider border-b border-slate-100 flex items-center gap-1">
-                    <MapPin size={11} /> 20 Jaipur Localities
+                <div className="absolute top-full left-0 mt-1 w-72 bg-white rounded-xl shadow-xl border border-slate-200 p-2 max-h-80 overflow-y-auto z-50">
+                  <div className="px-3 py-1.5 text-[10px] font-black text-amber-700 uppercase tracking-wider border-b border-slate-100 flex items-center gap-1">
+                    <MapPin size={11} /> 18 Localities in Noida & NCR
                   </div>
                   <div className="py-1 space-y-0.5">
-                    {JAIPUR_LOCALITIES.map((loc) => (
+                    {NOIDA_LOCALITIES.map((loc) => (
                       <Link
                         key={loc.id}
                         to={`/call-girls/${loc.slug}`}
-                        className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs text-slate-700 hover:bg-rose-50 hover:text-rose-700 transition-colors"
+                        className="flex items-center justify-between px-3 py-1.5 rounded-lg text-xs text-slate-700 hover:bg-amber-50 hover:text-amber-800 transition-colors"
                         onClick={() => setLocalitiesOpen(false)}
                       >
-                        <MapPin size={11} className="text-rose-500" />
-                        <span>{loc.name}</span>
+                        <div className="flex items-center gap-1.5">
+                          <MapPin size={11} className="text-amber-600 shrink-0" />
+                          <span>{loc.name}</span>
+                        </div>
+                        <span className="text-[9px] text-slate-400 font-normal">{loc.zone}</span>
                       </Link>
                     ))}
                   </div>
@@ -200,13 +205,13 @@ export const Header: React.FC<HeaderProps> = () => {
               )}
             </div>
 
-            <Link to="/call-girls" className="hover:text-rose-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+            <Link to="/call-girls" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Call Girls
             </Link>
-            <Link to="/massages" className="hover:text-rose-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+            <Link to="/massages" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Massages
             </Link>
-            <Link to="/adult-meetings" className="hover:text-rose-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+            <Link to="/adult-meetings" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Adult Meetings
             </Link>
           </nav>
@@ -214,7 +219,7 @@ export const Header: React.FC<HeaderProps> = () => {
           {/* Action Buttons: WhatsApp & Mobile Menu Trigger */}
           <div className="flex items-center gap-2">
             <a
-              href={`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent('Hello! I am inquiring about verified VIP escorts in Jaipur.')}`}
+              href={`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent('Hello! I am inquiring about verified VIP escorts in Noida & NCR.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full flex items-center gap-1.5 font-bold text-xs uppercase tracking-wide transition-all shadow-sm hover:scale-105 active:scale-95"
@@ -246,7 +251,7 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
       </header>
 
-      {/* ── Standalone High-Z-Index Mobile Drawer (Fixed Inset-0) ──── */}
+      {/* ── Mobile Drawer ─────────────────────────────────────────── */}
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex justify-end animate-fadeIn">
           {/* Backdrop click to close */}
@@ -258,10 +263,10 @@ export const Header: React.FC<HeaderProps> = () => {
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full overflow-hidden border border-rose-500/50 bg-slate-900 p-0.5">
-                    <img src="/jaipur_escorts_club_logo.jpg" alt="Logo" className="w-full h-full object-cover rounded-full" />
+                  <div className="w-8 h-8 rounded-full overflow-hidden border border-amber-500/70 bg-slate-900 p-0.5">
+                    <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width="32" height="32" className="w-full h-full object-cover rounded-full" />
                   </div>
-                  <span className="font-black text-sm text-slate-900">Jaipur Escorts Club</span>
+                  <span className="font-black text-sm text-slate-900">Escorts Hub Noida</span>
                 </div>
                 <button
                   type="button"
@@ -275,7 +280,7 @@ export const Header: React.FC<HeaderProps> = () => {
 
               {/* WhatsApp Quick CTA */}
               <a
-                href={`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent('Hello! I am inquiring about verified VIP companions in Jaipur.')}`}
+                href={`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent('Hello! I am inquiring about verified VIP companions in Noida & NCR.')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
@@ -295,7 +300,7 @@ export const Header: React.FC<HeaderProps> = () => {
                     key={c.id}
                     to={`/${c.slug}`}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center gap-3 p-2.5 rounded-xl text-slate-800 font-bold text-xs hover:bg-rose-50 hover:text-rose-700 transition-colors"
+                    className="flex items-center gap-3 p-2.5 rounded-xl text-slate-800 font-bold text-xs hover:bg-amber-50 hover:text-amber-800 transition-colors"
                   >
                     <div className="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center">
                       {getCategoryIcon(c.iconName)}
@@ -308,17 +313,17 @@ export const Header: React.FC<HeaderProps> = () => {
               {/* Top Localities */}
               <div className="space-y-2">
                 <div className="text-[11px] font-black text-slate-400 uppercase tracking-widest px-2">
-                  Top Jaipur Localities
+                  Noida & NCR Areas
                 </div>
                 <div className="grid grid-cols-2 gap-1.5">
-                  {JAIPUR_LOCALITIES.slice(0, 10).map((loc) => (
+                  {NOIDA_LOCALITIES.slice(0, 10).map((loc) => (
                     <Link
                       key={loc.id}
                       to={`/call-girls/${loc.slug}`}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="p-2 rounded-lg bg-slate-50 text-[11px] font-semibold text-slate-700 hover:bg-rose-50 hover:text-rose-700 border border-slate-200/80 text-center flex items-center justify-center gap-1 truncate"
+                      className="p-2 rounded-lg bg-slate-50 text-[11px] font-semibold text-slate-700 hover:bg-amber-50 hover:text-amber-800 border border-slate-200/80 text-center flex items-center justify-center gap-1 truncate"
                     >
-                      <MapPin size={10} className="text-rose-500 shrink-0" />
+                      <MapPin size={10} className="text-amber-600 shrink-0" />
                       <span className="truncate">{loc.name}</span>
                     </Link>
                   ))}
@@ -346,7 +351,7 @@ export const Header: React.FC<HeaderProps> = () => {
         </div>
       )}
 
-      {/* ── Secret Double-Tap Admin Dashboard Modal ── */}
+      {/* Secret Double-Tap Admin Dashboard Modal */}
       <SecretAdminDashboard
         isOpen={adminDashboardOpen}
         onClose={() => setAdminDashboardOpen(false)}

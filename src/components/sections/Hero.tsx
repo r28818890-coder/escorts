@@ -1,6 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { Phone, MessageCircle, Sparkles, CheckCircle2, Star, Users, Clock } from 'lucide-react';
+import { CONTACT } from '@/config/site';
 
 const heroStats = [
   { label: 'Happy Guests', value: '15,000+', icon: Users },
@@ -9,7 +10,7 @@ const heroStats = [
 ];
 
 const Hero: React.FC = () => {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -20,7 +21,7 @@ const Hero: React.FC = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
   };
@@ -72,11 +73,11 @@ const Hero: React.FC = () => {
 
           {/* CTA Buttons */}
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto px-4 sm:px-0">
-            <a href="tel:+917357678356" className="px-5 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#be123c] to-[#e11d48] text-black rounded-xl font-bold text-xs md:text-sm tracking-wider flex items-center justify-center gap-2 uppercase shadow-md transition transform hover:scale-105">
+            <a href={CONTACT.phoneHref} className="btn-modern btn-modern-primary px-5 py-3 md:px-8 md:py-4 text-xs md:text-sm uppercase">
               <Phone size={16} />
-              Call Now: 73576 78356
+              Call Now: {CONTACT.phoneDisplay}
             </a>
-            <a href="https://wa.me/917357678356?text=Hello%20Jaipur Spa%20SPA%2C%20I%20would%20like%20to%20book%20a%20spa%20appointment.%20Please%20share%20available%20slots." target="_blank" rel="noopener noreferrer" className="px-5 py-3 md:px-8 md:py-4 bg-[#25D366] text-white rounded-xl font-bold text-xs md:text-sm tracking-wider flex items-center justify-center gap-2 uppercase shadow-md transition transform hover:scale-105">
+            <a href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello ECJ, I would like to check availability.')} target="_blank" rel="noopener noreferrer" className="btn-modern px-5 py-3 md:px-8 md:py-4 bg-[#25D366] text-white text-xs md:text-sm uppercase">
               <MessageCircle size={16} />
               Book on WhatsApp
             </a>

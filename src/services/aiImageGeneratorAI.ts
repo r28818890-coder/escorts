@@ -14,8 +14,8 @@ export const generateSeoOptimizedImages = (): ImageSeoItem[] => {
   return [
     {
       id: 'img-1',
-      imageName: 'jaipur_escorts_club_logo.jpg',
-      url: '/jaipur_escorts_club_logo.jpg',
+      imageName: 'ecj-mark.svg',
+      url: '/ecj-mark.svg',
       altText: 'Jaipur Skokka VIP Escorts & Spa Luxury Emblem Jaipur',
       category: 'og',
     },

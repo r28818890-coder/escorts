@@ -1,6 +1,6 @@
 // ============================================================================
 // 50 DIVERSIFIED LIVE BACKLINKS GENERATOR (100% FOCUS: CALL GIRLS & ESCORTS SERVICE)
-// Target: https://jaipurescortsclub.online/call-girls
+// Target: https://escortshubjaipur.com/call-girls
 // Platforms: Graph.org (DA 91), TinyURL (DA 94), DPaste.com (DA 65), 
 //            Rentry.co (DA 68), CleanURI (DA 74), Paste.c-net.org (DA 58), Paste.rs (DA 55)
 // ============================================================================
@@ -11,10 +11,10 @@ const querystring = require('querystring');
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
-const PHONE = '+917357678356';
-const WHATSAPP_LINK = 'https://wa.me/917357678356';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
+const PHONE = '+919521413060';
+const WHATSAPP_LINK = 'https://wa.me/919521413060';
 
 const localities = [
   { name: 'Sindhi Camp', slug: 'sindhi-camp', landmark: 'Sindhi Camp Metro & Central Bus Station' },
@@ -277,7 +277,7 @@ async function publishTinyURL(targetUrl) {
 async function main() {
   console.log('════════════════════════════════════════════════════════════════');
   console.log('⚡ EXCLUSIVE CALL GIRLS & ESCORTS SERVICE BACKLINK GENERATOR ⚡');
-  console.log('Target: https://jaipurescortsclub.online/call-girls/*');
+  console.log('Target: https://escortshubjaipur.com/call-girls/*');
   console.log('════════════════════════════════════════════════════════════════\n');
 
   // Initialize Graph Token
@@ -385,7 +385,7 @@ async function main() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>50 Call Girls & Escorts Service Live Backlinks Matrix | Jaipur Escorts Club</title>
+  <title>50 Call Girls & Escorts Service Live Backlinks Matrix | Escorts Hub Jaipur</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans p-6">
@@ -393,7 +393,7 @@ async function main() {
     <div class="bg-gradient-to-r from-pink-600 via-purple-600 to-indigo-700 text-white rounded-2xl p-8 shadow-xl mb-8">
       <h1 class="text-3xl font-extrabold tracking-tight">50 Live Backlinks Ledger (Call Girls & Escorts Service)</h1>
       <p class="mt-2 text-pink-100 text-base">
-        100% Pure SEO-Optimized Network across 7 High-DA Distinct Platforms for <strong>https://jaipurescortsclub.online/call-girls</strong>
+        100% Pure SEO-Optimized Network across 7 High-DA Distinct Platforms for <strong>https://escortshubjaipur.com/call-girls</strong>
       </p>
       <div class="mt-4 flex flex-wrap gap-3">
         <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-lg text-sm font-semibold">Total Verified: ${successfulPosts.length} Links</span>

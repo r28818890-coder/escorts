@@ -34,7 +34,7 @@ const InsightsPage: React.FC = () => {
             <BookOpen size={14} className="text-rose-600" /> VIP Journal & City Guides
           </span>
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
-            Jaipur Escorts Club <span className="text-rose-600">Guides</span>
+            Escorts Hub Jaipur <span className="text-rose-600">Guides</span>
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Authentic city insights, hotel outcall recommendations, safety advice, and companion guides across Jaipur.

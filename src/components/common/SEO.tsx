@@ -16,7 +16,7 @@ interface SEOProps {
   noIndex?: boolean;
 }
 
-const defaultImage = 'https://jaipurescortsclub.online/jaipur_escorts_club_logo.jpg';
+const defaultImage = BRAND.ogImage;
 
 const SEO: React.FC<SEOProps> = ({
   title,
@@ -30,13 +30,13 @@ const SEO: React.FC<SEOProps> = ({
   noIndex = false,
 }) => {
   const location = useLocation();
-  const canonical = url || `https://jaipurescortsclub.online${location.pathname}`;
+  const canonical = url || `${BRAND.domain}${(location.pathname.endsWith("/") ? location.pathname : location.pathname + "/")}`;
   const fullTitle = title
-    ? `${title} | Jaipur Escorts Club`
-    : 'Jaipur Escorts Club | Verified Call Girls & VIP Escort Service in Jaipur (24/7)';
+    ? (title.includes(BRAND.name) ? title : `${title} | ${BRAND.name}`)
+    : `${BRAND.name} | Verified Call Girls & VIP Escort Service in Noida & NCR (24/7)`;
   const fullDesc =
     description ||
-    'Jaipur Escorts Club — Premier verified directory for independent escorts, VIP models, hotel outcall companions, and luxury spa in Jaipur. 24/7 WhatsApp booking.';
+    `${BRAND.name} — Premier verified directory for independent escorts, VIP models, hotel outcall companions, and luxury spa in Noida & NCR. 24/7 WhatsApp booking.`;
 
   useEffect(() => {
     // ── Title ─────────────────────────────────────────────────
@@ -95,7 +95,7 @@ const SEO: React.FC<SEOProps> = ({
     if (breadcrumbs && breadcrumbs.length > 0) {
       removeSchema('seo-breadcrumb-schema');
       const bcList = [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://jaipurescortsclub.online/' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${BRAND.domain}/` },
         ...breadcrumbs.map((b, i) => ({
           '@type': 'ListItem',
           position: i + 2,

@@ -17,7 +17,7 @@ const GeoSeoEngine: React.FC = () => {
     };
 
     setMeta('geo.region', 'IN-RJ');
-    setMeta('geo.placename', 'Sindhi Camp, Jaipur, Rajasthan, India');
+    setMeta('geo.placename', 'Pink City, Jaipur, Rajasthan, India');
     setMeta('geo.position', '26.9239;75.8016');
     setMeta('ICBM', '26.9239, 75.8016');
   }, []);

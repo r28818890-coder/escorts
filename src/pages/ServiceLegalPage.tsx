@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { PageData, PageId } from '@/types';
 import { ArrowLeft, Shield, FileText } from 'lucide-react';
+import SEO from '@/components/common/SEO';
+import { BRAND } from '@/config/site';
 
 interface LegalPageProps {
   data: PageData;
@@ -14,6 +16,10 @@ const ServiceLegalPage: React.FC<LegalPageProps> = ({ data, onBack }) => {
 
   return (
     <div className="w-full font-body text-[#0f172a] bg-[#f8fafc] min-h-screen pb-24">
+      <SEO
+        title={`${data.title} | ${BRAND.name}`}
+        description={`${data.subtitle} Official policies and terms of service for ${BRAND.name}.`}
+      />
       {/* Hero Section */}
       <div className="pt-10 pb-12 px-4 bg-gradient-to-b from-slate-100 to-[#f8fafc] border-b border-slate-200 text-center">
         <div className="container mx-auto max-w-4xl relative z-10">

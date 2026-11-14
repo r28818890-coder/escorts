@@ -80,7 +80,7 @@ export const VisitorCookieManager: React.FC = () => {
   };
 
   const handleWhatsAppReturnOffer = () => {
-    const message = `Hello Jaipur Escorts Club! I am a returning visitor to your directory (Visit #${visitCount}). I want to inquire about verified companion availability.`;
+    const message = `Hello ${BRAND.name}! I am a returning visitor to your directory (Visit #${visitCount}). I want to inquire about verified companion availability in Noida & NCR.`;
     window.open(`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent(message)}`, '_blank');
     dismissWelcomePopup();
   };

@@ -41,7 +41,7 @@ export const AgeVerificationModal: React.FC = () => {
         <div className="bg-[#171717] rounded-xl p-4 mb-6 border border-[#2a2a2a] text-left text-xs sm:text-sm text-[#a3a3a3] space-y-2 leading-relaxed">
           <p className="flex items-start gap-2">
             <ShieldCheck size={16} className="text-rose-500 shrink-0 mt-0.5" />
-            <span>This website contains adult classifieds, wellness massages, and companion listings strictly for adults residing in or visiting <strong>Jaipur, Rajasthan</strong>.</span>
+            <span>This website contains adult classifieds, wellness massages, and companion listings strictly for adults residing in or visiting <strong>Noida & NCR (Uttar Pradesh)</strong>.</span>
           </p>
           <p className="flex items-start gap-2">
             <AlertTriangle size={16} className="text-rose-400 shrink-0 mt-0.5" />

@@ -1,6 +1,6 @@
 // ============================================================================
 // PILLAR 3: AUTOMATED OFF-PAGE AUTHORITY, WEB 2.0 SYNDICATION & PING ENGINE
-// Brand: Jaipur Escorts Club (https://jaipurescortsclub.online)
+// Brand: Escorts Hub Jaipur (https://escortshubjaipur.com)
 // ============================================================================
 
 const fs = require('fs');
@@ -8,10 +8,10 @@ const path = require('path');
 const https = require('https');
 const http = require('http');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND_NAME = 'Jaipur Escorts Club';
-const PHONE = '+917357678356';
-const WHATSAPP = '917357678356';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND_NAME = 'Escorts Hub Jaipur';
+const PHONE = '+919521413060';
+const WHATSAPP = '919521413060';
 const CITY = 'Jaipur, Rajasthan, India';
 const POSTAL_CODE = '302001';
 
@@ -144,7 +144,7 @@ function generateRssAndAtomFeeds() {
   <id>${DOMAIN}/</id>
   <author>
     <name>${BRAND_NAME}</name>
-    <email>info@jaipurescortsclub.online</email>
+    <email>info@escortshubjaipur.com</email>
   </author>
   ${atomEntries}
 </feed>`;
@@ -173,7 +173,7 @@ async function publishLiveWeb2Articles() {
 
   try {
     // 1. Create Telegra.ph Account
-    console.log('Creating Telegra.ph author session for Jaipur Escorts Club...');
+    console.log('Creating Telegra.ph author session for Escorts Hub Jaipur...');
     const accountRes = await requestPromise({
       hostname: 'api.graph.org',
       path: '/createAccount?short_name=JaipurClub&author_name=JaipurEscortsClub&author_url=' + encodeURIComponent(DOMAIN),
@@ -191,10 +191,10 @@ async function publishLiveWeb2Articles() {
     // 2. Define High Authority Backlink Articles
     const articlesToPublish = [
       {
-        title: 'Jaipur Escorts Club - Verified VIP Directory & Independent Models Guide 2026',
+        title: 'Escorts Hub Jaipur - Verified VIP Directory & Independent Models Guide 2026',
         nodes: [
-          { tag: 'p', children: ['Welcome to the official 2026 guide by ', { tag: 'a', attrs: { href: `${DOMAIN}/` }, children: ['Jaipur Escorts Club'] }, ', the premier verified portal for independent companions and VIP models in the Pink City.'] },
-          { tag: 'h3', children: ['Why Choose Verified Jaipur Escorts Club?'] },
+          { tag: 'p', children: ['Welcome to the official 2026 guide by ', { tag: 'a', attrs: { href: `${DOMAIN}/` }, children: ['Escorts Hub Jaipur'] }, ', the premier verified portal for independent companions and VIP models in the Pink City.'] },
+          { tag: 'h3', children: ['Why Choose Verified Escorts Hub Jaipur?'] },
           { tag: 'p', children: ['When visiting Jaipur for corporate events, luxury vacations, or weekend getaways, discovering verified, high-profile companions with genuine photo authentication ensures total peace of mind and discretion.'] },
           { tag: 'p', children: ['Explore our specialized regional hubs:'] },
           { tag: 'ul', children: [
@@ -204,7 +204,7 @@ async function publishLiveWeb2Articles() {
             { tag: 'li', children: [{ tag: 'a', attrs: { href: `${DOMAIN}/call-girls/malviya-nagar` }, children: ['Malviya Nagar Escorts near WTP'] }, ' - South Jaipur luxury hotel outcall.'] }
           ]},
           { tag: 'h3', children: ['Direct WhatsApp Confirmation'] },
-          { tag: 'p', children: ['Connect directly without middleman commissions via our verified portal at ', { tag: 'a', attrs: { href: `${DOMAIN}/` }, children: ['https://jaipurescortsclub.online'] }, ' or reach out on WhatsApp at +917357678356.'] }
+          { tag: 'p', children: ['Connect directly without middleman commissions via our verified portal at ', { tag: 'a', attrs: { href: `${DOMAIN}/` }, children: ['https://escortshubjaipur.com'] }, ' or reach out on WhatsApp at +919521413060.'] }
         ]
       },
       {
@@ -317,7 +317,7 @@ async function dispatchSearchEnginePings() {
     ];
 
     const indexNowPayload = JSON.stringify({
-      host: 'jaipurescortsclub.online',
+      host: 'escortshubjaipur.com',
       key: 'c454e865f7fd2cc5',
       keyLocation: `${DOMAIN}/googlec454e865f7fd2cc5.html`,
       urlList: urlList
@@ -374,7 +374,7 @@ function generateDirectoryCitations() {
     readyToPostTemplates: [
       {
         title: 'VIP 24/7 Verified Independent Escorts & Thai Spa in Jaipur - Real Photos',
-        body: `Welcome to ${BRAND_NAME} (https://jaipurescortsclub.online).
+        body: `Welcome to ${BRAND_NAME} (https://escortshubjaipur.com).
 Premier verified directory for luxury hotel outcall companions, college models, and soothing Thai & Swedish massage in Jaipur.
 Locations: Sindhi Camp, Vaishali Nagar, C-Scheme, Malviya Nagar, Airport Area.
 100% Genuine Photos & Verified Phone Authentication.

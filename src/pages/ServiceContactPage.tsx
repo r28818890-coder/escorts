@@ -32,6 +32,37 @@ Message: ${formData.message}`;
       <SEO 
         title={`Contact Us | ${BRAND.name}`} 
         description={`Get in touch with ${BRAND.name} for verified companion bookings, inquiries, and hotel outcall coordination.`} 
+        schema={[
+          {
+            '@type': 'ContactPage',
+            '@id': `${BRAND.domain}/contact#webpage`,
+            url: `${BRAND.domain}/contact`,
+            name: `Contact ${BRAND.name}`,
+            description: `Official 24/7 contact directory and concierge helpline for ${BRAND.name} in Noida & NCR.`,
+            mainEntity: {
+              '@type': 'LocalBusiness',
+              '@id': `${BRAND.domain}/#business`,
+              name: BRAND.name,
+              telephone: CONTACT.phoneDisplay,
+              email: CONTACT.email,
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: CONTACT.address,
+                addressLocality: 'Noida',
+                addressRegion: 'Uttar Pradesh',
+                postalCode: '201301',
+                addressCountry: 'IN',
+              },
+              contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: CONTACT.phoneDisplay,
+                contactType: 'customer service',
+                areaServed: 'IN',
+                availableLanguage: ['en', 'hi'],
+              },
+            },
+          },
+        ]}
       />
 
       {/* Hero */}

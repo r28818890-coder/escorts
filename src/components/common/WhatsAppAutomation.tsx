@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Phone, Send } from 'lucide-react';
 import { secureAPI } from '@/services/api';
+import { CONTACT } from '@/config/site';
 
 interface WhatsAppAutomationProps {
   phoneNumber?: string;
@@ -9,7 +10,7 @@ interface WhatsAppAutomationProps {
 }
 
 const WhatsAppAutomation: React.FC<WhatsAppAutomationProps> = ({
-  phoneNumber = '917357678356',
+  phoneNumber = CONTACT.whatsapp1,
   message = 'Hi! I am interested in booking a spa appointment at Jaipur Spa Jaipur.',
   autoTrigger = true
 }) => {

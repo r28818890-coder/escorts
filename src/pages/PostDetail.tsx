@@ -32,6 +32,32 @@ const PostDetail: React.FC = () => {
         title={`${post.metaTitle || post.title} | ${BRAND.name}`}
         description={post.metaDescription || post.excerpt}
         url={currentUrl}
+        type="article"
+        schema={{
+          '@type': 'Article',
+          '@id': `${BRAND.domain}/blog/${post.slug}#article`,
+          headline: post.title,
+          description: post.metaDescription || post.excerpt,
+          image: post.image || BRAND.ogImage,
+          datePublished: post.date,
+          author: {
+            '@type': 'Organization',
+            name: BRAND.name,
+            url: BRAND.domain,
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: BRAND.name,
+            logo: {
+              '@type': 'ImageObject',
+              url: `${BRAND.domain}/ecj-logo.svg`,
+            },
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `${BRAND.domain}/blog/${post.slug}`,
+          },
+        }}
       />
 
       {/* Hero Section */}
@@ -106,7 +132,7 @@ const PostDetail: React.FC = () => {
                 <p className="text-xs sm:text-sm text-rose-100 font-medium">100% photo-verified independent models & 24/7 hotel outcall visits.</p>
               </div>
               <a
-                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Jaipur Escorts Club, I read your guide "${post.title}" and would like to inquire about verified companion availability.`)}
+                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Jaipur, I read your guide "${post.title}" and would like to inquire about verified companion availability.`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 px-6 py-3 bg-white text-slate-950 font-bold text-xs rounded-full hover:bg-slate-100 transition-colors flex items-center gap-2 shadow-sm"

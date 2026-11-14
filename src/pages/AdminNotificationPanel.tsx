@@ -45,7 +45,7 @@ export const AdminNotificationPanel: React.FC = () => {
 
   // 1-Click Blog Generator
   const [blogTopic, setBlogTopic] = useState<string>('Jaipur VIP Escorts Booking Guide & Verified Models');
-  const [blogKeyword, setBlogKeyword] = useState<string>('jaipur escorts club');
+  const [blogKeyword, setBlogKeyword] = useState<string>('escorts hub jaipur');
   const [blogStatus, setBlogStatus] = useState<string>('');
   const [isBlogLoading, setIsBlogLoading] = useState<boolean>(false);
 
@@ -103,8 +103,8 @@ export const AdminNotificationPanel: React.FC = () => {
       localStorage.setItem('jaipur_spa_push_enabled', 'true');
 
       new Notification('Alerts Active!', {
-        body: 'You will now receive instant push alerts whenever a new visitor visits Jaipur Escorts Club.',
-        icon: '/jaipur_escorts_club_logo.jpg'
+        body: 'You will now receive instant push alerts whenever a new visitor visits Escorts Hub Jaipur.',
+        icon: '/ecj-mark.svg'
       });
     } else {
       alert('Notification permission denied. Please allow notifications in browser settings.');

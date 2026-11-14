@@ -44,7 +44,7 @@ async function run() {
 
   // 3. DPaste.com
   console.log('--- Testing DPaste.com ---');
-  const dpData = querystring.stringify({ content: 'https://jaipurescortsclub.online/call-girls/c-scheme', syntax: 'text', expiry_days: '30' });
+  const dpData = querystring.stringify({ content: 'https://escortshubjaipur.com/call-girls/c-scheme', syntax: 'text', expiry_days: '30' });
   await testPost('DPaste.com', {
     hostname: 'dpaste.com',
     path: '/api/v2/',
@@ -54,7 +54,7 @@ async function run() {
 
   // 4. DPaste.org
   console.log('--- Testing DPaste.org ---');
-  const dpoData = querystring.stringify({ content: 'https://jaipurescortsclub.online/call-girls/sindhi-camp', title: 'Jaipur Escorts' });
+  const dpoData = querystring.stringify({ content: 'https://escortshubjaipur.com/call-girls/sindhi-camp', title: 'Jaipur Escorts' });
   await testPost('DPaste.org', {
     hostname: 'dpaste.org',
     path: '/api/',
@@ -64,7 +64,7 @@ async function run() {
 
   // 5. Paste.rs
   console.log('--- Testing Paste.rs ---');
-  const prsData = 'Jaipur Escorts: https://jaipurescortsclub.online/call-girls';
+  const prsData = 'Jaipur Escorts: https://escortshubjaipur.com/call-girls';
   await testPost('Paste.rs', {
     hostname: 'paste.rs',
     path: '/',
@@ -74,7 +74,7 @@ async function run() {
 
   // 6. Rentry.co
   console.log('--- Testing Rentry.co ---');
-  const rentryData = querystring.stringify({ text: '# Jaipur Escorts Club\nhttps://jaipurescortsclub.online' });
+  const rentryData = querystring.stringify({ text: '# Escorts Hub Jaipur\nhttps://escortshubjaipur.com' });
   await testPost('Rentry.co', {
     hostname: 'rentry.co',
     path: '/api/new',
@@ -85,7 +85,7 @@ async function run() {
   // 7. 0x0.st
   console.log('--- Testing 0x0.st ---');
   const boundary = '----WebKitFormBoundary7MA4YWxkTrZu0gW';
-  const post0x0 = `--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="jaipur_escorts.txt"\r\nContent-Type: text/plain\r\n\r\nhttps://jaipurescortsclub.online/call-girls\r\n--${boundary}--\r\n`;
+  const post0x0 = `--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="jaipur_escorts.txt"\r\nContent-Type: text/plain\r\n\r\nhttps://escortshubjaipur.com/call-girls\r\n--${boundary}--\r\n`;
   await testPost('0x0.st', {
     hostname: '0x0.st',
     path: '/',
@@ -95,7 +95,7 @@ async function run() {
 
   // 8. ix.io
   console.log('--- Testing ix.io ---');
-  const ixData = querystring.stringify({ 'f:1': 'https://jaipurescortsclub.online/call-girls' });
+  const ixData = querystring.stringify({ 'f:1': 'https://escortshubjaipur.com/call-girls' });
   await testPost('ix.io', {
     protocol: 'http:',
     hostname: 'ix.io',

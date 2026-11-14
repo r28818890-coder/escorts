@@ -10,7 +10,7 @@ interface State {
   error: Error | null;
 }
 
-export class ErrorBoundary extends (React.Component as any) {
+export class ErrorBoundary extends React.Component<Props, State> {
   state: State = {
     hasError: false,
     error: null,
@@ -26,7 +26,7 @@ export class ErrorBoundary extends (React.Component as any) {
 
   render() {
     const { hasError, error } = this.state as State;
-    const { children, fallback } = this.props as Props;
+    const { children, fallback } = this.props;
 
     if (hasError) {
       if (fallback) {

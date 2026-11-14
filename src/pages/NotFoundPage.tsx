@@ -7,7 +7,11 @@ import { BRAND } from '@/config/site';
 const NotFoundPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-[#f8fafc] text-slate-900 flex items-center justify-center px-4 font-body">
-      <SEO title={`Page Not Found | 404 - ${BRAND.name}`} description="The page you are looking for does not exist." />
+      <SEO
+        title={`Page Not Found | 404 - ${BRAND.name}`}
+        description="The page you are looking for does not exist."
+        noIndex={true}
+      />
       
       <div className="max-w-md w-full text-center relative z-10 p-8 rounded-3xl bg-white border border-slate-200 shadow-sm">
         <div className="w-16 h-16 rounded-full bg-rose-50 border border-rose-200 flex items-center justify-center mx-auto mb-4 text-rose-600">

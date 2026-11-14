@@ -1,6 +1,6 @@
 // ============================================================================
 // AUTOMATED 50 LIVE NO-OTP AUTHORITY BACKLINK PUBLISHER (DA 91+ HIGH PERFORMANCE)
-// Target: https://jaipurescortsclub.online
+// Target: https://escortshubjaipur.com
 // ============================================================================
 
 const https = require('https');
@@ -8,9 +8,9 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
-const PHONE = '+917357678356';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
+const PHONE = '+919521413060';
 
 const localities = [
   { name: 'Sindhi Camp', slug: 'sindhi-camp', landmark: 'Sindhi Camp Metro & Central Bus Stand' },
@@ -100,7 +100,7 @@ async function publishGraphArticle(token, title, loc, cat) {
         { tag: 'a', attrs: { href: `${DOMAIN}/call-girls/vaishali-nagar` }, children: ['Vaishali Nagar Models'] }, ', and ',
         { tag: 'a', attrs: { href: `${DOMAIN}/call-girls/malviya-nagar` }, children: ['Malviya Nagar Companions'] }, '.'
       ]},
-      { tag: 'p', children: [`Official Website: `, { tag: 'a', attrs: { href: DOMAIN }, children: ['https://jaipurescortsclub.online'] }, ` | WhatsApp: ${PHONE}`] }
+      { tag: 'p', children: [`Official Website: `, { tag: 'a', attrs: { href: DOMAIN }, children: ['https://escortshubjaipur.com'] }, ` | WhatsApp: ${PHONE}`] }
     ]),
     return_content: false
   });

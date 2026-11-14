@@ -3,8 +3,8 @@ const querystring = require('querystring');
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
 
 function makeRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
@@ -27,12 +27,12 @@ async function testMore() {
   try {
     console.log('5. Testing Paste.ee API...');
     const pasteEePayload = JSON.stringify({
-      description: 'Jaipur Escorts Club 2026 Directory',
+      description: 'Escorts Hub Jaipur 2026 Directory',
       sections: [
         {
           name: 'Official Directory Links',
           syntax: 'markdown',
-          contents: `# ${BRAND}\n\nVisit official portal: [${DOMAIN}](${DOMAIN})\n\nVerified independent call girls, VIP models, and Thai massage in Jaipur.\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [Vaishali Nagar Escorts](${DOMAIN}/call-girls/vaishali-nagar)\n\nWhatsApp: +917357678356`
+          contents: `# ${BRAND}\n\nVisit official portal: [${DOMAIN}](${DOMAIN})\n\nVerified independent call girls, VIP models, and Thai massage in Jaipur.\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [Vaishali Nagar Escorts](${DOMAIN}/call-girls/vaishali-nagar)\n\nWhatsApp: +919521413060`
         }
       ]
     });

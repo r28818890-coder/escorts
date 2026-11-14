@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a0410"/>
+      <stop offset="40%" stop-color="#3d0726"/>
+      <stop offset="70%" stop-color="#e31777"/>
+      <stop offset="100%" stop-color="#0a0106"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ff4b9b" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#e31777" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#fda085"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bgGrad)"/>
+  <rect width="1200" height="520" fill="url(#glow)"/>
+  <!-- Decorative Luxury Geometric Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5" fill="none">
+    <circle cx="600" cy="260" r="160"/>
+    <circle cx="600" cy="260" r="240"/>
+    <circle cx="600" cy="260" r="320"/>
+    <polygon points="600,60 800,260 600,460 400,260"/>
+    <line x1="0" y1="0" x2="1200" y2="520"/>
+    <line x1="1200" y1="0" x2="0" y2="520"/>
+  </g>
+  <!-- Brand Watermark V -->
+  <g fill="#ffffff" fill-opacity="0.06">
+    <path d="M600 120 L660 340 L620 340 L600 240 L580 340 L540 340 Z"/>
+  </g>
+  <!-- Sparkles -->
+  <g fill="#f6d365" opacity="0.8">
+    <polygon points="350,150 354,162 366,166 354,170 350,182 346,170 334,166 346,162"/>
+    <polygon points="850,140 853,150 863,153 853,156 850,166 847,156 837,153 847,150"/>
+    <polygon points="780,380 783,390 793,393 783,396 780,406 777,396 767,393 777,390"/>
+    <polygon points="420,390 423,400 433,403 423,406 420,416 417,406 407,403 417,400"/>
+  </g>
+  <text x="600" y="270" text-anchor="middle" font-family="'Jost', sans-serif" font-weight="800" font-size="64" fill="#ffffff" letter-spacing="12">VELOURA</text>
+  <text x="600" y="315" text-anchor="middle" font-family="'Open Sans', sans-serif" font-weight="600" font-size="18" fill="url(#gold)" letter-spacing="6">NOIDA VIP ESCORTS &amp; COMPANIONS</text>
+</svg>

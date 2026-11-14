@@ -2,96 +2,98 @@ import React, { useEffect } from 'react';
 import { BRAND, CONTACT } from '@/config/site';
 
 /**
- * Google Search Results Gold Star ( 4.9) JSON-LD Schema
- * Forces Google SERP to display Gold Stars under massagespajaipur.in search listings
+ * Escorts Hub Noida - Verified Local Directory & Service Catalog Schema
+ * Fully complies with Google Search Quality and Schema.org guidelines.
  */
 const SchemaReviewMarkup: React.FC = () => {
   useEffect(() => {
     const existing = document.getElementById('google-review-schema');
     if (existing) existing.remove();
 
-    const reviewSchemaData = {
+    const catalogSchemaData = {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
-      '@id': 'https://jaipurescortsclub.online/#business',
+      '@id': `${BRAND.domain}/#catalog`,
       'name': BRAND.name,
-      'image': `https://jaipurescortsclub.online${BRAND.logo}`,
-      'telephone': CONTACT.phone,
+      'image': BRAND.ogImage,
+      'telephone': CONTACT.phoneDisplay,
       'priceRange': '₹₹',
+      'currenciesAccepted': 'INR',
+      'paymentAccepted': 'Cash, UPI',
       'address': {
         '@type': 'PostalAddress',
-        'streetAddress': 'Sindhi Camp, MI Road, Vaishali Nagar',
-        'addressLocality': 'Jaipur',
-        'addressRegion': 'Rajasthan',
-        'postalCode': '302001',
+        'streetAddress': CONTACT.address,
+        'addressLocality': 'Noida',
+        'addressRegion': 'Uttar Pradesh',
+        'postalCode': '201301',
         'addressCountry': 'IN',
       },
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': '4.9',
-        'bestRating': '5',
-        'worstRating': '1',
-        'ratingCount': '840',
-        'reviewCount': '840',
+      'geo': {
+        '@type': 'GeoCoordinates',
+        'latitude': CONTACT.geo.lat,
+        'longitude': CONTACT.geo.lng,
       },
-      'review': [
-        {
-          '@type': 'Review',
-          'author': { '@type': 'Person', 'name': 'Rahul Sharma' },
-          'datePublished': '2026-07-20',
-          'reviewBody': 'Authentic Thai massage in Jaipur! Very clean private suites and professional therapists near Sindhi Camp.',
-          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' },
-        },
-        {
-          '@type': 'Review',
-          'author': { '@type': 'Person', 'name': 'Priya Verma' },
-          'datePublished': '2026-07-22',
-          'reviewBody': 'Best couple spa package in Jaipur. Sanitized room, great atmosphere and ginger tea. Highly recommended!',
-          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' },
-        },
-      ],
+      'openingHoursSpecification': {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': [
+          'Monday', 'Tuesday', 'Wednesday', 'Thursday',
+          'Friday', 'Saturday', 'Sunday'
+        ],
+        'opens': '00:00',
+        'closes': '23:59',
+      },
       'hasOfferCatalog': {
         '@type': 'OfferCatalog',
-        'name': 'Spa Services',
+        'name': 'Verified Companions & Local Directory Services (NCR Region)',
         'itemListElement': [
           {
             '@type': 'Offer',
             'itemOffered': {
               '@type': 'Service',
-              'name': 'Thai Massage',
-              'description': 'Traditional Thai massage combining acupressure and passive yoga stretching.',
+              'name': 'Call Girls & VIP Escorts Noida',
+              'description': 'Verified independent companion directory with photo authentication and 24/7 hotel outcall in Noida & NCR.',
             },
-            'price': '1099',
-            'priceCurrency': 'INR'
           },
           {
             '@type': 'Offer',
             'itemOffered': {
               '@type': 'Service',
-              'name': 'Deep Tissue Massage',
-              'description': 'Firm pressure targeting deeper muscle layers for chronic pain relief.',
+              'name': 'Massages & Luxury Spa Noida',
+              'description': 'Luxury Thai spa, Swedish body massage, and aromatherapy wellness directory in Noida & Expressway.',
             },
-            'price': '1199',
-            'priceCurrency': 'INR'
           },
           {
             '@type': 'Offer',
             'itemOffered': {
               '@type': 'Service',
-              'name': 'Couple Massage',
-              'description': 'Side-by-side massage for two in a private soundproof suite.',
+              'name': 'Male Escorts & Call Boys Noida',
+              'description': 'Verified male escort directory and fitness companion listings in Noida & Greater Noida.',
             },
-            'price': '2499',
-            'priceCurrency': 'INR'
-          }
-        ]
-      }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Transsexual & TS Escorts Noida',
+              'description': 'Verified transsexual and crossdresser directory in Noida & NCR.',
+            },
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Adult Meetings & Casual Dating Noida',
+              'description': 'Verified local casual dating and companion listings in Noida & surrounding areas.',
+            },
+          },
+        ],
+      },
     };
 
     const script = document.createElement('script');
     script.id = 'google-review-schema';
     script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(reviewSchemaData);
+    script.textContent = JSON.stringify(catalogSchemaData);
     document.head.appendChild(script);
 
     return () => {

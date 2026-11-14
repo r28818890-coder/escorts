@@ -33,10 +33,10 @@ export const AdDetailPage: React.FC = () => {
 
   const allAds = [...userAds, ...INITIAL_CLASSIFIED_ADS];
   const ad = allAds.find((a) => a.slug === slug) || allAds[0];
-  const [selectedImage, setSelectedImage] = useState<string>(ad.images[0] || '/jaipur_escorts_club_logo.jpg');
+  const [selectedImage, setSelectedImage] = useState<string>(ad.images[0] || '/ecj-mark.svg');
 
   const whatsappUrl = `https://wa.me/${ad.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(
-    `Hello! I saw your verified profile on ${BRAND.name}: "${ad.title}". Please confirm your availability and meeting details in ${ad.locality}, Jaipur.`
+    `Hello! I saw your verified profile on ${BRAND.name}: "${ad.title}". Please confirm your availability and meeting details in ${ad.locality}, ${ad.city || 'Noida'}.`
   )}`;
 
   return (
@@ -46,7 +46,7 @@ export const AdDetailPage: React.FC = () => {
 
       <SEO
         title={`${ad.title} - ${BRAND.name}`}
-        description={`${ad.description.slice(0, 150)}... Verified ad in ${ad.locality}, Jaipur.`}
+        description={`${ad.description.slice(0, 150)}... Verified ad in ${ad.locality}, ${ad.city || 'Noida'}.`}
         schema={{
           '@type': 'Service',
           name: ad.title,
@@ -55,16 +55,17 @@ export const AdDetailPage: React.FC = () => {
             '@type': 'LocalBusiness',
             name: BRAND.name,
             telephone: ad.phone,
-            image: `https://jaipurescortsclub.online${ad.images[0]}`,
+            image: `${BRAND.domain}${ad.images[0]}`,
           },
           areaServed: {
             '@type': 'City',
-            name: `${ad.locality}, Jaipur`,
+            name: `${ad.locality}, ${ad.city || 'Noida'}`,
           },
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: ad.rating,
-            reviewCount: ad.reviewsCount,
+          offers: {
+            '@type': 'Offer',
+            price: ad.rates?.perHour ? ad.rates.perHour.replace(/\D/g, '') : '2000',
+            priceCurrency: 'INR',
+            availability: 'https://schema.org/InStock',
           },
         }}
       />
@@ -73,17 +74,17 @@ export const AdDetailPage: React.FC = () => {
         
         {/* Breadcrumb Navigation */}
         <nav className="flex items-center gap-2 text-xs text-slate-500 mb-6 flex-wrap font-medium">
-          <Link to="/" className="hover:text-rose-600 transition-colors">Home</Link>
+          <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
           <ChevronRight size={13} />
-          <Link to={`/${ad.categorySlug}`} className="hover:text-rose-600 transition-colors capitalize">
+          <Link to={`/${ad.categorySlug}`} className="hover:text-amber-600 transition-colors capitalize">
             {ad.categorySlug.replace('-', ' ')}
           </Link>
           <ChevronRight size={13} />
-          <Link to={`/${ad.categorySlug}/${ad.localitySlug}`} className="hover:text-rose-600 transition-colors">
+          <Link to={`/${ad.categorySlug}/${ad.localitySlug}`} className="hover:text-amber-600 transition-colors">
             {ad.locality}
           </Link>
           <ChevronRight size={13} />
-          <span className="text-rose-600 font-bold line-clamp-1">{ad.title}</span>
+          <span className="text-amber-600 font-bold line-clamp-1">{ad.title}</span>
         </nav>
 
         {/* Ad Main Card */}

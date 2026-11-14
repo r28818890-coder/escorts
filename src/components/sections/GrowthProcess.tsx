@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, Star, Heart, Leaf, CheckCircle2, ArrowRight } from 'lucide-react';
+import { CONTACT } from '@/config/site';
 
 const steps = [
   {
@@ -170,10 +171,10 @@ const GrowthProcess: React.FC = () => {
                       <ArrowRight size={16} />
                     </button>
                     <a 
-                      href="tel:+917357678356"
+                      href={CONTACT.phoneHref}
                       className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white/5 border border-white/10 text-white font-bold text-sm tracking-widest uppercase rounded-full hover:bg-white/10 hover:border-[#e11d48]/30 transition-colors"
                     >
-                      Call +91 7357678356
+                      Call {CONTACT.phoneDisplay}
                     </a>
                   </div>
                 </motion.div>

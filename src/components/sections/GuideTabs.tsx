@@ -148,7 +148,7 @@ const ServiceCard = (
     }`}
   >
      <div className={`p-3 rounded-full flex-shrink-0 ${highlight ? 'bg-gray-800' : 'bg-gray-100 text-gray-800'}`}>
-       {React.cloneElement(icon as React.ReactElement, { size: 24 })}
+      {React.cloneElement(icon as React.ReactElement<any>, { size: 24 })}
      </div>
      <span className={`font-bold text-lg leading-tight ${highlight ? 'text-white' : 'text-gray-900'}`}>{title}</span>
   </button>

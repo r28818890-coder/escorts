@@ -33,6 +33,7 @@ import JaipurSearchBar from '@/components/common/JaipurSearchBar';
 import AdCard from '@/components/common/AdCard';
 import PostAdModal from '@/components/common/PostAdModal';
 import LiveActivityToast from '@/components/common/LiveActivityToast';
+import { BRAND, CONTACT } from '@/config/site';
 
 const getCategoryIcon = (iconName: string) => {
   switch (iconName) {
@@ -142,15 +143,15 @@ export const CategoryListingPage: React.FC = () => {
         
         {/* Breadcrumb Hierarchy */}
         <nav className="flex items-center gap-2 text-xs text-slate-500 mb-6 flex-wrap font-medium">
-          <Link to="/" className="hover:text-rose-600 transition-colors">Home</Link>
+          <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
           <ChevronRight size={13} />
-          <Link to={`/${currentCategory.slug}`} className="hover:text-rose-600 transition-colors">
-            {currentCategory.name} in Jaipur
+          <Link to={`/${currentCategory.slug}`} className="hover:text-amber-600 transition-colors">
+            {currentCategory.name} in Noida & NCR
           </Link>
           {currentLocality && (
             <>
               <ChevronRight size={13} />
-              <span className="text-rose-600 font-bold">{currentLocality.name}</span>
+              <span className="text-amber-600 font-bold">{currentLocality.name}</span>
             </>
           )}
         </nav>
@@ -160,11 +161,11 @@ export const CategoryListingPage: React.FC = () => {
           <div className="relative z-10 max-w-4xl">
             
             <div className="flex items-center gap-2 mb-4 flex-wrap">
-              <div className="w-9 h-9 rounded-xl bg-rose-50 border border-rose-200 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center">
                 {getCategoryIcon(currentCategory.iconName)}
               </div>
-              <span className="bg-rose-100 text-rose-900 border border-rose-300 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-sm">
-                JAIPUR • {currentLocality ? currentLocality.name.toUpperCase() : 'CITYWIDE'}
+              <span className="bg-amber-100 text-amber-900 border border-amber-300 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-sm">
+                NOIDA & NCR • {currentLocality ? currentLocality.name.toUpperCase() : 'ALL SECTORS'}
               </span>
               <span className="bg-emerald-50 text-emerald-800 border border-emerald-300 text-[10px] font-black uppercase px-2.5 py-1 rounded-full flex items-center gap-1">
                 <ShieldCheck size={12} className="text-emerald-600" /> 100% Real Phone Verified
@@ -189,7 +190,7 @@ export const CategoryListingPage: React.FC = () => {
                   key={idx}
                   className="text-xs bg-slate-50 text-slate-800 px-3 py-1 rounded-lg border border-slate-200 flex items-center gap-1 font-medium"
                 >
-                  <CheckCircle size={11} className="text-rose-600" />
+                  <CheckCircle size={11} className="text-amber-600" />
                   {sub}
                 </span>
               ))}
@@ -209,19 +210,19 @@ export const CategoryListingPage: React.FC = () => {
         {/* Localities Quick Switcher Matrix */}
         <div className="mb-10">
           <div className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
-            <MapPin size={14} className="text-rose-600" />
-            Switch Jaipur Locality for {currentCategory.name}:
+            <MapPin size={14} className="text-amber-600" />
+            Switch Noida & NCR Area for {currentCategory.name}:
           </div>
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
             <Link
               to={`/${currentCategory.slug}`}
               className={`shrink-0 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 !currentLocality
-                  ? 'bg-rose-600 text-white shadow-md'
+                  ? 'bg-amber-600 text-white shadow-md'
                   : 'bg-white text-slate-600 hover:text-slate-900 border border-slate-200'
               }`}
             >
-              All Jaipur (Citywide)
+              All Noida & NCR
             </Link>
             {JAIPUR_LOCALITIES.map((loc) => (
               <Link
@@ -229,11 +230,11 @@ export const CategoryListingPage: React.FC = () => {
                 to={`/${currentCategory.slug}/${loc.slug}`}
                 className={`shrink-0 px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-1 ${
                   currentLocality?.slug === loc.slug
-                    ? 'bg-rose-600 text-white shadow-md'
+                    ? 'bg-amber-600 text-white shadow-md'
                     : 'bg-white text-slate-600 hover:text-slate-900 border border-slate-200'
                 }`}
               >
-                <MapPin size={11} className={currentLocality?.slug === loc.slug ? 'text-white' : 'text-rose-600'} />
+                <MapPin size={11} className={currentLocality?.slug === loc.slug ? 'text-white' : 'text-amber-600'} />
                 <span>{loc.name}</span>
               </Link>
             ))}
@@ -244,16 +245,16 @@ export const CategoryListingPage: React.FC = () => {
         <div className="mb-16">
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-rose-50 border border-rose-200 flex items-center justify-center text-rose-600">
+              <div className="w-8 h-8 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-600">
                 <Flame size={18} />
               </div>
               <h2 className="text-lg sm:text-2xl font-black text-slate-900">
-                Active Listings in {currentLocality ? `${currentLocality.name}, Jaipur` : 'Jaipur'}
+                Active Listings in {currentLocality ? `${currentLocality.name}` : 'Noida & NCR'}
               </h2>
             </div>
 
             <a
-              href={`https://wa.me/917357678356?text=${encodeURIComponent(`Hello Jaipur Escorts Club! I am checking verified ${currentCategory.name} listings in ${currentLocality ? currentLocality.name : 'Jaipur'}.`)}`}
+              href={`${CONTACT.whatsapp1Href}?text=${encodeURIComponent(`Hello ${BRAND.name}! I am checking verified ${currentCategory.name} listings in ${currentLocality ? currentLocality.name : 'Noida'}.` )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="py-2 px-3.5 rounded-xl bg-[#25D366] text-white font-bold text-xs uppercase tracking-wider hover:scale-105 transition-transform flex items-center gap-1.5 cursor-pointer shadow-md"

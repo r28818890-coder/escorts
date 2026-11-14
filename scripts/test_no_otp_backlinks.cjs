@@ -4,8 +4,8 @@ const querystring = require('querystring');
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
 
 function makeRequest(options, postData = null) {
   return new Promise((resolve, reject) => {
@@ -49,11 +49,11 @@ async function testPlatforms() {
     if (acc.ok && acc.result.access_token) {
       const payload = JSON.stringify({
         access_token: acc.result.access_token,
-        title: 'Jaipur Escorts Club - Verified Companion Portal 2026',
+        title: 'Escorts Hub Jaipur - Verified Companion Portal 2026',
         author_name: BRAND,
         author_url: DOMAIN,
         content: JSON.stringify([
-          { tag: 'p', children: ['Visit ', { tag: 'a', attrs: { href: `${DOMAIN}/` }, children: ['Jaipur Escorts Club'] }, ' for 100% real photo verified independent escorts in Sindhi Camp, Vaishali Nagar, and Malviya Nagar.'] }
+          { tag: 'p', children: ['Visit ', { tag: 'a', attrs: { href: `${DOMAIN}/` }, children: ['Escorts Hub Jaipur'] }, ' for 100% real photo verified independent escorts in Sindhi Camp, Vaishali Nagar, and Malviya Nagar.'] }
         ])
       });
       const pubRes = await makeRequest({
@@ -86,10 +86,10 @@ async function testPlatforms() {
   try {
     console.log('\n2. Testing DPaste.org...');
     const postBody = querystring.stringify({
-      content: `# ${BRAND} - Premier Verified Directory\n\nOfficial Website: [Jaipur Escorts Club](${DOMAIN})\n\nVerified Areas:\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [C-Scheme Call Girls](${DOMAIN}/call-girls/c-scheme)\n- [Vaishali Nagar Models](${DOMAIN}/call-girls/vaishali-nagar)\n\n24/7 Hotel Outcall & Instant WhatsApp: +917357678356`,
+      content: `# ${BRAND} - Premier Verified Directory\n\nOfficial Website: [Escorts Hub Jaipur](${DOMAIN})\n\nVerified Areas:\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [C-Scheme Call Girls](${DOMAIN}/call-girls/c-scheme)\n- [Vaishali Nagar Models](${DOMAIN}/call-girls/vaishali-nagar)\n\n24/7 Hotel Outcall & Instant WhatsApp: +919521413060`,
       syntax: 'markdown',
       expiry_days: 365,
-      title: 'Jaipur Escorts Club - Official Directory'
+      title: 'Escorts Hub Jaipur - Official Directory'
     });
 
     const dpasteRes = await makeRequest({
@@ -122,7 +122,7 @@ async function testPlatforms() {
   try {
     console.log('\n3. Testing Rentry.co...');
     const rentryBody = querystring.stringify({
-      text: `# ${BRAND}\n\n[Jaipur Escorts Club](${DOMAIN}) offers 100% verified independent call girls and Thai massage in Jaipur.\n\n### Top Locations:\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [Malviya Nagar Companions](${DOMAIN}/call-girls/malviya-nagar)\n- [Thai & Swedish Massage](${DOMAIN}/massages)\n\nDirect WhatsApp: https://wa.me/917357678356`
+      text: `# ${BRAND}\n\n[Escorts Hub Jaipur](${DOMAIN}) offers 100% verified independent call girls and Thai massage in Jaipur.\n\n### Top Locations:\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [Malviya Nagar Companions](${DOMAIN}/call-girls/malviya-nagar)\n- [Thai & Swedish Massage](${DOMAIN}/massages)\n\nDirect WhatsApp: https://wa.me/919521413060`
     });
 
     const rentryRes = await makeRequest({
@@ -158,8 +158,8 @@ async function testPlatforms() {
   try {
     console.log('\n4. Testing Write.as API...');
     const writeasPayload = JSON.stringify({
-      body: `# ${BRAND} - 2026 Verified Directory\n\nLooking for genuine independent escorts in Jaipur? Visit [Jaipur Escorts Club](${DOMAIN}) for real verified photos, 24/7 outcall, and zero advance payment.\n\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [Vaishali Nagar Call Girls](${DOMAIN}/call-girls/vaishali-nagar)\n- [Luxury Body Massage](${DOMAIN}/massages)`,
-      title: 'Jaipur Escorts Club - Official Guide 2026'
+      body: `# ${BRAND} - 2026 Verified Directory\n\nLooking for genuine independent escorts in Jaipur? Visit [Escorts Hub Jaipur](${DOMAIN}) for real verified photos, 24/7 outcall, and zero advance payment.\n\n- [Sindhi Camp Escorts](${DOMAIN}/call-girls/sindhi-camp)\n- [Vaishali Nagar Call Girls](${DOMAIN}/call-girls/vaishali-nagar)\n- [Luxury Body Massage](${DOMAIN}/massages)`,
+      title: 'Escorts Hub Jaipur - Official Guide 2026'
     });
 
     const writeRes = await makeRequest({

@@ -2,8 +2,8 @@ const https = require('https');
 const http = require('http');
 const querystring = require('querystring');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
 
 function postReq(options, data) {
   return new Promise((resolve, reject) => {
@@ -27,8 +27,8 @@ async function runBatchTests() {
   // Test 1: DPaste.com (API v2)
   try {
     const payload = querystring.stringify({
-      content: `# ${BRAND} - Official Directory\n\nWebsite: ${DOMAIN}\n\nTop Locations:\n- ${DOMAIN}/call-girls/sindhi-camp\n- ${DOMAIN}/call-girls/vaishali-nagar\n- ${DOMAIN}/call-girls/malviya-nagar\n\nVerified independent call girls & luxury spa in Jaipur. 24/7 WhatsApp: +917357678356`,
-      title: 'Jaipur Escorts Club Official 2026',
+      content: `# ${BRAND} - Official Directory\n\nWebsite: ${DOMAIN}\n\nTop Locations:\n- ${DOMAIN}/call-girls/sindhi-camp\n- ${DOMAIN}/call-girls/vaishali-nagar\n- ${DOMAIN}/call-girls/malviya-nagar\n\nVerified independent call girls & luxury spa in Jaipur. 24/7 WhatsApp: +919521413060`,
+      title: 'Escorts Hub Jaipur Official 2026',
       expiry_days: 30,
       syntax: 'markdown'
     });
@@ -54,12 +54,12 @@ async function runBatchTests() {
 
   // Test 2: Paste.rs
   try {
-    const body = `Jaipur Escorts Club - Official Verified Portal
+    const body = `Escorts Hub Jaipur - Official Verified Portal
 Website: ${DOMAIN}
 Call Girls in Sindhi Camp: ${DOMAIN}/call-girls/sindhi-camp
 Vaishali Nagar Escorts: ${DOMAIN}/call-girls/vaishali-nagar
 Malviya Nagar Escorts: ${DOMAIN}/call-girls/malviya-nagar
-WhatsApp: +917357678356`;
+WhatsApp: +919521413060`;
 
     const res = await postReq({
       hostname: 'paste.rs',

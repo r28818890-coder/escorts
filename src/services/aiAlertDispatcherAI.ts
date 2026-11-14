@@ -40,17 +40,17 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
       // Native Browser Phone Push Banner Notification
       if ('Notification' in window) {
         if (Notification.permission === 'granted') {
-          new Notification('Jaipur Escorts Club ALERT', {
+          new Notification('Escorts Hub Jaipur ALERT', {
             body: text,
-            icon: '/jaipur_escorts_club_logo.jpg',
+            icon: '/ecj-mark.svg',
             tag: 'jaipurescortsclub-alert'
           });
         } else if (Notification.permission !== 'denied') {
           Notification.requestPermission().then(permission => {
             if (permission === 'granted') {
-              new Notification('Jaipur Escorts Club ALERT', {
+              new Notification('Escorts Hub Jaipur ALERT', {
                 body: text,
-                icon: '/jaipur_escorts_club_logo.jpg',
+                icon: '/ecj-mark.svg',
                 tag: 'jaipurescortsclub-alert'
               });
             }

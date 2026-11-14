@@ -1,6 +1,6 @@
 // ============================================================================
 // AUTOMATED LIVE BACKLINK POSTER (1-3 SECONDS NATURAL THROTTLE GAP)
-// Target: https://jaipurescortsclub.online
+// Target: https://escortshubjaipur.com
 // ============================================================================
 
 const https = require('https');
@@ -9,9 +9,9 @@ const querystring = require('querystring');
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
-const PHONE = '+917357678356';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
+const PHONE = '+919521413060';
 
 const localities = [
   { name: 'Sindhi Camp', slug: 'sindhi-camp', landmark: 'Sindhi Camp Metro & Central Bus Station' },
@@ -83,7 +83,7 @@ async function publishGraph(token, title, loc, cat) {
         { tag: 'li', children: ['Sanitized Private AC Suites with Attached Jacuzzi'] },
         { tag: 'li', children: ['Direct WhatsApp Confirmation with Zero Middleman Fees'] }
       ]},
-      { tag: 'p', children: [`Official Website: `, { tag: 'a', attrs: { href: DOMAIN }, children: ['https://jaipurescortsclub.online'] }, ` | WhatsApp: ${PHONE}`] }
+      { tag: 'p', children: [`Official Website: `, { tag: 'a', attrs: { href: DOMAIN }, children: ['https://escortshubjaipur.com'] }, ` | WhatsApp: ${PHONE}`] }
     ]),
     return_content: false
   });
@@ -176,7 +176,7 @@ Visit [${BRAND}](${DOMAIN}) - Premier Verified Escort Directory in Jaipur.
 - 24/7 Hotel Outcall & In-call Available
 - Real Photos & Strict 18+ Discretion
 
-Direct WhatsApp: https://wa.me/917357678356
+Direct WhatsApp: https://wa.me/919521413060
 Official Site: ${DOMAIN}`;
 
   const payload = querystring.stringify({ text });

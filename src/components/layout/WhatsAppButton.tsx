@@ -31,7 +31,7 @@ export const WhatsAppButton: React.FC = () => {
 
       {/* ── 2. WhatsApp Line 2 Floating Button ── */}
       <a
-        href={CONTACT.whatsapp2Href + '?text=' + encodeURIComponent('Hello Jaipur Escorts Club (Line 2), I would like to inquire about verified companion availability.')}
+        href={CONTACT.whatsapp2Href + '?text=' + encodeURIComponent('Hello Escorts Hub Jaipur (Line 2), I would like to inquire about verified companion availability.')}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackWhatsAppClick(CONTACT.whatsapp2, 'floating_wa_line2')}
@@ -48,7 +48,7 @@ export const WhatsAppButton: React.FC = () => {
 
       {/* ── 3. WhatsApp Line 1 Floating Button (Main Desk) ── */}
       <a
-        href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello Jaipur Escorts Club (Line 1), I would like to inquire about verified companion availability.')}
+        href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello Escorts Hub Jaipur (Line 1), I would like to inquire about verified companion availability.')}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackWhatsAppClick(CONTACT.whatsapp1, 'floating_wa_line1')}

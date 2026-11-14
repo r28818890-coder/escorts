@@ -27,7 +27,7 @@ function test(name, options, data) {
 
 async function run() {
   // paste.ee
-  const pee = JSON.stringify({ description: "Jaipur Escorts", sections: [{ name: "Escorts Jaipur", syntax: "text", contents: "https://jaipurescortsclub.online/call-girls" }] });
+  const pee = JSON.stringify({ description: "Jaipur Escorts", sections: [{ name: "Escorts Jaipur", syntax: "text", contents: "https://escortshubjaipur.com/call-girls" }] });
   await test('paste.ee', {
     hostname: 'api.paste.ee',
     path: '/v1/pastes',
@@ -36,7 +36,7 @@ async function run() {
   }, pee);
 
   // dpaste.org (web form post)
-  const dpo = querystring.stringify({ content: "https://jaipurescortsclub.online/call-girls/malviya-nagar", lexer: "_text", format: "url" });
+  const dpo = querystring.stringify({ content: "https://escortshubjaipur.com/call-girls/malviya-nagar", lexer: "_text", format: "url" });
   await test('dpaste.org', {
     hostname: 'dpaste.org',
     path: '/api/',
@@ -50,6 +50,6 @@ async function run() {
     path: '/',
     method: 'POST',
     headers: { 'Content-Type': 'text/plain', 'User-Agent': 'curl/7.68.0' }
-  }, "Jaipur Escorts Club: https://jaipurescortsclub.online/call-girls");
+  }, "Escorts Hub Jaipur: https://escortshubjaipur.com/call-girls");
 }
 run();

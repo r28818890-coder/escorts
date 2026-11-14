@@ -1,5 +1,5 @@
 // ============================================================
-// JAIPUR SPA — SINGLE SOURCE OF TRUTH (100% EMOJI-FREE)
+// NOIDA & NCR COMPANIONS — SINGLE SOURCE OF TRUTH
 // ============================================================
 
 export interface ImportantServiceItem {
@@ -21,46 +21,46 @@ export interface LocationItem {
 
 // ── 1. Brand Identity ─────────────────────────────────────────
 export const BRAND = {
-  name: 'Jaipur Escorts Club',
-  shortName: 'Jaipur Escorts Club',
-  legalName: 'Jaipur Escorts Club & Classifieds Portal',
-  tagline: "Jaipur's #1 Verified Escorts & VIP Companions Directory",
-  subTagline: 'Open 24 Hours • 100% Real Photo Verified • Jaipur, Rajasthan',
-  domain: 'https://jaipurescortsclub.online',
-  year: '2023',
-  logo: '/jaipur_escorts_club_logo.jpg',
-  ogImage: 'https://jaipurescortsclub.online/jaipur_escorts_club_logo.jpg',
+  name: 'We Noida Escorts',
+  shortName: 'We Noida Escorts',
+  legalName: 'We Noida Escorts Classifieds & Call Girl Directory',
+  tagline: "Noida's #1 Verified Call Girl & Escorts Service Directory",
+  subTagline: 'Open 24 Hours • 100% Real Photo Verified • Cash On Delivery in Noida & NCR',
+  domain: 'https://wenoidaescorts.com',
+  year: '2026',
+  logo: '/ecj-logo.svg',
+  ogImage: 'https://wenoidaescorts.com/ecj-og-image.png',
 } as const;
 
 // ── 2. Contact & Location Information ─────────────────────────
 export const CONTACT = {
-  phone: '7357678356',
-  phoneDisplay: '+91 73576 78356',
-  phoneHref: 'tel:+917357678356',
-  whatsapp1: '917357678356',
-  whatsapp2: '917357678349',
-  whatsapp1Display: '+91 73576 78356',
-  whatsapp2Display: '+91 73576 78349',
-  whatsapp1Href: 'https://wa.me/917357678356',
-  whatsapp2Href: 'https://wa.me/917357678349',
-  email: 'info@jaipurescortsclub.online',
+  phone: '8769604056',
+  phoneDisplay: '+91 87696 04056',
+  phoneHref: 'tel:+918769604056',
+  whatsapp1: '918769604056',
+  whatsapp2: '917339763985',
+  whatsapp1Display: '+91 87696 04056',
+  whatsapp2Display: '+91 73397 63985',
+  whatsapp1Href: 'https://wa.me/918769604056',
+  whatsapp2Href: 'https://wa.me/917339763985',
+  email: 'contact@wenoidaescorts.com',
   hours: 'Open 24 Hours, 7 Days a Week',
-  address: 'Motilal Atal Rd, Opposite Polo Victory Cinema, Sindhi Camp, Jaipur, Rajasthan 302001',
-  addressShort: 'Sindhi Camp, Jaipur, Rajasthan',
-  landmark: 'Opposite Polo Victory Cinema, Gate 2 Metro Station (200m from Sindhi Camp Bus Stand)',
-  mapLink: 'https://share.google/kHg49RATSkYBvfvxG',
-  directReviewLink: 'https://share.google/kHg49RATSkYBvfvxG',
-  embedMapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.8!2d75.8016!3d26.9239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJaipur+Spa!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin',
-  geo: { lat: '26.9239', lng: '75.8016' },
+  address: 'Sector 18, Noida, Gautam Buddha Nagar, Uttar Pradesh 201301',
+  addressShort: 'Sector 18, Noida (NCR)',
+  landmark: 'Near DLF Mall of India & Sector 18 Metro Gate 2',
+  mapLink: 'https://www.google.com/maps/search/?api=1&query=Sector+18%2C+Noida%2C+Uttar+Pradesh+201301',
+  directReviewLink: 'https://www.google.com/maps/search/?api=1&query=Sector+18%2C+Noida%2C+Uttar+Pradesh+201301',
+  embedMapSrc: 'https://www.google.com/maps?q=Sector+18%2C+Noida%2C+Uttar+Pradesh+201301&output=embed',
+  geo: { lat: '28.5708', lng: '77.3211' },
 } as const;
 
-// ── 3. Spa Services List ──────────────────────────────────────
+// ── 3. Spa & Wellness Services List ───────────────────────────
 export const SERVICES_LIST: ImportantServiceItem[] = [
   {
     id: 1,
     title: 'Thai Massage',
     slug: 'thai-massage',
-    description: 'Traditional Thai therapy combining acupressure, stretching and energy-line activation for full-body rejuvenation.',
+    description: 'Traditional Thai therapy combining acupressure, gentle stretching and energy-line activation for full-body rejuvenation.',
     duration: '60 / 90 / 120 min',
     iconName: 'Sparkles',
   },
@@ -76,7 +76,7 @@ export const SERVICES_LIST: ImportantServiceItem[] = [
     id: 3,
     title: 'Deep Tissue Massage',
     slug: 'deep-tissue-massage',
-    description: 'Targeted deep-pressure therapy that reaches underlying muscle layers to relieve chronic pain and tight knots.',
+    description: 'Targeted deep-pressure therapy that reaches underlying muscle layers to relieve corporate stress, chronic pain and tight knots.',
     duration: '60 / 90 / 120 min',
     iconName: 'Shield',
   },
@@ -84,7 +84,7 @@ export const SERVICES_LIST: ImportantServiceItem[] = [
     id: 4,
     title: 'Aroma Therapy',
     slug: 'aroma-therapy',
-    description: 'A holistic massage enhanced with therapeutic-grade essential oils — lavender, eucalyptus and jasmine — for mind-body harmony.',
+    description: 'A holistic massage enhanced with therapeutic-grade essential oils — lavender, eucalyptus and jasmine — for mind-body serenity.',
     duration: '60 / 90 / 120 min',
     iconName: 'Heart',
   },
@@ -100,7 +100,7 @@ export const SERVICES_LIST: ImportantServiceItem[] = [
     id: 6,
     title: 'Couple Massage',
     slug: 'couple-massage',
-    description: 'Side-by-side luxury massage in our exclusive couple suite — a perfect gift for anniversaries, honeymoons or date nights.',
+    description: 'Side-by-side luxury massage in our exclusive couple suite in Noida — a perfect gift for anniversaries or luxury stays.',
     duration: '60 / 90 / 120 min',
     iconName: 'Users',
   },
@@ -108,7 +108,7 @@ export const SERVICES_LIST: ImportantServiceItem[] = [
     id: 7,
     title: 'Body Scrub',
     slug: 'body-scrub',
-    description: 'A revitalising full-body exfoliation treatment using herbal scrubs to remove dead skin, brighten complexion and soften skin texture.',
+    description: 'A revitalising full-body exfoliation treatment using herbal scrubs to brighten complexion and soften skin texture.',
     duration: '45 / 60 min',
     iconName: 'Sparkles',
   },
@@ -116,13 +116,13 @@ export const SERVICES_LIST: ImportantServiceItem[] = [
     id: 8,
     title: 'Full Body Massage',
     slug: 'full-body-massage',
-    description: 'A comprehensive head-to-toe massage ritual combining multiple techniques to restore energy, reduce stress and improve circulation.',
+    description: 'A comprehensive head-to-toe massage ritual combining multiple techniques to restore energy and reduce workplace stress.',
     duration: '60 / 90 / 120 min',
     iconName: 'Flame',
   },
   {
     id: 9,
-    title: 'Steam Bath',
+    title: 'Steam Bath & Hydro Therapy',
     slug: 'steam-bath',
     description: 'A purifying herbal steam therapy that opens pores, detoxifies the body, relaxes muscles and boosts circulation.',
     duration: '30 / 45 min',
@@ -130,76 +130,94 @@ export const SERVICES_LIST: ImportantServiceItem[] = [
   },
 ];
 
-// ── 4. Hyperlocal Jaipur Areas ─────────────────────────────────
-export const JAIPUR_LOCATIONS: LocationItem[] = [
-  { id: 1, area: 'Sindhi Camp', slug: 'sindhi-camp', distance: '0 min', landmark: 'Our Main Location' },
-  { id: 2, area: 'Jaipur Railway Station', slug: 'jaipur-railway-station', distance: '3 min drive', landmark: 'Near Jaipur Junction' },
-  { id: 3, area: 'MI Road', slug: 'mi-road', distance: '5 min drive', landmark: 'Near MI Road Jaipur' },
-  { id: 4, area: 'Bani Park', slug: 'bani-park', distance: '8 min drive', landmark: 'Near Bani Park' },
-  { id: 5, area: 'Civil Lines', slug: 'civil-lines', distance: '7 min drive', landmark: 'Near Civil Lines Jaipur' },
-  { id: 6, area: 'Chandpole', slug: 'chandpole', distance: '6 min drive', landmark: 'Near Chandpole Gate' },
-  { id: 7, area: 'Station Road', slug: 'station-road', distance: '4 min drive', landmark: 'Near Station Road' },
-  { id: 8, area: 'Polo Victory', slug: 'polo-victory', distance: '1 min walk', landmark: 'Opposite Polo Victory Cinema' },
-  { id: 9, area: 'Collectorate Circle', slug: 'collectorate-circle', distance: '10 min drive', landmark: 'Near Collectorate Circle' },
-  { id: 10, area: 'C Scheme Jaipur', slug: 'c-scheme', distance: '10 min drive', landmark: 'Near Ahinsa Circle' },
-  { id: 11, area: 'Tonk Road & Durgapura', slug: 'tonk-road', distance: '15 min drive', landmark: 'Near Durgapura Flyover' },
+// ── 4. Hyperlocal Noida & NCR Locations ───────────────────────
+export const NOIDA_LOCATIONS: LocationItem[] = [
+  { id: 1, area: 'Sector 18 Noida', slug: 'sector-18', distance: '0 min', landmark: 'Opposite DLF Mall of India & Metro Gate 2' },
+  { id: 2, area: 'Sector 62 Noida', slug: 'sector-62', distance: '10 min drive', landmark: 'Electronic City & Fortis Hospital' },
+  { id: 3, area: 'Sector 50 Noida', slug: 'sector-50', distance: '7 min drive', landmark: 'Near Wave City Center & Central Market' },
+  { id: 4, area: 'Sector 137 Noida', slug: 'sector-137', distance: '12 min drive', landmark: 'Expressway & Felix Hospital' },
+  { id: 5, area: 'Sector 15 & 16 (Film City)', slug: 'sector-18-film-city', distance: '4 min drive', landmark: 'DND Flyway & Film City' },
+  { id: 6, area: 'Sector 76 & 78 Noida', slug: 'sector-76-78', distance: '9 min drive', landmark: 'Silicon City & Metro Station' },
+  { id: 7, area: 'Sector 128 Noida', slug: 'sector-128', distance: '14 min drive', landmark: 'Jaypee Wish Town & Sultanpur' },
+  { id: 8, area: 'Sector 142 Noida', slug: 'sector-142', distance: '15 min drive', landmark: 'Advant Navis Business Park' },
+  { id: 9, area: 'Pari Chowk Greater Noida', slug: 'pari-chowk', distance: '20 min drive', landmark: 'Alpha 1 & Ansal Plaza' },
+  { id: 10, area: 'Noida Extension (Gr Noida West)', slug: 'noida-extension', distance: '15 min drive', landmark: 'Gaur City & Char Murti' },
+  { id: 11, area: 'Knowledge Park Greater Noida', slug: 'knowledge-park', distance: '25 min drive', landmark: 'India Expo Mart & Galgotias' },
+  { id: 12, area: 'Indirapuram Ghaziabad', slug: 'indirapuram', distance: '10 min drive', landmark: 'Shipra Mall & Swarna Jayanti Park' },
+  { id: 13, area: 'Vaishali Ghaziabad', slug: 'vaishali', distance: '12 min drive', landmark: 'Vaishali Metro & Max Hospital' },
+  { id: 14, area: 'Vasundhara Ghaziabad', slug: 'vasundhara', distance: '15 min drive', landmark: 'Mewar Institute & Sector 10' },
+  { id: 15, area: 'Crossings Republik', slug: 'crossings-republik', distance: '18 min drive', landmark: 'NH-24 & ABES Engineering' },
+  { id: 16, area: 'Kaushambi', slug: 'kaushambi', distance: '14 min drive', landmark: 'Radisson Blu & Anand Vihar Border' },
+  { id: 17, area: 'Mayur Vihar', slug: 'mayur-vihar', distance: '8 min drive', landmark: 'Phase 1 & DND Noida Border' },
+  { id: 18, area: 'Botanical Garden (Sector 37)', slug: 'botanical-garden', distance: '5 min drive', landmark: 'Interchange Metro & Amity University' },
 ];
 
-// ── 5. Spa Statistics & Metrics ────────────────────────────────
+export const JAIPUR_LOCATIONS = NOIDA_LOCATIONS;
+
+// ── 5. Directory Statistics & Metrics ──────────────────────────
 export const SPA_STATS = {
-  guests: '15,000+',
-  therapists: '100%',
-  availability: '24/7',
-  rating: '4.9',
-  experience: '5+ Years',
-  services: '9+',
+  guests: '25,000+',
+  therapists: '100% Real',
+  availability: '24/7 Doorstep',
+  rating: '4.95',
+  experience: '6+ Years',
+  services: '18+ Locations',
 } as const;
 
 // ── 6. WhatsApp Message Templates ─────────────────────────────
 export const WA_MESSAGES = {
-  general: 'Hello Jaipur Spa! I would like to book a spa appointment.',
-  booking: 'Hello! I want to book a massage therapy session at Jaipur Spa, Sindhi Camp Jaipur.',
-  thai: 'Hi! I am interested in booking a Thai Massage session at Jaipur Spa Jaipur.',
-  couple: 'Hello! I would like to book a Couple Massage package at Jaipur Spa Jaipur.',
+  general: 'Hello Escorts Hub Noida! I would like to make an inquiry for Noida & NCR.',
+  booking: 'Hello! I want to book a verified appointment with Escorts Hub Noida in Sector 18 / NCR.',
+  thai: 'Hi! I am interested in booking an appointment with Escorts Hub Noida.',
+  couple: 'Hello! I would like to book a VIP appointment with Escorts Hub Noida.',
 } as const;
 
 // ── 7. Site Navigation Hierarchy ───────────────────────────────
 export const NAVIGATION = {
   main: [
-    { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Gallery', path: '/gallery' },
-    { label: 'FAQ', path: '/faq' },
-    { label: 'Blog', path: '/blog' },
-    { label: 'Contact', path: '/contact' },
+    { name: 'Home', path: '/' },
+    { name: 'Categories', path: '/call-girls' },
+    { name: 'Noida Areas', path: '/jaipur-areas' },
+    { name: 'Safety Guide', path: '/safety-guide' },
+    { name: 'Contact', path: '/contact' },
   ],
-  treatmentCategories: [
+  services: SERVICES_LIST.map((svc) => ({
+    name: svc.title,
+    path: `/services/${svc.slug}`,
+  })),
+  footer: [
     {
-      title: 'Relaxation',
+      title: 'Directory',
       items: [
-        { name: 'Thai Massage', path: '/thai-massage' },
-        { name: 'Swedish Massage', path: '/swedish-massage' },
-        { name: 'Balinese Massage', path: '/balinese-massage' },
+        { name: 'Call Girls & Escorts', path: '/call-girls' },
+        { name: 'Massages & Spa', path: '/massages' },
+        { name: 'Male Escorts', path: '/male-escorts' },
+        { name: 'Transsexual Dating', path: '/transsexual' },
+        { name: 'Adult Meetings', path: '/adult-meetings' },
       ],
     },
     {
-      title: 'Therapeutic',
+      title: 'Company',
       items: [
-        { name: 'Deep Tissue Massage', path: '/deep-tissue-massage' },
-        { name: 'Aroma Therapy', path: '/aroma-therapy' },
-        { name: 'Full Body Massage', path: '/full-body-massage' },
+        { name: 'About Us', path: '/about' },
+        { name: 'Contact', path: '/contact' },
+        { name: 'Privacy Policy', path: '/privacy' },
+        { name: 'Terms of Service', path: '/terms' },
+        { name: 'Refund Policy', path: '/refund' },
       ],
     },
     {
-      title: 'Body & Steam',
+      title: 'NCR Areas',
       items: [
-        { name: 'Couple Massage', path: '/couple-massage' },
-        { name: 'Body Scrub', path: '/body-scrub' },
-        { name: 'Steam Bath', path: '/steam-bath' },
+        { name: 'Sector 18 Noida', path: '/call-girls/sector-18' },
+        { name: 'Sector 62 Noida', path: '/call-girls/sector-62' },
+        { name: 'Greater Noida Pari Chowk', path: '/call-girls/pari-chowk' },
+        { name: 'Indirapuram Ghaziabad', path: '/call-girls/indirapuram' },
+        { name: 'Noida Expressway (137)', path: '/call-girls/sector-137' },
       ],
     },
   ],
-  locations: JAIPUR_LOCATIONS.map((loc) => ({
+  locations: NOIDA_LOCATIONS.map((loc) => ({
     name: loc.area,
     path: `/${loc.slug}`,
   })),
@@ -207,9 +225,9 @@ export const NAVIGATION = {
 
 // ── 8. SEO Metadata Defaults ──────────────────────────────────
 export const SEO_DEFAULTS = {
-  title: "Best Spa in Jaipur - Luxury Thai Massage | Jaipur Spa | Open 24 Hours",
-  description: "Jaipur Spa — Premier luxury Thai spa in Sindhi Camp, Jaipur (302001). Certified therapists offering Thai Massage, Swedish, Deep Tissue, Aromatherapy, Couple Spa, Herbal Steam & Hydro Shower. Open 24 hours. Call +91 7357678356.",
-  keywords: "Jaipur Spa, spa in Jaipur, Thai massage Jaipur, luxury spa Jaipur, massage near Sindhi Camp, best spa Jaipur, 24 hour spa Jaipur, couple massage Jaipur, Swedish massage Jaipur, deep tissue massage Jaipur, aromatherapy spa Jaipur, Balinese massage Jaipur, full body massage Jaipur, body scrub Jaipur, steam bath Jaipur, Jaipur Spa Sindhi Camp",
+  title: "Escorts Hub Noida - Verified Call Girls & VIP Escorts in Noida & NCR (24/7)",
+  description: "Escorts Hub Noida — 100% Real photo verified companions & independent call girls in Noida Sector 18, Sector 62, Greater Noida, Expressway & Indirapuram. 24/7 hotel outcall visits.",
+  keywords: "Escorts in Noida, call girls Noida, Noida Sector 18 escorts, Sector 62 call girls, Greater Noida escorts, Pari Chowk call girls, Noida Extension escorts, Indirapuram escorts, Vaishali call girls, VIP companions Noida, 24 hour hotel outcall Noida",
 } as const;
 
 export default {
@@ -217,6 +235,7 @@ export default {
   CONTACT,
   SERVICES_LIST,
   JAIPUR_LOCATIONS,
+  NOIDA_LOCATIONS,
   SPA_STATS,
   WA_MESSAGES,
   NAVIGATION,

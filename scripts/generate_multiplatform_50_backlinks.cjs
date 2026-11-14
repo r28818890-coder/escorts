@@ -1,6 +1,6 @@
 // ============================================================================
 // DIVERSIFIED MULTI-PLATFORM 50 LIVE NO-OTP BACKLINK GENERATOR
-// Target: https://jaipurescortsclub.online
+// Target: https://escortshubjaipur.com
 // Platforms: Graph.org (DA 91), DPaste.com (DA 65), Paste.rs (DA 55), Rentry.co (DA 68)
 // ============================================================================
 
@@ -10,9 +10,9 @@ const querystring = require('querystring');
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
-const PHONE = '+917357678356';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
+const PHONE = '+919521413060';
 
 const localities = [
   { name: 'Sindhi Camp', slug: 'sindhi-camp', landmark: 'Sindhi Camp Metro & Central Bus Stand' },
@@ -77,7 +77,7 @@ async function publishGraph(token, title, loc, cat) {
       { tag: 'p', children: [`Looking for verified ${cat.name} in ${loc.name}, Jaipur? Discover premium independent companions at `, { tag: 'a', attrs: { href: url }, children: [`${BRAND} ${loc.name}`] }, '.'] },
       { tag: 'h3', children: [`24/7 Outcall Service in ${loc.name}`] },
       { tag: 'p', children: [`Near ${loc.landmark}, our verified models provide 5-star hotel outcall with 100% real photo verification.`] },
-      { tag: 'p', children: [`Visit official directory: `, { tag: 'a', attrs: { href: DOMAIN }, children: ['https://jaipurescortsclub.online'] }, ` | WhatsApp: ${PHONE}`] }
+      { tag: 'p', children: [`Visit official directory: `, { tag: 'a', attrs: { href: DOMAIN }, children: ['https://escortshubjaipur.com'] }, ` | WhatsApp: ${PHONE}`] }
     ]),
     return_content: false
   });
@@ -170,7 +170,7 @@ Visit [${BRAND}](${DOMAIN}) - Premier Verified Escort Directory in Jaipur.
 - 24/7 Hotel Outcall & In-call Available
 - Real Photos & Strict 18+ Discretion
 
-Direct WhatsApp: https://wa.me/917357678356
+Direct WhatsApp: https://wa.me/919521413060
 Official Site: ${DOMAIN}`;
 
   const payload = querystring.stringify({ text });

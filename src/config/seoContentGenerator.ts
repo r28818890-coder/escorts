@@ -1,8 +1,9 @@
 // ============================================================
-// JAIPUR HYPERLOCAL SEO CONTENT & SCHEMA GENERATOR (100% EMOJI-FREE)
+// NOIDA & NCR HYPERLOCAL SEO CONTENT & SCHEMA GENERATOR
 // ============================================================
 
-import { PORTAL_CATEGORIES, JAIPUR_LOCALITIES, PortalCategory, JaipurLocality } from './portalData';
+import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, PortalCategory, JaipurLocality } from './portalData';
+import { BRAND, CONTACT } from './site';
 
 export interface LocalizedSeoData {
   h1: string;
@@ -18,32 +19,32 @@ export interface LocalizedSeoData {
   schema: object;
 }
 
-// Geo coordinates for Jaipur localities
+// Geo coordinates for Noida & NCR localities
 const LOCALITY_GEO: Record<string, { lat: string; lng: string }> = {
-  'sindhi-camp': { lat: '26.9239', lng: '75.8016' },
-  'mi-road': { lat: '26.9167', lng: '75.8167' },
-  'vaishali-nagar': { lat: '26.9075', lng: '75.7431' },
-  'malviya-nagar': { lat: '26.8528', lng: '75.8197' },
-  'c-scheme': { lat: '26.9124', lng: '75.8005' },
-  'raja-park': { lat: '26.8967', lng: '75.8344' },
-  'mansarovar': { lat: '26.8617', lng: '75.7681' },
-  'civil-lines': { lat: '26.9038', lng: '75.7878' },
-  'bani-park': { lat: '26.9312', lng: '75.7925' },
-  'tonk-road': { lat: '26.8722', lng: '75.8008' },
-  'jaipur-railway-station': { lat: '26.9196', lng: '75.7878' },
-  'jagatpura': { lat: '26.8222', lng: '75.8561' },
-  'gopalpura': { lat: '26.8667', lng: '75.7833' },
-  'sodala': { lat: '26.9000', lng: '75.7667' },
-  'vidhyadhar-nagar': { lat: '26.9667', lng: '75.7833' },
-  'jhotwara': { lat: '26.9500', lng: '75.7333' },
-  'airport-area': { lat: '26.8242', lng: '75.8122' },
-  'ajmer-road': { lat: '26.8833', lng: '75.7167' },
+  'sector-18': { lat: '28.5708', lng: '77.3261' },
+  'sector-62': { lat: '28.6280', lng: '77.3649' },
+  'sector-50': { lat: '28.5770', lng: '77.3620' },
+  'sector-137': { lat: '28.5135', lng: '77.4042' },
+  'sector-18-film-city': { lat: '28.5670', lng: '77.3210' },
+  'sector-76-78': { lat: '28.5620', lng: '77.3820' },
+  'sector-128': { lat: '28.5270', lng: '77.3680' },
+  'sector-142': { lat: '28.4980', lng: '77.4210' },
+  'pari-chowk': { lat: '28.4682', lng: '77.5103' },
+  'noida-extension': { lat: '28.6040', lng: '77.4370' },
+  'knowledge-park': { lat: '28.4610', lng: '77.4980' },
+  'indirapuram': { lat: '28.6415', lng: '77.3714' },
+  'vaishali': { lat: '28.6447', lng: '77.3392' },
+  'vasundhara': { lat: '28.6610', lng: '77.3640' },
+  'crossings-republik': { lat: '28.6310', lng: '77.4420' },
+  'kaushambi': { lat: '28.6480', lng: '77.3250' },
+  'mayur-vihar': { lat: '28.5990', lng: '77.3010' },
+  'botanical-garden': { lat: '28.5645', lng: '77.3340' },
 };
 
 export function generateLocalizedSeo(category: PortalCategory, locality?: JaipurLocality): LocalizedSeoData {
-  const locName = locality ? locality.name : 'Jaipur';
-  const landmark = locality ? locality.landmark : 'Sindhi Camp, MI Road & Vaishali Nagar';
-  const geo = locality ? (LOCALITY_GEO[locality.slug] || { lat: '26.9239', lng: '75.8016' }) : { lat: '26.9239', lng: '75.8016' };
+  const locName = locality ? locality.name : 'Noida';
+  const landmark = locality ? locality.landmark : 'Sector 18, Sector 62 & Expressway';
+  const geo = locality ? (LOCALITY_GEO[locality.slug] || { lat: '28.5708', lng: '77.3261' }) : { lat: '28.5708', lng: '77.3261' };
 
   let h1 = '';
   let metaTitle = '';
@@ -53,82 +54,82 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: Jaipur
 
   if (category.slug === 'call-girls') {
     h1 = locality
-      ? `Verified Escort Service & Call Girls in ${locName}, Jaipur - VIP Companions (24/7)`
-      : `Jaipur Escorts & Call Girls - Top Verified Escort Service & VIP Companions`;
+      ? `Verified Escort Service & Call Girls in ${locName} - VIP Companions (24/7 Outcall)`
+      : `Noida Escorts & Call Girls - Top Verified Escort Service & VIP Companions (NCR)`;
 
     metaTitle = locality
-      ? `Jaipur Escorts in ${locName} - Verified Call Girls & Escort Service | 24/7 Outcall`
-      : `Jaipur Escorts | Verified Call Girls & Escort Service in Jaipur | Skokka`;
+      ? `Noida Escorts in ${locName} - Verified Call Girls & Escort Service | 24/7 Outcall`
+      : `Noida Escorts | Verified Call Girls & Escort Service in Noida & NCR`;
 
     metaDescription = locality
-      ? `Looking for verified escort service and call girls in ${locName}, Jaipur? Genuine independent models near ${landmark}. 100% real photo verification, 24/7 hotel outcall & in-call.`
-      : `Discover top rated escort service and verified call girls in Jaipur. Real photo verified independent companions, VIP models, and 24/7 hotel outcall across all Jaipur localities.`;
+      ? `Looking for verified escort service and call girls in ${locName}? Genuine independent models near ${landmark}. 100% real photo verification, 24/7 hotel outcall & in-call.`
+      : `Discover top rated escort service and verified call girls in Noida. Real photo verified independent companions, VIP models, and 24/7 hotel outcall across all 18 Noida & NCR sectors.`;
 
-    introText = `Welcome to the official directory for verified escort services, call girls, and independent companions in ${locName}, Jaipur. Whether you are a business traveler staying at 5-star hotels, a tourist exploring the Pink City, or a local resident looking for sophisticated companionship, our verified models offer discrete 24/7 outcall hospitality with direct WhatsApp confirmation.`;
+    introText = `Welcome to the official directory for verified escort services, call girls, and independent companions in ${locName}. Whether you are a business traveler staying at 5-star hotels (Radisson, Crowne Plaza, Jaypee), an IT corporate professional, or a resident looking for sophisticated companionship, our verified models offer discreet 24/7 outcall hospitality with direct WhatsApp confirmation.`;
 
     landmarkHighlights = `Verified independent models in ${locName} provide swift 15 to 30-minute outcall service across major landmarks including ${landmark}, as well as private sanitized in-call suites. All meetings prioritize mutual respect, discretion, and hygiene standards.`;
   } else if (category.slug === 'massages') {
     h1 = locality
-      ? `Best Massage & Spa in ${locName}, Jaipur - Thai, Swedish & Couple Spa`
-      : `Best Massages in Jaipur - Luxury Thai Spa & Body Massage Therapists`;
+      ? `Best Massage & Spa in ${locName} - Thai, Swedish & Couple Spa`
+      : `Best Massages in Noida - Luxury Thai Spa & Body Massage Therapists (24/7)`;
 
     metaTitle = locality
-      ? `Massage in ${locName} Jaipur - Luxury Body Spa & Therapists | Open 24/7`
-      : `Best Massage in Jaipur - Luxury Thai Spa, Swedish & Body Massage | Jaipur Spa`;
+      ? `Massage in ${locName} - Luxury Body Spa & Therapists | Open 24/7`
+      : `Best Massage in Noida - Luxury Thai Spa, Swedish & Body Massage | 24 Hours`;
 
     metaDescription = locality
-      ? `Experience relaxing body massage in ${locName}, Jaipur. Traditional Thai massage, Swedish relaxation, deep tissue and steam bath near ${landmark}. Call or WhatsApp now.`
-      : `Top rated luxury massage centers and certified therapists in Jaipur. Thai massage, couple spa, deep tissue, and herbal steam bath in Sindhi Camp, Vaishali Nagar & MI Road.`;
+      ? `Experience relaxing body massage in ${locName}. Traditional Thai massage, Swedish relaxation, deep tissue and steam bath near ${landmark}. Call or WhatsApp now.`
+      : `Top rated luxury massage centers and certified therapists in Noida. Thai massage, couple spa, deep tissue, and herbal steam bath in Sector 18, Sector 62 & Expressway.`;
 
-    introText = `Discover top-rated wellness therapists and luxury spa sanctuaries in ${locName}, Jaipur. Escape the stress of daily work with signature rejuvenating therapies including authentic Thai acupressure, European Swedish relaxation, deep tissue muscle recovery, B2B oil therapy, and private couple spa suites equipped with hot hydro showers.`;
+    introText = `Discover top-rated wellness therapists and luxury spa sanctuaries in ${locName}. Escape corporate stress with signature rejuvenating therapies including authentic Thai acupressure, European Swedish relaxation, deep tissue muscle recovery, B2B oil therapy, and private couple spa suites equipped with hot hydro showers.`;
 
     landmarkHighlights = `Our featured wellness centers in ${locName} are strategically located near ${landmark}, offering serene private AC rooms, organic therapeutic essential oils, hospital-grade sanitization, and 24-hour appointment booking.`;
   } else if (category.slug === 'male-escorts') {
     h1 = locality
-      ? `Male Escorts in ${locName}, Jaipur - Handsome Call Boys & Companions for Women`
-      : `Male Escorts in Jaipur - Handsome Call Boys & Fitness Companions for Women`;
+      ? `Male Escorts in ${locName} - Handsome Call Boys & Companions for Women`
+      : `Male Escorts in Noida - Handsome Call Boys & Fitness Companions for Women`;
 
     metaTitle = locality
-      ? `Male Escorts in ${locName} Jaipur - Verified Call Boys & Companions | 100% Discreet`
-      : `Male Escorts in Jaipur - Verified Call Boys for Women & Couples | Skokka Jaipur`;
+      ? `Male Escorts in ${locName} - Verified Call Boys & Companions | 100% Discreet`
+      : `Male Escorts in Noida - Verified Call Boys for Women & Couples | 24/7 Outcall`;
 
     metaDescription = locality
-      ? `Find handsome, educated male escorts and call boys in ${locName}, Jaipur near ${landmark}. 100% confidential, friendly, and respectful companions for women & couples.`
-      : `Verified male escorts and call boys in Jaipur. Handsome fitness models and companion services for female clients and couples in Vaishali Nagar, Malviya Nagar & Mansarovar.`;
+      ? `Find handsome, educated male escorts and call boys in ${locName} near ${landmark}. 100% confidential, friendly, and respectful companions for women & couples.`
+      : `Verified male escorts and call boys in Noida. Handsome fitness models and companion services for female clients and couples in Sector 18, Sector 62 & Greater Noida.`;
 
-    introText = `Connect with handsome, well-groomed, and respectful male escorts and call boys in ${locName}, Jaipur. Catering exclusively to single women, female travelers, and open-minded couples looking for discreet companionship, soothing body wellness, and polite dinner dates.`;
+    introText = `Connect with handsome, well-groomed, and respectful male escorts and call boys in ${locName}. Catering exclusively to single women, female travelers, and open-minded couples looking for discreet companionship, soothing body wellness, and polite dinner dates.`;
 
     landmarkHighlights = `Male companions in ${locName} are available for private hotel outcalls near ${landmark}, offering complete confidentiality and respectful personal care.`;
   } else if (category.slug === 'transsexual') {
     h1 = locality
-      ? `Transsexual & TS Escorts in ${locName}, Jaipur - Shemale & Ladyboy Dating`
-      : `Transsexual in Jaipur - Verified TS Escorts & Shemale Dating`;
+      ? `Transsexual & TS Escorts in ${locName} - Shemale & Ladyboy Dating`
+      : `Transsexual in Noida - Verified TS Escorts & Shemale Dating`;
 
     metaTitle = locality
-      ? `Transsexual in ${locName} Jaipur - TS Escorts & Shemales | 100% Real Photos`
-      : `Transsexual in Jaipur - TS Escorts, Ladyboys & Shemale Dating | Skokka Jaipur`;
+      ? `Transsexual in ${locName} - TS Escorts & Shemales | 100% Real Photos`
+      : `Transsexual in Noida - TS Escorts, Ladyboys & Shemale Dating | 24/7 Outcall`;
 
     metaDescription = locality
-      ? `Discover verified transsexual escorts, shemales, and ladyboy companions in ${locName}, Jaipur. Real photos, private suites near ${landmark}, and direct WhatsApp contact.`
-      : `Meet verified transsexual escorts and TS companions in Jaipur. Beautiful shemales and ladyboys available for private meetings across prime Jaipur localities.`;
+      ? `Discover verified transsexual escorts, shemales, and ladyboy companions in ${locName}. Real photos, private suites near ${landmark}, and direct WhatsApp contact.`
+      : `Meet verified transsexual escorts and TS companions in Noida. Beautiful shemales and ladyboys available for private meetings across prime Noida & NCR localities.`;
 
-    introText = `Explore verified transsexual, ladyboy, and TS escort listings in ${locName}, Jaipur. Meet charming, open-minded, and passionate trans models who provide warm hospitality, private in-call suites, and hotel outcalls with zero judgment.`;
+    introText = `Explore verified transsexual, ladyboy, and TS escort listings in ${locName}. Meet charming, open-minded, and passionate trans models who provide warm hospitality, private in-call suites, and hotel outcalls with zero judgment.`;
 
     landmarkHighlights = `TS companions in ${locName} welcome clients with clean private accommodations located near ${landmark}, ensuring full discretion.`;
   } else {
     h1 = locality
-      ? `Adult Meetings & Casual Dating in ${locName}, Jaipur - Local Singles (NSA)`
-      : `Adult Meetings in Jaipur - Casual Dating, Local Singles & Erotic Meetups`;
+      ? `Adult Meetings & Casual Dating in ${locName} - Local Singles (NSA)`
+      : `Adult Meetings in Noida - Casual Dating, Local Singles & Erotic Meetups`;
 
     metaTitle = locality
-      ? `Adult Meetings in ${locName} Jaipur - Local Singles & NSA Dating | Verified`
-      : `Adult Meetings in Jaipur - Casual Dating & Local Singles Hookups | Skokka Jaipur`;
+      ? `Adult Meetings in ${locName} - Local Singles & NSA Dating | Verified`
+      : `Adult Meetings in Noida - Casual Dating & Local Singles Hookups | 100% Discreet`;
 
     metaDescription = locality
-      ? `Meet open-minded singles and casual dating partners in ${locName}, Jaipur near ${landmark}. Safe, verified NSA meetups and late-night romance in Jaipur.`
-      : `Connect with local Jaipur singles, open-minded couples, and casual dating partners for NSA meetings and discreet dates across Jaipur.`;
+      ? `Meet open-minded singles and casual dating partners in ${locName} near ${landmark}. Safe, verified NSA meetups and late-night romance in Noida & NCR.`
+      : `Connect with local Noida singles, open-minded couples, and casual dating partners for NSA meetings and discreet dates across Noida & NCR.`;
 
-    introText = `Join the most active adult community in ${locName}, Jaipur. Meet genuine local singles, college students, working professionals, and mature companions for casual dating, coffee dates, and no-strings-attached (NSA) romance.`;
+    introText = `Join the most active adult community in ${locName}. Meet genuine local singles, college students, working professionals, and mature companions for casual dating, coffee dates, and no-strings-attached (NSA) romance.`;
 
     landmarkHighlights = `Find singles residing in ${locName} near ${landmark} ready for quick chats, evening drinks, and memorable private dates.`;
   }
@@ -141,7 +142,7 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: Jaipur
     },
     {
       title: `Hotel & Residential Outcall in ${locName}`,
-      desc: `Prompt 20 to 30-minute outcall arrival at all leading 3-star, 4-star, and 5-star hotels in and around ${locName}, Jaipur.`,
+      desc: `Prompt 20 to 30-minute outcall arrival at all leading 3-star, 4-star, and 5-star hotels in and around ${locName}, Noida NCR.`,
     },
     {
       title: `100% Direct Contact & Real Photo Verification`,
@@ -153,66 +154,66 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: Jaipur
     },
   ];
 
-  // Pricing Overview (Durations only, rate-free)
+  // Pricing Overview
   const pricingOverview = [
     { tier: 'Quick Session (1 Hour)', duration: '60 Minutes', description: 'Includes in-call / hotel outcall meeting with complete personal attention.' },
     { tier: 'Extended Session (2 Hours)', duration: '120 Minutes', description: 'Ideal for unhurried conversations, dining companionship, and relaxation.' },
-    { tier: 'Overnight VIP Package', duration: 'Overnight (8-10 Hrs)', description: 'Complete overnight companionship for 5-star hotels and private suites.' },
+    { tier: 'Overnight VIP Package', duration: 'Overnight (8-10 Hrs)', description: 'Complete overnight companionship for 5-star hotels and luxury suites.' },
   ];
 
   // 5 Localized FAQs
   const faqs = [
     {
-      question: `How can I contact verified ${category.name.toLowerCase()} in ${locName}, Jaipur?`,
-      answer: `You can directly tap the WhatsApp or Call Now button on any profile card in ${locName}. All profiles are verified for instant direct communication.`,
+      question: `How can I contact verified ${category.name.toLowerCase()} in ${locName}?`,
+      answer: `You can directly tap the WhatsApp or Call Now button on any profile card in ${locName}. All profiles are verified for instant direct communication with coordinator at ${CONTACT.phoneDisplay}.`,
     },
     {
       question: `What session durations are available for ${category.name.toLowerCase()} in ${locName}?`,
-      answer: `In ${locName}, Jaipur, companions offer flexible durations including 1-hour meetings, 2-hour dinner dates, and full-night VIP travel packages.`,
+      answer: `In ${locName}, companions offer flexible durations including 1-hour meetings, 2-hour dinner dates, and full-night VIP travel packages.`,
     },
     {
       question: `Is hotel outcall available near ${landmark} in ${locName}?`,
-      answer: `Yes, most independent companions provide fast 15-30 minute outcall service to all major hotels, resorts, and private suites across ${locName}, Jaipur.`,
+      answer: `Yes, most independent companions provide fast 15-30 minute outcall service to all major hotels, resorts, and private suites across ${locName} and surrounding NCR areas.`,
     },
     {
       question: `Do I need to pay advance money before meeting in ${locName}?`,
-      answer: `No! As per our safety guidelines, never send full advance payments or QR code transfers before meeting in person. Pay directly upon meeting.`,
+      answer: `No! As per our strict safety guidelines, never send advance payments or QR code transfers before meeting in person. Pay directly upon arrival.`,
     },
     {
       question: `Are the profiles and photos in ${locName} 100% real?`,
-      answer: `Profiles marked with the green "Real & Verified" badge have completed phone and image authenticity checks for complete peace of mind.`,
+      answer: `Profiles marked with the green "100% Real" badge have completed phone and image authenticity checks for complete peace of mind.`,
     },
   ];
 
   // Nearby Localities Matrix
-  const nearbyLocalities = JAIPUR_LOCALITIES
+  const nearbyLocalities = NOIDA_LOCALITIES
     .filter((l) => !locality || l.slug !== locality.slug)
     .slice(0, 8)
     .map((l) => ({
       name: l.name,
       slug: l.slug,
-      distance: l.zone === (locality?.zone || 'Central') ? '5-10 min drive' : '15-20 min drive',
+      distance: l.zone === (locality?.zone || 'Central Noida') ? '5-10 min drive' : '15-25 min drive',
     }));
 
-  // JSON-LD Multi-Schema (FAQPage + LocalBusiness + AggregateRating + BreadcrumbList)
+  // JSON-LD Multi-Schema (FAQPage + LocalBusiness + BreadcrumbList)
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'LocalBusiness',
-        '@id': `https://jaipurescortsclub.online/${category.slug}${locality ? `/${locality.slug}` : ''}#business`,
-        name: `Jaipur Escorts Club - ${category.name} in ${locName}`,
+        '@id': `${BRAND.domain}/${category.slug}${locality ? `/${locality.slug}` : ''}#business`,
+        name: `${BRAND.name} - ${category.name} in ${locName}`,
         description: metaDescription,
-        url: `https://jaipurescortsclub.online/${category.slug}${locality ? `/${locality.slug}` : ''}`,
-        telephone: '+917357678356',
-        priceRange: 'INR INR',
-        image: 'https://jaipurescortsclub.online/jaipur_escorts_club_logo.jpg',
+        url: `${BRAND.domain}/${category.slug}${locality ? `/${locality.slug}` : ''}`,
+        telephone: `+${CONTACT.whatsapp1}`,
+        priceRange: '₹₹',
+        image: BRAND.ogImage,
         address: {
           '@type': 'PostalAddress',
           streetAddress: landmark,
           addressLocality: locName,
-          addressRegion: 'Rajasthan',
-          postalCode: '302001',
+          addressRegion: 'Uttar Pradesh',
+          postalCode: '201301',
           addressCountry: 'IN',
         },
         geo: {
@@ -220,17 +221,22 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: Jaipur
           latitude: geo.lat,
           longitude: geo.lng,
         },
-        aggregateRating: {
-          '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          reviewCount: '348',
-          bestRating: '5',
-          worstRating: '1',
+        currenciesAccepted: 'INR',
+        paymentAccepted: 'Cash, UPI',
+        areaServed: {
+          '@type': 'City',
+          name: `${locName}, Noida NCR`,
+        },
+        openingHoursSpecification: {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+          opens: '00:00',
+          closes: '23:59',
         },
       },
       {
         '@type': 'FAQPage',
-        '@id': `https://jaipurescortsclub.online/${category.slug}${locality ? `/${locality.slug}` : ''}#faq`,
+        '@id': `${BRAND.domain}/${category.slug}${locality ? `/${locality.slug}` : ''}#faq`,
         mainEntity: faqs.map((faq) => ({
           '@type': 'Question',
           name: faq.question,
@@ -242,27 +248,27 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: Jaipur
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': `https://jaipurescortsclub.online/${category.slug}${locality ? `/${locality.slug}` : ''}#breadcrumb`,
+        '@id': `${BRAND.domain}/${category.slug}${locality ? `/${locality.slug}` : ''}#breadcrumb`,
         itemListElement: [
           {
             '@type': 'ListItem',
             position: 1,
             name: 'Home',
-            item: 'https://jaipurescortsclub.online/',
+            item: `${BRAND.domain}/`,
           },
           {
             '@type': 'ListItem',
             position: 2,
-            name: `${category.name} Jaipur`,
-            item: `https://jaipurescortsclub.online/${category.slug}`,
+            name: `${category.name} Noida`,
+            item: `${BRAND.domain}/${category.slug}`,
           },
           ...(locality
             ? [
                 {
                   '@type': 'ListItem',
                   position: 3,
-                  name: `${locName} Jaipur`,
-                  item: `https://jaipurescortsclub.online/${category.slug}/${locality.slug}`,
+                  name: `${locName}`,
+                  item: `${BRAND.domain}/${category.slug}/${locality.slug}`,
                 },
               ]
             : []),

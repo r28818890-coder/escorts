@@ -128,6 +128,7 @@ export interface BlogPost {
   readTime: string;
   excerpt: string;
   content: string;
+  image?: string;
   relatedPosts: string[];
   keywords: string[];
 }

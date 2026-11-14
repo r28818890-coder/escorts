@@ -1,6 +1,6 @@
 // ============================================================================
 // MASTER 50 UNIQUE REFERRING DOMAINS (NO-OTP SEO BACKLINK MATRIX)
-// Target: https://jaipurescortsclub.online (Jaipur Escorts Club)
+// Target: https://escortshubjaipur.com (Escorts Hub Jaipur)
 // ============================================================================
 
 const fs = require('fs');
@@ -8,10 +8,10 @@ const path = require('path');
 const https = require('https');
 const http = require('http');
 
-const DOMAIN = 'https://jaipurescortsclub.online';
-const BRAND = 'Jaipur Escorts Club';
-const PHONE = '+917357678356';
-const WHATSAPP = '917357678356';
+const DOMAIN = 'https://escortshubjaipur.com';
+const BRAND = 'Escorts Hub Jaipur';
+const PHONE = '+919521413060';
+const WHATSAPP = '919521413060';
 
 const localities = [
   'Sindhi Camp', 'C Scheme', 'Vaishali Nagar', 'Malviya Nagar', 'Mansarovar',
@@ -50,7 +50,7 @@ const master50Platforms = [
     otpRequired: 'No OTP (Instant)',
     targetUrl: `${DOMAIN}/call-girls/sindhi-camp`,
     anchorText: 'Sindhi Camp Escorts Jaipur',
-    seoTitle: 'Sindhi Camp Escorts & VIP Models 2026 - Jaipur Escorts Club',
+    seoTitle: 'Sindhi Camp Escorts & VIP Models 2026 - Escorts Hub Jaipur',
     seoContent: `Discover 100% verified independent call girls and VIP models in Sindhi Camp, Jaipur at ${DOMAIN}/call-girls/sindhi-camp. Genuine photo verification, 24/7 outcall, and zero advance payment.`
   },
   {
@@ -166,8 +166,8 @@ const master50Platforms = [
     directUrl: 'https://notion.so',
     otpRequired: 'No OTP (Email Signup Only)',
     targetUrl: `${DOMAIN}/`,
-    anchorText: 'Jaipur Escorts Club Official Portal',
-    seoTitle: 'Jaipur Escorts Club - 2026 Master Verified Directory Hub',
+    anchorText: 'Escorts Hub Jaipur Official Portal',
+    seoTitle: 'Escorts Hub Jaipur - 2026 Master Verified Directory Hub',
     seoContent: `Complete official directory of verified independent models, spa therapies, and hotel outcall services in Jaipur: ${DOMAIN}/.`
   },
 
@@ -313,9 +313,9 @@ const master50Platforms = [
     directUrl: 'https://gist.github.com',
     otpRequired: 'No OTP (Standard GitHub Account)',
     targetUrl: `${DOMAIN}/`,
-    anchorText: 'Jaipur Escorts Club API & Directory',
-    seoTitle: 'Jaipur Escorts Club - Official Open Markdown Documentation 2026',
-    seoContent: `# Jaipur Escorts Club\n\nOfficial Portal: [https://jaipurescortsclub.online](${DOMAIN}/)\n\nPremier verified directory for independent call girls, Thai massage, and luxury companions in Jaipur, Rajasthan (302001).`
+    anchorText: 'Escorts Hub Jaipur API & Directory',
+    seoTitle: 'Escorts Hub Jaipur - Official Open Markdown Documentation 2026',
+    seoContent: `# Escorts Hub Jaipur\n\nOfficial Portal: [https://escortshubjaipur.com](${DOMAIN}/)\n\nPremier verified directory for independent call girls, Thai massage, and luxury companions in Jaipur, Rajasthan (302001).`
   },
   {
     id: 22,
@@ -430,9 +430,9 @@ const master50Platforms = [
     directUrl: 'https://codepen.io/pen/',
     otpRequired: 'No OTP (Email Signup Only)',
     targetUrl: `${DOMAIN}/`,
-    anchorText: 'Jaipur Escorts Club Web App',
-    seoTitle: 'Jaipur Escorts Club - High Performance React Portal Demo',
-    seoContent: `Showcase of ultra-fast static pre-rendered classified portal for Jaipur Escorts Club: [${DOMAIN}](${DOMAIN}).`
+    anchorText: 'Escorts Hub Jaipur Web App',
+    seoTitle: 'Escorts Hub Jaipur - High Performance React Portal Demo',
+    seoContent: `Showcase of ultra-fast static pre-rendered classified portal for Escorts Hub Jaipur: [${DOMAIN}](${DOMAIN}).`
   },
 
   // ── GROUP 4: BIO LINKS, SOCIAL PROFILES & WEB HUBS (10 UNIQUE SITES) ──
@@ -445,9 +445,9 @@ const master50Platforms = [
     directUrl: 'https://linktr.ee',
     otpRequired: 'No OTP (Email Signup Only)',
     targetUrl: `${DOMAIN}/`,
-    anchorText: 'Jaipur Escorts Club Official Linktree',
-    seoTitle: 'Jaipur Escorts Club - Official Multi-Locality Links',
-    seoContent: `All verified locality links and direct WhatsApp booking for Jaipur Escorts Club: ${DOMAIN}/.`
+    anchorText: 'Escorts Hub Jaipur Official Linktree',
+    seoTitle: 'Escorts Hub Jaipur - Official Multi-Locality Links',
+    seoContent: `All verified locality links and direct WhatsApp booking for Escorts Hub Jaipur: ${DOMAIN}/.`
   },
   {
     id: 32,
@@ -498,7 +498,7 @@ const master50Platforms = [
     otpRequired: 'No OTP (Email Signup Only)',
     targetUrl: `${DOMAIN}/call-girls/c-scheme`,
     anchorText: 'C Scheme Jaipur Models Gallery',
-    seoTitle: 'Jaipur Escorts Club - Verified Model Portfolios & Spa Luxury',
+    seoTitle: 'Escorts Hub Jaipur - Verified Model Portfolios & Spa Luxury',
     seoContent: `Discover verified glamour portfolios and Thai massage suites in Jaipur: ${DOMAIN}/call-girls/c-scheme.`
   },
   {
@@ -523,7 +523,7 @@ const master50Platforms = [
     directUrl: 'https://reddit.com/user/',
     otpRequired: 'No OTP (Email Signup Only)',
     targetUrl: `${DOMAIN}/`,
-    anchorText: 'Jaipur Escorts Club Verified Directory',
+    anchorText: 'Escorts Hub Jaipur Verified Directory',
     seoTitle: 'Official Guide to Verified Escorts & Thai Massage in Jaipur',
     seoContent: `Complete community guide for tourists and executives visiting Jaipur: ${DOMAIN}/.`
   },
@@ -550,7 +550,7 @@ const master50Platforms = [
     otpRequired: 'No OTP (Email Signup Only)',
     targetUrl: `${DOMAIN}/call-girls/raja-park`,
     anchorText: 'Raja Park Escorts Doc',
-    seoTitle: 'Raja Park Jaipur Escorts Club Verified Guide',
+    seoTitle: 'Raja Park Escorts Hub Jaipur Verified Guide',
     seoContent: `# Raja Park Escorts Guide\n\nVerified independent models: [${DOMAIN}/call-girls/raja-park](${DOMAIN}/call-girls/raja-park)`
   },
   {
@@ -590,9 +590,9 @@ const master50Platforms = [
     directUrl: 'https://tradeindia.com',
     otpRequired: 'No OTP (Email Business Profile)',
     targetUrl: `${DOMAIN}/`,
-    anchorText: 'Jaipur Escorts Club Service Directory',
-    seoTitle: 'Jaipur Escorts Club - Premier Classifieds & Spa Portal',
-    seoContent: `Jaipur Escorts Club is a premier verified online directory connecting independent service providers in Jaipur: ${DOMAIN}/.`
+    anchorText: 'Escorts Hub Jaipur Service Directory',
+    seoTitle: 'Escorts Hub Jaipur - Premier Classifieds & Spa Portal',
+    seoContent: `Escorts Hub Jaipur is a premier verified online directory connecting independent service providers in Jaipur: ${DOMAIN}/.`
   },
   {
     id: 43,
@@ -630,7 +630,7 @@ const master50Platforms = [
     otpRequired: 'No OTP (Email Verification Only)',
     targetUrl: `${DOMAIN}/call-girls/sindhi-camp`,
     anchorText: 'Sindhi Camp Escort Service',
-    seoTitle: 'Jaipur Escorts Club - Sindhi Camp Verified Branch',
+    seoTitle: 'Escorts Hub Jaipur - Sindhi Camp Verified Branch',
     seoContent: `Sindhi Camp Jaipur verified directory branch: ${DOMAIN}/call-girls/sindhi-camp. Open 24/7.`
   },
   {
@@ -656,7 +656,7 @@ const master50Platforms = [
     otpRequired: 'No OTP (Instant Post)',
     targetUrl: `${DOMAIN}/call-girls/malviya-nagar`,
     anchorText: 'Malviya Nagar Escort Directory',
-    seoTitle: 'Malviya Nagar Jaipur Escorts Club IndiaBizList Profile',
+    seoTitle: 'Malviya Nagar Escorts Hub Jaipur IndiaBizList Profile',
     seoContent: `Malviya Nagar Jaipur verified directory profile: ${DOMAIN}/call-girls/malviya-nagar.`
   },
   {
@@ -669,7 +669,7 @@ const master50Platforms = [
     otpRequired: 'No OTP (Email Confirmation Only)',
     targetUrl: `${DOMAIN}/call-girls/c-scheme`,
     anchorText: 'C Scheme Escorts Profile',
-    seoTitle: 'Jaipur Escorts Club C-Scheme Center Profile',
+    seoTitle: 'Escorts Hub Jaipur C-Scheme Center Profile',
     seoContent: `C-Scheme Jaipur verified independent companion center: ${DOMAIN}/call-girls/c-scheme.`
   },
   {
@@ -694,9 +694,9 @@ const master50Platforms = [
     directUrl: 'https://bizidex.com',
     otpRequired: 'No OTP (Instant Submit)',
     targetUrl: `${DOMAIN}/`,
-    anchorText: 'Jaipur Escorts Club Master Listing',
-    seoTitle: 'Jaipur Escorts Club Official Bizidex Directory Record',
-    seoContent: `Official Bizidex business directory listing for Jaipur Escorts Club: ${DOMAIN}/. Phone/WhatsApp: ${PHONE}`
+    anchorText: 'Escorts Hub Jaipur Master Listing',
+    seoTitle: 'Escorts Hub Jaipur Official Bizidex Directory Record',
+    seoContent: `Official Bizidex business directory listing for Escorts Hub Jaipur: ${DOMAIN}/. Phone/WhatsApp: ${PHONE}`
   }
 ];
 
@@ -723,7 +723,7 @@ function generateMasterBacklinksReport() {
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>50 Unique Referring Domains - SEO Backlinks Matrix | Jaipur Escorts Club</title>
+  <title>50 Unique Referring Domains - SEO Backlinks Matrix | Escorts Hub Jaipur</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -735,7 +735,7 @@ function generateMasterBacklinksReport() {
   <header class="mb-8 border-b border-[#222] pb-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
     <div>
       <h1 class="text-3xl md:text-4xl font-black gold-gradient">50 UNIQUE REFERRING DOMAINS MATRIX</h1>
-      <p class="text-sm text-neutral-400 mt-1">100% Zero-OTP Backlink Submission Directory for <span class="text-amber-400 font-bold">https://jaipurescortsclub.online</span></p>
+      <p class="text-sm text-neutral-400 mt-1">100% Zero-OTP Backlink Submission Directory for <span class="text-amber-400 font-bold">https://escortshubjaipur.com</span></p>
     </div>
     <div class="flex items-center gap-3">
       <span class="bg-emerald-950 border border-emerald-600/50 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-lg">50 Distinct IPs / Domains</span>
@@ -772,7 +772,7 @@ function generateMasterBacklinksReport() {
   </div>
 
   <footer class="mt-12 text-center text-xs text-neutral-500 border-t border-[#222] pt-6">
-    Generated by Jaipur Escorts Club SEO Automation Engine • 50 Unique Referring Domains Architecture
+    Generated by Escorts Hub Jaipur SEO Automation Engine • 50 Unique Referring Domains Architecture
   </footer>
 </body>
 </html>`;

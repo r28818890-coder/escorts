@@ -58,7 +58,7 @@ export const requestAdminPushPermission = async (): Promise<boolean> => {
     // Fire test notification
     new Notification(' Jaipur Skokka Admin Alerts Active!', {
       body: 'You will now receive live push notification alerts whenever a new visitor opens the website!',
-      icon: '/jaipur_escorts_club_logo.jpg',
+      icon: '/ecj-mark.svg',
     });
     return true;
   } else {
@@ -97,7 +97,7 @@ export const trackVisitorAndNotifyAdmin = (pathname: string): void => {
     ) {
       new Notification(' New Visitor Alert — Jaipur Escorts', {
         body: `Someone opened ${pathname} at ${formattedTime} (${deviceType}).`,
-        icon: '/jaipur_escorts_club_logo.jpg',
+        icon: '/ecj-mark.svg',
         tag: 'visitor-alert',
       });
     }

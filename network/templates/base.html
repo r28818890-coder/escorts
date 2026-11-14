@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e31777">
+  
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{canonical_url}}">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{meta_title}}">
+  <meta property="og:description" content="{{meta_description}}">
+  <meta property="og:image" content="https://{{site.domain}}/assets/img/hub/banner.svg">
+  <meta property="og:url" content="{{canonical_url}}">
+  <meta property="og:site_name" content="{{site.brand}}">
+  <meta property="og:locale" content="en_IN">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{meta_title}}">
+  <meta name="twitter:description" content="{{meta_description}}">
+  <meta name="twitter:image" content="https://{{site.domain}}/assets/img/hub/banner.svg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/hub/favicon.svg">
+  
+  <!-- Font Preconnect & Google Fonts (Jost + Open Sans only) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Theme Stylesheet -->
+  <link rel="stylesheet" href="/themes/hub.css">
+  
+  <!-- Structured Data JSON-LD (BreadcrumbList, FAQPage, ItemList, LocalBusiness on home only) -->
+  {{schema_json_ld}}
+  
+  <!-- Google Analytics 4 (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga4}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{site.ga4}}');
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Header & Nav (§8) -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="/" class="site-logo" aria-label="{{site.brand}} Noida Home">
+        <span>VIP</span>
+        {{site.brand}}
+      </a>
+
+      <!-- Hamburger Button (under 991px) -->
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Nav Menu Right -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="/" class="nav-link">Noida</a></li>
+          <li><a href="/call-girls/sector-18/" class="nav-link">Sector 18</a></li>
+          <li><a href="/call-girls/sector-62/" class="nav-link">Sector 62</a></li>
+          <li><a href="/call-girls/sector-137/" class="nav-link">Sector 137</a></li>
+          <li><a href="/call-girls/sector-15/" class="nav-link">Sector 15</a></li>
+          <li><a href="/noida-call-girls-rate/" class="nav-link">Rates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Sections (driven by sites.json order) -->
+  <main id="mainContent">
+    {{page_sections_html}}
+  </main>
+
+  <!-- Footer -->
+  {{footer_html}}
+
+  <!-- CTA Layer: 3 Floating Circles Right Edge (§11) -->
+  {{floating_ctas_html}}
+
+  <!-- CTA Layer: Fixed Bottom Two-Half Bar (§11) -->
+  {{sticky_bar_html}}
+
+  <!-- Age Gate Overlay & Modal (§12) -->
+  {{age_gate_html}}
+
+  <!-- Vanilla JavaScript -->
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
+

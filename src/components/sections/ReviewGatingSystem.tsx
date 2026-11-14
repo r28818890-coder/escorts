@@ -110,7 +110,7 @@ export const ReviewGatingSystem: React.FC = () => {
             Client Rating & Verification Feedback
           </h2>
           <p className="text-slate-400 max-w-lg mx-auto mt-1 text-[11px] md:text-sm font-medium">
-            Tap a star rating below to share your experience with Jaipur Escorts Club.
+            Tap a star rating below to share your experience with Escorts Hub Jaipur.
           </p>
         </div>
 

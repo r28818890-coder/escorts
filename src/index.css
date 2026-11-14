@@ -3,29 +3,31 @@
 @tailwind utilities;
 
 /* ============================================================
-   JAIPUR ESCORTS CLUB — LUXURY DAYLIGHT LIGHT THEME (HIGH VISIBILITY)
+  ESCORTS HUB NOIDA & NCR — MODERN LUXURY PORTAL DESIGN
    ============================================================ */
 
 :root {
-  /* Vibrant Rose, Indigo & Emerald Accents */
+  /* Ultra-luxury champagne gold & velvet rose accents */
+  --gold-500: #d4af37;
+  --gold-600: #b8872f;
+  --gold-700: #8f641d;
   --rose-600: #e11d48;
   --rose-700: #be123c;
-  --indigo-600: #4f46e5;
-  --indigo-700: #4338ca;
+  --emerald-500: #10b981;
   --emerald-600: #059669;
-  --emerald-700: #047857;
 
-  /* Crisp Daylight High-Contrast Slate Palette */
+  /* Refined High-Contrast Theme */
+  --slate-950: #0a0f1d;
   --slate-900: #0f172a;
   --slate-800: #1e293b;
   --slate-700: #334155;
   --slate-600: #475569;
   --slate-500: #64748b;
+  --slate-300: #cbd5e1;
   --slate-200: #e2e8f0;
   --slate-100: #f1f5f9;
   --slate-50: #f8fafc;
 
-  /* Mobile Performance & Rendering */
   color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,7 +45,70 @@ body {
   padding: 0;
 }
 
-/* ── Fast Mobile Tap Highlight & Smooth Scrolling ───────────── */
+/* ── Luxury UI Components ───────────────────────────────────── */
+@layer components {
+  /* Luxury Gold Glow Button */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-black text-xs sm:text-sm tracking-wide text-white transition-all duration-200;
+    background: linear-gradient(135deg, #b8872f 0%, #e5b958 50%, #8f641d 100%);
+    box-shadow: 0 4px 14px rgba(184, 135, 47, 0.35);
+  }
+
+  .btn-gold:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0 6px 20px rgba(184, 135, 47, 0.48);
+  }
+
+  /* WhatsApp High-Conversion Pill */
+  .btn-wa-direct {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2 font-bold text-xs text-white transition-all duration-200 bg-[#25D366] hover:bg-[#20bd5a];
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.28);
+  }
+
+  .btn-wa-direct:hover {
+    transform: scale(1.02);
+  }
+
+  /* Luxury Glassmorphic Card */
+  .luxury-card {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .luxury-card:hover {
+    border-color: #b8872f;
+    box-shadow: 0 12px 30px rgba(184, 135, 47, 0.12);
+    transform: translateY(-2px);
+  }
+
+  /* NCR Radar Glow Beacon */
+  .radar-beacon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .radar-beacon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background: inherit;
+    opacity: 0.6;
+    animation: radarPulse 1.8s ease-out infinite;
+  }
+}
+
+@keyframes radarPulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Fast Mobile Tap Highlight & Smooth Scrolling */
 * {
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
@@ -53,13 +118,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ── Content Visibility for Blazing Fast Mobile Scrolling ───── */
+/* Content Visibility for Blazing Fast Mobile Scrolling */
 .ad-card-item {
   content-visibility: auto;
   contain-intrinsic-size: 380px;
 }
 
-/* ── Subtle Scrollbar ───────────────────────────────────────── */
+/* Custom Sleek Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -78,7 +143,7 @@ html {
   background: #94a3b8;
 }
 
-/* ── Animations ────────────────────────────────────────────── */
+/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }

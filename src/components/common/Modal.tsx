@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, CheckCircle, Loader2, Sparkles, Phone } from 'lucide-react';
+import { CONTACT } from '@/config/site';
 
 const Modal: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -120,7 +121,7 @@ const Modal: React.FC = () => {
                   <Phone size={20} />
                   <div>
                     <div className="text-[10px] uppercase tracking-wider text-[#a3a3a3]">Instant Booking</div>
-                    <div>+91 7357678356</div>
+                    <div>{CONTACT.phoneDisplay}</div>
                   </div>
                 </div>
               </div>
@@ -139,7 +140,7 @@ const Modal: React.FC = () => {
                   <Phone size={18} />
                   <div>
                     <div className="text-[9px] uppercase tracking-wider text-[#a3a3a3]">Instant Booking</div>
-                    <div className="text-xs">+91 7357678356</div>
+                    <div className="text-xs">{CONTACT.phoneDisplay}</div>
                   </div>
                 </div>
               </div>

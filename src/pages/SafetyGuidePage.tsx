@@ -9,7 +9,7 @@ export const SafetyGuidePage: React.FC = () => {
     <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-8 pb-20">
       <SEO
         title={`Safety Guidelines & Scam Prevention – ${BRAND.name}`}
-        description={`Learn essential safety advice, fraud prevention tips, and verified booking protocols for adult classifieds in Jaipur.`}
+        description={`Learn essential safety advice, fraud prevention tips, and verified booking protocols for adult classifieds in Noida & NCR.`}
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,7 +22,7 @@ export const SafetyGuidePage: React.FC = () => {
             Safety & Anti-Scam Guidelines
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Your personal safety, privacy, and financial security are our top priorities. Please review our mandatory safety protocols before booking any companion in Jaipur.
+            Your personal safety, privacy, and financial security are our top priorities. Please review our mandatory safety protocols before booking any companion in Noida & NCR.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export const SafetyGuidePage: React.FC = () => {
             If any advertiser demands advance fee or sends unfamiliar links, notify our verification team immediately on WhatsApp.
           </p>
           <a
-            href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello Jaipur Escorts Club, I want to report a suspicious number or verify a profile.')}
+            href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello Escorts Hub Jaipur, I want to report a suspicious number or verify a profile.')}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-slate-950 font-bold text-xs uppercase tracking-wider hover:bg-slate-100 transition-colors shadow-sm"

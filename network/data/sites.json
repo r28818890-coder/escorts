@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hub",
+    "domain": "wenoidaescorts.com",
+    "brand": "We Noida Escorts",
+    "city": "Noida",
+    "theme": "hub",
+    "role": "money",
+    "phone": "+918769604056",
+    "phone2": "+917339763985",
+    "email": "contact@wenoidaescorts.com",
+    "telegram": "wenoidaescorts",
+    "address": "Sector 18, Noida",
+    "region": "UP",
+    "pin": "201301",
+    "lat": "28.5708",
+    "lng": "77.3211",
+    "areas": [
+      "Sector 18", "Sector 62", "Sector 63", "Sector 15", "Sector 16", "Sector 70",
+      "Sector 71", "Sector 72", "Sector 74", "Sector 75", "Sector 76", "Sector 77",
+      "Sector 78", "Sector 93", "Sector 100", "Sector 104", "Sector 110", "Sector 117",
+      "Sector 120", "Sector 122", "Sector 125", "Sector 128", "Sector 132", "Sector 137",
+      "Sector 168", "Noida Extension", "Greater Noida West"
+    ],
+    "rates": {
+      "1": "₹2,999–5,999",
+      "2": "₹5,999–11,999",
+      "3": "₹11,999–24,999",
+      "s1": "₹1,999–4,999",
+      "s2": "₹3,999–8,999",
+      "s3": "₹7,999–14,999"
+    },
+    "ga4": "G-XXXXXXX",
+    "order": [
+      "hero", "intro", "video", "trust-badges", "profile-grid", "why-us",
+      "rate-table", "phone-strip", "category-grid", "profile-grid-2", "services",
+      "hotel-guide", "booking-steps", "faq", "testimonials", "city-links", "contact"
+    ]
+  }
+]
+

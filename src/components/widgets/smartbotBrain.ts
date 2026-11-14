@@ -59,7 +59,7 @@ const generateAiBlogArticle = (userTopic: string) => {
   const newPost = {
     id,
     slug,
-    title: `${clean} — Official Jaipur Escorts Club Guide`,
+    title: `${clean} — Official Escorts Hub Jaipur Guide`,
     metaTitle: `${clean} | ${BRAND.name}`,
     metaDescription: `Read our comprehensive guide on ${clean}. Verified profiles, genuine photos, and direct WhatsApp contact in Jaipur.`,
     category: 'VIP Guide',
@@ -84,7 +84,7 @@ const generateAiBlogArticle = (userTopic: string) => {
 };
 
 /**
- * Master Jaipur Escorts Club Rule Engine
+ * Master Escorts Hub Jaipur Rule Engine
  */
 export const generateSmartBotResponse = (message: string, isAdminMode: boolean = false): SmartBotReply => {
   const normalized = message.toLowerCase().replace(/^[0-9]+\.\s*/, '').trim();
@@ -139,7 +139,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   // ── 1. DIRECT WHATSAPP ACTION ──────────────────────────────────────────
   if (contains(normalized, ['book on whatsapp', 'open whatsapp', 'whatsapp me', 'whatsapp par book', 'send whatsapp', 'book whatsapp', 'whatsapp'])) {
     return {
-      response: `Connecting you to Jaipur Escorts Club manager on WhatsApp for verified model photos and availability...`,
+      response: `Connecting you to Escorts Hub Jaipur manager on WhatsApp for verified model photos and availability...`,
       options: ['Verified Models', 'Check Rates & Packages', 'Jaipur Localities'],
       action: 'whatsapp'
     };

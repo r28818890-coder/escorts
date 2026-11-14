@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, MessageCircle, Sparkles, Crown, Users, Star, Clock } from 'lucide-react';
-import logoImage from '@/assets/Logo_page-0001.webp';
+import { CONTACT } from '@/config/site';
 
 /**
  * HeroSection — alternative hero used for A/B testing or secondary landing pages.
@@ -40,10 +40,10 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="mb-8"
           >
-            <div className="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-[#e11d48]/50 overflow-hidden shadow-[0_0_30px_rgba(225, 29, 72,0.25)]">
+            <div className="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-[#d6a33e]/70 overflow-hidden shadow-[0_0_30px_rgba(214,163,62,0.25)]">
               <img
-                src="/jaipur_escorts_club_logo.jpg"
-                alt="Jaipur Escorts Club Logo"
+                src="/ecj-mark.svg"
+                alt="ECJ — Escorts Hub Jaipur Logo"
                 className="w-full h-full object-cover"
                 loading="eager"
               />
@@ -92,24 +92,24 @@ const HeroSection: React.FC = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
           >
             <a
-              href="tel:+917357678356"
-              className="px-8 py-4 bg-gradient-to-r from-[#be123c] to-[#e11d48] text-black rounded-lg font-bold text-sm tracking-widest hover:scale-105 transition-transform shadow-lg shadow-[#be123c]/20 flex items-center justify-center gap-3 uppercase"
+              href={CONTACT.phoneHref}
+              className="btn-modern btn-modern-primary px-8 py-4 text-sm uppercase"
             >
               <Phone size={18} />
-              Call Now: 73576 78356
+              Call Now: {CONTACT.phoneDisplay}
             </a>
             <a
-              href="https://wa.me/917357678356?text=Hello%20Jaipur Spa%20SPA%2C%20I%20would%20like%20to%20book%20a%20therapy%20session.%20Please%20confirm%20availability."
+              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello ECJ, I would like to book a therapy session. Please confirm availability.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-[#25D366] text-white rounded-lg font-bold text-sm tracking-widest hover:scale-105 transition-transform shadow-lg shadow-[#25D366]/20 flex items-center justify-center gap-3 uppercase"
+              className="btn-modern px-8 py-4 bg-[#25D366] text-white text-sm uppercase"
             >
               <MessageCircle size={18} />
               Book on WhatsApp
             </a>
             <button
               onClick={() => window.dispatchEvent(new CustomEvent('open-lead-modal'))}
-              className="px-8 py-4 border border-[#e11d48]/50 text-[#e11d48] bg-white/5 backdrop-blur-sm rounded-lg font-bold text-sm tracking-widest hover:bg-[#e11d48]/10 transition-colors flex items-center justify-center gap-3 uppercase"
+              className="btn-modern btn-modern-outline px-8 py-4 text-sm uppercase"
             >
               <Crown size={18} />
               Book Appointment
