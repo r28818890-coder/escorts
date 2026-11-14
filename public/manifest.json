@@ -1,11 +1,11 @@
 ﻿{
-  "name": "Escorts Hub Jaipur - Verified Escorts & VIP Models",
+  "name": "Escorts Hub Noida - Verified Escorts & VIP Models",
   "short_name": "EscortsHub",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#fffaf0",
   "theme_color": "#b8872f",
-  "description": "Verified VIP escorts, call girls, and luxury companions directory in Jaipur, Rajasthan.",
+  "description": "Verified VIP escorts, call girls, and luxury companions directory in Noida & NCR.",
   "icons": [
     {
       "src": "/icon-192.png",
@@ -21,4 +21,3 @@
     }
   ]
 }
-

@@ -97,12 +97,22 @@ export const NewsFooter: React.FC = () => {
             {/* Column 3: Trust & Legal */}
             <div>
               <h4 className="font-bold text-amber-400 uppercase tracking-wider text-xs mb-3">
-                Safety & Info
+                Safety &amp; Info
               </h4>
               <ul className="space-y-2 text-xs">
                 <li>
+                  <Link to="/booking" className="text-amber-400 font-bold hover:underline">
+                    Fast 24/7 Booking
+                  </Link>
+                </li>
+                <li>
                   <Link to="/safety-guide" className="text-slate-300 hover:text-amber-400 transition-colors">
-                    Safety & Scam Prevention
+                    Safety &amp; Scam Prevention
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/safety-guide#editorial-policy" className="text-slate-300 hover:text-amber-400 transition-colors">
+                    Editorial Policy &amp; Review Standards
                   </Link>
                 </li>
                 <li>
@@ -112,7 +122,7 @@ export const NewsFooter: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/faq" className="text-slate-300 hover:text-amber-400 transition-colors">
-                    FAQ & Help
+                    FAQ &amp; Help
                   </Link>
                 </li>
                 <li>
@@ -122,7 +132,7 @@ export const NewsFooter: React.FC = () => {
                 </li>
                 <li>
                   <Link to="/terms" className="text-slate-300 hover:text-amber-400 transition-colors">
-                    Terms & Conditions
+                    Terms &amp; Conditions
                   </Link>
                 </li>
               </ul>
@@ -134,7 +144,7 @@ export const NewsFooter: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
           <div>
-            © 2026 {BRAND.name} ({BRAND.domain.replace('https://', '')}). All Rights Reserved.
+            © {new Date().getFullYear()} {BRAND.name} ({BRAND.domain.replace('https://', '')}). All Rights Reserved.
           </div>
           <div className="flex items-center gap-4 text-slate-400">
             <span>Direct WhatsApp: {CONTACT.phoneDisplay}</span>

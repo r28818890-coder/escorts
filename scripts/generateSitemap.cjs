@@ -15,7 +15,8 @@ const add = (route, priority, changefreq) => urls.set(`${DOMAIN}/${route}`.repla
 
 [
   ['', '1.0', 'daily'], ['about', '0.7', 'monthly'], ['contact', '0.8', 'monthly'],
-  ['faq', '0.8', 'weekly'], ['safety-guide', '0.8', 'weekly'], ['jaipur-areas', '0.8', 'weekly'],
+  ['booking', '0.9', 'daily'],
+  ['faq', '0.8', 'weekly'], ['safety-guide', '0.8', 'weekly'],
   ['noida-areas', '0.85', 'weekly'],
   ['privacy', '0.4', 'monthly'], ['terms', '0.4', 'monthly'], ['refund', '0.4', 'monthly'],
   ['blog', '0.85', 'weekly']

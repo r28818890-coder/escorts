@@ -21,9 +21,9 @@ export interface LocationItem {
 
 // ── 1. Brand Identity ─────────────────────────────────────────
 export const BRAND = {
-  name: 'We Noida Escorts',
-  shortName: 'We Noida Escorts',
-  legalName: 'We Noida Escorts Classifieds & Call Girl Directory',
+  name: 'Escorts Hub Noida',
+  shortName: 'Escorts Hub Noida',
+  legalName: 'Escorts Hub Noida Classifieds & Directory',
   tagline: "Noida's #1 Verified Call Girl & Escorts Service Directory",
   subTagline: 'Open 24 Hours • 100% Real Photo Verified • Cash On Delivery in Noida & NCR',
   domain: 'https://wenoidaescorts.com',
@@ -152,8 +152,6 @@ export const NOIDA_LOCATIONS: LocationItem[] = [
   { id: 18, area: 'Botanical Garden (Sector 37)', slug: 'botanical-garden', distance: '5 min drive', landmark: 'Interchange Metro & Amity University' },
 ];
 
-export const JAIPUR_LOCATIONS = NOIDA_LOCATIONS;
-
 // ── 5. Directory Statistics & Metrics ──────────────────────────
 export const SPA_STATS = {
   guests: '25,000+',
@@ -234,7 +232,6 @@ export default {
   BRAND,
   CONTACT,
   SERVICES_LIST,
-  JAIPUR_LOCATIONS,
   NOIDA_LOCATIONS,
   SPA_STATS,
   WA_MESSAGES,

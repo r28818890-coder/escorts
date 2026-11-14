@@ -4,8 +4,9 @@ const path = require('path');
 const distDir = path.join(__dirname, '..', 'dist');
 const indexPath = path.join(distDir, 'index.html');
 const DOMAIN = 'https://wenoidaescorts.com';
-const BRAND = 'We Noida Escorts';
+const BRAND = 'Escorts Hub Noida';
 const PHONE = '+918218125815';
+const PHONE_CLEAN = '8218125815';
 
 if (!fs.existsSync(indexPath)) {
   console.error('dist/index.html not found. Run vite build first.');
@@ -14,105 +15,669 @@ if (!fs.existsSync(indexPath)) {
 
 const baseHtml = fs.readFileSync(indexPath, 'utf8');
 
-// Categories
+// ── Categories Silo ───────────────────────────────────────────
 const CATEGORIES = [
-  { slug: 'call-girls', name: 'Call Girls & Escorts', keyword: 'call girls, VIP escorts, independent models & hotel outcall companions', heading: 'Call Girls & VIP Escorts' },
-  { slug: 'massages', name: 'Massages & Luxury Spa', keyword: 'luxury Thai spa, Swedish body massage, aromatherapy & couple jacuzzi', heading: 'Luxury Spa & Thai Body Massage' },
-  { slug: 'male-escorts', name: 'Male Escorts & Call Boys', keyword: 'handsome male escorts, fitness models & gigolos for women', heading: 'Male Escorts & Call Boys' },
-  { slug: 'transsexual', name: 'Transsexual & TS Escorts', keyword: 'shemale companions, crossdresser models & TS escorts', heading: 'Transsexual & TS Companions' },
-  { slug: 'adult-meetings', name: 'Adult Meetings & Casual Dating', keyword: 'local singles, casual adult meetings & discreet NSA romance', heading: 'Adult Meetings & Casual Dating' },
+  { 
+    slug: 'call-girls', 
+    name: 'Call Girls', 
+    keyword: 'call girls and VIP escort models', 
+    h1: 'Call Girls in Noida',
+    title: 'Call Girls in Noida | 100% Real Photo Verified',
+    desc: 'Book verified call girls in Noida with 100% real photos. Zero advance deposit, cash on delivery, and fast 20-min hotel outcall. Call or WhatsApp 8218125815.'
+  },
+  { 
+    slug: 'massages', 
+    name: 'Massages', 
+    keyword: 'luxury Thai spa, Swedish and deep tissue body massage therapies', 
+    h1: 'Massages & Luxury Spa in Noida',
+    title: 'Massages in Noida | Luxury Thai Spa & Body Therapy',
+    desc: 'Relaxing luxury Thai massage and full body spa in Noida. Doorstep hotel outcall and sanitized suites. Zero advance, cash on delivery. Call 8218125815.'
+  },
+  { 
+    slug: 'male-escorts', 
+    name: 'Male Escorts', 
+    keyword: 'male escorts, handsome fitness companions and call boys for women', 
+    h1: 'Male Escorts in Noida',
+    title: 'Male Escorts in Noida | VIP Companions for Women',
+    desc: 'Discreet male escorts and handsome companions in Noida for women and couples. 100% verified gentlemen, zero advance, 20-min arrival. Call 8218125815.'
+  },
+  { 
+    slug: 'transsexual', 
+    name: 'Transsexual', 
+    keyword: 'transsexual companions, TS models and independent shemale escorts', 
+    h1: 'Transsexual Escorts in Noida',
+    title: 'Transsexual Escorts in Noida | Verified TS Models',
+    desc: 'Verified transsexual escorts and TS models in Noida. Doorstep 24/7 hotel outcall, 100% real photo verification, cash on delivery. Call 8218125815 now.'
+  },
+  { 
+    slug: 'adult-meetings', 
+    name: 'Adult Meetings', 
+    keyword: 'casual adult meetings, discreet dating and VIP private encounters', 
+    h1: 'Adult Meetings in Noida',
+    title: 'Adult Meetings in Noida | Discreet 24/7 Encounters',
+    desc: 'Discreet adult meetings and casual dating in Noida. Verified independent companions, zero advance fraud, fast 20-min hotel outcall. Call 8218125815.'
+  },
 ];
 
-// Noida & NCR Localities with Landmarks
+// ── Noida Detail Bank (18 Prime Localities) ───────────────────
 const LOCALITIES = [
-  { slug: 'sector-18', name: 'Sector 18 Noida', landmark: 'DLF Mall of India, Atta Market & Metro Gate 2' },
-  { slug: 'sector-62', name: 'Sector 62 Noida', landmark: 'Electronic City, Fortis Hospital & IT Park' },
-  { slug: 'sector-50', name: 'Sector 50 Noida', landmark: 'Wave City Center, Central Market & Metro' },
-  { slug: 'sector-137', name: 'Sector 137 Noida', landmark: 'Noida-Greater Noida Expressway & Felix Hospital' },
-  { slug: 'sector-18-film-city', name: 'Sector 16 & Film City', landmark: 'Film City, DND Flyway & World Trade Tower' },
-  { slug: 'sector-76-78', name: 'Sector 76 & 78 Noida', landmark: 'Silicon City, Amrapali Silicon & Metro' },
-  { slug: 'sector-128', name: 'Sector 128 Noida', landmark: 'Jaypee Wish Town, Kalindi Kunj & Sultanpur' },
-  { slug: 'sector-142', name: 'Sector 142 Noida', landmark: 'Advant Navis Business Park & Aqua Line Metro' },
-  { slug: 'pari-chowk', name: 'Pari Chowk Greater Noida', landmark: 'Alpha 1, Ansal Plaza & India Expo Mart' },
-  { slug: 'noida-extension', name: 'Noida Extension (Gr Noida West)', landmark: 'Gaur City Mall, Char Murti & Kisan Chowk' },
-  { slug: 'knowledge-park', name: 'Knowledge Park Greater Noida', landmark: 'India Expo Centre, Galgotias & Sharda' },
-  { slug: 'indirapuram', name: 'Indirapuram Ghaziabad', landmark: 'Shipra Mall, Habitat Centre & Swarna Jayanti' },
-  { slug: 'vaishali', name: 'Vaishali Ghaziabad', landmark: 'Vaishali Metro Station & Max Super Speciality Hospital' },
-  { slug: 'vasundhara', name: 'Vasundhara Ghaziabad', landmark: 'Mewar Institute, Sector 10 & Mohan Nagar link' },
-  { slug: 'crossings-republik', name: 'Crossings Republik', landmark: 'NH-24, ABES Engineering & Gaur City Border' },
-  { slug: 'kaushambi', name: 'Kaushambi', landmark: 'Radisson Blu & Anand Vihar Inter-State Border' },
-  { slug: 'mayur-vihar', name: 'Mayur Vihar', landmark: 'Phase 1 & DND Noida Toll Border' },
-  { slug: 'botanical-garden', name: 'Botanical Garden (Sector 37)', landmark: 'Magenta/Blue Line Interchange Metro & Amity' },
+  {
+    slug: 'sector-18',
+    name: 'Sector 18 Noida',
+    metro: 'Sector 18 Metro Station Gate 2 (Blue Line)',
+    landmarks: ['DLF Mall of India', 'Atta Market', 'Gardens Galleria'],
+    hotels: [
+      { name: 'Radisson Blu Hotel Noida', stars: '5-Star Luxury' },
+      { name: 'Mosaic Hotel Noida', stars: '4-Star Boutique' }
+    ],
+    driveTime: '0 min (Central Epicenter)',
+    clientProfile: 'High-net-worth corporate executives, luxury shoppers, and upscale hotel guests seeking refined companionship.',
+    adjacent: [
+      { slug: 'sector-18-film-city', name: 'Sector 16 & Film City' },
+      { slug: 'botanical-garden', name: 'Botanical Garden' },
+      { slug: 'sector-50', name: 'Sector 50 Noida' }
+    ],
+    specialty: 'commercial nightlife, fine dining at Gardens Galleria, and rapid 15-minute 5-star hotel outcall visits'
+  },
+  {
+    slug: 'sector-62',
+    name: 'Sector 62 Noida',
+    metro: 'Noida Electronic City Metro Station Gate 1 (Blue Line)',
+    landmarks: ['Fortis Hospital Sector 62', 'Stellar IT Park', 'Symbiosis Law School'],
+    hotels: [
+      { name: 'Park Ascent Hotel', stars: '4-Star Executive' },
+      { name: 'Ginger Hotel Sector 62', stars: '3-Star Deluxe' }
+    ],
+    driveTime: '12 min drive from Sector 18',
+    clientProfile: 'IT directors, software architects, corporate trainers, and multinational delegates visiting tech campuses.',
+    adjacent: [
+      { slug: 'indirapuram', name: 'Indirapuram Ghaziabad' },
+      { slug: 'sector-50', name: 'Sector 50 Noida' },
+      { slug: 'sector-76-78', name: 'Sector 76 & 78 Noida' }
+    ],
+    specialty: 'software campus business executives, institutional summits, and quiet discreet hotel room visits'
+  },
+  {
+    slug: 'sector-50',
+    name: 'Sector 50 Noida',
+    metro: 'Sector 50 Metro Station Gate 2 (Aqua Line)',
+    landmarks: ['Central Market Sector 50', 'Wave City Center', 'Ramagya Sports Complex'],
+    hotels: [
+      { name: 'Fortune Inn Grazia Sector 27', stars: '4-Star Business' },
+      { name: 'The Fern Residency Noida', stars: '4-Star Deluxe' }
+    ],
+    driveTime: '8 min drive from Sector 18',
+    clientProfile: 'Upscale residential apartment residents, local entrepreneurs, and visiting trade delegates.',
+    adjacent: [
+      { slug: 'sector-18', name: 'Sector 18 Noida' },
+      { slug: 'sector-76-78', name: 'Sector 76 & 78 Noida' },
+      { slug: 'sector-62', name: 'Sector 62 Noida' }
+    ],
+    specialty: 'peaceful residential avenues, elite clubhouses, and doorstep executive companion visits'
+  },
+  {
+    slug: 'sector-137',
+    name: 'Sector 137 Noida',
+    metro: 'Sector 137 Metro Station Gate 1 (Aqua Line)',
+    landmarks: ['Felix Hospital', 'Paras Tierea Boulevard', 'Noida Expressway Green Belt'],
+    hotels: [
+      { name: 'Sandal Suites by Lemon Tree', stars: '4-Star Serviced Suites' },
+      { name: 'Regenta Central Noida', stars: '4-Star Business' }
+    ],
+    driveTime: '14 min drive from Sector 18',
+    clientProfile: 'Expressway IT professionals, pharmaceutical executives, and corporate apartment residents.',
+    adjacent: [
+      { slug: 'sector-128', name: 'Sector 128 Noida' },
+      { slug: 'sector-142', name: 'Sector 142 Noida' },
+      { slug: 'sector-76-78', name: 'Sector 76 & 78 Noida' }
+    ],
+    specialty: 'modern expressway condominiums, corporate serviced residences, and fast outcalls along the corridor'
+  },
+  {
+    slug: 'sector-18-film-city',
+    name: 'Sector 16 & Film City',
+    metro: 'Sector 16 Metro Station Gate 2 (Blue Line)',
+    landmarks: ['Film City Media Studios', 'World Trade Tower (WTT)', 'DND Flyway Toll Plaza'],
+    hotels: [
+      { name: 'Savoy Suites Noida', stars: '4-Star Luxury Serviced' },
+      { name: 'Marigold Sarovar Portico', stars: '4-Star Deluxe' }
+    ],
+    driveTime: '4 min drive from Sector 18',
+    clientProfile: 'Broadcast journalists, entertainment producers, media executives, and corporate leaders.',
+    adjacent: [
+      { slug: 'sector-18', name: 'Sector 18 Noida' },
+      { slug: 'mayur-vihar', name: 'Mayur Vihar' },
+      { slug: 'botanical-garden', name: 'Botanical Garden' }
+    ],
+    specialty: 'national news studios, television production crews, executive dining dates, and VIP meetings'
+  },
+  {
+    slug: 'sector-76-78',
+    name: 'Sector 76 & 78 Noida',
+    metro: 'Sector 76 Metro Station Gate 2 (Aqua Line)',
+    landmarks: ['Silicon City High-Rise', 'Mahagun Moderne Plaza', 'Amrapali Silicon Market'],
+    hotels: [
+      { name: 'Radisson Noida Sector 55', stars: '4-Star Business' },
+      { name: 'PK Boutique Hotel Sector 72', stars: '3-Star Deluxe' }
+    ],
+    driveTime: '10 min drive from Sector 18',
+    clientProfile: 'Tech startup leaders, corporate consultants, and young professionals in luxury towers.',
+    adjacent: [
+      { slug: 'sector-50', name: 'Sector 50 Noida' },
+      { slug: 'sector-137', name: 'Sector 137 Noida' },
+      { slug: 'sector-62', name: 'Sector 62 Noida' }
+    ],
+    specialty: 'rapidly expanding residential townships, vibrant neighborhood cafes, and discreet private visits'
+  },
+  {
+    slug: 'sector-128',
+    name: 'Sector 128 Noida',
+    metro: 'Okhla Bird Sanctuary / Kalindi Kunj Metro Gate 1 (Magenta Line)',
+    landmarks: ['Jaypee Wish Town', 'Jaypee Multi-Specialty Hospital', 'Sultanpur Expressway Belt'],
+    hotels: [
+      { name: 'Jaypee Greens Golf & Spa Resort', stars: '5-Star Golf Retreat' },
+      { name: 'Treebo Trend Sector 128', stars: '3-Star Deluxe' }
+    ],
+    driveTime: '12 min drive from Sector 18',
+    clientProfile: 'Golf club members, medical tourism families, luxury villa owners, and executive delegates.',
+    adjacent: [
+      { slug: 'sector-137', name: 'Sector 137 Noida' },
+      { slug: 'sector-142', name: 'Sector 142 Noida' },
+      { slug: 'botanical-garden', name: 'Botanical Garden' }
+    ],
+    specialty: 'gated golf course villas, ultra-luxury suites, serene landscaped environs, and utmost privacy'
+  },
+  {
+    slug: 'sector-142',
+    name: 'Sector 142 Noida',
+    metro: 'Sector 142 Metro Station Gate 1 (Aqua Line)',
+    landmarks: ['Advant Navis Business Park', 'KPMG Global Campus', 'Oxygen IT SEZ Park'],
+    hotels: [
+      { name: 'Sandal Suites Serviced Residences', stars: '4-Star Luxury' },
+      { name: 'Golden Tulip Expressway', stars: '4-Star Executive' }
+    ],
+    driveTime: '16 min drive from Sector 18',
+    clientProfile: 'Multinational software developers, global audit directors, and corporate project teams.',
+    adjacent: [
+      { slug: 'sector-137', name: 'Sector 137 Noida' },
+      { slug: 'sector-128', name: 'Sector 128 Noida' },
+      { slug: 'pari-chowk', name: 'Pari Chowk Greater Noida' }
+    ],
+    specialty: 'multinational IT office parks, high-end pubs at Advant Navis, and evening hotel rendezvous'
+  },
+  {
+    slug: 'pari-chowk',
+    name: 'Pari Chowk Greater Noida',
+    metro: 'Pari Chowk Metro Station Gate 2 (Aqua Line)',
+    landmarks: ['Alpha 1 Commercial Complex', 'Ansal Plaza Mall', 'The Grand Venice Mall'],
+    hotels: [
+      { name: 'Crowne Plaza Greater Noida', stars: '5-Star Luxury' },
+      { name: 'Radisson Blu Hotel Greater Noida', stars: '5-Star International' }
+    ],
+    driveTime: '22 min drive from Sector 18',
+    clientProfile: 'Industrialists, foreign automotive delegates, trade show exhibitors, and university dignitaries.',
+    adjacent: [
+      { slug: 'knowledge-park', name: 'Knowledge Park Greater Noida' },
+      { slug: 'noida-extension', name: 'Noida Extension' },
+      { slug: 'sector-142', name: 'Sector 142 Noida' }
+    ],
+    specialty: 'grand gateway to Greater Noida, upscale resort hotels, and international trade fair visitors'
+  },
+  {
+    slug: 'noida-extension',
+    name: 'Noida Extension (Gr Noida West)',
+    metro: 'Sector 52 Metro Station Gate 3 (connecting Blue Line to Gaur City)',
+    landmarks: ['Gaur City Mall', 'Char Murti Chowk', 'Kisan Chowk Commercial Belt'],
+    hotels: [
+      { name: 'The Gaurs Sarovar Portico', stars: '4-Star Business' },
+      { name: 'Hotel Hyphen Gaur City', stars: '3-Star Deluxe' }
+    ],
+    driveTime: '15 min drive from Sector 18',
+    clientProfile: 'Young tech entrepreneurs, residential township residents, and weekend leisure travelers.',
+    adjacent: [
+      { slug: 'crossings-republik', name: 'Crossings Republik' },
+      { slug: 'pari-chowk', name: 'Pari Chowk' },
+      { slug: 'sector-62', name: 'Sector 62 Noida' }
+    ],
+    specialty: 'sprawling residential skyscrapers, bustling retail avenues, and convenient evening outcalls'
+  },
+  {
+    slug: 'knowledge-park',
+    name: 'Knowledge Park Greater Noida',
+    metro: 'Knowledge Park II Metro Station Gate 1 (Aqua Line)',
+    landmarks: ['India Expo Mart & Centre', 'Galgotias University Boulevard', 'Sharda University Campus'],
+    hotels: [
+      { name: 'Crowne Plaza Surajpur', stars: '5-Star Convention' },
+      { name: 'Savoy Suites Greater Noida', stars: '4-Star Serviced' }
+    ],
+    driveTime: '25 min drive from Sector 18',
+    clientProfile: 'International expo keynote speakers, trade delegates, academic researchers, and exhibitors.',
+    adjacent: [
+      { slug: 'pari-chowk', name: 'Pari Chowk Greater Noida' },
+      { slug: 'sector-142', name: 'Sector 142 Noida' },
+      { slug: 'sector-128', name: 'Sector 128 Noida' }
+    ],
+    specialty: 'global trade fairs at India Expo Mart, sprawling academic estates, and serene resort retreats'
+  },
+  {
+    slug: 'indirapuram',
+    name: 'Indirapuram Ghaziabad',
+    metro: 'Vaishali Metro Station Gate 1 (Blue Line / 5 min cab)',
+    landmarks: ['Shipra Mall', 'Habitat Centre Indirapuram', 'Swarna Jayanti Park'],
+    hotels: [
+      { name: 'Country Inn & Suites Sahibabad', stars: '5-Star Deluxe' },
+      { name: 'Hotel Maiden Residency', stars: '3-Star Boutique' }
+    ],
+    driveTime: '12 min drive from Sector 18',
+    clientProfile: 'NCR business traders, retail entrepreneurs, and upscale Ghaziabad condominium owners.',
+    adjacent: [
+      { slug: 'vaishali', name: 'Vaishali Ghaziabad' },
+      { slug: 'vasundhara', name: 'Vasundhara Ghaziabad' },
+      { slug: 'sector-62', name: 'Sector 62 Noida' }
+    ],
+    specialty: 'bustling commercial plazas, Trans-Hindon residential luxury, and prompt cross-border outcall visits'
+  },
+  {
+    slug: 'vaishali',
+    name: 'Vaishali Ghaziabad',
+    metro: 'Vaishali Metro Station Gate 2 (Blue Line Terminus)',
+    landmarks: ['Max Super Speciality Hospital Vaishali', 'Shopprix Mall', 'Mahagun Metro Mall'],
+    hotels: [
+      { name: 'Radisson Blu Kaushambi', stars: '5-Star Business' },
+      { name: 'Fortune Inn Grazia', stars: '4-Star Corporate' }
+    ],
+    driveTime: '14 min drive from Sector 18',
+    clientProfile: 'Visiting medical consultants, retail executives, and Delhi-Noida transit business travelers.',
+    adjacent: [
+      { slug: 'indirapuram', name: 'Indirapuram' },
+      { slug: 'kaushambi', name: 'Kaushambi' },
+      { slug: 'vasundhara', name: 'Vasundhara' }
+    ],
+    specialty: 'direct Delhi Blue Line connectivity, major medical healthcare hubs, and boutique hotel outcalls'
+  },
+  {
+    slug: 'vasundhara',
+    name: 'Vasundhara Ghaziabad',
+    metro: 'Mohan Nagar Metro Station Gate 2 (Red Line) & Vaishali link',
+    landmarks: ['Mewar Institute of Management', 'Sector 10 Vasundhara Market', 'Olive County'],
+    hotels: [
+      { name: 'Golden Tulip Vasundhara', stars: '4-Star Deluxe' },
+      { name: 'Clark Greens Hotel', stars: '3-Star Business' }
+    ],
+    driveTime: '16 min drive from Sector 18',
+    clientProfile: 'Corporate training directors, small business owners, and residential township executives.',
+    adjacent: [
+      { slug: 'indirapuram', name: 'Indirapuram' },
+      { slug: 'vaishali', name: 'Vaishali' },
+      { slug: 'sector-62', name: 'Sector 62 Noida' }
+    ],
+    specialty: 'quiet residential sectors, institutional campuses, and convenient doorstep companion visits'
+  },
+  {
+    slug: 'crossings-republik',
+    name: 'Crossings Republik',
+    metro: 'Noida Electronic City Gate 2 (via NH-24 / 10 min)',
+    landmarks: ['NH-24 Expressway Corridor', 'ABES Engineering Campus', 'Panchsheel Wellington Plaza'],
+    hotels: [
+      { name: 'Mahagun Sarovar Portico', stars: '4-Star Deluxe' },
+      { name: 'Hotel Royal Palace NH-24', stars: '3-Star Executive' }
+    ],
+    driveTime: '18 min drive from Sector 18',
+    clientProfile: 'Interstate highway travelers, logistics directors, and sub-city condominium residents.',
+    adjacent: [
+      { slug: 'noida-extension', name: 'Noida Extension' },
+      { slug: 'indirapuram', name: 'Indirapuram' },
+      { slug: 'sector-62', name: 'Sector 62 Noida' }
+    ],
+    specialty: 'modern sub-city towers along Delhi-Meerut Expressway NH-24 with straightforward highway access'
+  },
+  {
+    slug: 'kaushambi',
+    name: 'Kaushambi',
+    metro: 'Kaushambi Metro Station Gate 1 (Blue Line)',
+    landmarks: ['Anand Vihar ISBT Border', 'Wave Cinemas Kaushambi', 'Pacific Mall Trans-Hindon'],
+    hotels: [
+      { name: 'Radisson Blu Kaushambi Delhi NCR', stars: '5-Star Luxury' },
+      { name: 'Hotel The Raso Kaushambi', stars: '3-Star Deluxe' }
+    ],
+    driveTime: '15 min drive from Sector 18',
+    clientProfile: 'Delhi-Noida transit passengers, interstate business traders, and luxury shoppers.',
+    adjacent: [
+      { slug: 'vaishali', name: 'Vaishali' },
+      { slug: 'mayur-vihar', name: 'Mayur Vihar' },
+      { slug: 'sector-18-film-city', name: 'Sector 16 & Film City' }
+    ],
+    specialty: 'border crossing between East Delhi and Ghaziabad, Anand Vihar transit, and 5-star Radisson outcalls'
+  },
+  {
+    slug: 'mayur-vihar',
+    name: 'Mayur Vihar',
+    metro: 'Mayur Vihar Phase 1 Metro Station Gate 1 (Pink & Blue Line interchange)',
+    landmarks: ['DND Flyway Toll Border', 'Chilla Regulator Green', 'Star City Mall'],
+    hotels: [
+      { name: 'Crowne Plaza New Delhi Mayur Vihar', stars: '5-Star International' },
+      { name: 'Holiday Inn Mayur Vihar', stars: '4-Star Corporate' }
+    ],
+    driveTime: '8 min drive from Sector 18',
+    clientProfile: 'Delhi corporate leaders visiting Noida offices, embassy officials, and affluent travelers.',
+    adjacent: [
+      { slug: 'sector-18-film-city', name: 'Sector 16 & Film City' },
+      { slug: 'sector-18', name: 'Sector 18 Noida' },
+      { slug: 'kaushambi', name: 'Kaushambi' }
+    ],
+    specialty: 'prime DND corridor linking New Delhi to Noida with swift 5-star hotel companion dispatch'
+  },
+  {
+    slug: 'botanical-garden',
+    name: 'Botanical Garden (Sector 37)',
+    metro: 'Botanical Garden Metro Station Gate 2 (Blue & Magenta Mega Interchange)',
+    landmarks: ['Amity University Campus (Sector 125)', 'Noida Golf Course', 'Sector 37 Commercial Complex'],
+    hotels: [
+      { name: 'Radisson Blu Hotel Noida', stars: '5-Star Premier' },
+      { name: 'Sandal Suites Executive', stars: '4-Star Serviced' }
+    ],
+    driveTime: '5 min drive from Sector 18',
+    clientProfile: 'Metro commuters, Golf course members, university visiting lecturers, and executive guests.',
+    adjacent: [
+      { slug: 'sector-18', name: 'Sector 18 Noida' },
+      { slug: 'sector-18-film-city', name: 'Sector 16 & Film City' },
+      { slug: 'sector-128', name: 'Sector 128 Noida' }
+    ],
+    specialty: 'major metro transit hub, Amity University institutional belt, and quick access to Central Noida'
+  }
 ];
 
+// Helper to construct unique, rich 850-1,100 word content for locality pages
+function buildLocalityHtml(cat, loc) {
+  const isCallGirl = cat.slug === 'call-girls';
+  const primaryKw = isCallGirl 
+    ? (loc.slug === 'sector-62' ? `call girls in ${loc.name.toLowerCase()}` : `escorts in ${loc.name.toLowerCase()}`)
+    : `${cat.name.toLowerCase()} in ${loc.name.toLowerCase()}`;
+  
+  const h1Text = isCallGirl
+    ? (loc.slug === 'sector-62' ? `Call Girls in ${loc.name}` : `Escorts in ${loc.name}`)
+    : `${cat.name} in ${loc.name}`;
+
+  return `
+    <article class="locality-content space-y-8 text-slate-700 leading-relaxed text-sm">
+      <section class="overview-box bg-slate-50 border border-slate-200 rounded-2xl p-6">
+        <h2 class="text-xl font-black text-slate-900 mb-3">Overview: Verified Companions &amp; Outcall Services in ${loc.name}</h2>
+        <p class="mb-3">
+          Located in the thriving Gautam Buddha Nagar district, <strong>${loc.name}</strong> represents one of the National Capital Region's most strategic zones for business, upscale residences, and executive hospitality. Whether you are staying for a corporate conference, enjoying an evening date near ${loc.landmarks[0]}, or unwinding in a luxury suite after a day of meetings, finding 100% verified, discreet adult companionship should be smooth, safe, and transparent.
+        </p>
+        <p>
+          At <strong>${BRAND}</strong>, we provide exclusive, authentic ${cat.keyword} in ${loc.name} with strict zero-advance cash on delivery terms. Our models and hostesses undergo rigorous real-photo matching and identity authentication, guaranteeing that the companion who arrives at your doorstep matches her profile photographs exactly.
+        </p>
+      </section>
+
+      <section class="transit-box bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <h3 class="text-lg font-black text-slate-900 mb-3">Transit &amp; Key Landmarks in ${loc.name}</h3>
+        <p class="mb-3">
+          Seamless navigation is essential for prompt companion dispatch. Here are the essential geographic reference points for ${loc.name}:
+        </p>
+        <ul class="list-disc pl-5 space-y-2 mb-4">
+          <li><strong>Nearest Metro Station:</strong> ${loc.metro} provides effortless connectivity for rapid outcalls.</li>
+          <li><strong>Prominent Local Landmarks:</strong> ${loc.landmarks.join(', ')} serve as prominent urban waypoints.</li>
+          <li><strong>Drive Time from Sector 18:</strong> Approximately ${loc.driveTime}, allowing verified models to reach your hotel room within 15 to 25 minutes of confirmation.</li>
+          <li><strong>Local Urban Profile:</strong> Known for ${loc.specialty}.</li>
+        </ul>
+        <p>
+          Our field dispatch coordinators maintain real-time contact with drivers across Gautam Buddha Nagar to ensure punctual arrival without traffic disruptions.
+        </p>
+      </section>
+
+      <section class="hotel-box bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <h3 class="text-lg font-black text-slate-900 mb-3">Recommended 4-Star &amp; 5-Star Hotels for Outcalls in ${loc.name}</h3>
+        <p class="mb-3">
+          Privacy, security, and discreet guest reception are vital for an unhurried companionship experience. In and around ${loc.name}, our companions routinely fulfill 24/7 outcall visits to premier hospitality destinations, including:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+          ${loc.hotels.map(h => `
+            <div class="p-4 rounded-xl bg-amber-50/50 border border-amber-200">
+              <h4 class="font-bold text-slate-900 text-sm">${h.name} (${h.stars})</h4>
+              <p class="text-xs text-slate-600 mt-1">Excellent guest discretion, swift elevator access, and accommodating visitor policies with standard ID verification.</p>
+            </div>
+          `).join('')}
+        </div>
+        <p class="text-xs text-slate-500">
+          Note: In accordance with hospitality norms across Uttar Pradesh and the NCR, registered adult guests are advised to carry a government-approved photo ID (Aadhaar or Passport) to ensure effortless check-in.
+        </p>
+      </section>
+
+      <section class="client-box bg-slate-50 border border-slate-200 rounded-2xl p-6">
+        <h3 class="text-lg font-black text-slate-900 mb-3">Clientele Profile &amp; Custom Experiences in ${loc.name}</h3>
+        <p class="mb-3">
+          <strong>Typical Visitors &amp; Residents:</strong> ${loc.clientProfile}
+        </p>
+        <p class="mb-3">
+          Whether you require an elegant dinner companion for an evening at an upscale bistro, a charming partner for corporate networking, or an unhurried private overnight rendezvous in your luxury suite, our roster features independent models, corporate hostesses, air hostess companions, and charming college graduates tailored to your preferences.
+        </p>
+        <p>
+          Each booking is handled with utmost confidentiality. We do not store telephone records or market to client numbers, guaranteeing that your personal affairs remain entirely private.
+        </p>
+      </section>
+
+      <section class="anti-scam-box bg-slate-900 text-white rounded-2xl p-6">
+        <h3 class="text-lg font-black text-amber-400 mb-2">Zero-Advance Payment &amp; Scam Protection Protocol</h3>
+        <p class="text-xs sm:text-sm text-slate-300 mb-3 leading-relaxed">
+          Online classified scams often ask for advance booking deposits, cab fees, or medical security deposits via UPI or digital wallets. At ${BRAND}, we operate with a <strong>100% Zero Advance Guarantee</strong>. You never pay any money upfront. You inspect your companion in person upon her arrival at your room door, and payment is settled in cash directly to her.
+        </p>
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 bg-emerald-950/80 border border-emerald-800 px-3 py-1.5 rounded-full">
+          ✓ Verified Doorstep Physical Arrival • Cash on Delivery • Zero Risk
+        </div>
+      </section>
+
+      <section class="adjacent-mesh-box bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <h3 class="text-lg font-black text-slate-900 mb-3">Explore Nearby Noida &amp; NCR Sectors</h3>
+        <p class="text-xs text-slate-600 mb-3">
+          Need companions in neighboring sectors? Our network seamlessly covers all adjacent NCR localities:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          ${loc.adjacent.map(adj => `
+            <a href="/call-girls/${adj.slug}" class="p-3 rounded-xl bg-slate-50 hover:bg-amber-50 border border-slate-200 hover:border-amber-400 transition-all text-center block text-xs font-bold text-slate-900 hover:text-amber-700">
+              ${adj.name} Escorts →
+            </a>
+          `).join('')}
+        </div>
+      </section>
+
+      <section class="faq-box bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <h3 class="text-lg font-black text-slate-900 mb-4">Frequently Asked Questions in ${loc.name}</h3>
+        <div class="space-y-3 text-xs sm:text-sm">
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-1">Q1: How quickly can a verified companion reach my hotel in ${loc.name}?</h4>
+            <p class="text-slate-600">A: Because our companions are stationed locally across Gautam Buddha Nagar, average outcall arrival time to hotels in ${loc.name} is between 15 to 25 minutes after WhatsApp confirmation.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-1">Q2: Do I have to pay any advance deposit before meeting?</h4>
+            <p class="text-slate-600">A: No. We strictly prohibit advance payments. You settle the service amount in cash directly to your companion only after she arrives in person at your door.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-1">Q3: Which hotels in ${loc.name} are safest for guest visits?</h4>
+            <p class="text-slate-600">A: Properties like ${loc.hotels[0].name} and ${loc.hotels[1].name} provide professional, secure environments that respect guest privacy and follow standard visitor entry procedures.</p>
+          </div>
+          <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-1">Q4: How do I book an outcall session in ${loc.name}?</h4>
+            <p class="text-slate-600">A: Simply select your preferred profile from our directory, click the WhatsApp button, or call our dispatcher directly at +91 8218125815 with your hotel details.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-box p-6 rounded-2xl bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-bold flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <h4 class="text-base sm:text-lg font-black">Ready to Book in ${loc.name}?</h4>
+          <p class="text-xs text-slate-900 font-medium">100% real photo verified models • 20-min hotel doorstep outcall • Zero advance.</p>
+        </div>
+        <div class="flex items-center gap-2 shrink-0">
+          <a href="tel:+918218125815" class="px-4 py-2.5 bg-slate-950 text-white rounded-xl text-xs font-black uppercase tracking-wider hover:bg-slate-900 transition-all">
+            Call 8218125815
+          </a>
+          <a href="https://wa.me/918218125815?text=${encodeURIComponent(`Hello Escorts Hub Noida! I want to book a verified companion in ${loc.name}.`)}" class="px-4 py-2.5 bg-[#25D366] text-white rounded-xl text-xs font-black uppercase tracking-wider hover:bg-[#20bd5a] transition-all">
+            WhatsApp
+          </a>
+        </div>
+      </section>
+    </article>
+  `;
+}
+
+// ── Build Routes Collection ───────────────────────────────────
 const subRoutes = [];
 
-// 1. Category Hubs
+// 0. Homepage
+subRoutes.push({
+  path: '',
+  title: 'Escorts in Noida | Verified 24/7 Hotel Outcall',
+  desc: 'Book verified escorts in Noida with 100% real photos. Zero advance deposit, cash on delivery, and fast 20-min hotel outcall. Call or WhatsApp +91 8218125815 now.',
+  h1: 'Escorts in Noida',
+  h2: 'Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India & Noida Expressway',
+  isHome: true
+});
+
+// 1. Category Hubs (5 Silos)
 CATEGORIES.forEach((cat) => {
   subRoutes.push({
     path: cat.slug,
-    title: `${cat.name} in Noida & NCR – Top Verified Escort Service | 24/7 WhatsApp Booking`,
-    desc: `Discover top rated ${cat.keyword} in Noida & NCR. 100% verified real photo profiles, 24/7 hotel outcall, sanitized private suites & direct WhatsApp booking.`,
-    h1: `${cat.heading} in Noida & NCR`,
-    h2: `Verified 24/7 Service Across Sector 18, 62, Greater Noida & Indirapuram`,
+    title: cat.title.slice(0, 58),
+    desc: cat.desc.slice(0, 158),
+    h1: cat.h1,
+    h2: `Verified 24/7 Doorstep Service Across All 18 Noida & NCR Sectors`,
     locName: 'Noida & NCR',
     catName: cat.name,
     keyword: cat.keyword,
-    landmark: 'all prime areas across Noida including Sector 18, Sector 62, Expressway & Greater Noida'
+    landmark: 'all 18 prime sectors across Central Noida, Expressway & Greater Noida',
+    isCategoryHub: true,
+    catObj: cat
   });
 });
 
-// 2. Category × Locality Combinations (90 Hyperlocal Landing Pages!)
+// 2. Category × Locality Combinations (90 Hyperlocal Landing Pages)
 CATEGORIES.forEach((cat) => {
   LOCALITIES.forEach((loc) => {
+    const isCallGirl = cat.slug === 'call-girls';
+    const primaryKw = isCallGirl 
+      ? (loc.slug === 'sector-62' ? `call girls in ${loc.name.toLowerCase()}` : `escorts in ${loc.name.toLowerCase()}`)
+      : `${cat.name.toLowerCase()} in ${loc.name.toLowerCase()}`;
+    
+    const h1Text = isCallGirl
+      ? (loc.slug === 'sector-62' ? `Call Girls in ${loc.name}` : `Escorts in ${loc.name}`)
+      : `${cat.name} in ${loc.name}`;
+
+    // Capped strictly at <= 56 characters
+    const pageTitle = isCallGirl
+      ? `${h1Text} | Verified 24/7 Hotel Outcall`.slice(0, 56)
+      : `${cat.name} in ${loc.name} | Verified 24/7 Outcall`.slice(0, 56);
+
+    // Meta desc 148-158 chars
+    const metaDesc = `Book verified ${primaryKw} with 100% real photos. Zero advance deposit, cash on delivery, and 20-min hotel outcall in ${loc.name}. Call 8218125815 now.`.slice(0, 158);
+
     subRoutes.push({
       path: `${cat.slug}/${loc.slug}`,
-      title: `${cat.name} in ${loc.name} – Verified Escort Service | 24/7 Outcall`,
-      desc: `Find 100% verified ${cat.keyword} in ${loc.name} near ${loc.landmark}. Real photo authentication, zero advance payment & direct WhatsApp 24/7.`,
-      h1: `${cat.heading} in ${loc.name}`,
-      h2: `100% Real Photo Verified Profiles & 24/7 Hotel Outcall near ${loc.landmark}`,
+      title: pageTitle,
+      desc: metaDesc,
+      h1: h1Text,
+      h2: `100% Real Photo Verified Profiles & 20-Min Outcall near ${loc.landmarks[0]}`,
       locName: `${loc.name}, Noida NCR`,
       catName: cat.name,
       keyword: cat.keyword,
-      landmark: loc.landmark
+      landmark: loc.landmarks.join(', '),
+      locObj: loc,
+      catObj: cat,
+      isLocalityPage: true
     });
   });
 });
 
-// 3. Info & Legal Pages
+// 3. Info & Legal Pages (No jaipur-areas, added booking)
 const INFO_PAGES = [
-  { path: 'safety-guide', title: `Safety Guidelines & Scam Prevention – ${BRAND}`, desc: 'Mandatory scam prevention tips, safety guidelines, and direct booking safety protocols in Noida & NCR.', h1: 'Safety Guidelines & Scam Prevention', h2: 'Zero Advance Payment & 100% Discreet Verification Protocols' },
-  { path: 'jaipur-areas', title: 'Noida & NCR Localities Directory – All Sectors Index', desc: 'Browse verified escort services, call girls, and massage centers across 18+ localities in Noida, Greater Noida & Ghaziabad.', h1: 'Noida & NCR Localities Directory', h2: 'Hyperlocal Escort Service & VIP Companions Coverage' },
-  { path: 'noida-areas', title: 'Noida & NCR Localities Directory – All Sectors Index', desc: 'Browse verified escort services, call girls, and massage centers across 18+ localities in Noida, Greater Noida & Ghaziabad.', h1: 'Noida & NCR Localities Directory', h2: 'Hyperlocal Escort Service & VIP Companions Coverage' },
-  { path: 'about', title: `About ${BRAND} – #1 Verified Companion Portal in Noida & NCR`, desc: `Learn about ${BRAND}, the premier verified adult classifieds and companion directory in Noida and surrounding NCR.`, h1: `About ${BRAND}`, h2: 'NCR Leading Verified Companion Network' },
-  { path: 'contact', title: `Contact ${BRAND} – 24/7 Helpline & Ad Support`, desc: `Get in touch with ${BRAND} 24/7 support for advertiser onboarding, profile verification, and queries.`, h1: `Contact ${BRAND}`, h2: '24/7 Direct WhatsApp & Phone Helpline' },
-  { path: 'faq', title: `Frequently Asked Questions (FAQ) – ${BRAND}`, desc: 'Common questions about escort services, outcall hotel visits, pricing, payment safety, and discretion in Noida.', h1: 'Frequently Asked Questions (FAQ)', h2: 'Clear Answers on Booking, Pricing & Safety' },
-  { path: 'terms', title: `Terms and Conditions – ${BRAND}`, desc: `Terms of Service, age verification (18+), and advertising guidelines for ${BRAND}.`, h1: 'Terms and Conditions', h2: 'Strict 18+ Age Compliance & Terms of Use' },
-  { path: 'privacy', title: `Privacy Policy – ${BRAND}`, desc: `Privacy Notice and data protection guidelines ensuring 100% confidentiality for ${BRAND} users.`, h1: 'Privacy Policy', h2: '100% Confidentiality & User Data Protection' },
+  { 
+    path: 'booking', 
+    title: 'Fast 24/7 Outcall Booking in Noida | Escorts Hub', 
+    desc: 'Book verified outcall escorts in Noida with zero advance deposit. Fast 20-min hotel arrival in Sector 18, 62 & Expressway. Call or WhatsApp 8218125815 now.', 
+    h1: 'Fast 24/7 Companion Booking in Noida', 
+    h2: 'Instant 20-Minute Hotel Outcall Dispatch Across All 18 Noida Sectors' 
+  },
+  { 
+    path: 'safety-guide', 
+    title: 'Safety Guidelines & Scam Prevention | Escorts Hub', 
+    desc: 'Mandatory scam prevention tips, safety guidelines, and direct booking safety protocols in Noida & NCR with zero advance deposit. Call 8218125815.', 
+    h1: 'Safety Guidelines & Scam Prevention', 
+    h2: 'Zero Advance Payment & 100% Discreet Verification Protocols in Noida' 
+  },
+  { 
+    path: 'noida-areas', 
+    title: 'Noida & NCR Sectors Directory | 18 Localities Index', 
+    desc: 'Browse verified escort services, call girls, and companion hubs across all 18 localities in Noida, Greater Noida & Ghaziabad. Call 8218125815.', 
+    h1: 'Noida & NCR Localities Directory', 
+    h2: 'Hyperlocal Escort Service & VIP Companions Coverage Across 18 Sectors' 
+  },
+  { 
+    path: 'about', 
+    title: 'About Escorts Hub Noida | #1 Verified VIP Directory', 
+    desc: 'Learn about Escorts Hub Noida, the premier verified adult classifieds and companion directory in Noida and surrounding NCR. 100% real photos.', 
+    h1: 'About Escorts Hub Noida', 
+    h2: 'NCR Premier Verified Companion Network with Strict Zero Advance Policy' 
+  },
+  { 
+    path: 'contact', 
+    title: 'Contact Escorts Hub Noida | 24/7 Helpline & Desk', 
+    desc: 'Get in touch with Escorts Hub Noida 24/7 support for outcall bookings, advertiser onboarding, and companion inquiries. Call or WhatsApp 8218125815.', 
+    h1: 'Contact Escorts Hub Noida', 
+    h2: '24/7 Direct WhatsApp & Phone Helpline: +91 8218125815' 
+  },
+  { 
+    path: 'faq', 
+    title: 'Frequently Asked Questions | Escorts Hub Noida', 
+    desc: 'Common questions about escort services, outcall hotel visits, pricing, payment safety, and discretion in Noida. Zero advance payment. Call 8218125815.', 
+    h1: 'Frequently Asked Questions (FAQ)', 
+    h2: 'Clear, Transparent Answers on Booking, Hotel Outcalls & Discretion' 
+  },
+  { 
+    path: 'terms', 
+    title: 'Terms and Conditions (18+) | Escorts Hub Noida', 
+    desc: 'Terms of Service, age verification (18+), and advertising guidelines for Escorts Hub Noida. Read our user policies and safety standards.', 
+    h1: 'Terms and Conditions', 
+    h2: 'Strict 18+ Age Compliance & Terms of Use for Escorts Hub Noida' 
+  },
+  { 
+    path: 'privacy', 
+    title: 'Privacy Policy & Data Security | Escorts Hub Noida', 
+    desc: 'Privacy Notice and data protection guidelines ensuring 100% confidentiality, zero tracking, and safe browsing for Escorts Hub Noida users.', 
+    h1: 'Privacy Policy', 
+    h2: '100% Client Confidentiality & Personal Data Protection' 
+  },
+  { 
+    path: 'refund', 
+    title: 'Refund & Cancellation Policy | Escorts Hub Noida', 
+    desc: 'Read the official refund and cancellation policy of Escorts Hub Noida. Because we operate on zero advance cash on delivery, you have zero risk.', 
+    h1: 'Refund & Cancellation Policy', 
+    h2: 'Transparent Right of Refusal at the Door with Zero Advance Liability' 
+  },
 ];
 
 subRoutes.push(...INFO_PAGES);
 
-const { BLOGS } = require('./blogData.cjs');
+// 4. Blog Posts from blogData.cjs
+const { BLOG_POSTS } = require('./blogData.cjs');
 
-// 4. Blog Hub Route
+// Blog Hub
 subRoutes.push({
   path: 'blog',
-  title: `Noida & NCR Companion Guides & Insights (2026) – ${BRAND}`,
-  desc: 'Read comprehensive guides, safety protocols, hotel outcall recommendations, and advice for verified companions in Noida & NCR.',
-  h1: 'Noida & NCR Companion Insights & Guides',
+  title: 'Noida Escort Guides & Insights | Escorts Hub',
+  desc: 'Read comprehensive guides, safety protocols, hotel outcall recommendations, and advice for verified companions in Noida & NCR. Call 8218125815.',
+  h1: 'Noida Companion Insights & Guides',
   h2: 'Expert Guides, Anti-Scam Protocols & 5-Star Hotel Outcall Recommendations',
   locName: 'Noida & NCR',
   catName: 'Blog',
   isBlogHub: true
 });
 
-// 5. Individual Blog Post Routes
-BLOGS.forEach((post) => {
+// Individual Blog Posts (6 required)
+BLOG_POSTS.forEach((post) => {
   subRoutes.push({
     path: `blog/${post.slug}`,
-    title: `${post.metaTitle}`,
-    desc: post.metaDescription,
+    title: post.metaTitle.slice(0, 58),
+    desc: post.metaDescription.slice(0, 158),
     h1: post.title,
     h2: post.excerpt,
     catName: post.category,
@@ -120,7 +685,7 @@ BLOGS.forEach((post) => {
     isArticle: true,
     articleContent: post.content,
     datePublished: post.date,
-    keywords: post.keywords ? post.keywords.join(', ') : 'noida escorts, hotel outcall'
+    keywords: post.keywords ? post.keywords.join(', ') : 'escorts in noida, hotel outcall'
   });
 });
 
@@ -149,12 +714,13 @@ subRoutes.forEach((route) => {
       "@type": "BlogPosting",
       "headline": route.h1,
       "description": route.desc,
-      "datePublished": "2026-08-28T00:00:00+05:30",
-      "dateModified": "2026-09-26T00:00:00+05:30",
+      "datePublished": "2026-11-10T10:00:00+05:30",
+      "dateModified": "2026-11-14T10:00:00+05:30",
       "author": {
-        "@type": "Organization",
-        "name": BRAND,
-        "url": DOMAIN
+        "@type": "Person",
+        "name": "Noida Hospitality & Nightlife Reviewer",
+        "jobTitle": "Senior Hospitality & Nightlife Reviewer",
+        "url": `${DOMAIN}/about/`
       },
       "publisher": {
         "@type": "Organization",
@@ -162,7 +728,7 @@ subRoutes.forEach((route) => {
         "url": DOMAIN,
         "logo": {
           "@type": "ImageObject",
-          "url": `${DOMAIN}/favicon.ico`
+          "url": `${DOMAIN}/ecj-logo.svg`
         }
       },
       "mainEntityOfPage": {
@@ -208,25 +774,59 @@ subRoutes.forEach((route) => {
       <script type="application/ld+json">${JSON.stringify(blogSchema)}</script>
       <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
     `;
-  } else {
+  } else if (route.isCategoryHub) {
+    const itemListSchema = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": `${route.h1} - Localities Directory`,
+      "description": route.desc,
+      "url": canonicalUrl,
+      "itemListElement": LOCALITIES.map((loc, idx) => ({
+        "@type": "ListItem",
+        "position": idx + 1,
+        "name": `${route.catName} in ${loc.name}`,
+        "url": `${DOMAIN}/${route.catObj.slug}/${loc.slug}/`
+      }))
+    };
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${DOMAIN}/` },
+        { "@type": "ListItem", "position": 2, "name": route.catName, "item": canonicalUrl }
+      ]
+    };
+    schemaTags = `
+      <script type="application/ld+json">${JSON.stringify(itemListSchema)}</script>
+      <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
+    `;
+  } else if (route.isLocalityPage) {
     const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": `How to book verified ${route.catName || 'companions'} in ${route.locName || 'Jaipur'}?`,
+          "name": `How to book verified ${route.catName || 'companions'} in ${route.locObj.name}?`,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": `You can browse verified profiles with genuine photographs on ${BRAND} and connect directly via WhatsApp (${PHONE}) for instant confirmation without any advance payment.`
+            "text": `You can browse verified profiles with genuine photographs on ${BRAND} and connect directly via WhatsApp (${PHONE}) for instant confirmation with zero advance payment.`
           }
         },
         {
           "@type": "Question",
-          "name": `Is 5-star hotel outcall service available in ${route.locName || 'Jaipur'}?`,
+          "name": `Is 5-star hotel outcall service available in ${route.locObj.name}?`,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": `Yes, verified independent models and VIP companions provide 24/7 outcall visits to all luxury hotels, private guest houses, and residences across ${route.locName || 'Jaipur'}.`
+            "text": `Yes, verified independent models and VIP companions provide 24/7 outcall visits to all luxury hotels such as ${route.locObj.hotels[0].name} and ${route.locObj.hotels[1].name} across ${route.locObj.name}.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `What is the arrival time for outcalls in ${route.locObj.name}?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `Because companions are stationed locally in Noida, typical outcall travel time is approximately 15 to 25 minutes after dispatch.`
           }
         },
         {
@@ -244,12 +844,26 @@ subRoutes.forEach((route) => {
       "@type": "BreadcrumbList",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": `${DOMAIN}/` },
-        { "@type": "ListItem", "position": 2, "name": route.catName || "Directory", "item": `${DOMAIN}/${route.path.split('/')[0]}` },
-        { "@type": "ListItem", "position": 3, "name": route.locName || route.h1, "item": `${DOMAIN}/${route.path}` }
+        { "@type": "ListItem", "position": 2, "name": route.catName, "item": `${DOMAIN}/${route.catObj.slug}/` },
+        { "@type": "ListItem", "position": 3, "name": route.locObj.name, "item": canonicalUrl }
       ]
     };
     schemaTags = `
       <script type="application/ld+json">${JSON.stringify(faqSchema)}</script>
+      <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
+    `;
+  } else if (route.isHome) {
+    schemaTags = '';
+  } else {
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${DOMAIN}/` },
+        { "@type": "ListItem", "position": 2, "name": route.h1, "item": canonicalUrl }
+      ]
+    };
+    schemaTags = `
       <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
     `;
   }
@@ -270,32 +884,41 @@ subRoutes.forEach((route) => {
               <a href="/blog/" class="hover:underline">Blog</a> &gt; 
               <span class="text-slate-900 font-bold">${route.h1}</span>
             </nav>
-            <div class="inline-block bg-rose-100 text-rose-800 text-xs font-bold px-3 py-1 rounded-full mb-3">${route.catName}</div>
+            <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-3">${route.catName}</div>
             <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight">${route.h1}</h1>
             <p class="text-sm md:text-base text-slate-600 font-medium italic mb-2">${route.h2}</p>
-            <div class="text-xs text-slate-500">Published by <strong>${BRAND}</strong> | 24/7 Helpline: <strong>+91 95214 13060</strong></div>
+            <div class="text-xs text-slate-500">Published by <strong>${BRAND}</strong> | Last Updated: <strong>November 14, 2026</strong> | 24/7 Helpline: <strong>${PHONE}</strong></div>
           </header>
 
           <article class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
             <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
               ${route.articleContent}
             </div>
+            
+            <div class="my-6 p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-600 font-bold text-sm">NH</div>
+              <div class="text-xs">
+                <strong class="block text-slate-900">Reviewed by: Noida Hospitality &amp; Nightlife Reviewer</strong>
+                <span class="text-slate-500">Specialist in Gautam Buddha Nagar luxury hotel standards and verified companionship safety.</span>
+              </div>
+            </div>
+
             <div class="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between flex-wrap gap-4">
-              <span class="text-xs text-slate-600">Direct WhatsApp Assistance: <strong class="text-slate-900">+91 95214 13060</strong></span>
-              <a href="https://wa.me/919521413060" class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-sm">
+              <span class="text-xs text-slate-600">Direct WhatsApp Assistance: <strong class="text-slate-900">${PHONE}</strong></span>
+              <a href="https://wa.me/${PHONE_CLEAN}" class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-sm">
                 Connect on WhatsApp →
               </a>
             </div>
           </article>
 
           <section class="max-w-4xl mx-auto mt-8">
-            <h3 class="text-lg font-bold text-slate-900 mb-4">Explore More Guides</h3>
+            <h3 class="text-lg font-bold text-slate-900 mb-4">Explore More Guides &amp; Sectors</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <a href="/blog/" class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:border-rose-400 block text-xs font-semibold text-rose-700">
-                ← View All 20 Jaipur Guides & Safety Articles
+              <a href="/blog/" class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:border-amber-400 block text-xs font-semibold text-amber-800">
+                ← View All Noida Editorial Guides &amp; Scam Advisories
               </a>
-              <a href="/call-girls" class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:border-rose-400 block text-xs font-semibold text-rose-700">
-                Browse Verified Call Girls in Jaipur →
+              <a href="/call-girls" class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm hover:border-amber-400 block text-xs font-semibold text-amber-800">
+                Browse Verified Call Girls in Noida →
               </a>
             </div>
           </section>
@@ -310,23 +933,187 @@ subRoutes.forEach((route) => {
           <header class="max-w-7xl mx-auto mb-8 border-b border-slate-200 pb-6">
             <nav class="text-xs text-amber-700 mb-4 font-semibold">
               <a href="/" class="hover:underline">Home</a> &gt; 
-              <span class="text-slate-900 font-bold">Blog & Guides</span>
+              <span class="text-slate-900 font-bold">Blog &amp; Guides</span>
             </nav>
             <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-2 tracking-tight">${route.h1}</h1>
             <h2 class="text-base md:text-lg text-slate-600 font-medium">${route.h2}</h2>
           </header>
 
           <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            ${BLOGS.map(b => `
+            ${BLOG_POSTS.map(b => `
               <div class="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition">
-                <span class="text-[11px] font-bold text-rose-700 uppercase tracking-wider">${b.category}</span>
+                <span class="text-[11px] font-bold text-amber-800 uppercase tracking-wider">${b.category}</span>
                 <h3 class="font-bold text-slate-900 text-base mt-2 mb-2 leading-snug">
-                  <a href="/blog/${b.slug}/" class="hover:text-rose-700">${b.title}</a>
+                  <a href="/blog/${b.slug}/" class="hover:text-amber-700">${b.title}</a>
                 </h3>
                 <p class="text-xs text-slate-600 line-clamp-3 mb-4">${b.excerpt}</p>
-                <a href="/blog/${b.slug}/" class="text-xs font-bold text-rose-700 hover:underline">Read Guide →</a>
+                <a href="/blog/${b.slug}/" class="text-xs font-bold text-amber-700 hover:underline">Read Guide →</a>
               </div>
             `).join('')}
+          </section>
+        </main>
+      </noscript>
+    `;
+  } else if (route.isLocalityPage) {
+    preRenderedBody = `
+      <div id="root"></div>
+      <noscript>
+        <main class="min-h-screen bg-[#f8fafc] text-[#0f172a] p-4 md:p-8" style="font-family: 'Montserrat', system-ui, sans-serif;">
+          <header class="max-w-5xl mx-auto mb-8 border-b border-slate-200 pb-6">
+            <nav class="text-xs text-amber-700 mb-4 font-semibold">
+              <a href="/" class="hover:underline">Home</a> &gt; 
+              <a href="/${route.catObj.slug}" class="hover:underline">${route.catName}</a> &gt; 
+              <span class="text-slate-900 font-bold">${route.locObj.name}</span>
+            </nav>
+            <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-2">Verified 24/7 Hotel Outcall</div>
+            <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-2 tracking-tight">${route.h1}</h1>
+            <p class="text-sm md:text-base text-slate-600 font-medium">${route.h2}</p>
+            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 14, 2026</strong> | Central Dispatch: <strong>${PHONE}</strong> | Zero Advance Payment</div>
+          </header>
+
+          <div class="max-w-5xl mx-auto">
+            ${buildLocalityHtml(route.catObj, route.locObj)}
+          </div>
+        </main>
+      </noscript>
+    `;
+  } else if (route.isHome) {
+    preRenderedBody = `
+      <div id="root"></div>
+      <noscript>
+        <main class="min-h-screen bg-[#f8fafc] text-[#0f172a] p-4 md:p-8" style="font-family: 'Montserrat', system-ui, sans-serif;">
+          <header class="max-w-5xl mx-auto mb-8 border-b border-slate-200 pb-6 text-center">
+            <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-3">Escorts Hub Noida • Verified 24/7 Dispatch</div>
+            <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">Escorts in Noida</h1>
+            <p class="text-sm md:text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with zero advance fraud.
+            </p>
+            <div class="text-xs text-slate-500 mt-3">Central Helpline: <strong>${PHONE}</strong> | WhatsApp: <strong>${PHONE}</strong> | 100% Cash On Delivery</div>
+          </header>
+
+          <section class="max-w-5xl mx-auto my-6 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+            <h2 class="text-xl md:text-2xl font-black text-slate-900 mb-4">The Definitive Guide to Booking Verified Escorts in Noida &amp; NCR</h2>
+            <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-sm">
+              <p>
+                Noida, one of India's fastest-growing planned industrial and commercial hubs in the National Capital Region (NCR), is home to world-class corporate parks, multinational tech headquarters, and premier luxury hospitality destinations. Whether you are an executive visiting the multinational IT corridors of Sector 62 and Advant Navis on the Expressway, attending an international symposium at the India Expo Mart in Greater Noida, or enjoying a leisurely stay near DLF Mall of India and Sector 18, Escorts Hub Noida offers the most discreet, reliable, and verified adult companionship directory in the region.
+              </p>
+              <p>
+                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a zero-advance payment philosophy, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else.
+              </p>
+
+              <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">24/7 Hotel Outcall Protocols for Noida's Premier Hospitality Destinations</h3>
+              <p>
+                The cornerstone of a seamless companionship experience is hotel outcall convenience. Noida boasts an array of prestigious 4-star and 5-star properties designed to accommodate discerning international business executives and domestic travelers. Our companions routinely fulfill doorstep outcall appointments across all premier hotels, including:
+              </p>
+              <ul class="list-disc pl-5 space-y-1.5 my-3">
+                <li><strong>Radisson Blu Hotel Noida (Sector 18):</strong> Located in the pulsating commercial heart of Noida opposite Gardens Galleria and DLF Mall of India, offering exceptional dining, executive suites, and prompt 15-minute outcall arrival times.</li>
+                <li><strong>Crowne Plaza Greater Noida:</strong> A sprawling 5-star luxury retreat near Surajpur and Knowledge Park, ideal for attendees of international expos and exhibitions at the India Expo Mart.</li>
+                <li><strong>Jaypee Greens Golf &amp; Spa Resort (Greater Noida):</strong> An opulent golf-facing sanctuary surrounded by lush greens, offering unmatched privacy and peaceful rendezvous suites.</li>
+                <li><strong>Mosaic Hotel (Sector 18):</strong> A boutique luxury hotel in close proximity to the Sector 18 Metro Station Gate 2 and Atta Market, favored for rapid outcall dispatch and central convenience.</li>
+                <li><strong>Savoy Suites &amp; Sandal Suites by Lemon Tree (Expressway):</strong> Prime executive residences on the Noida-Greater Noida Expressway near Sector 137 and Sector 142, catering to corporate leaders and IT specialists.</li>
+              </ul>
+
+              <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Zero Advance Guarantee: How We Shield Clients from Digital Fraud</h3>
+              <p>
+                The digital adult companionship landscape is unfortunately plagued by predatory scam operations that request advance booking charges, medical registration tokens, or fake courier security deposits via UPI or gift cards. Once an unsuspecting client transfers money, the scammer either demands more funds or immediately terminates communication.
+              </p>
+              <p>
+                At Escorts Hub Noida, we enforce a strict zero-advance payment protocol across all 54 active profiles. We never ask for Google Pay, PhonePe, Paytm, or credit card transfers prior to physical arrival. Clients inspect and greet their chosen companion face-to-face in the privacy of their hotel room before any financial transaction takes place. This guarantees 100% peace of mind, zero risk of digital extortion, and total satisfaction.
+              </p>
+
+              <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Hyperlocal Sector Coverage: From Central Noida to Greater Noida &amp; Ghaziabad</h3>
+              <p>
+                Noida's distinct urban grid structure allows for organized, prompt outcall fulfillment. We have stationed verified models and independent escorts within proximity to major transit arteries, guaranteeing arrival times between 15 to 30 minutes across all four NCR zones:
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <h4 class="font-bold text-slate-900 text-sm mb-1">Central Noida &amp; Film City</h4>
+                  <p class="text-xs text-slate-600">Covering Sector 18, Sector 15/16 Film City, Sector 50, Sector 76/78, and the Botanical Garden Metro interchange (Blue Line and Magenta Line junction). Rapid outcall dispatch to DLF Mall of India, Wave One, and Atta Market.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <h4 class="font-bold text-slate-900 text-sm mb-1">Noida Expressway Corridor</h4>
+                  <p class="text-xs text-slate-600">Spanning Sector 137, Sector 128 (Jaypee Wish Town &amp; Sultanpur), and Sector 142 (Advant Navis Business Park). Home to major multinational corporate campuses and contemporary serviced hotel suites.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <h4 class="font-bold text-slate-900 text-sm mb-1">Greater Noida &amp; Knowledge Park</h4>
+                  <p class="text-xs text-slate-600">Covering Pari Chowk, Alpha 1, Ansal Plaza, Knowledge Park, India Expo Mart, and Noida Extension (Gaur City / Char Murti). Outcall coverage for grand resort retreats and academic conferences.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                  <h4 class="font-bold text-slate-900 text-sm mb-1">Ghaziabad NCR &amp; Trans-Hindon</h4>
+                  <p class="text-xs text-slate-600">Serving Indirapuram (Shipra Mall, Habitat Centre), Vaishali (Max Hospital &amp; Metro), Vasundhara, Crossings Republik (NH-24), and Kaushambi border near Anand Vihar ISBT.</p>
+                </div>
+              </div>
+
+              <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Uncompromising Confidentiality, Discretion &amp; Safe Dating Standards</h3>
+              <p>
+                We understand that privacy is paramount for high-profile business professionals, government dignitaries, and international travelers. Escorts Hub Noida adheres to strict data privacy measures: we do not maintain client phone databases, marketing mailing lists, or shared communication logs. All calls to +91 8218125815 and WhatsApp messages are treated with utmost confidentiality and purged regularly.
+              </p>
+              <p>
+                Furthermore, all companions registered with our platform undergo regular health screenings and practice strict personal hygiene protocols, ensuring every rendezvous is safe, respectful, and fulfilling.
+              </p>
+
+              <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Diverse Companion Profiles &amp; Custom Experiences Available</h3>
+              <p>
+                Our roster encompasses a wide array of sophisticated independent companions tailored to diverse client requirements across Noida and the National Capital Region:
+              </p>
+              <ul class="list-disc pl-5 space-y-1.5 my-3">
+                <li><strong>VIP Independent Models:</strong> Refined, glamorous companions ideal for red-carpet events, executive suite dinners, and luxury hotel outcalls near DLF Mall of India.</li>
+                <li><strong>Corporate Hostesses:</strong> Educated, articulate companions capable of accompanying business executives to formal dinners, international conferences, and corporate hospitality suites.</li>
+                <li><strong>College Graduates &amp; Charming Models:</strong> Youthful, energetic companions residing near institutional belts such as Sector 125 (Amity University) and Sector 62.</li>
+                <li><strong>Full-Night &amp; Weekend Companions:</strong> Dedicated companions available for extended retreats, weekend golf holidays at Jaypee Greens Resort, and unhurried relaxation.</li>
+              </ul>
+              <p>
+                Whatever your companionship preference, our team guarantees transparent cash-on-delivery arrangements, verified real photographs, and prompt 20-minute dispatch across all 18 Noida sectors.
+              </p>
+            </div>
+          </section>
+
+          <section class="max-w-5xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <h3 class="text-lg font-black text-slate-900 mb-4">Browse All 18 Prime Noida &amp; NCR Sectors</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2.5 text-xs text-center font-bold">
+              ${LOCALITIES.map(l => `
+                <a href="/call-girls/${l.slug}" class="p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 border border-slate-200 hover:border-amber-400 text-slate-900 hover:text-amber-700 block truncate">
+                  ${l.name}
+                </a>
+              `).join('')}
+            </div>
+          </section>
+
+          <section class="max-w-5xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <h3 class="text-xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h3>
+            <div class="space-y-3 text-xs sm:text-sm">
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-1">How can I safely book escorts in Noida without paying any advance deposit?</h4>
+                <p class="text-slate-600">At Escorts Hub Noida, we operate under a strict zero-advance payment protocol. You never pay any advance token, booking charge, or registration fee. You browse verified profiles, confirm details via WhatsApp at +91 8218125815, and settle the payment in cash only after your companion arrives in person.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-1">What is the average outcall arrival time to 5-star hotels in Noida Sector 18?</h4>
+                <p class="text-slate-600">For major luxury hotels in Sector 18 (such as Radisson Blu, Mosaic Hotel, and Savoy Suites), outcall arrival time is typically 15 to 25 minutes. For properties along the Expressway, arrival is 20 to 35 minutes.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-1">Which hotels in Noida permit verified guest visits and outcall companions?</h4>
+                <p class="text-slate-600">Reputed luxury hotels across Noida—including Radisson Blu Sector 18, Crowne Plaza Greater Noida, Jaypee Greens Resort, and Sandal Suites—routinely accommodate registered adult guests provided visitors present a valid government-issued photo ID at reception.</p>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <h4 class="font-bold text-slate-900 mb-1">What payment methods are supported for companionship services in Noida?</h4>
+                <p class="text-slate-600">We strictly recommend cash on delivery (COD) directly to the companion upon arrival. Peer-to-peer UPI or bank transfer may be completed upon mutual agreement in person after arrival.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="max-w-5xl mx-auto my-8 p-6 rounded-2xl bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-bold flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <h4 class="text-lg font-black">Book Verified Escorts in Noida (24/7)</h4>
+              <p class="text-xs text-slate-900 font-medium">100% Real photo verified models • 20-min hotel doorstep outcall • Zero advance.</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <a href="tel:+918218125815" class="px-5 py-2.5 bg-slate-950 text-white rounded-xl text-xs font-black uppercase tracking-wider hover:bg-slate-900 transition-all">
+                Call 8218125815
+              </a>
+              <a href="https://wa.me/918218125815?text=${encodeURIComponent('Hello Escorts Hub Noida! I want to book a verified companion.')}" class="px-5 py-2.5 bg-[#25D366] text-white rounded-xl text-xs font-black uppercase tracking-wider hover:bg-[#20bd5a] transition-all">
+                WhatsApp VIP
+              </a>
+            </div>
           </section>
         </main>
       </noscript>
@@ -339,17 +1126,17 @@ subRoutes.forEach((route) => {
           <header class="max-w-7xl mx-auto mb-8 border-b border-slate-200 pb-6">
             <nav class="text-xs text-amber-700 mb-4 font-semibold">
               <a href="/" class="hover:underline">Home</a> &gt; 
-              <span class="text-slate-500">${route.catName || 'Directory'}</span> &gt; 
-              <span class="text-slate-900 font-bold">${route.locName || route.h1}</span>
+              <span class="text-slate-900 font-bold">${route.h1}</span>
             </nav>
             <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-2 tracking-tight">${route.h1}</h1>
             <h2 class="text-base md:text-lg text-slate-600 font-medium">${route.h2}</h2>
+            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 14, 2026</strong> | Dispatch Helpline: <strong>${PHONE}</strong></div>
           </header>
 
           <section class="max-w-7xl mx-auto my-6 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-            <h3 class="text-lg font-bold text-slate-900 mb-3">About ${route.h1}</h3>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">${route.h1}</h3>
             <p class="text-slate-700 leading-relaxed mb-4">
-              Welcome to <strong>${BRAND}</strong>, Rajasthan's premier verified classified directory. If you are searching for high-class, independent, and verified <em>${route.keyword || 'companion services'}</em> in <strong>${route.locName || 'Jaipur'}</strong> (near ${route.landmark || 'central landmarks'}), you have arrived at the authentic source.
+              Welcome to <strong>${BRAND}</strong>, Noida &amp; NCR's premier verified classified directory. If you are searching for high-class, independent, and verified <em>${route.keyword || 'companion services'}</em> in <strong>${route.locName || 'Noida'}</strong> (near ${route.landmark || 'central Noida landmarks'}), you have arrived at the authentic source.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6 text-sm">
               <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
@@ -358,16 +1145,16 @@ subRoutes.forEach((route) => {
               </div>
               <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
                 <div class="text-amber-700 font-bold text-sm mb-1">✓ 24/7 Hotel Outcall</div>
-                <p class="text-slate-600 text-xs">Discreet companion visits to Marriott, Radisson, Fairmont, and luxury hotels.</p>
+                <p class="text-slate-600 text-xs">Discreet companion visits to Radisson Blu, Crowne Plaza, Jaypee Greens, and luxury hotels.</p>
               </div>
               <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
                 <div class="text-emerald-700 font-bold text-sm mb-1">✓ Zero Advance Fees</div>
-                <p class="text-slate-600 text-xs">Pay directly to independent models with zero middleman or agent commission.</p>
+                <p class="text-slate-600 text-xs">Pay directly to independent models in cash with zero middleman or advance deposits.</p>
               </div>
             </div>
             <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-4">
-              <span class="text-xs text-slate-600">Direct WhatsApp Booking: <strong class="text-slate-900">+91 95214 13060</strong></span>
-              <a href="https://wa.me/919521413060" class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-sm">
+              <span class="text-xs text-slate-600">Direct WhatsApp Booking: <strong class="text-slate-900">${PHONE}</strong></span>
+              <a href="https://wa.me/${PHONE_CLEAN}" class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-sm">
                 Book on WhatsApp →
               </a>
             </div>
@@ -378,7 +1165,7 @@ subRoutes.forEach((route) => {
             <div class="space-y-3">
               <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
                 <h4 class="font-bold text-slate-900 text-sm mb-1">How do I book verified escorts in ${route.locName || 'Noida'}?</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">Browse authentic profile cards with verified pictures, select your preferred companion, and click the direct WhatsApp button (${PHONE}) for instant, discreet confirmation.</p>
+                <p class="text-xs text-slate-600 leading-relaxed">Browse authentic profile cards with verified pictures, select your preferred companion, and click the direct WhatsApp button (${PHONE}) for instant, discreet confirmation with zero advance deposit.</p>
               </div>
               <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
                 <h4 class="font-bold text-slate-900 text-sm mb-1">Is outcall available near ${route.landmark || 'Noida'}?</h4>

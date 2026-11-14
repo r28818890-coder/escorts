@@ -214,6 +214,9 @@ export const Header: React.FC<HeaderProps> = () => {
             <Link to="/adult-meetings" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Adult Meetings
             </Link>
+            <Link to="/booking" className="text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3 py-1.5 rounded-lg font-bold transition-colors">
+              Book Now
+            </Link>
           </nav>
 
           {/* Action Buttons: WhatsApp & Mobile Menu Trigger */}
@@ -278,17 +281,25 @@ export const Header: React.FC<HeaderProps> = () => {
                 </button>
               </div>
 
-              {/* WhatsApp Quick CTA */}
-              <a
-                href={`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent('Hello! I am inquiring about verified VIP companions in Noida & NCR.')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full py-3 rounded-xl bg-[#25D366] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md mb-5"
-              >
-                <MessageCircle size={16} />
-                WhatsApp VIP Booking
-              </a>
+              {/* Booking Quick CTA */}
+              <div className="grid grid-cols-2 gap-2 mb-4">
+                <Link
+                  to="/booking"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="py-2.5 rounded-xl bg-amber-500 text-slate-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-sm text-center"
+                >
+                  <Sparkles size={14} /> Book Outcall
+                </Link>
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent('Hello! I am inquiring about verified VIP companions in Noida & NCR.')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="py-2.5 rounded-xl bg-[#25D366] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-sm text-center"
+                >
+                  <MessageCircle size={14} /> WhatsApp
+                </a>
+              </div>
 
               {/* Categories */}
               <div className="space-y-1 mb-5">

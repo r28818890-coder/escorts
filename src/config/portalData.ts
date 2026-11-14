@@ -11,8 +11,6 @@ export interface NoidaLocality {
   popular: boolean;
 }
 
-export type JaipurLocality = NoidaLocality;
-
 export interface PortalCategory {
   id: string;
   name: string;
@@ -75,8 +73,6 @@ export const NOIDA_LOCALITIES: NoidaLocality[] = [
   { id: 'mayur-vihar', name: 'Mayur Vihar', slug: 'mayur-vihar', landmark: 'Phase 1 & DND Noida Toll Border', zone: 'Central Noida', popular: false },
   { id: 'botanical-garden', name: 'Botanical Garden (Sector 37)', slug: 'botanical-garden', landmark: 'Interchange Metro & Amity University', zone: 'Central Noida', popular: true },
 ];
-
-export const JAIPUR_LOCALITIES = NOIDA_LOCALITIES;
 
 // ── 2. Portal Categories ─────────────────────────────────────
 export const PORTAL_CATEGORIES: PortalCategory[] = [

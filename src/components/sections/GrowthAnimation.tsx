@@ -212,7 +212,7 @@ const GrowthAnimation: React.FC = () => {
             <h3 className="text-3xl md:text-6xl font-extrabold text-[#e5e5e5] mb-2 leading-tight">
               15,000+ <span className="text-[#a3a3a3] font-light text-3xl md:text-5xl">GUESTS</span>
             </h3>
-            <p className="text-[#a3a3a3] tracking-[0.2em] uppercase text-xs md:text-base mb-2">SERVED IN JAIPUR</p>
+            <p className="text-[#a3a3a3] tracking-[0.2em] uppercase text-xs md:text-base mb-2">SERVED IN NOIDA &amp; NCR</p>
             <h4 className="text-xl md:text-4xl font-bold text-[#e5e5e5]">Luxury spa experiences</h4>
             <div className="flex items-center justify-center gap-2 mb-2 mt-3">
               <div className="bg-[#e11d48] rounded-full p-1"><Check size={12} className="text-black" /></div>

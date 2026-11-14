@@ -41,10 +41,12 @@ const PostDetail: React.FC = () => {
           image: post.image || BRAND.ogImage,
           datePublished: post.date,
           author: {
-            '@type': 'Organization',
-            name: BRAND.name,
-            url: BRAND.domain,
+            '@type': 'Person',
+            name: 'Noida Hospitality & Nightlife Reviewer',
+            jobTitle: 'Senior Hospitality & Nightlife Reviewer',
+            url: `${BRAND.domain}/about`,
           },
+          dateModified: '2026-11-14T10:00:00+05:30',
           publisher: {
             '@type': 'Organization',
             name: BRAND.name,
@@ -139,6 +141,29 @@ const PostDetail: React.FC = () => {
               >
                 <MessageCircle size={15} className="text-emerald-600" /> WhatsApp Coordination
               </a>
+            </div>
+
+            {/* Author Bio Card (Phase 8 E-E-A-T) */}
+            <div className="my-8 p-5 sm:p-6 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+              <div className="w-14 h-14 rounded-full bg-amber-500/10 border-2 border-amber-500/40 flex items-center justify-center text-amber-600 font-black text-xl shrink-0 shadow-sm">
+                NH
+              </div>
+              <div className="flex-1 text-center sm:text-left space-y-1">
+                <div className="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
+                  <h4 className="font-black text-sm text-slate-900">Noida Hospitality &amp; Nightlife Reviewer</h4>
+                  <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-800 bg-emerald-100 border border-emerald-300 px-2 py-0.5 rounded-full">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Verified Editorial Reviewer
+                  </span>
+                </div>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Specialist in Gautam Buddha Nagar luxury hotel standards, visitor policies across Sector 18 and Greater Noida Expressway, discreet hospitality protocols, and verified adult companionship safety.
+                </p>
+                <div className="pt-1 text-[11px] text-slate-500 flex items-center justify-center sm:justify-start gap-3">
+                  <span>Last verified &amp; updated: November 14, 2026</span>
+                  <span>•</span>
+                  <Link to="/safety-guide#editorial-policy" className="text-amber-700 font-bold hover:underline">Editorial Policy</Link>
+                </div>
+              </div>
             </div>
 
             {/* Mobile Share */}
