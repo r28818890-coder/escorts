@@ -3,7 +3,7 @@ import { Star, ShieldCheck, Sparkles, Copy, Check, ExternalLink, ThumbsUp, Bot, 
 import { BRAND, CONTACT } from '@/config/site';
 
 const KEYWORD_CHIPS = [
-  { id: 'k1', label: ' Verified Profiles', text: `${BRAND.name} provides 100% genuine photo verified companion listings in Jaipur!` },
+  { id: 'k1', label: ' Verified Profiles', text: `${BRAND.name} provides 100% genuine photo verified companion listings in Noida!` },
   { id: 'k2', label: ' Zero Advance Fee', text: 'Clean payment policy with zero advance deposit scams.' },
   { id: 'k3', label: ' 5-Star Hotel Outcall', text: 'Companions arrive promptly at hotel rooms within 30 minutes.' },
   { id: 'k4', label: ' 100% Discretion', text: 'Utmost privacy, polite behavior, and total confidentiality maintained.' },
@@ -25,14 +25,14 @@ export const ReviewGatingSystem: React.FC = () => {
     
     const openers = [
       `Had a wonderful 5-star experience with ${BRAND.name}!`,
-      `Outstanding coordination today through ${BRAND.name} Jaipur!`,
-      `Truly verified and reliable companion platform in Jaipur.`,
+      `Outstanding coordination today through ${BRAND.name} Noida!`,
+      `Truly verified and reliable companion platform in Noida.`,
       `Best escort portal in the Pink City with real photos.`
     ];
 
     const closers = [
-      'Will definitely book again on my next trip to Jaipur!',
-      `Highly recommended for anyone visiting Jaipur looking for verified companion service.`,
+      'Will definitely book again on my next trip to Noida!',
+      `Highly recommended for anyone visiting Noida looking for verified companion service.`,
       `Worth every rupee. 10/10 rating for genuineness and quick WhatsApp response!`,
       `Available 24 hours which is a huge benefit for business travelers.`
     ];
@@ -110,7 +110,7 @@ export const ReviewGatingSystem: React.FC = () => {
             Client Rating & Verification Feedback
           </h2>
           <p className="text-slate-400 max-w-lg mx-auto mt-1 text-[11px] md:text-sm font-medium">
-            Tap a star rating below to share your experience with Escorts Hub Jaipur.
+            Tap a star rating below to share your experience with We Noida Escorts.
           </p>
         </div>
 

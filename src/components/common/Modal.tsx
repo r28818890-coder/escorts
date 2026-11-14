@@ -108,7 +108,7 @@ const Modal: React.FC = () => {
               </div>
               <div className="relative z-10">
                 <h3 className="text-[#e11d48] text-xs font-black tracking-[0.25em] uppercase mb-4 flex items-center gap-2">
-                  <Sparkles size={14} /> Jaipur Spa
+                  <Sparkles size={14} /> Noida Spa
                 </h3>
                 <h2 className="text-2xl md:text-3xl font-display font-black text-white leading-tight mb-4">
                   Book Your <br/>
@@ -133,7 +133,7 @@ const Modal: React.FC = () => {
               {/* Mobile header (visible on small screens) */}
               <div className="md:hidden mb-3">
                 <h3 className="text-[#e11d48] text-[10px] font-black tracking-[0.25em] uppercase mb-2 flex items-center gap-2">
-                  <Sparkles size={12} /> Jaipur Spa
+                  <Sparkles size={12} /> Noida Spa
                 </h3>
                 <h2 className="text-xl font-display font-black text-white leading-tight mb-2">Book Your Relaxation</h2>
                 <div className="flex items-center gap-3 text-[#e11d48] font-bold text-xs bg-[#e11d48]/10 p-2 rounded-lg border border-[#e11d48]/20">

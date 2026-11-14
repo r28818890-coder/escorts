@@ -30,7 +30,7 @@ export const runWeeklyAutoImprovementCycle = (): WeeklyImprovementLog => {
     if (post.content && !post.content.includes('Frequently Asked Questions')) {
       post.content += `
         <h3>Frequently Asked Questions on ${post.tag || 'Spa Therapy'}</h3>
-        <p><strong>Q: How do I book a private suite session at Jaipur Spa?</strong><br/>
+        <p><strong>Q: How do I book a private suite session at Noida Spa?</strong><br/>
         A: Simply call us at +91 7357678356 or click the WhatsApp button to reserve your sanitized suite instantly.</p>
       `;
     }

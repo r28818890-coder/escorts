@@ -42,16 +42,17 @@ export type PageId =
   | 'body-scrub'
   | 'full-body-massage'
   | 'steam-bath'
-  // Jaipur Location Pages
-  | 'sindhi-camp'
-  | 'jaipur-railway-station'
-  | 'mi-road'
-  | 'bani-park'
-  | 'civil-lines'
-  | 'chandpole'
-  | 'station-road'
-  | 'polo-victory'
-  | 'collectorate-circle';
+  // Noida Location Pages
+  | 'sector-18'
+  | 'sector-62'
+  | 'sector-50'
+  | 'sector-137'
+  | 'sector-18-film-city'
+  | 'sector-76-78'
+  | 'sector-128'
+  | 'sector-142'
+  | 'pari-chowk'
+  | 'noida-extension';
 
 // ── Content Page Data ─────────────────────────────────────────
 export interface GuideSection {

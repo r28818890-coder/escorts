@@ -12,9 +12,9 @@ export interface BacklinkOpportunity {
  */
 export const runBacklinkIntelligenceAudit = (): BacklinkOpportunity[] => {
   return [
-    { domain: 'RajasthanTourism.gov.in', type: 'local_directory', authorityScore: 84, status: 'Active Citation', actionRequired: 'Verified NAP consistency for Sindhi Camp Jaipur.' },
+    { domain: 'RajasthanTourism.gov.in', type: 'local_directory', authorityScore: 84, status: 'Active Citation', actionRequired: 'Verified NAP consistency for Sindhi Camp Noida.' },
     { domain: 'Tripadvisor.in', type: 'local_directory', authorityScore: 92, status: 'Verified Listing', actionRequired: 'Update 2026 Spa Suite photos.' },
-    { domain: 'JustDial Jaipur', type: 'citation', authorityScore: 78, status: 'Active Citation', actionRequired: 'Verified 24/7 opening hours listing.' },
-    { domain: 'JaipurTravelGuide.com', type: 'guest_post', authorityScore: 65, status: 'Opportunity Found', actionRequired: 'Submit guest article on "Top 5 Relaxation Spas near Sindhi Camp".' },
+    { domain: 'JustDial Noida', type: 'citation', authorityScore: 78, status: 'Active Citation', actionRequired: 'Verified 24/7 opening hours listing.' },
+    { domain: 'NoidaTravelGuide.com', type: 'guest_post', authorityScore: 65, status: 'Opportunity Found', actionRequired: 'Submit guest article on "Top 5 Relaxation Spas near Sindhi Camp".' },
   ];
 };

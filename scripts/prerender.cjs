@@ -3,9 +3,9 @@ const path = require('path');
 
 const distDir = path.join(__dirname, '..', 'dist');
 const indexPath = path.join(distDir, 'index.html');
-const DOMAIN = 'https://escortshubnoida.com';
-const BRAND = 'Escorts Hub Noida';
-const PHONE = '+919521413060';
+const DOMAIN = 'https://wenoidaescorts.com';
+const BRAND = 'We Noida Escorts';
+const PHONE = '+918218125815';
 
 if (!fs.existsSync(indexPath)) {
   console.error('dist/index.html not found. Run vite build first.');
@@ -98,16 +98,16 @@ const { BLOGS } = require('./blogData.cjs');
 // 4. Blog Hub Route
 subRoutes.push({
   path: 'blog',
-  title: `Jaipur Companion Guides & Escorts Insights (2026) – ${BRAND}`,
-  desc: 'Read 20+ comprehensive guides, safety protocols, hotel outcall recommendations, and nightlife advice for verified companions in Jaipur.',
-  h1: 'Jaipur Companion Insights & Guides',
+  title: `Noida & NCR Companion Guides & Insights (2026) – ${BRAND}`,
+  desc: 'Read comprehensive guides, safety protocols, hotel outcall recommendations, and advice for verified companions in Noida & NCR.',
+  h1: 'Noida & NCR Companion Insights & Guides',
   h2: 'Expert Guides, Anti-Scam Protocols & 5-Star Hotel Outcall Recommendations',
-  locName: 'Jaipur',
+  locName: 'Noida & NCR',
   catName: 'Blog',
   isBlogHub: true
 });
 
-// 5. 20 Individual Blog Post Routes
+// 5. Individual Blog Post Routes
 BLOGS.forEach((post) => {
   subRoutes.push({
     path: `blog/${post.slug}`,
@@ -116,11 +116,11 @@ BLOGS.forEach((post) => {
     h1: post.title,
     h2: post.excerpt,
     catName: post.category,
-    locName: 'Jaipur',
+    locName: 'Noida',
     isArticle: true,
     articleContent: post.content,
     datePublished: post.date,
-    keywords: post.keywords ? post.keywords.join(', ') : 'jaipur escorts, hotel outcall'
+    keywords: post.keywords ? post.keywords.join(', ') : 'noida escorts, hotel outcall'
   });
 });
 

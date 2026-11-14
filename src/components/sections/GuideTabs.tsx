@@ -43,8 +43,8 @@ const GuideTabs: React.FC = () => {
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Guided by Jaipur Spa</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Explore our premium therapies, wellness rituals, and couples experiences in Jaipur.</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Guided by Noida Spa</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">Explore our premium therapies, wellness rituals, and couples experiences in Noida.</p>
         </div>
 
         {/* Tabs Header */}

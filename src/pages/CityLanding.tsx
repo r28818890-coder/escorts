@@ -2,20 +2,20 @@ import React from 'react';
 import { CONTACT } from '@/config/site';
 import { useParams, Link } from 'react-router-dom';
 import { MapPin, Clock, Phone, Sparkles, CheckCircle2, MessageCircle } from 'lucide-react';
-import { JAIPUR_LOCATIONS, BRAND } from '@/config/site';
+import { NOIDA_LOCATIONS, BRAND } from '@/config/site';
 import SEO from '@/components/common/SEO';
 import NotFoundPage from '@/pages/NotFoundPage';
 
 const CityLanding: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   
-  const location = JAIPUR_LOCATIONS.find(loc => loc.slug === slug);
+  const location = NOIDA_LOCATIONS.find(loc => loc.slug === slug);
 
   if (!location) {
     return <NotFoundPage />;
   }
 
-  const title = `Verified Companions & Escorts in ${location.area}, Jaipur | ${BRAND.name}`;
+  const title = `Verified Companions & Escorts in ${location.area}, Noida | ${BRAND.name}`;
   const description = `Looking for 100% verified escort models near ${location.area}? ${BRAND.name} provides 24/7 hotel outcalls within 20-30 minutes across ${location.area}. Call ${CONTACT.phoneDisplay}.`;
 
   return (
@@ -38,7 +38,7 @@ const CityLanding: React.FC = () => {
           <h1 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight tracking-tight">
             Verified Models & Escorts in <br />
             <span className="text-rose-600">
-              {location.area}, Jaipur
+              {location.area}, Noida
             </span>
           </h1>
 
@@ -48,7 +48,7 @@ const CityLanding: React.FC = () => {
 
           <div className="flex flex-wrap gap-4">
             <a 
-              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Jaipur, I want to book a verified companion in ${location.area}.`)}
+              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, I want to book a verified companion in ${location.area}.`)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3.5 bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 text-white font-bold uppercase tracking-widest text-xs rounded-full shadow-md hover:brightness-110 transition-transform flex items-center gap-2 cursor-pointer"
@@ -103,7 +103,7 @@ const CityLanding: React.FC = () => {
               
               <div className="pt-4 border-t border-slate-100">
                 <a 
-                  href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Jaipur, please share available model profiles in ${location.area}.`)}
+                  href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, please share available model profiles in ${location.area}.`)}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-full block text-center py-3 bg-rose-50 border border-rose-200 text-rose-700 rounded-xl font-bold uppercase tracking-wider text-xs hover:bg-rose-100 transition-colors cursor-pointer"

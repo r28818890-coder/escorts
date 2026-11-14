@@ -20,14 +20,14 @@ const STORAGE_KEY = 'purebliss_ai_learning_scores';
 export const runAiReinforcementLearningLoop = (): StrategyFeedbackScore[] => {
   const currentScores: StrategyFeedbackScore[] = [
     {
-      strategyName: 'Hyperlocal Jaipur Area Clusters (Sindhi Camp & Railway Station)',
+      strategyName: 'Hyperlocal Noida Area Clusters (Sindhi Camp & Railway Station)',
       rankDelta: +4,
       ctrDelta: +2.8,
       trafficDelta: +45,
       phoneCallsDelta: +12,
       whatsAppClicksDelta: +28,
       isWinningStrategy: true,
-      actionTaken: 'SCALED: Applied hyperlocal entity clustering across 10 additional Jaipur sectors.',
+      actionTaken: 'SCALED: Applied hyperlocal entity clustering across 10 additional Noida sectors.',
     },
     {
       strategyName: '11-Schema JSON-LD Rich Snippets (Gold Stars 4.9)',

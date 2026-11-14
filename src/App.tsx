@@ -14,7 +14,7 @@ import Home from '@/pages/Home';
 import CategoryListingPage from '@/pages/CategoryListingPage';
 import AdDetailPage from '@/pages/AdDetailPage';
 import SafetyGuidePage from '@/pages/SafetyGuidePage';
-import JaipurAreasPage from '@/pages/JaipurAreasPage';
+import NoidaAreasPage from '@/pages/NoidaAreasPage';
 import ServiceContactPage from '@/pages/ServiceContactPage';
 import AboutPage from '@/pages/AboutPage';
 import GalleryPage from '@/pages/GalleryPage';
@@ -105,8 +105,8 @@ const AppContent: React.FC = () => {
 
               {/* Portal Directory & Guides */}
               <Route path="/safety-guide" element={<SafetyGuidePage />} />
-              <Route path="/noida-areas" element={<JaipurAreasPage />} />
-              <Route path="/jaipur-areas" element={<JaipurAreasPage />} />
+              <Route path="/noida-areas" element={<NoidaAreasPage />} />
+              <Route path="/jaipur-areas" element={<NoidaAreasPage />} />
 
               {/* Category & Locality Classifieds Routes */}
               <Route path="/:category" element={<CategoryListingPage />} />

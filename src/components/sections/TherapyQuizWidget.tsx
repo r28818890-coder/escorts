@@ -226,7 +226,7 @@ export const TherapyQuizWidget: React.FC = () => {
 
               <div className="flex flex-col sm:flex-row gap-2 justify-center">
                 <a
-                  href={createWhatsAppLink(`Hi Jaipur Spa! My Quiz Recommendation is ${rec.title} (${rec.price}). I want to book a session.`)}
+                  href={createWhatsAppLink(`Hi Noida Spa! My Quiz Recommendation is ${rec.title} (${rec.price}). I want to book a session.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-gradient-to-r from-[#be123c] to-[#e11d48] text-black font-bold text-xs uppercase tracking-widest rounded-xl hover:scale-105 transition-transform shadow-lg"

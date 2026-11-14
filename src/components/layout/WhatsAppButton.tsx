@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
-import { CONTACT } from '@/config/site';
+import { CONTACT, BRAND } from '@/config/site';
 import { trackCallClick, trackWhatsAppClick } from '@/services/analytics';
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -17,11 +17,11 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 export const WhatsAppButton: React.FC = () => {
   return (
     <div className="fixed right-4 bottom-5 z-50 flex flex-col gap-2.5 items-end">
-      {/* ── 1. Direct Phone Call Floating Button (Small & Clean) ── */}
+      {/* ── 1. Direct Phone Call Floating Button ── */}
       <a
         href={CONTACT.phoneHref}
         onClick={() => trackCallClick(CONTACT.phone, 'floating_call_btn')}
-        className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white shadow-[0_4px_16px_rgba(37,99,235,0.4)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 group relative border border-white/20"
+        className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-rose-600 to-indigo-600 text-white shadow-[0_4px_16px_rgba(225,29,72,0.4)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 group relative border border-white/20 cursor-pointer"
         aria-label="Direct Phone Call"
         title={`Call ${CONTACT.phoneDisplay}`}
       >
@@ -29,42 +29,22 @@ export const WhatsAppButton: React.FC = () => {
         <span className="sr-only">Call {CONTACT.phoneDisplay}</span>
       </a>
 
-      {/* ── 2. WhatsApp Line 2 Floating Button ── */}
+      {/* ── 2. WhatsApp Floating Button (Single Official Helpline: 8218125815) ── */}
       <a
-        href={CONTACT.whatsapp2Href + '?text=' + encodeURIComponent('Hello Escorts Hub Jaipur (Line 2), I would like to inquire about verified companion availability.')}
+        href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello ${BRAND.name}, I would like to inquire about verified companion availability in Noida & NCR.`)}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => trackWhatsAppClick(CONTACT.whatsapp2, 'floating_wa_line2')}
-        className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-[0_4px_16px_rgba(37,211,102,0.4)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 group relative border border-white/30"
-        aria-label="WhatsApp Line 2"
-        title={`WhatsApp 2: ${CONTACT.whatsapp2Display}`}
-      >
-        <span className="absolute -top-1 -left-1 bg-indigo-600 text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center border border-white shadow-xs">
-          2
-        </span>
-        <WhatsAppIcon className="w-5 h-5" />
-        <span className="sr-only">WhatsApp 2 ({CONTACT.whatsapp2Display})</span>
-      </a>
-
-      {/* ── 3. WhatsApp Line 1 Floating Button (Main Desk) ── */}
-      <a
-        href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello Escorts Hub Jaipur (Line 1), I would like to inquire about verified companion availability.')}
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() => trackWhatsAppClick(CONTACT.whatsapp1, 'floating_wa_line1')}
-        className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-[0_4px_20px_rgba(37,211,102,0.5)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 group relative border border-white/40"
-        aria-label="WhatsApp Line 1"
-        title={`WhatsApp 1: ${CONTACT.whatsapp1Display}`}
+        onClick={() => trackWhatsAppClick(CONTACT.whatsapp1, 'floating_wa_official')}
+        className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-[0_4px_20px_rgba(37,211,102,0.5)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 group relative border border-white/40 cursor-pointer"
+        aria-label="Official WhatsApp Support"
+        title={`WhatsApp: ${CONTACT.whatsapp1Display}`}
       >
         <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-400"></span>
         </span>
-        <span className="absolute -top-1 -left-1 bg-rose-600 text-white text-[9px] font-black w-4 h-4 rounded-full flex items-center justify-center border border-white shadow-xs">
-          1
-        </span>
-        <WhatsAppIcon className="w-6 h-6" />
-        <span className="sr-only">WhatsApp 1 ({CONTACT.whatsapp1Display})</span>
+        <WhatsAppIcon className="w-6 h-6 sm:w-7 sm:h-7" />
+        <span className="sr-only">WhatsApp ({CONTACT.whatsapp1Display})</span>
       </a>
     </div>
   );

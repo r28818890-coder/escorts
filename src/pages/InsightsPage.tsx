@@ -24,7 +24,7 @@ const InsightsPage: React.FC = () => {
     <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pb-24">
       <SEO 
         title={`City Guides & Verified Insights | ${BRAND.name}`}
-        description={`Read verified guides on VIP companion etiquette, hotel outcall recommendations, and Jaipur area safety tips from ${BRAND.name}.`}
+        description={`Read verified guides on VIP companion etiquette, hotel outcall recommendations, and Noida area safety tips from ${BRAND.name}.`}
       />
 
       {/* Hero Section */}
@@ -34,10 +34,10 @@ const InsightsPage: React.FC = () => {
             <BookOpen size={14} className="text-rose-600" /> VIP Journal & City Guides
           </span>
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
-            Escorts Hub Jaipur <span className="text-rose-600">Guides</span>
+            We Noida Escorts <span className="text-rose-600">Guides</span>
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Authentic city insights, hotel outcall recommendations, safety advice, and companion guides across Jaipur.
+            Authentic city insights, hotel outcall recommendations, safety advice, and companion guides across Noida.
           </p>
         </div>
       </div>

@@ -27,22 +27,22 @@ export const VisitorCookieManager: React.FC = () => {
 
   useEffect(() => {
     // 1. Read existing cookie & local storage
-    const consentCookie = getCookie('jaipur_portal_cookie_consent');
-    const existingVisitorId = getCookie('jaipur_portal_visitor_id');
-    const storedVisits = parseInt(localStorage.getItem('jaipur_portal_visit_count') || '0', 10);
+    const consentCookie = getCookie('noida_portal_cookie_consent');
+    const existingVisitorId = getCookie('noida_portal_visitor_id');
+    const storedVisits = parseInt(localStorage.getItem('noida_portal_visit_count') || '0', 10);
     const newCount = storedVisits + 1;
 
     setVisitCount(newCount);
-    localStorage.setItem('jaipur_portal_visit_count', newCount.toString());
-    localStorage.setItem('jaipur_portal_last_visit', new Date().toISOString());
+    localStorage.setItem('noida_portal_visit_count', newCount.toString());
+    localStorage.setItem('noida_portal_last_visit', new Date().toISOString());
 
     if (!existingVisitorId) {
       const randomId = 'v_' + Math.random().toString(36).substring(2, 10);
-      setCookie('jaipur_portal_visitor_id', randomId, 365);
-      setCookie('jaipur_portal_first_visit', new Date().toISOString(), 365);
+      setCookie('noida_portal_visitor_id', randomId, 365);
+      setCookie('noida_portal_first_visit', new Date().toISOString(), 365);
     }
 
-    setCookie('jaipur_portal_visit_count', newCount.toString(), 365);
+    setCookie('noida_portal_visit_count', newCount.toString(), 365);
 
     // 2. Determine Cookie Banner Visibility
     if (!consentCookie) {
@@ -51,7 +51,7 @@ export const VisitorCookieManager: React.FC = () => {
 
     // 3. Returning Visitor Welcome Back Perk Banner (2nd visit or later)
     if (newCount >= 2 && consentCookie === 'accepted') {
-      const dismissedSession = sessionStorage.getItem('jaipur_portal_welcome_dismissed');
+      const dismissedSession = sessionStorage.getItem('noida_portal_welcome_dismissed');
       if (!dismissedSession) {
         const timer = setTimeout(() => {
           setShowWelcomeBackPopup(true);
@@ -62,7 +62,7 @@ export const VisitorCookieManager: React.FC = () => {
   }, []);
 
   const handleAcceptCookies = () => {
-    setCookie('jaipur_portal_cookie_consent', 'accepted', 365);
+    setCookie('noida_portal_cookie_consent', 'accepted', 365);
     setShowCookieConsent(false);
     if (visitCount >= 2) {
       setShowWelcomeBackPopup(true);
@@ -70,13 +70,13 @@ export const VisitorCookieManager: React.FC = () => {
   };
 
   const handleDeclineCookies = () => {
-    setCookie('jaipur_portal_cookie_consent', 'declined', 30);
+    setCookie('noida_portal_cookie_consent', 'declined', 30);
     setShowCookieConsent(false);
   };
 
   const dismissWelcomePopup = () => {
     setShowWelcomeBackPopup(false);
-    sessionStorage.setItem('jaipur_portal_welcome_dismissed', 'true');
+    sessionStorage.setItem('noida_portal_welcome_dismissed', 'true');
   };
 
   const handleWhatsAppReturnOffer = () => {
@@ -174,7 +174,7 @@ export const VisitorCookieManager: React.FC = () => {
 
             <div className="mt-3 pt-3 border-t border-slate-800 flex items-center justify-center gap-1.5 text-slate-400 text-[10px]">
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Jaipur Rajasthan • 24/7 Hotel Outcall</span>
+              <span>Noida & NCR • 24/7 Hotel Outcall</span>
             </div>
           </div>
         </div>

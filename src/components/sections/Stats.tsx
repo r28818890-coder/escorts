@@ -15,7 +15,7 @@ const values = [
   },
   {
     title: 'Open 24 Hours',
-    description: 'Day or night, Jaipur Spa is always welcoming you. Book a late-night session or an early morning rejuvenation — we never close.',
+    description: 'Day or night, Noida Spa is always welcoming you. Book a late-night session or an early morning rejuvenation — we never close.',
     icon: Clock
   },
   {
@@ -50,7 +50,7 @@ const Stats: React.FC = () => {
     <section className="py-24 bg-[#0a0a0a] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <span className="section-label mb-4">WHY Jaipur Spa</span>
+          <span className="section-label mb-4">WHY Noida Spa</span>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-[#e5e5e5] mb-6">
             Where Ancient Healing Meets <span className="text-[#e11d48]">Modern Luxury</span>
           </h2>

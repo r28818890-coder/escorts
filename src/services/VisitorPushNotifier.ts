@@ -1,6 +1,6 @@
 /**
  * VisitorPushNotifier.ts
- * Native Web Push & Visitor Alert Engine for Jaipur Spa.
+ * Native Web Push & Visitor Alert Engine for Noida Spa.
  * Allows authorized admin devices to receive 100% free live push notifications when a new user visits the site.
  */
 
@@ -12,8 +12,8 @@ export interface VisitorLogItem {
   city: string;
 }
 
-const VISITOR_LOGS_STORAGE_KEY = 'jaipur_spa_admin_visitor_logs';
-const ADMIN_PUSH_ENABLED_KEY = 'jaipur_spa_admin_push_enabled';
+const VISITOR_LOGS_STORAGE_KEY = 'noida_spa_admin_visitor_logs';
+const ADMIN_PUSH_ENABLED_KEY = 'noida_spa_admin_push_enabled';
 
 /** Check if push notifications are enabled on this admin device */
 export const isAdminPushEnabledOnDevice = (): boolean => {
@@ -56,7 +56,7 @@ export const requestAdminPushPermission = async (): Promise<boolean> => {
     setAdminPushEnabledOnDevice(true);
     
     // Fire test notification
-    new Notification(' Jaipur Skokka Admin Alerts Active!', {
+    new Notification(' Noida Skokka Admin Alerts Active!', {
       body: 'You will now receive live push notification alerts whenever a new visitor opens the website!',
       icon: '/ecj-mark.svg',
     });
@@ -80,7 +80,7 @@ export const trackVisitorAndNotifyAdmin = (pathname: string): void => {
       timestamp: formattedTime,
       page: pathname || '/',
       device: deviceType,
-      city: 'Jaipur, Rajasthan',
+      city: 'Noida, Rajasthan',
     };
 
     // Save to local logs
@@ -95,7 +95,7 @@ export const trackVisitorAndNotifyAdmin = (pathname: string): void => {
       'Notification' in window &&
       Notification.permission === 'granted'
     ) {
-      new Notification(' New Visitor Alert — Jaipur Escorts', {
+      new Notification(' New Visitor Alert — Noida Escorts', {
         body: `Someone opened ${pathname} at ${formattedTime} (${deviceType}).`,
         icon: '/ecj-mark.svg',
         tag: 'visitor-alert',

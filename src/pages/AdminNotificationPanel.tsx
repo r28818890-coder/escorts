@@ -44,8 +44,8 @@ export const AdminNotificationPanel: React.FC = () => {
   const [isAiLoading, setIsAiLoading] = useState<boolean>(false);
 
   // 1-Click Blog Generator
-  const [blogTopic, setBlogTopic] = useState<string>('Jaipur VIP Escorts Booking Guide & Verified Models');
-  const [blogKeyword, setBlogKeyword] = useState<string>('escorts hub jaipur');
+  const [blogTopic, setBlogTopic] = useState<string>('Noida VIP Escorts Booking Guide & Verified Models');
+  const [blogKeyword, setBlogKeyword] = useState<string>('we noida escorts');
   const [blogStatus, setBlogStatus] = useState<string>('');
   const [isBlogLoading, setIsBlogLoading] = useState<boolean>(false);
 
@@ -57,10 +57,10 @@ export const AdminNotificationPanel: React.FC = () => {
   const [isReviewLoading, setIsReviewLoading] = useState<boolean>(false);
 
   useEffect(() => {
-    const isAuthed = sessionStorage.getItem('jaipur_spa_admin_authed') === 'true';
+    const isAuthed = sessionStorage.getItem('noida_spa_admin_authed') === 'true';
     setIsAuthenticated(isAuthed);
 
-    if (Notification.permission === 'granted' && localStorage.getItem('jaipur_spa_push_enabled') === 'true') {
+    if (Notification.permission === 'granted' && localStorage.getItem('noida_spa_push_enabled') === 'true') {
       setIsPushEnabled(true);
     }
 
@@ -69,7 +69,7 @@ export const AdminNotificationPanel: React.FC = () => {
 
   const loadVisitorLogs = () => {
     try {
-      const logs = JSON.parse(localStorage.getItem('jaipur_visitor_logs') || '[]');
+      const logs = JSON.parse(localStorage.getItem('noida_visitor_logs') || '[]');
       setVisitorLogs(logs);
     } catch {
       setVisitorLogs([]);
@@ -81,7 +81,7 @@ export const AdminNotificationPanel: React.FC = () => {
     try {
       if (btoa(passwordInput) === OBFUSCATED_PASS_HASH) {
         setIsAuthenticated(true);
-        sessionStorage.setItem('jaipur_spa_admin_authed', 'true');
+        sessionStorage.setItem('noida_spa_admin_authed', 'true');
         setAuthError('');
       } else {
         setAuthError('Incorrect Admin Password');
@@ -100,10 +100,10 @@ export const AdminNotificationPanel: React.FC = () => {
     const permission = await Notification.requestPermission();
     if (permission === 'granted') {
       setIsPushEnabled(true);
-      localStorage.setItem('jaipur_spa_push_enabled', 'true');
+      localStorage.setItem('noida_spa_push_enabled', 'true');
 
       new Notification('Alerts Active!', {
-        body: 'You will now receive instant push alerts whenever a new visitor visits Escorts Hub Jaipur.',
+        body: 'You will now receive instant push alerts whenever a new visitor visits We Noida Escorts.',
         icon: '/ecj-mark.svg'
       });
     } else {
@@ -113,7 +113,7 @@ export const AdminNotificationPanel: React.FC = () => {
 
   const handleDisablePush = () => {
     setIsPushEnabled(false);
-    localStorage.removeItem('jaipur_spa_push_enabled');
+    localStorage.removeItem('noida_spa_push_enabled');
   };
 
   const handleRefreshLogs = () => {
@@ -167,7 +167,7 @@ export const AdminNotificationPanel: React.FC = () => {
       setGeneratedReview({
         reviewerName: 'Happy Client',
         rating: 5,
-        reviewText: `Best verified companion service in Jaipur near ${reviewArea}! 100% genuine photos, quick WhatsApp response, and professional discreet outcall.`
+        reviewText: `Best verified companion service in Noida near ${reviewArea}! 100% genuine photos, quick WhatsApp response, and professional discreet outcall.`
       });
     } finally {
       setIsReviewLoading(false);
@@ -240,7 +240,7 @@ export const AdminNotificationPanel: React.FC = () => {
 
           <button
             onClick={() => {
-              sessionStorage.removeItem('jaipur_spa_admin_authed');
+              sessionStorage.removeItem('noida_spa_admin_authed');
               setIsAuthenticated(false);
             }}
             className="px-4 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-gray-300 text-xs font-medium transition cursor-pointer"

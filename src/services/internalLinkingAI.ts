@@ -10,10 +10,10 @@ export interface InternalLinkItem {
  */
 export const generateInternalLinkMesh = (currentSlug: string): InternalLinkItem[] => {
   return [
-    { anchorText: 'Traditional Thai Massage Jaipur', url: '/thai-massage-benefits-jaipur', category: 'Therapy Cluster' },
+    { anchorText: 'Traditional Thai Massage Noida', url: '/thai-massage-benefits-noida', category: 'Therapy Cluster' },
     { anchorText: 'Deep Tissue Muscle Pain Relief', url: '/deep-tissue-vs-swedish', category: 'Therapy Cluster' },
     { anchorText: 'Couple Luxury Spa Package Rate', url: '/#pricing', category: 'Pricing & Packages' },
     { anchorText: '24 Hour Sindhi Camp Spa Location', url: '/#location', category: 'Location Hub' },
-    { anchorText: 'Jaipur Travel Distance Calculator', url: '/#calculator', category: 'Interactive Tool' },
+    { anchorText: 'Noida Travel Distance Calculator', url: '/#calculator', category: 'Interactive Tool' },
   ];
 };

@@ -45,20 +45,20 @@ const Hero: React.FC = () => {
           {/* Top Badge */}
           <motion.div variants={itemVariants} className="inline-flex items-center gap-1.5 mb-4 md:mb-8 px-3.5 py-1.5 rounded-full border border-[#e11d48]/30 bg-white/5 backdrop-blur-sm">
              <Sparkles size={12} className="text-[#e11d48]" />
-             <span className="text-[10px] md:text-xs font-bold text-[#e11d48] uppercase tracking-widest">Top Spa in Jaipur • Sindhi Camp • Open 24 Hours</span>
+             <span className="text-[10px] md:text-xs font-bold text-[#e11d48] uppercase tracking-widest">Top Spa in Noida • Sindhi Camp • Open 24 Hours</span>
           </motion.div>
           
           {/* Main Headline - Responsive Scaling */}
           <motion.h1 variants={itemVariants} className="font-display font-black text-3xl sm:text-5xl md:text-7xl lg:text-8xl leading-[1.15] mb-4 md:mb-6">
             <span className="block text-[#faf9f6]">Massage Spa</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#be123c] via-[#e11d48] to-[#be123c] animate-shimmer" style={{ backgroundSize: '200% auto' }}>
-              in Jaipur
+              in Noida
             </span>
           </motion.h1>
           
           {/* Subheading */}
           <motion.p variants={itemVariants} className="text-xs md:text-lg text-[#d4d4d4] max-w-2xl mb-6 md:mb-10 leading-relaxed px-2">
-            Searching for a "spa near me"? Experience the best massage spa near Sindhi Camp & Jaipur Junction Railway Station. Certified therapists. Private sanitized suites. Open 24 Hours.
+            Searching for a "spa near me"? Experience the best massage spa near Sindhi Camp & Noida Junction Railway Station. Certified therapists. Private sanitized suites. Open 24 Hours.
           </motion.p>
 
           {/* Trust Badges */}

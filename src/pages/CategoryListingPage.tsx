@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 import { 
   PORTAL_CATEGORIES, 
-  JAIPUR_LOCALITIES, 
+  NOIDA_LOCALITIES, 
   INITIAL_CLASSIFIED_ADS, 
   ClassifiedAd,
   getCategoryBySlug,
@@ -29,7 +29,7 @@ import {
 } from '@/config/portalData';
 import { generateLocalizedSeo } from '@/config/seoContentGenerator';
 import SEO from '@/components/common/SEO';
-import JaipurSearchBar from '@/components/common/JaipurSearchBar';
+import NoidaSearchBar from '@/components/common/NoidaSearchBar';
 import AdCard from '@/components/common/AdCard';
 import PostAdModal from '@/components/common/PostAdModal';
 import LiveActivityToast from '@/components/common/LiveActivityToast';
@@ -58,7 +58,7 @@ export const CategoryListingPage: React.FC = () => {
 
   useEffect(() => {
     try {
-      const stored = JSON.parse(localStorage.getItem('jaipur_user_ads') || '[]');
+      const stored = JSON.parse(localStorage.getItem('noida_user_ads') || '[]');
       if (Array.isArray(stored) && stored.length > 0) {
         setAllAds([...stored, ...INITIAL_CLASSIFIED_ADS]);
       }
@@ -201,7 +201,7 @@ export const CategoryListingPage: React.FC = () => {
 
         {/* Search & Filter Controls */}
         <div className="mb-8">
-          <JaipurSearchBar
+          <NoidaSearchBar
             initialCategory={currentCategory.slug}
             initialLocality={currentLocality?.slug || 'all'}
           />
@@ -224,7 +224,7 @@ export const CategoryListingPage: React.FC = () => {
             >
               All Noida & NCR
             </Link>
-            {JAIPUR_LOCALITIES.map((loc) => (
+            {NOIDA_LOCALITIES.map((loc) => (
               <Link
                 key={loc.id}
                 to={`/${currentCategory.slug}/${loc.slug}`}
@@ -273,7 +273,7 @@ export const CategoryListingPage: React.FC = () => {
         {/* Service Highlights (4 Pillars) */}
         <div className="mb-16">
           <h2 className="text-xl sm:text-2xl font-black text-slate-900 mb-6">
-            Why Choose {currentCategory.name} in {currentLocality ? currentLocality.name : 'Jaipur'}?
+            Why Choose {currentCategory.name} in {currentLocality ? currentLocality.name : 'Noida'}?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {seoData.servicesBreakdown.map((item, idx) => (
@@ -291,10 +291,10 @@ export const CategoryListingPage: React.FC = () => {
         {/* Booking Tiers & Hospitality Standards */}
         <div className="mb-16 bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
           <h2 className="text-xl sm:text-2xl font-black text-slate-900 mb-2">
-            Available Sessions & Meeting Formats in {currentLocality ? currentLocality.name : 'Jaipur'}
+            Available Sessions & Meeting Formats in {currentLocality ? currentLocality.name : 'Noida'}
           </h2>
           <p className="text-xs text-slate-500 mb-6">
-            Verified independent service providers offering customized companionship formats in {currentLocality ? currentLocality.name : 'Jaipur'}.
+            Verified independent service providers offering customized companionship formats in {currentLocality ? currentLocality.name : 'Noida'}.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -313,7 +313,7 @@ export const CategoryListingPage: React.FC = () => {
           <div className="flex items-center gap-2 mb-6">
             <HelpCircle size={20} className="text-rose-600" />
             <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-              Frequently Asked Questions - {currentCategory.name} in {currentLocality ? currentLocality.name : 'Jaipur'}
+              Frequently Asked Questions - {currentCategory.name} in {currentLocality ? currentLocality.name : 'Noida'}
             </h2>
           </div>
 
@@ -346,11 +346,11 @@ export const CategoryListingPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Nearby Jaipur Areas Cross-Linking Mesh */}
+        {/* Nearby Noida Areas Cross-Linking Mesh */}
         <div className="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-4">
           <h3 className="text-base font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
             <MapPin size={16} className="text-rose-600" />
-            Explore {currentCategory.name} in Neighboring Jaipur Localities:
+            Explore {currentCategory.name} in Neighboring Noida Localities:
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
             {seoData.nearbyLocalities.map((near, idx) => (

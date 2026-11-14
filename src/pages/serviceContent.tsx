@@ -235,7 +235,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
     sections: [
       {
         title: 'Information Collection',
-        content: 'At Escorts Hub Jaipur, we collect basic information required to coordinate your bookings, such as your contact preferences. This information is kept strictly confidential and never stored in permanent tracking databases.',
+        content: 'At We Noida Escorts, we collect basic information required to coordinate your bookings, such as your contact preferences. This information is kept strictly confidential and never stored in permanent tracking databases.',
         icon: ShieldCheck
       },
       {
@@ -266,7 +266,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: 'Etiquette & Compliance',
         content: [
           'All users and advertisers must be strictly 18 years of age or older.',
-          'Escorts Hub Jaipur strictly enforces mutual respect and discretion. Any illegal or abusive behavior results in immediate blacklisting.',
+          'We Noida Escorts strictly enforces mutual respect and discretion. Any illegal or abusive behavior results in immediate blacklisting.',
           'Zero advance payment guarantee: never transfer deposits or advance fees.'
         ],
         icon: Info

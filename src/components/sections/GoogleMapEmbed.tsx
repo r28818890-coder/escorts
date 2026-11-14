@@ -23,10 +23,10 @@ const GoogleMapEmbed: React.FC = () => {
             Find Us
           </span>
           <h2 className="text-xl md:text-4xl font-display font-black text-slate-900 mb-2">
-            ECJ Near <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f641d] to-[#d6aa47]">Pink City, Jaipur</span>
+            ECJ Near <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f641d] to-[#d6aa47]">Pink City, Noida</span>
           </h2>
           <p className="text-slate-600 text-xs md:text-base max-w-xl mx-auto">
-            Khandela House, Sansar Chandra Road, behind Amber Tower, Pink City, Jaipur.
+            Khandela House, Sansar Chandra Road, behind Amber Tower, Pink City, Noida.
           </p>
         </motion.div>
 
@@ -50,7 +50,7 @@ const GoogleMapEmbed: React.FC = () => {
                   <p className="text-[10px] font-black uppercase tracking-widest text-[#e11d48] mb-0.5">Address</p>
                   <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
                     Khandela House, Sansar Chandra Road,<br />
-                    Behind Amber Tower, Pink City, Jaipur – 302001
+                    Behind Amber Tower, Pink City, Noida – 302001
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const GoogleMapEmbed: React.FC = () => {
             className="lg:col-span-2 rounded-xl md:rounded-2xl overflow-hidden border border-[#d6aa47]/40 shadow-lg h-[240px] md:h-[380px]"
           >
             <iframe
-              title="Escorts Hub Jaipur Location — Pink City, Jaipur"
+              title="We Noida Escorts Location — Pink City, Noida"
               src={CONTACT.embedMapSrc}
               width="100%"
               height="100%"

@@ -31,7 +31,7 @@ const galleryImages = [
   },
   {
     url: 'https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&q=80&w=1200',
-    title: 'Private Suite Lounge Jaipur',
+    title: 'Private Suite Lounge Noida',
     category: 'Resorts & Suites',
   },
 ];
@@ -41,7 +41,7 @@ const GalleryPage: React.FC = () => {
     <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pb-24">
       <SEO
         title={`VIP Gallery & Suite Visuals | ${BRAND.name}`}
-        description={`Explore verified photos and luxury suite ambiance at ${BRAND.name}, Jaipur.`}
+        description={`Explore verified photos and luxury suite ambiance at ${BRAND.name}, Noida.`}
       />
 
       {/* Hero */}
@@ -54,7 +54,7 @@ const GalleryPage: React.FC = () => {
             VIP Suite & Hotel Gallery
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Discover the luxury ambiance, 5-star hotel setups, and discreet private suite environments across Jaipur.
+            Discover the luxury ambiance, 5-star hotel setups, and discreet private suite environments across Noida.
           </p>
         </div>
       </div>

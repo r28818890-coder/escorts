@@ -80,7 +80,7 @@ export function applySeoAutoFix(): SeoAuditReport {
 
   // Fix 1: Title
   if (!document.title || document.title.length < 10) {
-    document.title = 'Jaipur Spa | Luxury Thai Spa Jaipur | Open 24 Hours';
+    document.title = 'Noida Spa | Luxury Thai Spa Noida | Open 24 Hours';
     fixedCount++;
   }
 
@@ -92,7 +92,7 @@ export function applySeoAutoFix(): SeoAuditReport {
     document.head.appendChild(metaDesc);
   }
   if (!metaDesc.getAttribute('content')) {
-    metaDesc.setAttribute('content', 'Jaipur Spa — Jaipur premier luxury Thai spa in Sindhi Camp. Certified therapists offering Thai Massage, Swedish, Deep Tissue, Aromatherapy, Couple Spa & more. Open 24 hours.');
+    metaDesc.setAttribute('content', 'Noida Spa — Noida premier luxury Thai spa in Sindhi Camp. Certified therapists offering Thai Massage, Swedish, Deep Tissue, Aromatherapy, Couple Spa & more. Open 24 hours.');
     fixedCount++;
   }
 
@@ -122,7 +122,7 @@ export function applySeoAutoFix(): SeoAuditReport {
   const images = Array.from(document.querySelectorAll('img'));
   images.forEach((img, idx) => {
     if (!img.hasAttribute('alt') || !img.getAttribute('alt')?.trim()) {
-      img.setAttribute('alt', `Jaipur Spa Jaipur Image ${idx + 1}`);
+      img.setAttribute('alt', `Noida Spa Noida Image ${idx + 1}`);
       fixedCount++;
     }
   });

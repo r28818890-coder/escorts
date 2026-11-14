@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DOMAIN = 'https://escortshubnoida.com';
+const DOMAIN = 'https://wenoidaescorts.com';
 const categories = ['massages', 'call-girls', 'male-escorts', 'transsexual', 'adult-meetings'];
 const localities = [
   'sector-18', 'sector-62', 'sector-50', 'sector-137', 'sector-18-film-city',

@@ -31,8 +31,8 @@ const ServicePage: React.FC = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-12 pb-20">
       <SEO 
-        title={`${service.name} in Jaipur | Verified Companions | ${BRAND.name}`}
-        description={`Explore verified ${service.name.toLowerCase()} listings in Jaipur with ${BRAND.name}. 100% genuine photos, 24/7 hotel outcall visits.`}
+        title={`${service.name} in Noida | Verified Companions | ${BRAND.name}`}
+        description={`Explore verified ${service.name.toLowerCase()} listings in Noida with ${BRAND.name}. 100% genuine photos, 24/7 hotel outcall visits.`}
         keywords={service.keywords.join(', ')}
         schema={{
           '@type': 'Service',
@@ -61,7 +61,7 @@ const ServicePage: React.FC = () => {
               Verified Category
             </span>
             <h1 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 leading-tight tracking-tight">
-              {service.name} <span className="block text-rose-600">in Jaipur</span>
+              {service.name} <span className="block text-rose-600">in Noida</span>
             </h1>
 
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed mb-10 border-l-4 border-rose-600 pl-6">
@@ -127,9 +127,9 @@ const ServicePage: React.FC = () => {
             </div>
 
             <div className="mt-10 pt-8 border-t border-slate-100 text-center">
-              <p className="text-xs text-slate-500 mb-4">24/7 Hotel Outcall • Doorstep Arrival in Jaipur</p>
+              <p className="text-xs text-slate-500 mb-4">24/7 Hotel Outcall • Doorstep Arrival in Noida</p>
               <a 
-                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Jaipur, I want to inquire about ${service.name} companion in Jaipur.`)}
+                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, I want to inquire about ${service.name} companion in Noida.`)}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 text-white font-black text-xs uppercase tracking-wider rounded-xl hover:brightness-110 transition-transform shadow-md gap-2 cursor-pointer"

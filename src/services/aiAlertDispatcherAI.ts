@@ -35,23 +35,23 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
   try {
     if (typeof window !== 'undefined') {
       const img = new Image();
-      img.src = `https://api.whatsapp.com/send?phone=91${PRIVATE_ALERT_PHONE}&text=${encodeURIComponent('Jaipur Spa AI ALERT: ' + text)}`;
+      img.src = `https://api.whatsapp.com/send?phone=91${PRIVATE_ALERT_PHONE}&text=${encodeURIComponent('Noida Spa AI ALERT: ' + text)}`;
 
       // Native Browser Phone Push Banner Notification
       if ('Notification' in window) {
         if (Notification.permission === 'granted') {
-          new Notification('Escorts Hub Jaipur ALERT', {
+          new Notification('We Noida Escorts ALERT', {
             body: text,
             icon: '/ecj-mark.svg',
-            tag: 'jaipurescortsclub-alert'
+            tag: 'noidaescortsclub-alert'
           });
         } else if (Notification.permission !== 'denied') {
           Notification.requestPermission().then(permission => {
             if (permission === 'granted') {
-              new Notification('Escorts Hub Jaipur ALERT', {
+              new Notification('We Noida Escorts ALERT', {
                 body: text,
                 icon: '/ecj-mark.svg',
-                tag: 'jaipurescortsclub-alert'
+                tag: 'noidaescortsclub-alert'
               });
             }
           });
@@ -62,7 +62,7 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
     // Ignore silent background dispatch errors
   }
 
-  console.log(`[Jaipur Spa AI ALERT DISPATCHED] ${text}`);
+  console.log(`[Noida Spa AI ALERT DISPATCHED] ${text}`);
 
   return {
     id: `alert-${timestamp}`,
@@ -74,7 +74,7 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
 };
 
 export const getAlertWhatsAppUrl = (customText: string): string => {
-  return `https://wa.me/91${PRIVATE_ALERT_PHONE}?text=${encodeURIComponent('Jaipur Spa AI ALERT: ' + customText)}`;
+  return `https://wa.me/91${PRIVATE_ALERT_PHONE}?text=${encodeURIComponent('Noida Spa AI ALERT: ' + customText)}`;
 };
 
 export const requestBrowserPushPermissions = () => {

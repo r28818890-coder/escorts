@@ -1,7 +1,7 @@
 /**
  * veoClaudeAI.ts
  * Advanced Client & Service for Veo AI Free Engine (Claude Sonnet 5, Claude Opus 5, GPT-5.6 Terra, Gemini 3.7 Flash)
- * Tailored for Escorts Hub Jaipur (https://escortshubjaipur.com)
+ * Tailored for We Noida Escorts (https://escortshubnoida.com)
  * Zero API Key requirement with support for multi-turn sessions, thinking mode, and web search grounding.
  */
 
@@ -256,13 +256,13 @@ export async function chatVeoClaude(
 // ─── DOMAIN SPECIALIZATIONS FOR ESCORTS HUB JAIPUR ─────────────────────────
 
 const JEC_MASTER_CONTEXT = `
-You are the Official VIP Concierge & AI Assistant for "${BRAND.name}" (${BRAND.domain}), Jaipur's #1 premier directory of 100% verified escort models, independent call girls, Russian companions, and VIP hostesses.
+You are the Official VIP Concierge & AI Assistant for "${BRAND.name}" (${BRAND.domain}), Noida's #1 premier directory of 100% verified escort models, independent call girls, Russian companions, and VIP hostesses.
 
 Directory Highlights:
 - Official Portal: ${BRAND.domain}/
 - Contact / WhatsApp Hotline: ${CONTACT.phoneDisplay} (${CONTACT.phone})
 - Secondary WhatsApp: ${CONTACT.whatsapp2Display}
-- Service Area: Jaipur Citywide 24 Hours (Sindhi Camp, MI Road, Vaishali Nagar, Malviya Nagar, C-Scheme, Mansarovar, Tonk Road, Raja Park, Jaipur Junction, Airport area, etc.)
+- Service Area: Noida Citywide 24 Hours (Sindhi Camp, MI Road, Vaishali Nagar, Malviya Nagar, C-Scheme, Mansarovar, Tonk Road, Raja Park, Noida Junction, Airport area, etc.)
 - Available Categories:
   * VIP High Profile Escorts & Models
   * Russian & Foreign Companions
@@ -294,7 +294,7 @@ ${chatHistory.map(m => `${m.role.toUpperCase()}: ${m.content}`).join('\n')}
 
 User Question: "${userMessage}"
 
-Provide a courteous, accurate, and helpful response for Escorts Hub Jaipur:`;
+Provide a courteous, accurate, and helpful response for We Noida Escorts:`;
 
   return await queryVeoClaude(formattedPrompt, {
     model: 'claude-sonnet',
@@ -317,11 +317,11 @@ Topic: "${topic}"
 Target Keyword: "${targetKeyword}"
 
 Requirements:
-1. Authentic, informative perspective for adult travellers and visitors in Jaipur.
+1. Authentic, informative perspective for adult travellers and visitors in Noida.
 2. Word count: 500 - 650 words.
 3. Natural integration of "${targetKeyword}" 2-3 times.
 4. Clean HTML format using <h3> subheadings and <p> paragraphs.
-5. Emphasize verified profiles, safe hotel outcalls in Jaipur, and WhatsApp booking at ${CONTACT.phoneDisplay}.
+5. Emphasize verified profiles, safe hotel outcalls in Noida, and WhatsApp booking at ${CONTACT.phoneDisplay}.
 6. Output in JSON format with keys: title, slug, excerpt, content, metaDescription, tags.
 
 Return ONLY the JSON object.`;
@@ -340,10 +340,10 @@ Return ONLY the JSON object.`;
       return {
         title: parsed.title || topic,
         slug: parsed.slug || safeSlug,
-        excerpt: parsed.excerpt || `Read our verified guide on ${topic} at ${BRAND.name}, Jaipur.`,
+        excerpt: parsed.excerpt || `Read our verified guide on ${topic} at ${BRAND.name}, Noida.`,
         content: parsed.content || `<p>${rawResult}</p>`,
-        metaDescription: parsed.metaDescription || `Explore verified models and tips for ${topic} at ${BRAND.name}, Jaipur.`,
-        tags: Array.isArray(parsed.tags) ? parsed.tags : [targetKeyword, BRAND.name, 'Jaipur Directory']
+        metaDescription: parsed.metaDescription || `Explore verified models and tips for ${topic} at ${BRAND.name}, Noida.`,
+        tags: Array.isArray(parsed.tags) ? parsed.tags : [targetKeyword, BRAND.name, 'Noida Directory']
       };
     }
   } catch (err) {
@@ -353,10 +353,10 @@ Return ONLY the JSON object.`;
   return {
     title: topic.replace(/\b\w/g, l => l.toUpperCase()),
     slug: safeSlug,
-    excerpt: `Discover our verified guide on ${topic} at ${BRAND.name}, Jaipur.`,
-    content: `<p>Welcome to ${BRAND.name}, the leading verified directory in Jaipur. Whether you are visiting the Pink City for business or leisure, our platform connects you with authentic, photo-verified independent models across Sindhi Camp, MI Road, Vaishali Nagar, and Malviya Nagar.</p><h3>Why Choose Verified Profiles</h3><p>We prioritize guest safety, privacy, and genuine photo authentication. All outcall arrangements at reputed hotels and private suites are coordinated with discretion.</p><h3>Contact & Coordination</h3><p>For instant profile availability and booking details, connect directly on WhatsApp at ${CONTACT.phoneDisplay}.</p>`,
-    metaDescription: `Discover verified companions and tips on ${topic} at ${BRAND.name} Jaipur.`,
-    tags: [targetKeyword, BRAND.name, 'Jaipur Escorts']
+    excerpt: `Discover our verified guide on ${topic} at ${BRAND.name}, Noida.`,
+    content: `<p>Welcome to ${BRAND.name}, the leading verified directory in Noida. Whether you are visiting the Pink City for business or leisure, our platform connects you with authentic, photo-verified independent models across Sindhi Camp, MI Road, Vaishali Nagar, and Malviya Nagar.</p><h3>Why Choose Verified Profiles</h3><p>We prioritize guest safety, privacy, and genuine photo authentication. All outcall arrangements at reputed hotels and private suites are coordinated with discretion.</p><h3>Contact & Coordination</h3><p>For instant profile availability and booking details, connect directly on WhatsApp at ${CONTACT.phoneDisplay}.</p>`,
+    metaDescription: `Discover verified companions and tips on ${topic} at ${BRAND.name} Noida.`,
+    tags: [targetKeyword, BRAND.name, 'Noida Escorts']
   };
 }
 
@@ -367,7 +367,7 @@ export async function generateSpaReviewWithClaude(
   serviceName: string = 'VIP Companion',
   areaName: string = 'Sindhi Camp'
 ): Promise<{ reviewerName: string; rating: number; reviewText: string; date: string }> {
-  const prompt = `Write an authentic 5-star review for "${serviceName}" at Escorts Hub Jaipur located in "${areaName}", Jaipur.
+  const prompt = `Write an authentic 5-star review for "${serviceName}" at We Noida Escorts located in "${areaName}", Noida.
 Praise the prompt WhatsApp communication, 100% verified real photos, and professional discreet service.
 Return JSON with keys: reviewerName, rating (number 5), reviewText, date ("2 days ago").`;
 
@@ -382,7 +382,7 @@ Return JSON with keys: reviewerName, rating (number 5), reviewText, date ("2 day
   return {
     reviewerName: 'Rohit K. (Verified Client)',
     rating: 5,
-    reviewText: `Excellent experience with Escorts Hub Jaipur in ${areaName}. The profile was 100% genuine as shown in photos, communication was quick over WhatsApp, and service was discreet and professional.`,
+    reviewText: `Excellent experience with We Noida Escorts in ${areaName}. The profile was 100% genuine as shown in photos, communication was quick over WhatsApp, and service was discreet and professional.`,
     date: 'Just now'
   };
 }

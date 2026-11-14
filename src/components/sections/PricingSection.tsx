@@ -53,7 +53,7 @@ const extraServicesList = [
   'Standard VIP Coordination',
   ' 5-Star Hotel Outcall Arrangement',
   ' Airport Pickup Accompaniment',
-  ' Multi-Day Jaipur Tour Companion',
+  ' Multi-Day Noida Tour Companion',
 ];
 
 export const PricingSection: React.FC = () => {

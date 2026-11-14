@@ -44,7 +44,7 @@ const LeadCaptureModal: React.FC = () => {
     setIsSubmitting(true);
     
     // Format the message with user's details
-    const message = `Hi Jaipur Spa! I would like to claim the 10% Welcome Discount. \n\n*Name:* ${name}\n*Number:* ${phone}\n\nPlease let me know the available slots.`;
+    const message = `Hi Noida Spa! I would like to claim the 10% Welcome Discount. \n\n*Name:* ${name}\n*Number:* ${phone}\n\nPlease let me know the available slots.`;
     
     // Construct WhatsApp URL
     const whatsappUrl = `https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent(message)}`;

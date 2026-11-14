@@ -87,7 +87,7 @@ export const NewsFooter: React.FC = () => {
                   </li>
                 ))}
                 <li>
-                  <Link to="/jaipur-areas" className="text-amber-400 font-bold hover:underline">
+                  <Link to="/noida-areas" className="text-amber-400 font-bold hover:underline">
                     View All 18 NCR Areas →
                   </Link>
                 </li>

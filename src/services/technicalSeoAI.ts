@@ -21,7 +21,7 @@ export const runTechnicalSeoAuditAndAutoFix = (): TechnicalSeoAuditReport => {
     const images = document.querySelectorAll('img');
     images.forEach((img) => {
       if (!img.getAttribute('alt') || img.getAttribute('alt')?.trim() === '') {
-        img.setAttribute('alt', 'Escorts Hub Jaipur Verified Directory');
+        img.setAttribute('alt', 'We Noida Escorts Verified Directory');
       }
     });
   }
@@ -33,7 +33,7 @@ export const runTechnicalSeoAuditAndAutoFix = (): TechnicalSeoAuditReport => {
     brokenLinksChecked: 128,
     canonicalsVerified: true,
     sitemapIndexed: true,
-    robotsTxtStatus: '100% Valid (Allow: / | Sitemap: https://escortshubjaipur.com/sitemap.xml)',
+    robotsTxtStatus: '100% Valid (Allow: / | Sitemap: https://escortshubnoida.com/sitemap.xml)',
     score: 100,
   };
 };

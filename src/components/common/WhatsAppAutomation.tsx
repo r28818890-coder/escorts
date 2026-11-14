@@ -11,7 +11,7 @@ interface WhatsAppAutomationProps {
 
 const WhatsAppAutomation: React.FC<WhatsAppAutomationProps> = ({
   phoneNumber = CONTACT.whatsapp1,
-  message = 'Hi! I am interested in booking a spa appointment at Jaipur Spa Jaipur.',
+  message = 'Hi! I am interested in booking a spa appointment at Noida Spa Noida.',
   autoTrigger = true
 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -135,7 +135,7 @@ const WhatsAppAutomation: React.FC<WhatsAppAutomationProps> = ({
                  Couple Massage
               </button>
               <button
-                onClick={() => handleQuickMessage('Hello! I want an Aroma Therapy session at Jaipur Spa.')}
+                onClick={() => handleQuickMessage('Hello! I want an Aroma Therapy session at Noida Spa.')}
                 className="block w-full text-left px-3 py-2 hover:bg-gray-100 rounded text-sm"
               >
                  Aroma Therapy

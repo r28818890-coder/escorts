@@ -1,6 +1,6 @@
 import { PAGES_CONTENT } from '@/pages/serviceContent';
-import { SERVICES_LIST, JAIPUR_LOCATIONS, CONTACT, BRAND, SPA_STATS } from '@/config/site';
-import { PORTAL_CATEGORIES, JAIPUR_LOCALITIES, INITIAL_CLASSIFIED_ADS } from '@/config/portalData';
+import { SERVICES_LIST, NOIDA_LOCATIONS, CONTACT, BRAND, SPA_STATS } from '@/config/site';
+import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, INITIAL_CLASSIFIED_ADS } from '@/config/portalData';
 import { BLOG_POSTS } from '@/pages/Insights';
 import { runCompetitorSeoAnalysis } from '@/services/competitorSeoEngine';
 import { runWeeklyAutoImprovementCycle } from '@/services/autoImprovementAI';
@@ -34,10 +34,10 @@ export const isAdminPasswordCheck = (text: string) => {
  */
 const generateAiBlogArticle = (userTopic: string) => {
   const fallbackTopics = [
-    'How to Choose Verified Escorts & Companions Safely in Jaipur',
-    'VIP Outcall Etiquette in Luxury 5-Star Hotels in Jaipur',
-    'Sindhi Camp & MI Road Verified Companions Booking Guide',
-    'Malviya Nagar & Vaishali Nagar Independent Models Guide'
+    'How to Choose Verified Escorts & Companions Safely in Noida',
+    'VIP Outcall Etiquette in Luxury 5-Star Hotels in Noida',
+    'Sector 18 & Film City Verified Companions Booking Guide',
+    'Sector 62 IT Hub & Expressway Independent Models Guide'
   ];
 
   let clean = userTopic
@@ -59,24 +59,24 @@ const generateAiBlogArticle = (userTopic: string) => {
   const newPost = {
     id,
     slug,
-    title: `${clean} — Official Escorts Hub Jaipur Guide`,
+    title: `${clean} — Official We Noida Escorts Guide`,
     metaTitle: `${clean} | ${BRAND.name}`,
-    metaDescription: `Read our comprehensive guide on ${clean}. Verified profiles, genuine photos, and direct WhatsApp contact in Jaipur.`,
+    metaDescription: `Read our comprehensive guide on ${clean}. Verified profiles, genuine photos, and direct WhatsApp contact in Noida & NCR.`,
     category: 'VIP Guide',
     tag: 'Verified Directory',
     date: new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
     readTime: '5 min read',
-    excerpt: `Planning an evening or hotel stay in Jaipur? Here is an authentic guide on ${clean.toLowerCase()} with 100% verified profiles.`,
+    excerpt: `Planning an evening or hotel stay in Noida? Here is an authentic guide on ${clean.toLowerCase()} with 100% verified profiles.`,
     content: `
-      <p>Welcome to ${BRAND.name}, Jaipur's trusted platform for verified companion profiles. Whether you reside in Jaipur or are visiting for travel, our directory features verified independent models across central and luxury hotel zones.</p>
+      <p>Welcome to ${BRAND.name}, Noida's trusted platform for verified companion profiles. Whether you reside in Noida or are visiting for travel, our directory features verified independent models across central and luxury hotel zones.</p>
       <h3>Safety & Real Verification</h3>
       <p>We ensure that all profiles uploaded have undergone direct phone authentication. Never pay unauthorized advance fees or deposit requests to unverified contacts.</p>
-      <h3>Discreet Outcalls in Jaipur</h3>
-      <p>Independent companions are available for outcall appointments at all major 3-star, 4-star, and 5-star hotels across Sindhi Camp, MI Road, C-Scheme, and Tonk Road.</p>
+      <h3>Discreet Outcalls in Noida & NCR</h3>
+      <p>Independent companions are available for outcall appointments at all major 3-star, 4-star, and 5-star hotels across Sector 18, Sector 62, Greater Noida, and Noida Expressway.</p>
       <p>For immediate assistance and genuine photos, contact our manager on WhatsApp at ${CONTACT.phoneDisplay}.</p>
     `,
-    relatedPosts: ['safety-guide-jaipur', 'hotel-outcall-guide'],
-    keywords: [clean, BRAND.name, 'Jaipur Escorts']
+    relatedPosts: ['safety-guide-noida', 'hotel-outcall-guide'],
+    keywords: [clean, BRAND.name, 'Noida Escorts']
   };
 
   BLOG_POSTS.unshift(newPost);
@@ -84,7 +84,7 @@ const generateAiBlogArticle = (userTopic: string) => {
 };
 
 /**
- * Master Escorts Hub Jaipur Rule Engine
+ * Master We Noida Escorts Rule Engine
  */
 export const generateSmartBotResponse = (message: string, isAdminMode: boolean = false): SmartBotReply => {
   const normalized = message.toLowerCase().replace(/^[0-9]+\.\s*/, '').trim();
@@ -94,7 +94,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
     if (!isAdminMode) {
       return {
         response: `Blog Creation is an Admin Feature. Authenticate using 'admin-saddam' to access this control.`,
-        options: ['Verified Models', 'Check Rates & Packages', 'Jaipur Localities'],
+        options: ['Verified Models', 'Check Rates & Packages', 'Noida Localities'],
         action: 'none'
       };
     }
@@ -115,7 +115,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
     if (!isAdminMode) {
       return {
         response: `Competitor Intelligence & Rank Tracking is an Admin Control. Authenticate using 'admin-saddam' to view live Google positions.`,
-        options: ['Verified Models', 'Check Rates & Packages', 'Jaipur Localities'],
+        options: ['Verified Models', 'Check Rates & Packages', 'Noida Localities'],
         action: 'none'
       };
     }
@@ -125,7 +125,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
     return {
       response: ` REAL-TIME GOOGLE SERP DOMINANCE REPORT (${rankData.scanTime}):\n\n` +
         ` Portal: ${BRAND.name} (${BRAND.domain})\n` +
-        ` Overall Google Rank: #1 Across Jaipur Classifieds\n` +
+        ` Overall Google Rank: #1 Across Noida Classifieds\n` +
         ` Total Tracked Keywords: ${rankData.totalTrackedKeywords} | Rank #1 Keywords: ${rankData.position1Keywords}\n` +
         ` Average Position: ${rankData.averagePosition}\n` +
         ` E-E-A-T Score: ${report.rankingScore}/100\n\n` +
@@ -139,8 +139,8 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   // ── 1. DIRECT WHATSAPP ACTION ──────────────────────────────────────────
   if (contains(normalized, ['book on whatsapp', 'open whatsapp', 'whatsapp me', 'whatsapp par book', 'send whatsapp', 'book whatsapp', 'whatsapp'])) {
     return {
-      response: `Connecting you to Escorts Hub Jaipur manager on WhatsApp for verified model photos and availability...`,
-      options: ['Verified Models', 'Check Rates & Packages', 'Jaipur Localities'],
+      response: `Connecting you to We Noida Escorts coordinator on WhatsApp for verified model photos and availability...`,
+      options: ['Verified Models', 'Check Rates & Packages', 'Noida Localities'],
       action: 'whatsapp'
     };
   }
@@ -157,7 +157,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   if (contains(normalized, ['logout admin', 'lock admin', 'lock admin mode'])) {
     return {
       response: ` Admin Mode Locked.`,
-      options: ['Verified Models', 'Check Rates & Packages', 'Jaipur Localities'],
+      options: ['Verified Models', 'Check Rates & Packages', 'Noida Localities'],
       action: 'admin-logout'
     };
   }
@@ -180,8 +180,8 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   // ── 3. GREETINGS & INTRO ───────────────────────────────────────────────
   if (contains(normalized, ['hi', 'hello', 'hey', 'namaste', 'hlo', 'good morning', 'good evening', 'good afternoon', 'start'])) {
     return {
-      response: `Hello & Welcome to ${BRAND.name}! \n\nI am your VIP AI Assistant. How can I help you connect with verified models and companions in Jaipur today?`,
-      options: ['Verified Models', 'Check Rates & Packages', 'Jaipur Localities', 'Book on WhatsApp'],
+      response: `Hello & Welcome to ${BRAND.name}! \n\nI am your VIP AI Assistant. How can I help you connect with verified models and companions in Noida & NCR today?`,
+      options: ['Verified Models', 'Check Rates & Packages', 'Noida Localities', 'Book on WhatsApp'],
       action: 'none'
     };
   }
@@ -189,7 +189,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   if (contains(normalized, ['thank', 'thanks', 'dhanyawad', 'shukriya', 'ok', 'okay', 'great', 'nice', 'good'])) {
     return {
       response: `You're welcome! Feel free to ask about any category, or click below to connect directly on WhatsApp with our coordinator.`,
-      options: ['Book on WhatsApp', 'Verified Models', 'Jaipur Localities'],
+      options: ['Book on WhatsApp', 'Verified Models', 'Noida Localities'],
       action: 'none'
     };
   }
@@ -199,11 +199,11 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
     return {
       response: ` 100% Real Photo Verified Categories at ${BRAND.name}:\n\n` +
         `• VIP High Profile Models — Elegant, polished companions for corporate dinners, travel, & hotel stays.\n` +
-        `• Russian & Foreign Companions — Fair, tall, glamorous international models.\n` +
+        `• Russian & Foreign Companions — Fair, tall, glamorous international models in Noida.\n` +
         `• Independent Call Girls — Authentic, friendly, and discreet companions.\n` +
         `• College & Young Models — Energetic, charming, and fun-loving.\n\n` +
         `All profiles are photo-verified with direct WhatsApp availability!`,
-      options: ['Book on WhatsApp', 'Check Rates & Packages', 'Jaipur Localities'],
+      options: ['Book on WhatsApp', 'Check Rates & Packages', 'Noida Localities'],
       action: 'none'
     };
   }
@@ -211,27 +211,27 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   // ── 5. RATES & PACKAGES ────────────────────────────────────────────────
   if (contains(normalized, ['price', 'rate', 'rates', 'cost', 'fee', 'charge', 'kitna', 'kitne', 'how much', 'paisa', 'rupees', 'check rates', 'packages', 'package', 'full night', 'shot'])) {
     return {
-      response: ` Standard Directory Rates in Jaipur:\n\n` +
+      response: ` Standard Directory Rates in Noida & NCR:\n\n` +
         `• 1–2 Hours Short Visit / Dinner Date: Starting from ₹2,500 – ₹4,000\n` +
         `• Half Night Outcall: Starting from ₹5,000 – ₹8,000\n` +
         `• Full Night VIP Companion: Starting from ₹8,000 – ₹15,000+\n` +
         `• Russian / Foreign VIP Models: Custom quotes on WhatsApp\n\n` +
         ` Direct Payment upon meeting. Zero advance fee policy!`,
-      options: ['Book on WhatsApp', 'Verified Models', 'Jaipur Localities'],
+      options: ['Book on WhatsApp', 'Verified Models', 'Noida Localities'],
       action: 'none'
     };
   }
 
   // ── 6. LOCALITIES & HOTEL OUTCALLS ────────────────────────────────────
-  if (contains(normalized, ['location', 'where', 'address', 'jaipur', 'sindhi camp', 'mi road', 'vaishali', 'malviya', 'c-scheme', 'mansarovar', 'hotel', 'resort', 'outcall', 'incall', 'airport', 'railway station', 'tonk road', 'raja park'])) {
+  if (contains(normalized, ['location', 'where', 'address', 'noida', 'sector 18', 'sector 62', 'sector 50', 'sector 137', 'expressway', 'pari chowk', 'indirapuram', 'vaishali', 'hotel', 'resort', 'outcall', 'incall', 'botanical garden'])) {
     return {
-      response: ` 24/7 Outcall Services Across Jaipur:\n\n` +
+      response: ` 24/7 Outcall Services Across Noida & NCR:\n\n` +
         `We provide 30-45 minute fast outcalls to all 3-star, 4-star, & 5-star hotels and luxury private apartments in:\n\n` +
-        `• Sindhi Camp & Railway Station Zone\n` +
-        `• MI Road, C-Scheme & Civil Lines\n` +
-        `• Vaishali Nagar & Ajmer Road\n` +
-        `• Malviya Nagar, Tonk Road & Airport Zone\n` +
-        `• Raja Park, Mansarovar & Walled City\n\n` +
+        `• Sector 18 & Film City Zone (DLF Mall of India, Radisson)\n` +
+        `• Sector 62 & Electronic City IT Hub\n` +
+        `• Sector 137 & Greater Noida Expressway Corridor\n` +
+        `• Pari Chowk & Greater Noida Knowledge Park\n` +
+        `• Indirapuram & Vaishali Ghaziabad\n\n` +
         `Discreet, safe, and confidential doorstep arrival.`,
       options: ['Book on WhatsApp', 'Verified Models', 'Check Rates & Packages'],
       action: 'none'
@@ -247,15 +247,15 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
         ` 3. Payment is made directly in cash or UPI to the companion upon arrival.\n` +
         ` 4. 100% strict client confidentiality & privacy guaranteed.\n` +
         ` 5. Strictly restricted to consenting adults (18+).`,
-      options: ['Book on WhatsApp', 'Verified Models', 'Jaipur Localities'],
+      options: ['Book on WhatsApp', 'Verified Models', 'Noida Localities'],
       action: 'none'
     };
   }
 
   // ── 8. DEFAULT FALLBACK ────────────────────────────────────────────────
   return {
-    response: `Welcome to ${BRAND.name}! I am your VIP Concierge. I can help you with verified model profiles, rates, hotel outcall timings, or safe WhatsApp bookings in Jaipur. What would you like to know?`,
-    options: ['Verified Models', 'Check Rates & Packages', 'Jaipur Localities', 'Book on WhatsApp'],
+    response: `Welcome to ${BRAND.name}! I am your VIP Concierge. I can help you with verified model profiles, rates, hotel outcall timings, or safe WhatsApp bookings in Noida & NCR. What would you like to know?`,
+    options: ['Verified Models', 'Check Rates & Packages', 'Noida Localities', 'Book on WhatsApp'],
     action: 'none'
   };
 };

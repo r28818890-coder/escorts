@@ -18,7 +18,7 @@ const LiveQuestionsPage: React.FC = () => {
       <SEO 
         title={`Live Client Q&A | ${BRAND.name}`}
         description={`Read real questions from clients about verified companion booking, hotel outcalls, rates, and discretion at ${BRAND.name}.`}
-        keywords="escort questions, booking rates jaipur, hotel outcall queries, escorts hub jaipur reviews"
+        keywords="escort questions, booking rates noida, hotel outcall queries, we noida escorts reviews"
         schema={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
@@ -43,7 +43,7 @@ const LiveQuestionsPage: React.FC = () => {
             Real Questions, <span className="text-rose-600">Real Answers</span>
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Explore client inquiries about verified models, hotel outcalls, and safe WhatsApp booking in Jaipur.
+            Explore client inquiries about verified models, hotel outcalls, and safe WhatsApp booking in Noida.
           </p>
         </div>
 

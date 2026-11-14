@@ -1,6 +1,6 @@
 /**
  * blogStorage.ts
- * Permanent localStorage-based blog CMS for Jaipur Spa.
+ * Permanent localStorage-based blog CMS for Noida Spa.
  * Blogs saved here persist across page reloads.
  */
 

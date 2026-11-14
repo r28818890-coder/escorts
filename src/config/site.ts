@@ -34,15 +34,15 @@ export const BRAND = {
 
 // ── 2. Contact & Location Information ─────────────────────────
 export const CONTACT = {
-  phone: '8769604056',
-  phoneDisplay: '+91 87696 04056',
-  phoneHref: 'tel:+918769604056',
-  whatsapp1: '918769604056',
-  whatsapp2: '917339763985',
-  whatsapp1Display: '+91 87696 04056',
-  whatsapp2Display: '+91 73397 63985',
-  whatsapp1Href: 'https://wa.me/918769604056',
-  whatsapp2Href: 'https://wa.me/917339763985',
+  phone: '8218125815',
+  phoneDisplay: '+91 8218125815',
+  phoneHref: 'tel:+918218125815',
+  whatsapp1: '918218125815',
+  whatsapp2: '918218125815',
+  whatsapp1Display: '+91 8218125815',
+  whatsapp2Display: '+91 8218125815',
+  whatsapp1Href: 'https://wa.me/918218125815',
+  whatsapp2Href: 'https://wa.me/918218125815',
   email: 'contact@wenoidaescorts.com',
   hours: 'Open 24 Hours, 7 Days a Week',
   address: 'Sector 18, Noida, Gautam Buddha Nagar, Uttar Pradesh 201301',
@@ -177,7 +177,7 @@ export const NAVIGATION = {
   main: [
     { name: 'Home', path: '/' },
     { name: 'Categories', path: '/call-girls' },
-    { name: 'Noida Areas', path: '/jaipur-areas' },
+    { name: 'Noida Areas', path: '/noida-areas' },
     { name: 'Safety Guide', path: '/safety-guide' },
     { name: 'Contact', path: '/contact' },
   ],

@@ -295,10 +295,10 @@ export const Home: React.FC = () => {
               Hyperlocal Footprint
             </span>
             <h2 className="text-xl sm:text-3xl font-black text-slate-900">
-              Escort Services in 18 Prime Noida & NCR Sectors
+              Call Girls & Escort Services in 18 Prime Noida & NCR Sectors
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1.5">
-              Select your neighborhood or hotel hub to connect with independent models and 24/7 outcall companions.
+              Select your neighborhood or hotel hub to connect with verified call girls, independent models, and 24/7 outcall companions.
             </p>
           </div>
 

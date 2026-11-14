@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 // Data Import
 import { PAGES_CONTENT } from '@/pages/serviceContent'; 
-import { JAIPUR_LOCATIONS } from '@/config/site';
+import { NOIDA_LOCATIONS } from '@/config/site';
 
 // Component Imports
 import ServiceGuidePage from '@/pages/ServiceGuidePage';
@@ -17,7 +17,7 @@ const DynamicPage: React.FC = () => {
   const navigate = useNavigate();
   
   // 1. Check if it's a location page
-  const isLocation = JAIPUR_LOCATIONS.some(loc => loc.slug === slug);
+  const isLocation = NOIDA_LOCATIONS.some(loc => loc.slug === slug);
   if (isLocation) {
     // We can render CityLanding, but we need to pass the slug as cityId, or CityLanding should use slug.
     // Let's just render CityLanding here, but we need to modify CityLanding to read `slug` instead of `cityId`.

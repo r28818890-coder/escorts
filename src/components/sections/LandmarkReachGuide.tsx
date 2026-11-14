@@ -12,10 +12,10 @@ export const LandmarkReachGuide: React.FC = () => {
             <Navigation className="w-3 h-3 md:w-4 md:h-4" /> 24/7 Outcall Coverage & Landmark Guide
           </div>
           <h2 className="text-lg md:text-4xl font-black text-white tracking-tight">
-            Fast Doorstep Outcall Reach in Jaipur
+            Fast Doorstep Outcall Reach in Noida
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto mt-1 text-xs md:text-sm">
-            Independent models provide rapid 20-30 minute hotel arrivals across major transport hubs and luxury zones in Jaipur.
+            Independent models provide rapid 20-30 minute hotel arrivals across major transport hubs and luxury zones in Noida.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ export const LandmarkReachGuide: React.FC = () => {
             </div>
           </div>
 
-          {/* Card 3: Jaipur Railway Station */}
+          {/* Card 3: Noida Railway Station */}
           <div className="p-3 md:p-6 rounded-xl md:rounded-2xl bg-slate-900 border border-slate-800 shadow-lg flex flex-col justify-between">
             <div>
               <div className="w-7 h-7 md:w-12 md:h-12 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center mb-2">
@@ -62,7 +62,7 @@ export const LandmarkReachGuide: React.FC = () => {
               <div className="inline-block px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[9px] md:text-xs font-bold mb-1">
                 15 - 20 Mins Arrival
               </div>
-              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Jaipur Junction</h3>
+              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Noida Junction</h3>
               <p className="text-slate-400 text-[10px] md:text-xs leading-tight">
                 Doorstep hotel visits across Hasanpura and Station Circle.
               </p>
@@ -93,7 +93,7 @@ export const LandmarkReachGuide: React.FC = () => {
               <MapPin className="w-3.5 h-3.5" /> 24/7 Verified Service Desk
             </div>
             <h4 className="text-sm md:text-xl font-bold text-white">
-              {BRAND.name} — Jaipur City Desk
+              {BRAND.name} — Noida City Desk
             </h4>
             <p className="text-slate-400 text-[11px] md:text-sm max-w-xl">
               {CONTACT.address}
@@ -103,7 +103,7 @@ export const LandmarkReachGuide: React.FC = () => {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
             <a
-              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello Escorts Hub Jaipur, please confirm outcall availability at my hotel.')}
+              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello We Noida Escorts, please confirm outcall availability at my hotel.')}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 hover:brightness-110 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-md cursor-pointer"

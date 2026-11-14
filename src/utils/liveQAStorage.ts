@@ -47,8 +47,8 @@ export const seedInitialQAs = () => {
   if (getLiveQAs().length === 0) {
     const initial: Omit<LiveQA, 'id' | 'date'>[] = [
       {
-        question: "Is there any couple massage available near Sindhi camp right now?",
-        answer: "Yes! We are open 24/7. Our premium couple massage suites are fully sanitized and available near Sindhi Camp, Jaipur. You can book instantly via WhatsApp."
+        question: "Is there any couple massage available near Sector 18 Noida right now?",
+        answer: "Yes! We are open 24/7. Our premium couple massage suites are fully sanitized and available near Sector 18, Noida. You can book instantly via WhatsApp."
       },
       {
         question: "What is the price for a 60 min Deep Tissue massage?",

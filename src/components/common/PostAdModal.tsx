@@ -13,7 +13,7 @@ import {
   Layers,
   Camera
 } from 'lucide-react';
-import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, JAIPUR_LOCALITIES, ClassifiedAd } from '@/config/portalData';
+import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, ClassifiedAd } from '@/config/portalData';
 import { BRAND, CONTACT } from '@/config/site';
 
 interface PostAdModalProps {
@@ -67,10 +67,10 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const matchedLocality = JAIPUR_LOCALITIES.find((l) => l.slug === formData.localitySlug);
+    const matchedLocality = NOIDA_LOCALITIES.find((l) => l.slug === formData.localitySlug);
     const matchedCat = PORTAL_CATEGORIES.find((c) => c.slug === formData.categoryId);
 
-    const safeTitle = formData.title.trim() || `Verified ${matchedCat?.name || 'Companion'} in ${matchedLocality?.name || 'Jaipur'}`;
+    const safeTitle = formData.title.trim() || `Verified ${matchedCat?.name || 'Companion'} in ${matchedLocality?.name || 'Noida'}`;
     const safeSlug = `${safeTitle.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}-${Date.now().toString().slice(-4)}`;
 
     const newAd: ClassifiedAd = {
@@ -99,7 +99,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
 
     // Save to LocalStorage
     try {
-      const stored = JSON.parse(localStorage.getItem('noida_user_ads') || localStorage.getItem('jaipur_user_ads') || '[]');
+      const stored = JSON.parse(localStorage.getItem('noida_user_ads') || localStorage.getItem('noida_user_ads') || '[]');
       stored.unshift(newAd);
       localStorage.setItem('noida_user_ads', JSON.stringify(stored));
     } catch (err) {
@@ -107,7 +107,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
     }
 
     // Broadcast globally to all listeners on website
-    window.dispatchEvent(new CustomEvent('jaipur-ad-created', { detail: newAd }));
+    window.dispatchEvent(new CustomEvent('noida-ad-created', { detail: newAd }));
 
     if (onAdSubmitted) {
       onAdSubmitted(newAd);
@@ -153,7 +153,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
             </span>
             <div>
               <h2 className="text-base sm:text-lg font-display font-black text-white leading-tight">
-                {isSuccess ? 'Ad Successfully Published' : 'Post Free Ad in Jaipur'}
+                {isSuccess ? 'Ad Successfully Published' : 'Post Free Ad in Noida & NCR'}
               </h2>
               <span className="text-[10px] text-rose-400 font-bold uppercase tracking-wider">
                 {isSuccess ? 'Live on Website Now' : '100% Free • Instant Real-Time Placement'}
@@ -186,7 +186,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
                   Your Ad is Now LIVE!
                 </h3>
                 <p className="text-xs sm:text-sm text-[#a3a3a3] max-w-md mx-auto">
-                  Your listing has been instantly broadcasted and pinned to top priority across all corresponding Jaipur categories and locality directories.
+                  Your listing has been instantly broadcasted and pinned to top priority across all corresponding Noida categories and locality directories.
                 </p>
               </div>
 
@@ -262,7 +262,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
 
                 <div>
                   <label className="block text-xs font-bold text-rose-400 uppercase tracking-wider mb-1.5 flex items-center gap-1">
-                    <MapPin size={13} /> Jaipur Locality *
+                    <MapPin size={13} /> Noida & NCR Locality *
                   </label>
                   <select
                     value={formData.localitySlug}
@@ -270,7 +270,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
                     className="w-full bg-[#171717] border border-[#2a2a2a] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:border-rose-500 focus:outline-none"
                     required
                   >
-                    {JAIPUR_LOCALITIES.map((loc) => (
+                    {NOIDA_LOCALITIES.map((loc) => (
                       <option key={loc.id} value={loc.slug}>
                         {loc.name} ({loc.landmark})
                       </option>
@@ -388,7 +388,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
                 </label>
                 <textarea
                   rows={3}
-                  placeholder="Describe your hospitality, meeting rules, timing, and locations in Jaipur..."
+                  placeholder="Describe your hospitality, meeting rules, timing, and locations in Noida..."
                   value={formData.description}
                   onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                   className="w-full bg-[#171717] border border-[#2a2a2a] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:border-rose-500 focus:outline-none"

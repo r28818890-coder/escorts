@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
             <div className="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-[#d6a33e]/70 overflow-hidden shadow-[0_0_30px_rgba(214,163,62,0.25)]">
               <img
                 src="/ecj-mark.svg"
-                alt="ECJ — Escorts Hub Jaipur Logo"
+                alt="ECJ — We Noida Escorts Logo"
                 className="w-full h-full object-cover"
                 loading="eager"
               />
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
             className="inline-flex items-center gap-2 mb-8 px-5 py-2 rounded-full border border-[#e11d48]/30 bg-white/5 backdrop-blur-sm"
           >
             <Sparkles className="w-4 h-4 text-[#e11d48]" />
-            <span className="text-sm font-bold text-[#e11d48] tracking-widest uppercase">Sindhi Camp, Jaipur · Open 24 Hours</span>
+            <span className="text-sm font-bold text-[#e11d48] tracking-widest uppercase">Sindhi Camp, Noida · Open 24 Hours</span>
           </motion.div>
 
           {/* Main Headline */}
@@ -70,7 +70,7 @@ const HeroSection: React.FC = () => {
           >
             <span className="block text-[#faf9f6]">Luxury Thai Spa</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#be123c] via-[#e11d48] to-[#be123c]">
-              in Jaipur
+              in Noida
             </span>
           </motion.h1>
 
@@ -81,7 +81,7 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-lg sm:text-xl md:text-2xl text-[#a3a3a3] mb-10 max-w-3xl mx-auto leading-relaxed"
           >
-            Certified therapists. Private suites. 9 signature therapies. Open 24 hours at Sindhi Camp — just minutes from Jaipur Railway Station.
+            Certified therapists. Private suites. 9 signature therapies. Open 24 hours at Sindhi Camp — just minutes from Noida Railway Station.
           </motion.p>
 
           {/* CTA Buttons */}

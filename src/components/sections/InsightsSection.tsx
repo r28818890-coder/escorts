@@ -28,7 +28,7 @@ const InsightsSection: React.FC = () => {
               Expert <span className="text-[#e11d48]">Insights.</span>
             </h2>
             <p className="text-lg text-[#a3a3a3] mb-10 max-w-md leading-relaxed">
-              Discover the healing benefits of massage therapy, spa wellness tips, and relaxation guides for Jaipur residents.
+              Discover the healing benefits of massage therapy, spa wellness tips, and relaxation guides for Noida residents.
             </p>
             
             <Link to="/blog" className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#be123c] to-[#e11d48] rounded-full text-black font-bold text-sm tracking-widest uppercase hover:scale-105 transition-transform shadow-lg shadow-[#be123c]/20">

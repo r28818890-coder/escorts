@@ -10,7 +10,7 @@ const steps = [
     shortTitle: 'Arrive & Unwind',
     icon: Sparkles,
     heading: 'Personalized Consultation',
-    content: 'From the very moment you enter Jaipur Spa, the ambience — soft lighting, calming scents and peaceful music — begins your healing journey. Our receptionist warmly welcomes you and guides you to a pre-session consultation. Your dedicated therapist takes time to understand your specific wellness goals, areas of tension, pain points and personal preferences before the session begins.',
+    content: 'From the very moment you enter Noida Spa, the ambience — soft lighting, calming scents and peaceful music — begins your healing journey. Our receptionist warmly welcomes you and guides you to a pre-session consultation. Your dedicated therapist takes time to understand your specific wellness goals, areas of tension, pain points and personal preferences before the session begins.',
     features: [
       'Complimentary welcome herbal tea',
       'Private changing suite',
@@ -24,7 +24,7 @@ const steps = [
     shortTitle: 'Your Private Suite',
     icon: Star,
     heading: 'Private Luxury Suite',
-    content: 'Every guest at Jaipur Spa receives a fully private, sanitized therapy suite. Our suites are equipped with imported massage beds, temperature control, soft ambient lighting and your choice of background music. Fresh premium-grade therapeutic oils and sanitized linens are prepared for your exclusive use. Privacy, comfort and hygiene are our core commitments.',
+    content: 'Every guest at Noida Spa receives a fully private, sanitized therapy suite. Our suites are equipped with imported massage beds, temperature control, soft ambient lighting and your choice of background music. Fresh premium-grade therapeutic oils and sanitized linens are prepared for your exclusive use. Privacy, comfort and hygiene are our core commitments.',
     features: [
       '100% private suite',
       'Freshly sanitized between each guest',
@@ -52,7 +52,7 @@ const steps = [
     shortTitle: 'Refresh & Restore',
     icon: Leaf,
     heading: 'The Afterglow Experience',
-    content: "Your Jaipur Spa experience doesn't end when the massage does. After your session, relax in our post-treatment lounge with complimentary herbal tea and refreshments. Allow your body to fully integrate the healing before stepping back into the world. Our team is available to recommend at-home care routines or schedule your next visit for continued wellness.",
+    content: "Your Noida Spa experience doesn't end when the massage does. After your session, relax in our post-treatment lounge with complimentary herbal tea and refreshments. Allow your body to fully integrate the healing before stepping back into the world. Our team is available to recommend at-home care routines or schedule your next visit for continued wellness.",
     features: [
       'Complimentary herbal tea after session',
       'Post-treatment relaxation lounge',
@@ -69,7 +69,7 @@ const GrowthProcess: React.FC = () => {
     <section className="py-24 bg-[#050505] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <span className="section-label mb-4">THE Jaipur Spa JOURNEY</span>
+          <span className="section-label mb-4">THE Noida Spa JOURNEY</span>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
             Your Path to <span className="text-[#e11d48]">Pure Bliss</span>
           </h2>

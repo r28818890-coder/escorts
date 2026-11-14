@@ -136,11 +136,11 @@ const ServiceGuidePage: React.FC<GuidePageProps> = ({ data, onBack }) => {
       
       {/* Bottom CTA */}
       <div className="bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 text-white py-14 px-6 text-center">
-        <h3 className="text-2xl md:text-3xl font-black mb-3">Book Verified Companions in Jaipur</h3>
+        <h3 className="text-2xl md:text-3xl font-black mb-3">Book Verified Companions in Noida</h3>
         <p className="max-w-xl mx-auto mb-6 text-xs sm:text-sm text-rose-100 font-medium">100% photo verified models and discreet 24/7 doorstep hotel outcall visits.</p>
         <div className="flex justify-center">
           <a
-            href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Jaipur, I want to book a companion for ${data.title}.`)}
+            href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, I want to book a companion for ${data.title}.`)}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3.5 bg-white text-slate-950 font-bold uppercase tracking-wider text-xs rounded-full hover:bg-slate-100 transition-colors shadow-sm flex items-center gap-2"

@@ -6,7 +6,7 @@
 
 export const GA_MEASUREMENT_ID = (import.meta.env?.VITE_GA_MEASUREMENT_ID as string) || 'G-95BL336T63';
 
-const LOCAL_STORAGE_BACKUP_KEY = 'jaipur_spa_internal_events_backup';
+const LOCAL_STORAGE_BACKUP_KEY = 'noida_spa_internal_events_backup';
 
 /**
  * Send background event payload to Hostinger internal endpoint /api/track.php

@@ -73,8 +73,8 @@ interface SecretAdminDashboardProps {
   onClose: () => void;
 }
 
-const ADMIN_AUTH_KEY = 'jaipur_spa_admin_auth_token';
-const NOTIFICATIONS_KEY = 'jaipur_spa_admin_notifications_active';
+const ADMIN_AUTH_KEY = 'noida_spa_admin_auth_token';
+const NOTIFICATIONS_KEY = 'noida_spa_admin_notifications_active';
 const DEFAULT_PASSWORD = 'Sadd@1111';
 
 /** Synthesize a subtle, pleasant audio notification chime using Web Audio API (Zero external assets needed) */

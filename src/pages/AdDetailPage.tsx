@@ -24,7 +24,7 @@ export const AdDetailPage: React.FC = () => {
 
   let userAds: ClassifiedAd[] = [];
   try {
-    const raw = localStorage.getItem('jaipur_user_ads');
+    const raw = localStorage.getItem('noida_user_ads');
     if (raw) {
       const parsed = JSON.parse(raw);
       if (Array.isArray(parsed)) userAds = parsed;
@@ -158,7 +158,7 @@ export const AdDetailPage: React.FC = () => {
               <div>
                 <div className="flex items-center gap-2 mb-2">
                   <span className="bg-rose-50 text-rose-900 border border-rose-300 text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md">
-                    {ad.locality}, Jaipur
+                    {ad.locality}, Noida
                   </span>
                   <span className="text-xs text-slate-500 flex items-center gap-1">
                     <Eye size={13} /> {ad.views} views • {ad.postedAt}
@@ -256,9 +256,9 @@ export const AdDetailPage: React.FC = () => {
         <div className="bg-rose-50 border border-rose-300 rounded-3xl p-6 mb-8 flex items-start gap-4">
           <AlertTriangle size={24} className="text-rose-700 shrink-0 mt-1" />
           <div className="space-y-1 text-xs text-rose-900">
-            <h4 className="font-bold text-sm text-rose-950">Jaipur Safety Notice</h4>
+            <h4 className="font-bold text-sm text-rose-950">Noida Safety Notice</h4>
             <p>
-              Never pay advance deposits through unfamiliar links before meeting in person. Always choose reputed hotels or private suites in central Jaipur localities.
+              Never pay advance deposits through unfamiliar links before meeting in person. Always choose reputed hotels or private suites in central Noida localities.
             </p>
           </div>
         </div>

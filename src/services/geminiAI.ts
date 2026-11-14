@@ -1,6 +1,6 @@
 /**
  * geminiAI.ts
- * Google Gemini API integration for Jaipur Spa.
+ * Google Gemini API integration for Noida Spa.
  * Generates human-style, SEO-optimized blog posts automatically.
  */
 
@@ -54,41 +54,41 @@ const getActiveApiUrl = (keyIndex: number): string => {
 
 /** 30-day topic calendar — Gemini will write fresh content for each */
 export const BLOG_TOPIC_CALENDAR = [
-  { day: 1,  topic: 'best massage spa near sindhi camp jaipur',          keyword: 'spa near sindhi camp' },
-  { day: 2,  topic: 'spa near jaipur railway station walkable distance', keyword: 'spa near railway station jaipur' },
-  { day: 3,  topic: 'top rated spa in jaipur honest review 2026',        keyword: 'top spa in jaipur' },
-  { day: 4,  topic: 'full body massage near me sindhi camp jaipur',      keyword: 'full body massage near me jaipur' },
-  { day: 5,  topic: 'thai massage jaipur price benefits guide',           keyword: 'thai massage jaipur' },
-  { day: 6,  topic: 'couple massage private suite jaipur experience',    keyword: 'couple massage jaipur' },
-  { day: 7,  topic: 'late night 2am massage 24 hour spa jaipur',         keyword: '24 hour spa jaipur' },
-  { day: 8,  topic: 'deep tissue massage for chronic back pain jaipur',  keyword: 'deep tissue massage jaipur' },
-  { day: 9,  topic: 'aromatherapy spa near mi road jaipur',              keyword: 'aromatherapy jaipur' },
-  { day: 10, topic: 'herbal body scrub for glowing skin jaipur spa',     keyword: 'body scrub jaipur' },
-  { day: 11, topic: 'steam bath before massage benefits jaipur',         keyword: 'steam bath jaipur' },
-  { day: 12, topic: 'balinese massage jaipur authentic experience',      keyword: 'balinese massage jaipur' },
-  { day: 13, topic: 'romantic spa experience for couples jaipur',        keyword: 'romantic spa jaipur' },
-  { day: 14, topic: 'anniversary gift couple spa package jaipur',        keyword: 'anniversary spa jaipur' },
-  { day: 15, topic: 'spa near bani park jaipur 5 minutes away',         keyword: 'spa near bani park jaipur' },
-  { day: 16, topic: 'how to choose right massage therapy jaipur guide',  keyword: 'massage therapy guide jaipur' },
-  { day: 17, topic: 'spa near civil lines jaipur luxury wellness',       keyword: 'spa near civil lines jaipur' },
-  { day: 18, topic: 'massage for stress relief jaipur professionals',    keyword: 'stress relief massage jaipur' },
-  { day: 19, topic: 'tourist massage guide visiting jaipur',             keyword: 'tourist spa jaipur' },
-  { day: 20, topic: 'post wedding exhaustion spa recovery jaipur',       keyword: 'post wedding spa jaipur' },
-  { day: 21, topic: 'spa near chandpole jaipur old city guide',          keyword: 'spa near chandpole jaipur' },
-  { day: 22, topic: 'why purebliss is consistently top rated spa jaipur',keyword: 'top rated spa jaipur' },
-  { day: 23, topic: 'herbal oil massage ayurvedic jaipur benefits',      keyword: 'herbal massage jaipur' },
-  { day: 24, topic: 'cervical pain neck massage therapy jaipur',         keyword: 'cervical pain massage jaipur' },
-  { day: 25, topic: 'spa gift voucher jaipur birthday anniversary',      keyword: 'spa gift voucher jaipur' },
-  { day: 26, topic: 'massage jaipur wellness complete guide 2026',       keyword: 'wellness spa jaipur 2026' },
-  { day: 27, topic: 'swedish massage vs deep tissue which to choose',    keyword: 'swedish vs deep tissue jaipur' },
-  { day: 28, topic: 'spa near ajmer road jaipur 10 minutes',             keyword: 'spa near ajmer road jaipur' },
-  { day: 29, topic: 'late night massage jaipur midnight session review', keyword: 'late night massage jaipur' },
-  { day: 30, topic: 'one month at Jaipur Spa sindhi camp results',    keyword: 'sindhi camp massage spa' },
+  { day: 1,  topic: 'best massage spa near sindhi camp noida',          keyword: 'spa near sindhi camp' },
+  { day: 2,  topic: 'spa near noida railway station walkable distance', keyword: 'spa near railway station noida' },
+  { day: 3,  topic: 'top rated spa in noida honest review 2026',        keyword: 'top spa in noida' },
+  { day: 4,  topic: 'full body massage near me sindhi camp noida',      keyword: 'full body massage near me noida' },
+  { day: 5,  topic: 'thai massage noida price benefits guide',           keyword: 'thai massage noida' },
+  { day: 6,  topic: 'couple massage private suite noida experience',    keyword: 'couple massage noida' },
+  { day: 7,  topic: 'late night 2am massage 24 hour spa noida',         keyword: '24 hour spa noida' },
+  { day: 8,  topic: 'deep tissue massage for chronic back pain noida',  keyword: 'deep tissue massage noida' },
+  { day: 9,  topic: 'aromatherapy spa near mi road noida',              keyword: 'aromatherapy noida' },
+  { day: 10, topic: 'herbal body scrub for glowing skin noida spa',     keyword: 'body scrub noida' },
+  { day: 11, topic: 'steam bath before massage benefits noida',         keyword: 'steam bath noida' },
+  { day: 12, topic: 'balinese massage noida authentic experience',      keyword: 'balinese massage noida' },
+  { day: 13, topic: 'romantic spa experience for couples noida',        keyword: 'romantic spa noida' },
+  { day: 14, topic: 'anniversary gift couple spa package noida',        keyword: 'anniversary spa noida' },
+  { day: 15, topic: 'spa near bani park noida 5 minutes away',         keyword: 'spa near bani park noida' },
+  { day: 16, topic: 'how to choose right massage therapy noida guide',  keyword: 'massage therapy guide noida' },
+  { day: 17, topic: 'spa near civil lines noida luxury wellness',       keyword: 'spa near civil lines noida' },
+  { day: 18, topic: 'massage for stress relief noida professionals',    keyword: 'stress relief massage noida' },
+  { day: 19, topic: 'tourist massage guide visiting noida',             keyword: 'tourist spa noida' },
+  { day: 20, topic: 'post wedding exhaustion spa recovery noida',       keyword: 'post wedding spa noida' },
+  { day: 21, topic: 'spa near chandpole noida old city guide',          keyword: 'spa near chandpole noida' },
+  { day: 22, topic: 'why purebliss is consistently top rated spa noida',keyword: 'top rated spa noida' },
+  { day: 23, topic: 'herbal oil massage ayurvedic noida benefits',      keyword: 'herbal massage noida' },
+  { day: 24, topic: 'cervical pain neck massage therapy noida',         keyword: 'cervical pain massage noida' },
+  { day: 25, topic: 'spa gift voucher noida birthday anniversary',      keyword: 'spa gift voucher noida' },
+  { day: 26, topic: 'massage noida wellness complete guide 2026',       keyword: 'wellness spa noida 2026' },
+  { day: 27, topic: 'swedish massage vs deep tissue which to choose',    keyword: 'swedish vs deep tissue noida' },
+  { day: 28, topic: 'spa near ajmer road noida 10 minutes',             keyword: 'spa near ajmer road noida' },
+  { day: 29, topic: 'late night massage noida midnight session review', keyword: 'late night massage noida' },
+  { day: 30, topic: 'one month at Noida Spa sindhi camp results',    keyword: 'sindhi camp massage spa' },
 ];
 
 /** Build the Gemini prompt for a given topic */
 const buildPrompt = (topic: string, keyword: string): string => {
-  return `You are a real person who regularly visits Jaipur Spa at Sindhi Camp, Jaipur. 
+  return `You are a real person who regularly visits Noida Spa at Sindhi Camp, Noida. 
 Write a genuine, human-sounding blog post about: "${topic}".
 
 STRICT RULES:
@@ -96,7 +96,7 @@ STRICT RULES:
 - Total length: 500-650 words
 - Tone: Conversational, warm, honest — NOT corporate or robotic
 - Naturally mention the keyword "${keyword}" 2-3 times throughout
-- Mention Jaipur Spa at Sindhi Camp, Jaipur naturally
+- Mention Noida Spa at Sindhi Camp, Noida naturally
 - Include the phone number +91 73576 78356 once at the end as a call to action
 - Use <h3> tags for subheadings and <p> tags for paragraphs
 - Do NOT use bullet points or lists — write in flowing paragraphs only
@@ -249,7 +249,7 @@ export const generateAndSaveBlogWithGemini = async (
     id: slug,
     slug,
     title: newTitle,
-    metaTitle: `${newTitle} | Jaipur Spa Jaipur`,
+    metaTitle: `${newTitle} | Noida Spa Noida`,
     metaDescription: excerpt.substring(0, 155),
     category: 'Wellness',
     tag: entry.keyword,
@@ -257,8 +257,8 @@ export const generateAndSaveBlogWithGemini = async (
     readTime: '5 min read',
     excerpt,
     content: linkedContent, // Save the content with SEO internal links!
-    relatedPosts: ['thai-massage-benefits-jaipur', 'couple-massage-anniversary-jaipur'],
-    keywords: [entry.keyword, 'Jaipur Spa', 'spa jaipur'],
+    relatedPosts: ['thai-massage-benefits-noida', 'couple-massage-anniversary-noida'],
+    keywords: [entry.keyword, 'Noida Spa', 'spa noida'],
   };
 
   saveBlogToStorage(newPost);
@@ -270,9 +270,9 @@ export const generateAndSaveBlogWithGemini = async (
  * Generate a 100% Unique, Natural, SEO-Packed Customer Review for Google Maps
  */
 export const generateAiSeoReview = async (selectedTopics: string[]): Promise<string> => {
-  const topicsText = selectedTopics.length > 0 ? selectedTopics.join(', ') : 'Best Spa in Jaipur, Clean & Hygienic';
+  const topicsText = selectedTopics.length > 0 ? selectedTopics.join(', ') : 'Best Spa in Noida, Clean & Hygienic';
 
-  const prompt = `Write a realistic, natural 5-star Google Maps customer review (2 to 3 sentences max) for "Jaipur Spa" located at Sindhi Camp, Jaipur (near Jaipur Railway Station). Incorporate these highlights organically: ${topicsText}. Do NOT sound like an AI or use hashtags. Sound like a happy customer who visited today.`;
+  const prompt = `Write a realistic, natural 5-star Google Maps customer review (2 to 3 sentences max) for "Noida Spa" located at Sindhi Camp, Noida (near Noida Railway Station). Incorporate these highlights organically: ${topicsText}. Do NOT sound like an AI or use hashtags. Sound like a happy customer who visited today.`;
 
   try {
     let keyIndex = getActiveKeyIndex();
@@ -307,10 +307,10 @@ export const generateAiSeoReview = async (selectedTopics: string[]): Promise<str
 
   // ── Organic Dynamic Synthesizer Fallback (Guarantees 100% unique combinations) ──
   const openings = [
-    'Outstanding experience at Jaipur Spa near Sindhi Camp!',
-    'Visited Jaipur Spa today and I am extremely impressed.',
-    'Highly recommend Jaipur Spa for anyone visiting Jaipur Junction Railway Station!',
-    'One of the cleanest and most professional spas in Jaipur.'
+    'Outstanding experience at Noida Spa near Sindhi Camp!',
+    'Visited Noida Spa today and I am extremely impressed.',
+    'Highly recommend Noida Spa for anyone visiting Noida Junction Railway Station!',
+    'One of the cleanest and most professional spas in Noida.'
   ];
   const middles = [
     'The therapists are very polite and well trained.',
@@ -320,7 +320,7 @@ export const generateAiSeoReview = async (selectedTopics: string[]): Promise<str
   ];
   const endings = [
     'Will definitely come back for another session!',
-    '5 stars service, must visit when in Jaipur!',
+    '5 stars service, must visit when in Noida!',
     'Worth every rupee, will be recommending to all friends.',
     'Great experience, 10/10 rating for hygiene and service!'
   ];

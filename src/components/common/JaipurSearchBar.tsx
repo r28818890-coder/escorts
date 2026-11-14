@@ -3,13 +3,13 @@ import { Search, MapPin, Layers, X, Sparkles, ShieldCheck, Zap, Hotel, Home as H
 import { useNavigate } from 'react-router-dom';
 import { PORTAL_CATEGORIES, NOIDA_LOCALITIES } from '@/config/portalData';
 
-interface JaipurSearchBarProps {
+interface NoidaSearchBarProps {
   initialCategory?: string;
   initialLocality?: string;
   onFilterChange?: (category: string, locality: string, query: string, activeChips?: string[]) => void;
 }
 
-export const JaipurSearchBar: React.FC<JaipurSearchBarProps> = ({
+export const NoidaSearchBar: React.FC<NoidaSearchBarProps> = ({
   initialCategory = 'all',
   initialLocality = 'all',
   onFilterChange,
@@ -208,4 +208,4 @@ export const JaipurSearchBar: React.FC<JaipurSearchBarProps> = ({
   );
 };
 
-export default JaipurSearchBar;
+export default NoidaSearchBar;

@@ -5,14 +5,14 @@ export const AgeVerificationModal: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const verified = localStorage.getItem('jaipur_portal_age_verified');
+    const verified = localStorage.getItem('noida_portal_age_verified');
     if (!verified) {
       setIsOpen(true);
     }
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('jaipur_portal_age_verified', 'true');
+    localStorage.setItem('noida_portal_age_verified', 'true');
     setIsOpen(false);
   };
 
@@ -67,7 +67,7 @@ export const AgeVerificationModal: React.FC = () => {
         </div>
 
         <p className="mt-4 text-[10px] text-[#737373]">
-          By proceeding, you accept our Terms of Service & Privacy Policy for Jaipur Classifieds.
+          By proceeding, you accept our Terms of Service & Privacy Policy for Noida Classifieds.
         </p>
       </div>
     </div>

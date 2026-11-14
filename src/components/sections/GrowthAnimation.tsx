@@ -38,7 +38,7 @@ const GrowthAnimation: React.FC = () => {
 
   const handleApplyClick = (context: string) => {
     if (typeof window !== 'undefined') {
-      const baseMessage = `Hello Jaipur Spa, I would like to inquire about ${context}.`;
+      const baseMessage = `Hello Noida Spa, I would like to inquire about ${context}.`;
       openWhatsAppWithMessage(baseMessage);
       window.dispatchEvent(new CustomEvent('open-lead-modal'));
     }
@@ -164,10 +164,10 @@ const GrowthAnimation: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="text-center mb-10 md:mb-20">
           <h2 className={`text-3xl sm:text-4xl md:text-6xl text-[#e5e5e5] font-light mb-3 md:mb-4 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            Your Spa Journey at <span className="font-serif italic text-[#e11d48]">Jaipur Spa</span>
+            Your Spa Journey at <span className="font-serif italic text-[#e11d48]">Noida Spa</span>
           </h2>
           <p className={`text-[#a3a3a3] text-sm md:text-lg transition-all duration-700 delay-200 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            Book, unwind and renew with our luxury Jaipur wellness experiences.
+            Book, unwind and renew with our luxury Noida wellness experiences.
           </p>
         </div>
 

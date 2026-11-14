@@ -1,5 +1,5 @@
 import { BLOG_POSTS } from '@/pages/Insights';
-import { JAIPUR_LOCATIONS, SERVICES_LIST, BRAND } from '@/config/site';
+import { NOIDA_LOCATIONS, SERVICES_LIST, BRAND } from '@/config/site';
 
 export interface CompetitorAnalysisReport {
   timestamp: string;
@@ -12,7 +12,7 @@ export interface CompetitorAnalysisReport {
 }
 
 const JAIPUR_COMPETITORS = [
-  { name: 'Generic Hotel Spas Jaipur', weakPoints: 'High prices (₹3500+), hidden GST charges, slow response, limited 24/7 availability' },
+  { name: 'Generic Hotel Spas Noida', weakPoints: 'High prices (₹3500+), hidden GST charges, slow response, limited 24/7 availability' },
   { name: 'Chain Franchise Spas (O2 / Tattva)', weakPoints: 'Fixed rigid packages, no customized posture diagnostics, no direct manager WhatsApp booking' },
   { name: 'Local Uncertified Centers', weakPoints: 'Low hygiene trust, unclear pricing, poor Google E-E-A-T score, no structured schema' },
 ];
@@ -29,7 +29,7 @@ export const runCompetitorSeoAnalysis = (): CompetitorAnalysisReport => {
 
   // Check if we have 24/7 late-night keyword dominance
   gaps.push('Competitors lack 24/7 late-night availability & instant WhatsApp booking integration.');
-  strategies.push('Target "24 Hour Midnight Spa near Sindhi Camp Jaipur" high-intent keywords.');
+  strategies.push('Target "24 Hour Midnight Spa near Sindhi Camp Noida" high-intent keywords.');
 
   // Check local landmark proximity
   gaps.push('Competitors do not optimize for exact distances from Polo Victory & Railway Station.');
@@ -40,24 +40,24 @@ export const runCompetitorSeoAnalysis = (): CompetitorAnalysisReport => {
   strategies.push('Auto-publish targeted wellness guides for desk-job cervical strain & lower back sciatica.');
 
   // 2. Execute Auto-Outranking Content Injection
-  const outrankKeyword = '24 Hour Luxury Thai Spa near Sindhi Camp & MI Road Jaipur';
-  const outrankSlug = `guide-best-24-hour-luxury-spa-sindhi-camp-jaipur-${Date.now()}`;
+  const outrankKeyword = '24 Hour Luxury Thai Spa near Sindhi Camp & MI Road Noida';
+  const outrankSlug = `guide-best-24-hour-luxury-spa-sindhi-camp-noida-${Date.now()}`;
 
   const outrankingArticle = {
     id: `outrank-seo-${Date.now()}`,
     slug: outrankSlug,
-    title: `Why Jaipur Spa is Rated #1 for Luxury Thai Massage in Jaipur`,
-    metaTitle: `Best Spa in Jaipur #1 Rated | Jaipur Spa`,
-    metaDescription: `Compare Jaipur Spa with top Jaipur spas. Transparent rates (from ₹999), 24/7 private suites, certified Thai therapists, & instant WhatsApp booking.`,
+    title: `Why Noida Spa is Rated #1 for Luxury Thai Massage in Noida`,
+    metaTitle: `Best Spa in Noida #1 Rated | Noida Spa`,
+    metaDescription: `Compare Noida Spa with top Noida spas. Transparent rates (from ₹999), 24/7 private suites, certified Thai therapists, & instant WhatsApp booking.`,
     category: 'Competitor Analysis Guide',
-    tag: 'Jaipur #1 Spa',
+    tag: 'Noida #1 Spa',
     date: dateStr,
     readTime: '6 min read',
-    excerpt: `A comprehensive comparison guide explaining why Jaipur Spa leads Jaipur in hygiene standards, 24/7 availability, transparent pricing, and certified Thai therapy.`,
+    excerpt: `A comprehensive comparison guide explaining why Noida Spa leads Noida in hygiene standards, 24/7 availability, transparent pricing, and certified Thai therapy.`,
     content: `
-      <p>When searching for the best luxury spa in Jaipur near Sindhi Camp or MI Road, discerning guests look for three critical factors: authentic therapist expertise, 100% sanitized private suites, and transparent pricing without hidden charges.</p>
+      <p>When searching for the best luxury spa in Noida near Sindhi Camp or MI Road, discerning guests look for three critical factors: authentic therapist expertise, 100% sanitized private suites, and transparent pricing without hidden charges.</p>
 
-      <h3>How Jaipur Spa Outperforms Other Jaipur Spas</h3>
+      <h3>How Noida Spa Outperforms Other Noida Spas</h3>
       <ul>
         <li><strong>Transparent All-Inclusive Rates:</strong> Starting from ₹999 with zero hidden taxes or GST surprises.</li>
         <li><strong>True 24/7 Availability:</strong> Heated luxury suites open early morning and late night.</li>
@@ -65,10 +65,10 @@ export const runCompetitorSeoAnalysis = (): CompetitorAnalysisReport => {
         <li><strong>Instant Direct Manager WhatsApp:</strong> Book your slot in 30 seconds without call center delays.</li>
       </ul>
 
-      <p>Visit Jaipur Spa at Motilal Atal Road, opposite Polo Victory Cinema, Sindhi Camp, Jaipur.</p>
+      <p>Visit Noida Spa at Motilal Atal Road, opposite Polo Victory Cinema, Sindhi Camp, Noida.</p>
     `,
-    relatedPosts: ['thai-massage-benefits-jaipur', 'deep-tissue-vs-swedish'],
-    keywords: [outrankKeyword, 'Best Spa Jaipur', 'Top Rated Spa Sindhi Camp'],
+    relatedPosts: ['thai-massage-benefits-noida', 'deep-tissue-vs-swedish'],
+    keywords: [outrankKeyword, 'Best Spa Noida', 'Top Rated Spa Sindhi Camp'],
   };
 
   // Prepend to live blog memory if not already present

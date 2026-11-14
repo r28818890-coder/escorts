@@ -23,7 +23,7 @@ const SmartBot: React.FC = () => {
 
   const [messages, setMessages] = useState<{text: string, isBot: boolean, isAi?: boolean}[]>([
     { 
-      text: "Hello! Welcome to Escorts Hub Jaipur. I am your VIP AI Assistant powered by Claude Sonnet 5. How can I help you find verified models today?",
+      text: "Hello! Welcome to We Noida Escorts. I am your VIP AI Assistant powered by Claude Sonnet 5. How can I help you find verified models today?",
       isBot: true, 
       isAi: true 
     }
@@ -31,7 +31,7 @@ const SmartBot: React.FC = () => {
   const [options, setOptions] = useState<string[]>([
     "Verified Models",
     "Check Rates & Packages",
-    "Jaipur Localities",
+    "Noida Localities",
     "Book on WhatsApp"
   ]);
   const [input, setInput] = useState('');
@@ -121,7 +121,7 @@ const SmartBot: React.FC = () => {
           setIsTyping(false);
           setMessages(prev => [
             ...prev,
-            { text: `Thank you! Your verified request is logged with phone +91 ${cleanedPhone}. An available escort or coordinator in Jaipur is reviewing your availability.`, isBot: true }
+            { text: `Thank you! Your verified request is logged with phone +91 ${cleanedPhone}. An available escort or coordinator in Noida is reviewing your availability.`, isBot: true }
           ]);
           setOptions(['Book on WhatsApp', 'Russian VIP Models', 'Hotel Outcall Options']);
         }, 800);
@@ -157,7 +157,7 @@ const SmartBot: React.FC = () => {
       if (lower === 'exit') {
         setIsAdminMode(false);
         setMessages(prev => [...prev, { text: 'Exited Admin Mode.', isBot: true }]);
-        setOptions(['Verified Models', 'Check Rates & Packages', 'Jaipur Localities']);
+        setOptions(['Verified Models', 'Check Rates & Packages', 'Noida Localities']);
         return;
       }
       if (lower === 'audit') {
@@ -201,9 +201,9 @@ const SmartBot: React.FC = () => {
       setIsTyping(false);
       setMessages(prev => [
         ...prev,
-        { text: `Thank you for inquiring! For 100% verified model photos and instant booking in Jaipur, contact us directly on WhatsApp at ${CONTACT.phoneDisplay}.`, isBot: true }
+        { text: `Thank you for inquiring! For 100% verified model photos and instant booking in Noida, contact us directly on WhatsApp at ${CONTACT.phoneDisplay}.`, isBot: true }
       ]);
-      setOptions(['Book on WhatsApp', 'Check Rates & Packages', 'Jaipur Localities']);
+      setOptions(['Book on WhatsApp', 'Check Rates & Packages', 'Noida Localities']);
     }
   };
 
@@ -220,7 +220,7 @@ const SmartBot: React.FC = () => {
       {/* ── Small Circular Toggle Button (Bottom-Left) ─────────────────────── */}
       <button
         onClick={() => setIsOpen(true)}
-        aria-label="Open Escorts Hub Jaipur AI Chat"
+        aria-label="Open We Noida Escorts AI Chat"
         className={`fixed left-4 bottom-5 z-50 w-11 h-11 sm:w-12 sm:h-12 bg-slate-900 text-rose-400 border border-rose-500/40 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-200 ${isOpen ? 'hidden' : 'flex'}`}
       >
         <span className="absolute -top-0.5 -right-0.5 flex h-3 w-3">
@@ -255,7 +255,7 @@ const SmartBot: React.FC = () => {
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
-                    <h4 className="font-bold text-white text-xs tracking-wide">Escorts Hub Jaipur</h4>
+                    <h4 className="font-bold text-white text-xs tracking-wide">We Noida Escorts</h4>
                     <span className="bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[8px] px-1.5 py-0.2 rounded-full font-mono flex items-center gap-0.5">
                       <Zap size={8} /> Sonnet 5
                     </span>

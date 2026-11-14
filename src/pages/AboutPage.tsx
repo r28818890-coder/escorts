@@ -76,7 +76,7 @@ const AboutPage: React.FC = () => {
               ))}
             </div>
             <div className="pt-2">
-              <Link to="/jaipur-areas" className="text-xs font-bold text-amber-700 hover:underline">
+              <Link to="/noida-areas" className="text-xs font-bold text-amber-700 hover:underline">
                 View All 18 Noida & NCR Sectors →
               </Link>
             </div>

@@ -2,7 +2,7 @@
 // NOIDA & NCR HYPERLOCAL SEO CONTENT & SCHEMA GENERATOR
 // ============================================================
 
-import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, PortalCategory, JaipurLocality } from './portalData';
+import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, PortalCategory, NoidaLocality } from './portalData';
 import { BRAND, CONTACT } from './site';
 
 export interface LocalizedSeoData {
@@ -41,7 +41,7 @@ const LOCALITY_GEO: Record<string, { lat: string; lng: string }> = {
   'botanical-garden': { lat: '28.5645', lng: '77.3340' },
 };
 
-export function generateLocalizedSeo(category: PortalCategory, locality?: JaipurLocality): LocalizedSeoData {
+export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaLocality): LocalizedSeoData {
   const locName = locality ? locality.name : 'Noida';
   const landmark = locality ? locality.landmark : 'Sector 18, Sector 62 & Expressway';
   const geo = locality ? (LOCALITY_GEO[locality.slug] || { lat: '28.5708', lng: '77.3261' }) : { lat: '28.5708', lng: '77.3261' };

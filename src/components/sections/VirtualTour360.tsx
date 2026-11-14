@@ -33,7 +33,7 @@ const ROOM_TOURS: RoomTourData[] = [
         x: 35,
         y: 45,
         title: 'Executive Suite Bedroom',
-        description: 'Sanitized luxury bedding in 5-star Jaipur hotels with complete privacy.',
+        description: 'Sanitized luxury bedding in 5-star Noida hotels with complete privacy.',
       },
       {
         id: 'h2',
@@ -54,7 +54,7 @@ const ROOM_TOURS: RoomTourData[] = [
   {
     id: 'steam-shower',
     title: 'Private Resort Suite Setup',
-    subtitle: 'Luxury resort and private villa outcall accommodations across Jaipur',
+    subtitle: 'Luxury resort and private villa outcall accommodations across Noida',
     icon: <Droplets className="w-4 h-4 text-indigo-400" />,
     bgUrl: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=80',
     badge: 'Discreet Outcall Setup',
@@ -71,7 +71,7 @@ const ROOM_TOURS: RoomTourData[] = [
         x: 60,
         y: 40,
         title: 'Private Balcony & Views',
-        description: 'Private serene views across luxury resort destinations in Jaipur.',
+        description: 'Private serene views across luxury resort destinations in Noida.',
       },
     ],
   },
@@ -143,7 +143,7 @@ export const VirtualTour360: React.FC = () => {
             Explore VIP Accommodations
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto mt-1 text-xs md:text-sm">
-            Interactive preview of luxury 5-star hotel suites and resort environments in Jaipur.
+            Interactive preview of luxury 5-star hotel suites and resort environments in Noida.
           </p>
         </div>
 
