@@ -294,24 +294,26 @@ export const Home: React.FC = () => {
             Escorts in Noida
           </h1>
 
-          {/* 2-line subhead naming Noida landmarks */}
-          <p className="text-sm sm:text-base text-slate-200 max-w-3xl mx-auto mb-6 leading-relaxed font-normal drop-shadow">
-            Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with complete privacy.
-          </p>
+          {/* Light-colored luxury glass card for subhead */}
+          <div className="max-w-3xl mx-auto mb-6 p-4 sm:p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-amber-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.18)] text-slate-800 text-center">
+            <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-semibold">
+              Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with complete privacy.
+            </p>
+          </div>
 
-          {/* Trust Chips Row */}
-          <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap mb-7 text-xs font-semibold">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
-              <ShieldCheck size={14} className="text-emerald-400" /> 100% Real Photos
+          {/* Trust Chips Row — Strictly ONE single horizontal line (No vertical wrapping) */}
+          <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto no-scrollbar py-1 px-1 mb-7 text-[11px] sm:text-xs font-semibold flex-nowrap w-full max-w-3xl mx-auto">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-slate-200 shrink-0 whitespace-nowrap shadow-sm">
+              <ShieldCheck size={13} className="text-emerald-400 shrink-0" /> 100% Real Photos
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
-              <Lock size={14} className="text-amber-400" /> 100% Privacy Verified
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-slate-200 shrink-0 whitespace-nowrap shadow-sm">
+              <Lock size={13} className="text-amber-400 shrink-0" /> 100% Privacy Verified
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
-              <Clock size={14} className="text-sky-400" /> 20-Min Fast Outcall
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-slate-200 shrink-0 whitespace-nowrap shadow-sm">
+              <Clock size={13} className="text-sky-400 shrink-0" /> 20-Min Fast Outcall
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
-              <CheckCircle size={14} className="text-emerald-400" /> Direct Hotel Outcall
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-slate-200 shrink-0 whitespace-nowrap shadow-sm">
+              <CheckCircle size={13} className="text-emerald-400 shrink-0" /> Direct Hotel Outcall
             </span>
           </div>
 
@@ -430,28 +432,29 @@ export const Home: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {/* Category Cards (50% More Compact Size) */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-3">
             {PORTAL_CATEGORIES.map((cat) => (
               <Link
                 key={cat.id}
                 to={`/${cat.slug}`}
-                className="group p-5 rounded-2xl bg-white border border-slate-200 hover:border-amber-500 hover:bg-amber-50/20 hover:shadow-xl transition-all duration-200 flex flex-col justify-between"
+                className="group p-3 sm:p-3.5 rounded-xl bg-white border border-slate-200 hover:border-amber-500 hover:bg-amber-50/20 hover:shadow-md transition-all duration-200 flex flex-col justify-between active:scale-95"
               >
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm">
+                  <div className="w-8 h-8 rounded-lg bg-slate-50 border border-slate-200 flex items-center justify-center mb-2 group-hover:scale-105 transition-transform shadow-xs">
                     {getCategoryIcon(cat.iconName)}
                   </div>
-                  <h3 className="font-black text-base text-slate-900 group-hover:text-amber-700 transition-colors mb-1.5">
+                  <h3 className="font-black text-xs sm:text-sm text-slate-900 group-hover:text-amber-700 transition-colors mb-1 line-clamp-1">
                     {cat.name}
                   </h3>
-                  <p className="text-xs text-slate-500 line-clamp-3 leading-relaxed mb-4">
+                  <p className="text-[10px] sm:text-[11px] text-slate-500 line-clamp-2 leading-relaxed mb-2">
                     {cat.tagline}
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between text-xs text-amber-700 font-bold pt-3 border-t border-slate-200">
-                  <span>Browse Profiles</span>
-                  <ArrowRight size={14} className="group-hover:translate-x-1.5 transition-transform" />
+                <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-amber-700 font-bold pt-1.5 border-t border-slate-100">
+                  <span>Browse</span>
+                  <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             ))}
@@ -480,7 +483,7 @@ export const Home: React.FC = () => {
               <Link
                 key={loc.id}
                 to={`/call-girls/${loc.slug}`}
-                className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-amber-500 hover:shadow-md transition-all text-center group flex flex-col justify-between"
+                className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-amber-500 hover:shadow-md transition-all text-center group flex flex-col justify-between active:scale-95 active:bg-amber-100/50 cursor-pointer select-none"
               >
                 <div>
                   <span className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-amber-700 transition-colors block truncate">

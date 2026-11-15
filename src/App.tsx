@@ -40,10 +40,13 @@ const ScrollToTop = ({ lenis }: { lenis: any | null }) => {
   const { pathname } = useLocation();
   useEffect(() => {
     if (lenis) {
-      lenis.scrollTo(0, { immediate: true });
-    } else {
-      window.scrollTo(0, 0);
+      try {
+        lenis.scrollTo(0, { immediate: true });
+      } catch (e) {}
     }
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
     // Defer route tracking to background to keep transition instant
     const trackTimer = setTimeout(() => {
       trackVisitorAndNotifyAdmin(pathname);

@@ -108,14 +108,26 @@ body {
   100% { transform: scale(2.2); opacity: 0; }
 }
 
-/* Fast Mobile Tap Highlight & Smooth Scrolling */
+/* Fast Mobile Tap Highlight & Immediate Route Switching */
 * {
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Page Entrance Animation — Distinct "Next Page Opened" Transition */
+@keyframes pageEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: pageEnter 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 /* Content Visibility for Blazing Fast Mobile Scrolling */

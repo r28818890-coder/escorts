@@ -128,7 +128,7 @@ export const CategoryListingPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-6 pb-20">
+    <div key={`${category}-${locality || 'all'}`} className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-6 pb-20 page-enter">
       
       {/* Live Social Proof Activity Toast */}
       <LiveActivityToast />
