@@ -32,6 +32,17 @@ export default defineConfig(({ mode }) => {
         output: {
           // Intelligent Performance Chunk Splitting
           manualChunks(id) {
+            // 0. High-Volume Data Slices Splitting
+            if (id.includes('scheduledBlogs')) {
+              return 'blogs-data';
+            }
+            if (id.includes('scheduledBacklinks')) {
+              return 'backlinks-data';
+            }
+            if (id.includes('portalData')) {
+              return 'classifieds-data';
+            }
+
             if (id.includes('node_modules')) {
               // 1. React 19 Core
               if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {

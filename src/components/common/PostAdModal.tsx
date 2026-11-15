@@ -329,7 +329,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
                   </label>
                   <input
                     type="tel"
-                    placeholder="e.g. 9521413060"
+                    placeholder="e.g. 8218125815"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full bg-[#171717] border border-[#2a2a2a] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:border-rose-500 focus:outline-none"
@@ -342,7 +342,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
                   </label>
                   <input
                     type="tel"
-                    placeholder="e.g. 919521413060"
+                    placeholder="e.g. 918218125815"
                     value={formData.whatsapp}
                     onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
                     className="w-full bg-[#171717] border border-[#2a2a2a] rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-white focus:border-rose-500 focus:outline-none"

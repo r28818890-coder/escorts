@@ -82,7 +82,7 @@ const KnowledgeBase: React.FC = () => {
       </div>
       <div data-page="Contact Us">
         <h2>Contact Escorts Hub Noida</h2>
-        <p>Phone: +91 95214 13060 | WhatsApp: +91 95214 13060 | Sector 18, Noida</p>
+        <p>Phone: +91 8218125815 | WhatsApp: +91 8218125815 | Sector 18, Noida</p>
       </div>
 
       {/* PART 2: SERVICE CONTENT COMPONENT */}

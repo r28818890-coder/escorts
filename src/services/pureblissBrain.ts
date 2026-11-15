@@ -1,7 +1,7 @@
 /**
  * pureblissBrain.ts
  * ═══════════════════════════════════════════════════════════════
- * THE Noida Spa AI MIND — Complete Knowledge Base
+ * THE Escorts Hub Noida AI MIND — Complete Knowledge Base
  * ═══════════════════════════════════════════════════════════════
  *
  * This is the central intelligence that powers all AI features:
@@ -17,29 +17,26 @@
 // ── SECTION 1: BUSINESS IDENTITY ────────────────────────────────────────────
 
 export const NOIDA_SPA_IDENTITY = {
-  name: 'We Noida Escorts',
-  shortName: 'We Noida Escorts',
-  tagline: "Noida's Premier Luxury Companions & Spa",
+  name: 'Escorts Hub Noida',
+  shortName: 'Escorts Hub Noida',
+  tagline: "Noida's #1 Verified Call Girl & Escorts Service Directory",
   established: '2020',
   address: 'Sector 18, Noida, Gautam Buddha Nagar, Uttar Pradesh 201301',
   phone1: '+91 8218125815',
   phone2: '+91 8218125815',
   whatsapp: '918218125815',
-  hours: 'Open 24 Hours, 7 Days a Week including all holidays',
+  hours: 'Open 24 Hours, 7 Days a Week',
   google_rating: '4.95 Stars',
   total_reviews: '1,200+',
   website: 'https://wenoidaescorts.com',
   landmark: 'Opposite DLF Mall of India & Sector 18 Metro Gate 2',
   unique_selling_points: [
-    'Open 24 hours — including midnight, 2AM, and early morning',
-    'Internationally certified male and female therapists',
-    'Private soundproof suites — 100% privacy guaranteed',
-    'Hospital-grade sanitization between every session',
-    'No appointment needed — walk-ins always welcome',
-    'Fresh single-use linens and disposable spa wear every session',
-    'Transparent pricing — no hidden GST or surprise charges',
-    'All payment modes: Cash, UPI, GPay, PhonePe, Credit/Debit cards',
-    'Free parking directly outside the spa building',
+    'Open 24 hours — 15 to 25 min hotel doorstep outcall arrival',
+    '100% verified real photos & biometric phone verification',
+    'Zero advance payment required — direct payment upon meeting',
+    'Complete privacy and strict customer confidentiality',
+    'Elite Indian, Russian, European, and foreign models',
+    'Transparent pricing with full right of refusal at the door',
   ],
 };
 
@@ -129,230 +126,68 @@ export const SERVICES = [
     pressure: 'Premier',
     keywords: ['full night escorts noida', 'overnight hotel companion noida'],
   },
-  {
-    name: 'Swedish Relaxation Massage',
-    slug: 'swedish-massage',
-    price_60: 999,
-    price_90: 1299,
-    description: 'Gentle, oil-based full body massage using long effleurage strokes. Best for first-timers, general relaxation, stress relief, and improving blood circulation.',
-    best_for: ['first timers', 'stress relief', 'sleep issues', 'mild tension', 'general wellness'],
-    technique: 'Long gliding strokes, kneading, circular movements with warm oil',
-    pressure: 'Light to medium',
-    keywords: ['swedish massage noida', 'relaxation massage noida', 'gentle massage sector 18'],
-  },
-  {
-    name: 'Traditional Thai Massage',
-    slug: 'thai-massage',
-    price_60: 1099,
-    price_90: 1399,
-    description: 'Dry massage performed on mat. Combines ancient Sen-line acupressure with passive yoga-like stretching. Performed fully clothed.',
-    best_for: ['stiffness', 'flexibility', 'energy renewal', 'desk workers', 'joint mobility', 'cervical pain'],
-    technique: 'Sen-line acupressure, passive stretching, palm and thumb pressure',
-    pressure: 'Medium to firm',
-    keywords: ['thai massage noida', 'thai massage sector 18', 'traditional thai massage noida'],
-  },
-  {
-    name: 'Deep Tissue Massage',
-    slug: 'deep-tissue',
-    price_60: 1199,
-    price_90: 1499,
-    description: 'Firm pressure targeting deeper muscle layers and connective tissue. Clinical approach for chronic pain, muscle knots, and injury recovery.',
-    best_for: ['chronic back pain', 'muscle knots', 'sports recovery', 'sciatica', 'shoulder pain', 'neck pain'],
-    technique: 'Slow deliberate strokes, deep finger pressure, trigger point release',
-    pressure: 'Firm to deep',
-    keywords: ['deep tissue massage noida', 'back pain massage noida', 'muscle pain relief noida'],
-  },
-  {
-    name: 'Balinese Massage',
-    slug: 'balinese-massage',
-    price_60: 1199,
-    price_90: 1499,
-    description: 'Combines deep tissue, acupressure, reflexology, and aromatherapy in one session. Wave-like rhythm with rolling palm strokes and warm aromatic oil.',
-    best_for: ['travel fatigue', 'leg heaviness', 'whole body tension', 'systemic tiredness', 'tourists'],
-    technique: 'Rolling palm strokes, acupressure, reflexology, aromatherapy oil blend',
-    pressure: 'Medium to firm, wave-like',
-    keywords: ['balinese massage noida', 'bali spa noida', 'exotic massage noida'],
-  },
-  {
-    name: 'Aromatherapy Massage',
-    slug: 'aromatherapy',
-    price_60: 1299,
-    price_90: 1599,
-    description: 'Essential oil-enhanced therapeutic massage. Oils chosen based on individual needs — lavender for sleep, bergamot for anxiety, frankincense for deep calm.',
-    best_for: ['anxiety', 'insomnia', 'emotional exhaustion', 'burnout', 'stress', 'mood improvement'],
-    technique: 'Swedish-style strokes with organic therapeutic essential oil blends',
-    pressure: 'Light to medium',
-    keywords: ['aromatherapy massage noida', 'essential oil massage noida', 'stress massage sector 18'],
-  },
-  {
-    name: 'Couple Massage',
-    slug: 'couple-massage',
-    price_60: 2499,
-    price_90: 2999,
-    description: 'Side-by-side massage for two in private soundproof couple suite. Warm ambient lighting, aromatherapy scents, romantic ambiance.',
-    best_for: ['anniversaries', 'birthdays', 'date nights', 'honeymoon', 'relationship bonding'],
-    technique: 'Customisable — each person can choose their preferred therapy',
-    pressure: 'Customisable per person',
-    keywords: ['couple massage noida', 'couple spa noida', 'romantic spa noida', 'anniversary spa noida'],
-  },
-  {
-    name: 'Full Body Massage',
-    slug: 'full-body-massage',
-    price_60: 1099,
-    price_90: 1399,
-    description: 'Comprehensive head-to-toe massage covering feet, calves, back, shoulders, arms, neck, and scalp. Nothing is rushed or skipped.',
-    best_for: ['whole body fatigue', 'post-work tiredness', 'general wellness', 'first visit'],
-    technique: 'Structured full body coverage with warm therapeutic oil',
-    pressure: 'Medium',
-    keywords: ['full body massage noida', 'full body massage sector 18', 'body massage near me noida'],
-  },
-  {
-    name: 'Herbal Body Scrub',
-    slug: 'body-scrub',
-    price_60: 1499,
-    description: 'Turmeric and herb-based natural micro-exfoliation. Removes dead skin, improves circulation, reveals fresh glowing skin.',
-    best_for: ['dull skin', 'dead skin removal', 'skin glow', 'exfoliation', 'detox'],
-    technique: 'Manual exfoliation with herbal scrub, circular motions',
-    pressure: 'Light, surface-level',
-    keywords: ['body scrub noida', 'herbal scrub sector 18', 'skin glow spa noida'],
-  },
-  {
-    name: 'Steam Bath',
-    slug: 'steam-bath',
-    price_30: 499,
-    description: 'Private single-person steam chamber with herb-infused steam. Opens pores, loosens muscles, flushes toxins. Perfect add-on before massage.',
-    best_for: ['pre-massage preparation', 'detox', 'skin cleansing', 'muscle warmup'],
-    technique: 'Enclosed herbal steam chamber, 15-20 minutes',
-    pressure: 'N/A',
-    keywords: ['steam bath noida', 'steam room sector 18', 'detox spa noida'],
-  },
 ];
 
-// ── SECTION 4: TRENDING KEYWORDS — Sector 18 2.5km Radius ─────────────────
+// ── SECTION 4: TRENDING KEYWORDS — Noida & NCR High Intent ──────────────────
 
 export const TRENDING_KEYWORDS = {
-
-  // HIGH VOLUME — "Near Me" Intent (People actively looking to visit)
+  // HIGH VOLUME — "Near Me" Intent
   near_me: [
-    'spa near me noida',
-    'massage near me noida',
-    'spa near sector 18',
-    'massage center near sector 18',
-    'spa near noida railway station',
-    'massage near railway station noida',
-    'spa near noida junction',
-    'body massage near me noida',
-    'full body massage near me noida',
-    'thai massage near me noida',
-    'massage center near bus stand noida',
-    'spa near polo victory cinema',
-    'spa near gopal bari noida',
-    '24 hour spa near me noida',
-    'open now spa noida',
+    'call girl noida',
+    'escorts service noida',
+    'call girls near sector 18 noida',
+    'escorts near sector 62 noida',
+    'call girls near noida expressway',
+    'hotel outcall escorts noida',
+    'call girls near sector 50 noida',
+    'escorts near pari chowk greater noida',
+    'independent call girl noida',
+    'russian escorts noida',
+    '24 hour call girl noida',
+    'open now escorts noida',
   ],
 
   // SERVICE-SPECIFIC — High Intent Buyers
   service_specific: [
-    'thai massage noida',
-    'thai massage noida price',
-    'thai massage sector 18 noida',
-    'swedish massage noida',
-    'deep tissue massage noida',
-    'balinese massage noida',
-    'aromatherapy massage noida',
-    'couple massage noida',
-    'couple spa noida',
-    'body scrub noida',
-    'steam bath noida',
-    'full body massage noida',
-    'body massage noida price',
-    'best massage in noida',
-    'luxury spa noida',
+    'hotel outcall escorts noida',
+    '5 star hotel call girl noida',
+    'russian escorts service noida',
+    'dinner date companion noida',
+    'independent escorts noida',
+    'celebrity models noida',
+    'air hostess call girls noida',
+    'full night escorts noida',
+    'private incall escorts noida',
+    'vip escorts service noida',
+    'cash on delivery call girl noida',
+    'real photo verified escorts noida',
   ],
 
   // LOCAL AREA — Hyperlocal Targeting
   local_area: [
-    'spa in sector 18 noida',
-    'massage parlour sector 18',
-    'wellness center sector 18 noida',
-    'spa near mi road noida',
-    'spa near bani park noida',
-    'spa near civil lines noida',
-    'spa near chandpole noida',
-    'spa near collectorate circle noida',
-    'spa near ajmer road noida',
-    'massage near nehru bazaar noida',
-    'spa near sanganeri gate noida',
-    'spa in pink city noida',
-    'best spa walled city noida',
-    'noida junction area spa',
+    'call girl sector 18 noida',
+    'escorts sector 62 noida',
+    'call girl sector 50 noida',
+    'escorts sector 137 expressway',
+    'call girl sector 142 advant',
+    'escorts sector 128 jaypee',
+    'call girl sector 76 noida',
+    'escorts botanical garden noida',
+    'call girl film city sector 16',
+    'escorts pari chowk greater noida',
+    'call girl noida extension',
+    'escorts indirapuram ghaziabad',
   ],
 
-  // PROBLEM-BASED — People with specific pain/need
-  problem_based: [
-    'back pain massage noida',
-    'neck pain massage noida',
-    'cervical massage noida',
-    'stress relief massage noida',
-    'insomnia cure spa noida',
-    'anxiety massage therapy noida',
-    'shoulder pain massage noida',
-    'leg pain massage noida',
-    'sciatica massage noida',
-    'post workout massage noida',
-    'muscle recovery spa noida',
-    'headache relief massage noida',
-  ],
-
-  // OCCASION-BASED — Emotional / Gift Intent
-  occasion_based: [
-    'anniversary spa noida',
-    'birthday spa gift noida',
-    'romantic spa noida',
-    'honeymoon spa noida',
-    'couple spa anniversary noida',
-    'spa gift voucher noida',
-    'spa for wedding gift noida',
-    'pre wedding relaxation noida',
-    'post wedding spa noida',
-  ],
-
-  // TIME-BASED — 24 Hour Advantage
-  time_based: [
-    '24 hour spa noida',
-    'late night massage noida',
-    'midnight spa noida',
-    '2am massage noida',
-    'early morning spa noida',
-    'open all night spa noida',
-    'night massage center noida',
-    'anytime massage noida',
-  ],
-
-  // TOURIST SEARCHES — Visitors to Noida
-  tourist: [
-    'best spa in noida for tourists',
-    'massage noida tourist guide',
-    'noida railway station spa walk',
-    'what to do in noida between trains',
-    'tourist massage noida',
-    'noida layover spa',
-    'visiting noida spa',
-    'noida sightseeing spa break',
-  ],
-
-  // TRUST-BASED — Hygiene / Safety Conscious
+  // TRUST & SAFETY
   trust_based: [
-    'hygienic spa noida',
-    'safe spa noida',
-    'certified therapist noida',
-    'professional massage noida',
-    'clean spa noida',
-    'private room massage noida',
-    'sanitized spa noida',
-    'female therapist noida spa',
-    'no funny business spa noida',
-    'genuine spa noida',
+    'safe escorts noida',
+    'verified call girl noida',
+    'genuine escorts noida',
+    'zero advance escorts noida',
+    'cash on delivery call girls noida',
+    'real photos call girl noida',
+    'discreet escorts service noida',
   ],
 };
 
@@ -361,7 +196,7 @@ export const TRENDING_KEYWORDS = {
 // Pattern learned from the best-performing local spa content worldwide.
 
 export const BLOG_WRITING_PATTERN = `
-BLOG WRITING PATTERN FOR Noida Spa:
+BLOG WRITING PATTERN FOR Escorts Hub Noida:
 ════════════════════════════════════════
 
 GOLDEN RULE: Every blog must feel like a real person sharing a real experience.
@@ -379,7 +214,7 @@ STRUCTURE (Follow in exact order):
      * "I typed 'spa near me noida' at 11 PM and..."
      * "Raat ke 2 baje mujhe suddenly realize hua..."
      * "My doctor said something that surprised me..."
-   - BAD hook: "Noida Spa is the best spa in Noida..."
+   - BAD hook: "Escorts Hub Noida is the best spa in Noida..."
 
 2. PROBLEM DEEPENING (1 paragraph)
    - Expand on the problem or situation
@@ -387,7 +222,7 @@ STRUCTURE (Follow in exact order):
    - Mention the location context naturally (Noida, desk job, travel, etc.)
 
 3. THE DISCOVERY (1 paragraph)
-   - How did you find Noida Spa? (Google search, friend tip, saw it near railway station)
+   - How did you find Escorts Hub Noida? (Google search, friend tip, saw it near railway station)
    - First impression — walking in, ambience, staff greeting
    - Be specific and sensory — what did you see, smell, feel?
 
@@ -410,7 +245,7 @@ STRUCTURE (Follow in exact order):
 
 7. CALL TO ACTION (Final paragraph — soft, not pushy)
    - Recommendation in first person: "If you are in Noida and..."
-   - Include phone number once: +91 73576 78356
+   - Include phone number once: +91 8218125815
    - Open 24 hours
    - Location: Sector 18
 
@@ -428,7 +263,7 @@ TECHNICAL SEO RULES:
 TONE GUIDE:
 ───────────
  GOOD: "I have been back four times since that first visit"
- BAD:  "Noida Spa provides exceptional therapeutic services"
+ BAD:  "Escorts Hub Noida provides exceptional therapeutic services"
 
  GOOD: "The therapist found a knot in my shoulder I didn't know existed"
  BAD:  "Our certified therapists utilize advanced techniques"
@@ -455,7 +290,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <h3>What I Found at 1:30 AM</h3>
 
-<p>The first result was Noida Spa at Sector 18. What caught my eye immediately was not the rating — it was the operating hours: 24 hours. I called the number listed. Someone picked up in two rings. "Yes sir, we are open. Please come whenever you are ready." I left my apartment seven minutes later.</p>
+<p>The first result was Escorts Hub Noida at Sector 18. What caught my eye immediately was not the rating — it was the operating hours: 24 hours. I called the number listed. Someone picked up in two rings. "Yes sir, we are open. Please come whenever you are ready." I left my apartment seven minutes later.</p>
 
 <p>I want to be honest about my expectations at that hour. I was prepared for a half-hearted experience — a night shift employee going through the motions, a room that had not been properly cleaned since the evening session ended. Noida's Sector 18 area was quiet but not deserted as I walked in, and the spa's entrance was lit properly. Not aggressively bright — warmly lit, the way a place should be lit at 2 in the morning.</p>
 
@@ -471,9 +306,9 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>I was home by 3:20 AM. I was asleep by 3:35. I woke up at 8:45 — five hours and ten minutes of continuous sleep, which was, without exaggeration, the longest uninterrupted stretch I had managed in several months. The sleep tracker confirmed what I already knew when I woke up: something had shifted.</p>
 
-<p>I returned to Noida Spa the following week. And the week after. I now go every Thursday evening. The cumulative effect of regular sessions is different from the dramatic single-session experience — it is quieter, more stable, like a baseline correction rather than a spike. My average nightly sleep in the past six weeks has been 6.1 hours. For me, that is significant.</p>
+<p>I returned to Escorts Hub Noida the following week. And the week after. I now go every Thursday evening. The cumulative effect of regular sessions is different from the dramatic single-session experience — it is quieter, more stable, like a baseline correction rather than a spike. My average nightly sleep in the past six weeks has been 6.1 hours. For me, that is significant.</p>
 
-<p>Noida Spa is on Atta Market Road, Sector 18 — 3 minutes from Noida Railway Station, open genuinely 24 hours. If you are searching for a spa near me in Noida at any hour of the day or night, the answer is probably this place. Call them at +91 73576 78356.</p>
+<p>Escorts Hub Noida is on Atta Market Road, Sector 18 — 3 minutes from Noida Railway Station, open genuinely 24 hours. If you are searching for a spa near me in Noida at any hour of the day or night, the answer is probably this place. Call them at +91 8218125815.</p>
     `
   },
 
@@ -481,21 +316,21 @@ export const PATTERN_EXAMPLE_BLOGS = [
   {
     targetKeyword: 'deep tissue massage noida back pain',
     wordCount: 960,
-    title: 'My Physiotherapist Recommended Deep Tissue Massage. Four Sessions at Noida Spa Later — Here Is What Changed',
+    title: 'My Physiotherapist Recommended Deep Tissue Massage. Four Sessions at Escorts Hub Noida Later — Here Is What Changed',
     content: `
 <p>I have had lower back problems since I was 29. I am 34 now. Five years of physiotherapy exercises, ergonomic chairs I researched obsessively, and a mattress that cost me more than my first car. The pain never fully went away. It became background noise — the kind of constant low-grade discomfort that you stop noticing until someone asks why you are standing slightly tilted to the left.</p>
 
 <p>My current physio, after reviewing my posture during our third session together, said something that surprised me. "The muscle tension around your lumbar is maintaining the problem even between our sessions. You need soft tissue work — regular deep tissue massage." She said it matter-of-factly, the way you would prescribe any therapy. I took it seriously.</p>
 
-<h3>Choosing Noida Spa in Noida</h3>
+<h3>Choosing Escorts Hub Noida in Noida</h3>
 
-<p>I live near Sector 62. The obvious options near me were either hotel spas that charged ₹2,500+ or budget places that I knew from past experience would deliver a shallow interpretation of whatever I asked for. A colleague mentioned Noida Spa at Sector 18 — a ten-minute drive but consistently recommended by people I trusted. I called, explained my situation — lower back, physio referral, chronic issue — and asked if they had therapists experienced in clinical deep tissue work. The answer was yes, and they asked me to come in for an initial assessment conversation before booking.</p>
+<p>I live near Sector 62. The obvious options near me were either hotel spas that charged ₹2,500+ or budget places that I knew from past experience would deliver a shallow interpretation of whatever I asked for. A colleague mentioned Escorts Hub Noida at Sector 18 — a ten-minute drive but consistently recommended by people I trusted. I called, explained my situation — lower back, physio referral, chronic issue — and asked if they had therapists experienced in clinical deep tissue work. The answer was yes, and they asked me to come in for an initial assessment conversation before booking.</p>
 
 <p>That detail — the fact that they asked me to explain my condition before the session rather than just booking a time slot — told me something important about how they operate.</p>
 
 <h3>Session One — The Honest Version</h3>
 
-<p>Deep tissue massage for chronic issues is not comfortable during the session. I want to be clear about this because I think spa marketing creates unrealistic expectations. The therapist at Noida Spa worked on my lumbar region, piriformis, and glutes — the three areas my physio had identified as primary tension sources. When he reached the piriformis (a deep muscle beneath the gluteal muscles that is one of the most common contributors to lower back pain), I had to breathe through the pressure deliberately. Not painfully — but intensely.</p>
+<p>Deep tissue massage for chronic issues is not comfortable during the session. I want to be clear about this because I think spa marketing creates unrealistic expectations. The therapist at Escorts Hub Noida worked on my lumbar region, piriformis, and glutes — the three areas my physio had identified as primary tension sources. When he reached the piriformis (a deep muscle beneath the gluteal muscles that is one of the most common contributors to lower back pain), I had to breathe through the pressure deliberately. Not painfully — but intensely.</p>
 
 <p>He paused regularly to check my tolerance. "Tell me where you want me to back off," he said at the beginning, and meant it. He also explained briefly what he was finding as he worked — a significant knot in my right lumbar paraspinals, tightness in the thoracolumbar fascia. This kind of verbal narration made me trust the work more. He was not just applying pressure randomly; he was responding to what he found.</p>
 
@@ -505,13 +340,13 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>By the second session, the post-session tenderness was significantly reduced, which my physio explained meant the initial adhesions had begun releasing. The therapist shifted focus in session three to my thoracic spine — the area above the lumbar that compensates for lower back issues and develops its own secondary problems. By week four, I was sleeping through the night without the 3 AM back-pain wake-up that had become as reliable as an alarm clock.</p>
 
-<p>My physio noticed the change independently — she commented during our fifth appointment that my lumbar mobility had measurably improved and that my postural compensation pattern was less pronounced. She credited the combined approach: her structural work plus the soft tissue release happening at Noida Spa between our sessions.</p>
+<p>My physio noticed the change independently — she commented during our fifth appointment that my lumbar mobility had measurably improved and that my postural compensation pattern was less pronounced. She credited the combined approach: her structural work plus the soft tissue release happening at Escorts Hub Noida between our sessions.</p>
 
 <h3>The Practical Numbers</h3>
 
-<p>Four sessions at Noida Spa: ₹1,199 each, 60 minutes. Total: ₹4,796. For comparison, one physiotherapy session in Noida typically costs ₹500–₹800. My physio recommended the deep tissue work as complementary, not a replacement — the combination achieved more in four weeks than physio alone had in the previous year. For a chronic issue that had affected my quality of life for five years, ₹4,796 is not a difficult number to justify.</p>
+<p>Four sessions at Escorts Hub Noida: ₹1,199 each, 60 minutes. Total: ₹4,796. For comparison, one physiotherapy session in Noida typically costs ₹500–₹800. My physio recommended the deep tissue work as complementary, not a replacement — the combination achieved more in four weeks than physio alone had in the previous year. For a chronic issue that had affected my quality of life for five years, ₹4,796 is not a difficult number to justify.</p>
 
-<p>Noida Spa, Sector 18, Noida. 3 minutes from the railway station. Open 24 hours. If you have back pain in Noida and are looking for a genuine deep tissue massage with therapists who understand the difference between a clinical session and a relaxation session, this is where to go. Call +91 73576 78356 and describe your condition before booking.</p>
+<p>Escorts Hub Noida, Sector 18, Noida. 3 minutes from the railway station. Open 24 hours. If you have back pain in Noida and are looking for a genuine deep tissue massage with therapists who understand the difference between a clinical session and a relaxation session, this is where to go. Call +91 8218125815 and describe your condition before booking.</p>
     `
   },
 
@@ -527,9 +362,9 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>I was completely wrong.</p>
 
-<h3>Booking Noida Spa — Sector 18, Noida</h3>
+<h3>Booking Escorts Hub Noida — Sector 18, Noida</h3>
 
-<p>My wife had found Noida Spa through a colleague who had been there with her husband. We WhatsApped them the day before. Within 15 minutes, we had a confirmed 90-minute couple suite slot for our anniversary evening. They asked if there were any physical considerations (my wife has a shoulder issue from an old injury) and made a note. That level of pre-session care was the first indication that this would be different from what I was imagining.</p>
+<p>My wife had found Escorts Hub Noida through a colleague who had been there with her husband. We WhatsApped them the day before. Within 15 minutes, we had a confirmed 90-minute couple suite slot for our anniversary evening. They asked if there were any physical considerations (my wife has a shoulder issue from an old injury) and made a note. That level of pre-session care was the first indication that this would be different from what I was imagining.</p>
 
 <p>We arrived at the Sector 18 location — on Atta Market Road, just a few minutes from Noida's main railway station — at 7:30 PM. The building exterior is understated. The interior is not. Warm amber lighting, the kind that makes everyone look slightly better than they do in daylight. The faint scent of sandalwood without the aggressive diffuser blast you get at places trying too hard.</p>
 
@@ -545,7 +380,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>In the car on the way home, my wife said: "That's the most relaxed I have felt in two years." My shoulder, which I didn't even know was stiff until the therapist worked on it, felt mobile in a way it had not that morning. We were home by 9:30 PM and both asleep by 10:15 — the best anniversary outcome either of us could have asked for.</p>
 
-<p>Noida Spa couple suite: ₹2,499 for 60 minutes, ₹2,999 for 90 minutes. Book in advance — the suite fills on weekends. Sector 18, Noida. Open 24 hours. Call or WhatsApp: +91 73576 78356.</p>
+<p>Escorts Hub Noida couple suite: ₹2,499 for 60 minutes, ₹2,999 for 90 minutes. Book in advance — the suite fills on weekends. Sector 18, Noida. Open 24 hours. Call or WhatsApp: +91 8218125815.</p>
     `
   },
 
@@ -561,11 +396,11 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <h3>The WhatsApp Message That Changed the Afternoon</h3>
 
-<p>My friend who lives in Noida, when I messaged him about the delay, responded with a single line: "Go to Noida Spa. It's 3 minutes from the station. You'll come back a new person." He had mentioned this spa before. I had filed it under "things I will look into properly one day," which is where interesting recommendations go to be forgotten. With five hours and nowhere to be, I looked it up properly for the first time.</p>
+<p>My friend who lives in Noida, when I messaged him about the delay, responded with a single line: "Go to Escorts Hub Noida. It's 3 minutes from the station. You'll come back a new person." He had mentioned this spa before. I had filed it under "things I will look into properly one day," which is where interesting recommendations go to be forgotten. With five hours and nowhere to be, I looked it up properly for the first time.</p>
 
-<p>Noida Spa. Atta Market Road, Sector 18. 1.2 kilometres from Noida Junction. Open 24 hours. I took an auto — 20 rupees and seven minutes of perfectly adequate Noida traffic. I walked through the entrance at 2:15 PM with no appointment, a train ticket in my bag, and no particular expectations.</p>
+<p>Escorts Hub Noida. Atta Market Road, Sector 18. 1.2 kilometres from Noida Junction. Open 24 hours. I took an auto — 20 rupees and seven minutes of perfectly adequate Noida traffic. I walked through the entrance at 2:15 PM with no appointment, a train ticket in my bag, and no particular expectations.</p>
 
-<h3>What You Get in 90 Minutes at Noida Spa</h3>
+<h3>What You Get in 90 Minutes at Escorts Hub Noida</h3>
 
 <p>The receptionist — I use that word loosely since the spa's atmosphere is more informal and warm than "receptionist" implies — welcomed me without the faintly judgmental assessment that some wellness establishments direct at walk-in visitors who are not dressed for the occasion. I was in travel clothes. I smelled like train. She asked what I was looking for, I explained the train delay and the back stiffness that comes from sitting in a railway seat for four hours already, and she immediately suggested the 90-minute Balinese massage.</p>
 
@@ -573,18 +408,18 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <h3>The Logistics That Matter for Travellers</h3>
 
-<p>For anyone reading this as a traveller with a Noida Railway Station delay or layover — the practical details matter. Noida Spa is 7 minutes by auto from the station (20-30 rupees depending on the driver). They accept walk-ins at any hour. The 60-minute sessions allow enough buffer time to get back to the platform. They will store your luggage in a secure area if you ask. The private suite means you do not need to worry about travel clothes or presentation.</p>
+<p>For anyone reading this as a traveller with a Noida Railway Station delay or layover — the practical details matter. Escorts Hub Noida is 7 minutes by auto from the station (20-30 rupees depending on the driver). They accept walk-ins at any hour. The 60-minute sessions allow enough buffer time to get back to the platform. They will store your luggage in a secure area if you ask. The private suite means you do not need to worry about travel clothes or presentation.</p>
 
 <p>I was back at Noida Junction at 4:55 PM, 25 minutes before my rescheduled departure. My back did not ache for the entire journey to Mumbai. I arrived feeling, as my friend promised, like a new person. What could have been five hours of plastic bench and fluorescent light became, instead, one of the more genuinely pleasant afternoons I have had in recent memory.</p>
 
-<p>Noida Spa: Atta Market Road, Sector 18, Noida. 3 minutes from Noida Railway Station. Open 24 hours. Balinese Massage: ₹1,199 (60 min), ₹1,499 (90 min). Call +91 73576 78356 — no appointment needed.</p>
+<p>Escorts Hub Noida: Atta Market Road, Sector 18, Noida. 3 minutes from Noida Railway Station. Open 24 hours. Balinese Massage: ₹1,199 (60 min), ₹1,499 (90 min). Call +91 8218125815 — no appointment needed.</p>
     `
   },
 ];
 
 // ── SECTION 7: GEMINI MASTER SYSTEM PROMPT ──────────────────────────────────
 // This is injected into every Gemini API call as context.
-// It gives Gemini the "brain" of Noida Spa before it writes anything.
+// It gives Gemini the "brain" of Escorts Hub Noida before it writes anything.
 
 export const buildMasterGeminiPrompt = (topic: string, keyword: string): string => {
   const servicesContext = SERVICES.map(s =>
@@ -597,21 +432,21 @@ export const buildMasterGeminiPrompt = (topic: string, keyword: string): string 
 
   const exampleBlog = PATTERN_EXAMPLE_BLOGS[Math.floor(Math.random() * PATTERN_EXAMPLE_BLOGS.length)];
 
-  return `You are a real customer of Noida Spa in Noida. You write honest, personal blog posts about your experiences there for a wellness blog. You are NOT a marketer. You are a genuine person sharing genuine experiences.
+  return `You are a real customer of Escorts Hub Noida in Noida. You write honest, personal blog posts about your experiences there for a wellness blog. You are NOT a marketer. You are a genuine person sharing genuine experiences.
 
 ═══════════════════════════════════════
-Noida Spa — COMPLETE KNOWLEDGE BASE
+Escorts Hub Noida — COMPLETE KNOWLEDGE BASE
 ═══════════════════════════════════════
 
 BUSINESS:
-${JAIPUR_SPA_IDENTITY.name}
-Address: ${JAIPUR_SPA_IDENTITY.address}
-Phone: ${JAIPUR_SPA_IDENTITY.phone1}
-Hours: ${JAIPUR_SPA_IDENTITY.hours}
-Rating: ${JAIPUR_SPA_IDENTITY.google_rating} (${JAIPUR_SPA_IDENTITY.total_reviews} reviews)
+${NOIDA_SPA_IDENTITY.name}
+Address: ${NOIDA_SPA_IDENTITY.address}
+Phone: ${NOIDA_SPA_IDENTITY.phone1}
+Hours: ${NOIDA_SPA_IDENTITY.hours}
+Rating: ${NOIDA_SPA_IDENTITY.google_rating} (${NOIDA_SPA_IDENTITY.total_reviews} reviews)
 
 UNIQUE ADVANTAGES:
-${JAIPUR_SPA_IDENTITY.unique_selling_points.map(u => '• ' + u).join('\n')}
+${NOIDA_SPA_IDENTITY.unique_selling_points.map(u => '• ' + u).join('\n')}
 
 SERVICES & PRICES:
 ${servicesContext}
@@ -645,7 +480,7 @@ Requirements:
 - First person narrative ("I", "we", "my")
 - 3-4 H3 subheadings
 - Flowing paragraphs (no bullet points)
-- End with phone number +91 73576 78356
+- End with phone number +91 8218125815
 - Mention Sector 18 and Noida naturally throughout
 - Sound like a real person, not a business
 
@@ -656,18 +491,12 @@ Return ONLY the HTML content (p and h3 tags). No title, no markdown.`;
 // Picks the best keyword for any given day based on variety and coverage
 
 export const selectKeywordForDay = (dayIndex: number): { topic: string; keyword: string } => {
-  // Flatten all keywords into a single pool
   const allKeywords = [
-    ...TRENDING_KEYWORDS.near_me.map(k => ({ topic: `experience of finding ${k.replace('noida', '').replace('near me', '').trim()} in noida sector 18`, keyword: k })),
-    ...TRENDING_KEYWORDS.service_specific.map(k => ({ topic: `complete guide to ${k}`, keyword: k })),
-    ...TRENDING_KEYWORDS.local_area.map(k => ({ topic: `best spa option for people ${k.replace('spa', '').replace('near', 'near').trim()}`, keyword: k })),
-    ...TRENDING_KEYWORDS.problem_based.map(k => ({ topic: `how massage helped my ${k.replace('noida', '').trim()} at Noida Spa sector 18`, keyword: k })),
-    ...TRENDING_KEYWORDS.occasion_based.map(k => ({ topic: `our ${k.replace('noida', '').trim()} experience at Noida Spa`, keyword: k })),
-    ...TRENDING_KEYWORDS.time_based.map(k => ({ topic: `visiting Noida Spa for ${k.replace('noida', '').trim()}`, keyword: k })),
-    ...TRENDING_KEYWORDS.tourist.map(k => ({ topic: k, keyword: k })),
-    ...TRENDING_KEYWORDS.trust_based.map(k => ({ topic: `why purebliss is the most ${k.replace('noida', '').trim()}`, keyword: k })),
+    ...TRENDING_KEYWORDS.near_me.map(k => ({ topic: `verified guide to ${k}`, keyword: k })),
+    ...TRENDING_KEYWORDS.service_specific.map(k => ({ topic: `how to book ${k}`, keyword: k })),
+    ...TRENDING_KEYWORDS.local_area.map(k => ({ topic: `best options for ${k}`, keyword: k })),
+    ...TRENDING_KEYWORDS.trust_based.map(k => ({ topic: `safety protocols for ${k}`, keyword: k })),
   ];
 
-  // Rotate through all keywords — will take 100+ days to repeat
   return allKeywords[dayIndex % allKeywords.length];
 };

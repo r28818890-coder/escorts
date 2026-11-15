@@ -1,5 +1,5 @@
 # ============================================================
-# ESCORTS HUB JAIPUR — MILITARY-GRADE DEFENSIVE SECURITY & ANTI-DDOS .HTACCESS
+# ESCORTS HUB NOIDA — MILITARY-GRADE DEFENSIVE SECURITY & ANTI-DDOS .HTACCESS
 # ============================================================
 
 # Disable Directory Browsing & Indexing
@@ -16,7 +16,19 @@ LimitRequestBody 10485760
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 2. Block Malicious Vulnerability Scanners, DoS Scripts & Scrapers
+  # 2. Permanent 301 Redirects for Legacy Massage URLs to Call Girls
+  RewriteRule ^massages/?$ /call-girls [R=301,L]
+  RewriteRule ^massage/?$ /call-girls [R=301,L]
+  RewriteRule ^services/.*massage.*$ /call-girls [R=301,L]
+  RewriteRule ^services/.*spa.*$ /call-girls [R=301,L]
+  RewriteRule ^services/thai-massage/?$ /call-girls [R=301,L]
+  RewriteRule ^services/swedish-massage/?$ /call-girls [R=301,L]
+  RewriteRule ^services/deep-tissue/?$ /call-girls [R=301,L]
+  RewriteRule ^services/balinese-massage/?$ /call-girls [R=301,L]
+  RewriteRule ^services/couple-massage/?$ /call-girls [R=301,L]
+  RewriteRule ^services/full-body-massage/?$ /call-girls [R=301,L]
+
+  # 3. Block Malicious Vulnerability Scanners, DoS Scripts & Scrapers
   # (Allow legitimate search engine crawlers: Googlebot, Bingbot, DuckDuckBot, WhatsApp, Twitterbot)
   RewriteCond %{HTTP_USER_AGENT} !(googlebot|bingbot|duckduckbot|slurp|baiduspider|yandex|whatsapp|facebookexternalhit|twitterbot|pinterest|linkedinbot) [NC]
   RewriteCond %{HTTP_USER_AGENT} (sqlmap|nikto|wpscan|masscan|havij|acunetix|nessus|zgrab|nmap|morfeus|dirbuster|httrack|clshttp|loader|curl|wget|python-requests|urllib|scrapy|gocolly|java\/|libwww-perl|go-http-client) [NC]

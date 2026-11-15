@@ -1,0 +1,13 @@
+# 301 Permanent Redirects for Legacy Massage URLs
+/massages               /call-girls         301
+/massage                /call-girls         301
+/services/massages      /call-girls         301
+/services/thai-massage  /call-girls         301
+/services/swedish-massage /call-girls       301
+/services/deep-tissue   /call-girls         301
+/services/balinese-massage /call-girls      301
+/services/couple-massage /call-girls        301
+/services/full-body-massage /call-girls     301
+
+# SPA fallback
+/*                      /index.html         200

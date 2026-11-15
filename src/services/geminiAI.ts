@@ -97,7 +97,7 @@ STRICT RULES:
 - Tone: Conversational, warm, honest — NOT corporate or robotic
 - Naturally mention the keyword "${keyword}" 2-3 times throughout
 - Mention Noida Spa at Sindhi Camp, Noida naturally
-- Include the phone number +91 73576 78356 once at the end as a call to action
+- Include the phone number +91 8218125815 once at the end as a call to action
 - Use <h3> tags for subheadings and <p> tags for paragraphs
 - Do NOT use bullet points or lists — write in flowing paragraphs only
 - End with a natural recommendation to visit or call

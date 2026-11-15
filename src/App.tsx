@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Lenis from 'lenis';
 
 import Header from '@/components/layout/Header';
@@ -137,6 +137,17 @@ const AppContent: React.FC = () => {
 
                 {/* Protected Admin */}
                 <Route path="/admin" element={<AdminNotificationPanel />} />
+
+                {/* Legacy Massage Redirects to Call Girls */}
+                <Route path="/massages" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/massage" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/services/massages" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/services/thai-massage" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/services/swedish-massage" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/services/deep-tissue" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/services/balinese-massage" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/services/couple-massage" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/services/full-body-massage" element={<Navigate to="/call-girls" replace />} />
 
                 {/* 404 Catch-all */}
                 <Route path="*" element={<NotFoundPage />} />
