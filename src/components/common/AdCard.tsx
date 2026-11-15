@@ -38,7 +38,7 @@ export const AdCard: React.FC<AdCardProps> = ({ ad, featured = false }) => {
       />
 
       <div
-        className={`group relative bg-white rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between ${
+        className={`ad-card-item group relative bg-white rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between ${
           featured || ad.isVip
             ? 'border-amber-400/90 shadow-md ring-1 ring-amber-400/30 hover:shadow-amber-200/50 hover:shadow-xl'
             : 'border-slate-200/90 shadow-sm hover:border-amber-400/70 hover:shadow-lg'

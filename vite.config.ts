@@ -26,30 +26,29 @@ export default defineConfig(({ mode }) => {
       chunkSizeWarningLimit: 1000,
       minify: 'esbuild',
       cssMinify: 'esbuild',
-      target: 'es2015',
-      cssCodeSplit: true, // CSS ko bhi alag-alag files mein todega
+      target: 'esnext',
+      cssCodeSplit: true,
       rollupOptions: {
         output: {
-          // Intelligent Chunk Splitting
+          // Intelligent Performance Chunk Splitting
           manualChunks(id) {
             if (id.includes('node_modules')) {
-              // 1. React Core (Sabse pehle load hona chahiye)
+              // 1. React 19 Core
               if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
                 return 'react-vendor';
               }
-              // 2. Heavy Animations (Baad mein load ho sakti hain)
-              if (id.includes('framer-motion')) {
+              // 2. Animations (framer-motion, lenis)
+              if (id.includes('framer-motion') || id.includes('lenis')) {
                 return 'animation-vendor';
               }
-              // 3. Icons (Lucide heavy hota hai, ise alag rakha)
+              // 3. Lucide Icons
               if (id.includes('lucide-react')) {
                 return 'icons-vendor';
               }
-              // 4. Charts/Data Vis
-              if (id.includes('d3')) {
-                return 'd3-vendor';
+              // 4. Charts / Data visualization
+              if (id.includes('d3') || id.includes('recharts')) {
+                return 'chart-vendor';
               }
-              // 5. Baki sab libraries ek saath
               return 'vendor';
             }
           },

@@ -264,8 +264,8 @@ export const CategoryListingPage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2.5 sm:gap-3.5">
-            {filteredAds.map((ad) => (
-              <AdCard key={ad.id} ad={ad} featured={ad.isVip} />
+            {filteredAds.map((ad, idx) => (
+              <AdCard key={ad.id} ad={ad} featured={idx < 4} />
             ))}
           </div>
         </div>

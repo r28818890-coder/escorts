@@ -80,7 +80,7 @@ export const trackVisitorAndNotifyAdmin = (pathname: string): void => {
       timestamp: formattedTime,
       page: pathname || '/',
       device: deviceType,
-      city: 'Noida, Rajasthan',
+      city: 'Noida, Uttar Pradesh',
     };
 
     // Save to local logs
