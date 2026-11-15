@@ -146,7 +146,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-riya-01.webp",
       "/images/escorts-sector-18-noida-riya-01.webp"
     ],
     "alt": "Riya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
@@ -183,7 +182,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-ananya-01.webp",
       "/images/escorts-sector-18-noida-ananya-01.webp"
     ],
     "alt": "Ananya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
@@ -220,7 +218,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-pooja-01.webp",
       "/images/escorts-sector-18-noida-pooja-01.webp"
     ],
     "alt": "Pooja, verified VIP model for hotel outcall in Sector 18 Noida Noida",
@@ -257,7 +254,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-kavya-01.webp",
       "/images/escorts-sector-18-noida-kavya-01.webp"
     ],
     "alt": "Kavya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
@@ -294,7 +290,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-simran-01.webp",
       "/images/escorts-sector-18-noida-simran-01.webp"
     ],
     "alt": "Simran, verified VIP model for hotel outcall in Sector 18 Noida Noida",
@@ -331,7 +326,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-tanya-01.webp",
       "/images/escorts-sector-18-noida-tanya-01.webp"
     ],
     "alt": "Tanya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
@@ -368,7 +362,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-priya-01.webp",
       "/images/escorts-sector-62-noida-priya-01.webp"
     ],
     "alt": "Priya, verified VIP model for hotel outcall in Sector 62 Noida Noida",
@@ -405,7 +398,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-muskan-01.webp",
       "/images/escorts-sector-62-noida-muskan-01.webp"
     ],
     "alt": "Muskan, verified VIP model for hotel outcall in Sector 62 Noida Noida",
@@ -442,7 +434,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-neha-01.webp",
       "/images/escorts-sector-62-noida-neha-01.webp"
     ],
     "alt": "Neha, verified VIP model for hotel outcall in Sector 62 Noida Noida",
@@ -479,7 +470,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-meera-01.webp",
       "/images/escorts-sector-62-noida-meera-01.webp"
     ],
     "alt": "Meera, verified VIP model for hotel outcall in Sector 62 Noida Noida",
@@ -516,7 +506,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-shreya-01.webp",
       "/images/escorts-sector-62-noida-shreya-01.webp"
     ],
     "alt": "Shreya, verified VIP model for hotel outcall in Sector 62 Noida Noida",
@@ -553,7 +542,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-sneha-01.webp",
       "/images/escorts-sector-62-noida-sneha-01.webp"
     ],
     "alt": "Sneha, verified VIP model for hotel outcall in Sector 62 Noida Noida",
@@ -590,7 +578,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-aarohi-01.webp",
       "/images/escorts-sector-50-noida-aarohi-01.webp"
     ],
     "alt": "Aarohi, verified VIP model for hotel outcall in Sector 50 Noida Noida",
@@ -627,7 +614,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-natasha-01.webp",
       "/images/escorts-sector-50-noida-natasha-01.webp"
     ],
     "alt": "Natasha, verified VIP model for hotel outcall in Sector 50 Noida Noida",
@@ -664,7 +650,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-divya-01.webp",
       "/images/escorts-sector-50-noida-divya-01.webp"
     ],
     "alt": "Divya, verified VIP model for hotel outcall in Sector 50 Noida Noida",
@@ -701,7 +686,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-payal-01.webp",
       "/images/escorts-sector-50-noida-payal-01.webp"
     ],
     "alt": "Payal, verified VIP model for hotel outcall in Sector 50 Noida Noida",
@@ -738,7 +722,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-ishita-01.webp",
       "/images/escorts-sector-50-noida-ishita-01.webp"
     ],
     "alt": "Ishita, verified VIP model for hotel outcall in Sector 50 Noida Noida",
@@ -775,7 +758,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-zara-01.webp",
       "/images/escorts-sector-50-noida-zara-01.webp"
     ],
     "alt": "Zara, verified VIP model for hotel outcall in Sector 50 Noida Noida",
@@ -812,7 +794,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-alisha-01.webp",
       "/images/escorts-sector-137-noida-alisha-01.webp"
     ],
     "alt": "Alisha, verified VIP model for hotel outcall in Sector 137 Noida Noida",
@@ -849,7 +830,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-komal-01.webp",
       "/images/escorts-sector-137-noida-komal-01.webp"
     ],
     "alt": "Komal, verified VIP model for hotel outcall in Sector 137 Noida Noida",
@@ -886,7 +866,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-sonali-01.webp",
       "/images/escorts-sector-137-noida-sonali-01.webp"
     ],
     "alt": "Sonali, verified VIP model for hotel outcall in Sector 137 Noida Noida",
@@ -923,7 +902,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-tanvi-01.webp",
       "/images/escorts-sector-137-noida-tanvi-01.webp"
     ],
     "alt": "Tanvi, verified VIP model for hotel outcall in Sector 137 Noida Noida",
@@ -960,7 +938,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-akanksha-01.webp",
       "/images/escorts-sector-137-noida-akanksha-01.webp"
     ],
     "alt": "Akanksha, verified VIP model for hotel outcall in Sector 137 Noida Noida",
@@ -997,7 +974,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-bhavna-01.webp",
       "/images/escorts-sector-137-noida-bhavna-01.webp"
     ],
     "alt": "Bhavna, verified VIP model for hotel outcall in Sector 137 Noida Noida",
@@ -1034,7 +1010,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-chhavi-01.webp",
       "/images/escorts-sector-18-film-city-noida-chhavi-01.webp"
     ],
     "alt": "Chhavi, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
@@ -1071,7 +1046,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-deepika-01.webp",
       "/images/escorts-sector-18-film-city-noida-deepika-01.webp"
     ],
     "alt": "Deepika, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
@@ -1108,7 +1082,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-esha-01.webp",
       "/images/escorts-sector-18-film-city-noida-esha-01.webp"
     ],
     "alt": "Esha, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
@@ -1145,7 +1118,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-garima-01.webp",
       "/images/escorts-sector-18-film-city-noida-garima-01.webp"
     ],
     "alt": "Garima, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
@@ -1182,7 +1154,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-harshita-01.webp",
       "/images/escorts-sector-18-film-city-noida-harshita-01.webp"
     ],
     "alt": "Harshita, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
@@ -1219,7 +1190,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-isha-01.webp",
       "/images/escorts-sector-18-film-city-noida-isha-01.webp"
     ],
     "alt": "Isha, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
@@ -1256,7 +1226,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-jhanvi-01.webp",
       "/images/escorts-sector-76-78-noida-jhanvi-01.webp"
     ],
     "alt": "Jhanvi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
@@ -1293,7 +1262,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-khushi-01.webp",
       "/images/escorts-sector-76-78-noida-khushi-01.webp"
     ],
     "alt": "Khushi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
@@ -1330,7 +1298,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-lavanya-01.webp",
       "/images/escorts-sector-76-78-noida-lavanya-01.webp"
     ],
     "alt": "Lavanya, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
@@ -1367,7 +1334,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-mahima-01.webp",
       "/images/escorts-sector-76-78-noida-mahima-01.webp"
     ],
     "alt": "Mahima, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
@@ -1404,7 +1370,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-nidhi-01.webp",
       "/images/escorts-sector-76-78-noida-nidhi-01.webp"
     ],
     "alt": "Nidhi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
@@ -1441,7 +1406,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-ojasvi-01.webp",
       "/images/escorts-sector-76-78-noida-ojasvi-01.webp"
     ],
     "alt": "Ojasvi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
@@ -1478,7 +1442,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-prachi-01.webp",
       "/images/escorts-sector-128-noida-prachi-01.webp"
     ],
     "alt": "Prachi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
@@ -1515,7 +1478,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-radhika-01.webp",
       "/images/escorts-sector-128-noida-radhika-01.webp"
     ],
     "alt": "Radhika, verified VIP model for hotel outcall in Sector 128 Noida Noida",
@@ -1552,7 +1514,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-sakshi-01.webp",
       "/images/escorts-sector-128-noida-sakshi-01.webp"
     ],
     "alt": "Sakshi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
@@ -1589,7 +1550,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-trisha-01.webp",
       "/images/escorts-sector-128-noida-trisha-01.webp"
     ],
     "alt": "Trisha, verified VIP model for hotel outcall in Sector 128 Noida Noida",
@@ -1626,7 +1586,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-urvi-01.webp",
       "/images/escorts-sector-128-noida-urvi-01.webp"
     ],
     "alt": "Urvi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
@@ -1663,7 +1622,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-vaishnavi-01.webp",
       "/images/escorts-sector-128-noida-vaishnavi-01.webp"
     ],
     "alt": "Vaishnavi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
@@ -1700,7 +1658,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-yamini-01.webp",
       "/images/escorts-sector-142-noida-yamini-01.webp"
     ],
     "alt": "Yamini, verified VIP model for hotel outcall in Sector 142 Noida Noida",
@@ -1737,7 +1694,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-zoya-01.webp",
       "/images/escorts-sector-142-noida-zoya-01.webp"
     ],
     "alt": "Zoya, verified VIP model for hotel outcall in Sector 142 Noida Noida",
@@ -1774,7 +1730,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-avani-01.webp",
       "/images/escorts-sector-142-noida-avani-01.webp"
     ],
     "alt": "Avani, verified VIP model for hotel outcall in Sector 142 Noida Noida",
@@ -1811,7 +1766,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-barkha-01.webp",
       "/images/escorts-sector-142-noida-barkha-01.webp"
     ],
     "alt": "Barkha, verified VIP model for hotel outcall in Sector 142 Noida Noida",
@@ -1848,7 +1802,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-charu-01.webp",
       "/images/escorts-sector-142-noida-charu-01.webp"
     ],
     "alt": "Charu, verified VIP model for hotel outcall in Sector 142 Noida Noida",
@@ -1885,7 +1838,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-disha-01.webp",
       "/images/escorts-sector-142-noida-disha-01.webp"
     ],
     "alt": "Disha, verified VIP model for hotel outcall in Sector 142 Noida Noida",
@@ -1922,7 +1874,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-ekta-01.webp",
       "/images/escorts-pari-chowk-noida-ekta-01.webp"
     ],
     "alt": "Ekta, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
@@ -1959,7 +1910,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-falguni-01.webp",
       "/images/escorts-pari-chowk-noida-falguni-01.webp"
     ],
     "alt": "Falguni, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
@@ -1996,7 +1946,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-gauri-01.webp",
       "/images/escorts-pari-chowk-noida-gauri-01.webp"
     ],
     "alt": "Gauri, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
@@ -2033,7 +1982,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-hina-01.webp",
       "/images/escorts-pari-chowk-noida-hina-01.webp"
     ],
     "alt": "Hina, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
@@ -2070,7 +2018,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-inaya-01.webp",
       "/images/escorts-pari-chowk-noida-inaya-01.webp"
     ],
     "alt": "Inaya, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
@@ -2107,7 +2054,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-juhi-01.webp",
       "/images/escorts-pari-chowk-noida-juhi-01.webp"
     ],
     "alt": "Juhi, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
@@ -2144,7 +2090,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-kritika-01.webp",
       "/images/escorts-noida-extension-noida-kritika-01.webp"
     ],
     "alt": "Kritika, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
@@ -2181,7 +2126,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-lipika-01.webp",
       "/images/escorts-noida-extension-noida-lipika-01.webp"
     ],
     "alt": "Lipika, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
@@ -2218,7 +2162,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-mansi-01.webp",
       "/images/escorts-noida-extension-noida-mansi-01.webp"
     ],
     "alt": "Mansi, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
@@ -2255,7 +2198,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-navya-01.webp",
       "/images/escorts-noida-extension-noida-navya-01.webp"
     ],
     "alt": "Navya, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
@@ -2292,7 +2234,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-palak-01.webp",
       "/images/escorts-noida-extension-noida-palak-01.webp"
     ],
     "alt": "Palak, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
@@ -2329,7 +2270,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-rachna-01.webp",
       "/images/escorts-noida-extension-noida-rachna-01.webp"
     ],
     "alt": "Rachna, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
@@ -2366,7 +2306,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-sanya-01.webp",
       "/images/escorts-knowledge-park-noida-sanya-01.webp"
     ],
     "alt": "Sanya, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
@@ -2403,7 +2342,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-tara-01.webp",
       "/images/escorts-knowledge-park-noida-tara-01.webp"
     ],
     "alt": "Tara, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
@@ -2440,7 +2378,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-urvashi-01.webp",
       "/images/escorts-knowledge-park-noida-urvashi-01.webp"
     ],
     "alt": "Urvashi, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
@@ -2477,7 +2414,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-vidhi-01.webp",
       "/images/escorts-knowledge-park-noida-vidhi-01.webp"
     ],
     "alt": "Vidhi, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
@@ -2514,7 +2450,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-yukti-01.webp",
       "/images/escorts-knowledge-park-noida-yukti-01.webp"
     ],
     "alt": "Yukti, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
@@ -2551,7 +2486,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-aashi-01.webp",
       "/images/escorts-indirapuram-noida-aashi-01.webp"
     ],
     "alt": "Aashi, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
@@ -2588,7 +2522,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-binita-01.webp",
       "/images/escorts-indirapuram-noida-binita-01.webp"
     ],
     "alt": "Binita, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
@@ -2625,7 +2558,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-chetna-01.webp",
       "/images/escorts-indirapuram-noida-chetna-01.webp"
     ],
     "alt": "Chetna, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
@@ -2662,7 +2594,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-damini-01.webp",
       "/images/escorts-indirapuram-noida-damini-01.webp"
     ],
     "alt": "Damini, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
@@ -2699,7 +2630,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-eva-01.webp",
       "/images/escorts-indirapuram-noida-eva-01.webp"
     ],
     "alt": "Eva, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
@@ -2736,7 +2666,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-geet-01.webp",
       "/images/escorts-vaishali-noida-geet-01.webp"
     ],
     "alt": "Geet, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
@@ -2773,7 +2702,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-heena-01.webp",
       "/images/escorts-vaishali-noida-heena-01.webp"
     ],
     "alt": "Heena, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
@@ -2810,7 +2738,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-indu-01.webp",
       "/images/escorts-vaishali-noida-indu-01.webp"
     ],
     "alt": "Indu, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
@@ -2847,7 +2774,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-jyoti-01.webp",
       "/images/escorts-vaishali-noida-jyoti-01.webp"
     ],
     "alt": "Jyoti, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
@@ -2884,7 +2810,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-kanika-01.webp",
       "/images/escorts-vaishali-noida-kanika-01.webp"
     ],
     "alt": "Kanika, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
@@ -2921,7 +2846,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-lata-01.webp",
       "/images/escorts-vasundhara-noida-lata-01.webp"
     ],
     "alt": "Lata, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
@@ -2958,7 +2882,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-monika-01.webp",
       "/images/escorts-vasundhara-noida-monika-01.webp"
     ],
     "alt": "Monika, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
@@ -2995,7 +2918,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-nandini-01.webp",
       "/images/escorts-vasundhara-noida-nandini-01.webp"
     ],
     "alt": "Nandini, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
@@ -3032,7 +2954,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-parul-01.webp",
       "/images/escorts-vasundhara-noida-parul-01.webp"
     ],
     "alt": "Parul, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
@@ -3069,7 +2990,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-ritu-01.webp",
       "/images/escorts-vasundhara-noida-ritu-01.webp"
     ],
     "alt": "Ritu, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
@@ -3106,7 +3026,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-swati-01.webp",
       "/images/escorts-crossings-republik-noida-swati-01.webp"
     ],
     "alt": "Swati, verified VIP model for hotel outcall in Crossings Republik Noida",
@@ -3143,7 +3062,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-tanisha-01.webp",
       "/images/escorts-crossings-republik-noida-tanisha-01.webp"
     ],
     "alt": "Tanisha, verified VIP model for hotel outcall in Crossings Republik Noida",
@@ -3180,7 +3098,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-upasana-01.webp",
       "/images/escorts-crossings-republik-noida-upasana-01.webp"
     ],
     "alt": "Upasana, verified VIP model for hotel outcall in Crossings Republik Noida",
@@ -3217,7 +3134,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-vandana-01.webp",
       "/images/escorts-crossings-republik-noida-vandana-01.webp"
     ],
     "alt": "Vandana, verified VIP model for hotel outcall in Crossings Republik Noida",
@@ -3254,7 +3170,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-yashika-01.webp",
       "/images/escorts-crossings-republik-noida-yashika-01.webp"
     ],
     "alt": "Yashika, verified VIP model for hotel outcall in Crossings Republik Noida",
@@ -3291,7 +3206,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-aastha-01.webp",
       "/images/escorts-kaushambi-noida-aastha-01.webp"
     ],
     "alt": "Aastha, verified VIP model for hotel outcall in Kaushambi Noida",
@@ -3328,7 +3242,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-bani-01.webp",
       "/images/escorts-kaushambi-noida-bani-01.webp"
     ],
     "alt": "Bani, verified VIP model for hotel outcall in Kaushambi Noida",
@@ -3365,7 +3278,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-chahat-01.webp",
       "/images/escorts-kaushambi-noida-chahat-01.webp"
     ],
     "alt": "Chahat, verified VIP model for hotel outcall in Kaushambi Noida",
@@ -3402,7 +3314,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-devika-01.webp",
       "/images/escorts-kaushambi-noida-devika-01.webp"
     ],
     "alt": "Devika, verified VIP model for hotel outcall in Kaushambi Noida",
@@ -3439,7 +3350,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-farah-01.webp",
       "/images/escorts-kaushambi-noida-farah-01.webp"
     ],
     "alt": "Farah, verified VIP model for hotel outcall in Kaushambi Noida",
@@ -3476,7 +3386,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-gargi-01.webp",
       "/images/escorts-mayur-vihar-noida-gargi-01.webp"
     ],
     "alt": "Gargi, verified VIP model for hotel outcall in Mayur Vihar Noida",
@@ -3513,7 +3422,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-honey-01.webp",
       "/images/escorts-mayur-vihar-noida-honey-01.webp"
     ],
     "alt": "Honey, verified VIP model for hotel outcall in Mayur Vihar Noida",
@@ -3550,7 +3458,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-ira-01.webp",
       "/images/escorts-mayur-vihar-noida-ira-01.webp"
     ],
     "alt": "Ira, verified VIP model for hotel outcall in Mayur Vihar Noida",
@@ -3587,7 +3494,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-jaya-01.webp",
       "/images/escorts-mayur-vihar-noida-jaya-01.webp"
     ],
     "alt": "Jaya, verified VIP model for hotel outcall in Mayur Vihar Noida",
@@ -3624,7 +3530,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-kashish-01.webp",
       "/images/escorts-mayur-vihar-noida-kashish-01.webp"
     ],
     "alt": "Kashish, verified VIP model for hotel outcall in Mayur Vihar Noida",
@@ -3661,7 +3566,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-leena-01.webp",
       "/images/escorts-botanical-garden-noida-leena-01.webp"
     ],
     "alt": "Leena, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
@@ -3698,7 +3602,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-maya-01.webp",
       "/images/escorts-botanical-garden-noida-maya-01.webp"
     ],
     "alt": "Maya, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
@@ -3735,7 +3638,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-nikita-01.webp",
       "/images/escorts-botanical-garden-noida-nikita-01.webp"
     ],
     "alt": "Nikita, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
@@ -3772,7 +3674,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-poonam-01.webp",
       "/images/escorts-botanical-garden-noida-poonam-01.webp"
     ],
     "alt": "Poonam, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
@@ -3809,7 +3710,6 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-roshni-01.webp",
       "/images/escorts-botanical-garden-noida-roshni-01.webp"
     ],
     "alt": "Roshni, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",

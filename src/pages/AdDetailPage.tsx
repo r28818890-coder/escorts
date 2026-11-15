@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { 
   Phone, 
@@ -33,14 +33,21 @@ export const AdDetailPage: React.FC = () => {
 
   const allAds = [...userAds, ...INITIAL_CLASSIFIED_ADS];
   const ad = allAds.find((a) => a.slug === slug) || allAds[0];
-  const [selectedImage, setSelectedImage] = useState<string>(ad.images[0] || '/ecj-mark.svg');
+  const uniqueImages = Array.from(new Set(ad.images || []));
+  const [selectedImage, setSelectedImage] = useState<string>(uniqueImages[0] || '/ecj-mark.svg');
+
+  useEffect(() => {
+    if (uniqueImages.length > 0) {
+      setSelectedImage(uniqueImages[0]);
+    }
+  }, [ad.slug]);
 
   const whatsappUrl = `https://wa.me/${ad.whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(
     `Hello! I saw your verified profile on ${BRAND.name}: "${ad.title}". Please confirm your availability and meeting details in ${ad.locality}, ${ad.city || 'Noida'}.`
   )}`;
 
   return (
-    <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-6 pb-20">
+    <div key={ad.slug} className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-6 pb-20 page-enter">
       
       <LiveActivityToast />
 
@@ -148,10 +155,10 @@ export const AdDetailPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Multi-Photo Thumbnails */}
-              {ad.images && ad.images.length > 1 && (
+              {/* Multi-Photo Thumbnails (Only Rendered if Multiple Distinct Photos Exist) */}
+              {uniqueImages.length > 1 && (
                 <div className="flex items-center gap-2 overflow-x-auto pb-1">
-                  {ad.images.map((imgSrc, idx) => (
+                  {uniqueImages.map((imgSrc, idx) => (
                     <button
                       key={idx}
                       onClick={() => setSelectedImage(imgSrc)}
