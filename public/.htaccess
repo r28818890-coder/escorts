@@ -38,8 +38,9 @@ LimitRequestBody 10485760
   RewriteCond %{REQUEST_METHOD} ^(TRACE|DELETE|TRACK|DEBUG) [NC]
   RewriteRule .* - [F,L]
 
-  # 4. Protect Sensitive Files, Dotfiles, and Configuration Backups
+  # 4. Protect Sensitive Files, Dotfiles, and Configuration Backups (except public manifest.json)
   RewriteRule (^|/)\.(?!well-known) - [F,L]
+  RewriteCond %{REQUEST_URI} !manifest\.json$ [NC]
   RewriteRule \.(env|git|json|lock|bak|config|sql|tar|gz|zip|sh|log|md)$ - [F,L]
 
   # 5. SPA Client-Side Routing
