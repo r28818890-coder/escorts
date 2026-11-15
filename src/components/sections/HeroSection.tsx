@@ -40,11 +40,13 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="mb-8"
           >
-            <div className="w-24 h-24 mx-auto mb-6 rounded-full border-2 border-[#d6a33e]/70 overflow-hidden shadow-[0_0_30px_rgba(214,163,62,0.25)]">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-6 rounded-full border-2 border-purple-500/80 overflow-hidden shadow-[0_0_35px_rgba(168,85,247,0.4)] p-0.5 bg-slate-950">
               <img
                 src="/ecj-mark.svg"
-                alt="ECJ — We Noida Escorts Logo"
-                className="w-full h-full object-cover"
+                alt="Escorts Hub Noida Official Logo"
+                width={112}
+                height={112}
+                className="w-full h-full object-cover rounded-full"
                 loading="eager"
               />
             </div>

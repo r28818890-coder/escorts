@@ -189,7 +189,7 @@ export const NAVIGATION = {
       items: [
         { name: 'Call Girls & Escorts', path: '/call-girls' },
         { name: 'Massages & Spa', path: '/massages' },
-        { name: 'Male Escorts', path: '/male-escorts' },
+        { name: 'Russian Escorts', path: '/russian-escorts' },
         { name: 'Transsexual Dating', path: '/transsexual' },
         { name: 'Adult Meetings', path: '/adult-meetings' },
       ],

@@ -84,22 +84,22 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
     introText = `Discover top-rated wellness therapists and luxury spa sanctuaries in ${locName}. Escape corporate stress with signature rejuvenating therapies including authentic Thai acupressure, European Swedish relaxation, deep tissue muscle recovery, B2B oil therapy, and private couple spa suites equipped with hot hydro showers.`;
 
     landmarkHighlights = `Our featured wellness centers in ${locName} are strategically located near ${landmark}, offering serene private AC rooms, organic therapeutic essential oils, hospital-grade sanitization, and 24-hour appointment booking.`;
-  } else if (category.slug === 'male-escorts') {
+  } else if (category.slug === 'russian-escorts') {
     h1 = locality
-      ? `Male Escorts in ${locName} - Handsome Call Boys & Companions for Women`
-      : `Male Escorts in Noida - Handsome Call Boys & Fitness Companions for Women`;
+      ? `Russian Escorts in ${locName} - Elite VIP Foreign Models & Companions`
+      : `Russian Escorts in Noida - Elite VIP Foreign Models & Companions`;
 
     metaTitle = locality
-      ? `Male Escorts in ${locName} - Verified Call Boys & Companions | 100% Discreet`
-      : `Male Escorts in Noida - Verified Call Boys for Women & Couples | 24/7 Outcall`;
+      ? `Russian Escorts in ${locName} - Verified VIP Foreign Models | 24/7 Outcall`
+      : `Russian Escorts in Noida - Verified VIP Foreign Models | 24/7 Outcall`;
 
     metaDescription = locality
-      ? `Find handsome, educated male escorts and call boys in ${locName} near ${landmark}. 100% confidential, friendly, and respectful companions for women & couples.`
-      : `Verified male escorts and call boys in Noida. Handsome fitness models and companion services for female clients and couples in Sector 18, Sector 62 & Greater Noida.`;
+      ? `Book verified Russian and foreign escorts in ${locName} near ${landmark}. 100% real photos, stunning international models, and fast 20-min hotel outcall.`
+      : `Verified Russian escort services in Noida & NCR. Stunning international models and VIP foreign companions in Sector 18, Sector 62, Expressway & Greater Noida.`;
 
-    introText = `Connect with handsome, well-groomed, and respectful male escorts and call boys in ${locName}. Catering exclusively to single women, female travelers, and open-minded couples looking for discreet companionship, soothing body wellness, and polite dinner dates.`;
+    introText = `Discover elite, breathtaking Russian escorts and international models in ${locName}. Offering world-class companionship, refined etiquette, and unforgettable luxury for high-profile gentlemen and 5-star hotel visits.`;
 
-    landmarkHighlights = `Male companions in ${locName} are available for private hotel outcalls near ${landmark}, offering complete confidentiality and respectful personal care.`;
+    landmarkHighlights = `Russian VIP models in ${locName} are available for 24/7 private hotel outcalls near ${landmark}, offering complete confidentiality and 20-minute arrival.`;
   } else if (category.slug === 'transsexual') {
     h1 = locality
       ? `Transsexual & TS Escorts in ${locName} - Shemale & Ladyboy Dating`

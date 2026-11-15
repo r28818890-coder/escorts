@@ -34,12 +34,12 @@ const CATEGORIES = [
     desc: 'Relaxing luxury Thai massage and full body spa in Noida. Doorstep hotel outcall and sanitized suites. Verified companion, direct outcall. Call 8218125815.'
   },
   { 
-    slug: 'male-escorts', 
-    name: 'Male Escorts', 
-    keyword: 'male escorts, handsome fitness companions and call boys for women', 
-    h1: 'Male Escorts in Noida',
-    title: 'Male Escorts in Noida | VIP Companions for Women',
-    desc: 'Discreet male escorts and handsome companions in Noida for women and couples. 100% verified gentlemen, verified companion, 20-min arrival. Call 8218125815.'
+    slug: 'russian-escorts', 
+    name: 'Russian Escorts', 
+    keyword: 'Russian escorts, VIP foreign models and elite international companions', 
+    h1: 'Russian Escorts in Noida',
+    title: 'Russian Escorts in Noida | VIP Foreign Models & Companions',
+    desc: 'Verified Russian escorts and foreign VIP models in Noida. Doorstep 24/7 hotel outcall, 100% real photos, 20-min arrival. Call 8218125815 now.'
   },
   { 
     slug: 'transsexual', 

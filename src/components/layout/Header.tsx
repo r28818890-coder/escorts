@@ -103,15 +103,18 @@ export const Header: React.FC<HeaderProps> = () => {
           <Link
             to="/"
             onClick={handleLogoDoubleTap}
-            className="flex items-center gap-2 z-50 group min-w-0 select-none cursor-pointer"
+            className="flex items-center gap-2 z-50 group min-w-0 select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg p-0.5"
             title="Double-tap for Secret Admin Mode"
+            aria-label="Escorts Hub Noida - Home"
           >
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-amber-500/80 overflow-hidden bg-slate-950 p-0.5 group-hover:scale-105 transition-transform shrink-0 shadow-sm">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-purple-500/80 overflow-hidden bg-slate-950 p-0.5 group-hover:scale-105 transition-transform shrink-0 shadow-[0_0_12px_rgba(168,85,247,0.35)]">
               <img
                 src="/ecj-mark.svg"
-                alt="Escorts Hub Noida logo"
-                width="36"
-                height="36"
+                alt="Escorts Hub Noida official crest logo"
+                width={36}
+                height={36}
+                decoding="async"
+                fetchPriority="high"
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
@@ -266,8 +269,8 @@ export const Header: React.FC<HeaderProps> = () => {
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full overflow-hidden border border-amber-500/70 bg-slate-900 p-0.5">
-                    <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width="32" height="32" className="w-full h-full object-cover rounded-full" />
+                  <div className="w-8 h-8 rounded-full overflow-hidden border border-purple-500/80 bg-slate-900 p-0.5 shadow-[0_0_10px_rgba(168,85,247,0.3)]">
+                    <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width={32} height={32} className="w-full h-full object-cover rounded-full" />
                   </div>
                   <span className="font-black text-sm text-slate-900">Escorts Hub Noida</span>
                 </div>

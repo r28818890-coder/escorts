@@ -65,7 +65,7 @@ const SchemaReviewMarkup: React.FC = () => {
             '@type': 'Offer',
             'itemOffered': {
               '@type': 'Service',
-              'name': 'Male Escorts & Call Boys Noida',
+              'name': 'Russian & VIP Escorts Noida',
               'description': 'Verified male escort directory and fitness companion listings in Noida & Greater Noida.',
             },
           },

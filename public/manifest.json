@@ -3,10 +3,28 @@
   "short_name": "EscortsHub",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fffaf0",
-  "theme_color": "#b8872f",
+  "background_color": "#0a0414",
+  "theme_color": "#4c158d",
   "description": "Verified VIP escorts, call girls, and luxury companions directory in Noida & NCR.",
   "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/icon-192.png",
       "sizes": "192x192",

@@ -30,7 +30,7 @@ const topLocalities = [
 const categories = [
   { name: 'Call Girls & VIP Escorts', slug: 'call-girls' },
   { name: 'Luxury Massages & Spa', slug: 'massages' },
-  { name: 'Male Escorts & Call Boys', slug: 'male-escorts' },
+  { name: 'Russian & VIP Escorts', slug: 'russian-escorts' },
   { name: 'Transsexual & TS Dating', slug: 'transsexual' },
   { name: 'Adult Meetings & NSA', slug: 'adult-meetings' }
 ];
@@ -309,7 +309,7 @@ async function dispatchSearchEnginePings() {
       DOMAIN,
       `${DOMAIN}/call-girls`,
       `${DOMAIN}/massages`,
-      `${DOMAIN}/male-escorts`,
+      `${DOMAIN}/russian-escorts`,
       `${DOMAIN}/transsexual`,
       `${DOMAIN}/adult-meetings`,
       ...topLocalities.map(l => `${DOMAIN}/call-girls/${l.slug}`),
