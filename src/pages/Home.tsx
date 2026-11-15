@@ -247,15 +247,33 @@ export const Home: React.FC = () => {
       />
 
       {/* ── 1. HERO SECTION (Targeting Primary Keyword: "escorts in noida") ── */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white pt-10 pb-12 px-3 sm:px-6 border-b border-amber-500/20">
+      <section className="relative overflow-hidden bg-slate-950 text-white pt-12 pb-14 px-3 sm:px-6 border-b border-amber-500/20">
         
+        {/* Alluring Hot Model Background Image with Cinematic Vignette Overlay */}
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
+          <img
+            src="/images/hero-hot-model-bg.webp"
+            alt="VIP Escorts in Noida verified companions"
+            width={1920}
+            height={1080}
+            className="w-full h-full object-cover object-center opacity-40 filter brightness-90 contrast-110 transform scale-105"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
+          {/* Multi-layered dark gradient overlays ensuring high WCAG AA text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/95 via-slate-950/60 to-slate-950" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/25 to-slate-950/90" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(168,85,247,0.18),_transparent_70%)]" />
+        </div>
+
         {/* Ambient Backlight Glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-6xl mx-auto text-center z-10">
           
           {/* Top Radar & Trust Badge */}
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-amber-500/40 bg-amber-500/10 shadow-inner">
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-amber-500/40 bg-amber-500/10 backdrop-blur-md shadow-inner">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
             <span className="text-[11px] sm:text-xs font-black uppercase tracking-widest text-amber-300">
               Escorts Hub Noida • Verified 24/7 Dispatch
@@ -266,12 +284,12 @@ export const Home: React.FC = () => {
           </div>
 
           {/* EXACTLY ONE H1: Contains primary keyword "escorts in noida" */}
-          <h1 className="font-black text-3xl sm:text-5xl md:text-6xl tracking-tight leading-tight mb-4">
+          <h1 className="font-black text-3xl sm:text-5xl md:text-6xl tracking-tight leading-tight mb-4 drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
             Escorts in Noida
           </h1>
 
           {/* 2-line subhead naming Noida landmarks */}
-          <p className="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto mb-6 leading-relaxed font-normal">
+          <p className="text-sm sm:text-base text-slate-200 max-w-3xl mx-auto mb-6 leading-relaxed font-normal drop-shadow">
             Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with complete privacy.
           </p>
 

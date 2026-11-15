@@ -103,32 +103,32 @@ export const Header: React.FC<HeaderProps> = () => {
           <Link
             to="/"
             onClick={handleLogoDoubleTap}
-            className="flex items-center gap-2 z-50 group min-w-0 select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg p-0.5"
+            className="flex items-center gap-2.5 z-50 group min-w-0 select-none cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 rounded-lg p-0.5"
             title="Double-tap for Secret Admin Mode"
             aria-label="Escorts Hub Noida - Home"
           >
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-purple-500/80 overflow-hidden bg-slate-950 p-0.5 group-hover:scale-105 transition-transform shrink-0 shadow-[0_0_12px_rgba(168,85,247,0.35)]">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 border border-amber-500/70 p-1 group-hover:scale-105 group-hover:border-amber-400 transition-all shrink-0 shadow-[0_0_15px_rgba(245,158,11,0.25)] flex items-center justify-center">
               <img
                 src="/ecj-mark.svg"
                 alt="Escorts Hub Noida official crest logo"
-                width={36}
-                height={36}
+                width={40}
+                height={40}
                 decoding="async"
                 fetchPriority="high"
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
             <div className="flex flex-col min-w-0">
-              <div className="flex items-center gap-1">
-                <span className="font-black text-slate-900 tracking-tight text-sm sm:text-base leading-none group-hover:text-amber-600 transition-colors truncate">
-                  Escorts Hub Noida
+              <div className="flex items-center gap-1.5">
+                <span className="font-black text-slate-950 tracking-tight text-base sm:text-lg leading-none group-hover:text-amber-600 transition-colors truncate">
+                  Escorts Hub <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-rose-600 to-amber-600">Noida</span>
                 </span>
-                <span className="bg-rose-600 text-white text-[8px] font-black uppercase px-1 py-0.2 rounded shrink-0">
+                <span className="bg-gradient-to-r from-rose-600 to-red-600 text-white text-[8px] font-black uppercase px-1.5 py-0.2 rounded-full shrink-0 shadow-sm">
                   18+
                 </span>
               </div>
-              <span className="text-[8px] sm:text-[9px] font-bold tracking-widest text-slate-500 uppercase mt-0.5 flex items-center gap-1">
-                <MapPin size={9} className="text-amber-600 shrink-0" /> NOIDA & NCR VIP COMPANIONS
+              <span className="text-[8px] sm:text-[9px] font-bold tracking-widest text-amber-700 uppercase mt-0.5 flex items-center gap-1">
+                <MapPin size={9} className="text-amber-600 shrink-0" /> NOIDA &amp; NCR VIP COMPANIONS
               </span>
             </div>
           </Link>
@@ -211,8 +211,8 @@ export const Header: React.FC<HeaderProps> = () => {
             <Link to="/call-girls" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Call Girls
             </Link>
-            <Link to="/massages" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
-              Massages
+            <Link to="/russian-escorts" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
+              Russian Escorts
             </Link>
             <Link to="/adult-meetings" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Adult Meetings
@@ -268,11 +268,11 @@ export const Header: React.FC<HeaderProps> = () => {
             <div>
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full overflow-hidden border border-purple-500/80 bg-slate-900 p-0.5 shadow-[0_0_10px_rgba(168,85,247,0.3)]">
-                    <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width={32} height={32} className="w-full h-full object-cover rounded-full" />
+                <div className="flex items-center gap-2.5">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 border border-amber-500/70 p-1 shadow-[0_0_10px_rgba(245,158,11,0.25)] flex items-center justify-center">
+                    <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width={36} height={36} className="w-full h-full object-contain rounded-lg" />
                   </div>
-                  <span className="font-black text-sm text-slate-900">Escorts Hub Noida</span>
+                  <span className="font-black text-sm text-slate-950">Escorts Hub <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-amber-600">Noida</span></span>
                 </div>
                 <button
                   type="button"

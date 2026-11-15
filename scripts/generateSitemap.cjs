@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DOMAIN = 'https://wenoidaescorts.com';
-const categories = ['massages', 'call-girls', 'russian-escorts', 'transsexual', 'adult-meetings'];
+const categories = ['call-girls', 'russian-escorts', 'transsexual', 'adult-meetings'];
 const localities = [
   'sector-18', 'sector-62', 'sector-50', 'sector-137', 'sector-18-film-city',
   'sector-76-78', 'sector-128', 'sector-142', 'pari-chowk', 'noida-extension',
@@ -19,14 +19,15 @@ const add = (route, priority, changefreq) => urls.set(`${DOMAIN}/${route}`.repla
   ['faq', '0.8', 'weekly'], ['safety-guide', '0.8', 'weekly'],
   ['noida-areas', '0.85', 'weekly'],
   ['privacy', '0.4', 'monthly'], ['terms', '0.4', 'monthly'], ['refund', '0.4', 'monthly'],
-  ['blog', '0.85', 'weekly']
+  ['blog', '0.85', 'daily']
 ].forEach(([route, priority, changefreq]) => add(route, priority, changefreq));
 
 const { BLOGS } = require('./blogData.cjs');
-BLOGS.forEach((blog) => add(`blog/${blog.slug}`, '0.75', 'monthly'));
+// Add all scheduled high-ranking blog URLs to sitemap with high priority
+BLOGS.forEach((blog) => add(`blog/${blog.slug}`, '0.85', 'daily'));
 
 categories.forEach((category) => {
-  add(category, category === 'massages' || category === 'call-girls' ? '0.95' : '0.8', 'daily');
+  add(category, category === 'call-girls' ? '0.95' : '0.85', 'daily');
   localities.forEach((locality) => add(`${category}/${locality}`, '0.85', 'daily'));
 });
 

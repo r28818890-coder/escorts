@@ -123,25 +123,25 @@ const WhatsAppAutomation: React.FC<WhatsAppAutomationProps> = ({
           {isVisible && (
             <div className="absolute left-full top-1/2 -translate-y-1/2 bg-white rounded-lg shadow-xl p-2 ml-2 min-w-[240px]">
               <button
-                onClick={() => handleQuickMessage('Hello! I would like to book a Thai Massage session.')}
+                onClick={() => handleQuickMessage('Hello! I would like to book a verified VIP escort in Noida.')}
                 className="block w-full text-left px-3 py-2 hover:bg-gray-100 rounded text-sm"
               >
-                 Thai Massage Booking
+                 VIP Escorts Booking
               </button>
               <button
-                onClick={() => handleQuickMessage('Hello! I would like to book a Couple Massage experience.')}
+                onClick={() => handleQuickMessage('Hello! I would like to book a 24/7 Hotel Outcall companion.')}
                 className="block w-full text-left px-3 py-2 hover:bg-gray-100 rounded text-sm"
               >
-                 Couple Massage
+                 Hotel Outcall
               </button>
               <button
-                onClick={() => handleQuickMessage('Hello! I want an Aroma Therapy session at Noida Spa.')}
+                onClick={() => handleQuickMessage('Hello! I want details on Russian & foreign models in Noida.')}
                 className="block w-full text-left px-3 py-2 hover:bg-gray-100 rounded text-sm"
               >
-                 Aroma Therapy
+                 Russian Escorts
               </button>
               <button
-                onClick={() => handleQuickMessage('Please call me to confirm my appointment.')}
+                onClick={() => handleQuickMessage('Please call me to confirm companion availability.')}
                 className="block w-full text-left px-3 py-2 hover:bg-gray-100 rounded text-sm"
               >
                  Request Callback
@@ -182,10 +182,10 @@ const WhatsAppAutomation: React.FC<WhatsAppAutomationProps> = ({
                 <p className="text-sm font-medium text-gray-700 mb-2">Quick Messages:</p>
                 <div className="grid grid-cols-2 gap-2">
                   {[
-                    'I want to book a Thai Massage session.',
-                    'Please send details for Couple Massage.',
-                    'Tell me about your Aroma Therapy service.',
-                    'Schedule a private spa appointment.'
+                    'I want to book a VIP Escort in Noida.',
+                    'Please send details for Hotel Outcall.',
+                    'Tell me about Russian & foreign models.',
+                    'Schedule a private companion visit.'
                   ].map((template, index) => (
                     <button
                       key={index}

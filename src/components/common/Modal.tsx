@@ -11,7 +11,7 @@ const Modal: React.FC = () => {
     name: '',
     mobile: '',
     date: '',
-    service: 'Thai Massage',
+    service: 'VIP Hotel Outcall',
     requests: '',
   });
 
@@ -58,7 +58,7 @@ const Modal: React.FC = () => {
         setTimeout(() => {
           handleClose();
           setStatus('idle');
-          setFormData({ name: '', mobile: '', date: '', service: 'Thai Massage', requests: '' });
+          setFormData({ name: '', mobile: '', date: '', service: 'VIP Hotel Outcall', requests: '' });
         }, 3000);
       } else {
         setStatus('error');
@@ -70,7 +70,7 @@ const Modal: React.FC = () => {
       setTimeout(() => {
         handleClose();
         setStatus('idle');
-        setFormData({ name: '', mobile: '', date: '', service: 'Thai Massage', requests: '' });
+        setFormData({ name: '', mobile: '', date: '', service: 'VIP Hotel Outcall', requests: '' });
       }, 3000);
     }
   };
@@ -202,13 +202,13 @@ const Modal: React.FC = () => {
                         onChange={(e) => setFormData(prev => ({ ...prev, service: e.target.value }))}
                         className="w-full bg-white/5 border border-white/10 text-white rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-[#e11d48] focus:bg-white/10 transition-colors appearance-none"
                       >
-                        <option value="Thai Massage" className="bg-[#111111]">Thai Massage</option>
-                        <option value="Swedish Massage" className="bg-[#111111]">Swedish Massage</option>
-                        <option value="Deep Tissue Massage" className="bg-[#111111]">Deep Tissue Massage</option>
-                        <option value="Couple Massage" className="bg-[#111111]">Couple Massage</option>
-                        <option value="Aroma Therapy" className="bg-[#111111]">Aroma Therapy</option>
-                        <option value="Body Scrub" className="bg-[#111111]">Body Scrub</option>
-                        <option value="Not Sure" className="bg-[#111111]">Not Sure (Decide at Spa)</option>
+                        <option value="VIP Hotel Outcall" className="bg-[#111111]">VIP Hotel Outcall</option>
+                        <option value="Private In-Call" className="bg-[#111111]">Private In-Call</option>
+                        <option value="Russian Companion" className="bg-[#111111]">Russian Companion</option>
+                        <option value="Dinner & Social Date" className="bg-[#111111]">Dinner & Social Date</option>
+                        <option value="Celebrity Escort Model" className="bg-[#111111]">Celebrity Escort Model</option>
+                        <option value="Full Night Stay" className="bg-[#111111]">Full Night Stay</option>
+                        <option value="Not Sure" className="bg-[#111111]">Not Sure (Inquire via WhatsApp)</option>
                       </select>
                     </div>
 

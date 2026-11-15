@@ -42,7 +42,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
     localitySlug: 'sector-18',
     phone: CONTACT.phone,
     whatsapp: CONTACT.whatsapp1,
-    services: 'Hotel Outcall, Private In-Call, Thai Massage, Dinner Date',
+    services: 'Hotel Outcall, Private In-Call, VIP Escort, Dinner Date',
     description: 'Verified independent model available for pleasant companionship and relaxing meetings in Noida & NCR. Real photos and prompt WhatsApp response.',
     age: '23',
     photoUrl: '/images/escorts-sector-18-noida-riya-01.webp',

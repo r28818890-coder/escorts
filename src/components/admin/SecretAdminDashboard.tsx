@@ -17,8 +17,13 @@ import {
   Bell,
   BellOff,
   Volume2,
-  Send
+  Send,
+  Sparkles,
+  Globe,
+  FileText,
+  Link2
 } from 'lucide-react';
+import { getPublishingMetrics, getLiveBacklinks } from '@/services/autoPublishEngine';
 
 interface StatsSummary {
   totalVisits: number;
@@ -329,7 +334,7 @@ export const SecretAdminDashboard: React.FC<SecretAdminDashboardProps> = ({ isOp
         { page: '/call-girls', count: Math.floor(baseVisits * 0.24) },
         { page: '/sindhi-camp', count: Math.floor(baseVisits * 0.15) },
         { page: '/vaishali-nagar', count: Math.floor(baseVisits * 0.10) },
-        { page: '/massages', count: Math.floor(baseVisits * 0.07) }
+        { page: '/russian-escorts', count: Math.floor(baseVisits * 0.07) }
       ],
       timeline: [
         { date: 'Today', displayDate: 'Today', visits: baseVisits, unique: Math.floor(baseVisits * 0.74), whatsapp: totalWA, calls: baseCalls }
@@ -708,6 +713,86 @@ export const SecretAdminDashboard: React.FC<SecretAdminDashboardProps> = ({ isOp
               </div>
 
             </div>
+
+            {/* ── 6. Automated SEO Engine: Blogs & Daily Backlinks Status ── */}
+            {(() => {
+              const metrics = getPublishingMetrics();
+              const liveBacklinks = getLiveBacklinks().slice(0, 6);
+              return (
+                <div className="bg-slate-900/90 border border-amber-500/30 rounded-xl p-4 space-y-3">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800 pb-2.5">
+                    <div className="flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400">
+                        <Sparkles size={14} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xs uppercase text-amber-400 tracking-wider flex items-center gap-1.5">
+                          Automated Content &amp; Backlink Syndication Engine
+                        </h4>
+                        <span className="text-[10px] text-slate-400">
+                          Topics: Call Girl Noida &amp; Escorts Service Noida • 2x Daily Auto-Release (6 AM &amp; 7 PM)
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 text-[10px]">
+                      <span className="bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 px-2 py-0.5 rounded font-bold">
+                        {metrics.liveBlogsCount} Blogs Live
+                      </span>
+                      <span className="bg-amber-500/20 text-amber-400 border border-amber-500/40 px-2 py-0.5 rounded font-bold">
+                        {metrics.backlinkStats.liveCount} Backlinks Live
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Summary Grid */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                    <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+                      <span className="text-[10px] text-slate-400 block">Total Scheduled</span>
+                      <strong className="text-sm text-white">{metrics.totalScheduledBlogs} Blogs</strong>
+                      <span className="text-[9px] text-emerald-400 block mt-0.5">10 Live Today • 120 Next 60 Days</span>
+                    </div>
+                    <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+                      <span className="text-[10px] text-slate-400 block">Auto-Live Cadence</span>
+                      <strong className="text-sm text-amber-400">2 Blogs / Day</strong>
+                      <span className="text-[9px] text-slate-400 block mt-0.5">Morning 6 AM &amp; Night 7 PM</span>
+                    </div>
+                    <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+                      <span className="text-[10px] text-slate-400 block">Backlinks Schedule</span>
+                      <strong className="text-sm text-indigo-400">{metrics.backlinkStats.scheduledTotal} Total</strong>
+                      <span className="text-[9px] text-slate-400 block mt-0.5">15 Auto-Live Daily (DA ~{metrics.backlinkStats.avgDa})</span>
+                    </div>
+                    <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-800">
+                      <span className="text-[10px] text-slate-400 block">Next Scheduled Release</span>
+                      <strong className="text-xs text-rose-400 truncate block">{metrics.nextSlot?.slotDate || 'Tomorrow'} 6:00 AM</strong>
+                      <span className="text-[9px] text-slate-400 block truncate">{metrics.nextSlot?.title || 'Next Scheduled Blog'}</span>
+                    </div>
+                  </div>
+
+                  {/* Live Backlink Citations Feed */}
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1.5 flex items-center gap-1">
+                      <Link2 size={11} className="text-indigo-400" /> Active High-DA Backlink Citations ({metrics.backlinkStats.liveCount} Live Today)
+                    </span>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 max-h-36 overflow-y-auto custom-scrollbar pr-1">
+                      {liveBacklinks.map((bl) => (
+                        <div key={bl.id} className="text-[10px] p-2 rounded bg-slate-950 border border-slate-800/80 flex items-center justify-between">
+                          <div className="truncate mr-2">
+                            <span className="text-indigo-400 font-mono font-bold">[{bl.domain}]</span>{' '}
+                            <span className="text-slate-200 font-semibold">"{bl.anchorText}"</span>
+                          </div>
+                          <div className="flex items-center gap-1.5 shrink-0">
+                            <span className="bg-slate-800 text-slate-300 px-1.5 py-0.2 rounded font-mono text-[9px]">
+                              DA {bl.domainAuthority}
+                            </span>
+                            <span className="text-emerald-400 text-[9px] font-bold">LIVE</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
 
             {/* Footer Status */}
             <div className="flex items-center justify-between text-[10px] text-slate-500 pt-1 border-t border-slate-900">

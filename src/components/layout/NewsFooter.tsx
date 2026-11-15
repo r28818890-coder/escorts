@@ -23,8 +23,8 @@ export const NewsFooter: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-10 border-b border-slate-800">
           <div className="lg:col-span-5 space-y-3.5">
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-full border border-purple-500/80 bg-slate-900 p-0.5 shadow-[0_0_12px_rgba(168,85,247,0.35)]">
-                <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width={36} height={36} className="w-full h-full object-cover rounded-full" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 border border-amber-500/70 p-1 shadow-[0_0_12px_rgba(245,158,11,0.25)] flex items-center justify-center">
+                <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width={40} height={40} className="w-full h-full object-contain rounded-lg" />
               </div>
               <div>
                 <span className="font-black text-lg text-white tracking-wide">

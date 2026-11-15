@@ -1,16 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Clock, Tag, Share2, Facebook, Twitter, Linkedin, Phone, MessageCircle } from 'lucide-react';
-import { BLOG_POSTS } from '@/pages/Insights';
+import { ArrowLeft, Clock, Tag, Share2, Facebook, Twitter, Linkedin, Phone, MessageCircle, Calendar } from 'lucide-react';
 import { BRAND, CONTACT } from '@/config/site';
 import SEO from '@/components/common/SEO';
 import NotFoundPage from '@/pages/NotFoundPage';
+import { getLiveBlogBySlug, getLiveBlogs } from '@/services/autoPublishEngine';
 
 const PostDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   
-  const post = BLOG_POSTS.find(p => p.slug === id);
+  const post = useMemo(() => {
+    if (!id) return undefined;
+    return getLiveBlogBySlug(id);
+  }, [id]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,7 +26,8 @@ const PostDetail: React.FC = () => {
   const currentUrl = window.location.href;
 
   const getRelatedPosts = () => {
-    return BLOG_POSTS.filter(p => post.relatedPosts?.includes(p.slug));
+    const live = getLiveBlogs();
+    return live.filter(p => p.slug !== post.slug && (post.relatedPosts?.includes(p.slug) || p.category === post.category)).slice(0, 3);
   };
 
   return (

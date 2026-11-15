@@ -1,3 +1,5 @@
+import { getLiveBacklinks, getBacklinkStats } from '@/services/autoPublishEngine';
+
 export interface BacklinkOpportunity {
   domain: string;
   type: 'local_directory' | 'travel_blog' | 'guest_post' | 'citation';
@@ -8,13 +10,15 @@ export interface BacklinkOpportunity {
 
 /**
  * 10. Backlink AI Engine
- * Identifies high-authority local backlink opportunities and citation sources.
+ * Manages daily automated high-authority backlinks and citation syndication.
  */
 export const runBacklinkIntelligenceAudit = (): BacklinkOpportunity[] => {
-  return [
-    { domain: 'RajasthanTourism.gov.in', type: 'local_directory', authorityScore: 84, status: 'Active Citation', actionRequired: 'Verified NAP consistency for Sindhi Camp Noida.' },
-    { domain: 'Tripadvisor.in', type: 'local_directory', authorityScore: 92, status: 'Verified Listing', actionRequired: 'Update 2026 Spa Suite photos.' },
-    { domain: 'JustDial Noida', type: 'citation', authorityScore: 78, status: 'Active Citation', actionRequired: 'Verified 24/7 opening hours listing.' },
-    { domain: 'NoidaTravelGuide.com', type: 'guest_post', authorityScore: 65, status: 'Opportunity Found', actionRequired: 'Submit guest article on "Top 5 Relaxation Spas near Sindhi Camp".' },
-  ];
+  const live = getLiveBacklinks();
+  return live.slice(0, 15).map((bl) => ({
+    domain: bl.domain,
+    type: bl.category === 'Directory' ? 'local_directory' : 'citation',
+    authorityScore: bl.domainAuthority,
+    status: 'Active Indexed Citation',
+    actionRequired: `Anchor: "${bl.anchorText}" pointing to ${bl.targetPage}`
+  }));
 };

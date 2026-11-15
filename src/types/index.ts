@@ -32,7 +32,14 @@ export type PageId =
   | 'refund'
   | 'faq'
   | 'about'
-  // Spa Services
+  // Escort Services
+  | 'vip-hotel-outcall'
+  | 'private-incall'
+  | 'russian-escorts'
+  | 'dinner-dates'
+  | 'celebrity-models'
+  | 'full-night-stay'
+  // Spa / Legacy Services (kept for backward-compatible routing)
   | 'thai-massage'
   | 'swedish-massage'
   | 'deep-tissue-massage'
@@ -52,7 +59,8 @@ export type PageId =
   | 'sector-128'
   | 'sector-142'
   | 'pari-chowk'
-  | 'noida-extension';
+  | 'noida-extension'
+  | (string & {});
 
 // ── Content Page Data ─────────────────────────────────────────
 export interface GuideSection {
@@ -132,6 +140,23 @@ export interface BlogPost {
   image?: string;
   relatedPosts: string[];
   keywords: string[];
+  scheduledPublishTime?: string;
+  author?: string;
+  primaryKeyword?: string;
+}
+
+export interface BacklinkRecord {
+  id: string;
+  domain: string;
+  domainAuthority: number;
+  anchorText: string;
+  targetUrl: string;
+  targetPage: string;
+  category: 'Directory' | 'Guest Citation' | 'Web 2.0' | 'City Portal' | 'Forum Profile' | 'Review Hub';
+  publishTime: string;
+  dateDisplay: string;
+  status: 'Live' | 'Indexed' | 'Scheduled';
+  contextSnippet: string;
 }
 
 export interface BookingFormData {

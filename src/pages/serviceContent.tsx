@@ -4,6 +4,49 @@ import { PageData } from '@/types';
 const createPage = (data: PageData): PageData => data;
 
 export const PAGES_CONTENT: Record<string, PageData> = {
+  'vip-hotel-outcall': createPage({
+    id: 'vip-hotel-outcall',
+    title: 'VIP Hotel Outcall Companions',
+    subtitle: 'Direct 24/7 doorstep companion service to all luxury hotels in Noida & NCR.',
+    type: 'guide',
+    heroImage: '/images/hero-hot-model-bg.webp',
+    sections: [
+      {
+        title: '24/7 Prompt Hotel Delivery',
+        content: 'Our verified VIP escort models provide fast 20 to 30 minute arrival to luxury 4-star and 5-star hotels across Sector 18, Sector 62, Greater Noida, and Noida Expressway corridors. Every companion is 100% photo-verified with strict privacy guarantees.',
+        icon: Sparkles,
+        image: '/images/escorts-sector-18-noida-riya-01.webp'
+      },
+      {
+        title: 'Key Advantages',
+        content: 'Enjoy stress-free luxury accompaniment in the comfort and privacy of your hotel room.',
+        listItems: [
+          'Direct arrival to Radisson Blu, Mosaic, Savoy Suites, and Crowne Plaza',
+          'Multi-point biometric and real-time photo verification',
+          'Zero prepayment required — payment settled upon mutual satisfaction in person',
+          'Complete discretion and 100% privacy protection'
+        ],
+        icon: ShieldCheck,
+        image: '/images/escorts-sector-50-noida-aarohi-01.webp'
+      }
+    ]
+  }),
+
+  'russian-escorts': createPage({
+    id: 'russian-escorts',
+    title: 'Russian & Foreign VIP Escorts',
+    subtitle: 'Elite European, Russian, and international models for hotel outcalls and dinner dates.',
+    type: 'guide',
+    heroImage: '/images/hero-hot-model-bg.webp',
+    sections: [
+      {
+        title: 'International Elegance',
+        content: 'Connect with elite Russian escorts and foreign companions in Noida. Charming, elegant, and sophisticated models ready to make your luxury hotel stay memorable.',
+        icon: Heart,
+        image: '/images/escorts-sector-62-noida-priya-01.webp'
+      }
+    ]
+  }),
   // ==========================================
   // SPA SERVICES
   // ==========================================

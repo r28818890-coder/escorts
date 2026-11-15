@@ -85,18 +85,14 @@ export const AdCard: React.FC<AdCardProps> = ({ ad, featured = false }) => {
             )}
           </div>
 
-          {/* Location & Rate Tag */}
+          {/* Location & Verified Badge (Rate tag removed as required) */}
           <div className="absolute bottom-1.5 left-1.5 right-1.5 flex items-center justify-between pointer-events-none">
-            <span className="bg-slate-900/85 backdrop-blur-md px-1.5 py-0.5 rounded-md text-[9px] sm:text-[10px] text-white font-semibold flex items-center gap-1 border border-white/10">
+            <span className="bg-slate-900/85 backdrop-blur-md px-1.5 py-0.5 rounded-md text-[9px] sm:text-[10px] text-white font-semibold flex items-center gap-1 border border-white/10 shadow-sm">
               <MapPin size={9} className="text-amber-400 shrink-0" />
-              <span className="truncate max-w-[85px] sm:max-w-[120px]">{ad.locality}</span>
+              <span className="truncate max-w-[95px] sm:max-w-[130px]">{ad.locality}</span>
             </span>
-            {ad.rates?.perHour ? (
-              <span className="bg-amber-500/95 text-slate-950 font-black px-1.5 py-0.5 rounded-md text-[9px] sm:text-[10px] shadow">
-                {ad.rates.perHour}
-              </span>
-            ) : ad.age ? (
-              <span className="bg-slate-900/85 backdrop-blur-md px-1.5 py-0.5 rounded-md text-[9px] sm:text-[10px] text-amber-200 font-bold border border-white/10">
+            {ad.age ? (
+              <span className="bg-slate-900/85 backdrop-blur-md px-1.5 py-0.5 rounded-md text-[9px] sm:text-[10px] text-amber-300 font-bold border border-white/10 shadow-sm">
                 {ad.age} Yrs
               </span>
             ) : null}

@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Clock, MessageSquare } from 'lucide-react';
+import { ArrowRight, Clock, MessageSquare, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-import { BLOG_POSTS } from '@/pages/Insights';
-
-const articles = BLOG_POSTS.slice(0, 3).map(post => ({
-  id: post.id,
-  tag: post.tag,
-  date: post.date,
-  title: post.title,
-  desc: post.excerpt,
-  slug: post.slug,
-}));
+import { getLiveBlogs } from '@/services/autoPublishEngine';
 
 const InsightsSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number>(0);
+  const articles = getLiveBlogs().slice(0, 3).map(post => ({
+    id: post.id,
+    tag: post.tag,
+    date: post.date,
+    title: post.title,
+    desc: post.excerpt,
+    slug: post.slug,
+  }));
 
   return (
     <section className="py-24 bg-[#050505] relative overflow-hidden">
@@ -23,12 +22,12 @@ const InsightsSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* Left Side */}
           <div className="lg:col-span-5">
-            <span className="section-label mb-6">WELLNESS JOURNAL</span>
+            <span className="section-label mb-6">VIP CITY JOURNAL</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
-              Expert <span className="text-[#e11d48]">Insights.</span>
+              City <span className="text-[#e11d48]">Guides.</span>
             </h2>
             <p className="text-lg text-[#a3a3a3] mb-10 max-w-md leading-relaxed">
-              Discover the healing benefits of massage therapy, spa wellness tips, and relaxation guides for Noida residents.
+              Explore verified advice on call girls in Noida, 5-star hotel outcall recommendations, and safe companion booking guidelines.
             </p>
             
             <Link to="/blog" className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-[#be123c] to-[#e11d48] rounded-full text-black font-bold text-sm tracking-widest uppercase hover:scale-105 transition-transform shadow-lg shadow-[#be123c]/20">

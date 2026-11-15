@@ -26,12 +26,12 @@ const CATEGORIES = [
     desc: 'Book verified call girls in Noida with 100% real photos. Verified 24/7 hotel outcall, real photos & prompt 20-min arrival. Call or WhatsApp 8218125815.'
   },
   { 
-    slug: 'massages', 
-    name: 'Massages', 
-    keyword: 'luxury Thai spa, Swedish and deep tissue body massage therapies', 
-    h1: 'Massages & Luxury Spa in Noida',
-    title: 'Massages in Noida | Luxury Thai Spa & Body Therapy',
-    desc: 'Relaxing luxury Thai massage and full body spa in Noida. Doorstep hotel outcall and sanitized suites. Verified companion, direct outcall. Call 8218125815.'
+    slug: 'vip-escorts', 
+    name: 'VIP Escorts', 
+    keyword: 'VIP escort models, verified luxury companions and elite independent call girls', 
+    h1: 'VIP Escorts in Noida',
+    title: 'VIP Escorts in Noida | Elite Models & Companions',
+    desc: 'Verified VIP escorts and luxury models in Noida. Doorstep 24/7 hotel outcall, 100% real photo verification, direct outcall. Call 8218125815 now.'
   },
   { 
     slug: 'russian-escorts', 

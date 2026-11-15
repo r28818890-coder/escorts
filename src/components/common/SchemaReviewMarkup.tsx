@@ -57,8 +57,8 @@ const SchemaReviewMarkup: React.FC = () => {
             '@type': 'Offer',
             'itemOffered': {
               '@type': 'Service',
-              'name': 'Massages & Luxury Spa Noida',
-              'description': 'Luxury Thai spa, Swedish body massage, and aromatherapy wellness directory in Noida & Expressway.',
+              'name': 'VIP Escorts & Companions Noida',
+              'description': 'Verified VIP escorts, independent call girls, and 24/7 hotel outcall companion directory in Noida & Expressway.',
             },
           },
           {
