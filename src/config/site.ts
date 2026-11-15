@@ -223,7 +223,7 @@ export const NAVIGATION = {
 
 // ── 8. SEO Metadata Defaults ──────────────────────────────────
 export const SEO_DEFAULTS = {
-  title: "Escorts Hub Noida - Verified Call Girls & VIP Escorts in Noida & NCR (24/7)",
+  title: "Escorts in Noida | Verified 24/7 Hotel Outcall",
   description: "Escorts Hub Noida — 100% Real photo verified companions & independent call girls in Noida Sector 18, Sector 62, Greater Noida, Expressway & Indirapuram. 24/7 hotel outcall visits.",
   keywords: "Escorts in Noida, call girls Noida, Noida Sector 18 escorts, Sector 62 call girls, Greater Noida escorts, Pari Chowk call girls, Noida Extension escorts, Indirapuram escorts, Vaishali call girls, VIP companions Noida, 24 hour hotel outcall Noida",
 } as const;

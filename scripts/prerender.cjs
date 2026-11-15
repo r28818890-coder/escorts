@@ -887,7 +887,7 @@ subRoutes.forEach((route) => {
             <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-3">${route.catName}</div>
             <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-3 tracking-tight">${route.h1}</h1>
             <p class="text-sm md:text-base text-slate-600 font-medium italic mb-2">${route.h2}</p>
-            <div class="text-xs text-slate-500">Published by <strong>${BRAND}</strong> | Last Updated: <strong>November 14, 2026</strong> | 24/7 Helpline: <strong>${PHONE}</strong></div>
+            <div class="text-xs text-slate-500">Published by <strong>${BRAND}</strong> | Last Updated: <strong>November 15, 2026</strong> | 24/7 Helpline: <strong>${PHONE}</strong></div>
           </header>
 
           <article class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
@@ -968,7 +968,7 @@ subRoutes.forEach((route) => {
             <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-2">Verified 24/7 Hotel Outcall</div>
             <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-2 tracking-tight">${route.h1}</h1>
             <p class="text-sm md:text-base text-slate-600 font-medium">${route.h2}</p>
-            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 14, 2026</strong> | Central Dispatch: <strong>${PHONE}</strong> | Zero Advance Payment</div>
+            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 15, 2026</strong> | Central Dispatch: <strong>${PHONE}</strong> | Zero Advance Payment</div>
           </header>
 
           <div class="max-w-5xl mx-auto">
@@ -1018,7 +1018,7 @@ subRoutes.forEach((route) => {
                 The digital adult companionship landscape is unfortunately plagued by predatory scam operations that request advance booking charges, medical registration tokens, or fake courier security deposits via UPI or gift cards. Once an unsuspecting client transfers money, the scammer either demands more funds or immediately terminates communication.
               </p>
               <p>
-                At Escorts Hub Noida, we enforce a strict zero-advance payment protocol across all 54 active profiles. We never ask for Google Pay, PhonePe, Paytm, or credit card transfers prior to physical arrival. Clients inspect and greet their chosen companion face-to-face in the privacy of their hotel room before any financial transaction takes place. This guarantees 100% peace of mind, zero risk of digital extortion, and total satisfaction.
+                At Escorts Hub Noida, we enforce a strict zero-advance payment protocol across all 100 active profiles. We never ask for Google Pay, PhonePe, Paytm, or credit card transfers prior to physical arrival. Clients inspect and greet their chosen companion face-to-face in the privacy of their hotel room before any financial transaction takes place. This guarantees 100% peace of mind, zero risk of digital extortion, and total satisfaction.
               </p>
 
               <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Hyperlocal Sector Coverage: From Central Noida to Greater Noida &amp; Ghaziabad</h3>
@@ -1130,7 +1130,7 @@ subRoutes.forEach((route) => {
             </nav>
             <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-2 tracking-tight">${route.h1}</h1>
             <h2 class="text-base md:text-lg text-slate-600 font-medium">${route.h2}</h2>
-            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 14, 2026</strong> | Dispatch Helpline: <strong>${PHONE}</strong></div>
+            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 15, 2026</strong> | Dispatch Helpline: <strong>${PHONE}</strong></div>
           </header>
 
           <section class="max-w-7xl mx-auto my-6 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">

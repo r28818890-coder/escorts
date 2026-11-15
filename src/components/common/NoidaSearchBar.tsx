@@ -38,6 +38,22 @@ export const NoidaSearchBar: React.FC<NoidaSearchBarProps> = ({
     }
   };
 
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newCategory = e.target.value;
+    setSelectedCategory(newCategory);
+    if (onFilterChange) {
+      onFilterChange(newCategory, selectedLocality, searchQuery, selectedChips);
+    }
+  };
+
+  const handleLocalityChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newLocality = e.target.value;
+    setSelectedLocality(newLocality);
+    if (onFilterChange) {
+      onFilterChange(selectedCategory, newLocality, searchQuery, selectedChips);
+    }
+  };
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (onFilterChange) {
@@ -58,60 +74,21 @@ export const NoidaSearchBar: React.FC<NoidaSearchBarProps> = ({
   return (
     <div className="w-full max-w-5xl mx-auto bg-white border border-slate-200/90 rounded-2xl p-3 sm:p-4 shadow-lg">
       
-      {/* Category Pills (Quick Switcher) */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-2.5 mb-3 border-b border-slate-100 scrollbar-none">
-        <button
-          type="button"
-          onClick={() => {
-            setSelectedCategory('all');
-            if (onFilterChange) onFilterChange('all', selectedLocality, searchQuery, selectedChips);
-          }}
-          className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all cursor-pointer ${
-            selectedCategory === 'all'
-              ? 'bg-amber-600 text-white shadow-sm'
-              : 'bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200'
-          }`}
-        >
-          All Categories
-        </button>
-
-        {PORTAL_CATEGORIES.map((cat) => (
-          <button
-            key={cat.id}
-            type="button"
-            onClick={() => {
-              setSelectedCategory(cat.slug);
-              if (onFilterChange) onFilterChange(cat.slug, selectedLocality, searchQuery, selectedChips);
-            }}
-            className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
-              selectedCategory === cat.slug
-                ? 'bg-amber-600 text-white shadow-sm'
-                : 'bg-slate-100 text-slate-700 hover:text-slate-900 hover:bg-slate-200'
-            }`}
-          >
-            <span>{cat.name}</span>
-          </button>
-        ))}
-      </div>
-
-      {/* Main Search Controls */}
+      {/* Main Search Controls (Merged into Single Unified Selects) */}
       <form onSubmit={handleSearch} className="grid grid-cols-1 md:grid-cols-12 gap-2 mb-2.5">
         
-        {/* Category Select */}
+        {/* Unified Category Select */}
         <div className="md:col-span-4 relative">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
             <Layers size={16} />
           </div>
           <select
             value={selectedCategory}
-            onChange={(e) => {
-              setSelectedCategory(e.target.value);
-              if (onFilterChange) onFilterChange(e.target.value, selectedLocality, searchQuery, selectedChips);
-            }}
+            onChange={handleCategoryChange}
             className="w-full pl-9 pr-8 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-all cursor-pointer appearance-none"
             aria-label="Select Category"
           >
-            <option value="all">All Service Categories</option>
+            <option value="all">All Categories</option>
             {PORTAL_CATEGORIES.map((cat) => (
               <option key={cat.id} value={cat.slug}>
                 {cat.name}
@@ -127,10 +104,7 @@ export const NoidaSearchBar: React.FC<NoidaSearchBarProps> = ({
           </div>
           <select
             value={selectedLocality}
-            onChange={(e) => {
-              setSelectedLocality(e.target.value);
-              if (onFilterChange) onFilterChange(selectedCategory, e.target.value, searchQuery, selectedChips);
-            }}
+            onChange={handleLocalityChange}
             className="w-full pl-9 pr-8 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-slate-900 focus:outline-none focus:border-amber-500 focus:bg-white transition-all cursor-pointer appearance-none"
             aria-label="Select Noida & NCR Area"
           >
@@ -175,7 +149,7 @@ export const NoidaSearchBar: React.FC<NoidaSearchBarProps> = ({
 
           <button
             type="submit"
-            className="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition-all shadow shrink-0"
+            className="px-4 py-2.5 bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1 transition-all shadow shrink-0 cursor-pointer"
           >
             <span>Search</span>
           </button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Sparkles, Heart, UserCheck, Users, Flame } from 'lucide-react';
+import { MapPin, Sparkles, Heart, UserCheck, Users, Flame, ChevronRight } from 'lucide-react';
 import { NOIDA_LOCALITIES, PORTAL_CATEGORIES } from '@/config/portalData';
 import { BRAND } from '@/config/site';
 import SEO from '@/components/common/SEO';
@@ -16,14 +16,40 @@ const getCategoryIcon = (iconName: string) => {
 };
 
 export const NoidaAreasPage: React.FC = () => {
+  const areasSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${BRAND.domain}/areas#breadcrumb`,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${BRAND.domain}/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Areas',
+        item: `${BRAND.domain}/areas`,
+      },
+    ],
+  };
+
   return (
-    <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-8 pb-20">
+    <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-6 pb-20">
       <SEO
         title={`Noida & NCR Areas Directory - ${BRAND.name}`}
         description="Browse verified companions and independent escort services across 18 prime sectors in Noida, Greater Noida, and Ghaziabad."
+        schema={areasSchema}
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="flex items-center gap-2 text-xs text-slate-500 mb-6 font-medium">
+          <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+          <ChevronRight size={13} />
+          <span className="text-amber-600 font-bold">Areas</span>
+        </nav>
         
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 mb-3 px-4 py-1.5 rounded-full border border-amber-400 bg-amber-50 shadow-sm">

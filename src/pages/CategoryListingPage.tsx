@@ -146,7 +146,7 @@ export const CategoryListingPage: React.FC = () => {
           <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
           <ChevronRight size={13} />
           <Link to={`/${currentCategory.slug}`} className="hover:text-amber-600 transition-colors">
-            {currentCategory.name} in Noida & NCR
+            {currentCategory.name}
           </Link>
           {currentLocality && (
             <>
@@ -336,11 +336,13 @@ export const CategoryListingPage: React.FC = () => {
                   />
                 </button>
 
-                {openFaqIdx === idx && (
-                  <div className="px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                    {faq.answer}
-                  </div>
-                )}
+                <div
+                  className={`px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3 ${
+                    openFaqIdx === idx ? 'block' : 'hidden'
+                  }`}
+                >
+                  {faq.answer}
+                </div>
               </div>
             ))}
           </div>

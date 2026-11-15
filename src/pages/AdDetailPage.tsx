@@ -45,28 +45,57 @@ export const AdDetailPage: React.FC = () => {
       <LiveActivityToast />
 
       <SEO
-        title={`${ad.title} - ${BRAND.name}`}
-        description={`${ad.description.slice(0, 150)}... Verified ad in ${ad.locality}, ${ad.city || 'Noida'}.`}
+        title={`${ad.title.slice(0, 40)} | ${BRAND.name}`}
+        description={`${ad.description.slice(0, 140)}... Verified companion in ${ad.locality}, Noida.`}
         schema={{
-          '@type': 'Service',
-          name: ad.title,
-          description: ad.description,
-          provider: {
-            '@type': 'LocalBusiness',
-            name: BRAND.name,
-            telephone: ad.phone,
-            image: `${BRAND.domain}${ad.images[0]}`,
-          },
-          areaServed: {
-            '@type': 'City',
-            name: `${ad.locality}, ${ad.city || 'Noida'}`,
-          },
-          offers: {
-            '@type': 'Offer',
-            price: ad.rates?.perHour ? ad.rates.perHour.replace(/\D/g, '') : '2000',
-            priceCurrency: 'INR',
-            availability: 'https://schema.org/InStock',
-          },
+          '@context': 'https://schema.org',
+          '@graph': [
+            {
+              '@type': 'Service',
+              name: ad.title,
+              description: ad.description,
+              provider: {
+                '@type': 'LocalBusiness',
+                name: BRAND.name,
+                telephone: '+918218125815',
+                image: `${BRAND.domain}${ad.images[0]}`,
+              },
+              areaServed: {
+                '@type': 'City',
+                name: `${ad.locality}, Noida`,
+              },
+            },
+            {
+              '@type': 'BreadcrumbList',
+              '@id': `${BRAND.domain}/${ad.categorySlug}/${ad.localitySlug}/${ad.slug}#breadcrumb`,
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'Home',
+                  item: `${BRAND.domain}/`,
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: ad.categorySlug.replace('-', ' '),
+                  item: `${BRAND.domain}/${ad.categorySlug}`,
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: ad.locality,
+                  item: `${BRAND.domain}/${ad.categorySlug}/${ad.localitySlug}`,
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 4,
+                  name: ad.title,
+                  item: `${BRAND.domain}/${ad.categorySlug}/${ad.localitySlug}/${ad.slug}`,
+                },
+              ],
+            },
+          ],
         }}
       />
 
@@ -97,11 +126,12 @@ export const AdDetailPage: React.FC = () => {
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-md">
                 <img
                   src={selectedImage}
-                  alt={ad.title}
+                  alt={ad.alt || ad.title}
                   width={500}
                   height={667}
                   className="w-full h-full object-cover transition-all duration-300"
                   loading="eager"
+                  fetchPriority="high"
                   decoding="async"
                 />
                 <div className="absolute top-3 left-3 flex gap-1.5">

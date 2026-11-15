@@ -206,7 +206,6 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
         description: metaDescription,
         url: `${BRAND.domain}/${category.slug}${locality ? `/${locality.slug}` : ''}`,
         telephone: `+${CONTACT.whatsapp1}`,
-        priceRange: '₹₹',
         image: BRAND.ogImage,
         address: {
           '@type': 'PostalAddress',
@@ -259,7 +258,7 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
           {
             '@type': 'ListItem',
             position: 2,
-            name: `${category.name} Noida`,
+            name: category.name,
             item: `${BRAND.domain}/${category.slug}`,
           },
           ...(locality
@@ -267,7 +266,7 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
                 {
                   '@type': 'ListItem',
                   position: 3,
-                  name: `${locName}`,
+                  name: locality.name,
                   item: `${BRAND.domain}/${category.slug}/${locality.slug}`,
                 },
               ]

@@ -17,7 +17,6 @@ const SchemaReviewMarkup: React.FC = () => {
       'name': BRAND.name,
       'image': BRAND.ogImage,
       'telephone': CONTACT.phoneDisplay,
-      'priceRange': '₹₹',
       'currenciesAccepted': 'INR',
       'paymentAccepted': 'Cash, UPI',
       'address': {

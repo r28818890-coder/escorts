@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Phone, 
   MessageCircle, 
@@ -10,7 +11,8 @@ import {
   CheckCircle2, 
   Sparkles,
   ArrowRight,
-  AlertCircle
+  AlertCircle,
+  ChevronRight
 } from 'lucide-react';
 import { BRAND, CONTACT } from '@/config/site';
 import { NOIDA_LOCALITIES, PORTAL_CATEGORIES } from '@/config/portalData';
@@ -70,9 +72,15 @@ const BookingPage: React.FC = () => {
       />
 
       {/* Hero Header */}
-      <section className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white pt-10 pb-12 px-4 sm:px-6 border-b border-amber-500/20 text-center relative overflow-hidden">
+      <section className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white pt-6 pb-12 px-4 sm:px-6 border-b border-amber-500/20 text-center relative overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
           
+          <nav className="flex items-center justify-center gap-2 text-xs text-slate-400 mb-6 font-medium">
+            <Link to="/" className="hover:text-amber-400 transition-colors">Home</Link>
+            <ChevronRight size={13} />
+            <span className="text-amber-400 font-bold">Booking</span>
+          </nav>
+
           <div className="inline-flex items-center gap-2 mb-3 px-3.5 py-1.5 rounded-full border border-amber-500/40 bg-amber-500/10 shadow-inner">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
             <span className="text-[11px] font-black uppercase tracking-widest text-amber-300">

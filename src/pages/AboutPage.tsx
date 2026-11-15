@@ -1,30 +1,58 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Sparkles, Heart, MapPin, MessageCircle, Phone, CheckCircle } from 'lucide-react';
+import { ShieldCheck, Sparkles, Heart, MapPin, MessageCircle, Phone, CheckCircle, ChevronRight } from 'lucide-react';
 import SEO from '@/components/common/SEO';
 import { BRAND, CONTACT } from '@/config/site';
 import { NOIDA_LOCALITIES } from '@/config/portalData';
 
 const AboutPage: React.FC = () => {
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${BRAND.domain}/about#breadcrumb`,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${BRAND.domain}/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'About Us',
+        item: `${BRAND.domain}/about`,
+      },
+    ],
+  };
+
   return (
     <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pb-20">
       <SEO
         title={`About ${BRAND.name} | #1 Verified Companion Directory in Noida & NCR`}
         description={`Learn about ${BRAND.name}, NCR's premier verified companion directory offering 100% verified models, 24/7 hotel outcall, and complete client discretion.`}
+        schema={aboutSchema}
       />
 
       {/* Hero Header */}
-      <div className="pt-8 pb-12 px-4 bg-gradient-to-b from-slate-100 to-[#f8fafc] border-b border-slate-200 text-center">
+      <div className="pt-6 pb-12 px-4 bg-gradient-to-b from-slate-100 to-[#f8fafc] border-b border-slate-200">
         <div className="max-w-4xl mx-auto">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-300 bg-amber-50 text-amber-900 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
-            <Sparkles size={14} className="text-amber-600" /> About Our Portal
-          </span>
-          <h1 className="text-2xl sm:text-4xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
-            {BRAND.name} — Noida & NCR's #1 Verified Companion Portal
-          </h1>
-          <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Connecting genuine adult clients with 100% real photo verified independent escorts, call girls, and luxury companions across Noida, Greater Noida, and surrounding NCR with zero advance fee scams.
-          </p>
+          <nav className="flex items-center gap-2 text-xs text-slate-500 mb-6 font-medium">
+            <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+            <ChevronRight size={13} />
+            <span className="text-amber-600 font-bold">About Us</span>
+          </nav>
+          <div className="text-center">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-300 bg-amber-50 text-amber-900 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
+              <Sparkles size={14} className="text-amber-600" /> About Our Portal
+            </span>
+            <h1 className="text-2xl sm:text-4xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
+              {BRAND.name} — Noida & NCR's #1 Verified Companion Portal
+            </h1>
+            <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              Connecting genuine adult clients with 100% real photo verified independent escorts, call girls, and luxury companions across Noida, Greater Noida, and surrounding NCR with zero advance fee scams.
+            </p>
+          </div>
         </div>
       </div>
 

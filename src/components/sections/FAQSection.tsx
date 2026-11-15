@@ -25,8 +25,8 @@ const faqs = [
     answer: 'Complete discretion is our highest priority. We do not store personal chats, logs, or private data. Companions arrive dressed casually and professionally at your hotel lobby or room door with 100% confidentiality.'
   },
   {
-    question: 'What are the standard booking rates in Noida & NCR?',
-    answer: 'Rates vary depending on duration (short 1-2 hr date, half-night, or full-night VIP accompaniment) and model category. Standard rates range from ₹2,500 to ₹7,000+ for Indian models, with custom rates for foreign VIP models. WhatsApp us for transparent pricing.'
+    question: 'What are the verification standards for companions in Noida?',
+    answer: 'Every companion listed on Escorts Hub Noida undergoes strict phone and photo verification before publication. We verify identity and real-time photos to guarantee 100% authenticity for all 5-star hotel visits.'
   }
 ];
 
@@ -80,20 +80,13 @@ const FAQSection: React.FC = () => {
                     />
                   </button>
 
-                  <AnimatePresence>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <div className="px-6 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed">
-                          {faq.answer}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  <div
+                    className={`px-6 pb-4 text-xs sm:text-sm text-slate-600 border-t border-slate-100 pt-3 leading-relaxed ${
+                      isOpen ? 'block' : 'hidden'
+                    }`}
+                  >
+                    {faq.answer}
+                  </div>
                 </div>
               );
             })}

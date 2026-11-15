@@ -1,18 +1,45 @@
 import React from 'react';
-import { ShieldCheck, AlertTriangle, CheckCircle, Phone, Lock, Eye, AlertOctagon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ShieldCheck, AlertTriangle, CheckCircle, Phone, Lock, Eye, AlertOctagon, ChevronRight } from 'lucide-react';
 import SEO from '@/components/common/SEO';
 import { SAFETY_TIPS } from '@/config/portalData';
 import { BRAND, CONTACT } from '@/config/site';
 
 export const SafetyGuidePage: React.FC = () => {
+  const safetySchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${BRAND.domain}/safety#breadcrumb`,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: `${BRAND.domain}/`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Safety Guide',
+        item: `${BRAND.domain}/safety`,
+      },
+    ],
+  };
+
   return (
-    <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-8 pb-20">
+    <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pt-6 pb-20">
       <SEO
         title={`Safety Guidelines & Scam Prevention – ${BRAND.name}`}
         description={`Learn essential safety advice, fraud prevention tips, and verified booking protocols for adult classifieds in Noida & NCR.`}
+        schema={safetySchema}
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="flex items-center gap-2 text-xs text-slate-500 mb-6 font-medium">
+          <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+          <ChevronRight size={13} />
+          <span className="text-amber-600 font-bold">Safety Guide</span>
+        </nav>
         
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-50 border border-emerald-300 flex items-center justify-center text-emerald-600 shadow-sm">

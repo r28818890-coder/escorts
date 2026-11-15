@@ -236,9 +236,6 @@ export const Home: React.FC = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen text-[#0f172a]">
       
-      {/* 18+ Age Disclaimer Modal (DOM Rendered Above Hero) */}
-      <AgeVerificationModal />
-
       {/* Real-Time Live Activity Toast */}
       <LiveActivityToast />
 
@@ -319,6 +316,9 @@ export const Home: React.FC = () => {
           <NoidaSearchBar onFilterChange={handleFilterChange} />
         </div>
       </section>
+
+      {/* 18+ Age Disclaimer Modal (Rendered after Hero so H1 is first in DOM tree) */}
+      <AgeVerificationModal />
 
       {/* ── 2. CATEGORY GRID (5 Silo Hubs) ────────────────────────── */}
       <section className="py-10 sm:py-14 bg-white border-b border-slate-200">
@@ -578,7 +578,7 @@ export const Home: React.FC = () => {
                 The digital adult companionship landscape is unfortunately plagued by predatory scam operations that request advance booking charges, medical registration tokens, or fake courier security deposits via UPI or gift cards. Once an unsuspecting client transfers money, the scammer either demands more funds or immediately terminates communication.
               </p>
               <p>
-                At Escorts Hub Noida, we enforce a strict zero-advance payment protocol across all 54 active profiles. We never ask for Google Pay, PhonePe, Paytm, or credit card transfers prior to physical arrival. Clients inspect and greet their chosen companion face-to-face in the privacy of their hotel room before any financial transaction takes place. This guarantees 100% peace of mind, zero risk of digital extortion, and total satisfaction.
+                At Escorts Hub Noida, we enforce a strict zero-advance payment protocol across all 100 active profiles. We never ask for Google Pay, PhonePe, Paytm, or credit card transfers prior to physical arrival. Clients inspect and greet their chosen companion face-to-face in the privacy of their hotel room before any financial transaction takes place. This guarantees 100% peace of mind, zero risk of digital extortion, and total satisfaction.
               </p>
             </div>
 
@@ -672,11 +672,13 @@ export const Home: React.FC = () => {
                     />
                   </button>
 
-                  {isOpen && (
-                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100">
-                      {faq.a}
-                    </div>
-                  )}
+                  <div
+                    className={`px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 ${
+                      isOpen ? 'block' : 'hidden'
+                    }`}
+                  >
+                    {faq.a}
+                  </div>
                 </div>
               );
             })}

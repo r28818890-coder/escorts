@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
 import SEO from '@/components/common/SEO';
 import FAQSection from '@/components/sections/FAQSection';
 import { BRAND, CONTACT } from '@/config/site';
@@ -27,17 +29,40 @@ const FAQ_ITEMS = [
 ];
 
 const FaqPage: React.FC = () => {
-  const faqSchema = {
-    '@type': 'FAQPage',
-    '@id': `${BRAND.domain}/faq#faq`,
-    mainEntity: FAQ_ITEMS.map((item) => ({
-      '@type': 'Question',
-      name: item.q,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.a,
+  const pageSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'FAQPage',
+        '@id': `${BRAND.domain}/faq#faq`,
+        mainEntity: FAQ_ITEMS.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.a,
+          },
+        })),
       },
-    })),
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${BRAND.domain}/faq#breadcrumb`,
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: `${BRAND.domain}/`,
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'FAQ',
+            item: `${BRAND.domain}/faq`,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -45,8 +70,17 @@ const FaqPage: React.FC = () => {
       <SEO
         title={`Frequently Asked Questions | ${BRAND.name}`}
         description={`Frequently asked questions about verified companion bookings, 24/7 hotel outcall, rates, and discretion at ${BRAND.name} in Noida & NCR.`}
-        schema={faqSchema}
+        schema={pageSchema}
       />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <nav className="flex items-center gap-2 text-xs text-slate-500 mb-2 font-medium">
+          <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+          <ChevronRight size={13} />
+          <span className="text-amber-600 font-bold">FAQ</span>
+        </nav>
+      </div>
+
       <FAQSection />
     </div>
   );

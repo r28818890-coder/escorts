@@ -1,5 +1,5 @@
 # ==============================================================================
-# Escorts Hub Jaipur - AISEO & LLM-Optimized Robots.txt
+# Escorts Hub Noida — AISEO & LLM-Optimized Robots.txt
 # Full crawl permissions for Web Crawlers, LLMs, and Answer Engines (AEO/GEO)
 # ==============================================================================
 
@@ -52,10 +52,10 @@ User-agent: cohere-ai
 Allow: /
 
 # XML Sitemaps
-Sitemap: https://escortshubjaipur.com/sitemap.xml
-Sitemap: https://escortshubjaipur.com/rss.xml
-Sitemap: https://escortshubjaipur.com/atom.xml
+Sitemap: https://wenoidaescorts.com/sitemap.xml
+Sitemap: https://wenoidaescorts.com/rss.xml
+Sitemap: https://wenoidaescorts.com/atom.xml
 
 # LLM Knowledge Graph & Discovery:
-# https://escortshubjaipur.com/llms.txt
-# https://escortshubjaipur.com/llms-full.txt
+# https://wenoidaescorts.com/llms.txt
+# https://wenoidaescorts.com/llms-full.txt

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle, MessageSquare, ShieldCheck, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Mail, Phone, MapPin, Clock, Send, CheckCircle, MessageSquare, ShieldCheck, Sparkles, ChevronRight } from 'lucide-react';
 import { BRAND, CONTACT } from '@/config/site';
 import SEO from '@/components/common/SEO';
 
@@ -62,21 +63,46 @@ Message: ${formData.message}`;
               },
             },
           },
+          {
+            '@type': 'BreadcrumbList',
+            '@id': `${BRAND.domain}/contact#breadcrumb`,
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: `${BRAND.domain}/`,
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Contact',
+                item: `${BRAND.domain}/contact`,
+              },
+            ],
+          },
         ]}
       />
 
       {/* Hero */}
-      <div className="pt-10 pb-12 px-4 bg-gradient-to-b from-slate-100 to-[#f8fafc] border-b border-slate-200 text-center">
+      <div className="pt-6 pb-12 px-4 bg-gradient-to-b from-slate-100 to-[#f8fafc] border-b border-slate-200">
         <div className="max-w-4xl mx-auto">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-rose-300 bg-rose-50 text-rose-900 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
-            <Sparkles size={14} className="text-rose-600" /> 24/7 VIP Support
-          </span>
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
-            Contact <span className="text-rose-600">{BRAND.name}</span>
-          </h1>
-          <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            We are here to assist with verified profile bookings, hotel outcalls, and companion coordination 24 hours a day, 7 days a week.
-          </p>
+          <nav className="flex items-center gap-2 text-xs text-slate-500 mb-6 font-medium">
+            <Link to="/" className="hover:text-amber-600 transition-colors">Home</Link>
+            <ChevronRight size={13} />
+            <span className="text-amber-600 font-bold">Contact</span>
+          </nav>
+          <div className="text-center">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-rose-300 bg-rose-50 text-rose-900 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
+              <Sparkles size={14} className="text-rose-600" /> 24/7 VIP Support
+            </span>
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
+              Contact <span className="text-rose-600">{BRAND.name}</span>
+            </h1>
+            <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              We are here to assist with verified profile bookings, hotel outcalls, and companion coordination 24 hours a day, 7 days a week.
+            </p>
+          </div>
         </div>
       </div>
 

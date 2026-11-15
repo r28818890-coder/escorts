@@ -45,15 +45,16 @@ export const AdCard: React.FC<AdCardProps> = ({ ad, featured = false }) => {
         }`}
       >
         {/* Top Image Box */}
-        <div className="relative aspect-[1/1] overflow-hidden bg-slate-100">
+        <div className="relative aspect-[3/4] overflow-hidden bg-slate-100">
           <Link to={`/${ad.categorySlug}/${ad.localitySlug}/${ad.slug}`} className="block w-full h-full">
             <img
               src={ad.images[0] || '/ecj-mark.svg'}
-              alt={ad.title}
-              width={360}
-              height={360}
+              alt={ad.alt || ad.title}
+              width={400}
+              height={533}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108"
-              loading="lazy"
+              loading={featured ? "eager" : "lazy"}
+              fetchPriority={featured ? "high" : "auto"}
               decoding="async"
             />
           </Link>
