@@ -118,16 +118,16 @@ export const Header: React.FC<HeaderProps> = () => {
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
-            <div className="flex flex-col min-w-0">
+            <div className="flex flex-col shrink-0">
               <div className="flex items-center gap-1.5">
-                <span className="font-black text-slate-950 tracking-tight text-base sm:text-lg leading-none group-hover:text-amber-600 transition-colors truncate">
+                <span className="font-black text-slate-950 tracking-tight text-base sm:text-lg leading-none group-hover:text-amber-600 transition-colors whitespace-nowrap">
                   Escorts Hub <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-rose-600 to-amber-600">Noida</span>
                 </span>
                 <span className="bg-gradient-to-r from-rose-600 to-red-600 text-white text-[8px] font-black uppercase px-1.5 py-0.2 rounded-full shrink-0 shadow-sm">
                   18+
                 </span>
               </div>
-              <span className="text-[8px] sm:text-[9px] font-bold tracking-widest text-amber-700 uppercase mt-0.5 flex items-center gap-1">
+              <span className="text-[7.5px] sm:text-[9px] font-bold tracking-widest text-amber-700 uppercase mt-0.5 flex items-center gap-1 whitespace-nowrap">
                 <MapPin size={9} className="text-amber-600 shrink-0" /> NOIDA &amp; NCR VIP COMPANIONS
               </span>
             </div>
@@ -222,32 +222,22 @@ export const Header: React.FC<HeaderProps> = () => {
             </Link>
           </nav>
 
-          {/* Action Buttons: WhatsApp & Mobile Menu Trigger */}
-          <div className="flex items-center gap-2">
-            <a
-              href={`https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent('Hello! I am inquiring about verified VIP escorts in Noida & NCR.')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full flex items-center gap-1.5 font-bold text-xs uppercase tracking-wide transition-all shadow-sm hover:scale-105 active:scale-95"
-              title="Chat on WhatsApp"
-            >
-              <MessageCircle size={14} />
-              <span>WhatsApp</span>
-            </a>
-
+          {/* Action Buttons: Call Helpline & Mobile Menu Trigger (WhatsApp removed from Header) */}
+          <div className="flex items-center gap-2 shrink-0">
             <a
               href={`tel:+91${CONTACT.phone}`}
-              className="hidden sm:flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-slate-100 text-slate-800 border border-slate-300 text-xs font-bold hover:bg-slate-200 transition-all"
+              className="flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-all shadow-sm active:scale-95"
               title="Call Helpline"
             >
-              <Phone size={13} className="text-emerald-600" />
-              <span>{CONTACT.phoneDisplay}</span>
+              <Phone size={13} className="text-slate-950 shrink-0" />
+              <span className="hidden sm:inline font-black">{CONTACT.phoneDisplay}</span>
+              <span className="sm:hidden font-black">Call</span>
             </a>
 
             {/* RHS Mobile Menu Button */}
             <button
               type="button"
-              className="lg:hidden text-slate-800 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
+              className="lg:hidden text-slate-800 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer shrink-0"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
