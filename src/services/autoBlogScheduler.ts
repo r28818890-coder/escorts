@@ -1,17 +1,17 @@
 import { BLOG_POSTS } from '@/pages/Insights';
 import { BlogPost } from '@/types';
 
-const JAIPUR_SEO_TARGETS = [
-  { area: 'MI Road', therapy: 'Traditional Thai Massage', keywords: ['Thai Massage MI Road', 'Spa near MI Road Noida', '24 Hour Spa MI Road'] },
-  { area: 'Bani Park', therapy: 'Couple Luxury Spa Suite', keywords: ['Couple Spa Bani Park', 'Anniversary Spa Package Noida', 'Best Spa near Bani Park'] },
-  { area: 'Civil Lines', therapy: 'Deep Tissue Muscle Relief', keywords: ['Deep Tissue Civil Lines', 'Back Pain Relief Spa Noida', 'Massage near Civil Lines'] },
-  { area: 'C-Scheme', therapy: 'Organic Aromatherapy Massage', keywords: ['Aromatherapy C Scheme', 'Luxury Spa C Scheme Noida', 'Relaxation Spa Noida'] },
-  { area: 'Vaishali Nagar', therapy: 'Balinese Herbal Full Body Therapy', keywords: ['Balinese Massage Vaishali Nagar', 'Full Body Massage Noida', 'Spa in Vaishali Nagar'] },
-  { area: 'Malviya Nagar', therapy: 'Swedish Stress Relief Therapy', keywords: ['Swedish Massage Malviya Nagar', 'Stress Relief Spa Noida', 'Spa near GT Malviya Nagar'] },
-  { area: 'Mansarovar', therapy: 'Herbal Body Scrub & Steam Bath', keywords: ['Body Scrub Mansarovar', 'Steam Bath Noida', 'Skin Glow Spa Mansarovar'] },
-  { area: 'Raja Park', therapy: 'Authentic Thai Stretching Therapy', keywords: ['Thai Massage Raja Park', 'Spa near Raja Park', 'Body Massage Noida'] },
-  { area: 'Tonk Road', therapy: '24/7 Executive Stress Relief Spa', keywords: ['24 Hour Spa Tonk Road', 'Massage near Tonk Road Noida', 'Executive Spa Noida'] },
-  { area: 'Jagatpura', therapy: 'Therapeutic Full Body Massage', keywords: ['Full Body Spa Jagatpura', 'Massage Therapy Noida', 'Spa near Jagatpura'] },
+const NOIDA_SEO_TARGETS = [
+  { area: 'Sector 18', therapy: 'VIP Hotel Outcall Service', keywords: ['Escorts Sector 18', 'Call Girls near Sector 18 Noida', '24 Hour Outcall Sector 18'] },
+  { area: 'Sector 62', therapy: 'Executive Luxury Companion', keywords: ['Escorts Sector 62', 'Independent Companions Noida Sector 62', 'Best Call Girls near Sector 62'] },
+  { area: 'Sector 50', therapy: 'High Profile Hotel Companion', keywords: ['Escorts Sector 50', 'Verified Models Noida Sector 50', 'Hotel Outcall Sector 50'] },
+  { area: 'Sector 137', therapy: 'Expressway VIP Companion', keywords: ['Escorts Sector 137', 'Luxury Call Girls Expressway Noida', 'Discreet Outcall Sector 137'] },
+  { area: 'Sector 76-78', therapy: 'Premium Outcall Companion', keywords: ['Escorts Sector 76', 'Call Girls Sector 78 Noida', 'Hotel Outcall Sector 76-78'] },
+  { area: 'Pari Chowk', therapy: 'Greater Noida Luxury Escorts', keywords: ['Escorts Pari Chowk', 'Greater Noida Call Girls', 'Hotel Companions Pari Chowk'] },
+  { area: 'Indirapuram', therapy: 'NCR Executive Companions', keywords: ['Escorts Indirapuram', 'Call Girls near Indirapuram', 'VIP Companions Indirapuram'] },
+  { area: 'Sector 128', therapy: 'Jaypee Wish Town VIP Escorts', keywords: ['Escorts Sector 128', 'Call Girls Jaypee Wish Town', 'Outcall Sector 128'] },
+  { area: 'Sector 142', therapy: 'Advant Navis Corporate Outcall', keywords: ['Escorts Sector 142', 'Call Girls near Advant Noida', 'Executive Companions Sector 142'] },
+  { area: 'Botanical Garden', therapy: 'Metro Interchange Doorstep Outcall', keywords: ['Escorts Botanical Garden', 'Call Girls Botanical Garden Noida', 'Fast Outcall Metro Gate'] },
 ];
 
 const LAST_AUTO_BLOG_KEY = 'purebliss_last_auto_blog_time';
@@ -21,7 +21,7 @@ const GENERATED_BLOGS_KEY = 'purebliss_generated_blogs';
  * Generates a hyper-local No.1 Google ranking SEO blog article for Noida areas
  */
 const generateHyperlocalNoidaArticle = (targetIndex: number): BlogPost => {
-  const target = JAIPUR_SEO_TARGETS[targetIndex % JAIPUR_SEO_TARGETS.length];
+  const target = NOIDA_SEO_TARGETS[targetIndex % NOIDA_SEO_TARGETS.length];
   const dateStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   const timestamp = Date.now();
   const slug = `best-${target.therapy.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-near-${target.area.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-noida`;

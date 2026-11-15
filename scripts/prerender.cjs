@@ -23,7 +23,7 @@ const CATEGORIES = [
     keyword: 'call girls and VIP escort models', 
     h1: 'Call Girls in Noida',
     title: 'Call Girls in Noida | 100% Real Photo Verified',
-    desc: 'Book verified call girls in Noida with 100% real photos. Zero advance deposit, cash on delivery, and fast 20-min hotel outcall. Call or WhatsApp 8218125815.'
+    desc: 'Book verified call girls in Noida with 100% real photos. Verified 24/7 hotel outcall, real photos & prompt 20-min arrival. Call or WhatsApp 8218125815.'
   },
   { 
     slug: 'massages', 
@@ -31,7 +31,7 @@ const CATEGORIES = [
     keyword: 'luxury Thai spa, Swedish and deep tissue body massage therapies', 
     h1: 'Massages & Luxury Spa in Noida',
     title: 'Massages in Noida | Luxury Thai Spa & Body Therapy',
-    desc: 'Relaxing luxury Thai massage and full body spa in Noida. Doorstep hotel outcall and sanitized suites. Zero advance, cash on delivery. Call 8218125815.'
+    desc: 'Relaxing luxury Thai massage and full body spa in Noida. Doorstep hotel outcall and sanitized suites. Verified companion, direct outcall. Call 8218125815.'
   },
   { 
     slug: 'male-escorts', 
@@ -39,7 +39,7 @@ const CATEGORIES = [
     keyword: 'male escorts, handsome fitness companions and call boys for women', 
     h1: 'Male Escorts in Noida',
     title: 'Male Escorts in Noida | VIP Companions for Women',
-    desc: 'Discreet male escorts and handsome companions in Noida for women and couples. 100% verified gentlemen, zero advance, 20-min arrival. Call 8218125815.'
+    desc: 'Discreet male escorts and handsome companions in Noida for women and couples. 100% verified gentlemen, verified companion, 20-min arrival. Call 8218125815.'
   },
   { 
     slug: 'transsexual', 
@@ -47,7 +47,7 @@ const CATEGORIES = [
     keyword: 'transsexual companions, TS models and independent shemale escorts', 
     h1: 'Transsexual Escorts in Noida',
     title: 'Transsexual Escorts in Noida | Verified TS Models',
-    desc: 'Verified transsexual escorts and TS models in Noida. Doorstep 24/7 hotel outcall, 100% real photo verification, cash on delivery. Call 8218125815 now.'
+    desc: 'Verified transsexual escorts and TS models in Noida. Doorstep 24/7 hotel outcall, 100% real photo verification, direct outcall. Call 8218125815 now.'
   },
   { 
     slug: 'adult-meetings', 
@@ -55,7 +55,7 @@ const CATEGORIES = [
     keyword: 'casual adult meetings, discreet dating and VIP private encounters', 
     h1: 'Adult Meetings in Noida',
     title: 'Adult Meetings in Noida | Discreet 24/7 Encounters',
-    desc: 'Discreet adult meetings and casual dating in Noida. Verified independent companions, zero advance fraud, fast 20-min hotel outcall. Call 8218125815.'
+    desc: 'Discreet adult meetings and casual dating in Noida. Verified independent companions, complete privacy, fast 20-min hotel outcall. Call 8218125815.'
   },
 ];
 
@@ -406,7 +406,7 @@ function buildLocalityHtml(cat, loc) {
           Located in the thriving Gautam Buddha Nagar district, <strong>${loc.name}</strong> represents one of the National Capital Region's most strategic zones for business, upscale residences, and executive hospitality. Whether you are staying for a corporate conference, enjoying an evening date near ${loc.landmarks[0]}, or unwinding in a luxury suite after a day of meetings, finding 100% verified, discreet adult companionship should be smooth, safe, and transparent.
         </p>
         <p>
-          At <strong>${BRAND}</strong>, we provide exclusive, authentic ${cat.keyword} in ${loc.name} with strict zero-advance cash on delivery terms. Our models and hostesses undergo rigorous real-photo matching and identity authentication, guaranteeing that the companion who arrives at your doorstep matches her profile photographs exactly.
+          At <strong>${BRAND}</strong>, we provide exclusive, authentic ${cat.keyword} in ${loc.name} with strict direct hotel outcall terms. Our models and hostesses undergo rigorous real-photo matching and identity authentication, guaranteeing that the companion who arrives at your doorstep matches her profile photographs exactly.
         </p>
       </section>
 
@@ -458,12 +458,12 @@ function buildLocalityHtml(cat, loc) {
       </section>
 
       <section class="anti-scam-box bg-slate-900 text-white rounded-2xl p-6">
-        <h3 class="text-lg font-black text-amber-400 mb-2">Zero-Advance Payment &amp; Scam Protection Protocol</h3>
+        <h3 class="text-lg font-black text-amber-400 mb-2">Verified Photos &amp; Privacy Protocol</h3>
         <p class="text-xs sm:text-sm text-slate-300 mb-3 leading-relaxed">
-          Online classified scams often ask for advance booking deposits, cab fees, or medical security deposits via UPI or digital wallets. At ${BRAND}, we operate with a <strong>100% Zero Advance Guarantee</strong>. You never pay any money upfront. You inspect your companion in person upon her arrival at your room door, and payment is settled in cash directly to her.
+          Online classified portals often publish fake stock pictures or unverified profiles. At ${BRAND}, we operate with a <strong>100% Real Photo Verification Guarantee</strong>. Every model is verified in advance with genuine photos. You welcome your chosen companion in person upon her arrival at your hotel room door.
         </p>
         <div class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 bg-emerald-950/80 border border-emerald-800 px-3 py-1.5 rounded-full">
-          ✓ Verified Doorstep Physical Arrival • Cash on Delivery • Zero Risk
+          ✓ Verified Doorstep Physical Arrival • Direct Outcall • 100% Discretion
         </div>
       </section>
 
@@ -506,7 +506,7 @@ function buildLocalityHtml(cat, loc) {
       <section class="cta-box p-6 rounded-2xl bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-bold flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h4 class="text-base sm:text-lg font-black">Ready to Book in ${loc.name}?</h4>
-          <p class="text-xs text-slate-900 font-medium">100% real photo verified models • 20-min hotel doorstep outcall • Zero advance.</p>
+          <p class="text-xs text-slate-900 font-medium">100% real photo verified models • 20-min hotel doorstep outcall • Complete privacy.</p>
         </div>
         <div class="flex items-center gap-2 shrink-0">
           <a href="tel:+918218125815" class="px-4 py-2.5 bg-slate-950 text-white rounded-xl text-xs font-black uppercase tracking-wider hover:bg-slate-900 transition-all">
@@ -528,7 +528,7 @@ const subRoutes = [];
 subRoutes.push({
   path: '',
   title: 'Escorts in Noida | Verified 24/7 Hotel Outcall',
-  desc: 'Book verified escorts in Noida with 100% real photos. Zero advance deposit, cash on delivery, and fast 20-min hotel outcall. Call or WhatsApp +91 8218125815 now.',
+  desc: 'Book verified escorts in Noida with 100% real photos. Verified 24/7 hotel outcall, real photos & prompt 20-min arrival. Call or WhatsApp +91 8218125815 now.',
   h1: 'Escorts in Noida',
   h2: 'Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India & Noida Expressway',
   isHome: true
@@ -569,7 +569,7 @@ CATEGORIES.forEach((cat) => {
       : `${cat.name} in ${loc.name} | Verified 24/7 Outcall`.slice(0, 56);
 
     // Meta desc 148-158 chars
-    const metaDesc = `Book verified ${primaryKw} with 100% real photos. Zero advance deposit, cash on delivery, and 20-min hotel outcall in ${loc.name}. Call 8218125815 now.`.slice(0, 158);
+    const metaDesc = `Book verified ${primaryKw} with 100% real photos. 100% real photos, direct hotel outcall, and 20-min hotel outcall in ${loc.name}. Call 8218125815 now.`.slice(0, 158);
 
     subRoutes.push({
       path: `${cat.slug}/${loc.slug}`,
@@ -593,16 +593,16 @@ const INFO_PAGES = [
   { 
     path: 'booking', 
     title: 'Fast 24/7 Outcall Booking in Noida | Escorts Hub', 
-    desc: 'Book verified outcall escorts in Noida with zero advance deposit. Fast 20-min hotel arrival in Sector 18, 62 & Expressway. Call or WhatsApp 8218125815 now.', 
+    desc: 'Book verified outcall escorts in Noida with complete privacy. Fast 20-min hotel arrival in Sector 18, 62 & Expressway. Call or WhatsApp 8218125815 now.', 
     h1: 'Fast 24/7 Companion Booking in Noida', 
     h2: 'Instant 20-Minute Hotel Outcall Dispatch Across All 18 Noida Sectors' 
   },
   { 
     path: 'safety-guide', 
     title: 'Safety Guidelines & Scam Prevention | Escorts Hub', 
-    desc: 'Mandatory scam prevention tips, safety guidelines, and direct booking safety protocols in Noida & NCR with zero advance deposit. Call 8218125815.', 
+    desc: 'Mandatory scam prevention tips, safety guidelines, and direct booking safety protocols in Noida & NCR with complete privacy. Call 8218125815.', 
     h1: 'Safety Guidelines & Scam Prevention', 
-    h2: 'Zero Advance Payment & 100% Discreet Verification Protocols in Noida' 
+    h2: 'Verified 24/7 Dispatch & 100% Discreet Verification Protocols in Noida' 
   },
   { 
     path: 'noida-areas', 
@@ -616,7 +616,7 @@ const INFO_PAGES = [
     title: 'About Escorts Hub Noida | #1 Verified VIP Directory', 
     desc: 'Learn about Escorts Hub Noida, the premier verified adult classifieds and companion directory in Noida and surrounding NCR. 100% real photos.', 
     h1: 'About Escorts Hub Noida', 
-    h2: 'NCR Premier Verified Companion Network with Strict Zero Advance Policy' 
+    h2: 'NCR Premier Verified Companion Network with Strict Photo Verification Policy' 
   },
   { 
     path: 'contact', 
@@ -628,7 +628,7 @@ const INFO_PAGES = [
   { 
     path: 'faq', 
     title: 'Frequently Asked Questions | Escorts Hub Noida', 
-    desc: 'Common questions about escort services, outcall hotel visits, pricing, payment safety, and discretion in Noida. Zero advance payment. Call 8218125815.', 
+    desc: 'Common questions about escort services, outcall hotel visits, pricing, payment safety, and discretion in Noida. Verified companion payment. Call 8218125815.', 
     h1: 'Frequently Asked Questions (FAQ)', 
     h2: 'Clear, Transparent Answers on Booking, Hotel Outcalls & Discretion' 
   },
@@ -649,9 +649,9 @@ const INFO_PAGES = [
   { 
     path: 'refund', 
     title: 'Refund & Cancellation Policy | Escorts Hub Noida', 
-    desc: 'Read the official refund and cancellation policy of Escorts Hub Noida. Because we operate on zero advance cash on delivery, you have zero risk.', 
+    desc: 'Read the official refund and cancellation policy of Escorts Hub Noida. Because we operate on direct hotel outcall, you have zero risk.', 
     h1: 'Refund & Cancellation Policy', 
-    h2: 'Transparent Right of Refusal at the Door with Zero Advance Liability' 
+    h2: 'Transparent Right of Refusal at the Door with Full Discretion Guarantee' 
   },
 ];
 
@@ -810,7 +810,7 @@ subRoutes.forEach((route) => {
           "name": `How to book verified ${route.catName || 'companions'} in ${route.locObj.name}?`,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": `You can browse verified profiles with genuine photographs on ${BRAND} and connect directly via WhatsApp (${PHONE}) for instant confirmation with zero advance payment.`
+            "text": `You can browse verified profiles with genuine photographs on ${BRAND} and connect directly via WhatsApp (${PHONE}) for instant confirmation with verified companion payment.`
           }
         },
         {
@@ -968,7 +968,7 @@ subRoutes.forEach((route) => {
             <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-2">Verified 24/7 Hotel Outcall</div>
             <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-2 tracking-tight">${route.h1}</h1>
             <p class="text-sm md:text-base text-slate-600 font-medium">${route.h2}</p>
-            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 15, 2026</strong> | Central Dispatch: <strong>${PHONE}</strong> | Zero Advance Payment</div>
+            <div class="text-xs text-slate-500 mt-2">Last Updated: <strong>November 15, 2026</strong> | Central Dispatch: <strong>${PHONE}</strong> | Verified 24/7 Dispatch</div>
           </header>
 
           <div class="max-w-5xl mx-auto">
@@ -986,9 +986,9 @@ subRoutes.forEach((route) => {
             <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-3">Escorts Hub Noida • Verified 24/7 Dispatch</div>
             <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">Escorts in Noida</h1>
             <p class="text-sm md:text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with zero advance fraud.
+              Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with complete privacy.
             </p>
-            <div class="text-xs text-slate-500 mt-3">Central Helpline: <strong>${PHONE}</strong> | WhatsApp: <strong>${PHONE}</strong> | 100% Cash On Delivery</div>
+            <div class="text-xs text-slate-500 mt-3">Central Helpline: <strong>${PHONE}</strong> | WhatsApp: <strong>${PHONE}</strong> | 100% Verified Profiles</div>
           </header>
 
           <section class="max-w-5xl mx-auto my-6 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
@@ -998,7 +998,7 @@ subRoutes.forEach((route) => {
                 Noida, one of India's fastest-growing planned industrial and commercial hubs in the National Capital Region (NCR), is home to world-class corporate parks, multinational tech headquarters, and premier luxury hospitality destinations. Whether you are an executive visiting the multinational IT corridors of Sector 62 and Advant Navis on the Expressway, attending an international symposium at the India Expo Mart in Greater Noida, or enjoying a leisurely stay near DLF Mall of India and Sector 18, Escorts Hub Noida offers the most discreet, reliable, and verified adult companionship directory in the region.
               </p>
               <p>
-                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a zero-advance payment philosophy, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else.
+                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else.
               </p>
 
               <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">24/7 Hotel Outcall Protocols for Noida's Premier Hospitality Destinations</h3>
@@ -1013,12 +1013,12 @@ subRoutes.forEach((route) => {
                 <li><strong>Savoy Suites &amp; Sandal Suites by Lemon Tree (Expressway):</strong> Prime executive residences on the Noida-Greater Noida Expressway near Sector 137 and Sector 142, catering to corporate leaders and IT specialists.</li>
               </ul>
 
-              <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Zero Advance Guarantee: How We Shield Clients from Digital Fraud</h3>
+              <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Verified Outcall Protocol: How We Shield Clients from Digital Scams</h3>
               <p>
-                The digital adult companionship landscape is unfortunately plagued by predatory scam operations that request advance booking charges, medical registration tokens, or fake courier security deposits via UPI or gift cards. Once an unsuspecting client transfers money, the scammer either demands more funds or immediately terminates communication.
+                The digital adult companionship landscape is unfortunately plagued by predatory scam operations that publish misleading stock pictures or unverified profiles. Once an unsuspecting client contacts them, they often encounter impersonators or middlemen.
               </p>
               <p>
-                At Escorts Hub Noida, we enforce a strict zero-advance payment protocol across all 100 active profiles. We never ask for Google Pay, PhonePe, Paytm, or credit card transfers prior to physical arrival. Clients inspect and greet their chosen companion face-to-face in the privacy of their hotel room before any financial transaction takes place. This guarantees 100% peace of mind, zero risk of digital extortion, and total satisfaction.
+                At Escorts Hub Noida, we enforce a strict photo-verification and direct communication protocol across all 100 active profiles. We provide genuine photographs, accurate descriptions, and transparent hotel outcall coordination. Clients greet their chosen companion face-to-face in the privacy of their hotel room, guaranteeing 100% peace of mind, authentic service, and total satisfaction.
               </p>
 
               <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">Hyperlocal Sector Coverage: From Central Noida to Greater Noida &amp; Ghaziabad</h3>
@@ -1083,8 +1083,8 @@ subRoutes.forEach((route) => {
             <h3 class="text-xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h3>
             <div class="space-y-3 text-xs sm:text-sm">
               <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                <h4 class="font-bold text-slate-900 mb-1">How can I safely book escorts in Noida without paying any advance deposit?</h4>
-                <p class="text-slate-600">At Escorts Hub Noida, we operate under a strict zero-advance payment protocol. You never pay any advance token, booking charge, or registration fee. You browse verified profiles, confirm details via WhatsApp at +91 8218125815, and settle the payment in cash only after your companion arrives in person.</p>
+                <h4 class="font-bold text-slate-900 mb-1">How can I safely book verified escorts in Noida hotels?</h4>
+                <p class="text-slate-600">At Escorts Hub Noida, we operate under a strict photo-verified companion protocol. You browse verified profiles, choose your preferred companion, confirm the arrival details via direct call or WhatsApp at +91 8218125815, and welcome your companion directly in person at your luxury hotel room or private residence.</p>
               </div>
               <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <h4 class="font-bold text-slate-900 mb-1">What is the average outcall arrival time to 5-star hotels in Noida Sector 18?</h4>
@@ -1096,7 +1096,7 @@ subRoutes.forEach((route) => {
               </div>
               <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
                 <h4 class="font-bold text-slate-900 mb-1">What payment methods are supported for companionship services in Noida?</h4>
-                <p class="text-slate-600">We strictly recommend cash on delivery (COD) directly to the companion upon arrival. Peer-to-peer UPI or bank transfer may be completed upon mutual agreement in person after arrival.</p>
+                <p class="text-slate-600">Clients may settle payments directly in person upon the companion’s verified arrival. Peer-to-peer UPI or bank transfer may be completed upon mutual agreement in person.</p>
               </div>
             </div>
           </section>
@@ -1104,7 +1104,7 @@ subRoutes.forEach((route) => {
           <section class="max-w-5xl mx-auto my-8 p-6 rounded-2xl bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 font-bold flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <h4 class="text-lg font-black">Book Verified Escorts in Noida (24/7)</h4>
-              <p class="text-xs text-slate-900 font-medium">100% Real photo verified models • 20-min hotel doorstep outcall • Zero advance.</p>
+              <p class="text-xs text-slate-900 font-medium">100% Real photo verified models • 20-min hotel doorstep outcall • Complete privacy.</p>
             </div>
             <div class="flex items-center gap-2 shrink-0">
               <a href="tel:+918218125815" class="px-5 py-2.5 bg-slate-950 text-white rounded-xl text-xs font-black uppercase tracking-wider hover:bg-slate-900 transition-all">
@@ -1148,8 +1148,8 @@ subRoutes.forEach((route) => {
                 <p class="text-slate-600 text-xs">Discreet companion visits to Radisson Blu, Crowne Plaza, Jaypee Greens, and luxury hotels.</p>
               </div>
               <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl">
-                <div class="text-emerald-700 font-bold text-sm mb-1">✓ Zero Advance Fees</div>
-                <p class="text-slate-600 text-xs">Pay directly to independent models in cash with zero middleman or advance deposits.</p>
+                <div class="text-emerald-700 font-bold text-sm mb-1">✓ 100% Discretion & Privacy</div>
+                <p class="text-slate-600 text-xs">Enjoy direct doorstep companion visits with full privacy and professional discretion.</p>
               </div>
             </div>
             <div class="pt-4 border-t border-slate-100 flex items-center justify-between flex-wrap gap-4">
@@ -1165,7 +1165,7 @@ subRoutes.forEach((route) => {
             <div class="space-y-3">
               <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
                 <h4 class="font-bold text-slate-900 text-sm mb-1">How do I book verified escorts in ${route.locName || 'Noida'}?</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">Browse authentic profile cards with verified pictures, select your preferred companion, and click the direct WhatsApp button (${PHONE}) for instant, discreet confirmation with zero advance deposit.</p>
+                <p class="text-xs text-slate-600 leading-relaxed">Browse authentic profile cards with verified pictures, select your preferred companion, and click the direct WhatsApp button (${PHONE}) for instant, discreet confirmation with complete privacy.</p>
               </div>
               <div class="bg-white border border-slate-200 p-4 rounded-xl shadow-sm">
                 <h4 class="font-bold text-slate-900 text-sm mb-1">Is outcall available near ${route.landmark || 'Noida'}?</h4>

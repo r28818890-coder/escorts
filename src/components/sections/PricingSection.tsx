@@ -96,7 +96,7 @@ export const PricingSection: React.FC = () => {
             <Sparkles size={14} className="text-rose-600" /> Rates & Transparent Formats
           </span>
           <h2 className="text-2xl md:text-5xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
-            Transparent <span className="text-rose-600">Pricing</span> — Zero Advance Fees
+            Transparent <span className="text-rose-600">Pricing</span> — Verified Companion Fees
           </h2>
           <p className="text-slate-600 text-xs md:text-sm leading-relaxed">
             All prices are direct settlement with no middlemen. Select preferred format or custom requests below.

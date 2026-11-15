@@ -94,7 +94,7 @@ export const SafetyGuidePage: React.FC = () => {
         <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 text-white shadow-md text-center space-y-3">
           <h3 className="text-xl font-black">Report a Suspicious Profile or Number</h3>
           <p className="text-xs sm:text-sm text-rose-100 max-w-lg mx-auto">
-            If any advertiser demands advance fee or sends unfamiliar links, notify our verification team immediately on WhatsApp.
+            If any advertiser demands unauthorized fee or sends unfamiliar links, notify our verification team immediately on WhatsApp.
           </p>
           <a
             href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello We Noida Escorts, I want to report a suspicious number or verify a profile.')}

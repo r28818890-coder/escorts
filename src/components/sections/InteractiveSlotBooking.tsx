@@ -249,7 +249,7 @@ export const InteractiveSlotBooking: React.FC = () => {
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> 100% Real Photo Authentication
             </span>
             <span className="flex items-center gap-1">
-              <CheckCircle2 className="w-3.5 h-3.5 text-rose-400" /> Zero Advance Payment Policy
+              <CheckCircle2 className="w-3.5 h-3.5 text-rose-400" /> 100% Real Photo Verification
             </span>
           </div>
         </div>

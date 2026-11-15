@@ -242,7 +242,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: 'Data Usage',
         content: [
           'To confirm your appointment via direct WhatsApp coordination',
-          'To ensure safety protocols and zero-advance fraud prevention',
+          'To ensure safety protocols and direct companion verification',
           'To ensure strict 18+ adult age compliance'
         ],
         icon: FileText
@@ -259,7 +259,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
     sections: [
       {
         title: 'Booking & Cancellation',
-        content: 'We operate under a strict zero-advance policy. You only settle payment directly upon meeting in person. If you need to reschedule or cancel, please notify the coordinator via WhatsApp at least 1 hour in advance.',
+        content: 'We operate under a strict photo-verification policy. You only settle payment directly upon meeting in person. If you need to reschedule or cancel, please notify the coordinator via WhatsApp at least 1 hour in advance.',
         icon: Clock
       },
       {
@@ -267,7 +267,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         content: [
           'All users and advertisers must be strictly 18 years of age or older.',
           'We Noida Escorts strictly enforces mutual respect and discretion. Any illegal or abusive behavior results in immediate blacklisting.',
-          'Zero advance payment guarantee: never transfer deposits or advance fees.'
+          'Verified companion service guarantee: never transfer deposits or unauthorized fees.'
         ],
         icon: Info
       }

@@ -25,7 +25,7 @@ export const BRAND = {
   shortName: 'Escorts Hub Noida',
   legalName: 'Escorts Hub Noida Classifieds & Directory',
   tagline: "Noida's #1 Verified Call Girl & Escorts Service Directory",
-  subTagline: 'Open 24 Hours • 100% Real Photo Verified • Cash On Delivery in Noida & NCR',
+  subTagline: 'Open 24 Hours • 100% Real Photo Verified • 24/7 Hotel Outcalls in Noida & NCR',
   domain: 'https://wenoidaescorts.com',
   year: '2026',
   logo: '/ecj-logo.svg',

@@ -16,7 +16,7 @@
 
 // ── SECTION 1: BUSINESS IDENTITY ────────────────────────────────────────────
 
-export const JAIPUR_SPA_IDENTITY = {
+export const NOIDA_SPA_IDENTITY = {
   name: 'We Noida Escorts',
   shortName: 'We Noida Escorts',
   tagline: "Noida's Premier Luxury Companions & Spa",
@@ -43,23 +43,21 @@ export const JAIPUR_SPA_IDENTITY = {
   ],
 };
 
+export const JAIPUR_SPA_IDENTITY = NOIDA_SPA_IDENTITY;
+
 // ── SECTION 2: DISTANCE MATRIX (For "Near Me" SEO) ──────────────────────────
 
 export const LOCATION_DISTANCES = [
-  { area: 'Noida Railway Station', distance: '1.2 km', time: '3 minutes by auto' },
-  { area: 'Sindhi Camp Bus Stand', distance: '0.3 km', time: '1 minute walk' },
-  { area: 'MI Road', distance: '2.1 km', time: '5 minutes by car' },
-  { area: 'Bani Park', distance: '3.4 km', time: '8 minutes by car' },
-  { area: 'Civil Lines', distance: '3.8 km', time: '10 minutes by car' },
-  { area: 'Collectorate Circle', distance: '2.8 km', time: '7 minutes by car' },
-  { area: 'Polo Victory Cinema', distance: '0.05 km', time: 'Right opposite' },
-  { area: 'Chandpole Gate', distance: '3.2 km', time: '8 minutes by car' },
-  { area: 'Ajmer Road', distance: '4.1 km', time: '10 minutes by car' },
-  { area: 'Noida Airport (Sanganer)', distance: '18 km', time: '25 minutes by car' },
-  { area: 'Pink City / Walled City', distance: '2.5 km', time: '7 minutes by car' },
-  { area: 'Gopal Bari', distance: '0.4 km', time: '2 minutes walk' },
-  { area: 'Nehru Bazaar', distance: '1.2 km', time: '4 minutes by auto' },
-  { area: 'Sanganeri Gate', distance: '1.8 km', time: '5 minutes by auto' },
+  { area: 'Sector 18 Metro Gate 2', distance: '0.2 km', time: '1 minute walk' },
+  { area: 'DLF Mall of India', distance: '0.3 km', time: '2 minutes walk' },
+  { area: 'Sector 62 IT Hub', distance: '8.5 km', time: '12 minutes by car' },
+  { area: 'Botanical Garden Interchange', distance: '1.8 km', time: '4 minutes by metro' },
+  { area: 'Film City Sector 16A', distance: '1.5 km', time: '3 minutes by car' },
+  { area: 'Sector 50 Central Noida', distance: '4.5 km', time: '8 minutes by car' },
+  { area: 'Noida-Greater Noida Expressway', distance: '3.2 km', time: '6 minutes by car' },
+  { area: 'Sector 137 Metro Station', distance: '9.8 km', time: '14 minutes by car' },
+  { area: 'Pari Chowk Greater Noida', distance: '22 km', time: '25 minutes by expressway' },
+  { area: 'Indirapuram Shipra Mall', distance: '11 km', time: '18 minutes by car' },
 ];
 
 // ── SECTION 3: COMPLETE SERVICE MENU ────────────────────────────────────────
@@ -74,7 +72,7 @@ export const SERVICES = [
     best_for: ['first timers', 'stress relief', 'sleep issues', 'mild tension', 'general wellness'],
     technique: 'Long gliding strokes, kneading, circular movements with warm oil',
     pressure: 'Light to medium',
-    keywords: ['swedish massage noida', 'relaxation massage noida', 'gentle massage sindhi camp'],
+    keywords: ['swedish massage noida', 'relaxation massage noida', 'gentle massage sector 18'],
   },
   {
     name: 'Traditional Thai Massage',
@@ -85,7 +83,7 @@ export const SERVICES = [
     best_for: ['stiffness', 'flexibility', 'energy renewal', 'desk workers', 'joint mobility', 'cervical pain'],
     technique: 'Sen-line acupressure, passive stretching, palm and thumb pressure',
     pressure: 'Medium to firm',
-    keywords: ['thai massage noida', 'thai massage sindhi camp', 'traditional thai massage noida'],
+    keywords: ['thai massage noida', 'thai massage sector 18', 'traditional thai massage noida'],
   },
   {
     name: 'Deep Tissue Massage',
@@ -118,7 +116,7 @@ export const SERVICES = [
     best_for: ['anxiety', 'insomnia', 'emotional exhaustion', 'burnout', 'stress', 'mood improvement'],
     technique: 'Swedish-style strokes with organic therapeutic essential oil blends',
     pressure: 'Light to medium',
-    keywords: ['aromatherapy massage noida', 'essential oil massage noida', 'stress massage sindhi camp'],
+    keywords: ['aromatherapy massage noida', 'essential oil massage noida', 'stress massage sector 18'],
   },
   {
     name: 'Couple Massage',
@@ -140,7 +138,7 @@ export const SERVICES = [
     best_for: ['whole body fatigue', 'post-work tiredness', 'general wellness', 'first visit'],
     technique: 'Structured full body coverage with warm therapeutic oil',
     pressure: 'Medium',
-    keywords: ['full body massage noida', 'full body massage sindhi camp', 'body massage near me noida'],
+    keywords: ['full body massage noida', 'full body massage sector 18', 'body massage near me noida'],
   },
   {
     name: 'Herbal Body Scrub',
@@ -150,7 +148,7 @@ export const SERVICES = [
     best_for: ['dull skin', 'dead skin removal', 'skin glow', 'exfoliation', 'detox'],
     technique: 'Manual exfoliation with herbal scrub, circular motions',
     pressure: 'Light, surface-level',
-    keywords: ['body scrub noida', 'herbal scrub sindhi camp', 'skin glow spa noida'],
+    keywords: ['body scrub noida', 'herbal scrub sector 18', 'skin glow spa noida'],
   },
   {
     name: 'Steam Bath',
@@ -160,11 +158,11 @@ export const SERVICES = [
     best_for: ['pre-massage preparation', 'detox', 'skin cleansing', 'muscle warmup'],
     technique: 'Enclosed herbal steam chamber, 15-20 minutes',
     pressure: 'N/A',
-    keywords: ['steam bath noida', 'steam room sindhi camp', 'detox spa noida'],
+    keywords: ['steam bath noida', 'steam room sector 18', 'detox spa noida'],
   },
 ];
 
-// ── SECTION 4: TRENDING KEYWORDS — Sindhi Camp 2.5km Radius ─────────────────
+// ── SECTION 4: TRENDING KEYWORDS — Sector 18 2.5km Radius ─────────────────
 
 export const TRENDING_KEYWORDS = {
 
@@ -172,8 +170,8 @@ export const TRENDING_KEYWORDS = {
   near_me: [
     'spa near me noida',
     'massage near me noida',
-    'spa near sindhi camp',
-    'massage center near sindhi camp',
+    'spa near sector 18',
+    'massage center near sector 18',
     'spa near noida railway station',
     'massage near railway station noida',
     'spa near noida junction',
@@ -191,7 +189,7 @@ export const TRENDING_KEYWORDS = {
   service_specific: [
     'thai massage noida',
     'thai massage noida price',
-    'thai massage sindhi camp noida',
+    'thai massage sector 18 noida',
     'swedish massage noida',
     'deep tissue massage noida',
     'balinese massage noida',
@@ -208,9 +206,9 @@ export const TRENDING_KEYWORDS = {
 
   // LOCAL AREA — Hyperlocal Targeting
   local_area: [
-    'spa in sindhi camp noida',
-    'massage parlour sindhi camp',
-    'wellness center sindhi camp noida',
+    'spa in sector 18 noida',
+    'massage parlour sector 18',
+    'wellness center sector 18 noida',
     'spa near mi road noida',
     'spa near bani park noida',
     'spa near civil lines noida',
@@ -348,12 +346,12 @@ STRUCTURE (Follow in exact order):
    - Recommendation in first person: "If you are in Noida and..."
    - Include phone number once: +91 73576 78356
    - Open 24 hours
-   - Location: Sindhi Camp
+   - Location: Sector 18
 
 TECHNICAL SEO RULES:
 ──────────────────────
 - Target keyword used 2-3 times naturally (not stuffed)
-- Location mentioned: Sindhi Camp, Noida (at least 3 times total)
+- Location mentioned: Sector 18, Noida (at least 3 times total)
 - Word count: 600-800 words for standard, 1000-1200 for long-form
 - Subheadings: 3-4 H3 tags per article
 - No bullet points in content — flowing paragraphs only
@@ -391,9 +389,9 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <h3>What I Found at 1:30 AM</h3>
 
-<p>The first result was Noida Spa at Sindhi Camp. What caught my eye immediately was not the rating — it was the operating hours: 24 hours. I called the number listed. Someone picked up in two rings. "Yes sir, we are open. Please come whenever you are ready." I left my apartment seven minutes later.</p>
+<p>The first result was Noida Spa at Sector 18. What caught my eye immediately was not the rating — it was the operating hours: 24 hours. I called the number listed. Someone picked up in two rings. "Yes sir, we are open. Please come whenever you are ready." I left my apartment seven minutes later.</p>
 
-<p>I want to be honest about my expectations at that hour. I was prepared for a half-hearted experience — a night shift employee going through the motions, a room that had not been properly cleaned since the evening session ended. Noida's Sindhi Camp area was quiet but not deserted as I walked in, and the spa's entrance was lit properly. Not aggressively bright — warmly lit, the way a place should be lit at 2 in the morning.</p>
+<p>I want to be honest about my expectations at that hour. I was prepared for a half-hearted experience — a night shift employee going through the motions, a room that had not been properly cleaned since the evening session ended. Noida's Sector 18 area was quiet but not deserted as I walked in, and the spa's entrance was lit properly. Not aggressively bright — warmly lit, the way a place should be lit at 2 in the morning.</p>
 
 <h3>The Session</h3>
 
@@ -409,7 +407,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>I returned to Noida Spa the following week. And the week after. I now go every Thursday evening. The cumulative effect of regular sessions is different from the dramatic single-session experience — it is quieter, more stable, like a baseline correction rather than a spike. My average nightly sleep in the past six weeks has been 6.1 hours. For me, that is significant.</p>
 
-<p>Noida Spa is on Motilal Atal Road, Sindhi Camp — 3 minutes from Noida Railway Station, open genuinely 24 hours. If you are searching for a spa near me in Noida at any hour of the day or night, the answer is probably this place. Call them at +91 73576 78356.</p>
+<p>Noida Spa is on Atta Market Road, Sector 18 — 3 minutes from Noida Railway Station, open genuinely 24 hours. If you are searching for a spa near me in Noida at any hour of the day or night, the answer is probably this place. Call them at +91 73576 78356.</p>
     `
   },
 
@@ -425,7 +423,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <h3>Choosing Noida Spa in Noida</h3>
 
-<p>I live near Bani Park. The obvious options near me were either hotel spas that charged ₹2,500+ or budget places that I knew from past experience would deliver a shallow interpretation of whatever I asked for. A colleague mentioned Noida Spa at Sindhi Camp — a ten-minute drive but consistently recommended by people I trusted. I called, explained my situation — lower back, physio referral, chronic issue — and asked if they had therapists experienced in clinical deep tissue work. The answer was yes, and they asked me to come in for an initial assessment conversation before booking.</p>
+<p>I live near Sector 62. The obvious options near me were either hotel spas that charged ₹2,500+ or budget places that I knew from past experience would deliver a shallow interpretation of whatever I asked for. A colleague mentioned Noida Spa at Sector 18 — a ten-minute drive but consistently recommended by people I trusted. I called, explained my situation — lower back, physio referral, chronic issue — and asked if they had therapists experienced in clinical deep tissue work. The answer was yes, and they asked me to come in for an initial assessment conversation before booking.</p>
 
 <p>That detail — the fact that they asked me to explain my condition before the session rather than just booking a time slot — told me something important about how they operate.</p>
 
@@ -447,7 +445,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>Four sessions at Noida Spa: ₹1,199 each, 60 minutes. Total: ₹4,796. For comparison, one physiotherapy session in Noida typically costs ₹500–₹800. My physio recommended the deep tissue work as complementary, not a replacement — the combination achieved more in four weeks than physio alone had in the previous year. For a chronic issue that had affected my quality of life for five years, ₹4,796 is not a difficult number to justify.</p>
 
-<p>Noida Spa, Sindhi Camp, Noida. 3 minutes from the railway station. Open 24 hours. If you have back pain in Noida and are looking for a genuine deep tissue massage with therapists who understand the difference between a clinical session and a relaxation session, this is where to go. Call +91 73576 78356 and describe your condition before booking.</p>
+<p>Noida Spa, Sector 18, Noida. 3 minutes from the railway station. Open 24 hours. If you have back pain in Noida and are looking for a genuine deep tissue massage with therapists who understand the difference between a clinical session and a relaxation session, this is where to go. Call +91 73576 78356 and describe your condition before booking.</p>
     `
   },
 
@@ -463,11 +461,11 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>I was completely wrong.</p>
 
-<h3>Booking Noida Spa — Sindhi Camp, Noida</h3>
+<h3>Booking Noida Spa — Sector 18, Noida</h3>
 
 <p>My wife had found Noida Spa through a colleague who had been there with her husband. We WhatsApped them the day before. Within 15 minutes, we had a confirmed 90-minute couple suite slot for our anniversary evening. They asked if there were any physical considerations (my wife has a shoulder issue from an old injury) and made a note. That level of pre-session care was the first indication that this would be different from what I was imagining.</p>
 
-<p>We arrived at the Sindhi Camp location — on Motilal Atal Road, just a few minutes from Noida's main railway station — at 7:30 PM. The building exterior is understated. The interior is not. Warm amber lighting, the kind that makes everyone look slightly better than they do in daylight. The faint scent of sandalwood without the aggressive diffuser blast you get at places trying too hard.</p>
+<p>We arrived at the Sector 18 location — on Atta Market Road, just a few minutes from Noida's main railway station — at 7:30 PM. The building exterior is understated. The interior is not. Warm amber lighting, the kind that makes everyone look slightly better than they do in daylight. The faint scent of sandalwood without the aggressive diffuser blast you get at places trying too hard.</p>
 
 <h3>The Couple Suite</h3>
 
@@ -481,7 +479,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>In the car on the way home, my wife said: "That's the most relaxed I have felt in two years." My shoulder, which I didn't even know was stiff until the therapist worked on it, felt mobile in a way it had not that morning. We were home by 9:30 PM and both asleep by 10:15 — the best anniversary outcome either of us could have asked for.</p>
 
-<p>Noida Spa couple suite: ₹2,499 for 60 minutes, ₹2,999 for 90 minutes. Book in advance — the suite fills on weekends. Sindhi Camp, Noida. Open 24 hours. Call or WhatsApp: +91 73576 78356.</p>
+<p>Noida Spa couple suite: ₹2,499 for 60 minutes, ₹2,999 for 90 minutes. Book in advance — the suite fills on weekends. Sector 18, Noida. Open 24 hours. Call or WhatsApp: +91 73576 78356.</p>
     `
   },
 
@@ -499,7 +497,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>My friend who lives in Noida, when I messaged him about the delay, responded with a single line: "Go to Noida Spa. It's 3 minutes from the station. You'll come back a new person." He had mentioned this spa before. I had filed it under "things I will look into properly one day," which is where interesting recommendations go to be forgotten. With five hours and nowhere to be, I looked it up properly for the first time.</p>
 
-<p>Noida Spa. Motilal Atal Road, Sindhi Camp. 1.2 kilometres from Noida Junction. Open 24 hours. I took an auto — 20 rupees and seven minutes of perfectly adequate Noida traffic. I walked through the entrance at 2:15 PM with no appointment, a train ticket in my bag, and no particular expectations.</p>
+<p>Noida Spa. Atta Market Road, Sector 18. 1.2 kilometres from Noida Junction. Open 24 hours. I took an auto — 20 rupees and seven minutes of perfectly adequate Noida traffic. I walked through the entrance at 2:15 PM with no appointment, a train ticket in my bag, and no particular expectations.</p>
 
 <h3>What You Get in 90 Minutes at Noida Spa</h3>
 
@@ -513,7 +511,7 @@ export const PATTERN_EXAMPLE_BLOGS = [
 
 <p>I was back at Noida Junction at 4:55 PM, 25 minutes before my rescheduled departure. My back did not ache for the entire journey to Mumbai. I arrived feeling, as my friend promised, like a new person. What could have been five hours of plastic bench and fluorescent light became, instead, one of the more genuinely pleasant afternoons I have had in recent memory.</p>
 
-<p>Noida Spa: Motilal Atal Road, Sindhi Camp, Noida. 3 minutes from Noida Railway Station. Open 24 hours. Balinese Massage: ₹1,199 (60 min), ₹1,499 (90 min). Call +91 73576 78356 — no appointment needed.</p>
+<p>Noida Spa: Atta Market Road, Sector 18, Noida. 3 minutes from Noida Railway Station. Open 24 hours. Balinese Massage: ₹1,199 (60 min), ₹1,499 (90 min). Call +91 73576 78356 — no appointment needed.</p>
     `
   },
 ];
@@ -582,7 +580,7 @@ Requirements:
 - 3-4 H3 subheadings
 - Flowing paragraphs (no bullet points)
 - End with phone number +91 73576 78356
-- Mention Sindhi Camp and Noida naturally throughout
+- Mention Sector 18 and Noida naturally throughout
 - Sound like a real person, not a business
 
 Return ONLY the HTML content (p and h3 tags). No title, no markdown.`;
@@ -594,10 +592,10 @@ Return ONLY the HTML content (p and h3 tags). No title, no markdown.`;
 export const selectKeywordForDay = (dayIndex: number): { topic: string; keyword: string } => {
   // Flatten all keywords into a single pool
   const allKeywords = [
-    ...TRENDING_KEYWORDS.near_me.map(k => ({ topic: `experience of finding ${k.replace('noida', '').replace('near me', '').trim()} in noida sindhi camp`, keyword: k })),
+    ...TRENDING_KEYWORDS.near_me.map(k => ({ topic: `experience of finding ${k.replace('noida', '').replace('near me', '').trim()} in noida sector 18`, keyword: k })),
     ...TRENDING_KEYWORDS.service_specific.map(k => ({ topic: `complete guide to ${k}`, keyword: k })),
     ...TRENDING_KEYWORDS.local_area.map(k => ({ topic: `best spa option for people ${k.replace('spa', '').replace('near', 'near').trim()}`, keyword: k })),
-    ...TRENDING_KEYWORDS.problem_based.map(k => ({ topic: `how massage helped my ${k.replace('noida', '').trim()} at Noida Spa sindhi camp`, keyword: k })),
+    ...TRENDING_KEYWORDS.problem_based.map(k => ({ topic: `how massage helped my ${k.replace('noida', '').trim()} at Noida Spa sector 18`, keyword: k })),
     ...TRENDING_KEYWORDS.occasion_based.map(k => ({ topic: `our ${k.replace('noida', '').trim()} experience at Noida Spa`, keyword: k })),
     ...TRENDING_KEYWORDS.time_based.map(k => ({ topic: `visiting Noida Spa for ${k.replace('noida', '').trim()}`, keyword: k })),
     ...TRENDING_KEYWORDS.tourist.map(k => ({ topic: k, keyword: k })),

@@ -70,7 +70,7 @@ const generateAiBlogArticle = (userTopic: string) => {
     content: `
       <p>Welcome to ${BRAND.name}, Noida's trusted platform for verified companion profiles. Whether you reside in Noida or are visiting for travel, our directory features verified independent models across central and luxury hotel zones.</p>
       <h3>Safety & Real Verification</h3>
-      <p>We ensure that all profiles uploaded have undergone direct phone authentication. Never pay unauthorized advance fees or deposit requests to unverified contacts.</p>
+      <p>We ensure that all profiles uploaded have undergone direct phone authentication. Never pay unauthorized unauthorized fees or deposit requests to unverified contacts.</p>
       <h3>Discreet Outcalls in Noida & NCR</h3>
       <p>Independent companions are available for outcall appointments at all major 3-star, 4-star, and 5-star hotels across Sector 18, Sector 62, Greater Noida, and Noida Expressway.</p>
       <p>For immediate assistance and genuine photos, contact our manager on WhatsApp at ${CONTACT.phoneDisplay}.</p>
@@ -216,7 +216,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
         `• Half Night Outcall: Starting from ₹5,000 – ₹8,000\n` +
         `• Full Night VIP Companion: Starting from ₹8,000 – ₹15,000+\n` +
         `• Russian / Foreign VIP Models: Custom quotes on WhatsApp\n\n` +
-        ` Direct Payment upon meeting. Zero advance fee policy!`,
+        ` Direct Payment upon meeting. Verified companion fee policy!`,
       options: ['Book on WhatsApp', 'Verified Models', 'Noida Localities'],
       action: 'none'
     };
@@ -239,10 +239,10 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   }
 
   // ── 7. SAFETY & ANTI-SCAM RULES ────────────────────────────────────────
-  if (contains(normalized, ['safety', 'scam', 'fraud', 'advance', 'advance payment', 'safe', 'privacy', 'discreet', 'secure', 'real', 'fake'])) {
+  if (contains(normalized, ['safety', 'scam', 'fraud', 'advance', 'unauthorized payment', 'safe', 'privacy', 'discreet', 'secure', 'real', 'fake'])) {
     return {
       response: ` Strict Safety & Scam Prevention Guidelines:\n\n` +
-        ` 1. NEVER pay online advance fees or QR codes before meeting.\n` +
+        ` 1. NEVER pay online unauthorized fees or QR codes before meeting.\n` +
         ` 2. Verify model photos directly on WhatsApp (${CONTACT.phoneDisplay}).\n` +
         ` 3. Payment is made directly in cash or UPI to the companion upon arrival.\n` +
         ` 4. 100% strict client confidentiality & privacy guaranteed.\n` +

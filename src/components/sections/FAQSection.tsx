@@ -17,8 +17,8 @@ const faqs = [
     answer: `Yes! ${BRAND.name} operates 24 Hours, 7 Days a week. Independent companions provide fast 20–35 minute doorstep outcalls to all 3-star, 4-star, and 5-star hotels and luxury suites in Sector 18, Sector 62, Expressway (137, 128, 142), Greater Noida (Pari Chowk), and Indirapuram.`
   },
   {
-    question: 'Is there any advance payment or booking deposit required in Noida?',
-    answer: 'No! We maintain a strict zero-advance policy to protect clients from online frauds. You never pay unfamiliar QR codes or deposit links. Payment is settled directly in cash or UPI with the companion upon arrival.'
+    question: 'Is there any unauthorized payment or booking deposit required in Noida?',
+    answer: 'No! We maintain a strict photo-verification policy to protect clients from online frauds. You never pay unfamiliar QR codes or deposit links. Payment is settled directly in cash or UPI with the companion upon arrival.'
   },
   {
     question: 'How is client privacy and confidentiality maintained?',

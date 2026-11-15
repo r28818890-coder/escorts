@@ -153,7 +153,7 @@ export const VisitorCookieManager: React.FC = () => {
             </h3>
 
             <p className="text-slate-300 text-xs md:text-sm leading-relaxed mb-5">
-              Browse 100% verified model profiles with 24/7 direct WhatsApp booking and zero advance deposit scams.
+              Browse 100% verified model profiles with 24/7 direct WhatsApp booking and verified companion screening.
             </p>
 
             <div className="space-y-2.5">

@@ -8,7 +8,7 @@ import { BRAND, CONTACT } from '@/config/site';
 const FAQ_ITEMS = [
   {
     q: 'How do I book a verified escort or companion in Noida & NCR?',
-    a: `Booking is straightforward and discreet. Browse our verified categories (VIP Models, Russian Companions, Independent Escorts), choose your preferred companion, and message our coordinator directly on WhatsApp (${CONTACT.phoneDisplay}). We confirm real-time availability with zero advance payment.`,
+    a: `Booking is straightforward and discreet. Browse our verified categories (VIP Models, Russian Companions, Independent Escorts), choose your preferred companion, and message our coordinator directly on WhatsApp (${CONTACT.phoneDisplay}). We confirm real-time availability with verified companion service.`,
   },
   {
     q: 'Are the companion photos 100% genuine and verified?',
@@ -19,8 +19,8 @@ const FAQ_ITEMS = [
     a: `Yes! ${BRAND.name} operates 24 Hours, 7 Days a week. Independent companions provide fast 20-30 minute doorstep outcalls to all hotels in Sector 18, Sector 62, Noida Expressway, Greater Noida (Pari Chowk), and Indirapuram.`,
   },
   {
-    q: 'Is there any advance payment or booking deposit required in Noida?',
-    a: 'No! We maintain a strict zero-advance policy to protect clients from online frauds. You never pay unfamiliar QR codes or deposit links. Payment is settled directly upon arrival.',
+    q: 'Is there any unauthorized payment or booking deposit required in Noida?',
+    a: 'No! We maintain a strict photo-verification policy to protect clients from online frauds. You never pay unfamiliar QR codes or deposit links. Payment is settled directly upon arrival.',
   },
   {
     q: 'How is client privacy and confidentiality maintained?',

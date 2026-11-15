@@ -11,10 +11,10 @@ export interface CompetitorAnalysisReport {
   actionTaken: string;
 }
 
-const JAIPUR_COMPETITORS = [
-  { name: 'Generic Hotel Spas Noida', weakPoints: 'High prices (₹3500+), hidden GST charges, slow response, limited 24/7 availability' },
-  { name: 'Chain Franchise Spas (O2 / Tattva)', weakPoints: 'Fixed rigid packages, no customized posture diagnostics, no direct manager WhatsApp booking' },
-  { name: 'Local Uncertified Centers', weakPoints: 'Low hygiene trust, unclear pricing, poor Google E-E-A-T score, no structured schema' },
+const NOIDA_COMPETITORS = [
+  { name: 'ournoidaescorts.com', weakPoints: 'Fake photos, unverified phone redirects, duplicate content, thin pages' },
+  { name: 'Generic Delhi Classifieds', weakPoints: 'Misleading photos, inactive phone numbers, fake locations' },
+  { name: 'Unverified Aggregator Portals', weakPoints: 'No real-time WhatsApp verification, slow outcall response' },
 ];
 
 /**
@@ -79,7 +79,7 @@ export const runCompetitorSeoAnalysis = (): CompetitorAnalysisReport => {
   return {
     timestamp: dateStr,
     googlePolicyCompliance: '100% Compliant with Google 2026 E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) & Helpful Content System',
-    competitorsAnalyzed: JAIPUR_COMPETITORS.map((c) => c.name),
+    competitorsAnalyzed: NOIDA_COMPETITORS.map((c) => c.name),
     rankingScore: 98,
     identifiedGaps: gaps,
     outrankingStrategy: strategies,

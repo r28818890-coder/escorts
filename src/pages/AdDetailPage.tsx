@@ -250,14 +250,14 @@ export const AdDetailPage: React.FC = () => {
 
               {/* Contact Buttons */}
               <div className="pt-4 border-t border-slate-100 space-y-3">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-2 sm:gap-3">
                   <a
                     href={`tel:+91${ad.phone.replace(/\D/g, '')}`}
                     onClick={() => trackCallClick(ad.phone, 'ad_detail_call')}
-                    className="py-4 px-6 rounded-2xl bg-gradient-to-r from-rose-600 to-indigo-600 text-white font-black text-sm uppercase tracking-wider hover:brightness-110 flex items-center justify-center gap-2 shadow-md cursor-pointer"
+                    className="py-2.5 px-2 sm:py-3.5 sm:px-4 rounded-xl bg-gradient-to-r from-rose-600 to-indigo-600 text-white font-black text-xs sm:text-sm uppercase tracking-wider hover:brightness-110 flex items-center justify-center gap-1.5 shadow-sm cursor-pointer active:scale-95 transition-transform"
                   >
-                    <Phone size={18} />
-                    Call: {ad.phone}
+                    <Phone size={14} />
+                    <span>Call: {ad.phone}</span>
                   </a>
 
                   <a
@@ -265,10 +265,10 @@ export const AdDetailPage: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackWhatsAppClick(ad.whatsapp, 'ad_detail_wa')}
-                    className="py-4 px-6 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-md transition-transform hover:scale-[1.02] cursor-pointer"
+                    className="py-2.5 px-2 sm:py-3.5 sm:px-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-xs sm:text-sm uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-sm transition-transform active:scale-95 cursor-pointer"
                   >
-                    <MessageCircle size={18} />
-                    Chat on WhatsApp
+                    <MessageCircle size={14} />
+                    <span>WhatsApp</span>
                   </a>
                 </div>
 

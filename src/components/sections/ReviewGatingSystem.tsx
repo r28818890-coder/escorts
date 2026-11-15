@@ -4,7 +4,7 @@ import { BRAND, CONTACT } from '@/config/site';
 
 const KEYWORD_CHIPS = [
   { id: 'k1', label: ' Verified Profiles', text: `${BRAND.name} provides 100% genuine photo verified companion listings in Noida!` },
-  { id: 'k2', label: ' Zero Advance Fee', text: 'Clean payment policy with zero advance deposit scams.' },
+  { id: 'k2', label: ' Verified Companion Fee', text: 'Clean payment policy with verified companion screening.' },
   { id: 'k3', label: ' 5-Star Hotel Outcall', text: 'Companions arrive promptly at hotel rooms within 30 minutes.' },
   { id: 'k4', label: ' 100% Discretion', text: 'Utmost privacy, polite behavior, and total confidentiality maintained.' },
   { id: 'k5', label: ' Sindhi Camp & MI Road', text: 'Fastest service in Sindhi Camp, MI Road, and Vaishali Nagar.' },

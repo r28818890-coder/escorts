@@ -118,3 +118,31 @@
   - **Homepage Word Count:** Verified at 1,516 words (exceeding the 1,200-word minimum).
   - **Title Tag Lengths:** Verified strictly `<= 58-60` characters across all routes.
   - **Production Build:** `npm run build` completed in 8.09s with 0 errors across 112 pre-rendered routes.
+
+---
+
+## Refactoring & Mobile UI/UX Optimization (November 15, 2026 - Update 2)
+
+### 1. Removal of "Zero Advance" & "Cash on Delivery"
+- **Sitewide Elimination:** Fully purged all occurrences of "zero advance", "zero advance deposit", and "cash on delivery" from UI copy, hero trust chips, profile descriptions across all 100 profiles, meta descriptions, FAQ schema, and pre-rendered HTML fallbacks.
+- **Verification:** Verified via automated scanner across all 118 generated HTML documents in `dist/` with **0 violations found**.
+
+### 2. Mobile Call & WhatsApp Buttons Layout
+- **Hero & Bottom CTA:** Replaced wrapping full-width CTA buttons with a compact 2-column grid (`grid grid-cols-2 gap-2 sm:gap-4 max-w-xs sm:max-w-md mx-auto`) so Call is on the **left** and WhatsApp is on the **right**, side-by-side on mobile without vertical stacking.
+- **Ad Detail Page:** Replaced `grid-cols-1 sm:grid-cols-2` with `grid grid-cols-2 gap-2 sm:gap-3` so Call and WhatsApp buttons stay side-by-side on mobile.
+- **Floating Button:** Changed `WhatsAppButton.tsx` from vertical column (`flex flex-col`) to compact horizontal row (`flex flex-row items-center gap-2`) on mobile.
+
+### 3. Homepage Section Re-ordering
+- **Photos First:** Relocated the **Featured Verified Companions** profile grid to immediately follow the Hero Section and Age Warning Modal (Section 2).
+- **Categories & Localities Lowered:** Moved the **Category Directory** ("Explore Noida Companionship Silos") and **Hyperlocal Footprint** (18 Localities) below the companion photo cards (Sections 3 & 4).
+
+### 4. Trending Area & Jaipur Removal
+- **Live Activity Toast:** Replaced legacy Jaipur locations (`Tonk Road`, `Sindhi Camp`, `C-Scheme`, etc.) with real Noida sectors (`Sector 18 Noida`, `Sector 62 Noida`, `Sector 50 Noida`, `Sector 137 Noida`, `Pari Chowk Greater Noida`, `Indirapuram NCR`).
+- **Services Cleaned:** Completely sanitized `pureblissBrain.ts`, `autoBlogScheduler.ts`, and `competitorSeoEngine.ts`.
+
+### 5. Profile Card Optimization for Mobile
+- **Compact Card Sizing:** Reduced card body padding, tightened badge and tag font sizes, made call/whatsapp buttons compact and tactile, and adjusted mobile grid gap to `gap-2 sm:gap-3` for clean, luxury mobile proportions.
+
+### 6. Footer Clean-up & Domain Removal
+- **Domain String Removed:** Purged the raw domain name from the footer copyright notice.
+- **Responsive Layout:** Enhanced column stacking and alignment for mobile screens.

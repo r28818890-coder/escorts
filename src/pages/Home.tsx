@@ -135,8 +135,8 @@ export const Home: React.FC = () => {
 
   const homeFaqs = [
     {
-      q: 'How can I safely book escorts in Noida without paying any advance deposit?',
-      a: 'At Escorts Hub Noida, we operate under a strict zero-advance payment protocol. You never pay any advance token, booking charge, or registration fee. You browse verified profiles, choose your preferred companion, confirm the arrival details via direct call or WhatsApp at +91 8218125815, and settle the payment in cash only after your companion arrives in person at your hotel room or private residence.'
+      q: 'How can I safely book verified escorts in Noida hotels?',
+      a: 'At Escorts Hub Noida, we operate under a strict photo-verified companion protocol. You browse verified profiles, choose your preferred companion, confirm the arrival details via direct call or WhatsApp at +91 8218125815, and welcome your companion directly in person at your luxury hotel room or private residence.'
     },
     {
       q: 'What is the average outcall arrival time to 5-star hotels in Noida Sector 18 and Expressway?',
@@ -160,7 +160,7 @@ export const Home: React.FC = () => {
     },
     {
       q: 'What payment methods are supported for companionship services in Noida?',
-      a: 'We strictly recommend cash on delivery (COD) directly to the companion upon her verified arrival. For corporate clients or travelers who prefer digital settlement, direct peer-to-peer UPI or bank transfer may be completed upon mutual agreement in person after arrival. No online prepayments or digital wallet transfers are ever required prior to meeting.'
+      a: 'Clients may settle payments directly in person upon the companion’s verified arrival. For corporate clients or travelers who prefer digital settlement, direct peer-to-peer UPI or bank transfer may be completed upon mutual agreement in person. No online prepayments or digital wallet transfers are ever required prior to meeting.'
     },
     {
       q: 'What should I do if a model arriving does not match her website photograph?',
@@ -242,7 +242,7 @@ export const Home: React.FC = () => {
       {/* Primary Technical SEO Meta Tags (Capped strictly to <=58 chars) */}
       <SEO
         title="Escorts in Noida | Verified 24/7 Hotel Outcall"
-        description="Book verified escorts in Noida with 100% real photos. Zero advance deposit, cash on delivery, and fast 20-min hotel outcall. Call or WhatsApp +91 8218125815 now."
+        description="Book verified escorts in Noida with 100% real photos, direct 24/7 hotel outcall, and prompt 20-min arrival. Call or WhatsApp +91 8218125815 now."
         schema={homeSchema}
       />
 
@@ -272,43 +272,43 @@ export const Home: React.FC = () => {
 
           {/* 2-line subhead naming Noida landmarks */}
           <p className="text-sm sm:text-base text-slate-300 max-w-3xl mx-auto mb-6 leading-relaxed font-normal">
-            Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with zero advance fraud.
+            Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with complete privacy.
           </p>
 
           {/* Trust Chips Row */}
-          <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap mb-8 text-xs font-semibold">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap mb-7 text-xs font-semibold">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
               <ShieldCheck size={14} className="text-emerald-400" /> 100% Real Photos
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
-              <Lock size={14} className="text-amber-400" /> Zero Advance Deposit
+              <Lock size={14} className="text-amber-400" /> 100% Privacy Verified
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
               <Clock size={14} className="text-sky-400" /> 20-Min Fast Outcall
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-slate-200">
-              <CheckCircle size={14} className="text-emerald-400" /> Cash on Delivery
+              <CheckCircle size={14} className="text-emerald-400" /> Direct Hotel Outcall
             </span>
           </div>
 
-          {/* Dual Call-to-Action Buttons */}
-          <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap mb-8">
+          {/* Dual Call-to-Action Buttons (Side by Side Left-Right on Mobile) */}
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 max-w-xs sm:max-w-md mx-auto mb-8">
             <a
               href="tel:+918218125815"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm uppercase tracking-wider shadow-lg shadow-amber-500/20 hover:scale-105 active:scale-95 transition-all min-h-[48px]"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:px-6 sm:py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all min-h-[44px]"
             >
-              <Phone size={18} />
-              Call 8218125815
+              <Phone size={15} />
+              <span>Call 8218125815</span>
             </a>
 
             <a
               href={`https://wa.me/918218125815?text=${encodeURIComponent('Hello Escorts Hub Noida! I want to book a verified companion in Noida Sector 18 / NCR.')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-sm uppercase tracking-wider shadow-lg shadow-emerald-500/20 hover:scale-105 active:scale-95 transition-all min-h-[48px]"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:px-6 sm:py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all min-h-[44px]"
             >
-              <MessageCircle size={18} />
-              WhatsApp VIP Desk
+              <MessageCircle size={15} />
+              <span>WhatsApp VIP</span>
             </a>
           </div>
 
@@ -320,101 +320,7 @@ export const Home: React.FC = () => {
       {/* 18+ Age Disclaimer Modal (Rendered after Hero so H1 is first in DOM tree) */}
       <AgeVerificationModal />
 
-      {/* ── 2. CATEGORY GRID (5 Silo Hubs) ────────────────────────── */}
-      <section className="py-10 sm:py-14 bg-white border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <span className="text-xs font-black text-amber-600 uppercase tracking-widest block mb-1">
-              Category Directory
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
-              Explore Noida Companionship Silos
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-500 mt-2">
-              Browse our five verified companion categories across Noida, Greater Noida, and the NCR corridor.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {PORTAL_CATEGORIES.map((cat) => (
-              <Link
-                key={cat.id}
-                to={`/${cat.slug}`}
-                className="group p-5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-amber-500 hover:bg-amber-50/20 hover:shadow-xl transition-all duration-200 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="w-12 h-12 rounded-xl bg-white border border-slate-200 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm">
-                    {getCategoryIcon(cat.iconName)}
-                  </div>
-                  <h3 className="font-black text-base text-slate-900 group-hover:text-amber-700 transition-colors mb-1.5">
-                    {cat.name}
-                  </h3>
-                  <p className="text-xs text-slate-500 line-clamp-3 leading-relaxed mb-4">
-                    {cat.tagline}
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between text-xs text-amber-700 font-bold pt-3 border-t border-slate-200">
-                  <span>Browse Profiles</span>
-                  <ArrowRight size={14} className="group-hover:translate-x-1.5 transition-transform" />
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3. LOCALITY GRID (All 18 Prime Localities Linked) ─────── */}
-      <section className="py-10 sm:py-14 bg-slate-50 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center max-w-3xl mx-auto mb-8">
-            <span className="text-xs font-black text-amber-600 uppercase tracking-widest block mb-1">
-              Hyperlocal NCR Footprint
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
-              Verified Escorts Across All 18 Noida Sectors & NCR Hubs
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-2">
-              Select your hotel neighborhood or metro sector below for verified outcall companions arriving in 15 to 30 minutes.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {NOIDA_LOCALITIES.map((loc) => (
-              <Link
-                key={loc.id}
-                to={`/call-girls/${loc.slug}`}
-                className="p-3.5 rounded-2xl bg-white border border-slate-200 hover:border-amber-500 hover:shadow-md transition-all text-center group flex flex-col justify-between"
-              >
-                <div>
-                  <span className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-amber-700 transition-colors block truncate">
-                    {loc.name}
-                  </span>
-                  <span className="text-[11px] text-slate-500 line-clamp-1 mt-1">
-                    {loc.landmark}
-                  </span>
-                </div>
-                <span className="text-[10px] font-bold text-amber-700 mt-3 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full inline-block self-center">
-                  {loc.zone}
-                </span>
-              </Link>
-            ))}
-          </div>
-
-          <div className="text-center mt-6">
-            <Link
-              to="/noida-areas"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-800 underline underline-offset-4"
-            >
-              <Navigation size={13} /> View Comprehensive Noida & NCR Sector Index with Metro Stations
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 4. PROFILE GRID (Filtered 54 Profiles Pool) ─────────────── */}
+      {/* ── 2. PROFILE GRID (Photos First - Featured Verified Companions) ── */}
       <section className="py-10 sm:py-14 bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -429,7 +335,7 @@ export const Home: React.FC = () => {
                   Featured Verified Companions in Noida
                 </h2>
                 <p className="text-xs text-slate-500">
-                  100% Real photos, cash on delivery & 24/7 doorstep hotel outcall across Noida & NCR
+                  100% Real photos & 24/7 doorstep hotel outcall across Noida & NCR
                 </p>
               </div>
             </div>
@@ -460,12 +366,106 @@ export const Home: React.FC = () => {
               <p className="text-xs text-slate-500">Click "All NCR" or search another sector.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3 lg:gap-4">
               {filteredAds.map((ad, idx) => (
                 <AdCard key={ad.id} ad={ad} featured={idx < 4} />
               ))}
             </div>
           )}
+        </div>
+      </section>
+
+      {/* ── 3. CATEGORY GRID (5 Silo Hubs - Now Below Photos) ───────── */}
+      <section className="py-10 sm:py-14 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center max-w-2xl mx-auto mb-8">
+            <span className="text-xs font-black text-amber-600 uppercase tracking-widest block mb-1">
+              Category Directory
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
+              Explore Noida Companionship Silos
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-500 mt-2">
+              Browse our five verified companion categories across Noida, Greater Noida, and the NCR corridor.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {PORTAL_CATEGORIES.map((cat) => (
+              <Link
+                key={cat.id}
+                to={`/${cat.slug}`}
+                className="group p-5 rounded-2xl bg-white border border-slate-200 hover:border-amber-500 hover:bg-amber-50/20 hover:shadow-xl transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm">
+                    {getCategoryIcon(cat.iconName)}
+                  </div>
+                  <h3 className="font-black text-base text-slate-900 group-hover:text-amber-700 transition-colors mb-1.5">
+                    {cat.name}
+                  </h3>
+                  <p className="text-xs text-slate-500 line-clamp-3 leading-relaxed mb-4">
+                    {cat.tagline}
+                  </p>
+                </div>
+
+                <div className="flex items-center justify-between text-xs text-amber-700 font-bold pt-3 border-t border-slate-200">
+                  <span>Browse Profiles</span>
+                  <ArrowRight size={14} className="group-hover:translate-x-1.5 transition-transform" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4. LOCALITY GRID (All 18 Prime Localities Linked) ─────── */}
+      <section className="py-10 sm:py-14 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <span className="text-xs font-black text-amber-600 uppercase tracking-widest block mb-1">
+              Hyperlocal NCR Footprint
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
+              Verified Escorts Across All 18 Noida Sectors & NCR Hubs
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">
+              Select your hotel neighborhood or metro sector below for verified outcall companions arriving in 15 to 30 minutes.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {NOIDA_LOCALITIES.map((loc) => (
+              <Link
+                key={loc.id}
+                to={`/call-girls/${loc.slug}`}
+                className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 hover:border-amber-500 hover:shadow-md transition-all text-center group flex flex-col justify-between"
+              >
+                <div>
+                  <span className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-amber-700 transition-colors block truncate">
+                    {loc.name}
+                  </span>
+                  <span className="text-[11px] text-slate-500 line-clamp-1 mt-1">
+                    {loc.landmark}
+                  </span>
+                </div>
+                <span className="text-[10px] font-bold text-amber-700 mt-3 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-full inline-block self-center">
+                  {loc.zone}
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-6">
+            <Link
+              to="/noida-areas"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 hover:text-amber-800 underline underline-offset-4"
+            >
+              <Navigation size={13} /> View Comprehensive Noida & NCR Sector Index with Metro Stations
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -478,10 +478,10 @@ export const Home: React.FC = () => {
               <ShieldCheck size={18} /> Safety & Authenticity Protocols
             </span>
             <h2 className="text-2xl sm:text-4xl font-black mb-3">
-              Zero-Advance Safety Guarantee in Noida
+              Verified Companion Safety Guarantee in Noida
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              We eliminate online fraud completely. Never transfer advance funds or pay verification fees before meeting your companion in person.
+              We eliminate online scams completely. Enjoy verified 24/7 hotel outcall companions with real photographs and complete privacy.
             </p>
           </div>
 
@@ -502,7 +502,7 @@ export const Home: React.FC = () => {
               <Award size={32} className="text-amber-400 shrink-0" />
               <div>
                 <h4 className="font-bold text-sm sm:text-base text-amber-300">100% Genuine Physical Meeting Protocol</h4>
-                <p className="text-xs text-slate-300">Pay cash directly to the companion upon door arrival. No middleman deductions or online tokens.</p>
+                <p className="text-xs text-slate-300">Direct door arrival to your luxury hotel room or suite. No middleman deductions or fake online profiles.</p>
               </div>
             </div>
             <a
@@ -533,7 +533,7 @@ export const Home: React.FC = () => {
                 Noida, one of India's fastest-growing planned industrial and commercial hubs in the National Capital Region (NCR), is home to world-class corporate parks, multinational tech headquarters, and premier luxury hospitality destinations. Whether you are an executive visiting the multinational IT corridors of Sector 62 and Advant Navis on the Expressway, attending an international symposium at the India Expo Mart in Greater Noida, or enjoying a leisurely stay near DLF Mall of India and Sector 18, Escorts Hub Noida offers the most discreet, reliable, and verified adult companionship directory in the region.
               </p>
               <p>
-                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a zero-advance payment philosophy, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else.
+                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else.
               </p>
             </div>
 
@@ -568,17 +568,17 @@ export const Home: React.FC = () => {
               </p>
             </div>
 
-            {/* Zero Advance Fraud Prevention */}
+            {/* Verified Outcall Protocol */}
             <div>
               <h3 className="text-xl sm:text-2xl font-black text-slate-900 mb-3 flex items-center gap-2">
                 <Lock size={22} className="text-amber-600" />
-                Zero Advance Guarantee: How We Shield Clients from Digital Fraud
+                Verified Companion Protocol: How We Shield Clients from Digital Scams
               </h3>
               <p>
-                The digital adult companionship landscape is unfortunately plagued by predatory scam operations that request advance booking charges, medical registration tokens, or fake courier security deposits via UPI or gift cards. Once an unsuspecting client transfers money, the scammer either demands more funds or immediately terminates communication.
+                The digital adult companionship landscape is unfortunately plagued by predatory scam operations that publish misleading stock pictures or unverified profiles. Once an unsuspecting client contacts them, they often encounter impersonators or middlemen.
               </p>
               <p>
-                At Escorts Hub Noida, we enforce a strict zero-advance payment protocol across all 100 active profiles. We never ask for Google Pay, PhonePe, Paytm, or credit card transfers prior to physical arrival. Clients inspect and greet their chosen companion face-to-face in the privacy of their hotel room before any financial transaction takes place. This guarantees 100% peace of mind, zero risk of digital extortion, and total satisfaction.
+                At Escorts Hub Noida, we enforce a strict photo-verification and direct communication protocol across all 100 active profiles. We provide genuine photographs, accurate descriptions, and transparent hotel outcall coordination. Clients greet their chosen companion face-to-face in the privacy of their hotel room, guaranteeing 100% peace of mind, authentic service, and total satisfaction.
               </p>
             </div>
 
@@ -696,26 +696,26 @@ export const Home: React.FC = () => {
             Connect with Verified Companions in Noida Today
           </h2>
           <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto mb-8 font-normal leading-relaxed">
-            Fast 20-minute doorstep arrival to your hotel room or private suite across Sector 18, Sector 62, Noida Expressway, Greater Noida, and Indirapuram with cash on delivery.
+            Fast 20-minute doorstep arrival to your hotel room or private suite across Sector 18, Sector 62, Noida Expressway, Greater Noida, and Indirapuram with discreet 24/7 hotel outcall service.
           </p>
 
-          <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
+          <div className="grid grid-cols-2 gap-2 sm:gap-4 max-w-xs sm:max-w-md mx-auto">
             <a
               href="tel:+918218125815"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-widest shadow-lg hover:scale-105 active:scale-95 transition-all min-h-[48px]"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:px-6 sm:py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all min-h-[44px]"
             >
-              <Phone size={18} />
-              Call +91 8218125815
+              <Phone size={15} />
+              <span>Call Now</span>
             </a>
 
             <a
               href={`https://wa.me/918218125815?text=${encodeURIComponent('Hello Escorts Hub Noida! I would like to book a verified companion in Noida Sector 18 / NCR.')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-xs uppercase tracking-widest shadow-lg hover:scale-105 active:scale-95 transition-all min-h-[48px]"
+              className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:px-6 sm:py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all min-h-[44px]"
             >
-              <MessageCircle size={18} />
-              WhatsApp VIP Desk
+              <MessageCircle size={15} />
+              <span>WhatsApp</span>
             </a>
           </div>
         </div>

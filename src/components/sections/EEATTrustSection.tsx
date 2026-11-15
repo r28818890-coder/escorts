@@ -17,7 +17,7 @@ export const EEATTrustSection: React.FC = () => {
             '@context': 'https://schema.org',
             '@type': 'AboutPage',
             name: `${BRAND.name} E-E-A-T Trust & Quality Standards`,
-            description: 'Editorial standards, 5-step companion verification protocol, zero-advance fraud protection, and privacy compliance in Noida and 30km NCR.',
+            description: 'Editorial standards, 5-step companion verification protocol, verified companion fraud protection, and privacy compliance in Noida and 30km NCR.',
             mainEntity: {
               '@type': 'Organization',
               name: BRAND.name,
@@ -45,7 +45,7 @@ export const EEATTrustSection: React.FC = () => {
             Why Discerning Clients Trust {BRAND.name}
           </h2>
           <p className="text-slate-400 text-xs md:text-sm mt-2">
-            Built on Local NCR Experience, Verified Authoritativeness & 100% Zero-Advance Payment Trustworthiness.
+            Built on Local NCR Experience, Verified Authoritativeness & 100% Photo-Verified Trustworthiness.
           </p>
         </div>
 

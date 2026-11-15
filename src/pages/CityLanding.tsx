@@ -76,7 +76,7 @@ const CityLanding: React.FC = () => {
                 { title: 'Fast Doorstep Outcall', desc: `Arrives within ${location.distance} at your hotel in ${location.area}` },
                 { title: '24/7 Availability', desc: 'Round-the-clock coordination and instant photo sharing' },
                 { title: '100% Verified Profiles', desc: 'Genuine independent models with real phone verification' },
-                { title: 'Zero Advance Scam Policy', desc: 'Pay directly to companion upon arrival' }
+                { title: 'Verified Companion Scam Policy', desc: 'Pay directly to companion upon arrival' }
               ].map((benefit, idx) => (
                 <div key={idx} className="flex gap-4 p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
                   <CheckCircle2 className="text-emerald-600 shrink-0 mt-0.5" />

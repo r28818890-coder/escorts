@@ -40,7 +40,7 @@ const BookingPage: React.FC = () => {
     '@id': 'https://wenoidaescorts.com/booking#webpage',
     'url': 'https://wenoidaescorts.com/booking',
     'name': '24/7 Outcall Companion Booking in Noida',
-    'description': 'Direct outcall booking desk for verified escorts and call girls across all 18 Noida & NCR sectors with zero advance payment.',
+    'description': 'Direct outcall booking desk for verified escorts and call girls across all 18 Noida & NCR sectors with verified companion service.',
     'breadcrumb': {
       '@type': 'BreadcrumbList',
       'itemListElement': [
@@ -66,7 +66,7 @@ const BookingPage: React.FC = () => {
       {/* Technical SEO */}
       <SEO
         title="Fast 24/7 Outcall Booking in Noida | Escorts Hub"
-        description="Book verified outcall escorts in Noida with zero advance deposit. Fast 20-min hotel arrival in Sector 18, 62 & Expressway. Call or WhatsApp +91 8218125815 now."
+        description="Book verified outcall escorts in Noida with verified hotel outcall. Fast 20-min hotel arrival in Sector 18, 62 & Expressway. Call or WhatsApp +91 8218125815 now."
         url="https://wenoidaescorts.com/booking"
         schema={bookingSchema}
       />
@@ -93,7 +93,7 @@ const BookingPage: React.FC = () => {
           </h1>
 
           <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Instant 20-minute hotel outcall delivery across Sector 18, Sector 62, Noida Expressway, Greater Noida & Ghaziabad borders. 100% Cash on delivery with zero advance payment.
+            Instant 20-minute hotel outcall delivery across Sector 18, Sector 62, Noida Expressway, Greater Noida & Ghaziabad borders. 100% Direct hotel outcall with verified companion service.
           </p>
         </div>
       </section>
@@ -249,7 +249,7 @@ const BookingPage: React.FC = () => {
             <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-start gap-3 text-xs text-amber-900">
               <AlertCircle size={18} className="text-amber-700 shrink-0 mt-0.5" />
               <div>
-                <strong className="block font-bold">Strict Zero Advance Policy:</strong>
+                <strong className="block font-bold">Strict Verified Companion Policy:</strong>
                 Never transfer money online, pay registration fees, or scan QR codes. Pay cash directly to your companion upon meeting in your hotel room.
               </div>
             </div>
@@ -294,7 +294,7 @@ const BookingPage: React.FC = () => {
                 <div className="flex items-start gap-3">
                   <span className="w-6 h-6 rounded-full bg-slate-900 text-amber-400 font-bold flex items-center justify-center shrink-0">4</span>
                   <div>
-                    <h4 className="font-bold text-slate-900">Meet & Cash on Delivery</h4>
+                    <h4 className="font-bold text-slate-900">Meet & Direct Hotel Outcall</h4>
                     <p className="text-slate-500 mt-0.5">Inspect in person, enjoy refined companionship, and settle payment in cash.</p>
                   </div>
                 </div>

@@ -50,7 +50,7 @@ const AboutPage: React.FC = () => {
               {BRAND.name} — Noida & NCR's #1 Verified Companion Portal
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              Connecting genuine adult clients with 100% real photo verified independent escorts, call girls, and luxury companions across Noida, Greater Noida, and surrounding NCR with zero advance fee scams.
+              Connecting genuine adult clients with 100% real photo verified independent escorts, call girls, and luxury companions across Noida, Greater Noida, and surrounding NCR with verified companion fee scams.
             </p>
           </div>
         </div>

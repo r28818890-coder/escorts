@@ -142,13 +142,13 @@ export const NewsFooter: React.FC = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-500 text-[11px]">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left text-slate-500 text-[11px]">
           <div>
-            © {new Date().getFullYear()} {BRAND.name} ({BRAND.domain.replace('https://', '')}). All Rights Reserved.
+            © {new Date().getFullYear()} {BRAND.name}. All Rights Reserved.
           </div>
-          <div className="flex items-center gap-4 text-slate-400">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-slate-400">
             <span>Direct WhatsApp: {CONTACT.phoneDisplay}</span>
-            <span>•</span>
+            <span className="hidden sm:inline">•</span>
             <span>Sector 18, Noida, Uttar Pradesh 201301</span>
           </div>
         </div>

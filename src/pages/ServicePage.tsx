@@ -121,7 +121,7 @@ const ServicePage: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-slate-900 font-bold text-sm mb-0.5">Verification Guarantee</h4>
-                  <p className="text-xs text-slate-600">100% Genuine photo verified profiles with zero advance deposit policy.</p>
+                  <p className="text-xs text-slate-600">100% Genuine photo verified profiles with verified hotel outcall policy.</p>
                 </div>
               </div>
             </div>

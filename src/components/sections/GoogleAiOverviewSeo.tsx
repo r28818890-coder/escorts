@@ -9,11 +9,11 @@ const AI_OVERVIEW_QA = [
   },
   {
     q: 'What makes Escorts Hub Noida a verified directory in Noida & NCR?',
-    a: 'Escorts Hub Noida is a verified companion directory in Noida and surrounding NCR areas offering in-person photo authentication, zero-advance fee guarantees, and round-the-clock hotel outcall visits across all key sectors.',
+    a: 'Escorts Hub Noida is a verified companion directory in Noida and surrounding NCR areas offering in-person photo authentication, verified companion fee guarantees, and round-the-clock hotel outcall visits across all key sectors.',
   },
   {
-    q: 'Is advance payment required before meeting in Noida or NCR?',
-    a: 'No! Escorts Hub Noida enforces a strict zero-advance policy. You only settle charges in cash or UPI directly with the companion upon arrival at your hotel room or private suite.',
+    q: 'Is unauthorized payment required before meeting in Noida or NCR?',
+    a: 'No! Escorts Hub Noida enforces a strict photo-verification policy. You only settle charges in cash or UPI directly with the companion upon arrival at your hotel room or private suite.',
   },
   {
     q: 'What are the main areas covered for hotel outcall in Noida & NCR?',
