@@ -42,6 +42,9 @@ export default defineConfig(({ mode }) => {
             if (id.includes('portalData')) {
               return 'classifieds-data';
             }
+            if (id.includes('masterSeoContent')) {
+              return 'master-seo-data';
+            }
 
             if (id.includes('node_modules')) {
               // 1. React 19 Core

@@ -29,6 +29,7 @@ const AdminNotificationPanel = lazy(() => import('@/pages/AdminNotificationPanel
 const ServicePage = lazy(() => import('@/pages/ServicePage'));
 const CityLanding = lazy(() => import('@/pages/CityLanding'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
+const MasterSeoPillarPage = lazy(() => import('@/pages/MasterSeoPillarPage'));
 import { PAGES_CONTENT } from '@/pages/serviceContent';
 
 import { secureAPI } from '@/services/api';
@@ -118,6 +119,12 @@ const AppContent: React.FC = () => {
                 <Route path="/booking" element={<BookingPage />} />
                 <Route path="/safety-guide" element={<SafetyGuidePage />} />
                 <Route path="/noida-areas" element={<NoidaAreasPage />} />
+
+                {/* Dedicated Top-Ranking Master SEO Landing Pages (7-Day #1 Target) */}
+                <Route path="/noida-escorts" element={<MasterSeoPillarPage targetSlug="noida-escorts" />} />
+                <Route path="/noida-callgirl" element={<MasterSeoPillarPage targetSlug="noida-callgirl" />} />
+                <Route path="/callgirl-noida" element={<MasterSeoPillarPage targetSlug="callgirl-noida" />} />
+                <Route path="/escorts-noida" element={<MasterSeoPillarPage targetSlug="escorts-noida" />} />
 
                 {/* Category & Locality Classifieds Routes */}
                 <Route path="/:category" element={<CategoryListingPage />} />

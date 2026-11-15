@@ -14,7 +14,12 @@ const urls = new Map();
 const add = (route, priority, changefreq) => urls.set(`${DOMAIN}/${route}`.replace(/([^:]\/\/)\/+/, '$1'), { priority, changefreq });
 
 [
-  ['', '1.0', 'daily'], ['about', '0.7', 'monthly'], ['contact', '0.8', 'monthly'],
+  ['', '1.0', 'daily'],
+  ['noida-escorts', '1.0', 'daily'],
+  ['noida-callgirl', '1.0', 'daily'],
+  ['callgirl-noida', '1.0', 'daily'],
+  ['escorts-noida', '1.0', 'daily'],
+  ['about', '0.7', 'monthly'], ['contact', '0.8', 'monthly'],
   ['booking', '0.9', 'daily'],
   ['faq', '0.8', 'weekly'], ['safety-guide', '0.8', 'weekly'],
   ['noida-areas', '0.85', 'weekly'],

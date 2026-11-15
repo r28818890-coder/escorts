@@ -657,6 +657,52 @@ const INFO_PAGES = [
 
 subRoutes.push(...INFO_PAGES);
 
+// Dedicated High-Ranking Master Pillar Pages (7-Day #1 Target)
+const MASTER_SEO_ROUTES = [
+  {
+    path: 'noida-escorts',
+    title: 'Noida Escorts | 100% Photo Verified 24/7 Hotel Outcall',
+    desc: 'Top-rated Noida escorts with 100% real photos, fast 20-min 5-star hotel outcall to Sector 18, 62, Expressway & Pari Chowk. Cash on delivery. Call +91 8218125815.',
+    h1: 'Noida Escorts: 100% Real Photo Verified VIP Companion Service',
+    h2: 'Direct 24/7 Doorstep Hotel Outcall & Cash on Delivery in Noida & NCR',
+    locName: 'Noida',
+    keyword: 'noida escorts, vip companions and 5-star hotel outcall models',
+    landmark: 'Sector 18, Sector 62, Expressway and Radisson Blu Hotel Noida',
+  },
+  {
+    path: 'noida-callgirl',
+    title: 'Noida Callgirl | Verified Independent 24/7 Hotel Outcalls',
+    desc: 'Book genuine Noida callgirl with 100% real verified photos. Prompt 20-minute hotel doorstep outcalls in Sector 18, 62 & Noida Expressway. Call +91 8218125815.',
+    h1: 'Noida Callgirl: 24/7 Genuine Photo Verified Doorstep Companion Outcall',
+    h2: 'Verified Independent Models & Fast 15-Minute Hotel Room Outcalls',
+    locName: 'Noida',
+    keyword: 'noida callgirl, independent companions and college models',
+    landmark: 'Sector 18, Sector 62, Sector 50 and Sandal Suites Noida',
+  },
+  {
+    path: 'callgirl-noida',
+    title: 'Callgirl Noida | 100% Real Photos & 20-Min Doorstep Outcall',
+    desc: 'Looking for authentic callgirl noida? Verified profiles with real photos, cash on delivery, zero advance deposit, 20-min outcalls across all sectors. Call 8218125815.',
+    h1: 'Callgirl Noida: Direct 24/7 Hotel Outcall & Zero Prepayment Booking',
+    h2: 'Genuine Photo-Verified Outcalls to Radisson Blu, Crowne Plaza & Expressway',
+    locName: 'Noida',
+    keyword: 'callgirl noida, verified escort companions and hotel outcalls',
+    landmark: 'Sector 18 DLF Mall of India, Sector 62 and Pari Chowk Greater Noida',
+  },
+  {
+    path: 'escorts-noida',
+    title: 'Escorts Noida | VIP 5-Star Hotel Companions & 24/7 Outcall',
+    desc: 'Premium escorts noida offering verified hotel outcalls, dinner dates, Russian models, and full-night stays. 100% discrete and photo-verified. Call +91 8218125815.',
+    h1: 'Escorts Noida: Luxury 5-Star Hotel Outcalls & Verified Independent Models',
+    h2: 'Elite Companions, Russian Models & 20-Minute Outcall Across Delhi NCR',
+    locName: 'Noida',
+    keyword: 'escorts noida, luxury vip models and corporate dinner hostesses',
+    landmark: 'Radisson Blu Hotel Noida, Crowne Plaza and Jaypee Greens Resort',
+  }
+];
+
+subRoutes.push(...MASTER_SEO_ROUTES);
+
 // 4. Blog Posts from blogData.cjs
 const { BLOG_POSTS } = require('./blogData.cjs');
 
