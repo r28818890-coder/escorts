@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import Lenis from 'lenis';
 
 import Header from '@/components/layout/Header';
 import NewsFooter from '@/components/layout/NewsFooter';
@@ -37,7 +36,7 @@ import { trackVisitorAndNotifyAdmin } from '@/services/VisitorPushNotifier';
 import { initSecurityShield } from '@/services/securityShield';
 import { trackPageView } from '@/services/analytics';
 
-const ScrollToTop = ({ lenis }: { lenis: Lenis | null }) => {
+const ScrollToTop = ({ lenis }: { lenis: any | null }) => {
   const { pathname } = useLocation();
   useEffect(() => {
     if (lenis) {
@@ -45,45 +44,62 @@ const ScrollToTop = ({ lenis }: { lenis: Lenis | null }) => {
     } else {
       window.scrollTo(0, 0);
     }
-    trackVisitorAndNotifyAdmin(pathname);
-    trackPageView(pathname);
+    // Defer route tracking to background to keep transition instant
+    const trackTimer = setTimeout(() => {
+      trackVisitorAndNotifyAdmin(pathname);
+      trackPageView(pathname);
+    }, 1500);
+    return () => clearTimeout(trackTimer);
   }, [pathname, lenis]);
   return null;
 };
 
 const AppContent: React.FC = () => {
-  const lenisRef = useRef<Lenis | null>(null);
+  const lenisRef = useRef<any | null>(null);
 
   useEffect(() => {
-    // Only initialize smooth scroll on desktop non-touch screens (free up mobile CPU)
+    // Only initialize smooth scroll on desktop non-touch screens (free up mobile CPU and reduce mobile bundle)
     const isTouch = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0 || window.innerWidth < 1024);
     
     if (!isTouch) {
-      const lenis = new Lenis({
-        duration: 0.8,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        orientation: 'vertical',
-        smoothWheel: true,
-        touchMultiplier: 1.5,
-      });
-
-      lenisRef.current = lenis;
-
+      let isMounted = true;
       let rafId: number;
-      function raf(time: number) {
-        lenis.raf(time);
-        rafId = requestAnimationFrame(raf);
-      }
 
-      rafId = requestAnimationFrame(raf);
+      import('lenis').then(({ default: Lenis }) => {
+        if (!isMounted) return;
+        const lenis = new Lenis({
+          duration: 0.8,
+          easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          orientation: 'vertical',
+          smoothWheel: true,
+          touchMultiplier: 1.5,
+        });
+
+        lenisRef.current = lenis;
+
+        function raf(time: number) {
+          lenis.raf(time);
+          rafId = requestAnimationFrame(raf);
+        }
+
+        rafId = requestAnimationFrame(raf);
+      }).catch(() => {});
+
       return () => {
-        cancelAnimationFrame(rafId);
-        lenis.destroy();
+        isMounted = false;
+        if (rafId) cancelAnimationFrame(rafId);
+        if (lenisRef.current) lenisRef.current.destroy();
       };
     }
 
     initSecurityShield();
-    secureAPI.trackVisit().catch(() => {});
+
+    // Defer non-critical background tracking by 3.5s to unblock slow network rendering
+    const bgTimer = setTimeout(() => {
+      secureAPI.trackVisit().catch(() => {});
+    }, 3500);
+
+    return () => clearTimeout(bgTimer);
   }, []);
 
   const handleLocationFound = async (data: LocationData) => {

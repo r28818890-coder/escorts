@@ -4,13 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- GOOGLE ANALYTICS 4 (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-95BL336T63"></script>
+    <!-- FAST ADAPTIVE NETWORK SNIFFER -->
+    <script>
+      (function() {
+        try {
+          if ('connection' in navigator) {
+            var c = navigator.connection;
+            if (c.saveData || c.effectiveType === '2g' || c.effectiveType === 'slow-2g') {
+              document.documentElement.classList.add('slow-connection');
+            }
+          }
+        } catch(e) {}
+      })();
+    </script>
+
+    <!-- DEFERRED GOOGLE ANALYTICS 4 (Non-blocking for instant initial paint) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-95BL336T63', { send_page_view: true, cookie_flags: 'SameSite=None;Secure' });
+      (function() {
+        var isSlow = typeof navigator !== 'undefined' && 'connection' in navigator && (navigator.connection.saveData || /2g/.test(navigator.connection.effectiveType || ''));
+        function loadGA() {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-95BL336T63';
+          document.head.appendChild(s);
+          gtag('js', new Date());
+          gtag('config', 'G-95BL336T63', { send_page_view: true, cookie_flags: 'SameSite=None;Secure' });
+        }
+        if (isSlow) {
+          window.addEventListener('load', function() { setTimeout(loadGA, 4500); });
+        } else if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGA, { timeout: 2500 });
+        } else {
+          window.addEventListener('load', function() { setTimeout(loadGA, 1200); });
+        }
+      })();
     </script>
 
     <!-- PERFORMANCE & RESOURCE HINTS -->
@@ -18,7 +47,6 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="image" href="/ecj-mark.svg" fetchpriority="high" />
 
     <!-- PRIMARY SEO META TAGS — STRICT ≤58 CHAR TITLE & 158 CHAR DESCRIPTION -->
     <title>Escorts in Noida | Verified 24/7 Hotel Outcall</title>
@@ -85,11 +113,11 @@
     <link rel="alternate" type="application/rss+xml" title="Escorts Hub Noida RSS Feed" href="https://wenoidaescorts.com/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="Escorts Hub Noida Atom Feed" href="https://wenoidaescorts.com/atom.xml" />
 
-    <!-- HIGH-SPEED NON-BLOCKING GOOGLE FONTS -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <!-- HIGH-SPEED NON-BLOCKING GOOGLE FONTS (Curated minimal weights for fast 2G/3G loading) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;600&display=swap" media="print" onload="this.media='all'" />
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;600&display=swap" />
     </noscript>
 
     <!-- STRUCTURED DATA (LocalBusiness + Organization — Validated, No PriceRange) -->
@@ -163,6 +191,14 @@
       #root { min-height: 100vh; }
       .hide-scrollbar::-webkit-scrollbar { display: none; }
       .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .slow-connection * {
+        animation-duration: 0.001s !important;
+        transition-duration: 0.001s !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
     </style>
     <link rel="stylesheet" href="/src/index.css" />
   </head>

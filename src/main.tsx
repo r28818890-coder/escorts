@@ -14,3 +14,10 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// High-Speed Service Worker Registration for Instant Slow-Network & Offline Loads
+if (typeof window !== 'undefined' && 'serviceWorker' in navigator && import.meta.env.PROD) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}

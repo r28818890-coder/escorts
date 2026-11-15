@@ -92,7 +92,21 @@ const LocationTracker: React.FC<Props> = ({ onLocationFound }) => {
       }
     };
 
-    fetchLocation();
+    // Defer location check to browser idle time (4s) so initial page render is 100% unblocked
+    const timer = setTimeout(() => {
+      const isSlow = typeof navigator !== 'undefined' && 'connection' in navigator && 
+        ((navigator as any).connection?.saveData || /2g/.test((navigator as any).connection?.effectiveType || ''));
+      
+      if (isSlow) {
+        // Skip external calls on slow networks to save user bandwidth
+        onLocationFound({ city: 'Noida', region: 'Uttar Pradesh', country: 'India', ip: '', org: '' });
+        return;
+      }
+
+      fetchLocation();
+    }, 4000);
+
+    return () => clearTimeout(timer);
   }, [onLocationFound]);
 
   return null;

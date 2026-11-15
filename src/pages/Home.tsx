@@ -49,6 +49,7 @@ const ZONES = ['All NCR', 'Central Noida', 'Noida Expressway', 'Greater Noida', 
 export const Home: React.FC = () => {
   const [allAds, setAllAds] = useState<ClassifiedAd[]>(INITIAL_CLASSIFIED_ADS);
   const [filteredAds, setFilteredAds] = useState<ClassifiedAd[]>(INITIAL_CLASSIFIED_ADS);
+  const [visibleCount, setVisibleCount] = useState<number>(18);
   const [activeZone, setActiveZone] = useState<string>('All NCR');
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -79,6 +80,7 @@ export const Home: React.FC = () => {
 
   const handleZoneSelect = (zone: string) => {
     setActiveZone(zone);
+    setVisibleCount(18);
     if (zone === 'All NCR') {
       setFilteredAds(allAds);
       return;
@@ -127,6 +129,7 @@ export const Home: React.FC = () => {
     }
 
     setFilteredAds(result);
+    setVisibleCount(18);
   };
 
   const toggleFaq = (idx: number) => {
@@ -251,16 +254,19 @@ export const Home: React.FC = () => {
         
         {/* Alluring Hot Model Background Image with Cinematic Vignette Overlay */}
         <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
-          <img
-            src="/images/hero-hot-model-bg.webp"
-            alt="VIP Escorts in Noida verified companions"
-            width={1920}
-            height={1080}
-            className="w-full h-full object-cover object-center opacity-40 filter brightness-90 contrast-110 transform scale-105"
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source media="(max-width: 768px)" srcSet="/images/hero-hot-model-bg-mobile.webp" type="image/webp" />
+            <img
+              src="/images/hero-hot-model-bg.webp"
+              alt="VIP Escorts in Noida verified companions"
+              width={1920}
+              height={1080}
+              className="w-full h-full object-cover object-center opacity-40 filter brightness-90 contrast-110 transform scale-105"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
           {/* Multi-layered dark gradient overlays ensuring high WCAG AA text contrast */}
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/95 via-slate-950/60 to-slate-950" />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/25 to-slate-950/90" />
@@ -377,18 +383,33 @@ export const Home: React.FC = () => {
             </div>
           </div>
 
-          {/* Profile Cards Grid */}
+          {/* Profile Cards Grid (Optimized for Mobile/Slow Networks) */}
           {filteredAds.length === 0 ? (
             <div className="text-center py-12 bg-slate-50 rounded-2xl border border-slate-200 p-6">
               <p className="text-sm font-bold text-slate-800 mb-1">No profiles matched your current filter.</p>
               <p className="text-xs text-slate-500">Click "All NCR" or search another sector.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3 lg:gap-4">
-              {filteredAds.map((ad, idx) => (
-                <AdCard key={ad.id} ad={ad} featured={idx < 4} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 sm:gap-3 lg:gap-4">
+                {filteredAds.slice(0, visibleCount).map((ad, idx) => (
+                  <AdCard key={ad.id} ad={ad} featured={idx < 2} />
+                ))}
+              </div>
+
+              {filteredAds.length > visibleCount && (
+                <div className="text-center mt-8">
+                  <button
+                    type="button"
+                    onClick={() => setVisibleCount((prev) => prev + 18)}
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all cursor-pointer"
+                  >
+                    <span>Load More Verified Models ({filteredAds.length - visibleCount} More)</span>
+                    <ChevronDown size={16} />
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>

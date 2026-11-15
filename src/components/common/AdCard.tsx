@@ -30,12 +30,14 @@ export const AdCard: React.FC<AdCardProps> = ({ ad, featured = false }) => {
 
   return (
     <>
-      <ReviewModal
-        isOpen={isReviewModalOpen}
-        onClose={() => setIsReviewModalOpen(false)}
-        adTitle={ad.title}
-        onReviewSubmitted={handleReviewSubmitted}
-      />
+      {isReviewModalOpen && (
+        <ReviewModal
+          isOpen={isReviewModalOpen}
+          onClose={() => setIsReviewModalOpen(false)}
+          adTitle={ad.title}
+          onReviewSubmitted={handleReviewSubmitted}
+        />
+      )}
 
       <div
         className={`ad-card-item group relative bg-white rounded-xl sm:rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between ${
