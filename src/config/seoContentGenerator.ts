@@ -4,6 +4,7 @@
 
 import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, PortalCategory, NoidaLocality } from './portalData';
 import { BRAND, CONTACT } from './site';
+import { NOIDA_AREAS_DATA } from '@/data/noidaAreasData';
 
 export interface LocalizedSeoData {
   h1: string;
@@ -45,6 +46,7 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
   const locName = locality ? locality.name : 'Noida';
   const landmark = locality ? locality.landmark : 'Sector 18, Sector 62 & Expressway';
   const geo = locality ? (LOCALITY_GEO[locality.slug] || { lat: '28.5708', lng: '77.3261' }) : { lat: '28.5708', lng: '77.3261' };
+  const areaData = locality ? NOIDA_AREAS_DATA[locality.slug] : undefined;
 
   let h1 = '';
   let metaTitle = '';
@@ -53,21 +55,29 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
   let landmarkHighlights = '';
 
   if (category.slug === 'call-girls') {
-    h1 = locality
-      ? `Verified Escort Service & Call Girls in ${locName} - VIP Companions (24/7 Outcall)`
-      : `Noida Escorts & Call Girls - Top Verified Escort Service & VIP Companions (NCR)`;
+    if (areaData) {
+      h1 = areaData.h1;
+      metaTitle = areaData.metaTitle;
+      metaDescription = areaData.metaDescription;
+      introText = areaData.overview[0];
+      landmarkHighlights = `Stationed near ${areaData.metro} and ${areaData.landmarks.join(', ')}. Doorstep outcalls arrive in ${areaData.eta} to ${areaData.hotels.map(h => h.name).join(', ')}.`;
+    } else {
+      h1 = locality
+        ? `Verified Escort Service & Call Girls in ${locName} - VIP Companions (24/7 Outcall)`
+        : `Noida Escorts & Call Girls - Top Verified Escort Service & VIP Companions (NCR)`;
 
-    metaTitle = locality
-      ? `Noida Escorts in ${locName} - Verified Call Girls & Escort Service | 24/7 Outcall`
-      : `Noida Escorts | Verified Call Girls & Escort Service in Noida & NCR`;
+      metaTitle = locality
+        ? `Noida Escorts in ${locName} - Verified Call Girls & Escort Service | 24/7 Outcall`
+        : `Noida Escorts | Verified Call Girls & Escort Service in Noida & NCR`;
 
-    metaDescription = locality
-      ? `Looking for verified escort service and call girls in ${locName}? Genuine independent models near ${landmark}. 100% real photo verification, 24/7 hotel outcall & in-call.`
-      : `Discover top rated escort service and verified call girls in Noida. Real photo verified independent companions, VIP models, and 24/7 hotel outcall across all 18 Noida & NCR sectors.`;
+      metaDescription = locality
+        ? `Looking for verified escort service and call girls in ${locName}? Genuine independent models near ${landmark}. 100% real photo verification, 24/7 hotel outcall & in-call.`
+        : `Discover top rated escort service and verified call girls in Noida. Real photo verified independent companions, VIP models, and 24/7 hotel outcall across all 18 Noida & NCR sectors.`;
 
-    introText = `Welcome to the official directory for verified escort services, call girls, and independent companions in ${locName}. Whether you are a business traveler staying at 5-star hotels (Radisson, Crowne Plaza, Jaypee), an IT corporate professional, or a resident looking for sophisticated companionship, our verified models offer discreet 24/7 outcall hospitality with direct WhatsApp confirmation.`;
+      introText = `Welcome to the official directory for verified escort services, call girls, and independent companions in ${locName}. Whether you are a business traveler staying at luxury hotels, an IT corporate professional, or a resident looking for sophisticated companionship, our verified models offer discreet 24/7 outcall hospitality with direct WhatsApp confirmation.`;
 
-    landmarkHighlights = `Verified independent models in ${locName} provide swift 15 to 30-minute outcall service across major landmarks including ${landmark}, as well as private sanitized in-call suites. All meetings prioritize mutual respect, discretion, and hygiene standards.`;
+      landmarkHighlights = `Verified independent models in ${locName} provide swift 15 to 30-minute outcall service across major landmarks including ${landmark}, as well as private sanitized in-call suites. All meetings prioritize mutual respect, discretion, and hygiene standards.`;
+    }
   } else if (category.slug === 'adult-meetings') {
     h1 = locality
       ? `Adult Meetings in ${locName} - Casual Dating & Verified Singles`
@@ -83,7 +93,9 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
 
     introText = `Discover verified adult meetings, casual dating, and private companionship in ${locName}. Meet charming local singles and independent companions for relaxed dinners, corporate travel accompaniment, and private suite rendezvous.`;
 
-    landmarkHighlights = `Our verified companions in ${locName} are available near ${landmark}, offering complete discretion, professional etiquette, and prompt 20-30 minute hotel outcall visits.`;
+    landmarkHighlights = areaData
+      ? `Companions in ${locName} are stationed near ${areaData.metro} and ${areaData.landmarks.join(', ')}, reaching hotels like ${areaData.hotels[0]?.name || landmark} in ${areaData.eta}.`
+      : `Our verified companions in ${locName} are available near ${landmark}, offering complete discretion, professional etiquette, and prompt 20-30 minute hotel outcall visits.`;
   } else if (category.slug === 'russian-escorts') {
     h1 = locality
       ? `Russian Escorts in ${locName} - Elite VIP Foreign Models & Companions`
@@ -99,7 +111,9 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
 
     introText = `Discover elite, breathtaking Russian escorts and international models in ${locName}. Offering world-class companionship, refined etiquette, and unforgettable luxury for high-profile gentlemen and 5-star hotel visits.`;
 
-    landmarkHighlights = `Russian VIP models in ${locName} are available for 24/7 private hotel outcalls near ${landmark}, offering complete confidentiality and 20-minute arrival.`;
+    landmarkHighlights = areaData
+      ? `VIP Russian models in ${locName} arrive in ${areaData.eta} to 5-star hotels like ${areaData.hotels.map(h => h.name).join(', ')} with complete confidentiality.`
+      : `Russian VIP models in ${locName} are available for 24/7 private hotel outcalls near ${landmark}, offering complete confidentiality and 20-minute arrival.`;
   } else if (category.slug === 'transsexual') {
     h1 = locality
       ? `Transsexual & TS Escorts in ${locName} - Shemale & Ladyboy Dating`
@@ -115,7 +129,9 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
 
     introText = `Explore verified transsexual, ladyboy, and TS escort listings in ${locName}. Meet charming, open-minded, and passionate trans models who provide warm hospitality, private in-call suites, and hotel outcalls with zero judgment.`;
 
-    landmarkHighlights = `TS companions in ${locName} welcome clients with clean private accommodations located near ${landmark}, ensuring full discretion.`;
+    landmarkHighlights = areaData
+      ? `TS companions in ${locName} are stationed near ${areaData.metro} and provide discreet outcalls to hotels near ${areaData.landmarks[0]}.`
+      : `TS companions in ${locName} welcome clients with clean private accommodations located near ${landmark}, ensuring full discretion.`;
   } else {
     h1 = locality
       ? `Adult Meetings & Casual Dating in ${locName} - Local Singles (NSA)`
@@ -142,7 +158,7 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
     },
     {
       title: `Hotel & Residential Outcall in ${locName}`,
-      desc: `Prompt 20 to 30-minute outcall arrival at all leading 3-star, 4-star, and 5-star hotels in and around ${locName}, Noida NCR.`,
+      desc: `Prompt 15 to 25-minute outcall arrival at all leading 4-star and 5-star hotels in and around ${locName}, Noida NCR.`,
     },
     {
       title: `100% Direct Contact & Real Photo Verification`,
@@ -155,45 +171,59 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
   ];
 
   // Pricing Overview
-  const pricingOverview = [
-    { tier: 'Quick Session (1 Hour)', duration: '60 Minutes', description: 'Includes in-call / hotel outcall meeting with complete personal attention.' },
-    { tier: 'Extended Session (2 Hours)', duration: '120 Minutes', description: 'Ideal for unhurried conversations, dining companionship, and relaxation.' },
-    { tier: 'Overnight VIP Package', duration: 'Overnight (8-10 Hrs)', description: 'Complete overnight companionship for 5-star hotels and luxury suites.' },
-  ];
+  const pricingOverview = areaData
+    ? areaData.pricing.map((p) => ({
+        tier: p.tier,
+        duration: `${p.duration} (${p.rate})`,
+        description: p.includes,
+      }))
+    : [
+        { tier: 'Quick Session (1 Hour)', duration: '60 Minutes (₹2,500 - ₹4,000)', description: 'Includes in-call / hotel outcall meeting with complete personal attention.' },
+        { tier: 'Extended Session (2 Hours)', duration: '120 Minutes (₹4,500 - ₹7,000)', description: 'Ideal for unhurried conversations, dining companionship, and relaxation.' },
+        { tier: 'Overnight VIP Package', duration: 'Overnight 8-10 Hrs (₹12,000 - ₹18,000)', description: 'Complete overnight companionship for 5-star hotels and luxury suites.' },
+      ];
 
-  // 5 Localized FAQs
-  const faqs = [
-    {
-      question: `How can I contact verified ${category.name.toLowerCase()} in ${locName}?`,
-      answer: `You can directly tap the WhatsApp or Call Now button on any profile card in ${locName}. All profiles are verified for instant direct communication with coordinator at ${CONTACT.phoneDisplay}.`,
-    },
-    {
-      question: `What session durations are available for ${category.name.toLowerCase()} in ${locName}?`,
-      answer: `In ${locName}, companions offer flexible durations including 1-hour meetings, 2-hour dinner dates, and full-night VIP travel packages.`,
-    },
-    {
-      question: `Is hotel outcall available near ${landmark} in ${locName}?`,
-      answer: `Yes, most independent companions provide fast 15-30 minute outcall service to all major hotels, resorts, and private suites across ${locName} and surrounding NCR areas.`,
-    },
-    {
-      question: `Do I need to pay advance money before meeting in ${locName}?`,
-      answer: `No! As per our strict safety guidelines, never send advance payments or QR code transfers before meeting in person. Pay directly upon arrival.`,
-    },
-    {
-      question: `Are the profiles and photos in ${locName} 100% real?`,
-      answer: `Profiles marked with the green "100% Real" badge have completed phone and image authenticity checks for complete peace of mind.`,
-    },
-  ];
+  // Localized FAQs (Using specific FAQs if locality exists)
+  const faqs = areaData && areaData.faqs.length > 0
+    ? areaData.faqs
+    : [
+        {
+          question: `How can I contact verified ${category.name.toLowerCase()} in ${locName}?`,
+          answer: `You can directly tap the WhatsApp or Call Now button on any profile card in ${locName}. All profiles are verified for instant direct communication with coordinator at ${CONTACT.phoneDisplay}.`,
+        },
+        {
+          question: `What session durations are available for ${category.name.toLowerCase()} in ${locName}?`,
+          answer: `In ${locName}, companions offer flexible durations including 1-hour meetings, 2-hour dinner dates, and full-night VIP travel packages.`,
+        },
+        {
+          question: `Is hotel outcall available near ${landmark} in ${locName}?`,
+          answer: `Yes, most independent companions provide fast 15-25 minute outcall service to all major hotels, resorts, and private suites across ${locName} and surrounding NCR areas.`,
+        },
+        {
+          question: `Do I need to pay advance money before meeting in ${locName}?`,
+          answer: `No! As per our strict safety guidelines, never send advance payments or QR code transfers before meeting in person. Pay directly upon arrival.`,
+        },
+        {
+          question: `Are the profiles and photos in ${locName} 100% real?`,
+          answer: `Profiles marked with the green "100% Real" badge have completed phone and image authenticity checks for complete peace of mind.`,
+        },
+      ];
 
   // Nearby Localities Matrix
-  const nearbyLocalities = NOIDA_LOCALITIES
-    .filter((l) => !locality || l.slug !== locality.slug)
-    .slice(0, 8)
-    .map((l) => ({
-      name: l.name,
-      slug: l.slug,
-      distance: l.zone === (locality?.zone || 'Central Noida') ? '5-10 min drive' : '15-25 min drive',
-    }));
+  const nearbyLocalities = areaData && areaData.adjacentSectors.length > 0
+    ? areaData.adjacentSectors.map((adj) => ({
+        name: adj.name,
+        slug: adj.slug,
+        distance: '5-15 min drive',
+      }))
+    : NOIDA_LOCALITIES
+        .filter((l) => !locality || l.slug !== locality.slug)
+        .slice(0, 8)
+        .map((l) => ({
+          name: l.name,
+          slug: l.slug,
+          distance: l.zone === (locality?.zone || 'Central Noida') ? '5-10 min drive' : '15-25 min drive',
+        }));
 
   // JSON-LD Multi-Schema (FAQPage + LocalBusiness + BreadcrumbList)
   const schema = {

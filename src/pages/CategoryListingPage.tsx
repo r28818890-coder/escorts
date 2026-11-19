@@ -17,7 +17,9 @@ import {
   ArrowRight,
   Heart,
   UserCheck,
-  Users
+  Users,
+  Hotel,
+  Clock
 } from 'lucide-react';
 import { 
   PORTAL_CATEGORIES, 
@@ -27,6 +29,7 @@ import {
   getCategoryBySlug,
   getLocalityBySlug
 } from '@/config/portalData';
+import { getNoidaAreaDetail } from '@/data/noidaAreasData';
 import { generateLocalizedSeo } from '@/config/seoContentGenerator';
 import SEO from '@/components/common/SEO';
 import NoidaSearchBar from '@/components/common/NoidaSearchBar';
@@ -50,6 +53,7 @@ export const CategoryListingPage: React.FC = () => {
   
   const currentCategory = getCategoryBySlug(category || 'vip-escorts') || PORTAL_CATEGORIES[0];
   const currentLocality = locality ? getLocalityBySlug(locality) : undefined;
+  const areaDetail = currentLocality ? getNoidaAreaDetail(currentLocality.slug) : undefined;
 
   const [allAds, setAllAds] = useState<ClassifiedAd[]>(INITIAL_CLASSIFIED_ADS);
   const [filteredAds, setFilteredAds] = useState<ClassifiedAd[]>(INITIAL_CLASSIFIED_ADS);
@@ -170,6 +174,11 @@ export const CategoryListingPage: React.FC = () => {
               <span className="bg-emerald-50 text-emerald-800 border border-emerald-300 text-[10px] font-black uppercase px-2.5 py-1 rounded-full flex items-center gap-1">
                 <ShieldCheck size={12} className="text-emerald-600" /> 100% Real Phone Verified
               </span>
+              {areaDetail && (
+                <span className="bg-rose-50 text-rose-800 border border-rose-300 text-[10px] font-black uppercase px-2.5 py-1 rounded-full flex items-center gap-1">
+                  <Clock size={12} className="text-rose-600" /> Fast {areaDetail.eta} Arrival
+                </span>
+              )}
             </div>
 
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4 tracking-tight">
@@ -307,6 +316,82 @@ export const CategoryListingPage: React.FC = () => {
             ))}
           </div>
         </div>
+
+        {/* Recommended Hotels in Locality (if locality selected) */}
+        {areaDetail && areaDetail.hotels && (
+          <div className="mb-16">
+            <div className="mb-6">
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 uppercase tracking-wider mb-1">
+                <Hotel size={14} /> Luxury Outcall Hospitality
+              </div>
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+                Recommended 4-Star &amp; 5-Star Hotels for Outcalls in {currentLocality?.name}
+              </h2>
+              <p className="text-xs text-slate-500 mt-1">
+                {areaDetail.hotelOutcallGuide}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {areaDetail.hotels.map((h, idx) => (
+                <div key={idx} className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-2 hover:border-indigo-400 transition-colors">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200">
+                      {h.stars}
+                    </span>
+                    <div className="flex text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} size={12} fill="currentColor" />
+                      ))}
+                    </div>
+                  </div>
+                  <h3 className="text-base font-bold text-slate-900 pt-1">{h.name}</h3>
+                  <p className="text-xs text-slate-500 leading-relaxed">{h.notes}</p>
+                  <div className="pt-2 text-[11px] text-emerald-600 font-bold">
+                    ✓ Outcall Doorstep ETA: {areaDetail.eta}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Client Reviews in Locality (if locality selected) */}
+        {areaDetail && areaDetail.reviews && areaDetail.reviews.length > 0 && (
+          <div className="mb-16">
+            <div className="mb-6">
+              <span className="text-xs font-bold text-amber-600 uppercase tracking-wider block mb-1">Verified Client Experiences</span>
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900">
+                Recent Client Reviews in {currentLocality?.name}
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {areaDetail.reviews.map((rev, idx) => (
+                <div key={idx} className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="font-bold text-sm text-slate-900">{rev.clientName}</h3>
+                      <span className="text-xs text-slate-500">{rev.hotelOrLocation}</span>
+                    </div>
+                    <div className="flex text-amber-500">
+                      {[...Array(rev.rating)].map((_, i) => (
+                        <Star key={i} size={14} fill="currentColor" />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-xs sm:text-sm text-slate-600 italic leading-relaxed">
+                    "{rev.reviewText}"
+                  </p>
+                  <div className="text-[10px] text-slate-400 pt-2 border-t border-slate-100 flex items-center justify-between">
+                    <span>Verified Hotel Outcall</span>
+                    <span>{rev.date}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Localized FAQ Accordion */}
         <div className="mb-16">

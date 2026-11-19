@@ -33,6 +33,11 @@ categories.forEach((category) => {
   localities.forEach((locality) => add(`${category}/${locality}`, '0.85', 'daily'));
 });
 
+// Dedicated Hyperlocal Area Guides
+localities.forEach((locality) => {
+  add(`area/${locality}`, '0.9', 'daily');
+});
+
 const today = new Date().toISOString().split('T')[0];
 
 const body = [...urls.entries()].map(([url, meta]) => `  <url><loc>${url.endsWith('/') ? url : `${url}/`}</loc><lastmod>${today}</lastmod><changefreq>${meta.changefreq}</changefreq><priority>${meta.priority}</priority></url>`).join('\n');

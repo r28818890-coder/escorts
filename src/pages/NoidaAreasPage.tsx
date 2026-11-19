@@ -97,6 +97,16 @@ export const NoidaAreasPage: React.FC = () => {
                   </Link>
                 ))}
               </div>
+
+              <div className="pt-2">
+                <Link
+                  to={`/area/${loc.slug}`}
+                  className="text-xs font-bold text-amber-700 hover:text-amber-800 flex items-center gap-1 group"
+                >
+                  <span>Explore {loc.name} Area Guide &amp; Hotels</span>
+                  <ChevronRight size={13} className="transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              </div>
             </div>
           ))}
         </div>

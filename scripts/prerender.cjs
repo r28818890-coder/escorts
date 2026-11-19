@@ -588,6 +588,25 @@ CATEGORIES.forEach((cat) => {
   });
 });
 
+// 2b. Dedicated Hyperlocal Area Hubs (/area/:slug)
+LOCALITIES.forEach((loc) => {
+  subRoutes.push({
+    path: `area/${loc.slug}`,
+    title: `${loc.name} Escorts & Call Girls | Outcall Guide`.slice(0, 56),
+    desc: `Comprehensive local guide for verified escorts & call girls in ${loc.name}. 15-20 min hotel outcall, luxury hotel guide, genuine photos. Call 8218125815.`.slice(0, 158),
+    h1: `${loc.name} Escorts & Outcall Companion Guide`,
+    h2: `100% Verified Profiles, 4-Star & 5-Star Hotel Guide & 20-Min Arrival near ${loc.landmarks[0]}`,
+    locName: `${loc.name}, Noida NCR`,
+    catName: 'Area Guide',
+    keyword: `escorts in ${loc.name.toLowerCase()}`,
+    landmark: loc.landmarks.join(', '),
+    locObj: loc,
+    catObj: { slug: 'call-girls', name: 'Call Girls', keyword: 'call girls' },
+    isLocalityPage: true,
+    isDedicatedAreaPage: true
+  });
+});
+
 // 3. Info & Legal Pages (No jaipur-areas, added booking)
 const INFO_PAGES = [
   { 
@@ -878,7 +897,11 @@ subRoutes.forEach((route) => {
     const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
-      "itemListElement": [
+      "itemListElement": route.isDedicatedAreaPage ? [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${DOMAIN}/` },
+        { "@type": "ListItem", "position": 2, "name": "Areas", "item": `${DOMAIN}/noida-areas/` },
+        { "@type": "ListItem", "position": 3, "name": route.locObj.name, "item": canonicalUrl }
+      ] : [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": `${DOMAIN}/` },
         { "@type": "ListItem", "position": 2, "name": route.catName, "item": `${DOMAIN}/${route.catObj.slug}/` },
         { "@type": "ListItem", "position": 3, "name": route.locObj.name, "item": canonicalUrl }
@@ -1034,7 +1057,7 @@ subRoutes.forEach((route) => {
           <header class="max-w-5xl mx-auto mb-8 border-b border-slate-200 pb-6">
             <nav class="text-xs text-amber-700 mb-4 font-semibold">
               <a href="/" class="hover:underline">Home</a> &gt; 
-              <a href="/${route.catObj.slug}" class="hover:underline">${route.catName}</a> &gt; 
+              ${route.isDedicatedAreaPage ? `<a href="/noida-areas" class="hover:underline">Areas</a>` : `<a href="/${route.catObj.slug}" class="hover:underline">${route.catName}</a>`} &gt; 
               <span class="text-slate-900 font-bold">${route.locObj.name}</span>
             </nav>
             <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-2">Verified 24/7 Hotel Outcall</div>
