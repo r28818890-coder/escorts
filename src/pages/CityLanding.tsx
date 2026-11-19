@@ -48,7 +48,7 @@ const CityLanding: React.FC = () => {
 
           <div className="flex flex-wrap gap-4">
             <a 
-              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, I want to book a verified companion in ${location.area}.`)}
+              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Noida, I want to book a verified companion in ${location.area}.`)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3.5 bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 text-white font-bold uppercase tracking-widest text-xs rounded-full shadow-md hover:brightness-110 transition-transform flex items-center gap-2 cursor-pointer"
@@ -103,7 +103,7 @@ const CityLanding: React.FC = () => {
               
               <div className="pt-4 border-t border-slate-100">
                 <a 
-                  href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, please share available model profiles in ${location.area}.`)}
+                  href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Noida, please share available model profiles in ${location.area}.`)}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-full block text-center py-3 bg-rose-50 border border-rose-200 text-rose-700 rounded-xl font-bold uppercase tracking-wider text-xs hover:bg-rose-100 transition-colors cursor-pointer"

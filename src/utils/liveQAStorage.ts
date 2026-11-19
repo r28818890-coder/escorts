@@ -47,16 +47,16 @@ export const seedInitialQAs = () => {
   if (getLiveQAs().length === 0) {
     const initial: Omit<LiveQA, 'id' | 'date'>[] = [
       {
-        question: "Is there any couple massage available near Sector 18 Noida right now?",
-        answer: "Yes! We are open 24/7. Our premium couple massage suites are fully sanitized and available near Sector 18, Noida. You can book instantly via WhatsApp."
+        question: "Are verified hotel outcall escorts available near Sector 18 Noida right now?",
+        answer: "Yes! We operate 24/7 across Noida & NCR. Verified independent models and VIP companions are active near Sector 18, DLF Mall, and Noida Expressway. You can confirm availability instantly via WhatsApp."
       },
       {
-        question: "What is the price for a 60 min Deep Tissue massage?",
-        answer: "Our 60-minute Deep Tissue Massage is priced at ₹1199. It focuses on releasing chronic muscle tension and is highly recommended for travelers."
+        question: "How fast do companions arrive for 5-star hotel visits?",
+        answer: "Doorstep arrival is typically 20 to 30 minutes across Sector 18, Sector 62, Advant Navis Expressway, and Greater Noida Pari Chowk. Zero advance payment is required."
       },
       {
-        question: "Do you have female therapists for female clients?",
-        answer: "Absolutely. We ensure complete comfort and privacy with professional female therapists available for our female guests."
+        question: "What verification process do profiles go through?",
+        answer: "Every companion profile is 100% photo-verified with direct phone authentication. You meet your chosen companion face-to-face in the privacy of your hotel suite."
       }
     ];
     

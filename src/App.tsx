@@ -139,11 +139,8 @@ const AppContent: React.FC = () => {
                 <Route path="/safety-guide" element={<SafetyGuidePage />} />
                 <Route path="/noida-areas" element={<NoidaAreasPage />} />
 
-                {/* Dedicated Top-Ranking Master SEO Landing Pages (7-Day #1 Target) */}
+                {/* Dedicated Master SEO Landing Page (Price & Booking Guide) */}
                 <Route path="/noida-escorts" element={<MasterSeoPillarPage targetSlug="noida-escorts" />} />
-                <Route path="/noida-callgirl" element={<MasterSeoPillarPage targetSlug="noida-callgirl" />} />
-                <Route path="/callgirl-noida" element={<MasterSeoPillarPage targetSlug="callgirl-noida" />} />
-                <Route path="/escorts-noida" element={<MasterSeoPillarPage targetSlug="escorts-noida" />} />
 
                 {/* Category & Locality Classifieds Routes */}
                 <Route path="/:category" element={<CategoryListingPage />} />
@@ -163,6 +160,11 @@ const AppContent: React.FC = () => {
 
                 {/* Protected Admin */}
                 <Route path="/admin" element={<AdminNotificationPanel />} />
+
+                {/* Cannibalized Pillar Redirects to Consolidated Canonical Targets */}
+                <Route path="/noida-callgirl" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/callgirl-noida" element={<Navigate to="/call-girls" replace />} />
+                <Route path="/escorts-noida" element={<Navigate to="/" replace />} />
 
                 {/* Legacy Massage Redirects to Call Girls */}
                 <Route path="/massages" element={<Navigate to="/call-girls" replace />} />

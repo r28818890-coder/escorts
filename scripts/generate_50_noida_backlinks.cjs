@@ -1,6 +1,6 @@
 // ============================================================================
 // AUTOMATED 50 LIVE NO-OTP AUTHORITY BACKLINK GENERATOR (DA 91+ GRAPH.ORG)
-// Target Domain: https://wenoidaescorts.com (We Noida Escorts)
+// Target Domain: https://wenoidaescorts.com (Escorts Hub Noida)
 // Core Targets: "call girl noida" | "escorts service noida"
 // ============================================================================
 
@@ -10,40 +10,38 @@ const fs = require('fs');
 const path = require('path');
 
 const DOMAIN = 'https://wenoidaescorts.com';
-const BRAND = 'We Noida Escorts';
-const PHONE = '+918769604056';
-const WHATSAPP = '918769604056';
+const BRAND = 'Escorts Hub Noida';
+const PHONE = '+918218125815';
+const WHATSAPP = '918218125815';
 
 const noidaLocalities = [
   { name: 'Sector 18', slug: 'sector-18', landmark: 'DLF Mall of India, Radisson Blu & Atta Market' },
   { name: 'Sector 62', slug: 'sector-62', landmark: 'IT Hub, Fortis Hospital & Electronic City Metro' },
-  { name: 'Sector 137', slug: 'sector-137', landmark: 'Noida-Greater Noida Expressway & Felix Hospital' },
-  { name: 'Sector 15', slug: 'sector-15', landmark: 'Sector 15 Metro, Atta Market & Savoy Suites' },
-  { name: 'Sector 16', slug: 'sector-16', landmark: 'Film City, Fortune Inn Grazia & DND Flyway' },
   { name: 'Sector 50', slug: 'sector-50', landmark: 'Wave City Center, Central Market & Blue Line Metro' },
-  { name: 'Sector 75', slug: 'sector-75', landmark: 'Spectrum Metro Mall & Silicon City' },
+  { name: 'Sector 137', slug: 'sector-137', landmark: 'Noida Expressway & Felix Hospital' },
+  { name: 'Sector 18 Film City', slug: 'sector-18-film-city', landmark: 'Film City, Savoy Suites & DND Flyway' },
+  { name: 'Sector 76-78', slug: 'sector-76-78', landmark: 'Silicon City, Mahagun Moderne & Sector 76 Metro' },
   { name: 'Sector 128', slug: 'sector-128', landmark: 'Jaypee Greens Wish Town & Kalindi Kunj Road' },
-  { name: 'Sector 93', slug: 'sector-93', landmark: 'ATS Village, Grand Omaxe & Expressway' },
-  { name: 'Sector 104', slug: 'sector-104', landmark: 'Hajipur Market, Sector 101 Aqua Line Metro' },
-  { name: 'Sector 110', slug: 'sector-110', landmark: 'Lotus Panache & Aqua Line Metro' },
-  { name: 'Sector 120', slug: 'sector-120', landmark: 'Prateek Laurel & Amrapali Zodiac' },
-  { name: 'Sector 125', slug: 'sector-125', landmark: 'Amity University Campus & Okhla Bird Sanctuary' },
-  { name: 'Sector 132', slug: 'sector-132', landmark: 'Genesis Global School & Corporate Hub' },
-  { name: 'Sector 168', slug: 'sector-168', landmark: 'Advant Navis Business Park & Paras Tierea' },
-  { name: 'Sector 76', slug: 'sector-76', landmark: 'Amrapali Princely Estate & Sector 76 Metro' },
-  { name: 'Sector 78', slug: 'sector-78', landmark: 'Hyde Park & Mahagun Moderne' },
-  { name: 'Noida Extension', slug: 'noida-extension', landmark: 'Gaur City Mall, Char Murti & Kisan Chowk' },
-  { name: 'Greater Noida', slug: 'pari-chowk', landmark: 'Pari Chowk, Alpha 1 & India Expo Mart' },
-  { name: 'Film City', slug: 'film-city', landmark: 'National Media Hub & Sector 16 Metro' }
+  { name: 'Sector 142', slug: 'sector-142', landmark: 'Advant Navis Business Park & Aqua Line Metro' },
+  { name: 'Pari Chowk', slug: 'pari-chowk', landmark: 'Crowne Plaza Greater Noida, Ansal Plaza & Expo Mart' },
+  { name: 'Noida Extension', slug: 'noida-extension', landmark: 'Gaur City Mall, Char Murti & Greater Noida West' },
+  { name: 'Knowledge Park', slug: 'knowledge-park', landmark: 'India Expo Mart & Galgotias Boulevard' },
+  { name: 'Indirapuram', slug: 'indirapuram', landmark: 'Shipra Mall, Habitat Centre & Country Inn' },
+  { name: 'Vaishali', slug: 'vaishali', landmark: 'Max Super Speciality Hospital & Mahagun Mall' },
+  { name: 'Vasundhara', slug: 'vasundhara', landmark: 'Mewar Institute & Golden Tulip Hotel' },
+  { name: 'Crossings Republik', slug: 'crossings-republik', landmark: 'NH-24 Delhi-Meerut Expressway High-Rise Belt' },
+  { name: 'Kaushambi', slug: 'kaushambi', landmark: 'Radisson Blu Kaushambi & Anand Vihar Border' },
+  { name: 'Mayur Vihar', slug: 'mayur-vihar', landmark: 'Crowne Plaza New Delhi Mayur Vihar & DND Corridor' },
+  { name: 'Botanical Garden', slug: 'botanical-garden', landmark: 'Botanical Garden Interchange & Amity University Sector 125' }
 ];
 
 const categoryTypes = [
-  { name: 'College Girls', slug: 'categories/college-girls', titleKW: 'College Girl' },
-  { name: 'VIP Models', slug: 'categories/vip-escorts', titleKW: 'VIP Model' },
-  { name: 'Russian Escorts', slug: 'categories/russian-escorts', titleKW: 'Russian' },
-  { name: 'Housewife Escorts', slug: 'categories/housewife-escorts', titleKW: 'Housewife' },
-  { name: 'Air Hostess Escorts', slug: 'categories/air-hostess-escorts', titleKW: 'Air Hostess' },
-  { name: 'Independent Escorts', slug: 'categories/independent-escorts', titleKW: 'Independent' }
+  { name: 'Call Girls', slug: 'call-girls', titleKW: 'Call Girl' },
+  { name: 'VIP Models', slug: 'vip-escorts', titleKW: 'VIP Model' },
+  { name: 'Russian Escorts', slug: 'russian-escorts', titleKW: 'Russian' },
+  { name: 'Adult Meetings', slug: 'adult-meetings', titleKW: 'Adult Meeting' },
+  { name: 'Transsexual Escorts', slug: 'transsexual', titleKW: 'Transsexual' },
+  { name: 'Independent Escorts', slug: 'call-girls', titleKW: 'Independent' }
 ];
 
 function requestPromise(options, postData = null) {
@@ -82,7 +80,7 @@ async function getGraphToken(authorIndex) {
 async function publishGraphArticle(token, title, loc, cat, index) {
   const targetSectorUrl = `${DOMAIN}/call-girls/${loc.slug}/`;
   const targetRootUrl = `${DOMAIN}/`;
-  const targetRateUrl = `${DOMAIN}/noida-call-girls-rate/`;
+  const targetRateUrl = `${DOMAIN}/noida-escorts/`;
   const targetDirectoryUrl = `${DOMAIN}/call-girls/`;
 
   // Explicit keyword anchoring to target "call girl noida" and "escorts service noida"
@@ -126,11 +124,11 @@ async function publishGraphArticle(token, title, loc, cat, index) {
       {
         tag: 'p',
         children: [
-          `Check transparent hourly and full-night packages starting from ₹1,999 on the official `,
-          { tag: 'a', attrs: { href: targetRateUrl }, children: ['Noida call girl rate card'] },
+          `Check transparent hourly and full-night packages starting from ₹3,000 on the official `,
+          { tag: 'a', attrs: { href: targetRateUrl }, children: ['Noida escorts price list and booking guide'] },
           `. Browse the full `,
-          { tag: 'a', attrs: { href: targetDirectoryUrl }, children: ['Noida escorts directory'] },
-          ` with 50+ genuine photo profiles.`
+          { tag: 'a', attrs: { href: targetDirectoryUrl }, children: ['Noida call girls directory'] },
+          ` with 100+ genuine photo profiles.`
         ]
       },
       {
@@ -249,7 +247,7 @@ async function run50NoidaGenerator() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>50 Live Authority Backlinks Matrix | We Noida Escorts</title>
+  <title>50 Live Authority Backlinks Matrix | Escorts Hub Noida</title>
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f111a; color: #e6edf3; padding: 30px; margin: 0; }
     .container { max-width: 1200px; margin: 0 auto; }

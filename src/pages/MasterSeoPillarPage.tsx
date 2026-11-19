@@ -787,25 +787,25 @@ export const MasterSeoPillarPage: React.FC<MasterSeoPillarPageProps> = ({ target
               to="/noida-escorts" 
               className={`p-3 rounded-xl border transition-all ${config.slug === 'noida-escorts' ? 'bg-amber-500/20 border-amber-400 text-amber-300 font-bold' : 'bg-slate-800 border-slate-700 text-slate-300 hover:text-white'}`}
             >
-              /noida-escorts →
+              Rates & Booking Guide →
             </Link>
             <Link 
-              to="/noida-callgirl" 
-              className={`p-3 rounded-xl border transition-all ${config.slug === 'noida-callgirl' ? 'bg-amber-500/20 border-amber-400 text-amber-300 font-bold' : 'bg-slate-800 border-slate-700 text-slate-300 hover:text-white'}`}
+              to="/call-girls" 
+              className="p-3 rounded-xl border transition-all bg-slate-800 border-slate-700 text-slate-300 hover:text-white"
             >
-              /noida-callgirl →
+              Call Girls in Noida →
             </Link>
             <Link 
-              to="/callgirl-noida" 
-              className={`p-3 rounded-xl border transition-all ${config.slug === 'callgirl-noida' ? 'bg-amber-500/20 border-amber-400 text-amber-300 font-bold' : 'bg-slate-800 border-slate-700 text-slate-300 hover:text-white'}`}
+              to="/vip-escorts" 
+              className="p-3 rounded-xl border transition-all bg-slate-800 border-slate-700 text-slate-300 hover:text-white"
             >
-              /callgirl-noida →
+              VIP Escorts Noida →
             </Link>
             <Link 
-              to="/escorts-noida" 
-              className={`p-3 rounded-xl border transition-all ${config.slug === 'escorts-noida' ? 'bg-amber-500/20 border-amber-400 text-amber-300 font-bold' : 'bg-slate-800 border-slate-700 text-slate-300 hover:text-white'}`}
+              to="/" 
+              className="p-3 rounded-xl border transition-all bg-slate-800 border-slate-700 text-slate-300 hover:text-white"
             >
-              /escorts-noida →
+              Escorts in Noida (Home) →
             </Link>
           </div>
 

@@ -1,7 +1,7 @@
 /**
  * veoClaudeAI.ts
  * Advanced Client & Service for Veo AI Free Engine (Claude Sonnet 5, Claude Opus 5, GPT-5.6 Terra, Gemini 3.7 Flash)
- * Tailored for We Noida Escorts (https://escortshubnoida.com)
+ * Tailored for Escorts Hub Noida (https://wenoidaescorts.com)
  * Zero API Key requirement with support for multi-turn sessions, thinking mode, and web search grounding.
  */
 
@@ -293,7 +293,7 @@ ${chatHistory.map(m => `${m.role.toUpperCase()}: ${m.content}`).join('\n')}
 
 User Question: "${userMessage}"
 
-Provide a courteous, accurate, and helpful response for We Noida Escorts:`;
+Provide a courteous, accurate, and helpful response for Escorts Hub Noida:`;
 
   return await queryVeoClaude(formattedPrompt, {
     model: 'claude-sonnet',
@@ -353,7 +353,7 @@ Return ONLY the JSON object.`;
     title: topic.replace(/\b\w/g, l => l.toUpperCase()),
     slug: safeSlug,
     excerpt: `Discover our verified guide on ${topic} at ${BRAND.name}, Noida.`,
-    content: `<p>Welcome to ${BRAND.name}, the leading verified directory in Noida. Whether you are visiting the Pink City for business or leisure, our platform connects you with authentic, photo-verified independent models across Sindhi Camp, MI Road, Vaishali Nagar, and Malviya Nagar.</p><h3>Why Choose Verified Profiles</h3><p>We prioritize guest safety, privacy, and genuine photo authentication. All outcall arrangements at reputed hotels and private suites are coordinated with discretion.</p><h3>Contact & Coordination</h3><p>For instant profile availability and booking details, connect directly on WhatsApp at ${CONTACT.phoneDisplay}.</p>`,
+    content: `<p>Welcome to ${BRAND.name}, the leading verified directory in Noida. Whether you are visiting the NCR for business or leisure, our platform connects you with authentic, photo-verified independent models across Sector 18, Sector 62, Noida Expressway, and Greater Noida.</p><h3>Why Choose Verified Profiles</h3><p>We prioritize guest safety, privacy, and genuine photo authentication. All outcall arrangements at reputed hotels and private suites are coordinated with discretion.</p><h3>Contact & Coordination</h3><p>For instant profile availability and booking details, connect directly on WhatsApp at ${CONTACT.phoneDisplay}.</p>`,
     metaDescription: `Discover verified companions and tips on ${topic} at ${BRAND.name} Noida.`,
     tags: [targetKeyword, BRAND.name, 'Noida Escorts']
   };
@@ -364,9 +364,9 @@ Return ONLY the JSON object.`;
  */
 export async function generateSpaReviewWithClaude(
   serviceName: string = 'VIP Companion',
-  areaName: string = 'Sindhi Camp'
+  areaName: string = 'Sector 18'
 ): Promise<{ reviewerName: string; rating: number; reviewText: string; date: string }> {
-  const prompt = `Write an authentic 5-star review for "${serviceName}" at We Noida Escorts located in "${areaName}", Noida.
+  const prompt = `Write an authentic 5-star review for "${serviceName}" at Escorts Hub Noida located in "${areaName}", Noida.
 Praise the prompt WhatsApp communication, 100% verified real photos, and professional discreet service.
 Return JSON with keys: reviewerName, rating (number 5), reviewText, date ("2 days ago").`;
 
@@ -381,7 +381,7 @@ Return JSON with keys: reviewerName, rating (number 5), reviewText, date ("2 day
   return {
     reviewerName: 'Rohit K. (Verified Client)',
     rating: 5,
-    reviewText: `Excellent experience with We Noida Escorts in ${areaName}. The profile was 100% genuine as shown in photos, communication was quick over WhatsApp, and service was discreet and professional.`,
+    reviewText: `Excellent experience with Escorts Hub Noida in ${areaName}. The profile was 100% genuine as shown in photos, communication was quick over WhatsApp, and service was discreet and professional.`,
     date: 'Just now'
   };
 }

@@ -48,7 +48,7 @@ export const InteractiveSlotBooking: React.FC = () => {
     const durLabel = DURATIONS.find((d) => d.id === selectedDuration)?.label || selectedDuration;
     const companionLabel = COMPANION_OPTIONS.find((t) => t.id === selectedCompanion)?.label || selectedCompanion;
 
-    const message = `Hello We Noida Escorts! I would like to book a verified meeting:
+    const message = `Hello Escorts Hub Noida! I would like to book a verified meeting:
 • Category: ${selectedService}
 • Date: ${dateStr}
 • Time Slot: ${selectedTimeSlot}

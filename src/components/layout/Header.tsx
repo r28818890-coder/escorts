@@ -107,15 +107,15 @@ export const Header: React.FC<HeaderProps> = () => {
             title="Double-tap for Secret Admin Mode"
             aria-label="Escorts Hub Noida - Home"
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 border border-amber-500/70 p-1 group-hover:scale-105 group-hover:border-amber-400 transition-all shrink-0 shadow-[0_0_15px_rgba(245,158,11,0.25)] flex items-center justify-center">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full p-0.5 bg-gradient-to-tr from-amber-500 via-amber-300 to-amber-600 shadow-[0_0_14px_rgba(245,158,11,0.35)] group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(245,158,11,0.55)] transition-all shrink-0 flex items-center justify-center">
               <img
                 src="/ecj-mark.svg"
                 alt="Escorts Hub Noida official crest logo"
-                width={40}
-                height={40}
+                width={44}
+                height={44}
                 decoding="async"
                 fetchPriority="high"
-                className="w-full h-full object-contain rounded-lg"
+                className="w-full h-full object-contain rounded-full bg-slate-950"
               />
             </div>
             <div className="flex flex-col shrink-0">
@@ -259,8 +259,8 @@ export const Header: React.FC<HeaderProps> = () => {
               {/* Drawer Header */}
               <div className="flex items-center justify-between pb-4 border-b border-slate-200 mb-4">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-slate-950 via-slate-900 to-purple-950 border border-amber-500/70 p-1 shadow-[0_0_10px_rgba(245,158,11,0.25)] flex items-center justify-center">
-                    <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width={36} height={36} className="w-full h-full object-contain rounded-lg" />
+                  <div className="w-10 h-10 rounded-full p-0.5 bg-gradient-to-tr from-amber-500 via-amber-300 to-amber-600 shadow-[0_0_10px_rgba(245,158,11,0.35)] flex items-center justify-center shrink-0">
+                    <img src="/ecj-mark.svg" alt="Escorts Hub Noida logo" width={40} height={40} className="w-full h-full object-contain rounded-full bg-slate-950" />
                   </div>
                   <span className="font-black text-sm text-slate-950">Escorts Hub <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 to-amber-600">Noida</span></span>
                 </div>

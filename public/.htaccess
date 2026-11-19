@@ -16,7 +16,10 @@ LimitRequestBody 10485760
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # 2. Permanent 301 Redirects for Legacy Massage URLs to Call Girls
+  # 2. Permanent 301 Redirects for Legacy Massage URLs & Cannibalized Duplicate Pillars
+  RewriteRule ^noida-callgirl/?$ /call-girls [R=301,L]
+  RewriteRule ^callgirl-noida/?$ /call-girls [R=301,L]
+  RewriteRule ^escorts-noida/?$ / [R=301,L]
   RewriteRule ^massages/?$ /call-girls [R=301,L]
   RewriteRule ^massage/?$ /call-girls [R=301,L]
   RewriteRule ^services/.*massage.*$ /call-girls [R=301,L]

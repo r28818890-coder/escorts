@@ -103,7 +103,7 @@ export const LandmarkReachGuide: React.FC = () => {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
             <a
-              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello We Noida Escorts, please confirm outcall availability at my hotel.')}
+              href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent('Hello Escorts Hub Noida, please confirm outcall availability at my hotel.')}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 hover:brightness-110 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-md cursor-pointer"

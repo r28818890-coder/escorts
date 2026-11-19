@@ -179,7 +179,7 @@ export const Home: React.FC = () => {
         '@type': ['LocalBusiness', 'EntertainmentBusiness'],
         '@id': 'https://wenoidaescorts.com/#business',
         'name': 'Escorts Hub Noida',
-        'alternateName': 'We Noida Escorts Directory',
+        'alternateName': 'Escorts Hub Noida Directory',
         'url': 'https://wenoidaescorts.com/',
         'telephone': '+918218125815',
         'email': 'contact@wenoidaescorts.com',
@@ -261,16 +261,15 @@ export const Home: React.FC = () => {
               alt="VIP Escorts in Noida verified companions"
               width={1920}
               height={1080}
-              className="w-full h-full object-cover object-center opacity-40 filter brightness-90 contrast-110 transform scale-105"
+              className="w-full h-full object-cover object-center opacity-85 filter brightness-100 contrast-115 transform scale-105"
               loading="eager"
               fetchPriority="high"
               decoding="async"
             />
           </picture>
-          {/* Multi-layered dark gradient overlays ensuring high WCAG AA text contrast */}
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/95 via-slate-950/60 to-slate-950" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/25 to-slate-950/90" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(168,85,247,0.18),_transparent_70%)]" />
+          {/* Subtle luxury vignette preserving hot model visual visibility while maintaining WCAG AA contrast */}
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/75 via-slate-950/25 to-slate-950/90" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(168,85,247,0.15),_transparent_75%)]" />
         </div>
 
         {/* Ambient Backlight Glow */}
@@ -290,7 +289,7 @@ export const Home: React.FC = () => {
           </div>
 
           {/* EXACTLY ONE H1: Contains primary keyword "escorts in noida" */}
-          <h1 className="font-black text-3xl sm:text-5xl md:text-6xl tracking-tight leading-tight mb-4 drop-shadow-[0_2px_12px_rgba(0,0,0,0.85)]">
+          <h1 className="font-black text-3xl sm:text-5xl md:text-6xl tracking-tight leading-tight mb-4 drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
             Escorts in Noida
           </h1>
 
@@ -575,7 +574,7 @@ export const Home: React.FC = () => {
                 Noida, one of India's fastest-growing planned industrial and commercial hubs in the National Capital Region (NCR), is home to world-class corporate parks, multinational tech headquarters, and premier luxury hospitality destinations. Whether you are an executive visiting the multinational IT corridors of Sector 62 and Advant Navis on the Expressway, attending an international symposium at the India Expo Mart in Greater Noida, or enjoying a leisurely stay near DLF Mall of India and Sector 18, Escorts Hub Noida offers the most discreet, reliable, and verified adult companionship directory in the region.
               </p>
               <p>
-                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else.
+                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else. For step-by-step reservation procedures and VIP companion booking protocols, review our official <Link to="/noida-escorts" className="text-amber-700 font-bold hover:underline">Noida Escorts Price List &amp; Booking Guide</Link>.
               </p>
             </div>
 

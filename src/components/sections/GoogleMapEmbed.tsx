@@ -23,10 +23,10 @@ const GoogleMapEmbed: React.FC = () => {
             Find Us
           </span>
           <h2 className="text-xl md:text-4xl font-display font-black text-slate-900 mb-2">
-            ECJ Near <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f641d] to-[#d6aa47]">Pink City, Noida</span>
+            Escorts Hub Near <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8f641d] to-[#d6aa47]">Sector 18, Noida</span>
           </h2>
           <p className="text-slate-600 text-xs md:text-base max-w-xl mx-auto">
-            Khandela House, Sansar Chandra Road, behind Amber Tower, Pink City, Noida.
+            Sector 18 Market, Near DLF Mall of India &amp; Wave Silver Tower, Noida, UP 201301
           </p>
         </motion.div>
 
@@ -49,8 +49,8 @@ const GoogleMapEmbed: React.FC = () => {
                 <div>
                   <p className="text-[10px] font-black uppercase tracking-widest text-[#e11d48] mb-0.5">Address</p>
                   <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
-                    Khandela House, Sansar Chandra Road,<br />
-                    Behind Amber Tower, Pink City, Noida – 302001
+                    Sector 18 Commercial Hub,<br />
+                    Near DLF Mall of India &amp; Metro Gate 2, Noida – 201301
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const GoogleMapEmbed: React.FC = () => {
             className="lg:col-span-2 rounded-xl md:rounded-2xl overflow-hidden border border-[#d6aa47]/40 shadow-lg h-[240px] md:h-[380px]"
           >
             <iframe
-              title="We Noida Escorts Location — Pink City, Noida"
+              title="Escorts Hub Noida Location — Sector 18, Noida"
               src={CONTACT.embedMapSrc}
               width="100%"
               height="100%"
@@ -112,11 +112,11 @@ const GoogleMapEmbed: React.FC = () => {
           className="mt-6 flex flex-wrap justify-center gap-2"
         >
           {[
-            ' 3 min from Railway Station',
-            ' 1 min from Bus Stand',
-            '️ 5 min from MI Road',
-            '️ 8 min from Civil Lines',
-            '️ 25 min from Airport',
+            ' 2 min from Sector 18 Metro',
+            ' 3 min from DLF Mall of India',
+            ' 5 min from Radisson Blu Noida',
+            ' 8 min from Film City Sector 16',
+            ' 15 min from Advant Navis Expressway',
           ].map((badge) => (
             <span
               key={badge}

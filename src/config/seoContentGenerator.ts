@@ -68,22 +68,22 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
     introText = `Welcome to the official directory for verified escort services, call girls, and independent companions in ${locName}. Whether you are a business traveler staying at 5-star hotels (Radisson, Crowne Plaza, Jaypee), an IT corporate professional, or a resident looking for sophisticated companionship, our verified models offer discreet 24/7 outcall hospitality with direct WhatsApp confirmation.`;
 
     landmarkHighlights = `Verified independent models in ${locName} provide swift 15 to 30-minute outcall service across major landmarks including ${landmark}, as well as private sanitized in-call suites. All meetings prioritize mutual respect, discretion, and hygiene standards.`;
-  } else if (category.slug === 'massages') {
+  } else if (category.slug === 'adult-meetings') {
     h1 = locality
-      ? `Best Massage & Spa in ${locName} - Thai, Swedish & Couple Spa`
-      : `Best Massages in Noida - Luxury Thai Spa & Body Massage Therapists (24/7)`;
+      ? `Adult Meetings in ${locName} - Casual Dating & Verified Singles`
+      : `Adult Meetings in Noida - Casual Dating & Verified Independent Companions`;
 
     metaTitle = locality
-      ? `Massage in ${locName} - Luxury Body Spa & Therapists | Open 24/7`
-      : `Best Massage in Noida - Luxury Thai Spa, Swedish & Body Massage | 24 Hours`;
+      ? `Adult Meetings in ${locName} - Discreet Dating | 24/7 Outcall`
+      : `Adult Meetings in Noida - Casual Dating & Local Singles | 24 Hours`;
 
     metaDescription = locality
-      ? `Experience relaxing body massage in ${locName}. Traditional Thai massage, Swedish relaxation, deep tissue and steam bath near ${landmark}. Call or WhatsApp now.`
-      : `Top rated luxury massage centers and certified therapists in Noida. Thai massage, couple spa, deep tissue, and herbal steam bath in Sector 18, Sector 62 & Expressway.`;
+      ? `Connect with verified singles and companions for adult meetings in ${locName} near ${landmark}. 100% genuine photos and discreet private outcall.`
+      : `Verified adult meetings, casual dating, and independent companions in Noida. Connect directly in Sector 18, Sector 62 & Expressway.`;
 
-    introText = `Discover top-rated wellness therapists and luxury spa sanctuaries in ${locName}. Escape corporate stress with signature rejuvenating therapies including authentic Thai acupressure, European Swedish relaxation, deep tissue muscle recovery, B2B oil therapy, and private couple spa suites equipped with hot hydro showers.`;
+    introText = `Discover verified adult meetings, casual dating, and private companionship in ${locName}. Meet charming local singles and independent companions for relaxed dinners, corporate travel accompaniment, and private suite rendezvous.`;
 
-    landmarkHighlights = `Our featured wellness centers in ${locName} are strategically located near ${landmark}, offering serene private AC rooms, organic therapeutic essential oils, hospital-grade sanitization, and 24-hour appointment booking.`;
+    landmarkHighlights = `Our verified companions in ${locName} are available near ${landmark}, offering complete discretion, professional etiquette, and prompt 20-30 minute hotel outcall visits.`;
   } else if (category.slug === 'russian-escorts') {
     h1 = locality
       ? `Russian Escorts in ${locName} - Elite VIP Foreign Models & Companions`

@@ -129,7 +129,7 @@ const ServicePage: React.FC = () => {
             <div className="mt-10 pt-8 border-t border-slate-100 text-center">
               <p className="text-xs text-slate-500 mb-4">24/7 Hotel Outcall • Doorstep Arrival in Noida</p>
               <a 
-                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, I want to inquire about ${service.name} companion in Noida.`)}
+                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Noida, I want to inquire about ${service.name} companion in Noida.`)}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-rose-600 via-rose-700 to-indigo-700 text-white font-black text-xs uppercase tracking-wider rounded-xl hover:brightness-110 transition-transform shadow-md gap-2 cursor-pointer"

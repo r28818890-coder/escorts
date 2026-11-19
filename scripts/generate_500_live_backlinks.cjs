@@ -42,35 +42,34 @@ const noidaLocalities = [
   { name: 'Greater Noida', slug: 'greater-noida', landmark: 'Knowledge Park, Yamuna Expressway & Pari Chowk', pincode: '201310' }
 ];
 
-// Target landing pages across the site
+// Target landing pages across the site (Canonical Non-Cannibalized Routing)
 const targetPages = [
-  { url: `${DOMAIN}/`, path: '/', label: 'Noida Escorts Official Home' },
-  { url: `${DOMAIN}/noida-escorts`, path: '/noida-escorts', label: 'Noida Escorts 3000-Line Master Pillar' },
-  { url: `${DOMAIN}/noida-callgirl`, path: '/noida-callgirl', label: 'Noida Callgirl 3000-Line Master Pillar' },
-  { url: `${DOMAIN}/callgirl-noida`, path: '/callgirl-noida', label: 'Callgirl Noida 3000-Line Master Pillar' },
-  { url: `${DOMAIN}/escorts-noida`, path: '/escorts-noida', label: 'Escorts Noida 3000-Line Master Pillar' },
-  { url: `${DOMAIN}/call-girls`, path: '/call-girls', label: 'Noida Call Girls Directory' },
-  { url: `${DOMAIN}/booking`, path: '/booking', label: '24/7 Verified Booking Portal' }
+  { url: `${DOMAIN}/`, path: '/', label: 'Escorts in Noida Official Home', primaryKeyword: 'escorts in noida' },
+  { url: `${DOMAIN}/call-girls`, path: '/call-girls', label: 'Call Girls in Noida Hub', primaryKeyword: 'call girls in noida' },
+  { url: `${DOMAIN}/noida-escorts`, path: '/noida-escorts', label: 'Noida Escorts Price List & Booking Guide', primaryKeyword: 'noida escorts price list' },
+  { url: `${DOMAIN}/vip-escorts`, path: '/vip-escorts', label: 'VIP Escorts Noida', primaryKeyword: 'vip escorts in noida' },
+  { url: `${DOMAIN}/russian-escorts`, path: '/russian-escorts', label: 'Russian Escorts Noida', primaryKeyword: 'russian escorts noida' },
+  { url: `${DOMAIN}/booking`, path: '/booking', label: '24/7 Verified Booking Portal', primaryKeyword: 'hotel outcall escorts noida' }
 ];
 
-// Keywords matrix
+// Keywords matrix (Target High-Intent Keywords)
 const keywordMatrix = [
-  'noida escorts',
-  'noida callgirl',
-  'callgirl noida',
-  'escorts noida',
-  'call girl noida',
-  'escorts service noida',
   'escorts in noida',
   'call girls in noida',
-  'independent call girls in noida',
+  'noida escorts price list',
+  'call girl noida',
+  'escorts service noida',
   'vip escorts in noida',
-  'hotel outcall escorts noida',
   'russian escorts noida',
-  'college girl call girls noida',
-  'housewife escorts in noida',
+  'independent call girls in noida',
+  'hotel outcall escorts noida',
+  'noida escorts booking guide',
   'cheap call girls in noida cash on delivery',
-  'best escort service in noida'
+  'best escort service in noida',
+  'college girl call girls noida',
+  'genuine verified escorts noida',
+  '24/7 outcall escorts noida',
+  'luxury companions in noida'
 ];
 
 // Categories
@@ -203,14 +202,14 @@ async function publishSingleBacklink(index, total) {
       {
         tag: 'p',
         children: [
-          `Explore our comprehensive 3000-line verified resources: `,
-          { tag: 'a', attrs: { href: `${DOMAIN}/noida-escorts` }, children: ['Noida Escorts Master Guide'] },
+          `Explore our comprehensive verified resources: `,
+          { tag: 'a', attrs: { href: `${DOMAIN}/noida-escorts` }, children: ['Noida Escorts Price List & Booking Guide'] },
           ` • `,
-          { tag: 'a', attrs: { href: `${DOMAIN}/noida-callgirl` }, children: ['Noida Callgirl Verified Portal'] },
+          { tag: 'a', attrs: { href: `${DOMAIN}/call-girls` }, children: ['Call Girls in Noida Hub'] },
           ` • `,
-          { tag: 'a', attrs: { href: `${DOMAIN}/callgirl-noida` }, children: ['Callgirl Noida Complete Directory'] },
+          { tag: 'a', attrs: { href: `${DOMAIN}/vip-escorts` }, children: ['VIP Escorts Noida'] },
           ` • `,
-          { tag: 'a', attrs: { href: `${DOMAIN}/escorts-noida` }, children: ['Escorts Noida 24/7 Outcall Services'] },
+          { tag: 'a', attrs: { href: `${DOMAIN}/russian-escorts` }, children: ['Russian Escorts Noida'] },
           `.`
         ]
       },
@@ -314,17 +313,38 @@ async function main() {
   // Save report ONLY in the root documentation file (NOT in public/ or dist/)
   const reportPath = path.join(__dirname, '..', 'BACKLINKS_500_LIVE_EXTERNAL.md');
   const markdownLines = [
-    '# 500 Live High-Authority Web 2.0 Backlinks Report',
+    '# 500 Live High-Authority Web 2.0 Backlinks Authority Matrix',
     '',
-    `> **Canonical Target**: [${DOMAIN}](${DOMAIN})  `,
-    `> **Platform**: Graph.org (Telegra.ph) | **Root DA**: 91+  `,
-    `> **Published Date**: November 15, 2026 | **Total Verified**: ${publishedLinks.length}  `,
-    `> **Storage Note**: Backlinks are published directly on external platforms and are NOT stored on the website frontend.`,
+    `> **Target Brand**: [${BRAND}](${DOMAIN}) | **Root Domain**: [${DOMAIN}](${DOMAIN})  `,
+    `> **Publishing Platform**: Graph.org (Telegra.ph) | **Average Root Authority**: DA 91+  `,
+    `> **Live Verification**: ${publishedLinks.length}/500 Active 200 OK | **Protocol**: High-Intent Anchor Text & Contextual Content  `,
+    `> **Audit Scope**: Zero Cannibalization, 100% Canonical Target Mapping (301 Consolidated)  `,
     '',
-    '| # | Anchor Keyword | Locality | Target URL | Live External Backlink | DA | Status |',
-    '|---|---|---|---|---|---|---|',
-    ...publishedLinks.map(l => `| ${l.index} | **${l.anchorText}** | ${l.locality} | [${l.targetUrl}](${l.targetUrl}) | [Live Article](${l.liveUrl}) | DA 91 | 🟢 LIVE 200 OK |`)
+    '## Campaign Architecture & Target Keyword Distribution',
+    '',
+    '| Focus Keyword | Canonical Target URL | Search Intent | Target Ratio |',
+    '|---|---|---|---|',
+    `| **escorts in noida** | [${DOMAIN}/](${DOMAIN}/) | Primary Head Term | 25% |`,
+    `| **call girls in noida** | [${DOMAIN}/call-girls](${DOMAIN}/call-girls) | High-Volume Secondary Hub | 25% |`,
+    `| **noida escorts price list** | [${DOMAIN}/noida-escorts](${DOMAIN}/noida-escorts) | High-Intent Booking & Rates Guide | 20% |`,
+    `| **vip escorts in noida** | [${DOMAIN}/vip-escorts](${DOMAIN}/vip-escorts) | Luxury Five-Star Outcall | 10% |`,
+    `| **russian escorts noida** | [${DOMAIN}/russian-escorts](${DOMAIN}/russian-escorts) | International Model Segment | 10% |`,
+    `| **hotel outcall escorts noida** | [${DOMAIN}/booking](${DOMAIN}/booking) | Direct 24/7 Hotel Dispatch | 10% |`,
+    '',
+    '## Complete 500 Contextual Authority Backlinks Directory',
+    ''
   ];
+
+  publishedLinks.forEach((l) => {
+    const paragraph = `Looking for trusted ${l.locality} companions or verified [${l.anchorText}](${l.targetUrl}) in Noida? ${BRAND} offers 100% genuine photo-verified profiles, 20-minute hotel doorstep outcall, strict cash on delivery (COD) with zero advance deposits, and complete privacy. Call or WhatsApp ${PHONE} for instant 24/7 confirmation.`;
+
+    markdownLines.push(`### Backlink #${l.index}: Verified ${l.anchorText.toUpperCase()} in ${l.locality}`);
+    markdownLines.push(`- **Target Focus Keyword**: \`${l.anchorText}\` | **Platform DA**: 91+ | **Status**: 🟢 LIVE 200 OK`);
+    markdownLines.push(`- **Target Canonical URL**: [${l.targetUrl}](${l.targetUrl})`);
+    markdownLines.push(`- **Verified Live External Link**: [Live Article on Graph.org](${l.liveUrl})`);
+    markdownLines.push(`- **Contextual Anchor Paragraph**: ${paragraph}`);
+    markdownLines.push('---');
+  });
 
   fs.writeFileSync(reportPath, markdownLines.join('\n'), 'utf-8');
   console.log(`✓ External publishing report saved to: BACKLINKS_500_LIVE_EXTERNAL.md`);

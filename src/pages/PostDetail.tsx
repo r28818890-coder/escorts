@@ -138,7 +138,7 @@ const PostDetail: React.FC = () => {
                 <p className="text-xs sm:text-sm text-rose-100 font-medium">100% photo-verified independent models & 24/7 hotel outcall visits.</p>
               </div>
               <a
-                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, I read your guide "${post.title}" and would like to inquire about verified companion availability.`)}
+                href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Noida, I read your guide "${post.title}" and would like to inquire about verified companion availability.`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 px-6 py-3 bg-white text-slate-950 font-bold text-xs rounded-full hover:bg-slate-100 transition-colors flex items-center gap-2 shadow-sm"

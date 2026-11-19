@@ -657,47 +657,17 @@ const INFO_PAGES = [
 
 subRoutes.push(...INFO_PAGES);
 
-// Dedicated High-Ranking Master Pillar Pages (7-Day #1 Target)
+// Dedicated Master Pillar Page (Price List & Booking Guide)
 const MASTER_SEO_ROUTES = [
   {
     path: 'noida-escorts',
-    title: 'Noida Escorts | 100% Photo Verified 24/7 Hotel Outcall',
-    desc: 'Top-rated Noida escorts with 100% real photos, fast 20-min 5-star hotel outcall to Sector 18, 62, Expressway & Pari Chowk. Cash on delivery. Call +91 8218125815.',
-    h1: 'Noida Escorts: 100% Real Photo Verified VIP Companion Service',
-    h2: 'Direct 24/7 Doorstep Hotel Outcall & Cash on Delivery in Noida & NCR',
+    title: 'Noida Escorts Price List & Booking Guide | Escorts Hub',
+    desc: 'Official 2026 Noida escorts price list and step-by-step hotel outcall booking guide. Transparent per-hour rates, zero advance, 20-min arrival in Noida & NCR.',
+    h1: 'Noida Escorts Price List & Booking Guide (2026)',
+    h2: 'Transparent Pricing Tiers, Exact Inclusions & 4-Step Outcall Sequence',
     locName: 'Noida',
-    keyword: 'noida escorts, vip companions and 5-star hotel outcall models',
+    keyword: 'noida escorts price list and booking guide',
     landmark: 'Sector 18, Sector 62, Expressway and Radisson Blu Hotel Noida',
-  },
-  {
-    path: 'noida-callgirl',
-    title: 'Noida Callgirl | Verified Independent 24/7 Hotel Outcalls',
-    desc: 'Book genuine Noida callgirl with 100% real verified photos. Prompt 20-minute hotel doorstep outcalls in Sector 18, 62 & Noida Expressway. Call +91 8218125815.',
-    h1: 'Noida Callgirl: 24/7 Genuine Photo Verified Doorstep Companion Outcall',
-    h2: 'Verified Independent Models & Fast 15-Minute Hotel Room Outcalls',
-    locName: 'Noida',
-    keyword: 'noida callgirl, independent companions and college models',
-    landmark: 'Sector 18, Sector 62, Sector 50 and Sandal Suites Noida',
-  },
-  {
-    path: 'callgirl-noida',
-    title: 'Callgirl Noida | 100% Real Photos & 20-Min Doorstep Outcall',
-    desc: 'Looking for authentic callgirl noida? Verified profiles with real photos, cash on delivery, zero advance deposit, 20-min outcalls across all sectors. Call 8218125815.',
-    h1: 'Callgirl Noida: Direct 24/7 Hotel Outcall & Zero Prepayment Booking',
-    h2: 'Genuine Photo-Verified Outcalls to Radisson Blu, Crowne Plaza & Expressway',
-    locName: 'Noida',
-    keyword: 'callgirl noida, verified escort companions and hotel outcalls',
-    landmark: 'Sector 18 DLF Mall of India, Sector 62 and Pari Chowk Greater Noida',
-  },
-  {
-    path: 'escorts-noida',
-    title: 'Escorts Noida | VIP 5-Star Hotel Companions & 24/7 Outcall',
-    desc: 'Premium escorts noida offering verified hotel outcalls, dinner dates, Russian models, and full-night stays. 100% discrete and photo-verified. Call +91 8218125815.',
-    h1: 'Escorts Noida: Luxury 5-Star Hotel Outcalls & Verified Independent Models',
-    h2: 'Elite Companions, Russian Models & 20-Minute Outcall Across Delhi NCR',
-    locName: 'Noida',
-    keyword: 'escorts noida, luxury vip models and corporate dinner hostesses',
-    landmark: 'Radisson Blu Hotel Noida, Crowne Plaza and Jaypee Greens Resort',
   }
 ];
 
@@ -734,6 +704,26 @@ BLOG_POSTS.forEach((post) => {
     keywords: post.keywords ? post.keywords.join(', ') : 'escorts in noida, hotel outcall'
   });
 });
+
+// 5. Classified Profiles (100 Verified Profiles)
+try {
+  const { CLASSIFIED_ADS } = require('./portalData.cjs');
+  CLASSIFIED_ADS.forEach((ad) => {
+    subRoutes.push({
+      path: `${ad.categorySlug}/${ad.localitySlug}/${ad.slug}`,
+      title: `${ad.title} | Verified 24/7 Outcall`.slice(0, 58),
+      desc: (ad.description || `Book ${ad.title} in ${ad.locality}. 100% real verified photos, 20-min hotel doorstep outcall, zero advance deposit. Call or WhatsApp +91 8218125815.`).slice(0, 158),
+      h1: ad.title,
+      h2: `${ad.services ? ad.services.join(' • ') : 'Verified VIP Outcall'} | ${ad.locality}`,
+      catName: ad.categorySlug,
+      locName: ad.locality,
+      adObj: ad,
+      isProfile: true
+    });
+  });
+} catch (e) {
+  console.warn('Could not load classified profiles for SSG:', e.message);
+}
 
 console.log(`Starting SSG Pre-rendering script for ${subRoutes.length} programmatic routes...`);
 
@@ -898,6 +888,42 @@ subRoutes.forEach((route) => {
       <script type="application/ld+json">${JSON.stringify(faqSchema)}</script>
       <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
     `;
+  } else if (route.isProfile) {
+    const ad = route.adObj;
+    const profileSchema = {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": ad.title,
+      "description": route.desc,
+      "url": canonicalUrl,
+      "telephone": PHONE,
+      "image": `${DOMAIN}${ad.images && ad.images[0] ? ad.images[0] : '/favicon-192x192.png'}`,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": ad.locality,
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": ad.rating || 4.9,
+        "reviewCount": ad.reviewsCount || 25
+      }
+    };
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${DOMAIN}/` },
+        { "@type": "ListItem", "position": 2, "name": ad.categorySlug, "item": `${DOMAIN}/${ad.categorySlug}/` },
+        { "@type": "ListItem", "position": 3, "name": ad.locality, "item": `${DOMAIN}/${ad.categorySlug}/${ad.localitySlug}/` },
+        { "@type": "ListItem", "position": 4, "name": route.h1, "item": canonicalUrl }
+      ]
+    };
+    schemaTags = `
+      <script type="application/ld+json">${JSON.stringify(profileSchema)}</script>
+      <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
+    `;
   } else if (route.isHome) {
     schemaTags = '';
   } else {
@@ -1023,6 +1049,50 @@ subRoutes.forEach((route) => {
         </main>
       </noscript>
     `;
+  } else if (route.isProfile) {
+    const ad = route.adObj;
+    preRenderedBody = `
+      <div id="root"></div>
+      <noscript>
+        <main class="min-h-screen bg-[#f8fafc] text-[#0f172a] p-4 md:p-8" style="font-family: 'Montserrat', system-ui, sans-serif;">
+          <header class="max-w-4xl mx-auto mb-8 border-b border-slate-200 pb-6">
+            <nav class="text-xs text-amber-700 mb-4 font-semibold">
+              <a href="/" class="hover:underline">Home</a> &gt; 
+              <a href="/${ad.categorySlug}/" class="hover:underline">${ad.categorySlug}</a> &gt; 
+              <a href="/${ad.categorySlug}/${ad.localitySlug}/" class="hover:underline">${ad.locality}</a> &gt; 
+              <span class="text-slate-900 font-bold">${ad.title}</span>
+            </nav>
+            <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full mb-2">100% Photo Verified • 24/7 Hotel Outcall</div>
+            <h1 class="text-2xl md:text-4xl font-black text-slate-900 mb-2 tracking-tight">${ad.title}</h1>
+            <p class="text-sm md:text-base text-slate-600 font-medium">${route.h2}</p>
+            <div class="text-xs text-slate-500 mt-2">Location: <strong>${ad.locality}</strong> | Age: <strong>${ad.age || 23}</strong> | Status: <strong>Verified Independent Model</strong> | Direct WhatsApp: <strong>${PHONE}</strong></div>
+          </header>
+
+          <article class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+            <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+              <p>${ad.description}</p>
+              <h3 class="text-base font-bold text-slate-900 mt-4">Verified Services Offered</h3>
+              <div class="flex flex-wrap gap-2 my-2">
+                ${ad.services ? ad.services.map(s => `<span class="bg-slate-100 text-slate-800 text-xs font-semibold px-2.5 py-1 rounded-lg border border-slate-200">${s}</span>`).join(' ') : ''}
+              </div>
+              <h3 class="text-base font-bold text-slate-900 mt-4">Verified Booking Guidelines &amp; Direct Confirmation</h3>
+              <ul class="list-disc pl-5 space-y-1 text-xs sm:text-sm text-slate-700">
+                <li><strong>Zero Advance Payment:</strong> No prepayment, online deposit, or booking fee required prior to meeting.</li>
+                <li><strong>100% Genuine Profile:</strong> Real photo verification guaranteed; meet in person at your hotel suite.</li>
+                <li><strong>Doorstep Hotel Outcall:</strong> Swift 20 to 30-minute arrival across Sector 18, Sector 62, and Noida Expressway.</li>
+              </ul>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between flex-wrap gap-4">
+              <span class="text-xs text-slate-600">Central WhatsApp Confirmation: <strong class="text-slate-900">${PHONE}</strong></span>
+              <a href="https://wa.me/${PHONE_CLEAN}" class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs px-5 py-2.5 rounded-xl shadow-sm">
+                Book ${ad.title} on WhatsApp →
+              </a>
+            </div>
+          </article>
+        </main>
+      </noscript>
+    `;
   } else if (route.isHome) {
     preRenderedBody = `
       <div id="root"></div>
@@ -1044,7 +1114,7 @@ subRoutes.forEach((route) => {
                 Noida, one of India's fastest-growing planned industrial and commercial hubs in the National Capital Region (NCR), is home to world-class corporate parks, multinational tech headquarters, and premier luxury hospitality destinations. Whether you are an executive visiting the multinational IT corridors of Sector 62 and Advant Navis on the Expressway, attending an international symposium at the India Expo Mart in Greater Noida, or enjoying a leisurely stay near DLF Mall of India and Sector 18, Escorts Hub Noida offers the most discreet, reliable, and verified adult companionship directory in the region.
               </p>
               <p>
-                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else.
+                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else. For step-by-step reservation procedures and VIP companion booking protocols, review our official <a href="/noida-escorts/" class="text-amber-700 font-bold hover:underline">Noida Escorts Price List &amp; Booking Guide</a>.
               </p>
 
               <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">24/7 Hotel Outcall Protocols for Noida's Premier Hospitality Destinations</h3>

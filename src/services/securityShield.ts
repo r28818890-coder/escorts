@@ -56,7 +56,7 @@ export const initSecurityShield = () => {
 
   // 4. Console Watermark & Anti-Tamper
   try {
-    const banner = '%c🔒 Protected by We Noida Escorts Enterprise Security Shield';
+    const banner = '%c🔒 Protected by Escorts Hub Noida Enterprise Security Shield';
     console.log(banner, 'color: #e11d48; font-size: 13px; font-weight: bold; background: #0f172a; padding: 4px 8px; border-radius: 4px;');
   } catch {}
 };

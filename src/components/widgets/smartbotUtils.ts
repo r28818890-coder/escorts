@@ -92,7 +92,7 @@ export function applySeoAutoFix(): SeoAuditReport {
     document.head.appendChild(metaDesc);
   }
   if (!metaDesc.getAttribute('content')) {
-    metaDesc.setAttribute('content', 'Noida Spa — Noida premier luxury Thai spa in Sindhi Camp. Certified therapists offering Thai Massage, Swedish, Deep Tissue, Aromatherapy, Couple Spa & more. Open 24 hours.');
+    metaDesc.setAttribute('content', 'Escorts Hub Noida — Verified independent escorts, VIP call girls, and 24/7 hotel outcall service in Sector 18, Sector 62, and Noida Expressway.');
     fixedCount++;
   }
 

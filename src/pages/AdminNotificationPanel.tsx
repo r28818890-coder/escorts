@@ -45,13 +45,13 @@ export const AdminNotificationPanel: React.FC = () => {
 
   // 1-Click Blog Generator
   const [blogTopic, setBlogTopic] = useState<string>('Noida VIP Escorts Booking Guide & Verified Models');
-  const [blogKeyword, setBlogKeyword] = useState<string>('we noida escorts');
+  const [blogKeyword, setBlogKeyword] = useState<string>('escorts hub noida');
   const [blogStatus, setBlogStatus] = useState<string>('');
   const [isBlogLoading, setIsBlogLoading] = useState<boolean>(false);
 
   // 1-Click Review Generator
   const [reviewService, setReviewService] = useState<string>('VIP Russian Model');
-  const [reviewArea, setReviewArea] = useState<string>('Sindhi Camp');
+  const [reviewArea, setReviewArea] = useState<string>('Sector 18 Noida');
   const [generatedReview, setGeneratedReview] = useState<{ reviewerName: string; rating: number; reviewText: string } | null>(null);
   const [copiedReview, setCopiedReview] = useState<boolean>(false);
   const [isReviewLoading, setIsReviewLoading] = useState<boolean>(false);
@@ -103,7 +103,7 @@ export const AdminNotificationPanel: React.FC = () => {
       localStorage.setItem('noida_spa_push_enabled', 'true');
 
       new Notification('Alerts Active!', {
-        body: 'You will now receive instant push alerts whenever a new visitor visits We Noida Escorts.',
+        body: 'You will now receive instant push alerts whenever a new visitor visits Escorts Hub Noida.',
         icon: '/ecj-mark.svg'
       });
     } else {

@@ -9,5 +9,13 @@
 /services/couple-massage /call-girls        301
 /services/full-body-massage /call-girls     301
 
+# 301 Permanent Redirects for Cannibalized Duplicate Pillar Routes
+/noida-callgirl         /call-girls         301
+/noida-callgirl/        /call-girls         301
+/callgirl-noida         /call-girls         301
+/callgirl-noida/        /call-girls         301
+/escorts-noida          /                   301
+/escorts-noida/         /                   301
+
 # SPA fallback
 /*                      /index.html         200

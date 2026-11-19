@@ -59,7 +59,7 @@ const generateAiBlogArticle = (userTopic: string) => {
   const newPost = {
     id,
     slug,
-    title: `${clean} — Official We Noida Escorts Guide`,
+    title: `${clean} — Official Escorts Hub Noida Guide`,
     metaTitle: `${clean} | ${BRAND.name}`,
     metaDescription: `Read our comprehensive guide on ${clean}. Verified profiles, genuine photos, and direct WhatsApp contact in Noida & NCR.`,
     category: 'VIP Guide',
@@ -84,7 +84,7 @@ const generateAiBlogArticle = (userTopic: string) => {
 };
 
 /**
- * Master We Noida Escorts Rule Engine
+ * Master Escorts Hub Noida Rule Engine
  */
 export const generateSmartBotResponse = (message: string, isAdminMode: boolean = false): SmartBotReply => {
   const normalized = message.toLowerCase().replace(/^[0-9]+\.\s*/, '').trim();
@@ -139,7 +139,7 @@ export const generateSmartBotResponse = (message: string, isAdminMode: boolean =
   // ── 1. DIRECT WHATSAPP ACTION ──────────────────────────────────────────
   if (contains(normalized, ['book on whatsapp', 'open whatsapp', 'whatsapp me', 'whatsapp par book', 'send whatsapp', 'book whatsapp', 'whatsapp'])) {
     return {
-      response: `Connecting you to We Noida Escorts coordinator on WhatsApp for verified model photos and availability...`,
+      response: `Connecting you to Escorts Hub Noida coordinator on WhatsApp for verified model photos and availability...`,
       options: ['Verified Models', 'Check Rates & Packages', 'Noida Localities'],
       action: 'whatsapp'
     };

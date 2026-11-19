@@ -18,7 +18,7 @@ const LiveQuestionsPage: React.FC = () => {
       <SEO 
         title={`Live Client Q&A | ${BRAND.name}`}
         description={`Read real questions from clients about verified companion booking, hotel outcalls, rates, and discretion at ${BRAND.name}.`}
-        keywords="escort questions, booking rates noida, hotel outcall queries, we noida escorts reviews"
+        keywords="escort questions, booking rates noida, hotel outcall queries, escorts hub noida reviews"
         schema={{
           "@context": "https://schema.org",
           "@type": "FAQPage",

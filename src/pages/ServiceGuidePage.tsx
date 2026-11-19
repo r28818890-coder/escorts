@@ -140,7 +140,7 @@ const ServiceGuidePage: React.FC<GuidePageProps> = ({ data, onBack }) => {
         <p className="max-w-xl mx-auto mb-6 text-xs sm:text-sm text-rose-100 font-medium">100% photo verified models and discreet 24/7 doorstep hotel outcall visits.</p>
         <div className="flex justify-center">
           <a
-            href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello We Noida Escorts, I want to book a companion for ${data.title}.`)}
+            href={CONTACT.whatsapp1Href + '?text=' + encodeURIComponent(`Hello Escorts Hub Noida, I want to book a companion for ${data.title}.`)}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3.5 bg-white text-slate-950 font-bold uppercase tracking-wider text-xs rounded-full hover:bg-slate-100 transition-colors shadow-sm flex items-center gap-2"

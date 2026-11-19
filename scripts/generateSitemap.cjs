@@ -16,9 +16,6 @@ const add = (route, priority, changefreq) => urls.set(`${DOMAIN}/${route}`.repla
 [
   ['', '1.0', 'daily'],
   ['noida-escorts', '1.0', 'daily'],
-  ['noida-callgirl', '1.0', 'daily'],
-  ['callgirl-noida', '1.0', 'daily'],
-  ['escorts-noida', '1.0', 'daily'],
   ['about', '0.7', 'monthly'], ['contact', '0.8', 'monthly'],
   ['booking', '0.9', 'daily'],
   ['faq', '0.8', 'weekly'], ['safety-guide', '0.8', 'weekly'],
@@ -50,3 +47,22 @@ if (fs.existsSync(distDir)) {
 }
 
 console.log(`Generated sitemap with ${urls.size} canonical URLs (lastmod: ${today}).`);
+
+// Generate Dedicated Profile Sitemap for 100 Verified Profiles
+try {
+  const { CLASSIFIED_ADS } = require('./portalData.cjs');
+  const profileUrls = new Map();
+  CLASSIFIED_ADS.forEach((ad) => {
+    const pUrl = `${DOMAIN}/${ad.categorySlug}/${ad.localitySlug}/${ad.slug}/`;
+    profileUrls.set(pUrl, { priority: '0.8', changefreq: 'weekly' });
+  });
+  const profileBody = [...profileUrls.entries()].map(([url, meta]) => `  <url><loc>${url}</loc><lastmod>${today}</lastmod><changefreq>${meta.changefreq}</changefreq><priority>${meta.priority}</priority></url>`).join('\n');
+  const profileSitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${profileBody}\n</urlset>\n`;
+  fs.writeFileSync(path.join(__dirname, '..', 'public', 'sitemap-profiles.xml'), profileSitemap, 'utf8');
+  if (fs.existsSync(distDir)) {
+    fs.writeFileSync(path.join(distDir, 'sitemap-profiles.xml'), profileSitemap, 'utf8');
+  }
+  console.log(`Generated profile sitemap with ${profileUrls.size} verified profiles (lastmod: ${today}).`);
+} catch (e) {
+  console.warn('Profile sitemap generation warning:', e.message);
+}

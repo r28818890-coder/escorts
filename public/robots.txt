@@ -74,6 +74,7 @@ Allow: /
 
 # XML Sitemaps
 Sitemap: https://wenoidaescorts.com/sitemap.xml
+Sitemap: https://wenoidaescorts.com/sitemap-profiles.xml
 Sitemap: https://wenoidaescorts.com/rss.xml
 Sitemap: https://wenoidaescorts.com/atom.xml
 

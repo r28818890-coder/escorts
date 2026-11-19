@@ -21,7 +21,7 @@ export const runTechnicalSeoAuditAndAutoFix = (): TechnicalSeoAuditReport => {
     const images = document.querySelectorAll('img');
     images.forEach((img) => {
       if (!img.getAttribute('alt') || img.getAttribute('alt')?.trim() === '') {
-        img.setAttribute('alt', 'We Noida Escorts Verified Directory');
+        img.setAttribute('alt', 'Escorts Hub Noida Verified Directory');
       }
     });
   }

@@ -40,7 +40,7 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
       // Native Browser Phone Push Banner Notification
       if ('Notification' in window) {
         if (Notification.permission === 'granted') {
-          new Notification('We Noida Escorts ALERT', {
+          new Notification('Escorts Hub Noida ALERT', {
             body: text,
             icon: '/ecj-mark.svg',
             tag: 'noidaescortsclub-alert'
@@ -48,7 +48,7 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
         } else if (Notification.permission !== 'denied') {
           Notification.requestPermission().then(permission => {
             if (permission === 'granted') {
-              new Notification('We Noida Escorts ALERT', {
+              new Notification('Escorts Hub Noida ALERT', {
                 body: text,
                 icon: '/ecj-mark.svg',
                 tag: 'noidaescortsclub-alert'

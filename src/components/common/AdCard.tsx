@@ -119,7 +119,7 @@ export const AdCard: React.FC<AdCardProps> = ({ ad, featured = false }) => {
                 type="button"
                 onClick={() => setIsReviewModalOpen(true)}
                 className="flex items-center gap-0.5 text-amber-700 font-bold hover:underline cursor-pointer"
-                title="Rate this profile"
+                title="Verified Reviews"
               >
                 <Star size={10} className="fill-amber-500 text-amber-500" />
                 <span>{ratingState.rating}</span>
