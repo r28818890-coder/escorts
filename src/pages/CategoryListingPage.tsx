@@ -32,6 +32,7 @@ import {
 import { getNoidaAreaDetail } from '@/data/noidaAreasData';
 import { generateLocalizedSeo } from '@/config/seoContentGenerator';
 import SEO from '@/components/common/SEO';
+import SimilarKeywordsCloud from '@/components/common/SimilarKeywordsCloud';
 import NoidaSearchBar from '@/components/common/NoidaSearchBar';
 import AdCard from '@/components/common/AdCard';
 import PostAdModal from '@/components/common/PostAdModal';
@@ -141,6 +142,7 @@ export const CategoryListingPage: React.FC = () => {
         title={seoData.metaTitle}
         description={seoData.metaDescription}
         schema={seoData.schema}
+        keywords={seoData.keywords?.join(', ')}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -392,6 +394,17 @@ export const CategoryListingPage: React.FC = () => {
             </div>
           </div>
         )}
+
+        {/* Popular Searches & Similar Keywords Cloud */}
+        <div className="mb-14">
+          <SimilarKeywordsCloud 
+            area={areaDetail} 
+            categorySlug={currentCategory.slug} 
+            categoryName={currentCategory.name} 
+            localityName={currentLocality?.name} 
+            customGroups={seoData.similarKeywordGroups} 
+          />
+        </div>
 
         {/* Localized FAQ Accordion */}
         <div className="mb-16">

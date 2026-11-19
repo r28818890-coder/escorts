@@ -33,6 +33,7 @@ import { NoidaSearchBar } from '@/components/common/NoidaSearchBar';
 import AdCard from '@/components/common/AdCard';
 import AgeVerificationModal from '@/components/common/AgeVerificationModal';
 import LiveActivityToast from '@/components/common/LiveActivityToast';
+import SimilarKeywordsCloud from '@/components/common/SimilarKeywordsCloud';
 
 const getCategoryIcon = (iconName: string) => {
   switch (iconName) {
@@ -45,6 +46,59 @@ const getCategoryIcon = (iconName: string) => {
 };
 
 const ZONES = ['All NCR', 'Central Noida', 'Noida Expressway', 'Greater Noida', 'Ghaziabad NCR'] as const;
+
+const HOME_KEYWORD_GROUPS = [
+  {
+    groupName: 'Core Local Searches',
+    keywords: [
+      'escorts in noida',
+      'call girls in noida',
+      'noida escort service',
+      'independent escorts noida',
+      'vip companions noida',
+      'russian escorts in noida',
+      'noida call girl number',
+      'female escorts in noida'
+    ]
+  },
+  {
+    groupName: 'Hyperlocal Sector Hubs',
+    keywords: [
+      'sector 18 escorts noida',
+      'sector 62 call girls noida',
+      'sector 50 noida escorts',
+      'noida expressway escorts',
+      'pari chowk call girls',
+      'noida extension escorts',
+      'indirapuram escorts ghaziabad',
+      'knowledge park escorts'
+    ]
+  },
+  {
+    groupName: 'Hotel Outcall Corridors',
+    keywords: [
+      'hotel outcall escorts in noida',
+      'radisson blu noida escorts',
+      'mosaic hotel call girls',
+      'crowne plaza greater noida escorts',
+      'jaypee greens golf resort outcall',
+      '5 star hotel escorts noida',
+      '24 hours room service escorts'
+    ]
+  },
+  {
+    groupName: 'Zero Advance & COD Terms',
+    keywords: [
+      'cash on delivery escorts noida',
+      'zero advance escorts in noida',
+      'no advance call girls noida',
+      'genuine escorts in noida',
+      '100% real photo escorts noida',
+      'cheap call girls in noida',
+      'verified doorstep outcall noida'
+    ]
+  }
+];
 
 export const Home: React.FC = () => {
   const [allAds, setAllAds] = useState<ClassifiedAd[]>(INITIAL_CLASSIFIED_ADS);
@@ -247,6 +301,7 @@ export const Home: React.FC = () => {
         title="Escorts in Noida | Verified 24/7 Hotel Outcall"
         description="Book verified escorts in Noida with 100% real photos, direct 24/7 hotel outcall, and prompt 20-min arrival. Call or WhatsApp +91 8218125815 now."
         schema={homeSchema}
+        keywords="escorts in noida, noida escorts, escort service in noida, call girls in noida, independent escorts noida, russian escorts noida, sector 18 escorts, sector 62 call girls, cash on delivery escorts noida, hotel outcall escorts noida, 24/7 vip companions noida"
       />
 
       {/* ── 1. HERO SECTION (Targeting Primary Keyword: "escorts in noida") ── */}
@@ -674,6 +729,18 @@ export const Home: React.FC = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── 6b. POPULAR SEARCHES & SIMILAR KEYWORD CLUSTERS ───────── */}
+      <section className="py-10 bg-[#f8fafc]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SimilarKeywordsCloud
+            localityName="Noida & NCR"
+            categorySlug="call-girls"
+            categoryName="Escorts in Noida"
+            customGroups={HOME_KEYWORD_GROUPS}
+          />
         </div>
       </section>
 

@@ -481,6 +481,53 @@ function buildLocalityHtml(cat, loc) {
         </div>
       </section>
 
+      <section class="keywords-cloud-box bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
+        <h3 class="text-lg font-black text-slate-900 mb-2">Popular Searches &amp; Similar Keywords in ${loc.name}</h3>
+        <p class="text-xs text-slate-500 mb-4">Frequently searched queries, hotel outcall corridors, companion types, and verified payment terms:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-2 uppercase text-[10px] text-amber-700">Core Searches</h4>
+            <ul class="space-y-1 text-slate-600 text-[11px]">
+              <li>• Escorts in ${loc.name}</li>
+              <li>• Call Girls in ${loc.name}</li>
+              <li>• ${loc.name} Escort Service</li>
+              <li>• ${loc.name} Call Girl Number</li>
+              <li>• Female Escorts ${loc.name}</li>
+            </ul>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-2 uppercase text-[10px] text-purple-700">Companion Types</h4>
+            <ul class="space-y-1 text-slate-600 text-[11px]">
+              <li>• Independent Escorts in ${loc.name}</li>
+              <li>• Russian Escorts in ${loc.name}</li>
+              <li>• VIP Companions ${loc.name}</li>
+              <li>• College Girl Call Girls ${loc.name}</li>
+              <li>• High Profile Models ${loc.name}</li>
+            </ul>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-2 uppercase text-[10px] text-indigo-700">Hotels &amp; Landmarks</h4>
+            <ul class="space-y-1 text-slate-600 text-[11px]">
+              <li>• Hotel Outcall in ${loc.name}</li>
+              <li>• Escorts near ${loc.landmarks[0]}</li>
+              <li>• ${loc.hotels[0].name} Outcall</li>
+              <li>• Call Girls near Metro Gate</li>
+              <li>• 24/7 Room Service Escorts</li>
+            </ul>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 mb-2 uppercase text-[10px] text-emerald-700">Safety &amp; Pricing</h4>
+            <ul class="space-y-1 text-slate-600 text-[11px]">
+              <li>• Cash on Delivery Escorts</li>
+              <li>• Zero Advance Call Girls</li>
+              <li>• No Advance Payment ${loc.name}</li>
+              <li>• 100% Real Photo Escorts</li>
+              <li>• Cheap Call Girls ${loc.name}</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="faq-box bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
         <h3 class="text-lg font-black text-slate-900 mb-4">Frequently Asked Questions in ${loc.name}</h3>
         <div class="space-y-3 text-xs sm:text-sm">
@@ -760,6 +807,21 @@ subRoutes.forEach((route) => {
   routeHtml = routeHtml.replace(/<title>.*?<\/title>/, `<title>${route.title}</title>`);
   routeHtml = routeHtml.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.desc}" />`);
   routeHtml = routeHtml.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalUrl}" />`);
+
+  const routeKeywords = route.keywords || (route.locObj ? [
+    `escorts in ${route.locObj.name.toLowerCase()}`,
+    `call girls in ${route.locObj.name.toLowerCase()}`,
+    `${route.locObj.name.toLowerCase()} escorts service`,
+    `${route.locObj.name.toLowerCase()} call girl number`,
+    `independent escorts in ${route.locObj.name.toLowerCase()}`,
+    `russian escorts in ${route.locObj.name.toLowerCase()}`,
+    `vip escorts in ${route.locObj.name.toLowerCase()}`,
+    `hotel outcall escorts in ${route.locObj.name.toLowerCase()}`,
+    `cash on delivery escorts ${route.locObj.name.toLowerCase()}`,
+    `zero advance call girls ${route.locObj.name.toLowerCase()}`,
+    `escorts near ${route.locObj.landmarks[0] ? route.locObj.landmarks[0].toLowerCase() : route.locObj.name.toLowerCase()}`
+  ].join(', ') : 'escorts in noida, noida escorts, call girls in noida, escort service in noida, independent escorts noida, russian escorts noida, vip companions noida');
+  routeHtml = routeHtml.replace(/<meta name="keywords" content=".*?" \/>/, `<meta name="keywords" content="${routeKeywords}" />`);
 
   // 2. Structured Data (Schema JSON-LD)
   let schemaTags = '';

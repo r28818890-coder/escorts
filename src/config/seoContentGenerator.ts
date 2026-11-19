@@ -4,12 +4,14 @@
 
 import { PORTAL_CATEGORIES, NOIDA_LOCALITIES, PortalCategory, NoidaLocality } from './portalData';
 import { BRAND, CONTACT } from './site';
-import { NOIDA_AREAS_DATA } from '@/data/noidaAreasData';
+import { NOIDA_AREAS_DATA, generateSimilarKeywordGroups, getAllAreaKeywords, SimilarKeywordGroup } from '@/data/noidaAreasData';
 
 export interface LocalizedSeoData {
   h1: string;
   metaTitle: string;
   metaDescription: string;
+  keywords: string[];
+  similarKeywordGroups: SimilarKeywordGroup[];
   introText: string;
   landmarkHighlights: string;
   servicesBreakdown: { title: string; desc: string }[];
@@ -306,10 +308,73 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
     ],
   };
 
+  // Similar Keyword Groups & Targeted Keyword Cloud
+  let similarKeywordGroups: SimilarKeywordGroup[] = [];
+  let keywords: string[] = [];
+
+  if (areaData) {
+    similarKeywordGroups = areaData.similarKeywordGroups || generateSimilarKeywordGroups(areaData);
+    keywords = getAllAreaKeywords(areaData);
+  } else {
+    // Category Hub Level Keywords
+    const catLower = category.name.toLowerCase();
+    similarKeywordGroups = [
+      {
+        groupName: 'Core Category Searches',
+        keywords: [
+          `${catLower} in noida`,
+          `noida ${catLower} service`,
+          `independent ${catLower} noida`,
+          `verified ${catLower} noida`,
+          `24/7 ${catLower} in noida`,
+          `top rated ${catLower} noida`,
+          `best ${catLower} service in noida`
+        ]
+      },
+      {
+        groupName: 'Sector & Locality Searches',
+        keywords: [
+          `${catLower} in sector 18 noida`,
+          `${catLower} in sector 62 noida`,
+          `${catLower} in sector 50 noida`,
+          `${catLower} in sector 137 noida`,
+          `${catLower} pari chowk greater noida`,
+          `${catLower} noida extension`,
+          `${catLower} indirapuram ghaziabad`
+        ]
+      },
+      {
+        groupName: 'Hotel Outcall Corridors',
+        keywords: [
+          `hotel outcall ${catLower} noida`,
+          `radisson blu noida ${catLower}`,
+          `crowne plaza greater noida ${catLower}`,
+          `park ascent sector 62 ${catLower}`,
+          `5 star hotel outcall in noida`,
+          `20 min hotel arrival ${catLower}`
+        ]
+      },
+      {
+        groupName: 'Safety & Payment Terms',
+        keywords: [
+          `cash on delivery ${catLower} noida`,
+          `zero advance ${catLower} in noida`,
+          `no advance payment ${catLower}`,
+          `genuine ${catLower} in noida`,
+          `100% real photo ${catLower} noida`,
+          `doorstep arrival payment noida`
+        ]
+      }
+    ];
+    keywords = similarKeywordGroups.flatMap(g => g.keywords);
+  }
+
   return {
     h1,
     metaTitle,
     metaDescription,
+    keywords,
+    similarKeywordGroups,
     introText,
     landmarkHighlights,
     servicesBreakdown,

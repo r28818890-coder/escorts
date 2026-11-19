@@ -20,10 +20,11 @@ import {
   CreditCard
 } from 'lucide-react';
 import { BRAND, CONTACT } from '@/config/site';
-import { NOIDA_AREAS_DATA, getNoidaAreaDetail } from '@/data/noidaAreasData';
+import { NOIDA_AREAS_DATA, getNoidaAreaDetail, getAllAreaKeywords } from '@/data/noidaAreasData';
 import { INITIAL_CLASSIFIED_ADS } from '@/config/portalData';
 import AdCard from '@/components/common/AdCard';
 import SEO from '@/components/common/SEO';
+import SimilarKeywordsCloud from '@/components/common/SimilarKeywordsCloud';
 import NotFoundPage from '@/pages/NotFoundPage';
 
 export const CityLanding: React.FC = () => {
@@ -128,7 +129,7 @@ export const CityLanding: React.FC = () => {
         title={area.metaTitle}
         description={area.metaDescription}
         schema={schema}
-        keywords={area.keywords.join(', ')}
+        keywords={getAllAreaKeywords(area).join(', ')}
       />
 
       {/* Top Breadcrumb Nav */}
@@ -382,7 +383,10 @@ export const CityLanding: React.FC = () => {
           </div>
         </section>
 
-        {/* 6. Localized FAQ Accordion */}
+        {/* 6. Popular Searches & Similar Keyword Cloud */}
+        <SimilarKeywordsCloud area={area} />
+
+        {/* 7. Localized FAQ Accordion */}
         <section>
           <div className="flex items-center gap-2 mb-6">
             <HelpCircle size={22} className="text-rose-600" />

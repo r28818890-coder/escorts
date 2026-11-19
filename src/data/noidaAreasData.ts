@@ -22,6 +22,11 @@ export interface AreaReview {
   date: string;
 }
 
+export interface SimilarKeywordGroup {
+  groupName: string;
+  keywords: string[];
+}
+
 export interface NoidaAreaDetail {
   slug: string;
   name: string;
@@ -43,6 +48,7 @@ export interface NoidaAreaDetail {
   faqs: AreaFaq[];
   reviews: AreaReview[];
   adjacentSectors: { slug: string; name: string }[];
+  similarKeywordGroups?: SimilarKeywordGroup[];
 }
 
 export const NOIDA_AREAS_DATA: Record<string, NoidaAreaDetail> = {
@@ -1227,3 +1233,78 @@ export const NOIDA_AREAS_DATA: Record<string, NoidaAreaDetail> = {
 export const getNoidaAreaDetail = (slug: string): NoidaAreaDetail | undefined => {
   return NOIDA_AREAS_DATA[slug];
 };
+
+/**
+ * Generates comprehensive LSI and similar keywords for any Noida area
+ */
+export function generateSimilarKeywordGroups(area: NoidaAreaDetail): SimilarKeywordGroup[] {
+  const locLower = area.name.toLowerCase();
+  const lm1 = area.landmarks[0] ? area.landmarks[0].toLowerCase() : locLower;
+  const lm2 = area.landmarks[1] ? area.landmarks[1].toLowerCase() : 'metro station';
+  const metroClean = area.metro.split('(')[0].replace(/gate\s*\d+/i, '').trim().toLowerCase();
+  const h1 = area.hotels[0] ? area.hotels[0].name.toLowerCase() : 'luxury hotel';
+  const h2 = area.hotels[1] ? area.hotels[1].name.toLowerCase() : '5 star hotel';
+
+  return [
+    {
+      groupName: 'Core Local Searches',
+      keywords: [
+        `escorts in ${locLower}`,
+        `call girls in ${locLower}`,
+        `${locLower} escorts service`,
+        `${locLower} call girl contact number`,
+        `female escorts in ${locLower}`,
+        `top rated call girls ${locLower}`,
+        `discreet companions in ${locLower}`,
+        `noida ${locLower} call girl whatsapp number`
+      ]
+    },
+    {
+      groupName: 'Companion Types & Profiles',
+      keywords: [
+        `independent escorts in ${locLower}`,
+        `college girl call girls ${locLower}`,
+        `russian escorts in ${locLower}`,
+        `vip escorts in ${locLower}`,
+        `high profile call girls ${locLower}`,
+        `housewife escorts in ${locLower}`,
+        `air hostess escorts ${locLower}`,
+        `model escorts in ${locLower}`
+      ]
+    },
+    {
+      groupName: 'Hotels & Transit Queries',
+      keywords: [
+        `hotel outcall escorts in ${locLower}`,
+        `escorts near ${lm1}`,
+        `escorts near ${lm2}`,
+        `call girls near ${metroClean}`,
+        `${h1} outcall escorts`,
+        `${h2} escort service`,
+        `24/7 room service escorts ${locLower}`,
+        `doorstep outcall near ${lm1}`
+      ]
+    },
+    {
+      groupName: 'Zero Advance & COD Terms',
+      keywords: [
+        `cash on delivery escorts ${locLower}`,
+        `zero advance escorts in ${locLower}`,
+        `no advance payment call girls ${locLower}`,
+        `genuine escorts in ${locLower}`,
+        `100% real photo escorts ${locLower}`,
+        `cheap call girls in ${locLower}`,
+        `verified door check companion ${locLower}`
+      ]
+    }
+  ];
+}
+
+/**
+ * Returns a deduplicated array of all target and similar keywords for an area
+ */
+export function getAllAreaKeywords(area: NoidaAreaDetail): string[] {
+  const groups = area.similarKeywordGroups || generateSimilarKeywordGroups(area);
+  const flattened = groups.flatMap(g => g.keywords);
+  return Array.from(new Set([...area.keywords, ...flattened]));
+}

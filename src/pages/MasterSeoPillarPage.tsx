@@ -180,6 +180,7 @@ export const MasterSeoPillarPage: React.FC<MasterSeoPillarPageProps> = ({ target
         description={config.metaDescription}
         url={`${BRAND.domain}/${config.slug}`}
         schema={schemaData}
+        keywords={config.relatedKeywords ? config.relatedKeywords.join(', ') : undefined}
         breadcrumbs={[
           { name: 'Home', url: '/' },
           { name: config.targetKeyword.toUpperCase(), url: `/${config.slug}` }
