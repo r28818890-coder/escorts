@@ -1,60 +1,38 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SEO from '@/components/common/SEO';
 import { BRAND } from '@/config/site';
-import { Sparkles, Camera } from 'lucide-react';
+import { Camera, ShieldCheck, MapPin } from 'lucide-react';
+import { INITIAL_CLASSIFIED_ADS } from '@/config/portalData';
 
-const galleryImages = [
-  {
-    url: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1200',
-    title: '5-Star Luxury Suite Outcall Experience',
-    category: 'Hotel Outcalls',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1200',
-    title: 'Private Resort Wellness Setup',
-    category: 'Resorts & Suites',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=1200',
-    title: 'VIP Lounge & Reception Ambiance',
-    category: 'VIP Ambiance',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=1200',
-    title: 'Executive Suite Accompaniment',
-    category: 'Hotel Outcalls',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1608248593859-99ce64e43f11?auto=format&fit=crop&q=80&w=1200',
-    title: 'Relaxation & Companion Ambiance',
-    category: 'VIP Ambiance',
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&q=80&w=1200',
-    title: 'Private Suite Lounge Noida',
-    category: 'Resorts & Suites',
-  },
-];
+const galleryItems = INITIAL_CLASSIFIED_ADS.slice(0, 18).map(ad => ({
+  url: ad.images[0],
+  title: ad.title,
+  alt: ad.alt || `${ad.title.split(' - ')[0]} ${ad.age} Yrs VIP Escort in ${ad.locality}`,
+  locality: ad.locality,
+  age: ad.age,
+  link: `/${ad.categorySlug}/${ad.localitySlug}/${ad.slug}`
+}));
 
 const GalleryPage: React.FC = () => {
   return (
     <div className="bg-[#f8fafc] min-h-screen text-[#0f172a] pb-24">
       <SEO
-        title={`VIP Gallery & Suite Visuals | ${BRAND.name}`}
-        description={`Explore verified photos and luxury suite ambiance at ${BRAND.name}, Noida.`}
+        title={`VIP Gallery & Verified Model Visuals | ${BRAND.name}`}
+        description={`Explore verified photos and luxury suite ambiance at ${BRAND.name}, Noida. 100% genuine photo verified companion directory.`}
       />
 
       {/* Hero */}
       <div className="pt-10 pb-12 px-4 bg-gradient-to-b from-slate-100 to-[#f8fafc] border-b border-slate-200 text-center">
         <div className="max-w-4xl mx-auto">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-rose-300 bg-rose-50 text-rose-900 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
-            <Camera size={14} className="text-rose-600" /> High-Definition Visuals
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-300 bg-amber-50 text-amber-900 text-xs font-black uppercase tracking-wider mb-3 shadow-sm">
+            <Camera size={14} className="text-amber-600" /> 100% Verified HD Visuals
           </span>
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-3 leading-tight tracking-tight">
-            VIP Suite & Hotel Gallery
+            VIP Companions &amp; Outcall Gallery
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Discover the luxury ambiance, 5-star hotel setups, and discreet private suite environments across Noida.
+            Discover real-photo verified independent models, corporate hostesses, and luxury suite companions across all 18 Noida &amp; NCR sectors.
           </p>
         </div>
       </div>
@@ -62,16 +40,38 @@ const GalleryPage: React.FC = () => {
       {/* HD Photo Grid */}
       <div className="container mx-auto px-4 sm:px-6 py-12 max-w-7xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryImages.map((item, index) => (
-            <div key={index} className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all">
-              <div className="aspect-[4/3] overflow-hidden bg-slate-100">
-                <img src={item.url} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          {galleryItems.map((item, index) => (
+            <Link 
+              to={item.link} 
+              key={index} 
+              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-amber-400 hover:shadow-lg transition-all flex flex-col justify-between"
+            >
+              <div className="aspect-[3/4] overflow-hidden bg-slate-100 relative">
+                <img 
+                  src={item.url} 
+                  alt={item.alt} 
+                  width={400} 
+                  height={533} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                  loading="lazy" 
+                  decoding="async" 
+                />
+                <div className="absolute top-2.5 right-2.5 bg-emerald-600 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full shadow flex items-center gap-1">
+                  <ShieldCheck size={11} /> 100% Real
+                </div>
               </div>
-              <div className="p-4">
-                <span className="text-[10px] uppercase tracking-widest text-rose-900 bg-rose-50 border border-rose-300 px-2 py-0.5 rounded-full font-bold inline-block mb-1.5">{item.category}</span>
-                <p className="text-sm text-slate-900 font-bold leading-tight">{item.title}</p>
+              <div className="p-4 space-y-1">
+                <span className="text-[10px] uppercase tracking-wider text-amber-900 bg-amber-50 border border-amber-200 px-2.5 py-0.5 rounded-full font-bold inline-flex items-center gap-1">
+                  <MapPin size={10} className="text-amber-600" /> {item.locality}
+                </span>
+                <p className="text-sm text-slate-900 font-bold leading-tight group-hover:text-amber-700 transition-colors">
+                  {item.title}
+                </p>
+                <p className="text-[11px] text-slate-500">
+                  {item.alt}
+                </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

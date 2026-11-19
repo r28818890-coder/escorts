@@ -146,9 +146,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-riya-01.webp"
+      "/images/riya-vip-escorts-sector-18-noida.webp"
     ],
-    "alt": "Riya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
+    "alt": "Riya 23 Yrs VIP Escort in Sector 18 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -164,9 +164,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "3 mins ago",
     "views": 1237,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -182,9 +182,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-ananya-01.webp"
+      "/images/ananya-vip-escorts-sector-18-noida.webp"
     ],
-    "alt": "Ananya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
+    "alt": "Ananya 26 Yrs VIP Escort in Sector 18 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -200,9 +200,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "4 mins ago",
     "views": 1274,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -218,9 +218,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-pooja-01.webp"
+      "/images/pooja-vip-escorts-sector-18-noida.webp"
     ],
-    "alt": "Pooja, verified VIP model for hotel outcall in Sector 18 Noida Noida",
+    "alt": "Pooja 22 Yrs VIP Escort in Sector 18 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -236,9 +236,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "5 mins ago",
     "views": 1311,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -254,9 +254,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-kavya-01.webp"
+      "/images/kavya-vip-escorts-sector-18-noida.webp"
     ],
-    "alt": "Kavya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
+    "alt": "Kavya 25 Yrs VIP Escort in Sector 18 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -272,9 +272,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "6 mins ago",
     "views": 1348,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -290,9 +290,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-simran-01.webp"
+      "/images/simran-vip-escorts-sector-18-noida.webp"
     ],
-    "alt": "Simran, verified VIP model for hotel outcall in Sector 18 Noida Noida",
+    "alt": "Simran 21 Yrs VIP Escort in Sector 18 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -308,9 +308,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "7 mins ago",
     "views": 1385,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -326,9 +326,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-noida-tanya-01.webp"
+      "/images/tanya-vip-escorts-sector-18-noida.webp"
     ],
-    "alt": "Tanya, verified VIP model for hotel outcall in Sector 18 Noida Noida",
+    "alt": "Tanya 24 Yrs VIP Escort in Sector 18 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -344,9 +344,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "8 mins ago",
     "views": 1422,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -362,9 +362,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-priya-01.webp"
+      "/images/priya-vip-escorts-sector-62-noida.webp"
     ],
-    "alt": "Priya, verified VIP model for hotel outcall in Sector 62 Noida Noida",
+    "alt": "Priya 20 Yrs VIP Escort in Sector 62 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -380,9 +380,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "9 mins ago",
     "views": 1459,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -398,9 +398,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-muskan-01.webp"
+      "/images/muskan-vip-escorts-sector-62-noida.webp"
     ],
-    "alt": "Muskan, verified VIP model for hotel outcall in Sector 62 Noida Noida",
+    "alt": "Muskan 23 Yrs VIP Escort in Sector 62 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -416,9 +416,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "10 mins ago",
     "views": 1496,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -434,9 +434,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-neha-01.webp"
+      "/images/neha-vip-escorts-sector-62-noida.webp"
     ],
-    "alt": "Neha, verified VIP model for hotel outcall in Sector 62 Noida Noida",
+    "alt": "Neha 26 Yrs VIP Escort in Sector 62 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -452,9 +452,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "11 mins ago",
     "views": 1533,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -470,9 +470,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-meera-01.webp"
+      "/images/meera-vip-escorts-sector-62-noida.webp"
     ],
-    "alt": "Meera, verified VIP model for hotel outcall in Sector 62 Noida Noida",
+    "alt": "Meera 22 Yrs VIP Escort in Sector 62 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -488,9 +488,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "12 mins ago",
     "views": 1570,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -506,9 +506,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-shreya-01.webp"
+      "/images/shreya-vip-escorts-sector-62-noida.webp"
     ],
-    "alt": "Shreya, verified VIP model for hotel outcall in Sector 62 Noida Noida",
+    "alt": "Shreya 25 Yrs VIP Escort in Sector 62 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -524,9 +524,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "13 mins ago",
     "views": 1607,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -542,9 +542,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-62-noida-sneha-01.webp"
+      "/images/sneha-vip-escorts-sector-62-noida.webp"
     ],
-    "alt": "Sneha, verified VIP model for hotel outcall in Sector 62 Noida Noida",
+    "alt": "Sneha 21 Yrs VIP Escort in Sector 62 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -560,9 +560,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "14 mins ago",
     "views": 1644,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -578,9 +578,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-aarohi-01.webp"
+      "/images/aarohi-vip-escorts-sector-50-noida.webp"
     ],
-    "alt": "Aarohi, verified VIP model for hotel outcall in Sector 50 Noida Noida",
+    "alt": "Aarohi 24 Yrs VIP Escort in Sector 50 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -596,9 +596,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "15 mins ago",
     "views": 1681,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -614,9 +614,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-natasha-01.webp"
+      "/images/natasha-vip-escorts-sector-50-noida.webp"
     ],
-    "alt": "Natasha, verified VIP model for hotel outcall in Sector 50 Noida Noida",
+    "alt": "Natasha 20 Yrs VIP Escort in Sector 50 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -632,9 +632,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "16 mins ago",
     "views": 1718,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -650,9 +650,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-divya-01.webp"
+      "/images/divya-vip-escorts-sector-50-noida.webp"
     ],
-    "alt": "Divya, verified VIP model for hotel outcall in Sector 50 Noida Noida",
+    "alt": "Divya 23 Yrs VIP Escort in Sector 50 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -668,9 +668,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "17 mins ago",
     "views": 1755,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -686,9 +686,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-payal-01.webp"
+      "/images/payal-vip-escorts-sector-50-noida.webp"
     ],
-    "alt": "Payal, verified VIP model for hotel outcall in Sector 50 Noida Noida",
+    "alt": "Payal 26 Yrs VIP Escort in Sector 50 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -704,9 +704,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "18 mins ago",
     "views": 1792,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -722,9 +722,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-ishita-01.webp"
+      "/images/ishita-vip-escorts-sector-50-noida.webp"
     ],
-    "alt": "Ishita, verified VIP model for hotel outcall in Sector 50 Noida Noida",
+    "alt": "Ishita 22 Yrs VIP Escort in Sector 50 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -740,9 +740,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "19 mins ago",
     "views": 1829,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -758,9 +758,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-50-noida-zara-01.webp"
+      "/images/zara-vip-escorts-sector-50-noida.webp"
     ],
-    "alt": "Zara, verified VIP model for hotel outcall in Sector 50 Noida Noida",
+    "alt": "Zara 25 Yrs VIP Escort in Sector 50 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -776,9 +776,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "20 mins ago",
     "views": 1866,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -794,9 +794,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-alisha-01.webp"
+      "/images/alisha-vip-escorts-sector-137-noida.webp"
     ],
-    "alt": "Alisha, verified VIP model for hotel outcall in Sector 137 Noida Noida",
+    "alt": "Alisha 21 Yrs VIP Escort in Sector 137 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -812,9 +812,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "21 mins ago",
     "views": 1903,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -830,9 +830,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-komal-01.webp"
+      "/images/komal-vip-escorts-sector-137-noida.webp"
     ],
-    "alt": "Komal, verified VIP model for hotel outcall in Sector 137 Noida Noida",
+    "alt": "Komal 24 Yrs VIP Escort in Sector 137 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -848,9 +848,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "22 mins ago",
     "views": 1940,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -866,9 +866,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-sonali-01.webp"
+      "/images/sonali-vip-escorts-sector-137-noida.webp"
     ],
-    "alt": "Sonali, verified VIP model for hotel outcall in Sector 137 Noida Noida",
+    "alt": "Sonali 20 Yrs VIP Escort in Sector 137 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -884,9 +884,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "23 mins ago",
     "views": 1977,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -902,9 +902,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-tanvi-01.webp"
+      "/images/tanvi-vip-escorts-sector-137-noida.webp"
     ],
-    "alt": "Tanvi, verified VIP model for hotel outcall in Sector 137 Noida Noida",
+    "alt": "Tanvi 23 Yrs VIP Escort in Sector 137 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -920,9 +920,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "24 mins ago",
     "views": 2014,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -938,9 +938,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-akanksha-01.webp"
+      "/images/akanksha-vip-escorts-sector-137-noida.webp"
     ],
-    "alt": "Akanksha, verified VIP model for hotel outcall in Sector 137 Noida Noida",
+    "alt": "Akanksha 26 Yrs VIP Escort in Sector 137 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -956,9 +956,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "25 mins ago",
     "views": 2051,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -974,9 +974,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-137-noida-bhavna-01.webp"
+      "/images/bhavna-vip-escorts-sector-137-noida.webp"
     ],
-    "alt": "Bhavna, verified VIP model for hotel outcall in Sector 137 Noida Noida",
+    "alt": "Bhavna 22 Yrs VIP Escort in Sector 137 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -992,9 +992,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "26 mins ago",
     "views": 2088,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -1010,9 +1010,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-chhavi-01.webp"
+      "/images/chhavi-vip-escorts-sector-18-film-city-noida.webp"
     ],
-    "alt": "Chhavi, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
+    "alt": "Chhavi 25 Yrs VIP Escort in Sector 16 & Film City",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -1028,9 +1028,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "27 mins ago",
     "views": 2125,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -1046,9 +1046,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-deepika-01.webp"
+      "/images/deepika-vip-escorts-sector-18-film-city-noida.webp"
     ],
-    "alt": "Deepika, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
+    "alt": "Deepika 21 Yrs VIP Escort in Sector 16 & Film City",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1064,9 +1064,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "28 mins ago",
     "views": 2162,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -1082,9 +1082,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-esha-01.webp"
+      "/images/esha-vip-escorts-sector-18-film-city-noida.webp"
     ],
-    "alt": "Esha, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
+    "alt": "Esha 24 Yrs VIP Escort in Sector 16 & Film City",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1100,9 +1100,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "29 mins ago",
     "views": 2199,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -1118,9 +1118,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-garima-01.webp"
+      "/images/garima-vip-escorts-sector-18-film-city-noida.webp"
     ],
-    "alt": "Garima, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
+    "alt": "Garima 20 Yrs VIP Escort in Sector 16 & Film City",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -1136,9 +1136,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "30 mins ago",
     "views": 2236,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -1154,9 +1154,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-harshita-01.webp"
+      "/images/harshita-vip-escorts-sector-18-film-city-noida.webp"
     ],
-    "alt": "Harshita, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
+    "alt": "Harshita 23 Yrs VIP Escort in Sector 16 & Film City",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1172,9 +1172,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "31 mins ago",
     "views": 2273,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -1190,9 +1190,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-18-film-city-noida-isha-01.webp"
+      "/images/isha-vip-escorts-sector-18-film-city-noida.webp"
     ],
-    "alt": "Isha, verified VIP model for hotel outcall in Sector 16 & Film City Noida",
+    "alt": "Isha 26 Yrs VIP Escort in Sector 16 & Film City",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1208,9 +1208,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "32 mins ago",
     "views": 2310,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -1226,9 +1226,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-jhanvi-01.webp"
+      "/images/jhanvi-vip-escorts-sector-76-78-noida.webp"
     ],
-    "alt": "Jhanvi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
+    "alt": "Jhanvi 22 Yrs VIP Escort in Sector 76 & 78 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -1244,9 +1244,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "33 mins ago",
     "views": 2347,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -1262,9 +1262,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-khushi-01.webp"
+      "/images/khushi-vip-escorts-sector-76-78-noida.webp"
     ],
-    "alt": "Khushi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
+    "alt": "Khushi 25 Yrs VIP Escort in Sector 76 & 78 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1280,9 +1280,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "34 mins ago",
     "views": 2384,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -1298,9 +1298,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-lavanya-01.webp"
+      "/images/lavanya-vip-escorts-sector-76-78-noida.webp"
     ],
-    "alt": "Lavanya, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
+    "alt": "Lavanya 21 Yrs VIP Escort in Sector 76 & 78 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1316,9 +1316,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "35 mins ago",
     "views": 2421,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -1334,9 +1334,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-mahima-01.webp"
+      "/images/mahima-vip-escorts-sector-76-78-noida.webp"
     ],
-    "alt": "Mahima, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
+    "alt": "Mahima 24 Yrs VIP Escort in Sector 76 & 78 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -1352,9 +1352,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "36 mins ago",
     "views": 2458,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -1370,9 +1370,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-nidhi-01.webp"
+      "/images/nidhi-vip-escorts-sector-76-78-noida.webp"
     ],
-    "alt": "Nidhi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
+    "alt": "Nidhi 20 Yrs VIP Escort in Sector 76 & 78 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1388,9 +1388,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "37 mins ago",
     "views": 2495,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -1406,9 +1406,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-76-78-noida-ojasvi-01.webp"
+      "/images/ojasvi-vip-escorts-sector-76-78-noida.webp"
     ],
-    "alt": "Ojasvi, verified VIP model for hotel outcall in Sector 76 & 78 Noida Noida",
+    "alt": "Ojasvi 23 Yrs VIP Escort in Sector 76 & 78 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1424,9 +1424,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "38 mins ago",
     "views": 2532,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -1442,9 +1442,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-prachi-01.webp"
+      "/images/prachi-vip-escorts-sector-128-noida.webp"
     ],
-    "alt": "Prachi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
+    "alt": "Prachi 26 Yrs VIP Escort in Sector 128 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -1460,9 +1460,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "39 mins ago",
     "views": 2569,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -1478,9 +1478,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-radhika-01.webp"
+      "/images/radhika-vip-escorts-sector-128-noida.webp"
     ],
-    "alt": "Radhika, verified VIP model for hotel outcall in Sector 128 Noida Noida",
+    "alt": "Radhika 22 Yrs VIP Escort in Sector 128 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1496,9 +1496,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "40 mins ago",
     "views": 2606,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -1514,9 +1514,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-sakshi-01.webp"
+      "/images/sakshi-vip-escorts-sector-128-noida.webp"
     ],
-    "alt": "Sakshi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
+    "alt": "Sakshi 25 Yrs VIP Escort in Sector 128 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1532,9 +1532,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "41 mins ago",
     "views": 2643,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -1550,9 +1550,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-trisha-01.webp"
+      "/images/trisha-vip-escorts-sector-128-noida.webp"
     ],
-    "alt": "Trisha, verified VIP model for hotel outcall in Sector 128 Noida Noida",
+    "alt": "Trisha 21 Yrs VIP Escort in Sector 128 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -1568,9 +1568,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "42 mins ago",
     "views": 2680,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -1586,9 +1586,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-urvi-01.webp"
+      "/images/urvi-vip-escorts-sector-128-noida.webp"
     ],
-    "alt": "Urvi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
+    "alt": "Urvi 24 Yrs VIP Escort in Sector 128 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1604,9 +1604,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "43 mins ago",
     "views": 2717,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -1622,9 +1622,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-128-noida-vaishnavi-01.webp"
+      "/images/vaishnavi-vip-escorts-sector-128-noida.webp"
     ],
-    "alt": "Vaishnavi, verified VIP model for hotel outcall in Sector 128 Noida Noida",
+    "alt": "Vaishnavi 20 Yrs VIP Escort in Sector 128 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1640,9 +1640,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "44 mins ago",
     "views": 2754,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -1658,9 +1658,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-yamini-01.webp"
+      "/images/yamini-vip-escorts-sector-142-noida.webp"
     ],
-    "alt": "Yamini, verified VIP model for hotel outcall in Sector 142 Noida Noida",
+    "alt": "Yamini 23 Yrs VIP Escort in Sector 142 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -1676,9 +1676,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "45 mins ago",
     "views": 2791,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -1694,9 +1694,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-zoya-01.webp"
+      "/images/zoya-vip-escorts-sector-142-noida.webp"
     ],
-    "alt": "Zoya, verified VIP model for hotel outcall in Sector 142 Noida Noida",
+    "alt": "Zoya 26 Yrs VIP Escort in Sector 142 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1712,9 +1712,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "46 mins ago",
     "views": 2828,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -1730,9 +1730,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-avani-01.webp"
+      "/images/avani-vip-escorts-sector-142-noida.webp"
     ],
-    "alt": "Avani, verified VIP model for hotel outcall in Sector 142 Noida Noida",
+    "alt": "Avani 22 Yrs VIP Escort in Sector 142 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1748,9 +1748,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "47 mins ago",
     "views": 2865,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -1766,9 +1766,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-barkha-01.webp"
+      "/images/barkha-vip-escorts-sector-142-noida.webp"
     ],
-    "alt": "Barkha, verified VIP model for hotel outcall in Sector 142 Noida Noida",
+    "alt": "Barkha 25 Yrs VIP Escort in Sector 142 Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -1784,9 +1784,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "48 mins ago",
     "views": 2902,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -1802,9 +1802,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-charu-01.webp"
+      "/images/charu-vip-escorts-sector-142-noida.webp"
     ],
-    "alt": "Charu, verified VIP model for hotel outcall in Sector 142 Noida Noida",
+    "alt": "Charu 21 Yrs VIP Escort in Sector 142 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1820,9 +1820,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "49 mins ago",
     "views": 2939,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -1838,9 +1838,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-sector-142-noida-disha-01.webp"
+      "/images/disha-vip-escorts-sector-142-noida.webp"
     ],
-    "alt": "Disha, verified VIP model for hotel outcall in Sector 142 Noida Noida",
+    "alt": "Disha 24 Yrs VIP Escort in Sector 142 Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1856,9 +1856,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "50 mins ago",
     "views": 2976,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -1874,9 +1874,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-ekta-01.webp"
+      "/images/ekta-vip-escorts-pari-chowk-noida.webp"
     ],
-    "alt": "Ekta, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
+    "alt": "Ekta 20 Yrs VIP Escort in Pari Chowk Greater Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -1892,9 +1892,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "51 mins ago",
     "views": 3013,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -1910,9 +1910,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-falguni-01.webp"
+      "/images/falguni-vip-escorts-pari-chowk-noida.webp"
     ],
-    "alt": "Falguni, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
+    "alt": "Falguni 23 Yrs VIP Escort in Pari Chowk Greater Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -1928,9 +1928,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "2 mins ago",
     "views": 3050,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -1946,9 +1946,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-gauri-01.webp"
+      "/images/gauri-vip-escorts-pari-chowk-noida.webp"
     ],
-    "alt": "Gauri, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
+    "alt": "Gauri 26 Yrs VIP Escort in Pari Chowk Greater Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -1964,9 +1964,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "3 mins ago",
     "views": 3087,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -1982,9 +1982,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-hina-01.webp"
+      "/images/hina-vip-escorts-pari-chowk-noida.webp"
     ],
-    "alt": "Hina, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
+    "alt": "Hina 22 Yrs VIP Escort in Pari Chowk Greater Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -2000,9 +2000,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "4 mins ago",
     "views": 3124,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -2018,9 +2018,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-inaya-01.webp"
+      "/images/inaya-vip-escorts-pari-chowk-noida.webp"
     ],
-    "alt": "Inaya, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
+    "alt": "Inaya 25 Yrs VIP Escort in Pari Chowk Greater Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2036,9 +2036,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "5 mins ago",
     "views": 3161,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -2054,9 +2054,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-pari-chowk-noida-juhi-01.webp"
+      "/images/juhi-vip-escorts-pari-chowk-noida.webp"
     ],
-    "alt": "Juhi, verified VIP model for hotel outcall in Pari Chowk Greater Noida Noida",
+    "alt": "Juhi 21 Yrs VIP Escort in Pari Chowk Greater Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2072,9 +2072,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "6 mins ago",
     "views": 3198,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -2090,9 +2090,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-kritika-01.webp"
+      "/images/kritika-vip-escorts-noida-extension-noida.webp"
     ],
-    "alt": "Kritika, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
+    "alt": "Kritika 24 Yrs VIP Escort in Noida Extension (Gr Noida West)",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -2108,9 +2108,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "7 mins ago",
     "views": 3235,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -2126,9 +2126,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-lipika-01.webp"
+      "/images/lipika-vip-escorts-noida-extension-noida.webp"
     ],
-    "alt": "Lipika, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
+    "alt": "Lipika 20 Yrs VIP Escort in Noida Extension (Gr Noida West)",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2144,9 +2144,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "8 mins ago",
     "views": 3272,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -2162,9 +2162,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-mansi-01.webp"
+      "/images/mansi-vip-escorts-noida-extension-noida.webp"
     ],
-    "alt": "Mansi, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
+    "alt": "Mansi 23 Yrs VIP Escort in Noida Extension (Gr Noida West)",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2180,9 +2180,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "9 mins ago",
     "views": 3309,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -2198,9 +2198,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-navya-01.webp"
+      "/images/navya-vip-escorts-noida-extension-noida.webp"
     ],
-    "alt": "Navya, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
+    "alt": "Navya 26 Yrs VIP Escort in Noida Extension (Gr Noida West)",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -2216,9 +2216,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "10 mins ago",
     "views": 3346,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -2234,9 +2234,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-palak-01.webp"
+      "/images/palak-vip-escorts-noida-extension-noida.webp"
     ],
-    "alt": "Palak, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
+    "alt": "Palak 22 Yrs VIP Escort in Noida Extension (Gr Noida West)",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2252,9 +2252,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "11 mins ago",
     "views": 3383,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -2270,9 +2270,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-noida-extension-noida-rachna-01.webp"
+      "/images/rachna-vip-escorts-noida-extension-noida.webp"
     ],
-    "alt": "Rachna, verified VIP model for hotel outcall in Noida Extension (Gr Noida West) Noida",
+    "alt": "Rachna 25 Yrs VIP Escort in Noida Extension (Gr Noida West)",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2288,9 +2288,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "12 mins ago",
     "views": 3420,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -2306,9 +2306,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-sanya-01.webp"
+      "/images/sanya-vip-escorts-knowledge-park-noida.webp"
     ],
-    "alt": "Sanya, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
+    "alt": "Sanya 21 Yrs VIP Escort in Knowledge Park Greater Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -2324,9 +2324,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "13 mins ago",
     "views": 3457,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -2342,9 +2342,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-tara-01.webp"
+      "/images/tara-vip-escorts-knowledge-park-noida.webp"
     ],
-    "alt": "Tara, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
+    "alt": "Tara 24 Yrs VIP Escort in Knowledge Park Greater Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2360,9 +2360,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "14 mins ago",
     "views": 3494,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -2378,9 +2378,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-urvashi-01.webp"
+      "/images/urvashi-vip-escorts-knowledge-park-noida.webp"
     ],
-    "alt": "Urvashi, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
+    "alt": "Urvashi 20 Yrs VIP Escort in Knowledge Park Greater Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2396,9 +2396,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "15 mins ago",
     "views": 3531,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -2414,9 +2414,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-vidhi-01.webp"
+      "/images/vidhi-vip-escorts-knowledge-park-noida.webp"
     ],
-    "alt": "Vidhi, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
+    "alt": "Vidhi 23 Yrs VIP Escort in Knowledge Park Greater Noida",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -2432,9 +2432,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "16 mins ago",
     "views": 3568,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -2450,9 +2450,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-knowledge-park-noida-yukti-01.webp"
+      "/images/yukti-vip-escorts-knowledge-park-noida.webp"
     ],
-    "alt": "Yukti, verified VIP model for hotel outcall in Knowledge Park Greater Noida Noida",
+    "alt": "Yukti 26 Yrs VIP Escort in Knowledge Park Greater Noida",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2468,9 +2468,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "17 mins ago",
     "views": 3605,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -2486,9 +2486,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-aashi-01.webp"
+      "/images/aashi-vip-escorts-indirapuram-noida.webp"
     ],
-    "alt": "Aashi, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
+    "alt": "Aashi 22 Yrs VIP Escort in Indirapuram Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2504,9 +2504,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "18 mins ago",
     "views": 3642,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -2522,9 +2522,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-binita-01.webp"
+      "/images/binita-vip-escorts-indirapuram-noida.webp"
     ],
-    "alt": "Binita, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
+    "alt": "Binita 25 Yrs VIP Escort in Indirapuram Ghaziabad",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -2540,9 +2540,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "19 mins ago",
     "views": 3679,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -2558,9 +2558,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-chetna-01.webp"
+      "/images/chetna-vip-escorts-indirapuram-noida.webp"
     ],
-    "alt": "Chetna, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
+    "alt": "Chetna 21 Yrs VIP Escort in Indirapuram Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2576,9 +2576,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "20 mins ago",
     "views": 3716,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -2594,9 +2594,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-damini-01.webp"
+      "/images/damini-vip-escorts-indirapuram-noida.webp"
     ],
-    "alt": "Damini, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
+    "alt": "Damini 24 Yrs VIP Escort in Indirapuram Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2612,9 +2612,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "21 mins ago",
     "views": 3753,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -2630,9 +2630,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-indirapuram-noida-eva-01.webp"
+      "/images/eva-vip-escorts-indirapuram-noida.webp"
     ],
-    "alt": "Eva, verified VIP model for hotel outcall in Indirapuram Ghaziabad Noida",
+    "alt": "Eva 20 Yrs VIP Escort in Indirapuram Ghaziabad",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -2648,9 +2648,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "22 mins ago",
     "views": 3790,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -2666,9 +2666,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-geet-01.webp"
+      "/images/geet-vip-escorts-vaishali-noida.webp"
     ],
-    "alt": "Geet, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
+    "alt": "Geet 23 Yrs VIP Escort in Vaishali Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2684,9 +2684,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "23 mins ago",
     "views": 3827,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -2702,9 +2702,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-heena-01.webp"
+      "/images/heena-vip-escorts-vaishali-noida.webp"
     ],
-    "alt": "Heena, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
+    "alt": "Heena 26 Yrs VIP Escort in Vaishali Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2720,9 +2720,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "24 mins ago",
     "views": 3864,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -2738,9 +2738,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-indu-01.webp"
+      "/images/indu-vip-escorts-vaishali-noida.webp"
     ],
-    "alt": "Indu, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
+    "alt": "Indu 22 Yrs VIP Escort in Vaishali Ghaziabad",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -2756,9 +2756,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "25 mins ago",
     "views": 3901,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -2774,9 +2774,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-jyoti-01.webp"
+      "/images/jyoti-vip-escorts-vaishali-noida.webp"
     ],
-    "alt": "Jyoti, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
+    "alt": "Jyoti 25 Yrs VIP Escort in Vaishali Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2792,9 +2792,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "26 mins ago",
     "views": 3938,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -2810,9 +2810,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vaishali-noida-kanika-01.webp"
+      "/images/kanika-vip-escorts-vaishali-noida.webp"
     ],
-    "alt": "Kanika, verified VIP model for hotel outcall in Vaishali Ghaziabad Noida",
+    "alt": "Kanika 21 Yrs VIP Escort in Vaishali Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2828,9 +2828,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "27 mins ago",
     "views": 3975,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -2846,9 +2846,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-lata-01.webp"
+      "/images/lata-vip-escorts-vasundhara-noida.webp"
     ],
-    "alt": "Lata, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
+    "alt": "Lata 24 Yrs VIP Escort in Vasundhara Ghaziabad",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -2864,9 +2864,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "28 mins ago",
     "views": 4012,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -2882,9 +2882,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-monika-01.webp"
+      "/images/monika-vip-escorts-vasundhara-noida.webp"
     ],
-    "alt": "Monika, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
+    "alt": "Monika 20 Yrs VIP Escort in Vasundhara Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -2900,9 +2900,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "29 mins ago",
     "views": 4049,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -2918,9 +2918,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-nandini-01.webp"
+      "/images/nandini-vip-escorts-vasundhara-noida.webp"
     ],
-    "alt": "Nandini, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
+    "alt": "Nandini 23 Yrs VIP Escort in Vasundhara Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -2936,9 +2936,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "30 mins ago",
     "views": 4086,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -2954,9 +2954,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-parul-01.webp"
+      "/images/parul-vip-escorts-vasundhara-noida.webp"
     ],
-    "alt": "Parul, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
+    "alt": "Parul 26 Yrs VIP Escort in Vasundhara Ghaziabad",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -2972,9 +2972,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "31 mins ago",
     "views": 4123,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -2990,9 +2990,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-vasundhara-noida-ritu-01.webp"
+      "/images/ritu-vip-escorts-vasundhara-noida.webp"
     ],
-    "alt": "Ritu, verified VIP model for hotel outcall in Vasundhara Ghaziabad Noida",
+    "alt": "Ritu 22 Yrs VIP Escort in Vasundhara Ghaziabad",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -3008,9 +3008,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "32 mins ago",
     "views": 4160,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -3026,9 +3026,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-swati-01.webp"
+      "/images/swati-vip-escorts-crossings-republik-noida.webp"
     ],
-    "alt": "Swati, verified VIP model for hotel outcall in Crossings Republik Noida",
+    "alt": "Swati 25 Yrs VIP Escort in Crossings Republik",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -3044,9 +3044,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "33 mins ago",
     "views": 4197,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -3062,9 +3062,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-tanisha-01.webp"
+      "/images/tanisha-vip-escorts-crossings-republik-noida.webp"
     ],
-    "alt": "Tanisha, verified VIP model for hotel outcall in Crossings Republik Noida",
+    "alt": "Tanisha 21 Yrs VIP Escort in Crossings Republik",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -3080,9 +3080,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "34 mins ago",
     "views": 4234,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -3098,9 +3098,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-upasana-01.webp"
+      "/images/upasana-vip-escorts-crossings-republik-noida.webp"
     ],
-    "alt": "Upasana, verified VIP model for hotel outcall in Crossings Republik Noida",
+    "alt": "Upasana 24 Yrs VIP Escort in Crossings Republik",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -3116,9 +3116,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "35 mins ago",
     "views": 4271,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -3134,9 +3134,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-vandana-01.webp"
+      "/images/vandana-vip-escorts-crossings-republik-noida.webp"
     ],
-    "alt": "Vandana, verified VIP model for hotel outcall in Crossings Republik Noida",
+    "alt": "Vandana 20 Yrs VIP Escort in Crossings Republik",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -3152,9 +3152,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "36 mins ago",
     "views": 4308,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -3170,9 +3170,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-crossings-republik-noida-yashika-01.webp"
+      "/images/yashika-vip-escorts-crossings-republik-noida.webp"
     ],
-    "alt": "Yashika, verified VIP model for hotel outcall in Crossings Republik Noida",
+    "alt": "Yashika 23 Yrs VIP Escort in Crossings Republik",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -3188,9 +3188,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "37 mins ago",
     "views": 4345,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -3206,9 +3206,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-aastha-01.webp"
+      "/images/aastha-vip-escorts-kaushambi-noida.webp"
     ],
-    "alt": "Aastha, verified VIP model for hotel outcall in Kaushambi Noida",
+    "alt": "Aastha 26 Yrs VIP Escort in Kaushambi",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -3224,9 +3224,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "38 mins ago",
     "views": 4382,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -3242,9 +3242,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-bani-01.webp"
+      "/images/bani-vip-escorts-kaushambi-noida.webp"
     ],
-    "alt": "Bani, verified VIP model for hotel outcall in Kaushambi Noida",
+    "alt": "Bani 22 Yrs VIP Escort in Kaushambi",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -3260,9 +3260,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "39 mins ago",
     "views": 4419,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -3278,9 +3278,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-chahat-01.webp"
+      "/images/chahat-vip-escorts-kaushambi-noida.webp"
     ],
-    "alt": "Chahat, verified VIP model for hotel outcall in Kaushambi Noida",
+    "alt": "Chahat 25 Yrs VIP Escort in Kaushambi",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -3296,9 +3296,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "40 mins ago",
     "views": 4456,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -3314,9 +3314,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-devika-01.webp"
+      "/images/devika-vip-escorts-kaushambi-noida.webp"
     ],
-    "alt": "Devika, verified VIP model for hotel outcall in Kaushambi Noida",
+    "alt": "Devika 21 Yrs VIP Escort in Kaushambi",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -3332,9 +3332,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "41 mins ago",
     "views": 4493,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -3350,9 +3350,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-kaushambi-noida-farah-01.webp"
+      "/images/farah-vip-escorts-kaushambi-noida.webp"
     ],
-    "alt": "Farah, verified VIP model for hotel outcall in Kaushambi Noida",
+    "alt": "Farah 24 Yrs VIP Escort in Kaushambi",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -3368,9 +3368,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "42 mins ago",
     "views": 4530,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -3386,9 +3386,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-gargi-01.webp"
+      "/images/gargi-vip-escorts-mayur-vihar-noida.webp"
     ],
-    "alt": "Gargi, verified VIP model for hotel outcall in Mayur Vihar Noida",
+    "alt": "Gargi 20 Yrs VIP Escort in Mayur Vihar",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -3404,9 +3404,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "43 mins ago",
     "views": 4567,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -3422,9 +3422,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-honey-01.webp"
+      "/images/honey-vip-escorts-mayur-vihar-noida.webp"
     ],
-    "alt": "Honey, verified VIP model for hotel outcall in Mayur Vihar Noida",
+    "alt": "Honey 23 Yrs VIP Escort in Mayur Vihar",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -3440,9 +3440,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "44 mins ago",
     "views": 4604,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -3458,9 +3458,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-ira-01.webp"
+      "/images/ira-vip-escorts-mayur-vihar-noida.webp"
     ],
-    "alt": "Ira, verified VIP model for hotel outcall in Mayur Vihar Noida",
+    "alt": "Ira 26 Yrs VIP Escort in Mayur Vihar",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -3476,9 +3476,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "45 mins ago",
     "views": 4641,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -3494,9 +3494,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-jaya-01.webp"
+      "/images/jaya-vip-escorts-mayur-vihar-noida.webp"
     ],
-    "alt": "Jaya, verified VIP model for hotel outcall in Mayur Vihar Noida",
+    "alt": "Jaya 22 Yrs VIP Escort in Mayur Vihar",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -3512,9 +3512,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "46 mins ago",
     "views": 4678,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -3530,9 +3530,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-mayur-vihar-noida-kashish-01.webp"
+      "/images/kashish-vip-escorts-mayur-vihar-noida.webp"
     ],
-    "alt": "Kashish, verified VIP model for hotel outcall in Mayur Vihar Noida",
+    "alt": "Kashish 25 Yrs VIP Escort in Mayur Vihar",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -3548,9 +3548,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "47 mins ago",
     "views": 4715,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -3566,9 +3566,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-leena-01.webp"
+      "/images/leena-adult-escorts-botanical-garden-noida.webp"
     ],
-    "alt": "Leena, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
+    "alt": "Leena 21 Yrs VIP Dating Companion in Botanical Garden (Sector 37)",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -3584,9 +3584,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "48 mins ago",
     "views": 4752,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   },
   {
@@ -3602,9 +3602,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-maya-01.webp"
+      "/images/maya-adult-escorts-botanical-garden-noida.webp"
     ],
-    "alt": "Maya, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
+    "alt": "Maya 24 Yrs VIP Dating Companion in Botanical Garden (Sector 37)",
     "isVerified": true,
     "isVip": true,
     "isOnline": false,
@@ -3620,9 +3620,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "49 mins ago",
     "views": 4789,
     "rates": {
-      "perHour": "\u20b93,000",
-      "perSession": "\u20b95,000",
-      "fullNight": "\u20b912,000"
+      "perHour": "₹3,000",
+      "perSession": "₹5,000",
+      "fullNight": "₹12,000"
     }
   },
   {
@@ -3638,9 +3638,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-nikita-01.webp"
+      "/images/nikita-adult-escorts-botanical-garden-noida.webp"
     ],
-    "alt": "Nikita, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
+    "alt": "Nikita 20 Yrs VIP Dating Companion in Botanical Garden (Sector 37)",
     "isVerified": true,
     "isVip": false,
     "isOnline": true,
@@ -3656,9 +3656,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "50 mins ago",
     "views": 4826,
     "rates": {
-      "perHour": "\u20b93,500",
-      "perSession": "\u20b95,500",
-      "fullNight": "\u20b914,000"
+      "perHour": "₹3,500",
+      "perSession": "₹5,500",
+      "fullNight": "₹14,000"
     }
   },
   {
@@ -3674,9 +3674,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-poonam-01.webp"
+      "/images/poonam-adult-escorts-botanical-garden-noida.webp"
     ],
-    "alt": "Poonam, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
+    "alt": "Poonam 23 Yrs VIP Dating Companion in Botanical Garden (Sector 37)",
     "isVerified": true,
     "isVip": false,
     "isOnline": false,
@@ -3692,9 +3692,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "51 mins ago",
     "views": 4863,
     "rates": {
-      "perHour": "\u20b94,000",
-      "perSession": "\u20b96,000",
-      "fullNight": "\u20b916,000"
+      "perHour": "₹4,000",
+      "perSession": "₹6,000",
+      "fullNight": "₹16,000"
     }
   },
   {
@@ -3710,9 +3710,9 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "phone": "8218125815",
     "whatsapp": "918218125815",
     "images": [
-      "/images/escorts-botanical-garden-noida-roshni-01.webp"
+      "/images/roshni-adult-escorts-botanical-garden-noida.webp"
     ],
-    "alt": "Roshni, verified VIP model for hotel outcall in Botanical Garden (Sector 37) Noida",
+    "alt": "Roshni 26 Yrs VIP Dating Companion in Botanical Garden (Sector 37)",
     "isVerified": true,
     "isVip": true,
     "isOnline": true,
@@ -3728,12 +3728,13 @@ export const INITIAL_CLASSIFIED_ADS: ClassifiedAd[] = [
     "postedAt": "2 mins ago",
     "views": 4900,
     "rates": {
-      "perHour": "\u20b92,500",
-      "perSession": "\u20b94,500",
-      "fullNight": "\u20b910,000"
+      "perHour": "₹2,500",
+      "perSession": "₹4,500",
+      "fullNight": "₹10,000"
     }
   }
 ];
+
 
 // ── 4. Safety & Scam Prevention Guidelines for Noida & NCR ─────
 export const SAFETY_TIPS = [

@@ -51,7 +51,7 @@ export const AdCard: React.FC<AdCardProps> = ({ ad, featured = false }) => {
           <Link to={`/${ad.categorySlug}/${ad.localitySlug}/${ad.slug}`} className="block w-full h-full">
             <img
               src={ad.images[0] || '/ecj-mark.svg'}
-              alt={ad.alt || ad.title}
+              alt={ad.alt || `${ad.title.split(' - ')[0]} ${ad.age} Yrs VIP Escort in ${ad.locality}`}
               width={400}
               height={533}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

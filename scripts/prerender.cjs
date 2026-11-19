@@ -1154,6 +1154,17 @@ subRoutes.forEach((route) => {
           </header>
 
           <article class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+            <div class="my-4 text-center">
+              <img 
+                src="${ad.images && ad.images[0] ? ad.images[0] : '/ecj-mark.svg'}" 
+                alt="${ad.alt || `${ad.title} ${ad.age || 23} Yrs VIP Escort in ${ad.locality}`}" 
+                class="rounded-2xl max-w-sm mx-auto shadow-md object-cover w-full sm:w-auto" 
+                width="400" 
+                height="533" 
+                loading="lazy" 
+              />
+            </div>
+
             <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
               <p>${ad.description}</p>
               <h3 class="text-base font-bold text-slate-900 mt-4">Verified Services Offered</h3>

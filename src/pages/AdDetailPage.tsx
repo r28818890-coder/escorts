@@ -133,7 +133,7 @@ export const AdDetailPage: React.FC = () => {
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200 shadow-md">
                 <img
                   src={selectedImage}
-                  alt={ad.alt || ad.title}
+                  alt={ad.alt || `${ad.title.split(' - ')[0]} ${ad.age} Yrs VIP Escort in ${ad.locality}`}
                   width={500}
                   height={667}
                   className="w-full h-full object-cover transition-all duration-300"
