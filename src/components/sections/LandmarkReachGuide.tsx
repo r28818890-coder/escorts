@@ -21,7 +21,7 @@ export const LandmarkReachGuide: React.FC = () => {
 
         {/* 4 Distance Breakdown Cards Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 mb-6 md:mb-12">
-          {/* Card 1: Sindhi Camp Bus Stand */}
+          {/* Card 1: Sector 18 Central Hub */}
           <div className="p-3 md:p-6 rounded-xl md:rounded-2xl bg-slate-900 border border-slate-800 shadow-lg flex flex-col justify-between">
             <div>
               <div className="w-7 h-7 md:w-12 md:h-12 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center mb-2">
@@ -30,14 +30,14 @@ export const LandmarkReachGuide: React.FC = () => {
               <div className="inline-block px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[9px] md:text-xs font-bold mb-1">
                 15 - 20 Mins Arrival
               </div>
-              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Sindhi Camp Area</h3>
+              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Sector 18 Hub</h3>
               <p className="text-slate-400 text-[10px] md:text-xs leading-tight">
-                Hotels near Motilal Atal Road, Station Road, and Polo Victory.
+                Radisson Blu, DLF Mall of India, Atta Market, and Sector 18 Metro Gate 2.
               </p>
             </div>
           </div>
 
-          {/* Card 2: MI Road & C-Scheme */}
+          {/* Card 2: Sector 62 IT Hub */}
           <div className="p-3 md:p-6 rounded-xl md:rounded-2xl bg-slate-900 border border-slate-800 shadow-lg flex flex-col justify-between">
             <div>
               <div className="w-7 h-7 md:w-12 md:h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center mb-2">
@@ -46,30 +46,30 @@ export const LandmarkReachGuide: React.FC = () => {
               <div className="inline-block px-1.5 py-0.5 rounded bg-indigo-500/20 text-indigo-300 text-[9px] md:text-xs font-bold mb-1">
                 20 - 25 Mins Arrival
               </div>
-              <h3 className="text-xs md:text-lg font-bold text-white mb-1">MI Road & C-Scheme</h3>
+              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Sector 62 IT Hub</h3>
               <p className="text-slate-400 text-[10px] md:text-xs leading-tight">
-                5-star hotels, luxury boutique stays, and executive guest suites.
+                Park Ascent Hotel, Stellar IT Park, Electronic City Metro, and corporate suites.
               </p>
             </div>
           </div>
 
-          {/* Card 3: Noida Railway Station */}
+          {/* Card 3: Noida Expressway / Sector 137 */}
           <div className="p-3 md:p-6 rounded-xl md:rounded-2xl bg-slate-900 border border-slate-800 shadow-lg flex flex-col justify-between">
             <div>
               <div className="w-7 h-7 md:w-12 md:h-12 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center mb-2">
                 <Train className="w-4 h-4 md:w-6 md:h-6" />
               </div>
               <div className="inline-block px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[9px] md:text-xs font-bold mb-1">
-                15 - 20 Mins Arrival
+                20 - 25 Mins Arrival
               </div>
-              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Noida Junction</h3>
+              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Noida Expressway</h3>
               <p className="text-slate-400 text-[10px] md:text-xs leading-tight">
-                Doorstep hotel visits across Hasanpura and Station Circle.
+                Advant Navis Sector 142, Felix Hospital Sector 137, and Sandal Suites.
               </p>
             </div>
           </div>
 
-          {/* Card 4: Vaishali Nagar & Malviya Nagar */}
+          {/* Card 4: Greater Noida / Pari Chowk */}
           <div className="p-3 md:p-6 rounded-xl md:rounded-2xl bg-slate-900 border border-slate-800 shadow-lg flex flex-col justify-between">
             <div>
               <div className="w-7 h-7 md:w-12 md:h-12 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center mb-2">
@@ -78,9 +78,9 @@ export const LandmarkReachGuide: React.FC = () => {
               <div className="inline-block px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 text-[9px] md:text-xs font-bold mb-1">
                 25 - 30 Mins Arrival
               </div>
-              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Vaishali & Malviya Nagar</h3>
+              <h3 className="text-xs md:text-lg font-bold text-white mb-1">Pari Chowk & Expo Mart</h3>
               <p className="text-slate-400 text-[10px] md:text-xs leading-tight">
-                Luxury residential hubs, premium resorts, and VIP farmhouses.
+                India Expo Mart, Crowne Plaza, Jaypee Greens, and Knowledge Park resorts.
               </p>
             </div>
           </div>

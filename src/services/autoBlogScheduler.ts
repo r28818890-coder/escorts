@@ -29,31 +29,31 @@ const generateHyperlocalNoidaArticle = (targetIndex: number): BlogPost => {
   return {
     id: `auto-seo-blog-${targetIndex}-${timestamp}`,
     slug,
-    title: `Best ${target.therapy} near ${target.area}, Noida: Complete Wellness Guide`,
-    metaTitle: `Best ${target.therapy} near ${target.area} Noida | Noida Spa`,
-    metaDescription: `Looking for top-rated ${target.therapy} near ${target.area}, Noida? Noida Spa offers certified therapists, 24/7 private suites, & instant WhatsApp booking.`,
-    category: 'Therapy Guide',
+    title: `Best ${target.therapy} near ${target.area}, Noida: Verified Outcall Guide`,
+    metaTitle: `${target.therapy} near ${target.area} Noida | Escorts Hub Noida`,
+    metaDescription: `Looking for top-rated ${target.therapy} near ${target.area}, Noida? Escorts Hub Noida offers 100% verified real photos, 20-min doorstep arrival, zero advance, & instant WhatsApp booking.`,
+    category: 'Local Guide',
     tag: target.area,
     date: dateStr,
     readTime: '6 min read',
-    excerpt: `Residents and travellers in ${target.area}, Noida can now experience world-class ${target.therapy} just minutes away at Noida Spa. Read our expert guide on posture correction and muscle recovery.`,
+    excerpt: `Clients and luxury hotel guests in ${target.area}, Noida can now experience verified 24/7 ${target.therapy} with fast 20-minute outcall arrival from Escorts Hub Noida.`,
     content: `
-      <p>Finding a trustworthy, 100% hygienic, and certified luxury spa near <strong>${target.area}, Noida</strong> is no longer a challenge. Noida Spa provides 24-hour sanctuary for individuals and couples seeking authentic <strong>${target.therapy}</strong>.</p>
+      <p>Finding a trustworthy, 100% verified, and discreet companion service near <strong>${target.area}, Noida</strong> is effortless with Escorts Hub Noida. We provide 24-hour doorstep outcall service for discerning gentlemen seeking authentic <strong>${target.therapy}</strong>.</p>
 
-      <h3>Why ${target.area} Residents Choose Noida Spa</h3>
-      <p>Located conveniently at Motilal Atal Road, Sindhi Camp (just a short drive from ${target.area}), our spa offers unmatched accessibility, free private parking, and soundproof luxury therapy suites.</p>
+      <h3>Why ${target.area} Clients Choose Escorts Hub Noida</h3>
+      <p>Strategically stationed across Noida & Greater Noida (with rapid transit to ${target.area}), our companions arrive punctually within 20 to 30 minutes, backed by 100% real photo verification and strict confidentiality.</p>
 
-      <h3>Anatomical & Health Benefits of ${target.therapy}</h3>
+      <h3>Key Advantages of ${target.therapy}</h3>
       <ul>
-        <li><strong>Chronic Pain Relief:</strong> Targets deep myofascial trigger points to melt away back and shoulder stiffness.</li>
-        <li><strong>Enhanced Circulation:</strong> Stimulates venous blood return and unblocks Sen energy pathways.</li>
-        <li><strong>Stress Cortisol Reduction:</strong> Restores parasympathetic nervous system balance for deep, restful sleep.</li>
+        <li><strong>Zero Advance Deposit:</strong> Never pay online upfront; pay 100% directly upon arrival in cash or UPI.</li>
+        <li><strong>Real Photo Verification:</strong> The companion who arrives at your hotel suite matches her verified gallery photos.</li>
+        <li><strong>Total Discretion:</strong> Strict client privacy protocols with zero data footprints or promotional spam.</li>
       </ul>
 
-      <h3>Book Your Session Near ${target.area} Today</h3>
-      <p>Whether you need a late-night session after work or a weekend relaxation ritual, our senior therapists are available 24 hours a day, 7 days a week.</p>
+      <h3>Book Your Hotel Outcall Near ${target.area} Today</h3>
+      <p>Whether you require an executive dinner date or late-night hotel companionship, our dispatch desk is available 24 hours a day, 7 days a week on WhatsApp or call at +91 8218125815.</p>
     `,
-    relatedPosts: ['thai-massage-benefits-noida', 'deep-tissue-vs-swedish'],
+    relatedPosts: ['how-to-book-escorts-in-noida-safely', 'best-hotels-in-noida-for-outcall'],
     keywords: target.keywords,
   };
 };
@@ -101,7 +101,7 @@ export const checkAndRunAutoBlogScheduler = (): void => {
       localStorage.setItem(LAST_AUTO_BLOG_KEY, now.toString());
       localStorage.setItem('purebliss_auto_blog_count', (generatedCount + 1).toString());
 
-      console.log(`[Noida Spa AUTO-SEO BLOGGER] Published new weekly article: "${newBlog.title}"`);
+      console.log(`[Escorts Hub Noida AUTO-SEO BLOGGER] Published new weekly article: "${newBlog.title}"`);
     }
   } catch (err) {
     console.error('Auto Blog Scheduler error:', err);

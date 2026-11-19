@@ -34,7 +34,7 @@ const SEO: React.FC<SEOProps> = ({
   const fullTitle = (title ? title : 'Escorts in Noida | Verified 24/7 Hotel Outcall').slice(0, 58);
   const fullDesc =
     description ||
-    `${BRAND.name} — Premier verified directory for independent escorts, VIP models, hotel outcall companions, and luxury spa in Noida & NCR. 24/7 WhatsApp booking.`;
+    `${BRAND.name} — Premier verified directory for independent escorts, VIP models, and 24/7 hotel outcall companions in Noida & NCR. Direct WhatsApp booking.`;
 
   useEffect(() => {
     // ── Title ─────────────────────────────────────────────────

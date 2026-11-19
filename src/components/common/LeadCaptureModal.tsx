@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Gift, Phone, User, CheckCircle2 } from 'lucide-react';
-import { CONTACT } from '@/config/site';
+import { BRAND, CONTACT } from '@/config/site';
 
 const LeadCaptureModal: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +44,7 @@ const LeadCaptureModal: React.FC = () => {
     setIsSubmitting(true);
     
     // Format the message with user's details
-    const message = `Hi Noida Spa! I would like to claim the 10% Welcome Discount. \n\n*Name:* ${name}\n*Number:* ${phone}\n\nPlease let me know the available slots.`;
+    const message = `Hi ${BRAND.name}! I would like to book a verified companion outcall. \n\n*Name:* ${name}\n*Number:* ${phone}\n\nPlease share available profiles.`;
     
     // Construct WhatsApp URL
     const whatsappUrl = `https://wa.me/${CONTACT.whatsapp1}?text=${encodeURIComponent(message)}`;

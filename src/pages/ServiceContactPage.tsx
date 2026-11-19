@@ -162,8 +162,8 @@ Message: ${formData.message}`;
                 </div>
                 <div>
                   <h4 className="text-slate-900 font-bold text-sm mb-0.5">Service Coverage</h4>
-                  <p className="text-xs sm:text-sm text-slate-700 font-medium">All 20+ Localities in Noida, Rajasthan</p>
-                  <p className="text-xs text-slate-500 mt-0.5">Sindhi Camp, MI Road, Vaishali Nagar, Malviya Nagar, C-Scheme</p>
+                  <p className="text-xs sm:text-sm text-slate-700 font-medium">All 20+ Sectors in Noida & Greater Noida (Delhi NCR)</p>
+                  <p className="text-xs text-slate-500 mt-0.5">Sector 18, Sector 62, Sector 50, Sector 137 Expressway, Pari Chowk</p>
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@ Message: ${formData.message}`;
                 <textarea
                   rows={3}
                   required
-                  placeholder="e.g. Inquiring about VIP Russian companion in MI Road / 5-star hotel outcall..."
+                  placeholder="e.g. Inquiring about VIP Russian companion in Sector 18 / 5-star hotel outcall..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-900 text-xs focus:border-rose-500 outline-none resize-none"

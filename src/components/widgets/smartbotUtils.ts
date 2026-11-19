@@ -80,7 +80,7 @@ export function applySeoAutoFix(): SeoAuditReport {
 
   // Fix 1: Title
   if (!document.title || document.title.length < 10) {
-    document.title = 'Noida Spa | Luxury Thai Spa Noida | Open 24 Hours';
+    document.title = 'Escorts in Noida | Verified 24/7 Hotel Outcall';
     fixedCount++;
   }
 
@@ -122,7 +122,7 @@ export function applySeoAutoFix(): SeoAuditReport {
   const images = Array.from(document.querySelectorAll('img'));
   images.forEach((img, idx) => {
     if (!img.hasAttribute('alt') || !img.getAttribute('alt')?.trim()) {
-      img.setAttribute('alt', `Noida Spa Noida Image ${idx + 1}`);
+      img.setAttribute('alt', `Escorts Hub Noida Verified Image ${idx + 1}`);
       fixedCount++;
     }
   });

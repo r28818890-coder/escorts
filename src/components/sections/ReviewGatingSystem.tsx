@@ -7,7 +7,7 @@ const KEYWORD_CHIPS = [
   { id: 'k2', label: ' Verified Companion Fee', text: 'Clean payment policy with verified companion screening.' },
   { id: 'k3', label: ' 5-Star Hotel Outcall', text: 'Companions arrive promptly at hotel rooms within 30 minutes.' },
   { id: 'k4', label: ' 100% Discretion', text: 'Utmost privacy, polite behavior, and total confidentiality maintained.' },
-  { id: 'k5', label: ' Sindhi Camp & MI Road', text: 'Fastest service in Sindhi Camp, MI Road, and Vaishali Nagar.' },
+  { id: 'k5', label: ' Sector 18 & Expressway', text: 'Fastest doorstep arrival in Sector 18, Sector 62, and Noida Expressway.' },
   { id: 'k6', label: ' Russian Models', text: 'Stunning VIP Russian models with professional hosting etiquette.' },
 ];
 
@@ -27,7 +27,7 @@ export const ReviewGatingSystem: React.FC = () => {
       `Had a wonderful 5-star experience with ${BRAND.name}!`,
       `Outstanding coordination today through ${BRAND.name} Noida!`,
       `Truly verified and reliable companion platform in Noida.`,
-      `Best escort portal in the Pink City with real photos.`
+      `Best escort agency in Noida & NCR with 100% real photos.`
     ];
 
     const closers = [

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, CheckCircle, Loader2, Sparkles, Phone } from 'lucide-react';
-import { CONTACT } from '@/config/site';
+import { BRAND, CONTACT } from '@/config/site';
 
 const Modal: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -108,14 +108,14 @@ const Modal: React.FC = () => {
               </div>
               <div className="relative z-10">
                 <h3 className="text-[#e11d48] text-xs font-black tracking-[0.25em] uppercase mb-4 flex items-center gap-2">
-                  <Sparkles size={14} /> Noida Spa
+                  <Sparkles size={14} /> {BRAND.name}
                 </h3>
                 <h2 className="text-2xl md:text-3xl font-display font-black text-white leading-tight mb-4">
                   Book Your <br/>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#be123c] to-[#e11d48]">Relaxation</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#be123c] to-[#e11d48]">Companion</span>
                 </h2>
                 <p className="text-sm text-[#a3a3a3] mb-8 leading-relaxed">
-                  Reserve your private luxury suite. Our concierge will call you immediately to confirm the time slot.
+                  Reserve your hotel outcall or private visit. Our 24/7 concierge will connect with you on WhatsApp immediately.
                 </p>
                 <div className="flex items-center gap-4 text-[#e11d48] font-bold text-sm bg-[#e11d48]/10 p-4 rounded-xl border border-[#e11d48]/20">
                   <Phone size={20} />
@@ -133,9 +133,9 @@ const Modal: React.FC = () => {
               {/* Mobile header (visible on small screens) */}
               <div className="md:hidden mb-3">
                 <h3 className="text-[#e11d48] text-[10px] font-black tracking-[0.25em] uppercase mb-2 flex items-center gap-2">
-                  <Sparkles size={12} /> Noida Spa
+                  <Sparkles size={12} /> {BRAND.name}
                 </h3>
-                <h2 className="text-xl font-display font-black text-white leading-tight mb-2">Book Your Relaxation</h2>
+                <h2 className="text-xl font-display font-black text-white leading-tight mb-2">Book Your Companion</h2>
                 <div className="flex items-center gap-3 text-[#e11d48] font-bold text-xs bg-[#e11d48]/10 p-2 rounded-lg border border-[#e11d48]/20">
                   <Phone size={18} />
                   <div>

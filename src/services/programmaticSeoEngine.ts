@@ -10,43 +10,45 @@ export interface ProgrammaticPage {
 }
 
 const INTENTS = [
-  'Spa Near',
-  'Massage Near',
-  'Luxury Spa Near',
-  'Open Now Spa',
-  '24 Hours Spa',
-  'Couple Spa',
-  'Spa Near Hotel',
-  'Spa Near Railway Station',
-  'Spa Near Airport',
-  'Spa Near Bus Stand',
+  'Escorts Near',
+  'Call Girls Near',
+  'VIP Escorts in',
+  '24 Hours Escorts',
+  'Hotel Outcall Escorts',
+  'Independent Escorts',
+  'Russian Escorts',
+  'Cash on Delivery Escorts',
+  'Luxury Companions in',
+  'Doorstep Outcall in',
 ];
 
 const LOCATIONS = [
-  'Sindhi Camp', 'MI Road', 'Bani Park', 'C-Scheme', 'Civil Lines',
-  'Vaishali Nagar', 'Malviya Nagar', 'Mansarovar', 'Raja Park', 'Tonk Road',
-  'Jagatpura', 'Polo Victory', 'Noida Junction', 'Noida Airport', 'Choti Chaupar',
-  'Badi Chaupar', 'Subhash Nagar', 'Adarsh Nagar', 'Shastri Nagar', 'Vidyadhar Nagar',
+  'Sector 18 Noida', 'Sector 62 Noida', 'Sector 50 Noida', 'Sector 137 Expressway',
+  'Sector 142 Advant', 'Sector 128 Jaypee', 'Sector 76 Noida', 'Botanical Garden',
+  'Film City Sector 16', 'Pari Chowk Greater Noida', 'Noida Extension',
+  'Sector 44 Noida', 'Sector 15 Noida', 'Sector 27 Noida', 'Sector 29 Noida',
+  'Sector 32 Noida', 'Sector 52 Noida', 'Sector 104 Noida', 'Sector 121 Noida',
+  'Sector 150 Noida',
 ];
 
 /**
- * 3. Programmatic SEO Engine (1,000+ Pages Matrix)
+ * Programmatic SEO Engine (Noida & NCR Matrix)
  */
 export const generateProgrammaticSeoMatrix = (): ProgrammaticPage[] => {
   const pages: ProgrammaticPage[] = [];
 
   INTENTS.forEach((intent) => {
     LOCATIONS.forEach((loc) => {
-      const slug = `${intent.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-in-${loc.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-noida`;
+      const slug = `${intent.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-in-${loc.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
       pages.push({
         id: `prog-${slug}`,
         slug,
         intent,
         location: loc,
-        h1: `Best ${intent} ${loc}, Noida (Open 24 Hours)`,
-        metaTitle: `${intent} ${loc} Noida | Noida Spa`,
-        metaDescription: `Looking for top-rated ${intent} ${loc}, Noida? Noida Spa offers certified therapists, heated private suites, transparent rates, & instant WhatsApp booking.`,
-        keywords: [`${intent} ${loc}`, `${intent} ${loc} Noida`, `Best Spa ${loc}`],
+        h1: `Verified ${intent} ${loc} (100% Real Photos & 20-Min Outcall)`,
+        metaTitle: `${intent} ${loc} | Escorts Hub Noida`,
+        metaDescription: `Looking for top-rated ${intent} ${loc}? Escorts Hub Noida offers 100% verified real photos, zero advance payment, direct hotel outcall arrival within 20 mins, & instant WhatsApp booking.`,
+        keywords: [`${intent} ${loc}`, `${intent} ${loc} Noida`, `Best Companions ${loc}`],
       });
     });
   });

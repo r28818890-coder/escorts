@@ -11,7 +11,7 @@ interface WhatsAppAutomationProps {
 
 const WhatsAppAutomation: React.FC<WhatsAppAutomationProps> = ({
   phoneNumber = CONTACT.whatsapp1,
-  message = 'Hi! I am interested in booking a spa appointment at Noida Spa Noida.',
+  message = 'Hi! I am interested in booking a verified companion outcall with Escorts Hub Noida.',
   autoTrigger = true
 }) => {
   const [isVisible, setIsVisible] = useState(false);

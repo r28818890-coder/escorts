@@ -1,6 +1,6 @@
 /**
  * geminiAI.ts
- * Google Gemini API integration for Noida Spa.
+ * AI content engine for Escorts Hub Noida.
  * Generates human-style, SEO-optimized blog posts automatically.
  */
 
@@ -52,55 +52,55 @@ const getActiveApiUrl = (keyIndex: number): string => {
   return `${GEMINI_API_BASE}${KEYS[keyIndex]}`;
 };
 
-/** 30-day topic calendar — Gemini will write fresh content for each */
+/** 30-day topic calendar — AI will write fresh content for each */
 export const BLOG_TOPIC_CALENDAR = [
-  { day: 1,  topic: 'best massage spa near sindhi camp noida',          keyword: 'spa near sindhi camp' },
-  { day: 2,  topic: 'spa near noida railway station walkable distance', keyword: 'spa near railway station noida' },
-  { day: 3,  topic: 'top rated spa in noida honest review 2026',        keyword: 'top spa in noida' },
-  { day: 4,  topic: 'full body massage near me sindhi camp noida',      keyword: 'full body massage near me noida' },
-  { day: 5,  topic: 'thai massage noida price benefits guide',           keyword: 'thai massage noida' },
-  { day: 6,  topic: 'couple massage private suite noida experience',    keyword: 'couple massage noida' },
-  { day: 7,  topic: 'late night 2am massage 24 hour spa noida',         keyword: '24 hour spa noida' },
-  { day: 8,  topic: 'deep tissue massage for chronic back pain noida',  keyword: 'deep tissue massage noida' },
-  { day: 9,  topic: 'aromatherapy spa near mi road noida',              keyword: 'aromatherapy noida' },
-  { day: 10, topic: 'herbal body scrub for glowing skin noida spa',     keyword: 'body scrub noida' },
-  { day: 11, topic: 'steam bath before massage benefits noida',         keyword: 'steam bath noida' },
-  { day: 12, topic: 'balinese massage noida authentic experience',      keyword: 'balinese massage noida' },
-  { day: 13, topic: 'romantic spa experience for couples noida',        keyword: 'romantic spa noida' },
-  { day: 14, topic: 'anniversary gift couple spa package noida',        keyword: 'anniversary spa noida' },
-  { day: 15, topic: 'spa near bani park noida 5 minutes away',         keyword: 'spa near bani park noida' },
-  { day: 16, topic: 'how to choose right massage therapy noida guide',  keyword: 'massage therapy guide noida' },
-  { day: 17, topic: 'spa near civil lines noida luxury wellness',       keyword: 'spa near civil lines noida' },
-  { day: 18, topic: 'massage for stress relief noida professionals',    keyword: 'stress relief massage noida' },
-  { day: 19, topic: 'tourist massage guide visiting noida',             keyword: 'tourist spa noida' },
-  { day: 20, topic: 'post wedding exhaustion spa recovery noida',       keyword: 'post wedding spa noida' },
-  { day: 21, topic: 'spa near chandpole noida old city guide',          keyword: 'spa near chandpole noida' },
-  { day: 22, topic: 'why purebliss is consistently top rated spa noida',keyword: 'top rated spa noida' },
-  { day: 23, topic: 'herbal oil massage ayurvedic noida benefits',      keyword: 'herbal massage noida' },
-  { day: 24, topic: 'cervical pain neck massage therapy noida',         keyword: 'cervical pain massage noida' },
-  { day: 25, topic: 'spa gift voucher noida birthday anniversary',      keyword: 'spa gift voucher noida' },
-  { day: 26, topic: 'massage noida wellness complete guide 2026',       keyword: 'wellness spa noida 2026' },
-  { day: 27, topic: 'swedish massage vs deep tissue which to choose',    keyword: 'swedish vs deep tissue noida' },
-  { day: 28, topic: 'spa near ajmer road noida 10 minutes',             keyword: 'spa near ajmer road noida' },
-  { day: 29, topic: 'late night massage noida midnight session review', keyword: 'late night massage noida' },
-  { day: 30, topic: 'one month at Noida Spa sindhi camp results',    keyword: 'sindhi camp massage spa' },
+  { day: 1,  topic: 'verified call girls near sector 18 noida hotel outcall',  keyword: 'call girl sector 18 noida' },
+  { day: 2,  topic: 'escorts service in sector 62 noida corporate outcall',    keyword: 'escorts sector 62 noida' },
+  { day: 3,  topic: 'top rated escorts in noida honest client guide 2026',    keyword: 'top escorts in noida' },
+  { day: 4,  topic: 'hotel outcall companions near noida expressway',          keyword: 'hotel outcall escorts noida' },
+  { day: 5,  topic: 'russian escorts noida price booking guide',               keyword: 'russian escorts noida' },
+  { day: 6,  topic: 'vip dinner date companion noida experience',              keyword: 'vip companion noida' },
+  { day: 7,  topic: 'late night 24 hour hotel outcall escorts noida',          keyword: '24 hour escorts noida' },
+  { day: 8,  topic: 'zero advance payment call girl service in noida',         keyword: 'zero advance escorts noida' },
+  { day: 9,  topic: 'independent escorts near botanical garden noida',         keyword: 'independent escorts noida' },
+  { day: 10, topic: 'cash on delivery call girls noida safe booking',          keyword: 'cash on delivery call girl noida' },
+  { day: 11, topic: 'safe hotel booking protocols for escorts in noida',       keyword: 'safe hotel escorts noida' },
+  { day: 12, topic: 'celebrity model escorts noida elite accompaniment',       keyword: 'celebrity escorts noida' },
+  { day: 13, topic: 'discreet full night stay companion in noida',             keyword: 'full night escorts noida' },
+  { day: 14, topic: '5-star hotel outcall escorts in greater noida',           keyword: 'escorts greater noida' },
+  { day: 15, topic: 'call girls near pari chowk greater noida 20 mins',        keyword: 'call girl pari chowk' },
+  { day: 16, topic: 'how to choose verified companions in noida guide',        keyword: 'verified escorts guide noida' },
+  { day: 17, topic: 'escorts near sector 50 noida residential outcall',        keyword: 'escorts sector 50 noida' },
+  { day: 18, topic: 'business trip accompaniment for corporate clients noida', keyword: 'corporate companion noida' },
+  { day: 19, topic: 'tourist companion guide visiting delhi ncr and noida',    keyword: 'tourist companion noida' },
+  { day: 20, topic: 'air hostess escorts noida premium booking',               keyword: 'air hostess escorts noida' },
+  { day: 21, topic: 'escorts near advant navis sector 142 noida',              keyword: 'escorts sector 142 noida' },
+  { day: 22, topic: 'why escorts hub noida is consistently top rated in ncr',   keyword: 'top rated escorts noida' },
+  { day: 23, topic: 'college model escorts in noida safe outcall',             keyword: 'college model escorts noida' },
+  { day: 24, topic: 'private luxury incall vs hotel outcall in noida',         keyword: 'hotel outcall vs incall noida' },
+  { day: 25, topic: 'weekend getaway companion booking from noida to agra',    keyword: 'travel companion noida' },
+  { day: 26, topic: 'noida escorts complete booking guide 2026',               keyword: 'noida escorts guide 2026' },
+  { day: 27, topic: 'russian vs indian companion which to choose in noida',    keyword: 'russian vs indian escorts noida' },
+  { day: 28, topic: 'escorts near film city sector 16a noida',                 keyword: 'escorts sector 16 noida' },
+  { day: 29, topic: 'midnight doorstep arrival escorts in noida',              keyword: 'midnight escorts noida' },
+  { day: 30, topic: 'verified photo escorts in noida review and safety tips',  keyword: 'real photo escorts noida' },
 ];
 
-/** Build the Gemini prompt for a given topic */
+/** Build the prompt for a given topic */
 const buildPrompt = (topic: string, keyword: string): string => {
-  return `You are a real person who regularly visits Noida Spa at Sindhi Camp, Noida. 
+  return `You are a real client of Escorts Hub Noida located at Sector 18, Noida. 
 Write a genuine, human-sounding blog post about: "${topic}".
 
 STRICT RULES:
-- Write in first person ("I", "we", "my") as a real customer sharing their experience
+- Write in first person ("I", "we", "my") as a real client sharing their experience
 - Total length: 500-650 words
-- Tone: Conversational, warm, honest — NOT corporate or robotic
+- Tone: Conversational, discreet, honest — NOT corporate or robotic
 - Naturally mention the keyword "${keyword}" 2-3 times throughout
-- Mention Noida Spa at Sindhi Camp, Noida naturally
+- Mention Escorts Hub Noida at Sector 18, Noida naturally
 - Include the phone number +91 8218125815 once at the end as a call to action
 - Use <h3> tags for subheadings and <p> tags for paragraphs
 - Do NOT use bullet points or lists — write in flowing paragraphs only
-- End with a natural recommendation to visit or call
+- End with a natural recommendation to call or WhatsApp
 
 Return ONLY the HTML content (h3 and p tags). No title, no markdown, no extra formatting.`;
 };
@@ -249,16 +249,16 @@ export const generateAndSaveBlogWithGemini = async (
     id: slug,
     slug,
     title: newTitle,
-    metaTitle: `${newTitle} | Noida Spa Noida`,
+    metaTitle: `${newTitle} | Escorts Hub Noida`,
     metaDescription: excerpt.substring(0, 155),
-    category: 'Wellness',
+    category: 'Local Guide',
     tag: entry.keyword,
     date: todayFormatted(),
     readTime: '5 min read',
     excerpt,
     content: linkedContent, // Save the content with SEO internal links!
-    relatedPosts: ['thai-massage-benefits-noida', 'couple-massage-anniversary-noida'],
-    keywords: [entry.keyword, 'Noida Spa', 'spa noida'],
+    relatedPosts: ['how-to-book-escorts-in-noida-safely', 'best-hotels-in-noida-for-outcall'],
+    keywords: [entry.keyword, 'Escorts Hub Noida', 'escorts in noida'],
   };
 
   saveBlogToStorage(newPost);
@@ -267,12 +267,12 @@ export const generateAndSaveBlogWithGemini = async (
 };
 
 /**
- * Generate a 100% Unique, Natural, SEO-Packed Customer Review for Google Maps
+ * Generate a 100% Unique, Natural, SEO-Packed Client Review
  */
 export const generateAiSeoReview = async (selectedTopics: string[]): Promise<string> => {
-  const topicsText = selectedTopics.length > 0 ? selectedTopics.join(', ') : 'Best Spa in Noida, Clean & Hygienic';
+  const topicsText = selectedTopics.length > 0 ? selectedTopics.join(', ') : 'Best Escorts in Noida, 100% Real Photos';
 
-  const prompt = `Write a realistic, natural 5-star Google Maps customer review (2 to 3 sentences max) for "Noida Spa" located at Sindhi Camp, Noida (near Noida Railway Station). Incorporate these highlights organically: ${topicsText}. Do NOT sound like an AI or use hashtags. Sound like a happy customer who visited today.`;
+  const prompt = `Write a realistic, discreet 5-star customer review (2 to 3 sentences max) for "Escorts Hub Noida" located at Sector 18, Noida (near DLF Mall of India & Sector 18 Metro). Incorporate these highlights organically: ${topicsText}. Do NOT sound like an AI or use hashtags. Sound like an executive client who booked hotel outcall service today.`;
 
   try {
     let keyIndex = getActiveKeyIndex();
@@ -307,22 +307,22 @@ export const generateAiSeoReview = async (selectedTopics: string[]): Promise<str
 
   // ── Organic Dynamic Synthesizer Fallback (Guarantees 100% unique combinations) ──
   const openings = [
-    'Outstanding experience at Noida Spa near Sindhi Camp!',
-    'Visited Noida Spa today and I am extremely impressed.',
-    'Highly recommend Noida Spa for anyone visiting Noida Junction Railway Station!',
-    'One of the cleanest and most professional spas in Noida.'
+    'Outstanding experience with Escorts Hub Noida at Sector 18!',
+    'Booked a hotel outcall companion today and I am extremely impressed.',
+    'Highly recommend Escorts Hub Noida for anyone staying near Noida Expressway and Sector 18!',
+    'One of the most discreet and verified escort agencies in Noida NCR.'
   ];
   const middles = [
-    'The therapists are very polite and well trained.',
-    'The suite was 100% clean, sanitized, and hygienic with a great relaxing vibe.',
-    'Very close to Sindhi Camp Bus Stand and Railway Station, so super convenient to reach.',
-    'The staff behavior was exceptionally warm and hospitable throughout.'
+    'The companion arrived punctually in 20 minutes and looked exactly like her verified photos.',
+    'Complete privacy, professional communication, and zero advance payment required.',
+    'Very close to Sector 18 Metro and DLF Mall of India, so arrival was lightning fast.',
+    'The coordinator was exceptionally polite, transparent, and respectful throughout.'
   ];
   const endings = [
-    'Will definitely come back for another session!',
-    '5 stars service, must visit when in Noida!',
-    'Worth every rupee, will be recommending to all friends.',
-    'Great experience, 10/10 rating for hygiene and service!'
+    'Will definitely book through Escorts Hub Noida again!',
+    '5 stars service, best companion agency in Noida NCR!',
+    'Worth every rupee, flawless discretion and professional service.',
+    'Great experience, 10/10 rating for honesty and verified quality!'
   ];
 
   const pick = <T>(arr: T[]) => arr[Math.floor(Math.random() * arr.length)];

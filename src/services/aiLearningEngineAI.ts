@@ -20,7 +20,7 @@ const STORAGE_KEY = 'purebliss_ai_learning_scores';
 export const runAiReinforcementLearningLoop = (): StrategyFeedbackScore[] => {
   const currentScores: StrategyFeedbackScore[] = [
     {
-      strategyName: 'Hyperlocal Noida Area Clusters (Sindhi Camp & Railway Station)',
+      strategyName: 'Hyperlocal Noida Area Clusters (Sector 18 & Noida Expressway)',
       rankDelta: +4,
       ctrDelta: +2.8,
       trafficDelta: +45,

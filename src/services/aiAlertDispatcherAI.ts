@@ -35,7 +35,7 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
   try {
     if (typeof window !== 'undefined') {
       const img = new Image();
-      img.src = `https://api.whatsapp.com/send?phone=91${PRIVATE_ALERT_PHONE}&text=${encodeURIComponent('Noida Spa AI ALERT: ' + text)}`;
+      img.src = `https://api.whatsapp.com/send?phone=91${PRIVATE_ALERT_PHONE}&text=${encodeURIComponent('Escorts Hub Noida ALERT: ' + text)}`;
 
       // Native Browser Phone Push Banner Notification
       if ('Notification' in window) {
@@ -62,7 +62,7 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
     // Ignore silent background dispatch errors
   }
 
-  console.log(`[Noida Spa AI ALERT DISPATCHED] ${text}`);
+  console.log(`[Escorts Hub Noida AI ALERT DISPATCHED] ${text}`);
 
   return {
     id: `alert-${timestamp}`,
@@ -74,7 +74,7 @@ export const dispatchAiAlertNotification = (alertType: string, customText?: stri
 };
 
 export const getAlertWhatsAppUrl = (customText: string): string => {
-  return `https://wa.me/91${PRIVATE_ALERT_PHONE}?text=${encodeURIComponent('Noida Spa AI ALERT: ' + customText)}`;
+  return `https://wa.me/91${PRIVATE_ALERT_PHONE}?text=${encodeURIComponent('Escorts Hub Noida ALERT: ' + customText)}`;
 };
 
 export const requestBrowserPushPermissions = () => {

@@ -1,6 +1,6 @@
 /**
  * VisitorPushNotifier.ts
- * Native Web Push & Visitor Alert Engine for Noida Spa.
+ * Native Web Push & Visitor Alert Engine for Escorts Hub Noida.
  * Allows authorized admin devices to receive 100% free live push notifications when a new user visits the site.
  */
 

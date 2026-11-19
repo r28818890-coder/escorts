@@ -29,9 +29,9 @@ export const runWeeklyAutoImprovementCycle = (): WeeklyImprovementLog => {
   BLOG_POSTS.forEach((post) => {
     if (post.content && !post.content.includes('Frequently Asked Questions')) {
       post.content += `
-        <h3>Frequently Asked Questions on ${post.tag || 'Spa Therapy'}</h3>
-        <p><strong>Q: How do I book a private suite session at Noida Spa?</strong><br/>
-        A: Simply call us at +91 8218125815 or click the WhatsApp button to reserve your sanitized suite instantly.</p>
+        <h3>Frequently Asked Questions on ${post.tag || 'Verified Companions'}</h3>
+        <p><strong>Q: How do I book a verified hotel outcall with Escorts Hub Noida?</strong><br/>
+        A: Simply call us at +91 8218125815 or message us on WhatsApp to reserve your companion with zero advance deposit.</p>
       `;
     }
   });

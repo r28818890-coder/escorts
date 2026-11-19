@@ -28,47 +28,47 @@ export const runCompetitorSeoAnalysis = (): CompetitorAnalysisReport => {
   const strategies: string[] = [];
 
   // Check if we have 24/7 late-night keyword dominance
-  gaps.push('Competitors lack 24/7 late-night availability & instant WhatsApp booking integration.');
-  strategies.push('Target "24 Hour Midnight Spa near Sindhi Camp Noida" high-intent keywords.');
+  gaps.push('Competitors lack 100% real photo verification and instant WhatsApp dispatch.');
+  strategies.push('Target "24 Hour Verified Hotel Outcall Escorts in Sector 18 & Sector 62 Noida" high-intent keywords.');
 
   // Check local landmark proximity
-  gaps.push('Competitors do not optimize for exact distances from Polo Victory & Railway Station.');
-  strategies.push('Inject precise distances (1.2 km from Railway Station, opposite Polo Victory Cinema) into LocalBusiness JSON-LD.');
+  gaps.push('Competitors do not optimize for exact distances from DLF Mall of India & Sector 18 Metro.');
+  strategies.push('Inject precise distances (2 min from Sector 18 Metro Gate 2, near DLF Mall) into LocalBusiness JSON-LD.');
 
-  // Check posture & body pain search intent
-  gaps.push('Competitors only sell generic "massages" without addressing tech-neck & desk job posture pain.');
-  strategies.push('Auto-publish targeted wellness guides for desk-job cervical strain & lower back sciatica.');
+  // Check safety & anti-scam search intent
+  gaps.push('Competitors use unverified third-party stock photos and demand advance deposits.');
+  strategies.push('Auto-publish targeted guides enforcing strict Cash on Delivery (COD) and zero-advance verification.');
 
   // 2. Execute Auto-Outranking Content Injection
-  const outrankKeyword = '24 Hour Luxury Thai Spa near Sindhi Camp & MI Road Noida';
-  const outrankSlug = `guide-best-24-hour-luxury-spa-sindhi-camp-noida-${Date.now()}`;
+  const outrankKeyword = '24 Hour Verified Escorts in Sector 18 & Sector 62 Noida';
+  const outrankSlug = `guide-best-24-hour-verified-escorts-sector-18-noida-${Date.now()}`;
 
   const outrankingArticle = {
     id: `outrank-seo-${Date.now()}`,
     slug: outrankSlug,
-    title: `Why Noida Spa is Rated #1 for Luxury Thai Massage in Noida`,
-    metaTitle: `Best Spa in Noida #1 Rated | Noida Spa`,
-    metaDescription: `Compare Noida Spa with top Noida spas. Transparent rates (from ₹999), 24/7 private suites, certified Thai therapists, & instant WhatsApp booking.`,
+    title: `Why Escorts Hub Noida is Rated #1 for Verified Companions in Noida`,
+    metaTitle: `Best Escorts in Noida #1 Rated | Escorts Hub Noida`,
+    metaDescription: `Compare Escorts Hub Noida with local classifieds. Transparent rates (from ₹3,000), 24/7 hotel outcall, 100% verified real photos, & instant WhatsApp booking.`,
     category: 'Competitor Analysis Guide',
-    tag: 'Noida #1 Spa',
+    tag: 'Noida #1 Directory',
     date: dateStr,
     readTime: '6 min read',
-    excerpt: `A comprehensive comparison guide explaining why Noida Spa leads Noida in hygiene standards, 24/7 availability, transparent pricing, and certified Thai therapy.`,
+    excerpt: `A comprehensive comparison guide explaining why Escorts Hub Noida leads Noida in photo verification, 24/7 hotel outcalls, transparent pricing, and client confidentiality.`,
     content: `
-      <p>When searching for the best luxury spa in Noida near Sindhi Camp or MI Road, discerning guests look for three critical factors: authentic therapist expertise, 100% sanitized private suites, and transparent pricing without hidden charges.</p>
+      <p>When searching for verified adult companions in Noida near Sector 18 or Sector 62, discerning clients look for three critical factors: authentic photo verification, prompt 20-minute hotel room outcall, and transparent pricing with zero upfront deposits.</p>
 
-      <h3>How Noida Spa Outperforms Other Noida Spas</h3>
+      <h3>How Escorts Hub Noida Outperforms Unverified Classified Portals</h3>
       <ul>
-        <li><strong>Transparent All-Inclusive Rates:</strong> Starting from ₹999 with zero hidden taxes or GST surprises.</li>
-        <li><strong>True 24/7 Availability:</strong> Heated luxury suites open early morning and late night.</li>
-        <li><strong>Hyper-Clean Hygiene Standard:</strong> Single-use linens and hospital-grade sanitization after every guest.</li>
-        <li><strong>Instant Direct Manager WhatsApp:</strong> Book your slot in 30 seconds without call center delays.</li>
+        <li><strong>Strict Cash on Delivery (COD):</strong> Payment is settled only upon face-to-face meeting with your companion.</li>
+        <li><strong>True 24/7 Hotel Outcall:</strong> Prompt 20-minute doorstep dispatch across Sector 18, Sector 62, and Expressway hotels.</li>
+        <li><strong>100% Real Photo Authentication:</strong> Direct biometric verification ensuring the companion who arrives matches her profile.</li>
+        <li><strong>Instant Direct WhatsApp Coordination:</strong> Confirm availability in under 2 minutes with complete privacy.</li>
       </ul>
 
-      <p>Visit Noida Spa at Motilal Atal Road, opposite Polo Victory Cinema, Sindhi Camp, Noida.</p>
+      <p>Visit Escorts Hub Noida online or contact our central coordination desk at +91 8218125815 (Sector 18 Commercial Hub, Noida).</p>
     `,
-    relatedPosts: ['thai-massage-benefits-noida', 'deep-tissue-vs-swedish'],
-    keywords: [outrankKeyword, 'Best Spa Noida', 'Top Rated Spa Sindhi Camp'],
+    relatedPosts: ['safety-guide-noida', 'hotel-outcall-guide'],
+    keywords: [outrankKeyword, 'Escorts in Noida', 'Call Girls Sector 18 Noida'],
   };
 
   // Prepend to live blog memory if not already present

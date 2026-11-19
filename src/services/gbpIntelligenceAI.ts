@@ -8,26 +8,26 @@ export interface GbpReviewItem {
 }
 
 /**
- * 9. Google Business Profile (GBP) AI Engine
- * Generates SEO-optimized personalized review replies for Google Maps reviews.
+ * 9. Google Business Profile (GBP) & Local Review Intelligence AI Engine
+ * Generates SEO-optimized personalized review replies for client reviews.
  */
 export const generateGbpReviewReplies = (): GbpReviewItem[] => {
   return [
     {
       id: 'gbp-1',
-      reviewerName: 'Vikram Singh',
+      reviewerName: 'Vikram Singhania',
       rating: 5,
-      comment: 'Best Thai massage in Noida! Very clean private suites and professional therapists near Sindhi Camp.',
-      date: '2026-07-25',
-      autoReplyGenerated: 'Thank you Vikram for your 5-star review! We are delighted you enjoyed our authentic Thai massage and sanitized private suites at Noida Spa near Sindhi Camp, Noida. Looking forward to welcoming you back!',
+      comment: 'Fastest hotel outcall service in Sector 18 Noida! She arrived in 20 minutes, 100% matched her photos, and total cash on delivery.',
+      date: '2026-11-10',
+      autoReplyGenerated: 'Thank you Vikram for your 5-star review! We take immense pride in delivering fast 20-minute hotel doorstep outcalls in Sector 18 Noida with verified real photos and zero advance payment.',
     },
     {
       id: 'gbp-2',
-      reviewerName: 'Neha Sharma',
+      reviewerName: 'Rohit Verma',
       rating: 5,
-      comment: 'Wonderful couple spa experience. Soundproof room, soothing aroma oils, and delicious herbal tea.',
-      date: '2026-07-26',
-      autoReplyGenerated: 'Thank you Neha for your wonderful feedback! We take pride in offering Noida’s premier luxury couple spa package with soundproof private suites and organic aromatherapy. We hope to see you again soon at Noida Spa!',
+      comment: 'Booked an elite Russian companion for a corporate dinner near Sector 62 IT hub. Extremely articulate, polite, and elegant.',
+      date: '2026-11-12',
+      autoReplyGenerated: 'Thank you Rohit! Our international and VIP Russian companion roster is curated to provide executive-level discretion and charm across Sector 62 and Noida Expressway.',
     },
   ];
 };

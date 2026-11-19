@@ -304,7 +304,7 @@ export const AdminNotificationPanel: React.FC = () => {
                 value={aiPrompt}
                 onChange={(e) => setAiPrompt(e.target.value)}
                 onKeyDown={(e) => e.key === 'Enter' && handleRunAiQuery()}
-                placeholder="e.g. Write a 50-word WhatsApp offer for VIP companion booking in Sindhi Camp..."
+                placeholder="e.g. Write a 50-word WhatsApp offer for VIP companion booking in Sector 18 Noida..."
                 className="flex-1 px-4 py-3 rounded-2xl bg-zinc-950 border border-zinc-800 text-white text-xs focus:border-rose-500 outline-none"
               />
               <button
@@ -379,11 +379,11 @@ export const AdminNotificationPanel: React.FC = () => {
                   onChange={(e) => setReviewArea(e.target.value)}
                   className="p-2 rounded-xl bg-zinc-900 border border-zinc-800 text-xs text-white outline-none"
                 >
-                  <option value="Sindhi Camp">Sindhi Camp</option>
-                  <option value="Railway Station">Railway Station</option>
-                  <option value="MI Road">MI Road</option>
-                  <option value="Bani Park">Bani Park</option>
-                  <option value="C-Scheme">C-Scheme</option>
+                  <option value="Sector 18 Noida">Sector 18 Noida</option>
+                  <option value="Sector 62 IT Hub">Sector 62 IT Hub</option>
+                  <option value="Noida Expressway">Noida Expressway</option>
+                  <option value="Sector 50 Central">Sector 50 Central</option>
+                  <option value="Pari Chowk Greater Noida">Pari Chowk Greater Noida</option>
                 </select>
               </div>
 

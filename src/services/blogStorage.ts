@@ -1,6 +1,6 @@
 /**
  * blogStorage.ts
- * Permanent localStorage-based blog CMS for Noida Spa.
+ * Permanent localStorage-based blog CMS for Escorts Hub Noida.
  * Blogs saved here persist across page reloads.
  */
 

@@ -10,10 +10,11 @@ export interface InternalLinkItem {
  */
 export const generateInternalLinkMesh = (currentSlug: string): InternalLinkItem[] => {
   return [
-    { anchorText: 'Traditional Thai Massage Noida', url: '/thai-massage-benefits-noida', category: 'Therapy Cluster' },
-    { anchorText: 'Deep Tissue Muscle Pain Relief', url: '/deep-tissue-vs-swedish', category: 'Therapy Cluster' },
-    { anchorText: 'Couple Luxury Spa Package Rate', url: '/#pricing', category: 'Pricing & Packages' },
-    { anchorText: '24 Hour Sindhi Camp Spa Location', url: '/#location', category: 'Location Hub' },
-    { anchorText: 'Noida Travel Distance Calculator', url: '/#calculator', category: 'Interactive Tool' },
+    { anchorText: 'Escorts in Noida Hub', url: '/', category: 'Core Service Hub' },
+    { anchorText: 'Call Girls in Noida Directory', url: '/call-girls', category: 'Category Hub' },
+    { anchorText: 'Noida Escorts Price List & Booking Guide', url: '/noida-escorts', category: 'Pricing & Guides' },
+    { anchorText: 'VIP Escorts Noida Five-Star Outcall', url: '/vip-escorts', category: 'Luxury VIP' },
+    { anchorText: 'Russian Escorts Noida', url: '/russian-escorts', category: 'International Models' },
+    { anchorText: '24/7 Hotel Outcall Booking Desk', url: '/booking', category: 'Direct Dispatch' },
   ];
 };
