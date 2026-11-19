@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/generateSitemap.cjs && vite build && node scripts/prerender.cjs && node scripts/pingSearchEngines.cjs",
+    "index:google": "node scripts/googleIndexing.cjs",
     "preview": "vite preview"
   },
   "dependencies": {

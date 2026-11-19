@@ -31,10 +31,10 @@ const SEO: React.FC<SEOProps> = ({
 }) => {
   const location = useLocation();
   const canonical = url || `${BRAND.domain}${(location.pathname.endsWith("/") ? location.pathname : location.pathname + "/")}`;
-  const fullTitle = (title ? title : 'Escorts in Noida | Verified 24/7 Hotel Outcall').slice(0, 58);
+  const fullTitle = (title ? title : 'Escorts in Noida 🟢 100% Real Photo | Call Girls in Noida 【Zero Advance COD】').slice(0, 78);
   const fullDesc =
     description ||
-    `${BRAND.name} — Premier verified directory for independent escorts, VIP models, and 24/7 hotel outcall companions in Noida & NCR. Direct WhatsApp booking.`;
+    '⚡ Verified Escorts in Noida & Call Girls with 100% genuine photos. 20-30 min doorstep hotel outcall across Sector 18, 62 & Expressway. Cash on Delivery (COD) - Zero advance token!';
 
   useEffect(() => {
     // ── Title ─────────────────────────────────────────────────

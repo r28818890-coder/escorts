@@ -69,8 +69,8 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
         : `Noida Escorts & Call Girls - Top Verified Escort Service & VIP Companions (NCR)`;
 
       metaTitle = locality
-        ? `Noida Escorts in ${locName} - Verified Call Girls & Escort Service | 24/7 Outcall`
-        : `Noida Escorts | Verified Call Girls & Escort Service in Noida & NCR`;
+        ? `Noida Escorts in ${locName} 🟢 100% Real Photo 【Zero Advance COD】`
+        : `Escorts in Noida 🟢 100% Real Photo | Call Girls in Noida 【Zero Advance COD】`;
 
       metaDescription = locality
         ? `Looking for verified escort service and call girls in ${locName}? Genuine independent models near ${landmark}. 100% real photo verification, 24/7 hotel outcall & in-call.`
@@ -86,8 +86,8 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
       : `Adult Meetings in Noida - Casual Dating & Verified Independent Companions`;
 
     metaTitle = locality
-      ? `Adult Meetings in ${locName} - Discreet Dating | 24/7 Outcall`
-      : `Adult Meetings in Noida - Casual Dating & Local Singles | 24 Hours`;
+      ? `Adult Meetings in ${locName} 🟢 100% Real Photo 【Zero Advance COD】`
+      : `Adult Meetings in Noida 🟢 Verified Dating & Singles 【Zero Advance】`;
 
     metaDescription = locality
       ? `Connect with verified singles and companions for adult meetings in ${locName} near ${landmark}. 100% genuine photos and discreet private outcall.`
@@ -104,8 +104,8 @@ export function generateLocalizedSeo(category: PortalCategory, locality?: NoidaL
       : `Russian Escorts in Noida - Elite VIP Foreign Models & Companions`;
 
     metaTitle = locality
-      ? `Russian Escorts in ${locName} - Verified VIP Foreign Models | 24/7 Outcall`
-      : `Russian Escorts in Noida - Verified VIP Foreign Models | 24/7 Outcall`;
+      ? `Russian Escorts in ${locName} 🟢 Real Foreign Models 【Zero Advance】`
+      : `Russian Escorts in Noida 🟢 Verified VIP Foreign Models 【Zero Advance】`;
 
     metaDescription = locality
       ? `Book verified Russian and foreign escorts in ${locName} near ${landmark}. 100% real photos, stunning international models, and fast 20-min hotel outcall.`

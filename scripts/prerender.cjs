@@ -568,14 +568,16 @@ function buildLocalityHtml(cat, loc) {
   `;
 }
 
+const CURRENT_DATE_ISO = new Date().toISOString();
+
 // ── Build Routes Collection ───────────────────────────────────
 const subRoutes = [];
 
 // 0. Homepage
 subRoutes.push({
   path: '',
-  title: 'Escorts in Noida | Verified 24/7 Hotel Outcall',
-  desc: 'Book verified escorts in Noida with 100% real photos. Verified 24/7 hotel outcall, real photos & prompt 20-min arrival. Call or WhatsApp +91 8218125815 now.',
+  title: 'Escorts in Noida 🟢 100% Real Photo | Call Girls in Noida 【Zero Advance COD】',
+  desc: '⚡ Verified Escorts in Noida & Call Girls with 100% genuine photos. 20-30 min doorstep hotel outcall across Sector 18, 62 & Expressway. Cash on Delivery (COD) - Zero advance token! Call or WhatsApp +91 8218125815.',
   h1: 'Escorts in Noida',
   h2: 'Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India & Noida Expressway',
   isHome: true
@@ -585,8 +587,8 @@ subRoutes.push({
 CATEGORIES.forEach((cat) => {
   subRoutes.push({
     path: cat.slug,
-    title: cat.title.slice(0, 58),
-    desc: cat.desc.slice(0, 158),
+    title: `${cat.name} in Noida 🟢 100% Real Photo 【Zero Advance COD】`,
+    desc: `⚡ Book verified ${cat.name.toLowerCase()} in Noida with 100% real photos. 24/7 doorstep hotel outcall across all 18 sectors. Cash on Delivery - Zero advance token! Call 8218125815.`,
     h1: cat.h1,
     h2: `Verified 24/7 Doorstep Service Across All 18 Noida & NCR Sectors`,
     locName: 'Noida & NCR',
@@ -610,13 +612,11 @@ CATEGORIES.forEach((cat) => {
       ? (loc.slug === 'sector-62' ? `Call Girls in ${loc.name}` : `Escorts in ${loc.name}`)
       : `${cat.name} in ${loc.name}`;
 
-    // Capped strictly at <= 56 characters
     const pageTitle = isCallGirl
-      ? `${h1Text} | Verified 24/7 Hotel Outcall`.slice(0, 56)
-      : `${cat.name} in ${loc.name} | Verified 24/7 Outcall`.slice(0, 56);
+      ? `${h1Text} 🟢 100% Real Photo 【Zero Advance COD】`
+      : `${cat.name} in ${loc.name} 🟢 Real Photo 【COD】`;
 
-    // Meta desc 148-158 chars
-    const metaDesc = `Book verified ${primaryKw} with 100% real photos. 100% real photos, direct hotel outcall, and 20-min hotel outcall in ${loc.name}. Call 8218125815 now.`.slice(0, 158);
+    const metaDesc = `⚡ Verified ${primaryKw} with 100% genuine photos. 20-min direct hotel outcall near ${loc.landmarks[0]}, ${loc.name}. Cash on Delivery (COD) - Zero advance! Call 8218125815 now.`.slice(0, 160);
 
     subRoutes.push({
       path: `${cat.slug}/${loc.slug}`,
@@ -639,8 +639,8 @@ CATEGORIES.forEach((cat) => {
 LOCALITIES.forEach((loc) => {
   subRoutes.push({
     path: `area/${loc.slug}`,
-    title: `${loc.name} Escorts & Call Girls | Outcall Guide`.slice(0, 56),
-    desc: `Comprehensive local guide for verified escorts & call girls in ${loc.name}. 15-20 min hotel outcall, luxury hotel guide, genuine photos. Call 8218125815.`.slice(0, 158),
+    title: `${loc.name} Escorts & Call Girls 🟢 100% Real Photo 【Zero Advance】`,
+    desc: `⚡ Comprehensive 2026 local guide for verified escorts & call girls in ${loc.name}. 15-20 min hotel outcall, luxury hotel guide, genuine photos & COD payment. Call 8218125815.`.slice(0, 160),
     h1: `${loc.name} Escorts & Outcall Companion Guide`,
     h2: `100% Verified Profiles, 4-Star & 5-Star Hotel Guide & 20-Min Arrival near ${loc.landmarks[0]}`,
     locName: `${loc.name}, Noida NCR`,
@@ -727,8 +727,8 @@ subRoutes.push(...INFO_PAGES);
 const MASTER_SEO_ROUTES = [
   {
     path: 'noida-escorts',
-    title: 'Noida Escorts Price List & Booking Guide | Escorts Hub',
-    desc: 'Official 2026 Noida escorts price list and step-by-step hotel outcall booking guide. Transparent per-hour rates, zero advance, 20-min arrival in Noida & NCR.',
+    title: 'Noida Escorts Rate List 2026 🟢 【Zero Advance COD】 Verified Outcall',
+    desc: '⚡ Official 2026 Noida escorts price list and step-by-step hotel outcall booking guide. Transparent per-hour rates, zero advance, 20-min arrival in Noida & NCR.',
     h1: 'Noida Escorts Price List & Booking Guide (2026)',
     h2: 'Transparent Pricing Tiers, Exact Inclusions & 4-Step Outcall Sequence',
     locName: 'Noida',
@@ -758,7 +758,7 @@ subRoutes.push({
 BLOG_POSTS.forEach((post) => {
   subRoutes.push({
     path: `blog/${post.slug}`,
-    title: post.metaTitle.slice(0, 58),
+    title: `${post.metaTitle.slice(0, 48)} 🟢 Verified`,
     desc: post.metaDescription.slice(0, 158),
     h1: post.title,
     h2: post.excerpt,
@@ -775,10 +775,11 @@ BLOG_POSTS.forEach((post) => {
 try {
   const { CLASSIFIED_ADS } = require('./portalData.cjs');
   CLASSIFIED_ADS.forEach((ad) => {
+    const modelName = ad.title.split(' - ')[0];
     subRoutes.push({
       path: `${ad.categorySlug}/${ad.localitySlug}/${ad.slug}`,
-      title: `${ad.title} | Verified 24/7 Outcall`.slice(0, 58),
-      desc: (ad.description || `Book ${ad.title} in ${ad.locality}. 100% real verified photos, 20-min hotel doorstep outcall, zero advance deposit. Call or WhatsApp +91 8218125815.`).slice(0, 158),
+      title: `${modelName} (${ad.age}) VIP Escort in ${ad.locality} 🟢 100% Real Photo 【COD】`,
+      desc: (ad.description || `⚡ Verified profile of ${modelName} (${ad.age} Yrs) in ${ad.locality}. 100% real photo, 20-min hotel doorstep outcall, zero advance deposit. WhatsApp +91 8218125815.`).slice(0, 160),
       h1: ad.title,
       h2: `${ad.services ? ad.services.join(' • ') : 'Verified VIP Outcall'} | ${ad.locality}`,
       catName: ad.categorySlug,
@@ -808,6 +809,17 @@ subRoutes.forEach((route) => {
   routeHtml = routeHtml.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.desc}" />`);
   routeHtml = routeHtml.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalUrl}" />`);
 
+  // High-CTR Social Card updates
+  routeHtml = routeHtml.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${route.title}" />`);
+  routeHtml = routeHtml.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${route.desc}" />`);
+  routeHtml = routeHtml.replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${canonicalUrl}" />`);
+  routeHtml = routeHtml.replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${route.title}" />`);
+  routeHtml = routeHtml.replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${route.desc}" />`);
+
+  // Dynamic Google SERP Freshness Snippet (dateModified)
+  routeHtml = routeHtml.replace(/"dateModified":\s*".*?"/, `"dateModified": "${CURRENT_DATE_ISO}"`);
+  routeHtml = routeHtml.replace(/"headline":\s*".*?"/, `"headline": "${route.title.replace(/"/g, '\\"')}"`);
+
   const routeKeywords = route.keywords || (route.locObj ? [
     `escorts in ${route.locObj.name.toLowerCase()}`,
     `call girls in ${route.locObj.name.toLowerCase()}`,
@@ -831,8 +843,8 @@ subRoutes.forEach((route) => {
       "@type": "BlogPosting",
       "headline": route.h1,
       "description": route.desc,
-      "datePublished": "2026-11-10T10:00:00+05:30",
-      "dateModified": "2026-11-14T10:00:00+05:30",
+      "datePublished": "2026-01-15T10:00:00+05:30",
+      "dateModified": CURRENT_DATE_ISO,
       "author": {
         "@type": "Person",
         "name": "Noida Hospitality & Nightlife Reviewer",
