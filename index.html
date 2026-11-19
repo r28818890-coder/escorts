@@ -123,6 +123,23 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@400;600&display=swap" />
     </noscript>
 
+    <!-- CHROME SPECULATION RULES API (Instant 0ms Page Pre-rendering for Internal Links) -->
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": {
+              "and": [
+                { "href_matches": "/*" },
+                { "not": { "href_matches": "/admin/*" } }
+              ]
+            },
+            "eagerness": "moderate"
+          }
+        ]
+      }
+    </script>
+
     <!-- STRUCTURED DATA (LocalBusiness + Organization — Validated, No PriceRange) -->
     <script type="application/ld+json">
     {
@@ -184,7 +201,27 @@
           "name": "Escorts Hub Noida",
           "description": "Verified escorts in Noida, 24/7 hotel outcalls, and independent companion directory in Noida & NCR.",
           "publisher": { "@id": "https://wenoidaescorts.com/#business" },
-          "inLanguage": "en-IN"
+          "inLanguage": "en-IN",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://wenoidaescorts.com/call-girls?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://wenoidaescorts.com/#webpage",
+          "url": "https://wenoidaescorts.com/",
+          "name": "Escorts in Noida | Verified 24/7 Hotel Outcall",
+          "isPartOf": { "@id": "https://wenoidaescorts.com/#website" },
+          "about": { "@id": "https://wenoidaescorts.com/#business" },
+          "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", "h2", ".hero-subtitle", ".overview-box p"]
+          }
         }
       ]
     }

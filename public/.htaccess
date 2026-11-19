@@ -60,6 +60,9 @@ LimitRequestBody 10485760
 
 # Enterprise Web Application Hardening & Strict Content Security Headers
 <IfModule mod_headers.c>
+  # Search Engine Crawlability & Snippet Directives
+  Header set X-Robots-Tag "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+
   # Anti-Clickjacking
   Header set X-Frame-Options "SAMEORIGIN"
   
