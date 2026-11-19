@@ -103,7 +103,7 @@ const Modal: React.FC = () => {
             {/* Left decorative panel: hidden on small screens to improve mobile UX */}
             <div className="hidden md:flex md:w-2/5 bg-[#0a0a0a] border-r border-white/5 p-8 md:p-10 flex-col justify-center relative overflow-hidden">
               <div className="absolute inset-0">
-                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80" alt="Spa" className="w-full h-full object-cover opacity-20" />
+                <img src="/images/hero-hot-model-bg.webp" alt="VIP Escorts Hub Noida" className="w-full h-full object-cover opacity-20" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent" />
               </div>
               <div className="relative z-10">

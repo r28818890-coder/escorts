@@ -28,9 +28,9 @@ export const generateSeoOptimizedImages = (): ImageSeoItem[] => {
     },
     {
       id: 'img-3',
-      imageName: 'hotel_outcall_companion.webp',
-      url: '/images/escorts-sector-18-noida-riya-01.webp',
-      altText: 'Luxury 5-Star Hotel Outcall Companion in Sector 18 Noida',
+      imageName: 'riya-vip-escorts-sector-18-noida.webp',
+      url: '/images/riya-vip-escorts-sector-18-noida.webp',
+      altText: 'Luxury 5-Star Hotel Outcall VIP Escort in Sector 18 Noida',
       category: 'featured',
     },
   ];

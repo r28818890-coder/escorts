@@ -25,7 +25,7 @@ const ROOM_TOURS: RoomTourData[] = [
     title: 'Luxury 5-Star Hotel Suite',
     subtitle: 'Private sanitized executive suites with ambient lighting for discreet hotel meetings',
     icon: <BedDouble className="w-4 h-4 text-rose-400" />,
-    bgUrl: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=2000&q=80',
+    bgUrl: '/images/hero-hot-model-bg.webp',
     badge: '100% Verified Private Suites',
     hotspots: [
       {
@@ -56,7 +56,7 @@ const ROOM_TOURS: RoomTourData[] = [
     title: 'Private Resort Suite Setup',
     subtitle: 'Luxury resort and private villa outcall accommodations across Noida',
     icon: <Droplets className="w-4 h-4 text-indigo-400" />,
-    bgUrl: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=80',
+    bgUrl: '/images/24-7-hotel-outcall-sector-142-noida.webp',
     badge: 'Discreet Outcall Setup',
     hotspots: [
       {

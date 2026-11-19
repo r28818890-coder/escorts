@@ -45,7 +45,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
     services: 'Hotel Outcall, Private In-Call, VIP Escort, Dinner Date',
     description: 'Verified independent model available for pleasant companionship and relaxing meetings in Noida & NCR. Real photos and prompt WhatsApp response.',
     age: '23',
-    photoUrl: '/images/escorts-sector-18-noida-riya-01.webp',
+    photoUrl: '/images/riya-vip-escorts-sector-18-noida.webp',
   });
   const [createdAd, setCreatedAd] = useState<ClassifiedAd | null>(null);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -85,7 +85,7 @@ export const PostAdModal: React.FC<PostAdModalProps> = ({ isOpen, onClose, onAdS
       age: parseInt(formData.age) || 23,
       phone: formData.phone.trim() || CONTACT.phone,
       whatsapp: (formData.whatsapp || formData.phone || CONTACT.whatsapp1).replace(/\D/g, ''),
-      images: [formData.photoUrl || '/images/escorts-sector-18-noida-riya-01.webp'],
+      images: [formData.photoUrl || '/images/riya-vip-escorts-sector-18-noida.webp'],
       isVerified: true,
       isVip: true,
       isOnline: true,

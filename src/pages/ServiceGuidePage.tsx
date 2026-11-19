@@ -59,8 +59,8 @@ const ServiceGuidePage: React.FC<GuidePageProps> = ({ data, onBack }) => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="rounded-2xl overflow-hidden shadow-sm h-[360px] border border-slate-200 relative">
               <img
-                src={(introSection as any).image || 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800'}
-                alt={(introSection as any).title}
+                src={(introSection as any).image || '/images/independent-escorts-sector-18-noida.webp'}
+                alt={(introSection as any).title || 'VIP Escorts Noida Guide'}
                 loading="lazy"
                 className="w-full h-full object-cover"
               />
@@ -120,9 +120,9 @@ const ServiceGuidePage: React.FC<GuidePageProps> = ({ data, onBack }) => {
                     <img
                       src={
                         s.image ||
-                        'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80'
+                        '/images/luxury-call-girls-sector-62-noida.webp'
                       }
-                      alt={s.title}
+                      alt={s.title || 'VIP Escorts Noida Service'}
                       loading="lazy"
                       className="w-full h-full object-cover"
                     />

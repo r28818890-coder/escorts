@@ -18,7 +18,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: '24/7 Prompt Hotel Delivery',
         content: 'Our verified VIP escort models provide fast 20 to 30 minute arrival to luxury 4-star and 5-star hotels across Sector 18, Sector 62, Greater Noida, and Noida Expressway corridors. Every companion is 100% photo-verified with strict privacy guarantees.',
         icon: Sparkles,
-        image: '/images/escorts-sector-18-noida-riya-01.webp'
+        image: '/images/24-7-hotel-outcall-sector-142-noida.webp'
       },
       {
         title: 'Key Advantages',
@@ -30,7 +30,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
           'Complete discretion and 100% privacy protection'
         ],
         icon: ShieldCheck,
-        image: '/images/escorts-sector-50-noida-aarohi-01.webp'
+        image: '/images/aarohi-vip-escorts-sector-50-noida.webp'
       }
     ]
   }),
@@ -46,7 +46,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: 'International Elegance',
         content: 'Connect with elite Russian escorts and foreign companions in Noida. Charming, elegant, and sophisticated models ready to make your luxury hotel stay memorable.',
         icon: Heart,
-        image: '/images/escorts-sector-62-noida-priya-01.webp'
+        image: '/images/vip-russian-escorts-noida-expressway.webp'
       },
       {
         title: 'VIP Standards',
@@ -58,7 +58,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
           'Total client confidentiality guaranteed'
         ],
         icon: Star,
-        image: '/images/escorts-sector-137-noida-tanvi-01.webp'
+        image: '/images/foreign-models-escorts-knowledge-park-noida.webp'
       }
     ]
   }),
@@ -74,7 +74,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: 'Private Sanctuaries in Noida',
         content: 'For gentlemen seeking a quiet, secure venue away from busy hotel lobbies, our private in-call residential suites in Sector 18, Sector 50, and Sector 137 offer total peace of mind.',
         icon: ShieldCheck,
-        image: '/images/escorts-sector-18-noida-ananya-01.webp'
+        image: '/images/independent-escorts-sector-18-noida.webp'
       },
       {
         title: 'Features & Amenities',
@@ -86,7 +86,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
           'Unhurried 1-hour to full-evening bookings'
         ],
         icon: UserCheck,
-        image: '/images/escorts-sector-50-noida-siya-01.webp'
+        image: '/images/college-girl-escorts-sector-50-noida.webp'
       }
     ]
   }),
@@ -102,7 +102,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: 'Charming Social Accompaniment',
         content: 'Attending an executive business summit at India Expo Mart or dining at Gardens Galleria? Our articulate, well-dressed companions make every social evening delightful.',
         icon: Wine,
-        image: '/images/escorts-sector-62-noida-kavita-01.webp'
+        image: '/images/luxury-call-girls-sector-62-noida.webp'
       }
     ]
   }),
@@ -118,7 +118,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: 'Top Tier Glamour',
         content: 'Experience company with high-profile fashion models, college freshers, and airline hostesses offering extraordinary charm and beauty.',
         icon: Star,
-        image: '/images/escorts-sector-137-noida-natasha-01.webp'
+        image: '/images/air-hostess-escorts-botanical-garden-noida.webp'
       }
     ]
   }),
@@ -134,7 +134,7 @@ export const PAGES_CONTENT: Record<string, PageData> = {
         title: 'Overnight Luxury Stays',
         content: 'Spend an unhurried night of warmth and conversation with your preferred companion. Overnight bookings typically span 8 to 10 hours of attentive, dedicated companionship.',
         icon: Moon,
-        image: '/images/escorts-sector-18-noida-pooja-01.webp'
+        image: '/images/pooja-vip-escorts-sector-18-noida.webp'
       }
     ]
   }),
