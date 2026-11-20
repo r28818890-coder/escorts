@@ -102,6 +102,16 @@ export const NewsFooter: React.FC = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/call-girl-in-noida" className="text-rose-300 font-medium hover:underline">
+                    Call Girl in Noida
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/escorts-service-in-noida" className="text-rose-300 font-medium hover:underline">
+                    Escorts Service in Noida
+                  </Link>
+                </li>
+                <li>
                   <Link to="/booking" className="text-amber-400 font-bold hover:underline">
                     Fast 24/7 Booking
                   </Link>

@@ -124,7 +124,7 @@ const AppContent: React.FC = () => {
         <div className="relative z-10">
           <Header />
 
-          <main id="main-content" className="pt-[64px] sm:pt-[76px]">
+          <main id="main-content" className="pt-[68px] sm:pt-[80px]">
             <Suspense fallback={<div className="min-h-[50vh] bg-[#f8fafc]" />}>
               <Routes>
                 {/* Core Home Route */}
@@ -142,6 +142,8 @@ const AppContent: React.FC = () => {
 
                 {/* Dedicated Master Noida Deep Authority Landing Pages */}
                 <Route path="/escorts-in-noida" element={<NoidaMasterHubPage />} />
+                <Route path="/call-girl-in-noida" element={<NoidaMasterHubPage pageVariant="call-girl" />} />
+                <Route path="/escorts-service-in-noida" element={<NoidaMasterHubPage pageVariant="escorts-service" />} />
                 <Route path="/noida" element={<NoidaMasterHubPage />} />
                 <Route path="/call-girls-noida" element={<NoidaMasterHubPage />} />
 
@@ -183,8 +185,8 @@ const AppContent: React.FC = () => {
                 <Route path="/services/couple-massage" element={<Navigate to="/call-girls" replace />} />
                 <Route path="/services/full-body-massage" element={<Navigate to="/call-girls" replace />} />
 
-                {/* 404 Catch-all */}
-                <Route path="*" element={<NotFoundPage />} />
+                {/* 404 Catch-all: Automatically redirect unmatched routes to Home */}
+                <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </Suspense>
           </main>

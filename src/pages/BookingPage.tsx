@@ -237,11 +237,11 @@ const BookingPage: React.FC = () => {
               </a>
 
               <a
-                href="tel:+918218125815"
+                href={CONTACT.phoneHref}
                 className="w-full py-3.5 px-6 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-md hover:scale-[1.02] active:scale-[0.98] transition-all min-h-[48px]"
               >
                 <Phone size={18} />
-                Direct Call Dispatch: +91 8218125815
+                Direct Call Dispatch: {CONTACT.phoneDisplay}
               </a>
             </div>
 

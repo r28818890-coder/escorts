@@ -67,31 +67,38 @@ export const Header: React.FC<HeaderProps> = () => {
 
   return (
     <>
-      {/* ── Top Announcement Bar: Noida & NCR ────────────────── */}
-      <div className="fixed top-0 left-0 right-0 z-[60] bg-slate-900 text-slate-200 h-6 sm:h-7 flex items-center border-b border-amber-500/30 text-[10px] sm:text-xs font-semibold">
-        <div className="max-w-7xl mx-auto w-full flex items-center justify-between px-3 md:px-6">
+      {/* ── Top Announcement Bar: FOR RENT ────────────────── */}
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 text-white h-7 sm:h-8 flex items-center justify-between px-3 md:px-6 border-b border-amber-400/40 text-[11px] sm:text-xs font-black shadow-md tracking-wide">
+        <div className="max-w-7xl mx-auto w-full flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="bg-gradient-to-r from-amber-600 to-amber-500 text-slate-950 text-[9px] font-black uppercase tracking-wider px-2 py-0.2 rounded-full flex items-center gap-1 shadow-sm">
-              <MapPin size={10} /> Noida & NCR
+            <span className="bg-white text-red-700 text-[9px] sm:text-[10px] font-black uppercase px-2 py-0.5 rounded-full shadow-xs tracking-wider animate-pulse shrink-0">
+              RENT NOTICE
             </span>
-            <span className="text-slate-300 truncate max-w-[200px] sm:max-w-none">
-              100% Real Photo Verified Escorts • 24/7 Hotel Outcall Visits
+            <span className="font-extrabold text-white tracking-wide">
+              FOR RENT &gt;{' '}
+              <a
+                href="mailto:r28818890@gmail.com?subject=Website%20Rental%20Inquiry%20-%20wenoidaescorts.com"
+                className="underline underline-offset-2 hover:text-amber-200 transition-colors"
+              >
+                r28818890@gmail.com
+              </a>
             </span>
           </div>
 
-          <div className="flex items-center gap-3 text-slate-300">
-            <Link to="/safety-guide" className="hover:text-amber-400 flex items-center gap-1 transition-colors">
-              <Shield size={11} className="text-emerald-400" /> Safety Guide
-            </Link>
-            <span className="text-slate-600 hidden sm:inline">•</span>
-            <span className="text-emerald-400 font-bold hidden sm:inline">24/7 Hotel Outcall</span>
+          <div className="flex items-center gap-2 shrink-0">
+            <a
+              href="mailto:r28818890@gmail.com?subject=Website%20Rental%20Inquiry%20-%20wenoidaescorts.com"
+              className="bg-slate-950/80 hover:bg-slate-950 text-amber-300 hover:text-white px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-bold transition-all border border-amber-400/40"
+            >
+              Contact Owner ✉
+            </a>
           </div>
         </div>
       </div>
 
       {/* ── Main Compact Sticky Header ─────────────────────────────── */}
       <header
-        className={`fixed top-6 sm:top-7 left-0 right-0 z-50 transition-all duration-200 bg-white/95 backdrop-blur-md border-b ${
+        className={`fixed top-7 sm:top-8 left-0 right-0 z-50 transition-all duration-200 bg-white/95 backdrop-blur-md border-b ${
           isScrolled
             ? 'py-2 border-slate-200 shadow-md'
             : 'py-2.5 sm:py-3 border-slate-200/80 shadow-sm'

@@ -34,16 +34,16 @@ export const BRAND = {
 
 // ── 2. Contact & Location Information ─────────────────────────
 export const CONTACT = {
-  phone: '8218125815',
-  phoneDisplay: '+91 8218125815',
-  phoneHref: 'tel:+918218125815',
+  phone: '9999999999',
+  phoneDisplay: '+91 99999 99999',
+  phoneHref: 'tel:+919999999999',
   whatsapp1: '918218125815',
   whatsapp2: '918218125815',
   whatsapp1Display: '+91 8218125815',
   whatsapp2Display: '+91 8218125815',
   whatsapp1Href: 'https://wa.me/918218125815',
   whatsapp2Href: 'https://wa.me/918218125815',
-  email: 'contact@wenoidaescorts.com',
+  email: 'r28818890@gmail.com',
   hours: 'Open 24 Hours, 7 Days a Week',
   address: 'Sector 18, Noida, Gautam Buddha Nagar, Uttar Pradesh 201301',
   addressShort: 'Sector 18, Noida (NCR)',

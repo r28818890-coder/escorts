@@ -374,11 +374,11 @@ export const Home: React.FC = () => {
           {/* Dual Call-to-Action Buttons (Side by Side Left-Right on Mobile) */}
           <div className="grid grid-cols-2 gap-2 sm:gap-4 max-w-xs sm:max-w-md mx-auto mb-8">
             <a
-              href="tel:+918218125815"
+              href={CONTACT.phoneHref}
               className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:px-6 sm:py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all min-h-[44px]"
             >
               <Phone size={15} />
-              <span>Call 8218125815</span>
+              <span>Call Helpline</span>
             </a>
 
             <a
@@ -623,10 +623,10 @@ export const Home: React.FC = () => {
               </div>
             </div>
             <a
-              href="tel:+918218125815"
+              href={CONTACT.phoneHref}
               className="shrink-0 px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs uppercase tracking-wider transition-all min-h-[48px] flex items-center"
             >
-              Verify on Call: 8218125815
+              Verify on Call: {CONTACT.phoneDisplay}
             </a>
           </div>
         </div>
@@ -830,11 +830,11 @@ export const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 gap-2 sm:gap-4 max-w-xs sm:max-w-md mx-auto">
             <a
-              href="tel:+918218125815"
+              href={CONTACT.phoneHref}
               className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 sm:px-6 sm:py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-md hover:scale-105 active:scale-95 transition-all min-h-[44px]"
             >
               <Phone size={15} />
-              <span>Call Now</span>
+              <span>Call Helpline</span>
             </a>
 
             <a

@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { 
   Phone, 
   MessageCircle, 
@@ -32,7 +32,67 @@ import {
 import { NOIDA_AREAS_DATA } from '@/data/noidaAreasData';
 import { BRAND, CONTACT } from '@/config/site';
 
-export const NoidaMasterHubPage: React.FC = () => {
+export interface NoidaMasterHubPageProps {
+  pageVariant?: 'default' | 'call-girl' | 'escorts-service';
+}
+
+export const NoidaMasterHubPage: React.FC<NoidaMasterHubPageProps> = ({ pageVariant }) => {
+  const location = useLocation();
+
+  const variant = pageVariant || (
+    location.pathname.includes('call-girl-in-noida')
+      ? 'call-girl'
+      : location.pathname.includes('escorts-service-in-noida')
+      ? 'escorts-service'
+      : 'default'
+  );
+
+  const pageConfig = useMemo(() => {
+    if (variant === 'call-girl') {
+      return {
+        slug: 'call-girl-in-noida',
+        title: 'Call Girl in Noida 🟢 100% Real Photo | Verified VIP COD Services',
+        desc: '⚡ Verified Call Girl in Noida with 100% genuine photos. 20-30 min doorstep hotel outcalls across Sector 18, 62 & Expressway. Cash on Delivery (COD) - Zero advance! WhatsApp +91 8218125815.',
+        h1Top: 'Call Girl in Noida',
+        h1Sub: '100% Verified Independent Companions & COD Outcalls',
+        h2: 'Doorstep 20-30 min hotel room visits across Sector 18, 62, 50, 137 & Greater Noida. Zero advance token COD!',
+        subtitle: 'Explore verified independent call girls in Noida with 100% real photographs and zero advance deposit. Enjoy prompt 20-30 minute doorstep hotel outcalls across Sector 18, Sector 62, Sector 50, Noida Expressway, and Greater Noida with complete privacy and Cash on Delivery.',
+        breadcrumbName: 'Call Girl in Noida',
+        keywords: 'call girl in noida, call girls noida, independent call girl noida, verified call girl in noida, call girl number noida, hotel outcall call girl',
+        businessName: `${BRAND.name} - Call Girl in Noida & VIP Companions`,
+        businessDesc: 'Verified call girl services in Noida with 100% genuine photos. 20-30 min doorstep hotel outcalls, zero advance token, and cash on delivery across Sector 18, 62, 50, 137 & Greater Noida.'
+      };
+    }
+    if (variant === 'escorts-service') {
+      return {
+        slug: 'escorts-service-in-noida',
+        title: 'Escorts Service in Noida 🟢 Top VIP 24/7 Hotel Outcall Companions',
+        desc: '⚡ Premium Escorts Service in Noida offering 100% genuine photo verified VIP companions. Fast 20-min arrival to luxury 4 & 5-star hotels. Zero advance deposit! WhatsApp +91 8218125815.',
+        h1Top: 'Escorts Service in Noida',
+        h1Sub: 'Premier 24/7 VIP Outcalls & Verified Models',
+        h2: 'Verified 24/7 doorstep hotel outcalls across all 18 Noida sectors. 100% real photo verification and Zero advance token COD.',
+        subtitle: 'Discover premier escort service in Noida featuring top-tier VIP models, Russian companions, and corporate hostesses. Discreet 24/7 hotel outcall visits to Radisson Blu, Crowne Plaza, Jaypee Greens, and luxury suites with zero advance token deposit.',
+        breadcrumbName: 'Escorts Service in Noida',
+        keywords: 'escorts service in noida, noida escort service, escort services in noida, 24/7 hotel outcall escort service noida, luxury escorts service noida',
+        businessName: `${BRAND.name} - Escorts Service in Noida Directory`,
+        businessDesc: 'Premier verified escorts service in Noida. 20-30 min doorstep hotel outcalls to Radisson Blu, Crowne Plaza, Jaypee Greens, and luxury suites with zero advance.'
+      };
+    }
+    return {
+      slug: 'escorts-in-noida',
+      title: 'Escorts in Noida 🟢 100% Real Photo | Call Girls in Noida 【Zero Advance COD】',
+      desc: '⚡ Verified Escorts in Noida & Call Girls with 100% genuine photos. 20-30 min doorstep hotel outcall across all 18 Noida sectors. Cash on Delivery (COD) - Zero advance token! Call +91 8218125815.',
+      h1Top: 'Escorts in Noida',
+      h1Sub: 'Verified Call Girls & 24/7 Hotel Outcalls',
+      h2: 'Doorstep 24/7 Verified Companion Service Across All 18 Noida Sectors & Expressways',
+      subtitle: 'Welcome to the official master directory for genuine escort services in Noida. Experience uncompromising discretion, verified real photos, and prompt 20 to 30-minute doorstep arrival to all luxury 4-star and 5-star hotels across Sector 18, Sector 62, Greater Noida, and the Noida-Greater Noida Expressway corridor.',
+      breadcrumbName: 'Escorts in Noida',
+      keywords: 'escorts in noida, call girls in noida, noida escorts, escort service in noida, independent escorts noida, russian escorts noida, sector 18 escorts, sector 62 call girls',
+      businessName: `${BRAND.name} - Escorts in Noida & VIP Companions`,
+      businessDesc: 'Noida premier 100% verified escort service and companion directory. 20-30 min doorstep hotel outcalls, zero advance deposit, real photos, and cash on delivery across Sector 18, 62, 50, 137 & Greater Noida.'
+    };
+  }, [variant]);
+
   const [selectedLocality, setSelectedLocality] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -70,15 +130,15 @@ export const NoidaMasterHubPage: React.FC = () => {
   )}`;
 
   // Structured Data Schema for Google #1 Ranking
-  const canonicalUrl = `${BRAND.domain}/escorts-in-noida/`;
+  const canonicalUrl = `${BRAND.domain}/${pageConfig.slug}/`;
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "LocalBusiness",
         "@id": `${canonicalUrl}#business`,
-        "name": `${BRAND.name} - Escorts in Noida & VIP Companions`,
-        "description": "Noida premier 100% verified escort service and companion directory. 20-30 min doorstep hotel outcalls, zero advance deposit, real photos, and cash on delivery across Sector 18, 62, 50, 137 & Greater Noida.",
+        "name": pageConfig.businessName,
+        "description": pageConfig.businessDesc,
         "url": canonicalUrl,
         "telephone": CONTACT.phone,
         "priceRange": "₹2,500 - ₹25,000",
@@ -120,8 +180,8 @@ export const NoidaMasterHubPage: React.FC = () => {
         "@type": "WebPage",
         "@id": `${canonicalUrl}#webpage`,
         "url": canonicalUrl,
-        "name": "Escorts in Noida 🟢 100% Real Photo | Call Girls in Noida 【Zero Advance COD】",
-        "headline": "Escorts in Noida — 100% Verified Call Girls & VIP Hotel Outcalls",
+        "name": pageConfig.title,
+        "headline": `${pageConfig.h1Top} — ${pageConfig.h1Sub}`,
         "datePublished": "2026-01-15T08:00:00+05:30",
         "dateModified": new Date().toISOString(),
         "isPartOf": { "@id": `${BRAND.domain}/#website` },
@@ -144,7 +204,7 @@ export const NoidaMasterHubPage: React.FC = () => {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Escorts in Noida",
+            "name": pageConfig.breadcrumbName,
             "item": canonicalUrl
           }
         ]
@@ -248,11 +308,11 @@ export const NoidaMasterHubPage: React.FC = () => {
   return (
     <div className="bg-[#f8fafc] text-[#0f172a] min-h-screen">
       <SEO
-        title="Escorts in Noida 🟢 100% Real Photo | Call Girls in Noida 【Zero Advance COD】"
-        description="⚡ Verified Escorts in Noida & Call Girls with 100% genuine photos. 20-30 min doorstep hotel outcall across all 18 Noida sectors. Cash on Delivery (COD) - Zero advance token! Call +91 8218125815."
+        title={pageConfig.title}
+        description={pageConfig.desc}
         url={canonicalUrl}
         schema={schemaData}
-        keywords="escorts in noida, call girls in noida, noida escorts, escort service in noida, sector 18 escorts, sector 62 call girls, russian escorts noida, independent escorts noida, cash on delivery escorts noida, zero advance escorts noida"
+        keywords={pageConfig.keywords}
       />
 
       {/* ── 1. Hero Section: High-Converting Authority Header ── */}
@@ -264,7 +324,7 @@ export const NoidaMasterHubPage: React.FC = () => {
           <nav aria-label="Breadcrumb" className="mb-6 flex items-center gap-2 text-xs text-slate-400">
             <Link to="/" className="hover:text-rose-400 transition-colors">Home</Link>
             <ChevronRight size={12} className="text-slate-600" />
-            <span className="text-rose-400 font-medium">Escorts in Noida</span>
+            <span className="text-rose-400 font-medium">{pageConfig.breadcrumbName}</span>
           </nav>
 
           {/* Badges Bar */}
@@ -286,17 +346,14 @@ export const NoidaMasterHubPage: React.FC = () => {
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-8">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.12] mb-6">
-                Escorts in Noida <br />
+                {pageConfig.h1Top} <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-rose-300 to-amber-200">
-                  Verified Call Girls & 24/7 Hotel Outcalls
+                  {pageConfig.h1Sub}
                 </span>
               </h1>
 
               <p className="hero-subtitle text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mb-8">
-                Welcome to the official master directory for genuine escort services in Noida. Experience 
-                uncompromising discretion, verified real photos, and prompt 20 to 30-minute doorstep arrival 
-                to all luxury 4-star and 5-star hotels across Sector 18, Sector 62, Greater Noida, and the 
-                Noida-Greater Noida Expressway corridor.
+                {pageConfig.subtitle}
               </p>
 
               {/* Action Buttons */}
@@ -312,11 +369,11 @@ export const NoidaMasterHubPage: React.FC = () => {
                 </a>
 
                 <a
-                  href={`tel:${CONTACT.phone}`}
+                  href={CONTACT.phoneHref}
                   className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-500 hover:to-rose-600 text-white font-bold text-sm sm:text-base shadow-lg shadow-rose-600/30 transition-all transform hover:-translate-y-0.5"
                 >
                   <Phone size={18} />
-                  Call 24/7 Helpline: +91 8218125815
+                  Call Helpline: {CONTACT.phoneDisplay}
                 </a>
               </div>
 
@@ -866,10 +923,10 @@ export const NoidaMasterHubPage: React.FC = () => {
               <MessageCircle size={16} /> WhatsApp Dispatch (+91 8218125815)
             </a>
             <a
-              href={`tel:${CONTACT.phone}`}
+              href={CONTACT.phoneHref}
               className="px-6 py-3 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-lg transition-transform hover:-translate-y-0.5 flex items-center gap-2"
             >
-              <Phone size={16} /> Call Hotline Now
+              <Phone size={16} /> Call Helpline: {CONTACT.phoneDisplay}
             </a>
           </div>
         </div>

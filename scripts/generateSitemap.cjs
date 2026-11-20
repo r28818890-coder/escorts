@@ -16,6 +16,8 @@ const add = (route, priority, changefreq) => urls.set(`${DOMAIN}/${route}`.repla
 [
   ['', '1.0', 'daily'],
   ['escorts-in-noida', '1.0', 'daily'],
+  ['call-girl-in-noida', '1.0', 'daily'],
+  ['escorts-service-in-noida', '1.0', 'daily'],
   ['noida', '0.9', 'daily'],
   ['noida-escorts', '1.0', 'daily'],
   ['gallery', '0.85', 'daily'],

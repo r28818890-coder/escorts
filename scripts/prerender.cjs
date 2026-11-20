@@ -5,8 +5,8 @@ const distDir = path.join(__dirname, '..', 'dist');
 const indexPath = path.join(distDir, 'index.html');
 const DOMAIN = 'https://wenoidaescorts.com';
 const BRAND = 'Escorts Hub Noida';
-const PHONE = '+918218125815';
-const PHONE_CLEAN = '8218125815';
+const PHONE = '+91 99999 99999';
+const PHONE_CLEAN = '9999999999';
 
 if (!fs.existsSync(indexPath)) {
   console.error('dist/index.html not found. Run vite build first.');
@@ -739,11 +739,33 @@ const MASTER_SEO_ROUTES = [
   {
     path: 'noida',
     title: 'Escorts in Noida 🟢 100% Real Photo | Call Girls in Noida 【Zero Advance COD】',
-    desc: '⚡ Verified Escorts in Noida & Call Girls with 100% genuine photos. 20-30 min doorstep hotel outcall across all 18 Noida sectors. Cash on Delivery (COD) - Zero advance token! Call +91 8218125815.',
+    desc: '⚡ Verified Escorts in Noida & Call Girls with 100% genuine photos. 20-30 min doorstep hotel outcall across all 18 Noida sectors. Cash on Delivery (COD) - Zero advance token! WhatsApp +91 8218125815.',
     h1: 'Escorts in Noida — 100% Verified Call Girls & VIP Hotel Outcalls',
     h2: 'Doorstep 24/7 Verified Companion Service Across All 18 Noida Sectors & Expressways',
     locName: 'Noida',
     keyword: 'escorts in noida, call girls in noida, noida escorts, escort service in noida',
+    landmark: 'Sector 18, Sector 62, Expressway, and Greater Noida',
+    isMasterNoidaHub: true
+  },
+  {
+    path: 'call-girl-in-noida',
+    title: 'Call Girl in Noida 🟢 100% Real Photo | Verified VIP COD Services',
+    desc: '⚡ Verified Call Girl in Noida with 100% genuine photos. 20-30 min doorstep hotel outcalls across Sector 18, 62 & Expressway. Cash on Delivery (COD) - Zero advance! WhatsApp +91 8218125815.',
+    h1: 'Call Girl in Noida — 100% Verified Independent Companions & 24/7 Hotel Outcall',
+    h2: 'Doorstep 20-30 min hotel room visits across Sector 18, 62, 50, 137 & Greater Noida. Zero advance token COD!',
+    locName: 'Noida',
+    keyword: 'call girl in noida, call girls noida, independent call girl in noida, hotel outcall call girl',
+    landmark: 'Sector 18, Sector 62, Expressway, and Greater Noida',
+    isMasterNoidaHub: true
+  },
+  {
+    path: 'escorts-service-in-noida',
+    title: 'Escorts Service in Noida 🟢 Top VIP 24/7 Hotel Outcall Companions',
+    desc: '⚡ Premium Escorts Service in Noida offering 100% genuine photo verified VIP companions. Fast 20-min arrival to luxury 4 & 5-star hotels. Zero advance deposit! WhatsApp +91 8218125815.',
+    h1: 'Escorts Service in Noida — Premier 24/7 Verified Companion Directory',
+    h2: 'Verified 24/7 doorstep hotel outcalls across all 18 Noida sectors. 100% real photo verification and Zero advance token COD.',
+    locName: 'Noida',
+    keyword: 'escorts service in noida, noida escort service, escort services noida, 24/7 hotel outcall escort service',
     landmark: 'Sector 18, Sector 62, Expressway, and Greater Noida',
     isMasterNoidaHub: true
   },
@@ -1225,6 +1247,7 @@ subRoutes.forEach((route) => {
     preRenderedBody = `
       <div id="root"></div>
       <noscript>
+        <div style="background:#dc2626;color:#ffffff;padding:8px 16px;font-weight:900;text-align:center;font-size:12px;letter-spacing:0.5px;border-bottom:1px solid #facc15;">FOR RENT &gt; <a href="mailto:r28818890@gmail.com" style="color:#ffffff;text-decoration:underline;font-weight:900;">r28818890@gmail.com</a></div>
         <main class="min-h-screen bg-[#f8fafc] text-[#0f172a] p-4 md:p-8" style="font-family: 'Montserrat', system-ui, sans-serif;">
           <header class="max-w-5xl mx-auto mb-8 border-b border-slate-200 pb-6 text-center">
             <div class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-3">Escorts Hub Noida • Verified 24/7 Dispatch</div>
@@ -1232,7 +1255,7 @@ subRoutes.forEach((route) => {
             <p class="text-sm md:text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">
               Doorstep 24/7 verified VIP hotel outcalls near DLF Mall of India, Sector 18 Metro Gate 2, Botanical Garden interchange, and along the Noida-Greater Noida Expressway. Genuine independent companions with complete privacy.
             </p>
-            <div class="text-xs text-slate-500 mt-3">Central Helpline: <strong>${PHONE}</strong> | WhatsApp: <strong>${PHONE}</strong> | 100% Verified Profiles</div>
+            <div class="text-xs text-slate-500 mt-3">Central Helpline: <strong>${PHONE}</strong> | WhatsApp VIP: <strong>+91 8218125815</strong> | 100% Verified Profiles</div>
           </header>
 
           <section class="max-w-5xl mx-auto my-6 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
@@ -1378,11 +1401,12 @@ subRoutes.forEach((route) => {
     preRenderedBody = `
       <div id="root"></div>
       <noscript>
+        <div style="background:#dc2626;color:#ffffff;padding:8px 16px;font-weight:900;text-align:center;font-size:12px;letter-spacing:0.5px;border-bottom:1px solid #facc15;">FOR RENT &gt; <a href="mailto:r28818890@gmail.com" style="color:#ffffff;text-decoration:underline;font-weight:900;">r28818890@gmail.com</a></div>
         <main class="min-h-screen bg-[#f8fafc] text-[#0f172a] p-4 md:p-8" style="font-family: 'Montserrat', system-ui, sans-serif;">
           <header class="max-w-7xl mx-auto mb-8 border-b border-slate-200 pb-6">
             <nav class="text-xs text-rose-700 mb-4 font-semibold">
               <a href="/" class="hover:underline">Home</a> &gt; 
-              <span class="text-slate-900 font-bold">Escorts in Noida</span>
+              <span class="text-slate-900 font-bold">${route.h1.split(' — ')[0] || 'Escorts in Noida'}</span>
             </nav>
             <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">${route.h1}</h1>
             <p class="text-base md:text-lg text-slate-600 font-medium">${route.h2}</p>
