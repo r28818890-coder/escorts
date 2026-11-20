@@ -68,18 +68,18 @@ export const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       {/* ── Top Announcement Bar: FOR RENT ────────────────── */}
-      <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 text-white h-6 sm:h-7 flex items-center justify-between px-2 sm:px-4 md:px-6 border-b border-amber-400/40 text-[10px] sm:text-xs font-bold shadow-xs tracking-tight">
+      <div className="fixed top-0 left-0 right-0 z-[60] bg-gradient-to-r from-red-600 via-rose-600 to-amber-600 text-white h-7 sm:h-8 flex items-center justify-between px-2 sm:px-4 md:px-6 border-b border-amber-400/40 shadow-xs tracking-tight">
         <div className="max-w-7xl mx-auto w-full flex items-center justify-between gap-1.5 sm:gap-2">
           <div className="flex items-center gap-1.5 min-w-0">
             <span className="bg-white text-red-700 text-[8px] sm:text-[9px] font-black uppercase px-1.5 py-0.2 rounded shadow-xs tracking-wider shrink-0 leading-tight">
               <span className="sm:hidden">RENT</span>
               <span className="hidden sm:inline">RENT NOTICE</span>
             </span>
-            <span className="text-[10px] sm:text-xs font-bold text-white tracking-tight truncate">
-              FOR RENT &gt;{' '}
+            <span className="text-[11px] sm:text-[13px] font-extrabold text-white tracking-tight truncate flex items-center gap-1">
+              <span>FOR RENT &gt;</span>
               <a
                 href="mailto:r28818890@gmail.com?subject=Website%20Rental%20Inquiry%20-%20wenoidaescorts.com"
-                className="underline underline-offset-1 text-amber-200 hover:text-white transition-colors font-extrabold"
+                className="text-white hover:text-amber-200 underline underline-offset-2 transition-colors font-extrabold"
               >
                 r28818890@gmail.com
               </a>
@@ -100,7 +100,7 @@ export const Header: React.FC<HeaderProps> = () => {
 
       {/* ── Main Compact Sticky Header ─────────────────────────────── */}
       <header
-        className={`fixed top-6 sm:top-7 left-0 right-0 z-50 transition-all duration-200 bg-white/95 backdrop-blur-md border-b ${
+        className={`fixed top-7 sm:top-8 left-0 right-0 z-50 transition-all duration-200 bg-white/95 backdrop-blur-md border-b ${
           isScrolled
             ? 'py-2 border-slate-200 shadow-md'
             : 'py-2.5 sm:py-3 border-slate-200/80 shadow-sm'
