@@ -1043,143 +1043,6 @@ subRoutes.forEach((route) => {
       <script type="application/ld+json">${JSON.stringify(profileSchema)}</script>
       <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
     `;
-  } else if (route.isMasterNoidaHub) {
-    const hubSchema = {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": `${BRAND} - ${route.h1}`,
-      "description": route.desc,
-      "url": canonicalUrl,
-      "telephone": PHONE,
-      "priceRange": "₹2,500 - ₹25,000",
-      "image": `${DOMAIN}/images/hero-hot-model-bg.webp`,
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Sector 18 Commercial Hub & Expressway",
-        "addressLocality": "Noida",
-        "addressRegion": "Uttar Pradesh",
-        "postalCode": "201301",
-        "addressCountry": "IN"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "218"
-      }
-    };
-    const breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": `${DOMAIN}/` },
-        { "@type": "ListItem", "position": 2, "name": "Escorts in Noida", "item": canonicalUrl }
-      ]
-    };
-    const itemListSchema = {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Noida Sectors Escort Service Hubs",
-      "itemListElement": LOCALITIES.map((loc, idx) => ({
-        "@type": "ListItem",
-        "position": idx + 1,
-        "name": `Escorts in ${loc.name}`,
-        "url": `${DOMAIN}/area/${loc.slug}/`
-      }))
-    };
-    schemaTags = `
-      <script type="application/ld+json">${JSON.stringify(hubSchema)}</script>
-      <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
-      <script type="application/ld+json">${JSON.stringify(itemListSchema)}</script>
-    `;
-  } else if (route.isHome) {
-    schemaTags = '';
-  } else if (route.isMasterNoidaHub) {
-    preRenderedBody = `
-      <div id="root"></div>
-      <noscript>
-        <main class="min-h-screen bg-[#f8fafc] text-[#0f172a] p-4 md:p-8" style="font-family: 'Montserrat', system-ui, sans-serif;">
-          <header class="max-w-7xl mx-auto mb-8 border-b border-slate-200 pb-6">
-            <nav class="text-xs text-rose-700 mb-4 font-semibold">
-              <a href="/" class="hover:underline">Home</a> &gt; 
-              <span class="text-slate-900 font-bold">Escorts in Noida</span>
-            </nav>
-            <h1 class="text-3xl md:text-5xl font-black text-slate-900 mb-3 tracking-tight">${route.h1}</h1>
-            <p class="text-base md:text-lg text-slate-600 font-medium">${route.h2}</p>
-            <div class="text-xs text-slate-500 mt-2">100% Real Photo Verified • 20-30 Min 4-Star/5-Star Hotel Outcalls • 24/7 Helpline: <strong>${PHONE}</strong></div>
-          </header>
-
-          <!-- Complete Noida Sectors Index (All 18 Localities Linked) -->
-          <section class="max-w-7xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-            <h2 class="text-xl md:text-2xl font-black text-slate-900 mb-4">All 18 Noida Sectors &amp; Hyperlocal Outcall Hubs</h2>
-            <p class="text-sm text-slate-600 mb-6">Direct access to every dedicated sector guide, luxury hotel outcall hub, and verified companion directory in Noida:</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              ${LOCALITIES.map(loc => `
-                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-rose-300">
-                  <h3 class="font-bold text-slate-900 text-sm mb-1">
-                    <a href="/area/${loc.slug}/" class="hover:text-rose-600 text-rose-700">Escorts in ${loc.name} →</a>
-                  </h3>
-                  <p class="text-xs text-slate-500 mb-2">Stationed near ${loc.landmarks.join(', ')} • 15-20 min arrival</p>
-                  <div class="flex gap-2 text-[11px] text-slate-600">
-                    <a href="/call-girls/${loc.slug}/" class="hover:underline">Call Girls</a> | 
-                    <a href="/russian-escorts/${loc.slug}/" class="hover:underline">Russian</a> | 
-                    <a href="/area/${loc.slug}/" class="hover:underline">Hotel Guide</a>
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </section>
-
-          <!-- Companion Categories Hub -->
-          <section class="max-w-7xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-            <h2 class="text-xl md:text-2xl font-black text-slate-900 mb-4">Companion Service Categories in Noida</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-              ${CATEGORIES.map(cat => `
-                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                  <h3 class="font-bold text-slate-900 text-sm mb-1">
-                    <a href="/${cat.slug}/" class="hover:text-rose-600 text-rose-700">${cat.name} in Noida →</a>
-                  </h3>
-                  <p class="text-xs text-slate-600">${cat.desc.slice(0, 80)}...</p>
-                </div>
-              `).join('')}
-            </div>
-          </section>
-
-          <!-- Category x Sector Matrix Links -->
-          <section class="max-w-7xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
-            <h2 class="text-xl md:text-2xl font-black text-slate-900 mb-4">Hyperlocal Category &times; Sector Semantic Directory</h2>
-            <div class="space-y-6">
-              ${CATEGORIES.slice(0, 3).map(cat => `
-                <div>
-                  <h3 class="font-bold text-xs uppercase tracking-wider text-rose-700 mb-2">${cat.name} Across All Sectors</h3>
-                  <div class="flex flex-wrap gap-2 text-xs">
-                    ${LOCALITIES.map(loc => `
-                      <a href="/${cat.slug}/${loc.slug}/" class="px-2.5 py-1 bg-slate-100 rounded-md hover:bg-rose-50 hover:text-rose-700 text-slate-700 border border-slate-200">
-                        ${cat.name} ${loc.name.replace(' Noida', '')}
-                      </a>
-                    `).join('')}
-                  </div>
-                </div>
-              `).join('')}
-            </div>
-          </section>
-
-          <!-- Institutional Guides & Safety Links -->
-          <section class="max-w-7xl mx-auto my-8 bg-slate-900 text-white rounded-2xl p-6 md:p-8">
-            <h2 class="text-xl font-black mb-4">Essential Noida Guides, Safety Protocols &amp; Pricing</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-semibold">
-              <a href="/noida-escorts/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">Noida Rate List (2026) →</a>
-              <a href="/safety-guide/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">Safety &amp; Anti-Scam Guide →</a>
-              <a href="/noida-areas/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">All 18 Localities Index →</a>
-              <a href="/booking/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">24/7 Outcall Booking →</a>
-              <a href="/gallery/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">Verified Photo Gallery →</a>
-              <a href="/faq/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">Frequently Asked Questions →</a>
-              <a href="/about/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">About Escorts Hub →</a>
-              <a href="/contact/" class="p-3 bg-slate-800 rounded-xl hover:bg-rose-600 block">24/7 Helpline &amp; Desk →</a>
-            </div>
-          </section>
-        </main>
-      </noscript>
-    `;
   } else {
     const breadcrumbSchema = {
       "@context": "https://schema.org",
@@ -1379,7 +1242,7 @@ subRoutes.forEach((route) => {
                 Noida, one of India's fastest-growing planned industrial and commercial hubs in the National Capital Region (NCR), is home to world-class corporate parks, multinational tech headquarters, and premier luxury hospitality destinations. Whether you are an executive visiting the multinational IT corridors of Sector 62 and Advant Navis on the Expressway, attending an international symposium at the India Expo Mart in Greater Noida, or enjoying a leisurely stay near DLF Mall of India and Sector 18, Escorts Hub Noida offers the most discreet, reliable, and verified adult companionship directory in the region.
               </p>
               <p>
-                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else. For step-by-step reservation procedures and VIP companion booking protocols, review our official <a href="/noida-escorts/" class="text-amber-700 font-bold hover:underline">Noida Escorts Price List &amp; Booking Guide</a>.
+                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else. For step-by-step reservation procedures and VIP companion booking protocols, review our official <a href="/escorts-in-noida/" class="text-amber-700 font-bold hover:underline">Escorts in Noida Master Hub</a> and <a href="/noida-escorts/" class="text-amber-700 font-bold hover:underline">Price List &amp; Booking Guide</a>.
               </p>
 
               <h3 class="text-lg font-black text-slate-900 mt-6 mb-2">24/7 Hotel Outcall Protocols for Noida's Premier Hospitality Destinations</h3>
@@ -1458,6 +1321,18 @@ subRoutes.forEach((route) => {
                 </a>
               `).join('')}
             </div>
+
+            <!-- Contextual Authority Callout to Master Noida Page -->
+            <div class="mt-6 p-4 rounded-xl bg-amber-50 border border-amber-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-left">
+              <div>
+                <span class="text-[10px] font-black uppercase tracking-wider text-amber-800 bg-amber-200/80 px-2 py-0.5 rounded-full inline-block mb-1">Central Noida Hub</span>
+                <h4 class="font-black text-slate-900 text-sm">Escorts in Noida — Master Authority Directory &amp; All 18 Sector Guides</h4>
+                <p class="text-xs text-slate-600">Access comprehensive hotel outcall coverage, companion categories, zero-advance COD terms, and verified profiles.</p>
+              </div>
+              <a href="/escorts-in-noida/" class="shrink-0 px-4 py-2 rounded-lg bg-amber-600 text-white font-bold text-xs uppercase hover:bg-amber-500 transition-colors">
+                Explore Noida Hub →
+              </a>
+            </div>
           </section>
 
           <section class="max-w-5xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
@@ -1513,6 +1388,34 @@ subRoutes.forEach((route) => {
             <p class="text-base md:text-lg text-slate-600 font-medium">${route.h2}</p>
             <div class="text-xs text-slate-500 mt-2">100% Real Photo Verified • 20-30 Min 4-Star/5-Star Hotel Outcalls • 24/7 Helpline: <strong>${PHONE}</strong></div>
           </header>
+
+          <!-- Featured Verified Companions (WebP Images + Exact Locality Alt Tags) -->
+          <section class="max-w-7xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">
+            <h2 class="text-xl md:text-2xl font-black text-slate-900 mb-2">Featured Verified Companions in Noida (100% Real Photos)</h2>
+            <p class="text-xs text-slate-500 mb-6">Zero advance deposit • 20-min 5-star hotel outcall • Pay on arrival (Cash on Delivery)</p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden p-2 text-center">
+                <img src="/images/riya-vip-escorts-sector-18-noida.webp" alt="Riya 23 Yrs VIP Russian Escort in Sector 18 Noida" width="300" height="400" loading="lazy" class="w-full h-44 object-cover rounded-lg mb-2" />
+                <h4 class="font-bold text-xs text-slate-900">Riya (23 Yrs) - Sector 18</h4>
+                <p class="text-[10px] text-slate-500">VIP Russian Model • 15 min outcall</p>
+              </div>
+              <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden p-2 text-center">
+                <img src="/images/riya-vip-escorts-sector-18-noida.webp" alt="Aanya 22 Yrs Independent College Call Girl in Sector 62 Noida" width="300" height="400" loading="lazy" class="w-full h-44 object-cover rounded-lg mb-2" />
+                <h4 class="font-bold text-xs text-slate-900">Aanya (22 Yrs) - Sector 62</h4>
+                <p class="text-[10px] text-slate-500">Independent College • 20 min outcall</p>
+              </div>
+              <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden p-2 text-center">
+                <img src="/images/riya-vip-escorts-sector-18-noida.webp" alt="Simran 24 Yrs High Profile Corporate Escort in Noida Expressway Sector 137" width="300" height="400" loading="lazy" class="w-full h-44 object-cover rounded-lg mb-2" />
+                <h4 class="font-bold text-xs text-slate-900">Simran (24 Yrs) - Sector 137</h4>
+                <p class="text-[10px] text-slate-500">Corporate Hostess • 20 min outcall</p>
+              </div>
+              <div class="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden p-2 text-center">
+                <img src="/images/riya-vip-escorts-sector-18-noida.webp" alt="Natasha 25 Yrs Elite Foreign Companion in Sector 50 Noida" width="300" height="400" loading="lazy" class="w-full h-44 object-cover rounded-lg mb-2" />
+                <h4 class="font-bold text-xs text-slate-900">Natasha (25 Yrs) - Sector 50</h4>
+                <p class="text-[10px] text-slate-500">Elite Model • 15 min outcall</p>
+              </div>
+            </div>
+          </section>
 
           <!-- Complete Noida Sectors Index (All 18 Localities Linked) -->
           <section class="max-w-7xl mx-auto my-8 bg-white border border-slate-200 rounded-2xl p-6 md:p-8 shadow-sm">

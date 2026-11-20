@@ -554,6 +554,27 @@ export const Home: React.FC = () => {
             ))}
           </div>
 
+          <div className="mt-8 p-6 rounded-2xl bg-gradient-to-r from-amber-500/15 via-rose-500/10 to-amber-500/5 border border-amber-500/30 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="space-y-1 text-left">
+              <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-500/20 text-amber-900 text-[11px] font-black uppercase tracking-wider">
+                ★ Noida Authority Pillar
+              </div>
+              <h3 className="text-base sm:text-lg font-black text-slate-900">
+                Escorts in Noida — Master Authority Directory &amp; All 18 Sector Guides
+              </h3>
+              <p className="text-xs text-slate-600 max-w-2xl leading-relaxed">
+                Looking for complete hyperlocal coverage? Access our central Noida escort service directory featuring all 18 sector guides, 5 companion categories, zero-advance COD verification, and direct 24/7 outcall rates.
+              </p>
+            </div>
+            <Link
+              to="/escorts-in-noida"
+              className="shrink-0 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-sm hover:scale-105 active:scale-95"
+            >
+              <span>Explore Noida Hub</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
           <div className="text-center mt-6">
             <Link
               to="/noida-areas"
@@ -629,7 +650,7 @@ export const Home: React.FC = () => {
                 Noida, one of India's fastest-growing planned industrial and commercial hubs in the National Capital Region (NCR), is home to world-class corporate parks, multinational tech headquarters, and premier luxury hospitality destinations. Whether you are an executive visiting the multinational IT corridors of Sector 62 and Advant Navis on the Expressway, attending an international symposium at the India Expo Mart in Greater Noida, or enjoying a leisurely stay near DLF Mall of India and Sector 18, Escorts Hub Noida offers the most discreet, reliable, and verified adult companionship directory in the region.
               </p>
               <p>
-                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else. For step-by-step reservation procedures and VIP companion booking protocols, review our official <Link to="/noida-escorts" className="text-amber-700 font-bold hover:underline">Noida Escorts Price List &amp; Booking Guide</Link>.
+                Our directory features strictly verified independent escorts, high-profile college companions, air hostess models, and elite corporate call girls available for 24/7 doorstep hotel outcall appointments. Operating with a verified-photo standard, we prioritize client security, personal confidentiality, and transparent real-photo authenticity above all else. For step-by-step reservation procedures and VIP companion booking protocols, review our official <Link to="/escorts-in-noida" className="text-amber-700 font-bold hover:underline">Escorts in Noida Master Authority Hub</Link> and <Link to="/noida-escorts" className="text-amber-700 font-bold hover:underline">Price List &amp; Booking Guide</Link>.
               </p>
             </div>
 
