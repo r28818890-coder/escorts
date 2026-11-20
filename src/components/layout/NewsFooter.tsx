@@ -97,6 +97,11 @@ export const NewsFooter: React.FC = () => {
               </h4>
               <ul className="space-y-1 text-[11px]">
                 <li>
+                  <Link to="/escorts-in-noida" className="text-rose-400 font-bold hover:underline">
+                    Escorts in Noida Hub
+                  </Link>
+                </li>
+                <li>
                   <Link to="/booking" className="text-amber-400 font-bold hover:underline">
                     Fast 24/7 Booking
                   </Link>

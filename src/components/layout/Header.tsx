@@ -214,8 +214,8 @@ export const Header: React.FC<HeaderProps> = () => {
             <Link to="/russian-escorts" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
               Russian Escorts
             </Link>
-            <Link to="/adult-meetings" className="hover:text-amber-600 px-2.5 py-1.5 rounded-lg hover:bg-slate-100 transition-colors">
-              Adult Meetings
+            <Link to="/escorts-in-noida" className="text-rose-600 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-3 py-1.5 rounded-lg font-bold transition-colors">
+              Noida Guide
             </Link>
             <Link to="/booking" className="text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 px-3 py-1.5 rounded-lg font-bold transition-colors">
               Book Now
@@ -275,7 +275,7 @@ export const Header: React.FC<HeaderProps> = () => {
               </div>
 
               {/* Booking Quick CTA */}
-              <div className="grid grid-cols-2 gap-2 mb-4">
+              <div className="grid grid-cols-2 gap-2 mb-2">
                 <Link
                   to="/booking"
                   onClick={() => setMobileMenuOpen(false)}
@@ -293,6 +293,16 @@ export const Header: React.FC<HeaderProps> = () => {
                   <MessageCircle size={14} /> WhatsApp
                 </a>
               </div>
+
+              {/* Master Noida Authority Hub Link */}
+              <Link
+                to="/escorts-in-noida"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full py-2 px-3 mb-4 rounded-xl bg-rose-50 text-rose-700 hover:bg-rose-100 border border-rose-200 font-bold text-xs flex items-center justify-center gap-1.5 text-center transition-colors"
+              >
+                <MapPin size={13} className="text-rose-600" />
+                <span>Noida Deep Guide &amp; All Sectors Directory →</span>
+              </Link>
 
               {/* Categories */}
               <div className="space-y-1 mb-5">
