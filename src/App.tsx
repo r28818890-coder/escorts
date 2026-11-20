@@ -124,7 +124,7 @@ const AppContent: React.FC = () => {
         <div className="relative z-10">
           <Header />
 
-          <main id="main-content" className="pt-[68px] sm:pt-[80px]">
+          <main id="main-content" className="pt-[64px] sm:pt-[76px]">
             <Suspense fallback={<div className="min-h-[50vh] bg-[#f8fafc]" />}>
               <Routes>
                 {/* Core Home Route */}
